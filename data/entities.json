@@ -2705,7 +2705,7 @@
     "name": "AI Observability by OpenObserve",
     "url": "https://www.producthunt.com/products/openobserve",
     "category": "AI/ML",
-    "description": "OpenTelemetry-native observability for agents and LLMsDiscussion",
+    "description": "OpenTelemetry-native observability for agents and LLMsDiscussion<",
     "domain": "producthunt.com",
     "github": null,
     "ticker": null,
@@ -2789,7 +2789,7 @@
     "name": "Wealthfolio",
     "url": "https://www.producthunt.com/products/wealthfolio",
     "category": "Product",
-    "description": "Local-first personal finance with optional broker syncDiscussion",
+    "description": "Local-first personal finance with optional broker syncDiscussion<",
     "domain": "producthunt.com",
     "github": null,
     "ticker": null,
@@ -2810,7 +2810,7 @@
     "name": "iPhone Duo",
     "url": "https://www.producthunt.com/products/apple",
     "category": "Design",
-    "description": "The largest iPhone display ever. In a thin, foldable design.Discussion",
+    "description": "The largest iPhone display ever. In a thin, foldable design.Discussion<",
     "domain": "producthunt.com",
     "github": null,
     "ticker": null,
@@ -2936,7 +2936,7 @@
     "name": "Mock Magic Presets",
     "url": "https://www.producthunt.com/products/mockmagic",
     "category": "Product",
-    "description": "Use saved presets to quickly get a branded device videoDiscussion",
+    "description": "Use saved presets to quickly get a branded device videoDiscussion</",
     "domain": "producthunt.com",
     "github": null,
     "ticker": null,
@@ -7600,6 +7600,511 @@
     "tags": [
       "producthunt",
       "product"
+    ]
+  },
+  "1801e261328b": {
+    "id": "1801e261328b",
+    "name": "Training a 3.8B LLM to 0.384 CORE for $998",
+    "url": "https://news.ycombinator.com/item?id=49637435",
+    "category": "Startup",
+    "description": "Training a 3.8B LLM to 0.384 CORE for $998",
+    "domain": "news.ycombinator.com",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "hackernews",
+      "hn:49637435"
+    ],
+    "tags": [
+      "startup",
+      "hackernews"
+    ]
+  },
+  "32c562915f49": {
+    "id": "32c562915f49",
+    "name": "It’s Fourth Down. Will Stocks Go for the Win or a Tie?",
+    "url": "https://www.barrons.com/articles/stocks-oil-midterm-elections-earnings-fed-rates-bond-yields-a9cd1d66?siteid=yhoof2&yptr=yahoo",
+    "category": "Market Event",
+    "description": "It’s Fourth Down. Will Stocks Go for the Win or a Tie?",
+    "domain": "barrons.com",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "market_news",
+      "news:It’s Fourth Down. Will Stocks Go for the Win or a "
+    ],
+    "tags": [
+      "market",
+      "news"
+    ]
+  },
+  "cafd98783e60": {
+    "id": "cafd98783e60",
+    "name": "Labor Day Gasoline Just Hit a Record. Here’s What Comes Next",
+    "url": "https://finance.yahoo.com/energy/articles/labor-day-gasoline-just-hit-200000363.html",
+    "category": "Market Event",
+    "description": "Labor Day Gasoline Just Hit a Record. Here’s What Comes Next",
+    "domain": "finance.yahoo.com",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "market_news",
+      "news:Labor Day Gasoline Just Hit a Record. Here’s What "
+    ],
+    "tags": [
+      "market",
+      "news"
+    ]
+  },
+  "cc2962961da1": {
+    "id": "cc2962961da1",
+    "name": "Stock market today: Dow drops 600 points, S&P 500 and Nasdaq retreat as oil nears $100",
+    "url": "https://finance.yahoo.com/markets/live/stock-market-today-tuesday-september-8-dow-sp-500-nasdaq-080440338.html",
+    "category": "Market Event",
+    "description": "Stock market today: Dow drops 600 points, S&P 500 and Nasdaq retreat as oil nears $100",
+    "domain": "finance.yahoo.com",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "market_news",
+      "news:Stock market today: Dow drops 600 points, S&P 500 "
+    ],
+    "tags": [
+      "market",
+      "news"
+    ]
+  },
+  "7cb52692d67b": {
+    "id": "7cb52692d67b",
+    "name": "Robinhood Lands Crypto.com Deal, Underwriting Job For Oura. Goldman Hikes Target.",
+    "url": "https://www.investors.com/news/robinhood-crypto-com-minority-stake-prediction-markets-oura-underwriter-reports-hood-stock-price-target/?src=A00220&yptr=yahoo",
+    "category": "Market Event",
+    "description": "Robinhood Lands Crypto.com Deal, Underwriting Job For Oura. Goldman Hikes Target.",
+    "domain": "investors.com",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "market_news",
+      "news:Robinhood Lands Crypto.com Deal, Underwriting Job "
+    ],
+    "tags": [
+      "market",
+      "news"
+    ]
+  },
+  "16299d6a4af3": {
+    "id": "16299d6a4af3",
+    "name": "Anthropic Walks Away From Decart as $6 Billion AI Deal Unravels",
+    "url": "https://finance.yahoo.com/technology/ai/articles/anthropic-walks-away-decart-6-195737557.html",
+    "category": "Market Event",
+    "description": "Anthropic Walks Away From Decart as $6 Billion AI Deal Unravels",
+    "domain": "finance.yahoo.com",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "market_news",
+      "news:Anthropic Walks Away From Decart as $6 Billion AI "
+    ],
+    "tags": [
+      "market",
+      "news"
+    ]
+  },
+  "f894311048cb": {
+    "id": "f894311048cb",
+    "name": "9 ways your employer can help you save money",
+    "url": "https://finance.yahoo.com/personal-finance/banking/article/ways-your-employer-can-help-you-save-money-210135355.html",
+    "category": "Market Event",
+    "description": "9 ways your employer can help you save money",
+    "domain": "finance.yahoo.com",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "market_news",
+      "news:9 ways your employer can help you save money"
+    ],
+    "tags": [
+      "market",
+      "news"
+    ]
+  },
+  "2ec3c0be1e99": {
+    "id": "2ec3c0be1e99",
+    "name": "GE Aerospace To Buy Key Industry Castings Supplier CPP For Nearly $12 Billion",
+    "url": "https://www.investors.com/news/ge-aerospace-acquisition-precision-products-castings-capacity-deal-ge-stock/?src=A00220&yptr=yahoo",
+    "category": "Market Event",
+    "description": "GE Aerospace To Buy Key Industry Castings Supplier CPP For Nearly $12 Billion",
+    "domain": "investors.com",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "market_news",
+      "news:GE Aerospace To Buy Key Industry Castings Supplier"
+    ],
+    "tags": [
+      "market",
+      "news"
+    ]
+  },
+  "f41f4f56bc29": {
+    "id": "f41f4f56bc29",
+    "name": "Arm Extends AI Reach From Data Centers To Edge Devices",
+    "url": "https://www.investors.com/news/technology/arm-stock-arm-extends-reach-to-physical-ai/?src=A00220&yptr=yahoo",
+    "category": "Market Event",
+    "description": "Arm Extends AI Reach From Data Centers To Edge Devices",
+    "domain": "investors.com",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "market_news",
+      "news:Arm Extends AI Reach From Data Centers To Edge Dev"
+    ],
+    "tags": [
+      "market",
+      "news"
+    ]
+  },
+  "ea82d5891c92": {
+    "id": "ea82d5891c92",
+    "name": "Treasury Yields Keep Rising Ahead of Buybacks, CPI",
+    "url": "https://www.wsj.com/finance/jgb-futures-rise-as-yens-strength-seen-easing-inflationary-pressures-5eefc264?siteid=yhoof2&yptr=yahoo",
+    "category": "Market Event",
+    "description": "Treasury Yields Keep Rising Ahead of Buybacks, CPI",
+    "domain": "wsj.com",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "market_news",
+      "news:Treasury Yields Keep Rising Ahead of Buybacks, CPI"
+    ],
+    "tags": [
+      "market",
+      "news"
+    ]
+  },
+  "bb7fb044ea8e": {
+    "id": "bb7fb044ea8e",
+    "name": "Boston Scientific Slammed After Cyberattack Hamstrings Sales, Profit",
+    "url": "https://www.investors.com/news/technology/boston-scientific-cybersecurity-attack-guidance/?src=A00220&yptr=yahoo",
+    "category": "Market Event",
+    "description": "Boston Scientific Slammed After Cyberattack Hamstrings Sales, Profit",
+    "domain": "investors.com",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "market_news",
+      "news:Boston Scientific Slammed After Cyberattack Hamstr"
+    ],
+    "tags": [
+      "market",
+      "news"
+    ]
+  },
+  "97cb71e35a4f": {
+    "id": "97cb71e35a4f",
+    "name": "Thoma Bravo hires new Asia head",
+    "url": "https://finance.yahoo.com/markets/stocks/articles/thoma-bravo-hires-asia-head-202333228.html",
+    "category": "Market Event",
+    "description": "Thoma Bravo hires new Asia head",
+    "domain": "finance.yahoo.com",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "market_news",
+      "news:Thoma Bravo hires new Asia head"
+    ],
+    "tags": [
+      "market",
+      "news"
+    ]
+  },
+  "1a0e7a410173": {
+    "id": "1a0e7a410173",
+    "name": "Uber Stock Falls As Wall Street Sizes Up Tesla's Cybercab Rollout",
+    "url": "https://www.investors.com/news/technology/uber-stock-tesla-cybercab-austin-rollout/?src=A00220&yptr=yahoo",
+    "category": "Market Event",
+    "description": "Uber Stock Falls As Wall Street Sizes Up Tesla's Cybercab Rollout",
+    "domain": "investors.com",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "market_news",
+      "news:Uber Stock Falls As Wall Street Sizes Up Tesla's C"
+    ],
+    "tags": [
+      "market",
+      "news"
+    ]
+  },
+  "7885c6f41265": {
+    "id": "7885c6f41265",
+    "name": "TSMC, IBD Stock Of The Day, Rises Above Early Buy Point As Chip Stocks Rally",
+    "url": "https://www.investors.com/research/ibd-stock-of-the-day/tsm-stock-buy-point-chip-stocks/?src=A00220&yptr=yahoo",
+    "category": "Market Event",
+    "description": "TSMC, IBD Stock Of The Day, Rises Above Early Buy Point As Chip Stocks Rally",
+    "domain": "investors.com",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "market_news",
+      "news:TSMC, IBD Stock Of The Day, Rises Above Early Buy "
+    ],
+    "tags": [
+      "market",
+      "news"
+    ]
+  },
+  "c1a97f93ec51": {
+    "id": "c1a97f93ec51",
+    "name": "The Rise of Organized Retail Crime at Big Box Stores",
+    "url": "https://www.bloomberg.com/news/articles/2026-09-10/the-rise-of-organized-retail-crime-at-big-box-stores",
+    "category": "Market Event",
+    "description": "<p>Shoplifting is just the tip of the iceberg.</p>",
+    "domain": "bloomberg.com",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "market_news",
+      "news:The Rise of Organized Retail Crime at Big Box Stor"
+    ],
+    "tags": [
+      "market",
+      "news"
+    ]
+  },
+  "0d78e6695d16": {
+    "id": "0d78e6695d16",
+    "name": "Odd Lots: Organized Retail Crime at Big Box Stores (Podcast)",
+    "url": "https://www.bloomberg.com/news/audio/2026-09-10/odd-lots-organized-retail-crime-at-big-box-stores-podcast",
+    "category": "Market Event",
+    "description": "If you walk into a local pharmacy in New York City, more likely than not, lots of the merchandise is locked behind closed doors as a measure to mitigate shoplifting. So how big is the “retail shrink” problem really? And why are stores willing to sacrifice customer experience to protect their inventory? According to today’s guest, the Home Depot’s VP of Asset Protection Scott Glenn, shoplifting is just the tip of the iceberg when it comes to retail theft. What is really bedeviling companies like",
+    "domain": "bloomberg.com",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "market_news",
+      "news:Odd Lots: Organized Retail Crime at Big Box Stores"
+    ],
+    "tags": [
+      "market",
+      "news"
+    ]
+  },
+  "5eb446631046": {
+    "id": "5eb446631046",
+    "name": "Stocks Tick Higher Ahead of ECB, Tech Earnings: Markets Wrap",
+    "url": "https://www.bloomberg.com/news/articles/2026-09-09/stock-market-today-dow-s-p-live-updates",
+    "category": "Market Event",
+    "description": "US stocks futures snapped a three-day losing streak and Treasuries steadied, though risk appetite remained firmly in check ahead of big tests including tech earnings and an interest rate decision in Europe.",
+    "domain": "bloomberg.com",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "market_news",
+      "news:Stocks Tick Higher Ahead of ECB, Tech Earnings: Ma"
+    ],
+    "tags": [
+      "market",
+      "news"
+    ]
+  },
+  "e31cc0656bd9": {
+    "id": "e31cc0656bd9",
+    "name": "Economic Watch: China's inflation edges up, signaling sustained recovery in domestic demand - english.anhuinews.com",
+    "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOT2NxNE1oMThDcUw2cnZGb1dYTW1rMWhIaWRIZ2hJRS00dEdudWRxUTNiSTRPSmlxMUlBcnFNOURiV0VDUGdXUGhXYzFEZHZCUzVFM0VKS25oWVRCNE9pMWxLOURfTl9PMUJoQnNZLWdrUUhKQlk4ZzFjUHlLdEkyVndpdEk?oc=5",
+    "category": "Economy",
+    "description": "Economic Watch: China's inflation edges up, signaling sustained recovery in domestic demand - english.anhuinews.com",
+    "domain": "news.google.com",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "google_news_economy",
+      "gnews_eco:Economic Watch: China's inflation edges "
+    ],
+    "tags": [
+      "economy",
+      "macro",
+      "news"
+    ]
+  },
+  "b35eacc7d1d9": {
+    "id": "b35eacc7d1d9",
+    "name": "AdScope",
+    "url": "https://www.producthunt.com/products/adscope-2",
+    "category": "Product",
+    "description": "Understand your ad performance in secondsDiscussion",
+    "domain": "producthunt.com",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "producthunt",
+      "ph:adscope-2"
+    ],
+    "tags": [
+      "producthunt",
+      "product"
+    ]
+  },
+  "03ab9cff2ba9": {
+    "id": "03ab9cff2ba9",
+    "name": "Basedash in Español Français & Português",
+    "url": "https://www.producthunt.com/products/basedash",
+    "category": "AI/ML",
+    "description": "Work with your data in your languageDiscussion|",
+    "domain": "producthunt.com",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "producthunt",
+      "ph:basedash"
+    ],
+    "tags": [
+      "producthunt",
+      "product"
+    ]
+  },
+  "9a1bd0eab51e": {
+    "id": "9a1bd0eab51e",
+    "name": "The AlleyWatch Startup Daily Funding Report: 9/9/2026 - AlleyWatch",
+    "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPaFRoelh4aGR1SE1pa2U5cW5oaXo1U2FGZlFzcFNmeXJGbmx3UU5xcWd1cG1uOTdhYkZtRmxidENtQ2VIVVdQN2FwbDNmbloyNGZNdXJFMFJTMXJuRFBBQ0hBRHhUaUxJVXpsLXB0LV96QlNKMExxTTJaQ2ZWdEYzZGZoTFZvMjdULVdOcGpWZk1Jdw?oc=5",
+    "category": "Funding",
+    "description": "The AlleyWatch Startup Daily Funding Report: 9/9/2026 - AlleyWatch",
+    "domain": "news.google.com",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "google_news",
+      "gnews:The AlleyWatch Startup Daily Funding Rep"
+    ],
+    "tags": [
+      "news",
+      "google_news"
+    ]
+  },
+  "6238e257f689": {
+    "id": "6238e257f689",
+    "name": "Apple unveils first foldable iPhone, iPhone 18 Pro lineup, new watches at annual launch event - foxbusiness.com",
+    "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQQlJKUlM0VEl2YWEtWTFHc1hNUEcyUTZpU3NrMkhPNzNhZ0NRSjg1NnN2Mm8xTzZBaEJ6OVRlRnNIcHdCOGRIMXc4ZnBkZTZaOTRKNXQza1ZMN2hicENCa2lneWFnSFdlTXVyQXdvWnpVSU8taHF3UVBKS3BaZkZPVVl4NzVqdS1Yd0VMeUF2R1VIU19WbUwwRk1fTDVtclo5R1BtTkx3ajRYQjZYUXl5c3VrVGhNdHVqWHdWeWZvV1pHZm1RX2fSAcsBQVVfeXFMTWR2NTdBaGt3ekxCTHZJWGxXaW9EZ0o3cnN3MmkxLU5BMXlCZmwxZ3FBRDRzSUdjSUZLTkM1Rk14UDVuNDR0V3cyVHdiUzhNOFI4T0J2dFFXQVNPUlNkRDE0YUhFcTY4bl84Z2RWQ19WX1JYdUxjV3kzdG9VVUk0Y19HY0RiTUFUMXJSMmJlT2RERTQyaktoamNtMWxxTFAwd1k1UFpwa25kWkdLUlNWV1VEaHZDLUU4UWQ0R2ltbzVsN09abkhhc1NyUjA?oc=5",
+    "category": "Product",
+    "description": "Apple unveils first foldable iPhone, iPhone 18 Pro lineup, new watches at annual launch event - foxbusiness.com",
+    "domain": "news.google.com",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "google_news",
+      "gnews:Apple unveils first foldable iPhone, iPh"
+    ],
+    "tags": [
+      "news",
+      "google_news"
+    ]
+  },
+  "3cafb2186b79": {
+    "id": "3cafb2186b79",
+    "name": "Sterling Trading Tech Launches STRIDER™ - The Manila Times",
+    "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxObE1kNEdaa002V0RsN3dDazFOdVlpeWVkTFdQNUNQbnd0V2JSV3U2R0JaRl90cGx4N1RXQU5ESFRIMklPRU5vYmVVV01SSHdtaW15OGIyQnE3V3QxSjdZdjdkRWItSmR2aGxzN1c1WnplMVZWVnctMlEtNjNCaTZqUllXZTF5N2hGdWpQNU45Q3hOSDdhNHB3WWhhNE1XdExuVUFsdmhOazF1YlVaTnNlckRn0gG3AUFVX3lxTE9Xa3JNTEJGcUFWcC1tdDI0YjkzWHlkN0lPU0dReUFfMk5rZWtVd2lWQVRBdldpRy1aaEFRdk9pdzRhZGtzaERkOWVOMm5Gcmg0b2Z0cDJtbFYyWkg2TlFYa2NtbW9OZkpXa1paQ3VxbHlPN1MxbUhMX215dmtfMTBRNC1QTlZlNGY1YTJyVUx1ak5SM1hMYnl3X2JSdFY3OEltMW1LN3dSeUJtcExHaTY2aEJWMF9fTQ?oc=5",
+    "category": "Product",
+    "description": "Sterling Trading Tech Launches STRIDER™ - The Manila Times",
+    "domain": "news.google.com",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "google_news",
+      "gnews:Sterling Trading Tech Launches STRIDER™ "
+    ],
+    "tags": [
+      "news",
+      "google_news"
+    ]
+  },
+  "c1b5e828335d": {
+    "id": "c1b5e828335d",
+    "name": "Apple raises older iPhone prices in India after iPhone 18 Pro, Duo launch - Business Standard",
+    "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxNVjljOUJrdktKbzFlNlg4RkRrQVdmZmE2MmcxWXFhRFZwdTAzYm5NdDRHT0l2TUFoMnBYenZNTTNWbWZKTFN1MVFURkU3UXh0MHVBWlpISmRGQVVQci1oN3pPdEtpVnpGV3F0Yi1HV1h3dzBzS1IzdmVfSWk5LW9tSjEzeDU1QjJQdUNmWWQtUDZURWl0RE85Zm1DT2ZKWmtIa2k1M2x1UEUySWd5dTBhZmoxRHBYbTg4bm5nUzdGenZlRlpjbF9nNmRtV3FsQ1VTaExmT0dYdXBhWEhuYlJybFRLbmU1VGvSAecBQVVfeXFMTVY5YzlCa3ZLSm8xZTZYOEZEa0FXZmZhNjJnMVlxYURWcHUwM2JuTXQ0R09Jdk1BaDJwWHp2TU0zVm1mSkxTdTFRVEZFN1F4dDB1QVpaSEpkRkFVUHItaDd6T3RLaVZ6RldxdGItR1dYd3cwc0tSM3ZlX0lpOS1vbUoxM3g1NUIyUHVDZllkLVA2VEVpdERPOWZtQ09mSlprSGtpNTNsdVBFMklneXUwYWZqMURwWG04OG5uZ1M3Rnp2ZUZaY2xfZzZkbVdxbENVU2hMZk9HWHVwYVhIbmJScmxUS25lNVRr?oc=5",
+    "category": "Funding",
+    "description": "Apple raises older iPhone prices in India after iPhone 18 Pro, Duo launch - Business Standard",
+    "domain": "news.google.com",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "google_news",
+      "gnews:Apple raises older iPhone prices in Indi"
+    ],
+    "tags": [
+      "news",
+      "google_news"
     ]
   }
 }

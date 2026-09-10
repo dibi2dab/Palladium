@@ -15415,5 +15415,5576 @@
     "strength": 1,
     "url": "",
     "date": "2026-09-10"
+  },
+  {
+    "entity_id": "99c65f327696",
+    "category": "news",
+    "source": "hackernews",
+    "description": "iPhone Duo",
+    "strength": 1,
+    "url": "https://news.ycombinator.com/item?id=49630931",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "99c65f327696",
+    "category": "community",
+    "source": "hackernews",
+    "description": "HN points: 1163",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "54d3b6c1382d",
+    "category": "news",
+    "source": "hackernews",
+    "description": "DeepSeek v4.1 Flash",
+    "strength": 1,
+    "url": "https://news.ycombinator.com/item?id=49639090",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "54d3b6c1382d",
+    "category": "community",
+    "source": "hackernews",
+    "description": "HN points: 145",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "b635e844d502",
+    "category": "news",
+    "source": "hackernews",
+    "description": "Show HN: What if the speed of light was 5 km/h?",
+    "strength": 1,
+    "url": "https://news.ycombinator.com/item?id=49637385",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "b635e844d502",
+    "category": "community",
+    "source": "hackernews",
+    "description": "HN points: 262",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "ca4827468eb6",
+    "category": "funding",
+    "source": "hackernews",
+    "description": "M&A signal: Shopify acquires Tailwind",
+    "strength": 1,
+    "url": "https://news.ycombinator.com/item?id=49626190",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "ca4827468eb6",
+    "category": "community",
+    "source": "hackernews",
+    "description": "HN points: 1008",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "6f1c4b33a209",
+    "category": "news",
+    "source": "hackernews",
+    "description": "What do Visa and Mastercard do? An intro to card networks",
+    "strength": 1,
+    "url": "https://news.ycombinator.com/item?id=49614280",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "6f1c4b33a209",
+    "category": "community",
+    "source": "hackernews",
+    "description": "HN points: 501",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "4fc5a16fc239",
+    "category": "news",
+    "source": "hackernews",
+    "description": "Growing proof that autonomous cars save lives",
+    "strength": 1,
+    "url": "https://news.ycombinator.com/item?id=49629886",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "4fc5a16fc239",
+    "category": "community",
+    "source": "hackernews",
+    "description": "HN points: 326",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "645995b49f93",
+    "category": "news",
+    "source": "hackernews",
+    "description": "All grown-ups were once children, but only few of them remember it",
+    "strength": 1,
+    "url": "https://news.ycombinator.com/item?id=49638280",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "645995b49f93",
+    "category": "community",
+    "source": "hackernews",
+    "description": "HN points: 123",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "1801e261328b",
+    "category": "news",
+    "source": "hackernews",
+    "description": "Training a 3.8B LLM to 0.384 CORE for $998",
+    "strength": 1,
+    "url": "https://news.ycombinator.com/item?id=49637435",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "b95105e0332f",
+    "category": "news",
+    "source": "hackernews",
+    "description": "No Man's Sky Cosmos",
+    "strength": 1,
+    "url": "https://news.ycombinator.com/item?id=49628493",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "b95105e0332f",
+    "category": "community",
+    "source": "hackernews",
+    "description": "HN points: 367",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "645326d605db",
+    "category": "news",
+    "source": "hackernews",
+    "description": "AirPods 5",
+    "strength": 1,
+    "url": "https://news.ycombinator.com/item?id=49630253",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "645326d605db",
+    "category": "community",
+    "source": "hackernews",
+    "description": "HN points: 444",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "ced422f1f277",
+    "category": "news",
+    "source": "hackernews",
+    "description": "GPT-6 Astra, looped transformers, and hidden reasoning",
+    "strength": 1,
+    "url": "https://news.ycombinator.com/item?id=49627370",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "ced422f1f277",
+    "category": "community",
+    "source": "hackernews",
+    "description": "HN points: 404",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "e9c77bce93d3",
+    "category": "news",
+    "source": "hackernews",
+    "description": "iPhone 18 Pro and iPhone 18 Pro Max",
+    "strength": 1,
+    "url": "https://news.ycombinator.com/item?id=49630151",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "e9c77bce93d3",
+    "category": "community",
+    "source": "hackernews",
+    "description": "HN points: 350",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "ef2e751f5166",
+    "category": "news",
+    "source": "hackernews",
+    "description": "Show HN: Compute polynomials twice as fast",
+    "strength": 1,
+    "url": "https://news.ycombinator.com/item?id=49623398",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "24ed982daea9",
+    "category": "news",
+    "source": "hackernews",
+    "description": "A Stupid Idea for AI Alignment We Came with by Looking at Specification Gaming",
+    "strength": 1,
+    "url": "https://news.ycombinator.com/item?id=49637395",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "54ee49298921",
+    "category": "news",
+    "source": "hackernews",
+    "description": "Automattic's board forces CEO Matt Mullenweg into leave of absence",
+    "strength": 1,
+    "url": "https://news.ycombinator.com/item?id=49636283",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "54ee49298921",
+    "category": "community",
+    "source": "hackernews",
+    "description": "HN points: 226",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "3e0ed596f1d7",
+    "category": "news",
+    "source": "hackernews",
+    "description": "OpenAI might have stolen another major proof",
+    "strength": 1,
+    "url": "https://news.ycombinator.com/item?id=49638353",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "3e0ed596f1d7",
+    "category": "community",
+    "source": "hackernews",
+    "description": "HN points: 172",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "a532c06b5ac9",
+    "category": "news",
+    "source": "hackernews",
+    "description": "Factoring RSA 260",
+    "strength": 1,
+    "url": "https://news.ycombinator.com/item?id=49633534",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "ff4d3ad19c35",
+    "category": "news",
+    "source": "hackernews",
+    "description": "Qwen 3.8 follows GPT-5.5 Pro reasoning prefills",
+    "strength": 1,
+    "url": "https://news.ycombinator.com/item?id=49630026",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "ff4d3ad19c35",
+    "category": "community",
+    "source": "hackernews",
+    "description": "HN points: 207",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "ebf4650d352e",
+    "category": "news",
+    "source": "hackernews",
+    "description": "Desert Ant Labs: local, fast models that run on device",
+    "strength": 1,
+    "url": "https://news.ycombinator.com/item?id=49624823",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "ebf4650d352e",
+    "category": "community",
+    "source": "hackernews",
+    "description": "HN points: 435",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "660c53bc8e3d",
+    "category": "news",
+    "source": "hackernews",
+    "description": "Apple Watch Series 12",
+    "strength": 1,
+    "url": "https://news.ycombinator.com/item?id=49630566",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "660c53bc8e3d",
+    "category": "community",
+    "source": "hackernews",
+    "description": "HN points: 249",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "922e0b443453",
+    "category": "news",
+    "source": "hackernews",
+    "description": "Rivian's gambit for full autonomy",
+    "strength": 1,
+    "url": "https://news.ycombinator.com/item?id=49615245",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "c4016a7e63e6",
+    "category": "news",
+    "source": "hackernews",
+    "description": "How I advertise malicious software on Google Ads",
+    "strength": 1,
+    "url": "https://news.ycombinator.com/item?id=49624856",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "c4016a7e63e6",
+    "category": "community",
+    "source": "hackernews",
+    "description": "HN points: 396",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "a8fde38d5d90",
+    "category": "news",
+    "source": "hackernews",
+    "description": "The UN challenges five centuries of cartography",
+    "strength": 1,
+    "url": "https://news.ycombinator.com/item?id=49629209",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "e661539c8f7b",
+    "category": "news",
+    "source": "hackernews",
+    "description": "GNU Radio in the browser",
+    "strength": 1,
+    "url": "https://news.ycombinator.com/item?id=49628576",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "e661539c8f7b",
+    "category": "community",
+    "source": "hackernews",
+    "description": "HN points: 197",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "f85c1382d364",
+    "category": "news",
+    "source": "hackernews",
+    "description": "Planet Labs' open satellite feed",
+    "strength": 1,
+    "url": "https://news.ycombinator.com/item?id=49628429",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "f85c1382d364",
+    "category": "community",
+    "source": "hackernews",
+    "description": "HN points: 173",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "4c50373897b9",
+    "category": "news",
+    "source": "hackernews",
+    "description": "Understanding the recent DDoS attack against Read the Docs",
+    "strength": 1,
+    "url": "https://news.ycombinator.com/item?id=49628614",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "4c50373897b9",
+    "category": "community",
+    "source": "hackernews",
+    "description": "HN points: 186",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "198374045a36",
+    "category": "news",
+    "source": "hackernews",
+    "description": "Blizzard Workers Win Historic Union Contract",
+    "strength": 1,
+    "url": "https://news.ycombinator.com/item?id=49635384",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "198374045a36",
+    "category": "community",
+    "source": "hackernews",
+    "description": "HN points: 185",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "7ec282f391b0",
+    "category": "news",
+    "source": "hackernews",
+    "description": "Lotus Notes and the dangers of starting from scratch",
+    "strength": 1,
+    "url": "https://news.ycombinator.com/item?id=49623937",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "7ec282f391b0",
+    "category": "community",
+    "source": "hackernews",
+    "description": "HN points: 165",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "e9cb31ec79ce",
+    "category": "news",
+    "source": "hackernews",
+    "description": "What will our economic future look like?",
+    "strength": 1,
+    "url": "https://news.ycombinator.com/item?id=49626373",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "e9cb31ec79ce",
+    "category": "community",
+    "source": "hackernews",
+    "description": "HN points: 206",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "13f3f92cc64e",
+    "category": "news",
+    "source": "hackernews",
+    "description": "Why Emacs Consult async searches feel slow and how to speed them up",
+    "strength": 1,
+    "url": "https://news.ycombinator.com/item?id=49629865",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "05bd9527c728",
+    "category": "news",
+    "source": "hackernews",
+    "description": "Procedural Graphs: Self-Evolving Execution Structures for LLM Agents",
+    "strength": 1,
+    "url": "https://news.ycombinator.com/item?id=49629868",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "c636734cc586",
+    "category": "news",
+    "source": "hackernews",
+    "description": "Muse – Meta’s personal AI agent",
+    "strength": 1,
+    "url": "https://news.ycombinator.com/item?id=49615537",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "c636734cc586",
+    "category": "community",
+    "source": "hackernews",
+    "description": "HN points: 643",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "854a0b030770",
+    "category": "news",
+    "source": "hackernews",
+    "description": "How GPT‑5.6 Sol helps run quantum computing experiments",
+    "strength": 1,
+    "url": "https://news.ycombinator.com/item?id=49622561",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "854a0b030770",
+    "category": "community",
+    "source": "hackernews",
+    "description": "HN points: 146",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "069863421cac",
+    "category": "news",
+    "source": "hackernews",
+    "description": "We accidentally built a synthetic cell factory",
+    "strength": 1,
+    "url": "https://news.ycombinator.com/item?id=49628290",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "05c747e25e62",
+    "category": "news",
+    "source": "hackernews",
+    "description": "Claude, change the “Add to Cart” button to blue",
+    "strength": 1,
+    "url": "https://news.ycombinator.com/item?id=49623754",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "05c747e25e62",
+    "category": "community",
+    "source": "hackernews",
+    "description": "HN points: 1106",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "12f4e29cb708",
+    "category": "news",
+    "source": "hackernews",
+    "description": "Playing whack-a-mole is losing",
+    "strength": 1,
+    "url": "https://news.ycombinator.com/item?id=49626429",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "582d62c4e6a5",
+    "category": "news",
+    "source": "hackernews",
+    "description": "Apple Watch Ultra 4",
+    "strength": 1,
+    "url": "https://news.ycombinator.com/item?id=49630583",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "062ddffe0ef3",
+    "category": "news",
+    "source": "hackernews",
+    "description": "Building a Wall Lamp from Scratch",
+    "strength": 1,
+    "url": "https://news.ycombinator.com/item?id=49623938",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "a8106e690cb1",
+    "category": "news",
+    "source": "hackernews",
+    "description": "Tao: Open math problems being non-renewably mined by AI",
+    "strength": 1,
+    "url": "https://news.ycombinator.com/item?id=49616968",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "a8106e690cb1",
+    "category": "community",
+    "source": "hackernews",
+    "description": "HN points: 476",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "dd6124b84bc8",
+    "category": "news",
+    "source": "hackernews",
+    "description": "A Biography of Lee Holloway, the Architect of Cloudflare's Technology (Part 1)",
+    "strength": 1,
+    "url": "https://news.ycombinator.com/item?id=49621102",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "9fd68d1b7eb6",
+    "category": "news",
+    "source": "hackernews",
+    "description": "On Really Trying (2009)",
+    "strength": 1,
+    "url": "https://news.ycombinator.com/item?id=49622305",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "9fd68d1b7eb6",
+    "category": "community",
+    "source": "hackernews",
+    "description": "HN points: 103",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "0c6db266d15b",
+    "category": "news",
+    "source": "hackernews",
+    "description": "AlphaGenome Atlas: a high-resolution map of human DNA",
+    "strength": 1,
+    "url": "https://news.ycombinator.com/item?id=49611251",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "0c6db266d15b",
+    "category": "community",
+    "source": "hackernews",
+    "description": "HN points: 593",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "0a2afdc3930a",
+    "category": "news",
+    "source": "hackernews",
+    "description": "How to build a printer",
+    "strength": 1,
+    "url": "https://news.ycombinator.com/item?id=49617255",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "0a2afdc3930a",
+    "category": "community",
+    "source": "hackernews",
+    "description": "HN points: 435",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "50217462aeba",
+    "category": "news",
+    "source": "hackernews",
+    "description": "Getting your hands dirty is good for you",
+    "strength": 1,
+    "url": "https://news.ycombinator.com/item?id=49608023",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "50217462aeba",
+    "category": "community",
+    "source": "hackernews",
+    "description": "HN points: 249",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "69b4cf2d7640",
+    "category": "product_launch",
+    "source": "hackernews",
+    "description": "Product event: FreeBSD 14.5-Release",
+    "strength": 1,
+    "url": "https://news.ycombinator.com/item?id=49609174",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "69b4cf2d7640",
+    "category": "community",
+    "source": "hackernews",
+    "description": "HN points: 144",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "94216a45122e",
+    "category": "news",
+    "source": "hackernews",
+    "description": "27.5KB language-agnostic WebGPU syntax highlighter",
+    "strength": 1,
+    "url": "https://news.ycombinator.com/item?id=49619464",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "94216a45122e",
+    "category": "community",
+    "source": "hackernews",
+    "description": "HN points: 119",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "30b0c84d0fdc",
+    "category": "news",
+    "source": "hackernews",
+    "description": "A Topological Picture Book, Rendered",
+    "strength": 1,
+    "url": "https://news.ycombinator.com/item?id=49618050",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "30b0c84d0fdc",
+    "category": "community",
+    "source": "hackernews",
+    "description": "HN points: 139",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "8a7419da1a67",
+    "category": "news",
+    "source": "hackernews",
+    "description": "ChatGPT Images 2.5",
+    "strength": 1,
+    "url": "https://news.ycombinator.com/item?id=49614720",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "8a7419da1a67",
+    "category": "community",
+    "source": "hackernews",
+    "description": "HN points: 379",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "309bbbc98474",
+    "category": "news",
+    "source": "hackernews",
+    "description": "Show HN: Copperhead – Cursor for circuit boards",
+    "strength": 1,
+    "url": "https://news.ycombinator.com/item?id=49610059",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "309bbbc98474",
+    "category": "community",
+    "source": "hackernews",
+    "description": "HN points: 242",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "16bc5ed266ee",
+    "category": "news",
+    "source": "hackernews",
+    "description": "“Tweet” and the bird logo apparently enter the public domain",
+    "strength": 1,
+    "url": "https://news.ycombinator.com/item?id=49621751",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "16bc5ed266ee",
+    "category": "community",
+    "source": "hackernews",
+    "description": "HN points: 221",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "cb025caa3f80",
+    "category": "news",
+    "source": "hackernews",
+    "description": "Italy proposes no fees for digital euro payments under €10",
+    "strength": 1,
+    "url": "https://news.ycombinator.com/item?id=49630194",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "740b2747a6de",
+    "category": "news",
+    "source": "hackernews",
+    "description": "Microsoft/TracerAI withdraws copyright takedown against Luanti",
+    "strength": 1,
+    "url": "https://news.ycombinator.com/item?id=49627306",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "91db98933bcf",
+    "category": "news",
+    "source": "hackernews",
+    "description": "Is OpenAI Taking Everyone for Fools?",
+    "strength": 1,
+    "url": "https://news.ycombinator.com/item?id=49629802",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "7240acc99acb",
+    "category": "news",
+    "source": "hackernews",
+    "description": "DaVinci Resolve 21.1",
+    "strength": 1,
+    "url": "https://news.ycombinator.com/item?id=49610181",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "7240acc99acb",
+    "category": "community",
+    "source": "hackernews",
+    "description": "HN points: 436",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "f3c6918e8620",
+    "category": "news",
+    "source": "hackernews",
+    "description": "Show HN: LLM Attention Visualization",
+    "strength": 1,
+    "url": "https://news.ycombinator.com/item?id=49613068",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "f3c6918e8620",
+    "category": "community",
+    "source": "hackernews",
+    "description": "HN points: 167",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "b71685dace50",
+    "category": "news",
+    "source": "hackernews",
+    "description": "Antiquated HTML Snippets and Artefacts",
+    "strength": 1,
+    "url": "https://news.ycombinator.com/item?id=49607991",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "b71685dace50",
+    "category": "community",
+    "source": "hackernews",
+    "description": "HN points: 241",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "fc2991c173aa",
+    "category": "news",
+    "source": "hackernews",
+    "description": "I-have-ADHD: A skill to stop coding agents from burying the answer",
+    "strength": 1,
+    "url": "https://news.ycombinator.com/item?id=49610631",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "fc2991c173aa",
+    "category": "community",
+    "source": "hackernews",
+    "description": "HN points: 529",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "21beafac26b1",
+    "category": "news",
+    "source": "hackernews",
+    "description": "Mercury 2.5",
+    "strength": 1,
+    "url": "https://news.ycombinator.com/item?id=49616354",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "21beafac26b1",
+    "category": "community",
+    "source": "hackernews",
+    "description": "HN points: 245",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "d6815bc162b9",
+    "category": "news",
+    "source": "hackernews",
+    "description": "AlphaGenome Atlas predictive map of every DNA letter change in the human genome",
+    "strength": 1,
+    "url": "https://news.ycombinator.com/item?id=49610641",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "fe39eb632304",
+    "category": "news",
+    "source": "hackernews",
+    "description": "I'm sorry, you're not going to die from an AI-engineered supervirus",
+    "strength": 1,
+    "url": "https://news.ycombinator.com/item?id=49636906",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "1e5297ddb8b2",
+    "category": "news",
+    "source": "hackernews",
+    "description": "How An AI math breakthrough ignited a controversy",
+    "strength": 1,
+    "url": "https://news.ycombinator.com/item?id=49624163",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "1e5297ddb8b2",
+    "category": "community",
+    "source": "hackernews",
+    "description": "HN points: 217",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "05c259f88a66",
+    "category": "news",
+    "source": "hackernews",
+    "description": "Kimi K3 (2.8T) at 1 token/s on a MacBook Pro, streamed from four SSDs",
+    "strength": 1,
+    "url": "https://news.ycombinator.com/item?id=49616257",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "05c259f88a66",
+    "category": "community",
+    "source": "hackernews",
+    "description": "HN points: 276",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "ef4d49aee949",
+    "category": "news",
+    "source": "hackernews",
+    "description": "ZX Spectrum: Experimenting with 1-Bit Sound",
+    "strength": 1,
+    "url": "https://news.ycombinator.com/item?id=49611230",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "ef4d49aee949",
+    "category": "community",
+    "source": "hackernews",
+    "description": "HN points: 107",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "0204f068fe52",
+    "category": "news",
+    "source": "hackernews",
+    "description": "C*: Unifying Programming and Verification in C (2025)",
+    "strength": 1,
+    "url": "https://news.ycombinator.com/item?id=49612191",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "387357dd8458",
+    "category": "funding",
+    "source": "sec_edgar",
+    "description": "M&A signal: Material agreement entered into | Acquisition/asset disposition completed | Unre",
+    "strength": 1,
+    "url": "https://www.sec.gov/Archives/edgar/data/0000001907223/000121390026097770/ea0304732-8k_greenland.htm",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "387357dd8458",
+    "category": "news",
+    "source": "sec_edgar",
+    "description": "Material agreement entered into | Acquisition/asset disposition completed | Unregistered equity sale",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "3ac7231fd45c",
+    "category": "funding",
+    "source": "sec_edgar",
+    "description": "M&A signal: Material agreement entered into | Unregistered equity sale | 8-K item 9.01 STAND",
+    "strength": 1,
+    "url": "https://www.sec.gov/Archives/edgar/data/0000002035016/000121390026096875/ea030057301ex10-1.htm",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "3ac7231fd45c",
+    "category": "news",
+    "source": "sec_edgar",
+    "description": "Material agreement entered into | Unregistered equity sale | 8-K item 9.01 STANDBY EQUITY PURCHASE A",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "e459842366da",
+    "category": "funding",
+    "source": "sec_edgar",
+    "description": "M&A signal: Material agreement entered into | Unregistered equity sale | Regulation FD discl",
+    "strength": 1,
+    "url": "https://www.sec.gov/Archives/edgar/data/0000002033991/000110465926104858/tm2619716d3_ex10-5.htm",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "e459842366da",
+    "category": "news",
+    "source": "sec_edgar",
+    "description": "Material agreement entered into | Unregistered equity sale | Regulation FD disclosure EXHIBIT 10.5 [",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "a1159d883c5a",
+    "category": "news",
+    "source": "sec_edgar",
+    "description": "Material agreement entered into | Regulation FD disclosure | 8-K item 9.01 8-K [8-K] 2026-09-04",
+    "strength": 1,
+    "url": "https://www.sec.gov/Archives/edgar/data/0000001692951/000169295126000168/cci-20260902.htm",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "a1159d883c5a",
+    "category": "news",
+    "source": "sec_edgar",
+    "description": "Material agreement entered into | Regulation FD disclosure | 8-K item 9.01 8-K [8-K] 2026-09-04",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "df44fb3c13ae",
+    "category": "funding",
+    "source": "sec_edgar",
+    "description": "M&A signal: Material agreement entered into | Acquisition/asset disposition completed | Unre",
+    "strength": 1,
+    "url": "https://www.sec.gov/Archives/edgar/data/0000001938570/000119312526385826/d162976dex21.htm",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "df44fb3c13ae",
+    "category": "news",
+    "source": "sec_edgar",
+    "description": "Material agreement entered into | Acquisition/asset disposition completed | Unregistered equity sale",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "7638bae03ebf",
+    "category": "news",
+    "source": "sec_edgar",
+    "description": "Material agreement entered into | Regulation FD disclosure | 8-K item 9.01 EX-2.1 [8-K] 2026-09-08",
+    "strength": 1,
+    "url": "https://www.sec.gov/Archives/edgar/data/0000001795586/000119312526385383/d948605dex21.htm",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "7638bae03ebf",
+    "category": "news",
+    "source": "sec_edgar",
+    "description": "Material agreement entered into | Regulation FD disclosure | 8-K item 9.01 EX-2.1 [8-K] 2026-09-08",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "d8a25bbf22a6",
+    "category": "news",
+    "source": "sec_edgar",
+    "description": "Material agreement entered into | 8-K item 9.01 8-K [8-K] 2026-09-09",
+    "strength": 1,
+    "url": "https://www.sec.gov/Archives/edgar/data/0000001922446/000192244626000086/dec-20260902.htm",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "d8a25bbf22a6",
+    "category": "news",
+    "source": "sec_edgar",
+    "description": "Material agreement entered into | 8-K item 9.01 8-K [8-K] 2026-09-09",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "deeba8cc652d",
+    "category": "news",
+    "source": "sec_edgar",
+    "description": "Material agreement entered into | Regulation FD disclosure | 8-K item 9.01 EX-10.1 [8-K] 2026-09-03",
+    "strength": 1,
+    "url": "https://www.sec.gov/Archives/edgar/data/0000001227500/000119312526381051/d152469dex101.htm",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "deeba8cc652d",
+    "category": "news",
+    "source": "sec_edgar",
+    "description": "Material agreement entered into | Regulation FD disclosure | 8-K item 9.01 EX-10.1 [8-K] 2026-09-03",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "2c23e6bf8711",
+    "category": "product_launch",
+    "source": "sec_edgar",
+    "description": "Product event: Operating results/financials released | Other material event | 8-K item 9.01 UNA",
+    "strength": 1,
+    "url": "https://www.sec.gov/Archives/edgar/data/0000001734750/000121390026097690/ea030451501ex99-1.htm",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "2c23e6bf8711",
+    "category": "news",
+    "source": "sec_edgar",
+    "description": "Operating results/financials released | Other material event | 8-K item 9.01 UNAUDITED PRO FORMA CON",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "9f4f371754f5",
+    "category": "funding",
+    "source": "sec_edgar",
+    "description": "M&A signal: Acquisition/asset disposition completed | Regulation FD disclosure | 8-K item 9.",
+    "strength": 1,
+    "url": "https://www.sec.gov/Archives/edgar/data/0000002096300/000119312526385301/d930675d8k.htm",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "9f4f371754f5",
+    "category": "news",
+    "source": "sec_edgar",
+    "description": "Acquisition/asset disposition completed | Regulation FD disclosure | 8-K item 9.01 8-K [8-K] 2026-09",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "063df82bccfa",
+    "category": "funding",
+    "source": "sec_edgar",
+    "description": "M&A signal: Material agreement entered into | Acquisition/asset disposition completed | Unre",
+    "strength": 1,
+    "url": "https://www.sec.gov/Archives/edgar/data/0000001697500/000119312526385257/d441137d8k.htm",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "063df82bccfa",
+    "category": "news",
+    "source": "sec_edgar",
+    "description": "Material agreement entered into | Acquisition/asset disposition completed | Unregistered equity sale",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "ba0fc41b31a4",
+    "category": "funding",
+    "source": "sec_edgar",
+    "description": "M&A signal: Material agreement entered into | Regulation FD disclosure | 8-K item 9.01 CURRE",
+    "strength": 1,
+    "url": "https://www.sec.gov/Archives/edgar/data/0000002081468/000121390026097901/ea0304759-8k425_meshflow.htm",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "ba0fc41b31a4",
+    "category": "news",
+    "source": "sec_edgar",
+    "description": "Material agreement entered into | Regulation FD disclosure | 8-K item 9.01 CURRENT REPORT [8-K] 2026",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "7e4c619dbd17",
+    "category": "funding",
+    "source": "sec_edgar",
+    "description": "M&A signal: Material agreement entered into | Acquisition/asset disposition completed | 8-K ",
+    "strength": 1,
+    "url": "https://www.sec.gov/Archives/edgar/data/0000000727346/000149315226041840/form8-k.htm",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "7e4c619dbd17",
+    "category": "news",
+    "source": "sec_edgar",
+    "description": "Material agreement entered into | Acquisition/asset disposition completed | 8-K item 3.03 8-K [8-K] ",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "ed36277441bf",
+    "category": "news",
+    "source": "sec_edgar",
+    "description": "Material agreement entered into | Regulation FD disclosure | 8-K item 9.01 EX-10.1 [8-K] 2026-09-08",
+    "strength": 1,
+    "url": "https://www.sec.gov/Archives/edgar/data/0000000880641/000119312526384457/d436411dex101.htm",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "ed36277441bf",
+    "category": "news",
+    "source": "sec_edgar",
+    "description": "Material agreement entered into | Regulation FD disclosure | 8-K item 9.01 EX-10.1 [8-K] 2026-09-08",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "e78c6ba227a6",
+    "category": "news",
+    "source": "sec_edgar",
+    "description": "Material agreement entered into | Director/officer change | Regulation FD disclosure 8-K [8-K] 2026-",
+    "strength": 1,
+    "url": "https://www.sec.gov/Archives/edgar/data/0000001710482/000155278126000472/e26378_ex10-1.htm",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "e78c6ba227a6",
+    "category": "news",
+    "source": "sec_edgar",
+    "description": "Material agreement entered into | Director/officer change | Regulation FD disclosure 8-K [8-K] 2026-",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "2d78e438ef03",
+    "category": "news",
+    "source": "sec_edgar",
+    "description": "Material agreement entered into | Unregistered equity sale | 8-K item 9.01 EXHIBIT 2.1 [8-K] 2026-09",
+    "strength": 1,
+    "url": "https://www.sec.gov/Archives/edgar/data/0000001787297/000114036126035515/ef20081513_ex2-1.htm",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "2d78e438ef03",
+    "category": "news",
+    "source": "sec_edgar",
+    "description": "Material agreement entered into | Unregistered equity sale | 8-K item 9.01 EXHIBIT 2.1 [8-K] 2026-09",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "f6a44f28542b",
+    "category": "news",
+    "source": "sec_edgar",
+    "description": "8-K item 9.01 EX-99.1 [8-K/A] 2026-09-08",
+    "strength": 1,
+    "url": "https://www.sec.gov/Archives/edgar/data/0000000866829/000119312526384311/d50831dex991.htm",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "f6a44f28542b",
+    "category": "news",
+    "source": "sec_edgar",
+    "description": "8-K item 9.01 EX-99.1 [8-K/A] 2026-09-08",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "92efe4394b0a",
+    "category": "product_launch",
+    "source": "sec_edgar",
+    "description": "Product event: Material agreement entered into | Regulation FD disclosure | 8-K item 9.01 PRESS",
+    "strength": 1,
+    "url": "https://www.sec.gov/Archives/edgar/data/0000002054876/000121390026097868/ea030467201ex99-1.htm",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "92efe4394b0a",
+    "category": "funding",
+    "source": "sec_edgar",
+    "description": "M&A signal: Material agreement entered into | Regulation FD disclosure | 8-K item 9.01 PRESS",
+    "strength": 1,
+    "url": "https://www.sec.gov/Archives/edgar/data/0000002054876/000121390026097868/ea030467201ex99-1.htm",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "92efe4394b0a",
+    "category": "news",
+    "source": "sec_edgar",
+    "description": "Material agreement entered into | Regulation FD disclosure | 8-K item 9.01 PRESS RELEASE, DATED AS O",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "6fc32b287434",
+    "category": "news",
+    "source": "sec_edgar",
+    "description": "Material agreement entered into | 8-K item 2.03 | Unregistered equity sale EXHIBIT 10.2 [8-K] 2026-0",
+    "strength": 1,
+    "url": "https://www.sec.gov/Archives/edgar/data/0000001842939/000143774926029714/ex_1012639.htm",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "6fc32b287434",
+    "category": "news",
+    "source": "sec_edgar",
+    "description": "Material agreement entered into | 8-K item 2.03 | Unregistered equity sale EXHIBIT 10.2 [8-K] 2026-0",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "506cc3c49ff3",
+    "category": "news",
+    "source": "sec_edgar",
+    "description": "Material agreement entered into | Unregistered equity sale | Director/officer change EXHIBIT 2.1 [8-",
+    "strength": 1,
+    "url": "https://www.sec.gov/Archives/edgar/data/0000000936528/000114036126035826/ef20081702_ex2-1.htm",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "506cc3c49ff3",
+    "category": "news",
+    "source": "sec_edgar",
+    "description": "Material agreement entered into | Unregistered equity sale | Director/officer change EXHIBIT 2.1 [8-",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "53d962280247",
+    "category": "news",
+    "source": "sec_edgar",
+    "description": "Regulation FD disclosure | 8-K item 9.01 EX-99.1 [8-K] 2026-09-08",
+    "strength": 1,
+    "url": "https://www.sec.gov/Archives/edgar/data/0000001699136/000162828026060938/september2026investorpre.htm",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "53d962280247",
+    "category": "news",
+    "source": "sec_edgar",
+    "description": "Regulation FD disclosure | 8-K item 9.01 EX-99.1 [8-K] 2026-09-08",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "4092e5e44e9d",
+    "category": "funding",
+    "source": "sec_edgar",
+    "description": "M&A signal: Material agreement entered into | Acquisition/asset disposition completed | 8-K ",
+    "strength": 1,
+    "url": "https://www.sec.gov/Archives/edgar/data/0000001970622/000121390026097399/ea0304001-8k_usarare.htm",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "4092e5e44e9d",
+    "category": "news",
+    "source": "sec_edgar",
+    "description": "Material agreement entered into | Acquisition/asset disposition completed | 8-K item 2.03 CURRENT RE",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "56bf630131a3",
+    "category": "funding",
+    "source": "sec_edgar",
+    "description": "M&A signal: 8-K item 1.02 | 8-K item 9.01 8-K [8-K] 2026-09-08",
+    "strength": 1,
+    "url": "https://www.sec.gov/Archives/edgar/data/0000002024203/000149315226041659/form8-k.htm",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "56bf630131a3",
+    "category": "news",
+    "source": "sec_edgar",
+    "description": "8-K item 1.02 | 8-K item 9.01 8-K [8-K] 2026-09-08",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "80252014b99b",
+    "category": "news",
+    "source": "sec_edgar",
+    "description": "8-K item 5.07 8-K [8-K] 2026-09-08",
+    "strength": 1,
+    "url": "https://www.sec.gov/Archives/edgar/data/0000002081043/000114036126035939/ef20081508_8k.htm",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "80252014b99b",
+    "category": "news",
+    "source": "sec_edgar",
+    "description": "8-K item 5.07 8-K [8-K] 2026-09-08",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "67bc5adfefbf",
+    "category": "funding",
+    "source": "sec_edgar",
+    "description": "M&A signal: Other material event | 8-K item 9.01 EX-99.1 [8-K] 2026-09-08",
+    "strength": 1,
+    "url": "https://www.sec.gov/Archives/edgar/data/0000002131350/000119312526385209/d102609dex991.htm",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "67bc5adfefbf",
+    "category": "news",
+    "source": "sec_edgar",
+    "description": "Other material event | 8-K item 9.01 EX-99.1 [8-K] 2026-09-08",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "77cde07c8e6b",
+    "category": "funding",
+    "source": "sec_edgar",
+    "description": "M&A signal: 8-K item 5.07 CURRENT REPORT [8-K] 2026-09-03",
+    "strength": 1,
+    "url": "https://www.sec.gov/Archives/edgar/data/0000002028355/000121390026097265/ea0304463-8k425_inflection5.htm",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "77cde07c8e6b",
+    "category": "news",
+    "source": "sec_edgar",
+    "description": "8-K item 5.07 CURRENT REPORT [8-K] 2026-09-03",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "5b492472e81d",
+    "category": "funding",
+    "source": "sec_edgar",
+    "description": "M&A signal: Material agreement entered into | Unregistered equity sale | Director/officer ch",
+    "strength": 1,
+    "url": "https://www.sec.gov/Archives/edgar/data/0000002128462/000119312526383643/d111915dex991.htm",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "5b492472e81d",
+    "category": "news",
+    "source": "sec_edgar",
+    "description": "Material agreement entered into | Unregistered equity sale | Director/officer change EX-99.1 [8-K] 2",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "84790269c37b",
+    "category": "news",
+    "source": "sec_edgar",
+    "description": "Regulation FD disclosure | 8-K item 9.01 EX-99.1 - RAYMOND JAMES INVESTOR PRESENTATION [8-K] 2026-09",
+    "strength": 1,
+    "url": "https://www.sec.gov/Archives/edgar/data/0000000776901/000077690126000140/investorpresentationslid.htm",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "84790269c37b",
+    "category": "news",
+    "source": "sec_edgar",
+    "description": "Regulation FD disclosure | 8-K item 9.01 EX-99.1 - RAYMOND JAMES INVESTOR PRESENTATION [8-K] 2026-09",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "dbe485262a7b",
+    "category": "funding",
+    "source": "sec_edgar",
+    "description": "M&A signal: Material agreement entered into | 8-K item 1.02 | Acquisition/asset disposition ",
+    "strength": 1,
+    "url": "https://www.sec.gov/Archives/edgar/data/0000001823000/000110465926105512/tm2624785d1_8k.htm",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "dbe485262a7b",
+    "category": "news",
+    "source": "sec_edgar",
+    "description": "Material agreement entered into | 8-K item 1.02 | Acquisition/asset disposition completed FORM 8-K [",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "ac77e30ac951",
+    "category": "news",
+    "source": "sec_edgar",
+    "description": "Material agreement entered into | Regulation FD disclosure | 8-K item 9.01 8-K [8-K] 2026-09-09",
+    "strength": 1,
+    "url": "https://www.sec.gov/Archives/edgar/data/0000000798359/000114036126035986/ef20081761_8k.htm",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "ac77e30ac951",
+    "category": "news",
+    "source": "sec_edgar",
+    "description": "Material agreement entered into | Regulation FD disclosure | 8-K item 9.01 8-K [8-K] 2026-09-09",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "5cccdf2bd4a4",
+    "category": "funding",
+    "source": "sec_edgar",
+    "description": "M&A signal: Material agreement entered into | 8-K item 9.01 EX-2.1 [8-K] 2026-09-03",
+    "strength": 1,
+    "url": "https://www.sec.gov/Archives/edgar/data/0000002025608/000149315226041389/ex2-1.htm",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "5cccdf2bd4a4",
+    "category": "news",
+    "source": "sec_edgar",
+    "description": "Material agreement entered into | 8-K item 9.01 EX-2.1 [8-K] 2026-09-03",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "c5ef873c4e03",
+    "category": "news",
+    "source": "sec_edgar",
+    "description": "8-K item 5.03 | Other material event | 8-K item 9.01 EX-4.1 [8-K] 2026-09-04",
+    "strength": 1,
+    "url": "https://www.sec.gov/Archives/edgar/data/0000001482541/000148254126000045/descriptionofsecurities_ap.htm",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "c5ef873c4e03",
+    "category": "news",
+    "source": "sec_edgar",
+    "description": "8-K item 5.03 | Other material event | 8-K item 9.01 EX-4.1 [8-K] 2026-09-04",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "2d9e33b7c54d",
+    "category": "funding",
+    "source": "sec_edgar",
+    "description": "M&A signal: Acquisition/asset disposition completed | Regulation FD disclosure | 8-K item 9.",
+    "strength": 1,
+    "url": "https://www.sec.gov/Archives/edgar/data/0000000893847/000089384726000091/ex991pressrelease_hwbkacqu.htm",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "2d9e33b7c54d",
+    "category": "news",
+    "source": "sec_edgar",
+    "description": "Acquisition/asset disposition completed | Regulation FD disclosure | 8-K item 9.01 EX-99.1 [8-K] 202",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "0d3ecb559947",
+    "category": "news",
+    "source": "sec_edgar",
+    "description": "Material agreement entered into | 8-K item 9.01 EX-2.1 [8-K] 2026-09-09",
+    "strength": 1,
+    "url": "https://www.sec.gov/Archives/edgar/data/0000001702510/000119312526385584/d153258dex21.htm",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "0d3ecb559947",
+    "category": "news",
+    "source": "sec_edgar",
+    "description": "Material agreement entered into | 8-K item 9.01 EX-2.1 [8-K] 2026-09-09",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "cf9fced5b4fd",
+    "category": "news",
+    "source": "sec_edgar",
+    "description": "Material agreement entered into | 8-K item 2.03 | 8-K item 9.01 EX-10.2 [8-K] 2026-09-04",
+    "strength": 1,
+    "url": "https://www.sec.gov/Archives/edgar/data/0000001854270/000162828026060600/ex102_equitycommitmentlett.htm",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "cf9fced5b4fd",
+    "category": "news",
+    "source": "sec_edgar",
+    "description": "Material agreement entered into | 8-K item 2.03 | 8-K item 9.01 EX-10.2 [8-K] 2026-09-04",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "8719b573bc4c",
+    "category": "funding",
+    "source": "sec_edgar",
+    "description": "M&A signal: Material agreement entered into | Regulation FD disclosure | 8-K item 9.01 AMEND",
+    "strength": 1,
+    "url": "https://www.sec.gov/Archives/edgar/data/0000001827899/000121390026096929/ea030443101ex2-1.htm",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "8719b573bc4c",
+    "category": "news",
+    "source": "sec_edgar",
+    "description": "Material agreement entered into | Regulation FD disclosure | 8-K item 9.01 AMENDED AND RESTATED BUSI",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "3204c4625095",
+    "category": "news",
+    "source": "sec_edgar",
+    "description": "Regulation FD disclosure | 8-K item 9.01 EX-99.1 PRESENTATION BARCLAYS 2026 [8-K] 2026-09-09",
+    "strength": 1,
+    "url": "https://www.sec.gov/Archives/edgar/data/0000001993004/000199300426000054/exh991barclaysconfpres26.htm",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "3204c4625095",
+    "category": "news",
+    "source": "sec_edgar",
+    "description": "Regulation FD disclosure | 8-K item 9.01 EX-99.1 PRESENTATION BARCLAYS 2026 [8-K] 2026-09-09",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "2572c32b33e6",
+    "category": "news",
+    "source": "sec_edgar",
+    "description": "Regulation FD disclosure | 8-K item 9.01 8-K [8-K] 2026-09-08",
+    "strength": 1,
+    "url": "https://www.sec.gov/Archives/edgar/data/0000000932781/000155278126000475/e26377_ex99-1.htm",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "2572c32b33e6",
+    "category": "news",
+    "source": "sec_edgar",
+    "description": "Regulation FD disclosure | 8-K item 9.01 8-K [8-K] 2026-09-08",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "1d1b2227cc8a",
+    "category": "news",
+    "source": "sec_edgar",
+    "description": "Regulation FD disclosure | 8-K item 9.01 EX-99.1 [8-K] 2026-09-08",
+    "strength": 1,
+    "url": "https://www.sec.gov/Archives/edgar/data/0000000714395/000071439526000039/investorpresentationrj09.htm",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "1d1b2227cc8a",
+    "category": "news",
+    "source": "sec_edgar",
+    "description": "Regulation FD disclosure | 8-K item 9.01 EX-99.1 [8-K] 2026-09-08",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "3fe168ea0a80",
+    "category": "news",
+    "source": "sec_edgar",
+    "description": "Material agreement entered into | Director/officer change | Regulation FD disclosure FORM 8-K [8-K] ",
+    "strength": 1,
+    "url": "https://www.sec.gov/Archives/edgar/data/0000001466085/000143774926029903/irt20260909c_8k.htm",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "3fe168ea0a80",
+    "category": "news",
+    "source": "sec_edgar",
+    "description": "Material agreement entered into | Director/officer change | Regulation FD disclosure FORM 8-K [8-K] ",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "c2946cafc179",
+    "category": "product_launch",
+    "source": "sec_edgar",
+    "description": "Product event: Regulation FD disclosure | 8-K item 9.01 PRESS RELEASE [8-K] 2026-09-03",
+    "strength": 1,
+    "url": "https://www.sec.gov/Archives/edgar/data/0000002065661/000147793226005397/pltn_ex991.htm",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "c2946cafc179",
+    "category": "funding",
+    "source": "sec_edgar",
+    "description": "M&A signal: Regulation FD disclosure | 8-K item 9.01 PRESS RELEASE [8-K] 2026-09-03",
+    "strength": 1,
+    "url": "https://www.sec.gov/Archives/edgar/data/0000002065661/000147793226005397/pltn_ex991.htm",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "c2946cafc179",
+    "category": "news",
+    "source": "sec_edgar",
+    "description": "Regulation FD disclosure | 8-K item 9.01 PRESS RELEASE [8-K] 2026-09-03",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "4590db4a4e06",
+    "category": "news",
+    "source": "sec_edgar",
+    "description": "Other material event FORM 8-K [8-K] 2026-09-08",
+    "strength": 1,
+    "url": "https://www.sec.gov/Archives/edgar/data/0000001845815/000095010326013665/dp253036_8k.htm",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "4590db4a4e06",
+    "category": "news",
+    "source": "sec_edgar",
+    "description": "Other material event FORM 8-K [8-K] 2026-09-08",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "54dbca3ce106",
+    "category": "funding",
+    "source": "sec_edgar",
+    "description": "M&A signal: Material agreement entered into | 8-K item 9.01 FORM OF NON-REDEMPTION AGREEMENT",
+    "strength": 1,
+    "url": "https://www.sec.gov/Archives/edgar/data/0000002025341/000121390026097832/ea030478301ex10-1.htm",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "54dbca3ce106",
+    "category": "news",
+    "source": "sec_edgar",
+    "description": "Material agreement entered into | 8-K item 9.01 FORM OF NON-REDEMPTION AGREEMENT [8-K] 2026-09-08",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "21b9aa461918",
+    "category": "news",
+    "source": "sec_edgar",
+    "description": "Material agreement entered into | 8-K item 3.03 | 8-K item 5.03 EX-4.1 [8-K] 2026-09-03",
+    "strength": 1,
+    "url": "https://www.sec.gov/Archives/edgar/data/0000001812727/000149315226041371/ex4-1.htm",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "21b9aa461918",
+    "category": "news",
+    "source": "sec_edgar",
+    "description": "Material agreement entered into | 8-K item 3.03 | 8-K item 5.03 EX-4.1 [8-K] 2026-09-03",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "7b0a2f3eb4c3",
+    "category": "news",
+    "source": "sec_edgar",
+    "description": "Regulation FD disclosure | 8-K item 9.01 EXHIBIT 99.2 [8-K] 2026-09-08",
+    "strength": 1,
+    "url": "https://www.sec.gov/Archives/edgar/data/0000000857855/000110465926105666/tm2624931d1_ex99-2.htm",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "7b0a2f3eb4c3",
+    "category": "news",
+    "source": "sec_edgar",
+    "description": "Regulation FD disclosure | 8-K item 9.01 EXHIBIT 99.2 [8-K] 2026-09-08",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "954763d90fff",
+    "category": "news",
+    "source": "sec_edgar",
+    "description": "Regulation FD disclosure | 8-K item 9.01 EX-99.1 [8-K] 2026-09-08",
+    "strength": 1,
+    "url": "https://www.sec.gov/Archives/edgar/data/0000000889900/000088990026000065/september2026_ptenxinves.htm",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "954763d90fff",
+    "category": "news",
+    "source": "sec_edgar",
+    "description": "Regulation FD disclosure | 8-K item 9.01 EX-99.1 [8-K] 2026-09-08",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "2d0b3d690bbf",
+    "category": "funding",
+    "source": "sec_edgar",
+    "description": "M&A signal: Acquisition/asset disposition completed | 8-K item 3.01 | 8-K item 3.03 8-K [8-K",
+    "strength": 1,
+    "url": "https://www.sec.gov/Archives/edgar/data/0000001102993/000119312526383671/d112155d8k.htm",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "2d0b3d690bbf",
+    "category": "news",
+    "source": "sec_edgar",
+    "description": "Acquisition/asset disposition completed | 8-K item 3.01 | 8-K item 3.03 8-K [8-K] 2026-09-04",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "4a72416332ff",
+    "category": "news",
+    "source": "sec_edgar",
+    "description": "Director/officer change | 8-K item 5.03 | 8-K item 5.07 EX-10.3 [8-K] 2026-09-09",
+    "strength": 1,
+    "url": "https://www.sec.gov/Archives/edgar/data/0000001560258/000149315226041893/ex10-3.htm",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "4a72416332ff",
+    "category": "news",
+    "source": "sec_edgar",
+    "description": "Director/officer change | 8-K item 5.03 | 8-K item 5.07 EX-10.3 [8-K] 2026-09-09",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "a2461d267594",
+    "category": "news",
+    "source": "sec_edgar",
+    "description": "Regulation FD disclosure | 8-K item 9.01 EX-99.1 [8-K] 2026-09-09",
+    "strength": 1,
+    "url": "https://www.sec.gov/Archives/edgar/data/0000000906107/000119312526385969/vmrk-ex99_1.htm",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "a2461d267594",
+    "category": "news",
+    "source": "sec_edgar",
+    "description": "Regulation FD disclosure | 8-K item 9.01 EX-99.1 [8-K] 2026-09-09",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "bfa9a04e43e1",
+    "category": "funding",
+    "source": "sec_edgar",
+    "description": "M&A signal: 8-K item 1.02 | Acquisition/asset disposition completed | 8-K item 3.01 8-K [8-K",
+    "strength": 1,
+    "url": "https://www.sec.gov/Archives/edgar/data/0000001974640/000114036126035537/ef20081397_8k.htm",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "bfa9a04e43e1",
+    "category": "news",
+    "source": "sec_edgar",
+    "description": "8-K item 1.02 | Acquisition/asset disposition completed | 8-K item 3.01 8-K [8-K] 2026-09-03",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "7cb188cdf4fb",
+    "category": "product_launch",
+    "source": "sec_edgar",
+    "description": "Product event: Other material event | 8-K item 9.01 PRESS RELEASE, DATED SEPTEMBER 4, 2026 [8-K",
+    "strength": 1,
+    "url": "https://www.sec.gov/Archives/edgar/data/0000002110119/000121390026097666/ea030463801ex99-1.htm",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "7cb188cdf4fb",
+    "category": "funding",
+    "source": "sec_edgar",
+    "description": "M&A signal: Other material event | 8-K item 9.01 PRESS RELEASE, DATED SEPTEMBER 4, 2026 [8-K",
+    "strength": 1,
+    "url": "https://www.sec.gov/Archives/edgar/data/0000002110119/000121390026097666/ea030463801ex99-1.htm",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "7cb188cdf4fb",
+    "category": "news",
+    "source": "sec_edgar",
+    "description": "Other material event | 8-K item 9.01 PRESS RELEASE, DATED SEPTEMBER 4, 2026 [8-K] 2026-09-04",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "71b63a02dde2",
+    "category": "funding",
+    "source": "sec_edgar",
+    "description": "M&A signal: 8-K item 1.02 | Acquisition/asset disposition completed | 8-K item 3.01 FORM 8-K",
+    "strength": 1,
+    "url": "https://www.sec.gov/Archives/edgar/data/0000001828185/000110465926106183/tm2625093d1_8k.htm",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "71b63a02dde2",
+    "category": "news",
+    "source": "sec_edgar",
+    "description": "8-K item 1.02 | Acquisition/asset disposition completed | 8-K item 3.01 FORM 8-K [8-K] 2026-09-09",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "226769c15591",
+    "category": "funding",
+    "source": "sec_edgar",
+    "description": "M&A signal: Material agreement entered into | Acquisition/asset disposition completed | Unre",
+    "strength": 1,
+    "url": "https://www.sec.gov/Archives/edgar/data/0000001840856/000121390026097712/ea0304691-8k_sound.htm",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "226769c15591",
+    "category": "news",
+    "source": "sec_edgar",
+    "description": "Material agreement entered into | Acquisition/asset disposition completed | Unregistered equity sale",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "33adba2b2a0d",
+    "category": "news",
+    "source": "sec_edgar",
+    "description": "Director/officer change | Regulation FD disclosure | 8-K item 9.01 EX-10.1 [8-K] 2026-09-09",
+    "strength": 1,
+    "url": "https://www.sec.gov/Archives/edgar/data/0000001728951/000172895126000057/exhibit-101.htm",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "33adba2b2a0d",
+    "category": "news",
+    "source": "sec_edgar",
+    "description": "Director/officer change | Regulation FD disclosure | 8-K item 9.01 EX-10.1 [8-K] 2026-09-09",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "32c562915f49",
+    "category": "market_event",
+    "source": "market_news",
+    "description": "Market event: It’s Fourth Down. Will Stocks Go for the Win or a Tie?",
+    "strength": 1,
+    "url": "https://www.barrons.com/articles/stocks-oil-midterm-elections-earnings-fed-rates-bond-yields-a9cd1d66?siteid=yhoof2&yptr=yahoo",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "32c562915f49",
+    "category": "news",
+    "source": "market_news",
+    "description": "It’s Fourth Down. Will Stocks Go for the Win or a Tie?",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "cafd98783e60",
+    "category": "market_event",
+    "source": "market_news",
+    "description": "Market event: Labor Day Gasoline Just Hit a Record. Here’s What Comes Next",
+    "strength": 1,
+    "url": "https://finance.yahoo.com/energy/articles/labor-day-gasoline-just-hit-200000363.html",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "cafd98783e60",
+    "category": "news",
+    "source": "market_news",
+    "description": "Labor Day Gasoline Just Hit a Record. Here’s What Comes Next",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "cc2962961da1",
+    "category": "market_event",
+    "source": "market_news",
+    "description": "Market event: Stock market today: Dow drops 600 points, S&P 500 and Nasdaq retreat as oil near",
+    "strength": 1,
+    "url": "https://finance.yahoo.com/markets/live/stock-market-today-tuesday-september-8-dow-sp-500-nasdaq-080440338.html",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "cc2962961da1",
+    "category": "news",
+    "source": "market_news",
+    "description": "Stock market today: Dow drops 600 points, S&P 500 and Nasdaq retreat as oil nears $100",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "b87973438ca3",
+    "category": "product_launch",
+    "source": "market_news",
+    "description": "Product event: Capital One launches new Venture Business card with limited-time 150,000-mile we",
+    "strength": 1,
+    "url": "https://finance.yahoo.com/personal-finance/credit-cards/article/capital-one-venture-business-card-193020902.html",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "b87973438ca3",
+    "category": "market_event",
+    "source": "market_news",
+    "description": "Market event: Capital One launches new Venture Business card with limited-time 150,000-mile we",
+    "strength": 1,
+    "url": "https://finance.yahoo.com/personal-finance/credit-cards/article/capital-one-venture-business-card-193020902.html",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "b87973438ca3",
+    "category": "news",
+    "source": "market_news",
+    "description": "Capital One launches new Venture Business card with limited-time 150,000-mile welcome bonus (expired",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "7cb52692d67b",
+    "category": "market_event",
+    "source": "market_news",
+    "description": "Market event: Robinhood Lands Crypto.com Deal, Underwriting Job For Oura. Goldman Hikes Target",
+    "strength": 1,
+    "url": "https://www.investors.com/news/robinhood-crypto-com-minority-stake-prediction-markets-oura-underwriter-reports-hood-stock-price-target/?src=A00220&yptr=yahoo",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "7cb52692d67b",
+    "category": "news",
+    "source": "market_news",
+    "description": "Robinhood Lands Crypto.com Deal, Underwriting Job For Oura. Goldman Hikes Target.",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "16299d6a4af3",
+    "category": "market_event",
+    "source": "market_news",
+    "description": "Market event: Anthropic Walks Away From Decart as $6 Billion AI Deal Unravels",
+    "strength": 1,
+    "url": "https://finance.yahoo.com/technology/ai/articles/anthropic-walks-away-decart-6-195737557.html",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "16299d6a4af3",
+    "category": "news",
+    "source": "market_news",
+    "description": "Anthropic Walks Away From Decart as $6 Billion AI Deal Unravels",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "f894311048cb",
+    "category": "market_event",
+    "source": "market_news",
+    "description": "Market event: 9 ways your employer can help you save money",
+    "strength": 1,
+    "url": "https://finance.yahoo.com/personal-finance/banking/article/ways-your-employer-can-help-you-save-money-210135355.html",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "f894311048cb",
+    "category": "news",
+    "source": "market_news",
+    "description": "9 ways your employer can help you save money",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "2ec3c0be1e99",
+    "category": "market_event",
+    "source": "market_news",
+    "description": "Market event: GE Aerospace To Buy Key Industry Castings Supplier CPP For Nearly $12 Billion",
+    "strength": 1,
+    "url": "https://www.investors.com/news/ge-aerospace-acquisition-precision-products-castings-capacity-deal-ge-stock/?src=A00220&yptr=yahoo",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "2ec3c0be1e99",
+    "category": "news",
+    "source": "market_news",
+    "description": "GE Aerospace To Buy Key Industry Castings Supplier CPP For Nearly $12 Billion",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "f41f4f56bc29",
+    "category": "market_event",
+    "source": "market_news",
+    "description": "Market event: Arm Extends AI Reach From Data Centers To Edge Devices",
+    "strength": 1,
+    "url": "https://www.investors.com/news/technology/arm-stock-arm-extends-reach-to-physical-ai/?src=A00220&yptr=yahoo",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "f41f4f56bc29",
+    "category": "news",
+    "source": "market_news",
+    "description": "Arm Extends AI Reach From Data Centers To Edge Devices",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "3f9f8f697b09",
+    "category": "market_event",
+    "source": "market_news",
+    "description": "Market event: Ink Business Premier Credit Card review: Generous welcome bonus and free employe",
+    "strength": 1,
+    "url": "https://finance.yahoo.com/personal-finance/credit-cards/review/ink-business-premier-credit-card-review-223741901.html",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "3f9f8f697b09",
+    "category": "news",
+    "source": "market_news",
+    "description": "Ink Business Premier Credit Card review: Generous welcome bonus and free employee cards",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "ea82d5891c92",
+    "category": "market_event",
+    "source": "market_news",
+    "description": "Market event: Treasury Yields Keep Rising Ahead of Buybacks, CPI",
+    "strength": 1,
+    "url": "https://www.wsj.com/finance/jgb-futures-rise-as-yens-strength-seen-easing-inflationary-pressures-5eefc264?siteid=yhoof2&yptr=yahoo",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "ea82d5891c92",
+    "category": "news",
+    "source": "market_news",
+    "description": "Treasury Yields Keep Rising Ahead of Buybacks, CPI",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "bb7fb044ea8e",
+    "category": "market_event",
+    "source": "market_news",
+    "description": "Market event: Boston Scientific Slammed After Cyberattack Hamstrings Sales, Profit",
+    "strength": 1,
+    "url": "https://www.investors.com/news/technology/boston-scientific-cybersecurity-attack-guidance/?src=A00220&yptr=yahoo",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "bb7fb044ea8e",
+    "category": "news",
+    "source": "market_news",
+    "description": "Boston Scientific Slammed After Cyberattack Hamstrings Sales, Profit",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "97cb71e35a4f",
+    "category": "market_event",
+    "source": "market_news",
+    "description": "Market event: Thoma Bravo hires new Asia head",
+    "strength": 1,
+    "url": "https://finance.yahoo.com/markets/stocks/articles/thoma-bravo-hires-asia-head-202333228.html",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "97cb71e35a4f",
+    "category": "news",
+    "source": "market_news",
+    "description": "Thoma Bravo hires new Asia head",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "1a0e7a410173",
+    "category": "market_event",
+    "source": "market_news",
+    "description": "Market event: Uber Stock Falls As Wall Street Sizes Up Tesla's Cybercab Rollout",
+    "strength": 1,
+    "url": "https://www.investors.com/news/technology/uber-stock-tesla-cybercab-austin-rollout/?src=A00220&yptr=yahoo",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "1a0e7a410173",
+    "category": "news",
+    "source": "market_news",
+    "description": "Uber Stock Falls As Wall Street Sizes Up Tesla's Cybercab Rollout",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "7885c6f41265",
+    "category": "market_event",
+    "source": "market_news",
+    "description": "Market event: TSMC, IBD Stock Of The Day, Rises Above Early Buy Point As Chip Stocks Rally",
+    "strength": 1,
+    "url": "https://www.investors.com/research/ibd-stock-of-the-day/tsm-stock-buy-point-chip-stocks/?src=A00220&yptr=yahoo",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "7885c6f41265",
+    "category": "news",
+    "source": "market_news",
+    "description": "TSMC, IBD Stock Of The Day, Rises Above Early Buy Point As Chip Stocks Rally",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "c1a97f93ec51",
+    "category": "market_event",
+    "source": "market_news",
+    "description": "Market event: <p>Shoplifting is just the tip of the iceberg.</p>",
+    "strength": 1,
+    "url": "https://www.bloomberg.com/news/articles/2026-09-10/the-rise-of-organized-retail-crime-at-big-box-stores",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "c1a97f93ec51",
+    "category": "news",
+    "source": "market_news",
+    "description": "<p>Shoplifting is just the tip of the iceberg.</p>",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "0d78e6695d16",
+    "category": "customer",
+    "source": "market_news",
+    "description": "Customer signal: If you walk into a local pharmacy in New York City, more likely than not, lots o",
+    "strength": 1,
+    "url": "https://www.bloomberg.com/news/audio/2026-09-10/odd-lots-organized-retail-crime-at-big-box-stores-podcast",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "0d78e6695d16",
+    "category": "market_event",
+    "source": "market_news",
+    "description": "Market event: If you walk into a local pharmacy in New York City, more likely than not, lots o",
+    "strength": 1,
+    "url": "https://www.bloomberg.com/news/audio/2026-09-10/odd-lots-organized-retail-crime-at-big-box-stores-podcast",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "0d78e6695d16",
+    "category": "news",
+    "source": "market_news",
+    "description": "If you walk into a local pharmacy in New York City, more likely than not, lots of the merchandise is",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "5eb446631046",
+    "category": "market_event",
+    "source": "market_news",
+    "description": "Market event: US stocks futures snapped a three-day losing streak and Treasuries steadied, tho",
+    "strength": 1,
+    "url": "https://www.bloomberg.com/news/articles/2026-09-09/stock-market-today-dow-s-p-live-updates",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "5eb446631046",
+    "category": "news",
+    "source": "market_news",
+    "description": "US stocks futures snapped a three-day losing streak and Treasuries steadied, though risk appetite re",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "ab09cf58595f",
+    "category": "funding",
+    "source": "market_news",
+    "description": "Funding signal: Investors are piling into an arbitrage trade in euro money markets that’s gainin",
+    "strength": 1,
+    "url": "https://www.bloomberg.com/news/articles/2026-09-10/europe-s-shrinking-bank-liquidity-fuels-hedge-fund-rates-bet",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "ab09cf58595f",
+    "category": "customer",
+    "source": "market_news",
+    "description": "Customer signal: Investors are piling into an arbitrage trade in euro money markets that’s gainin",
+    "strength": 1,
+    "url": "https://www.bloomberg.com/news/articles/2026-09-10/europe-s-shrinking-bank-liquidity-fuels-hedge-fund-rates-bet",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "ab09cf58595f",
+    "category": "market_event",
+    "source": "market_news",
+    "description": "Market event: Investors are piling into an arbitrage trade in euro money markets that’s gainin",
+    "strength": 1,
+    "url": "https://www.bloomberg.com/news/articles/2026-09-10/europe-s-shrinking-bank-liquidity-fuels-hedge-fund-rates-bet",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "ab09cf58595f",
+    "category": "news",
+    "source": "market_news",
+    "description": "Investors are piling into an arbitrage trade in euro money markets that’s gaining traction as the re",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "e012e99e5580",
+    "category": "funding",
+    "source": "market_news",
+    "description": "Funding signal: Anna Edwards, Guy Johnson, Tom Mackenzie and Mark Cudmore break down today's key",
+    "strength": 1,
+    "url": "https://www.bloomberg.com/news/videos/2026-09-10/treasuries-dismiss-president-s-promise-3-minutes-mliv-video",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "e012e99e5580",
+    "category": "market_event",
+    "source": "market_news",
+    "description": "Market event: Anna Edwards, Guy Johnson, Tom Mackenzie and Mark Cudmore break down today's key",
+    "strength": 1,
+    "url": "https://www.bloomberg.com/news/videos/2026-09-10/treasuries-dismiss-president-s-promise-3-minutes-mliv-video",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "e012e99e5580",
+    "category": "news",
+    "source": "market_news",
+    "description": "Anna Edwards, Guy Johnson, Tom Mackenzie and Mark Cudmore break down today's key themes for analysts",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "0d585d5b4328",
+    "category": "market_event",
+    "source": "market_news",
+    "description": "Market event: Gold pushed back above $4,400 an ounce, as traders awaited US inflation data due",
+    "strength": 1,
+    "url": "https://www.bloomberg.com/news/articles/2026-09-09/gold-steadies-near-4-400-as-traders-weigh-fed-rate-hike-path",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "0d585d5b4328",
+    "category": "news",
+    "source": "market_news",
+    "description": "Gold pushed back above $4,400 an ounce, as traders awaited US inflation data due later this week for",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "78b21de1863b",
+    "category": "market_event",
+    "source": "market_news",
+    "description": "Market event: Sanlam Ltd. profit dropped as weather-related claims in South Africa grew and st",
+    "strength": 1,
+    "url": "https://www.bloomberg.com/news/articles/2026-09-10/sanlam-interim-profit-falls-22-on-weakness-in-india-morocco",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "78b21de1863b",
+    "category": "news",
+    "source": "market_news",
+    "description": "Sanlam Ltd. profit dropped as weather-related claims in South Africa grew and strength in the rand t",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "6e64dade4679",
+    "category": "market_event",
+    "source": "market_news",
+    "description": "Market event: Vietnam drivers for Grab Holdings Ltd. are calling on fellow independent contrac",
+    "strength": 1,
+    "url": "https://www.bloomberg.com/news/articles/2026-09-10/vietnam-grab-drivers-plan-weekend-boycott-over-commission-fees",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "6e64dade4679",
+    "category": "news",
+    "source": "market_news",
+    "description": "Vietnam drivers for Grab Holdings Ltd. are calling on fellow independent contractors to engage in a ",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "e9ca6f66869c",
+    "category": "market_event",
+    "source": "market_news",
+    "description": "Market event: Porsche AG said it will generate about €1 billion ($1.16 billion) selling its st",
+    "strength": 1,
+    "url": "https://www.bloomberg.com/news/articles/2026-09-09/porsche-raises-1-billion-with-completion-of-bugatti-stake-sale",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "e9ca6f66869c",
+    "category": "news",
+    "source": "market_news",
+    "description": "Porsche AG said it will generate about €1 billion ($1.16 billion) selling its stake in the venture t",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "92975b771cae",
+    "category": "market_event",
+    "source": "market_news",
+    "description": "Market event: FirstRand Ltd. profit fell for the first time in six years after a £807 million ",
+    "strength": 1,
+    "url": "https://www.bloomberg.com/news/articles/2026-09-10/firstrand-profit-falls-5-as-1-1-billion-provision-curbs-gains",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "92975b771cae",
+    "category": "news",
+    "source": "market_news",
+    "description": "FirstRand Ltd. profit fell for the first time in six years after a £807 million ($1.1 billion) provi",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "cb013d462427",
+    "category": "market_event",
+    "source": "market_news",
+    "description": "Market event: Some holders of Senegal’s eurobonds are starting to form a creditor group and pi",
+    "strength": 1,
+    "url": "https://www.bloomberg.com/news/articles/2026-09-09/senegal-bondholders-pick-white-case-for-legal-advice",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "cb013d462427",
+    "category": "news",
+    "source": "market_news",
+    "description": "Some holders of Senegal’s eurobonds are starting to form a creditor group and picked White &amp; Cas",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "82f0e847211a",
+    "category": "market_event",
+    "source": "market_news",
+    "description": "Market event: An unusually active typhoon season is disrupting shipping operations across Asia",
+    "strength": 1,
+    "url": "https://www.bloomberg.com/news/articles/2026-09-10/asian-ports-snarled-as-el-nino-fuels-busy-typhoon-season",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "82f0e847211a",
+    "category": "news",
+    "source": "market_news",
+    "description": "An unusually active typhoon season is disrupting shipping operations across Asia, with Shanghai part",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "261f0c024ddc",
+    "category": "market_event",
+    "source": "market_news",
+    "description": "Market event: Insight with Haslinda Amin, a daily news program featuring in-depth, high-profil",
+    "strength": 1,
+    "url": "https://www.bloomberg.com/news/videos/2026-09-10/insight-with-haslinda-amin-9-10-2026-video",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "261f0c024ddc",
+    "category": "news",
+    "source": "market_news",
+    "description": "Insight with Haslinda Amin, a daily news program featuring in-depth, high-profile interviews and ana",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "5b23b7493361",
+    "category": "partnership",
+    "source": "market_news",
+    "description": "Partnership: John Lewis Partnership Plc’s loss widened in the first half due to higher costs ",
+    "strength": 1,
+    "url": "https://www.bloomberg.com/news/articles/2026-09-10/john-lewis-losses-widen-as-uk-retailer-grapples-with-turnaround",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "5b23b7493361",
+    "category": "market_event",
+    "source": "market_news",
+    "description": "Market event: John Lewis Partnership Plc’s loss widened in the first half due to higher costs ",
+    "strength": 1,
+    "url": "https://www.bloomberg.com/news/articles/2026-09-10/john-lewis-losses-widen-as-uk-retailer-grapples-with-turnaround",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "5b23b7493361",
+    "category": "news",
+    "source": "market_news",
+    "description": "John Lewis Partnership Plc’s loss widened in the first half due to higher costs and shoppers reining",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "4edfcce54e40",
+    "category": "market_event",
+    "source": "market_news",
+    "description": "Market event: IFSCA Executive Director Dipesh Shah says GIFT City offers payment companies fle",
+    "strength": 1,
+    "url": "https://www.bloomberg.com/news/videos/2026-09-10/why-payment-companies-are-choosing-india-s-gift-city-video",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "4edfcce54e40",
+    "category": "news",
+    "source": "market_news",
+    "description": "IFSCA Executive Director Dipesh Shah says GIFT City offers payment companies flexible regulations, s",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "d499901576fe",
+    "category": "macro_event",
+    "source": "google_news_economy",
+    "description": "Macro event: Trump pushes Fed for lower rates, but consumers may be better off with a hike, e",
+    "strength": 1,
+    "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOU1FFbFpVa3M2WXNaN21VSmp0aEgteF9aaUNJVVFULVVpMndyQ1Nzd3R6c1pJdDBrQS1xWE9XQXFHVmd4dGRSQkRwRndScHVGZ2doR04yM0NTaE9tNmxiUVdEMVBRN0ZDRHhaN1FSTDF0WmtJM2d5Y2lmUTRCUUpla1Q4WXViNlBSeGJWNU9jNU5OT2RXSUHSAZsBQVVfeXFMTktsSGdLX3N3R1F6MVRpQWJpdXFQQi1KMTBwcTJfcGRTQkNGZFZ2aVFJZVhjYlpEWjJoVXczcmhvS25QZFc2NEdqWmFlYkk3RzRUQ0lwS1VjQnJKT0JtbFZwQnV3dlNnQ2piWDlreFVSN1hvZFV0TTYzS3JVM3ZJUWl5ak1EUDFDYk56dzViS3pjU0ZwVXREbS1hcFk?oc=5",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "d499901576fe",
+    "category": "news",
+    "source": "google_news_economy",
+    "description": "Trump pushes Fed for lower rates, but consumers may be better off with a hike, experts say - CNBC",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "59f134572853",
+    "category": "macro_event",
+    "source": "google_news_economy",
+    "description": "Macro event: Fed to hold rates steady in rest of 2026; rising number of analysts see at least",
+    "strength": 1,
+    "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOZ0NreUFoTnFxX3ZzQnd3YU9FNFVkQmhfZlBrSVBUUm12Q0lCckxRTHdWcUVHbmJpcDZKbVhNZG5RektYQlpqaUZGMjl2TnJ0amhPMGJBWnB6OG9FVTB5dVJPTlc1ZjJaa2djUl9HR3VhYzIxODJjVEx1NUswdkVkblYxNVNSY1dYWlpUdzlEQU9UNTNzaUtVWXVtdXljVEUzSnVOQTV2bTJHSXN6Q2E3U0pzcVk5U19qUmc?oc=5",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "59f134572853",
+    "category": "news",
+    "source": "google_news_economy",
+    "description": "Fed to hold rates steady in rest of 2026; rising number of analysts see at least one hike: Reuters p",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "7dfab22e1345",
+    "category": "macro_event",
+    "source": "google_news_economy",
+    "description": "Macro event: A Tiny Shift in the Inflation Rate Could Decide the Fed’s Next Move - WSJ",
+    "strength": 1,
+    "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQU2VrRkdPcXF6U3ZvMTdqQ1pLT2Jua0N1MHlyQXM4c2hNN1M0SEY4bHZMakxwZm9jRjRKUHpsdnFuemtxSjFLZUhSVFJSTE41NzJQajl5M09PSlZNbkczMlZHTGN4U2wyalN2SnJiZG1JT3Roem00c0hmRXlRX3gtZzRNM2RBaS05VkRabUVSenVyUUV1ODQwUUNyTlE?oc=5",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "7dfab22e1345",
+    "category": "news",
+    "source": "google_news_economy",
+    "description": "A Tiny Shift in the Inflation Rate Could Decide the Fed’s Next Move - WSJ",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "b11db643a2dd",
+    "category": "macro_event",
+    "source": "google_news_economy",
+    "description": "Macro event: Market Minute: Inflation data set to support Fed rate hike - The Real Economy Bl",
+    "strength": 1,
+    "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQazQzWm14UG1LcG9zTzhUb2ZxcmFzSnJMVmlaa3RjSnNlcjZQdERsc3RwNEs5VXFHcGY0LTZqUkRMUFBwYng5TWRaS2d1blFNalNhVlZRQ1Z6RGVJamdLMWR2Z3RrbHpJYWJqdWJOajFyVmxIVDRFMVM4LWdIcVJZYXpxZXlDLXBMQkVGLTgtX0ZRdw?oc=5",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "b11db643a2dd",
+    "category": "news",
+    "source": "google_news_economy",
+    "description": "Market Minute: Inflation data set to support Fed rate hike - The Real Economy Blog",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "90ea65094dfa",
+    "category": "macro_event",
+    "source": "google_news_economy",
+    "description": "Macro event: Fed rate hike hinges on two key inflation reports in the next two days - MarketW",
+    "strength": 1,
+    "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNVl95cFQxNzRvRG94em9IUUdpcXVwUmc1YXpURlY1amtsVF8tZkNmVGpEaDlNUmtJejllRVZtZmoxSEk4cllHRDc4ZVJad3RCbWpnMUw5ay15MkRmbkJhVnVFZk5iVi0wWWU2RDc4bkhYTVJFUnplaHZRVzdWdE45ekNqZlZ5THlWN1ZRczh6V1FBYmpNRVZpUzFmakxFSWU3NDYwRFdQdTE1ZnZSclpxVmFLQQ?oc=5",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "90ea65094dfa",
+    "category": "news",
+    "source": "google_news_economy",
+    "description": "Fed rate hike hinges on two key inflation reports in the next two days - MarketWatch",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "7dfab22e1345",
+    "category": "macro_event",
+    "source": "google_news_economy",
+    "description": "Macro event: A Tiny Shift in the Inflation Rate Could Decide the Fed’s Next Move - WSJ",
+    "strength": 1,
+    "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQU2VrRkdPcXF6U3ZvMTdqQ1pLT2Jua0N1MHlyQXM4c2hNN1M0SEY4bHZMakxwZm9jRjRKUHpsdnFuemtxSjFLZUhSVFJSTE41NzJQajl5M09PSlZNbkczMlZHTGN4U2wyalN2SnJiZG1JT3Roem00c0hmRXlRX3gtZzRNM2RBaS05VkRabUVSenVyUUV1ODQwUUNyTlE?oc=5",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "7dfab22e1345",
+    "category": "news",
+    "source": "google_news_economy",
+    "description": "A Tiny Shift in the Inflation Rate Could Decide the Fed’s Next Move - WSJ",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "e29045fa38e4",
+    "category": "macro_event",
+    "source": "google_news_economy",
+    "description": "Macro event: August CPI Report: What the Inflation Data Is Expected to Show - Kiplinger",
+    "strength": 1,
+    "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPVi05d0VzY0dJVGVwZXJ4WHA5V05ZLXZiVVhEZy1oSENmeGxTVUdRcEZNVmpZb1g1aVk3ZW1MU05KRW1ZamRKZHZtTEJ1QXA3Ym9TQjY3RGViam9UV2o0b0lETk9hN2hSWUN4UWlxRGdVZU9GSzZLN1dzVjFua3AwdlVLZ0RNcjNx?oc=5",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "e29045fa38e4",
+    "category": "news",
+    "source": "google_news_economy",
+    "description": "August CPI Report: What the Inflation Data Is Expected to Show - Kiplinger",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "41c9c92bfdc3",
+    "category": "macro_event",
+    "source": "google_news_economy",
+    "description": "Macro event: August CPI Seen Cooling, but Will It Prevent a Fed Rate Hike? - Morningstar",
+    "strength": 1,
+    "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQTjZmcGNFb2ZSUi1zVXJrenkxVXlhVENBcUxCZi1mSDRvczhqSDdGdGtVenpPWDlGSjlYWkVWNWNZZDVlU1lWS1U5S3VxM180Y0RNOEtiX0RoQy1ETHU5Sm9fblcxc1h1cC1uNFBHakF4MS1adjZfM3VxSjFsOHQ4cWowYWJ4d3d5cHZvZnhzMExCVVE?oc=5",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "41c9c92bfdc3",
+    "category": "news",
+    "source": "google_news_economy",
+    "description": "August CPI Seen Cooling, but Will It Prevent a Fed Rate Hike? - Morningstar",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "31d6cbe971d3",
+    "category": "macro_event",
+    "source": "google_news_economy",
+    "description": "Macro event: Q&A: What can rent prices reveal about inflation and the economy? - Phys.org",
+    "strength": 1,
+    "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE02d2xCYkl1OXMzd1VKRUhOcWlybXVTcHNRX2VFSnRreTBITk45S0Y1SklkTjhVRS1DMnU4Mi1taWdZMUVoRmlVWE1tZFh0U3V6UmFPVU5kY1FWNVpaOVRlcFRiRnhrY2NiZ0JZM2l1RjNVM3FB?oc=5",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "31d6cbe971d3",
+    "category": "news",
+    "source": "google_news_economy",
+    "description": "Q&A: What can rent prices reveal about inflation and the economy? - Phys.org",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "e31cc0656bd9",
+    "category": "macro_event",
+    "source": "google_news_economy",
+    "description": "Macro event: Economic Watch: China's inflation edges up, signaling sustained recovery in dome",
+    "strength": 1,
+    "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOT2NxNE1oMThDcUw2cnZGb1dYTW1rMWhIaWRIZ2hJRS00dEdudWRxUTNiSTRPSmlxMUlBcnFNOURiV0VDUGdXUGhXYzFEZHZCUzVFM0VKS25oWVRCNE9pMWxLOURfTl9PMUJoQnNZLWdrUUhKQlk4ZzFjUHlLdEkyVndpdEk?oc=5",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "e31cc0656bd9",
+    "category": "news",
+    "source": "google_news_economy",
+    "description": "Economic Watch: China's inflation edges up, signaling sustained recovery in domestic demand - englis",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "14491a92f988",
+    "category": "macro_event",
+    "source": "google_news_economy",
+    "description": "Macro event: A new Anthropic model seeks to test how AI could impact the U.S. economy - NPR",
+    "strength": 1,
+    "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5zbl9Ya1QyeGVtRDVaTTNqVktBeFFUdXVza1VOdVh1UDZEX0FzR0hsVTdEaDg4ZG9OYWVoZlhTM0s3SHZZT3M3cG5LWFpPdThrUzJPRWdwWjEzRFU4WnZuRTYtREFXam5pV2Qwby1ta1c5bjQ?oc=5",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "14491a92f988",
+    "category": "news",
+    "source": "google_news_economy",
+    "description": "A new Anthropic model seeks to test how AI could impact the U.S. economy - NPR",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "29ffd521b66c",
+    "category": "product_launch",
+    "source": "google_news_economy",
+    "description": "Product event: Anthropic Releases Interactive Model of AI’s Possible Economic Futures - Unite.A",
+    "strength": 1,
+    "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQc2kwWnc5c2N1S1JEOWRxaVE3eThSTnl5cVZNdk1uR2cySC02SjR0bjdFbE93WlA5UkY4WXdWTjI0djQyQmhHRFVXUFFtYXJkSlNDOVppVWEwS2prOUpzbmFCa0xiWThWSXVxWUp2S1lhMVV6Zm9UeVM5dUhrOFE5UVRSNk90Tl9adm93aGpPZDY3WEY0dGc?oc=5",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "29ffd521b66c",
+    "category": "macro_event",
+    "source": "google_news_economy",
+    "description": "Macro event: Anthropic Releases Interactive Model of AI’s Possible Economic Futures - Unite.A",
+    "strength": 1,
+    "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQc2kwWnc5c2N1S1JEOWRxaVE3eThSTnl5cVZNdk1uR2cySC02SjR0bjdFbE93WlA5UkY4WXdWTjI0djQyQmhHRFVXUFFtYXJkSlNDOVppVWEwS2prOUpzbmFCa0xiWThWSXVxWUp2S1lhMVV6Zm9UeVM5dUhrOFE5UVRSNk90Tl9adm93aGpPZDY3WEY0dGc?oc=5",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "29ffd521b66c",
+    "category": "news",
+    "source": "google_news_economy",
+    "description": "Anthropic Releases Interactive Model of AI’s Possible Economic Futures - Unite.AI",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "8fe91f979be6",
+    "category": "macro_event",
+    "source": "google_news_economy",
+    "description": "Macro event: AI Could Cause GDP Growth Of 15%, But See Wages Fall By 11.5% & Unemployment Ris",
+    "strength": 1,
+    "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxNaXZrZUNMeUNhMkxzNG5Yc2tMM1VxdDRabm01bVZYZWFBTXJfWFh3c2NDVzNud3pEYW1IeHJvbmwwS0ItTzBXQXl1aV9WeGd1Slk5QnBmMjhaTEY2a3NMZXNKRHMtZ2NqMW1SRGlXVWtWbHJ6dVZQV0tFbnJCYktIbXgyeWhtQ0x0YVJYaGszSU1IdTZubFE1dmRwME5Td1N0cDh5S2tnME5uZjlBWDBTd1R3N0xEX2NMakU1N2pNYXZISXd0RklYRkVwNjl0d1Z6RWY0U2szOFpweXcwUTlheDJuSFE?oc=5",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "8fe91f979be6",
+    "category": "news",
+    "source": "google_news_economy",
+    "description": "AI Could Cause GDP Growth Of 15%, But See Wages Fall By 11.5% & Unemployment Rise To 17.9% In \"Extre",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "24b53062d5f2",
+    "category": "macro_event",
+    "source": "google_news_economy",
+    "description": "Macro event: Anthropic builds interactive model letting anyone stress-test AI’s economic impa",
+    "strength": 1,
+    "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE4xRnV1QTdyaloxYjY2aUxtNjdqcEVld095aGhDdVVWVXJoUTJSamhHQ1FjajRraGlQS2NpWktMeENKNEVMX0NDSnJCS2xYQThqdlRrM2g3aW0wYzEtVnhfM2tIcHFkQjRuZEJhTno0MDU2bG1lNWJBMGtqemJjMHM?oc=5",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "24b53062d5f2",
+    "category": "news",
+    "source": "google_news_economy",
+    "description": "Anthropic builds interactive model letting anyone stress-test AI’s economic impact - Crypto Briefing",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "758ddeaa4011",
+    "category": "macro_event",
+    "source": "google_news_economy",
+    "description": "Macro event: Top 10 Largest Arab Economies by GDP: A 2026 Outlook - وردنا",
+    "strength": 1,
+    "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNX3ZscGpYNkJIOGh4eTRvV0FCbGxXai1nN3dPcHVvemU0WHMtRTVLSTFuOGtHczdGcm1Zbk50UmVWSU5UTGFzZVpnNnhKQ2Z4NXAydkhYOV9XNlpfM0tVcHprX3ZSa2VXUlROMlVFdlgtcjhZQk9TS2czQk5vTEpIb0xKU0E5ak9pbFFmMmNjWUhuR1gtekFNTG9UMA?oc=5",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "758ddeaa4011",
+    "category": "news",
+    "source": "google_news_economy",
+    "description": "Top 10 Largest Arab Economies by GDP: A 2026 Outlook - وردنا",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "1f6e3beb9d54",
+    "category": "product_launch",
+    "source": "producthunt",
+    "description": "Product launch: Git-backed docs for humans and agentsDiscussion|",
+    "strength": 1,
+    "url": "https://www.producthunt.com/products/thousand",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "1af740fbb888",
+    "category": "product_launch",
+    "source": "producthunt",
+    "description": "Product launch: Vehicle telemetry for your next weekend drive with LPR alert",
+    "strength": 1,
+    "url": "https://www.producthunt.com/products/drive-gforce-telemetry",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "645326d605db",
+    "category": "product_launch",
+    "source": "producthunt",
+    "description": "Product launch: 1.5x Active Noise Cancellation, AI Siri, Live TranslationDiscussion",
+    "strength": 1,
+    "url": "https://www.producthunt.com/products/apple",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "eb7d7cd7b7e9",
+    "category": "product_launch",
+    "source": "producthunt",
+    "description": "Product launch: Youtube for interactive web experiencesDiscussion|",
+    "strength": 1,
+    "url": "https://www.producthunt.com/products/whip",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "c2736525bada",
+    "category": "product_launch",
+    "source": "producthunt",
+    "description": "Product launch: Local dictation and everyday Mac tools in your notchDiscussion",
+    "strength": 1,
+    "url": "https://www.producthunt.com/products/gojo",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "169551b44bcd",
+    "category": "product_launch",
+    "source": "producthunt",
+    "description": "Product launch: Build computer vision applications with AIDiscussion",
+    "strength": 1,
+    "url": "https://www.producthunt.com/products/viso-now",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "579bf900494f",
+    "category": "product_launch",
+    "source": "producthunt",
+    "description": "Product launch: Your whole audience follows, in their own languageDiscussion",
+    "strength": 1,
+    "url": "https://www.producthunt.com/products/subanana",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "0de1a51e0e14",
+    "category": "product_launch",
+    "source": "producthunt",
+    "description": "Product launch: Design production UI in your codebaseDiscussion",
+    "strength": 1,
+    "url": "https://www.producthunt.com/products/modeinspect-1-0",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "9475ce79edaf",
+    "category": "product_launch",
+    "source": "producthunt",
+    "description": "Product launch: Fix what’s hurting your visibility, trust, and conversionsDiscus",
+    "strength": 1,
+    "url": "https://www.producthunt.com/products/freescan-app",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "3a945749ce1e",
+    "category": "product_launch",
+    "source": "producthunt",
+    "description": "Product launch: OpenTelemetry-native observability for agents and LLMsDiscussion<",
+    "strength": 1,
+    "url": "https://www.producthunt.com/products/openobserve",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "773b180c3765",
+    "category": "product_launch",
+    "source": "producthunt",
+    "description": "Product launch: Local-first personal finance with optional broker syncDiscussion<",
+    "strength": 1,
+    "url": "https://www.producthunt.com/products/wealthfolio",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "99c65f327696",
+    "category": "product_launch",
+    "source": "producthunt",
+    "description": "Product launch: The largest iPhone display ever. In a thin, foldable design.Discussion<",
+    "strength": 1,
+    "url": "https://www.producthunt.com/products/apple",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "d69b7840386c",
+    "category": "product_launch",
+    "source": "producthunt",
+    "description": "Product launch: Private, on-device meeting notes for MacDiscussion",
+    "strength": 1,
+    "url": "https://www.producthunt.com/products/speechmark",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "6174ef018dea",
+    "category": "customer",
+    "source": "producthunt",
+    "description": "Customer signal: AI customer experience that builds and improves itselfDiscussion",
+    "strength": 1,
+    "url": "https://www.producthunt.com/products/typewise",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "6174ef018dea",
+    "category": "product_launch",
+    "source": "producthunt",
+    "description": "Product launch: AI customer experience that builds and improves itselfDiscussion",
+    "strength": 1,
+    "url": "https://www.producthunt.com/products/typewise",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "8f51485ca233",
+    "category": "product_launch",
+    "source": "producthunt",
+    "description": "Product launch: The first Suno model built with the music industryDiscussion",
+    "strength": 1,
+    "url": "https://www.producthunt.com/products/suno",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "ae5e3b5a7c75",
+    "category": "product_launch",
+    "source": "producthunt",
+    "description": "Product launch: Beat the market with 90+ datasets and AI made for analysisDiscussi",
+    "strength": 1,
+    "url": "https://www.producthunt.com/products/athenic-ai",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "c631d362174f",
+    "category": "product_launch",
+    "source": "producthunt",
+    "description": "Product launch: Small specialized AI models for speech, text, visionDiscussio",
+    "strength": 1,
+    "url": "https://www.producthunt.com/products/desert-ant-labs",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "9cd1e85fc264",
+    "category": "product_launch",
+    "source": "producthunt",
+    "description": "Product launch: Use saved presets to quickly get a branded device videoDiscussion</",
+    "strength": 1,
+    "url": "https://www.producthunt.com/products/mockmagic",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "315f28d9cec7",
+    "category": "product_launch",
+    "source": "producthunt",
+    "description": "Product launch: The professional workspace for your whole agent stackDiscussion",
+    "strength": 1,
+    "url": "https://www.producthunt.com/products/hob-2",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "e35d828a193d",
+    "category": "product_launch",
+    "source": "producthunt",
+    "description": "Product launch: Put your pets in your macOS menu barDiscussion|",
+    "strength": 1,
+    "url": "https://www.producthunt.com/products/vibe-eyes",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "027c43c43be8",
+    "category": "product_launch",
+    "source": "producthunt",
+    "description": "Product launch: Google's AI map of every possible human DNA mutationDiscuss",
+    "strength": 1,
+    "url": "https://www.producthunt.com/products/alphagenome-atlas",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "64b2fa7d9561",
+    "category": "product_launch",
+    "source": "producthunt",
+    "description": "Product launch: A shared workspace for Claude, Codex, and your teamDiscussion",
+    "strength": 1,
+    "url": "https://www.producthunt.com/products/type-com",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "a712998a3e68",
+    "category": "product_launch",
+    "source": "producthunt",
+    "description": "Product launch: A security layer for AI coding agentsDiscussio",
+    "strength": 1,
+    "url": "https://www.producthunt.com/products/agent-integrity-foundation-aif",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "4cf7063d1248",
+    "category": "product_launch",
+    "source": "producthunt",
+    "description": "Product launch: Give your AI agent guides that show users where to clickDiscussion",
+    "strength": 1,
+    "url": "https://www.producthunt.com/products/frigade",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "f391ce7f8d6a",
+    "category": "product_launch",
+    "source": "producthunt",
+    "description": "Product launch: 2D IDE for running agents across projects without fatigueDiscuss",
+    "strength": 1,
+    "url": "https://www.producthunt.com/products/49agents-ide",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "cd38ae743abf",
+    "category": "product_launch",
+    "source": "producthunt",
+    "description": "Product launch: Brands outbid each other to put their logo on my assDiscussion",
+    "strength": 1,
+    "url": "https://www.producthunt.com/products/ass-auction",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "b35eacc7d1d9",
+    "category": "product_launch",
+    "source": "producthunt",
+    "description": "Product launch: Understand your ad performance in secondsDiscussion",
+    "strength": 1,
+    "url": "https://www.producthunt.com/products/adscope-2",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "03ab9cff2ba9",
+    "category": "product_launch",
+    "source": "producthunt",
+    "description": "Product launch: Work with your data in your languageDiscussion|",
+    "strength": 1,
+    "url": "https://www.producthunt.com/products/basedash",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "bc1d132364ac",
+    "category": "product_launch",
+    "source": "producthunt",
+    "description": "Product launch: Where verified talent meets opportunity. Hire with trust!Discussion",
+    "strength": 1,
+    "url": "https://www.producthunt.com/products/workid-ai",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "4cae2d505bc2",
+    "category": "product_launch",
+    "source": "producthunt",
+    "description": "Product launch: Turn any picture into a playable AI adventureDiscussion",
+    "strength": 1,
+    "url": "https://www.producthunt.com/products/diiverge-co",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "30efa45081a9",
+    "category": "github",
+    "source": "github_trending",
+    "description": "GitHub activity: A skill to stop your coding agent from burying the answer. ADHD-friendly output.",
+    "strength": 1,
+    "url": "https://github.com/ayghri/i-have-adhd",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "30efa45081a9",
+    "category": "github",
+    "source": "github_trending",
+    "description": "GitHub stars: 35823",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "21d4e071f8e9",
+    "category": "github",
+    "source": "github_trending",
+    "description": "GitHub activity: Make Every Team AI Native",
+    "strength": 1,
+    "url": "https://github.com/Tencent/teamai-cli",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "21d4e071f8e9",
+    "category": "github",
+    "source": "github_trending",
+    "description": "GitHub stars: 3330",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "4b3e7219c077",
+    "category": "github",
+    "source": "github_trending",
+    "description": "GitHub activity: An agentic skills framework & software development methodology that works.",
+    "strength": 1,
+    "url": "https://github.com/obra/superpowers",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "4b3e7219c077",
+    "category": "github",
+    "source": "github_trending",
+    "description": "GitHub stars: 284249",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "3d74c33283ee",
+    "category": "github",
+    "source": "github_trending",
+    "description": "GitHub activity: Open-source 3D architectural editor with a local CLI, MCP tools, and practical w",
+    "strength": 1,
+    "url": "https://github.com/pascalorg/editor",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "3d74c33283ee",
+    "category": "github",
+    "source": "github_trending",
+    "description": "GitHub stars: 23140",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "5cf766bef5b9",
+    "category": "github",
+    "source": "github_trending",
+    "description": "GitHub activity: A library of agent skills for CAD, CAE and CAM",
+    "strength": 1,
+    "url": "https://github.com/earthtojake/text-to-cad",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "5cf766bef5b9",
+    "category": "github",
+    "source": "github_trending",
+    "description": "GitHub stars: 15218",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "19722d895a60",
+    "category": "github",
+    "source": "github_trending",
+    "description": "GitHub activity: 38 editorial diagram types for Claude Code, Codex, and Pi. Self-contained HTML +",
+    "strength": 1,
+    "url": "https://github.com/cathrynlavery/diagram-design",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "19722d895a60",
+    "category": "github",
+    "source": "github_trending",
+    "description": "GitHub stars: 37020",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "41c4de3927d3",
+    "category": "github",
+    "source": "github_trending",
+    "description": "GitHub activity: TradingAgents: Multi-Agents LLM Financial Trading Framework",
+    "strength": 1,
+    "url": "https://github.com/TauricResearch/TradingAgents",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "41c4de3927d3",
+    "category": "github",
+    "source": "github_trending",
+    "description": "GitHub stars: 104255",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "fd9506547047",
+    "category": "github",
+    "source": "github_trending",
+    "description": "GitHub activity: Notes of the book System Desgin Interview - An Insider's Guide",
+    "strength": 1,
+    "url": "https://github.com/liquidslr/system-design-notes",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "fd9506547047",
+    "category": "github",
+    "source": "github_trending",
+    "description": "GitHub stars: 18294",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "500b7f8d1aa7",
+    "category": "github",
+    "source": "github_trending",
+    "description": "GitHub activity: OpenAI Plugins",
+    "strength": 1,
+    "url": "https://github.com/openai/plugins",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "500b7f8d1aa7",
+    "category": "github",
+    "source": "github_trending",
+    "description": "GitHub stars: 6308",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "7313da588720",
+    "category": "github",
+    "source": "github_trending",
+    "description": "GitHub activity: Prompt as Code | GPT Image 2 / 2.5 提示词与案例库，530+ 个案例、20+ 套工业级模板与可复用 Skills，新增 2.5",
+    "strength": 1,
+    "url": "https://github.com/freestylefly/awesome-gpt-image-2",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "7313da588720",
+    "category": "github",
+    "source": "github_trending",
+    "description": "GitHub stars: 30413",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "6a7771efc6d1",
+    "category": "github",
+    "source": "github_trending",
+    "description": "GitHub activity: Learn it. Build it. Ship it for others.",
+    "strength": 1,
+    "url": "https://github.com/rohitg00/ai-engineering-from-scratch",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "6a7771efc6d1",
+    "category": "github",
+    "source": "github_trending",
+    "description": "GitHub stars: 53935",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "569b76ce41e7",
+    "category": "github",
+    "source": "github_trending",
+    "description": "GitHub activity: Local-first AI coding agent desktop: Electron + Rust host core + pi Agent Harnes",
+    "strength": 1,
+    "url": "https://github.com/vastsa/PI-Desktop",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "569b76ce41e7",
+    "category": "github",
+    "source": "github_trending",
+    "description": "GitHub stars: 1923",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "965015d717a8",
+    "category": "github",
+    "source": "github_trending",
+    "description": "GitHub activity: The agent harness performance optimization system. Skills, instincts, memory, se",
+    "strength": 1,
+    "url": "https://github.com/affaan-m/ECC",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "965015d717a8",
+    "category": "github",
+    "source": "github_trending",
+    "description": "GitHub stars: 255410",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "30efa45081a9",
+    "category": "github",
+    "source": "github_trending",
+    "description": "GitHub activity: A skill to stop your coding agent from burying the answer. ADHD-friendly output.",
+    "strength": 1,
+    "url": "https://github.com/ayghri/i-have-adhd",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "30efa45081a9",
+    "category": "github",
+    "source": "github_trending",
+    "description": "GitHub stars: 35823",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "5cf766bef5b9",
+    "category": "github",
+    "source": "github_trending",
+    "description": "GitHub activity: A library of agent skills for CAD, CAE and CAM",
+    "strength": 1,
+    "url": "https://github.com/earthtojake/text-to-cad",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "5cf766bef5b9",
+    "category": "github",
+    "source": "github_trending",
+    "description": "GitHub stars: 15218",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "41c4de3927d3",
+    "category": "github",
+    "source": "github_trending",
+    "description": "GitHub activity: TradingAgents: Multi-Agents LLM Financial Trading Framework",
+    "strength": 1,
+    "url": "https://github.com/TauricResearch/TradingAgents",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "41c4de3927d3",
+    "category": "github",
+    "source": "github_trending",
+    "description": "GitHub stars: 104255",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "6a7771efc6d1",
+    "category": "github",
+    "source": "github_trending",
+    "description": "GitHub activity: Learn it. Build it. Ship it for others.",
+    "strength": 1,
+    "url": "https://github.com/rohitg00/ai-engineering-from-scratch",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "6a7771efc6d1",
+    "category": "github",
+    "source": "github_trending",
+    "description": "GitHub stars: 53935",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "00108d616652",
+    "category": "github",
+    "source": "github_trending",
+    "description": "GitHub activity: A collective list of free APIs",
+    "strength": 1,
+    "url": "https://github.com/public-apis/public-apis",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "00108d616652",
+    "category": "github",
+    "source": "github_trending",
+    "description": "GitHub stars: 478296",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "0a88e44cd94a",
+    "category": "github",
+    "source": "github_trending",
+    "description": "GitHub activity: Use Claude Code, Codex, Pi, and OpenCode and more for free (1.3B+ free tokens) f",
+    "strength": 1,
+    "url": "https://github.com/Alishahryar1/free-claude-code",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "0a88e44cd94a",
+    "category": "github",
+    "source": "github_trending",
+    "description": "GitHub stars: 54252",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "1965d10df321",
+    "category": "github",
+    "source": "github_trending",
+    "description": "GitHub activity: Experiential is the open source, zero markup gateway for BYOK, self-hosted and 1",
+    "strength": 1,
+    "url": "https://github.com/experientiallabs/experiential",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "1965d10df321",
+    "category": "github",
+    "source": "github_trending",
+    "description": "GitHub stars: 3922",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "b8d5e531e276",
+    "category": "github",
+    "source": "github_trending",
+    "description": "GitHub activity: SpiderFoot automates OSINT for threat intelligence and mapping your attack surfa",
+    "strength": 1,
+    "url": "https://github.com/smicallef/spiderfoot",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "b8d5e531e276",
+    "category": "github",
+    "source": "github_trending",
+    "description": "GitHub stars: 22000",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "6c674081ab39",
+    "category": "github",
+    "source": "github_trending",
+    "description": "GitHub activity: Skills Catalog for Codex",
+    "strength": 1,
+    "url": "https://github.com/openai/skills",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "6c674081ab39",
+    "category": "github",
+    "source": "github_trending",
+    "description": "GitHub stars: 26810",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "1962b571a4d6",
+    "category": "github",
+    "source": "github_trending",
+    "description": "GitHub activity: Agents that use the browser.",
+    "strength": 1,
+    "url": "https://github.com/browser-use/browser-use",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "1962b571a4d6",
+    "category": "github",
+    "source": "github_trending",
+    "description": "GitHub stars: 114004",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "a653f3181fb8",
+    "category": "github",
+    "source": "github_trending",
+    "description": "GitHub activity: A comprehensive open-source 3A game-generation skill and asset framework.",
+    "strength": 1,
+    "url": "https://github.com/OpenDCAI/GameFactory-3A",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "a653f3181fb8",
+    "category": "github",
+    "source": "github_trending",
+    "description": "GitHub stars: 614",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "737ae0e500b9",
+    "category": "github",
+    "source": "github_trending",
+    "description": "GitHub activity: 💫 Toolkit to help you get started with Spec-Driven Development",
+    "strength": 1,
+    "url": "https://github.com/github/spec-kit",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "737ae0e500b9",
+    "category": "github",
+    "source": "github_trending",
+    "description": "GitHub stars: 134479",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "346ba30d1163",
+    "category": "github",
+    "source": "github_trending",
+    "description": "GitHub activity: 🦔 PostHog is the leading platform for building self-driving products. Our develo",
+    "strength": 1,
+    "url": "https://github.com/PostHog/posthog",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "346ba30d1163",
+    "category": "github",
+    "source": "github_trending",
+    "description": "GitHub stars: 39727",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "b48c48c1a548",
+    "category": "github",
+    "source": "github_trending",
+    "description": "GitHub activity: 收录最全、更新最快的技能Skills商店：精选原创技能包（涵盖文档处理、内容创作、编程开发、机器学习、自动化工作流），全部打包好可直接安装使用！同时自动抓取Gi",
+    "strength": 1,
+    "url": "https://github.com/anbeime/skill",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "b48c48c1a548",
+    "category": "github",
+    "source": "github_trending",
+    "description": "GitHub stars: 6490",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "3fafe8e5eab6",
+    "category": "github",
+    "source": "github_trending",
+    "description": "GitHub activity: Build your autonomous hedge fund in minutes. AutoHedge harnesses the power of sw",
+    "strength": 1,
+    "url": "https://github.com/The-Swarm-Corporation/AutoHedge",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "3fafe8e5eab6",
+    "category": "github",
+    "source": "github_trending",
+    "description": "GitHub stars: 5977",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "560ca7dd51c4",
+    "category": "github",
+    "source": "github_trending",
+    "description": "GitHub activity: A curated collection of practical AI projects implementing OCR systems, RAG, AI ",
+    "strength": 1,
+    "url": "https://github.com/Sumanth077/Hands-On-AI-Engineering",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "560ca7dd51c4",
+    "category": "github",
+    "source": "github_trending",
+    "description": "GitHub stars: 3375",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "500b7f8d1aa7",
+    "category": "github",
+    "source": "github_trending",
+    "description": "GitHub activity: OpenAI Plugins",
+    "strength": 1,
+    "url": "https://github.com/openai/plugins",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "500b7f8d1aa7",
+    "category": "github",
+    "source": "github_trending",
+    "description": "GitHub stars: 6308",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "7313da588720",
+    "category": "github",
+    "source": "github_trending",
+    "description": "GitHub activity: Prompt as Code | GPT Image 2 / 2.5 提示词与案例库，530+ 个案例、20+ 套工业级模板与可复用 Skills，新增 2.5",
+    "strength": 1,
+    "url": "https://github.com/freestylefly/awesome-gpt-image-2",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "7313da588720",
+    "category": "github",
+    "source": "github_trending",
+    "description": "GitHub stars: 30413",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "965015d717a8",
+    "category": "github",
+    "source": "github_trending",
+    "description": "GitHub activity: The agent harness performance optimization system. Skills, instincts, memory, se",
+    "strength": 1,
+    "url": "https://github.com/affaan-m/ECC",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "965015d717a8",
+    "category": "github",
+    "source": "github_trending",
+    "description": "GitHub stars: 255410",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "f76c8d17077f",
+    "category": "github",
+    "source": "github_trending",
+    "description": "GitHub activity: Unlimited FREE AI coding. Connect Claude Code, Codex, Cursor, Cline, Copilot, An",
+    "strength": 1,
+    "url": "https://github.com/decolua/9router",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "f76c8d17077f",
+    "category": "github",
+    "source": "github_trending",
+    "description": "GitHub stars: 28239",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "d0c223f09bae",
+    "category": "github",
+    "source": "github_trending",
+    "description": "GitHub activity: Extracted system prompts from Anthropic - Claude Fable 5.1, Opus 5, Claude Desig",
+    "strength": 1,
+    "url": "https://github.com/asgeirtj/system_prompts_leaks",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "d0c223f09bae",
+    "category": "github",
+    "source": "github_trending",
+    "description": "GitHub stars: 64600",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "43571f30ad5a",
+    "category": "github",
+    "source": "github_trending",
+    "description": "GitHub activity: Stealth headless browser for AI agents — bypass Cloudflare, bot detection, and a",
+    "strength": 1,
+    "url": "https://github.com/jo-inc/camofox-browser",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "43571f30ad5a",
+    "category": "github",
+    "source": "github_trending",
+    "description": "GitHub stars: 10864",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "3649f52b796b",
+    "category": "github",
+    "source": "github_trending",
+    "description": "GitHub activity: 📱 Display and control your Android device graphically with scrcpy.",
+    "strength": 1,
+    "url": "https://github.com/viarotel-org/escrcpy",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "3649f52b796b",
+    "category": "github",
+    "source": "github_trending",
+    "description": "GitHub stars: 11632",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "e3b521ec227e",
+    "category": "github",
+    "source": "github_trending",
+    "description": "GitHub activity: Marketing skills for Claude Code and AI agents. CRO, copywriting, SEO, analytics",
+    "strength": 1,
+    "url": "https://github.com/coreyhaines31/marketingskills",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "e3b521ec227e",
+    "category": "github",
+    "source": "github_trending",
+    "description": "GitHub stars: 49330",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "5257f06b2d37",
+    "category": "github",
+    "source": "github_trending",
+    "description": "GitHub activity: Grab your own sweet-looking '.is-a.dev' subdomain.",
+    "strength": 1,
+    "url": "https://github.com/is-a-dev/register",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "5257f06b2d37",
+    "category": "github",
+    "source": "github_trending",
+    "description": "GitHub stars: 11238",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "b5e53fed5171",
+    "category": "github",
+    "source": "github_trending",
+    "description": "GitHub activity: Git. Ship. Done - Core",
+    "strength": 1,
+    "url": "https://github.com/open-gsd/gsd-core",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "b5e53fed5171",
+    "category": "github",
+    "source": "github_trending",
+    "description": "GitHub stars: 9309",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "48f6cd79412e",
+    "category": "github",
+    "source": "github_trending",
+    "description": "GitHub activity: LTX Director and a variety of other custom ComfyUI nodes and workflows",
+    "strength": 1,
+    "url": "https://github.com/WhatDreamsCost/WhatDreamsCost-ComfyUI",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "48f6cd79412e",
+    "category": "github",
+    "source": "github_trending",
+    "description": "GitHub stars: 2037",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "17b3c96f7867",
+    "category": "github",
+    "source": "github_trending",
+    "description": "GitHub activity: An advanced guide which might benefit you a lot 🎉 . 韩先凯的人生进阶指南 人生进阶指南 离谱的人生 人生进阶",
+    "strength": 1,
+    "url": "https://github.com/byoungd/up",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "17b3c96f7867",
+    "category": "github",
+    "source": "github_trending",
+    "description": "GitHub stars: 62583",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "7ffc29be6215",
+    "category": "github",
+    "source": "github_trending",
+    "description": "GitHub activity: One of the most popular modern web proxies with blazing fast speeds and a variet",
+    "strength": 1,
+    "url": "https://github.com/UseInterstellar/Interstellar",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "7ffc29be6215",
+    "category": "github",
+    "source": "github_trending",
+    "description": "GitHub stars: 2121",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "21d4e071f8e9",
+    "category": "github",
+    "source": "github_trending",
+    "description": "GitHub activity: Make Every Team AI Native",
+    "strength": 1,
+    "url": "https://github.com/Tencent/teamai-cli",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "21d4e071f8e9",
+    "category": "github",
+    "source": "github_trending",
+    "description": "GitHub stars: 3331",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "3d74c33283ee",
+    "category": "github",
+    "source": "github_trending",
+    "description": "GitHub activity: Open-source 3D architectural editor with a local CLI, MCP tools, and practical w",
+    "strength": 1,
+    "url": "https://github.com/pascalorg/editor",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "3d74c33283ee",
+    "category": "github",
+    "source": "github_trending",
+    "description": "GitHub stars: 23140",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "569b76ce41e7",
+    "category": "github",
+    "source": "github_trending",
+    "description": "GitHub activity: Local-first AI coding agent desktop: Electron + Rust host core + pi Agent Harnes",
+    "strength": 1,
+    "url": "https://github.com/vastsa/PI-Desktop",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "569b76ce41e7",
+    "category": "github",
+    "source": "github_trending",
+    "description": "GitHub stars: 1923",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "d92317ec2e72",
+    "category": "github",
+    "source": "github_trending",
+    "description": "GitHub activity: The open-source AI voice studio. Clone, dictate, create.",
+    "strength": 1,
+    "url": "https://github.com/jamiepine/voicebox",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "d92317ec2e72",
+    "category": "github",
+    "source": "github_trending",
+    "description": "GitHub stars: 52859",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "9b990886adc2",
+    "category": "github",
+    "source": "github_trending",
+    "description": "GitHub activity: Write HTML. Render video. Built for agents.",
+    "strength": 1,
+    "url": "https://github.com/heygen-com/hyperframes",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "9b990886adc2",
+    "category": "github",
+    "source": "github_trending",
+    "description": "GitHub stars: 48533",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "3841cd8bb2b1",
+    "category": "github",
+    "source": "github_trending",
+    "description": "GitHub activity: 🙌 OpenHands: AI-Driven Development",
+    "strength": 1,
+    "url": "https://github.com/OpenHands/OpenHands",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "3841cd8bb2b1",
+    "category": "github",
+    "source": "github_trending",
+    "description": "GitHub stars: 87166",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "e86cfe6d0480",
+    "category": "partnership",
+    "source": "github_trending",
+    "description": "Partnership: 🌊 The original agent meta-harness. Deploy intelligent multi-player swarms, coord",
+    "strength": 1,
+    "url": "https://github.com/ruvnet/ruflo",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "e86cfe6d0480",
+    "category": "github",
+    "source": "github_trending",
+    "description": "GitHub activity: 🌊 The original agent meta-harness. Deploy intelligent multi-player swarms, coord",
+    "strength": 1,
+    "url": "https://github.com/ruvnet/ruflo",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "e86cfe6d0480",
+    "category": "github",
+    "source": "github_trending",
+    "description": "GitHub stars: 71874",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "1bc717dd66ca",
+    "category": "github",
+    "source": "github_trending",
+    "description": "GitHub activity: A self-improving RLM agent for coding workflows and long-running autonomous task",
+    "strength": 1,
+    "url": "https://github.com/PrimeIntellect-ai/prime-agent",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "1bc717dd66ca",
+    "category": "github",
+    "source": "github_trending",
+    "description": "GitHub stars: 20447",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "5eb110a7a21b",
+    "category": "github",
+    "source": "github_trending",
+    "description": "GitHub activity: A declarative, efficient, and flexible JavaScript library for building user inte",
+    "strength": 1,
+    "url": "https://github.com/solidjs/solid",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "5eb110a7a21b",
+    "category": "github",
+    "source": "github_trending",
+    "description": "GitHub stars: 36011",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "4d78ac6557a4",
+    "category": "github",
+    "source": "github_trending",
+    "description": "GitHub activity: The open agent skills tool - npx skills",
+    "strength": 1,
+    "url": "https://github.com/vercel-labs/skills",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "4d78ac6557a4",
+    "category": "github",
+    "source": "github_trending",
+    "description": "GitHub stars: 30843",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "badfc4a3df74",
+    "category": "github",
+    "source": "github_trending",
+    "description": "GitHub activity: Memory and context engine + app that is extremely fast, scalable, and can be run",
+    "strength": 1,
+    "url": "https://github.com/supermemoryai/supermemory",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "badfc4a3df74",
+    "category": "github",
+    "source": "github_trending",
+    "description": "GitHub stars: 29584",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "fd6bdd3515d8",
+    "category": "github",
+    "source": "github_trending",
+    "description": "GitHub activity: Record your screen, ship a demo. Free and open-source, GPU-accelerated, no water",
+    "strength": 1,
+    "url": "https://github.com/getopenscreen/openscreen",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "fd6bdd3515d8",
+    "category": "github",
+    "source": "github_trending",
+    "description": "GitHub stars: 2679",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "d227d31197a5",
+    "category": "github",
+    "source": "github_trending",
+    "description": "GitHub activity: Action for checking out a repo",
+    "strength": 1,
+    "url": "https://github.com/actions/checkout",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "d227d31197a5",
+    "category": "github",
+    "source": "github_trending",
+    "description": "GitHub stars: 8860",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "5350c3e93c28",
+    "category": "github",
+    "source": "github_trending",
+    "description": "GitHub activity: Apache Maka (Incubating) is a high-performance agent workspace that keeps a comp",
+    "strength": 1,
+    "url": "https://github.com/apache/maka",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "5350c3e93c28",
+    "category": "github",
+    "source": "github_trending",
+    "description": "GitHub stars: 5162",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "1b9183c18c78",
+    "category": "github",
+    "source": "github_trending",
+    "description": "GitHub activity: Context window optimization for AI coding agents. Sandboxes tool output (98% red",
+    "strength": 1,
+    "url": "https://github.com/mksglu/context-mode",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "1b9183c18c78",
+    "category": "github",
+    "source": "github_trending",
+    "description": "GitHub stars: 21837",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "ac820427bd40",
+    "category": "github",
+    "source": "github_trending",
+    "description": "GitHub activity: 本项目采用 CC BY-NC-SA 协议，禁止任何商业化行为，任何衍生项目必须保留本项目地址并以相同协议开源",
+    "strength": 1,
+    "url": "https://github.com/MoonTechLab/LunaTV",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "ac820427bd40",
+    "category": "github",
+    "source": "github_trending",
+    "description": "GitHub stars: 10390",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "f7c26965da1a",
+    "category": "github",
+    "source": "github_trending",
+    "description": "GitHub activity: 插件化、定制化、无广告的免费音乐播放器",
+    "strength": 1,
+    "url": "https://github.com/maotoumao/MusicFree",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "f7c26965da1a",
+    "category": "github",
+    "source": "github_trending",
+    "description": "GitHub stars: 26760",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "95a2b0805a4c",
+    "category": "github",
+    "source": "github_trending",
+    "description": "GitHub activity: A CAD application built with Rust — 2D/3D drawing, DWG/DXF support, and GPU-acce",
+    "strength": 1,
+    "url": "https://github.com/HakanSeven12/OpenCADStudio",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "95a2b0805a4c",
+    "category": "github",
+    "source": "github_trending",
+    "description": "GitHub stars: 1395",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "e006c854ea5a",
+    "category": "github",
+    "source": "github_trending",
+    "description": "GitHub activity: Fast and accurate AI powered file content types detection",
+    "strength": 1,
+    "url": "https://github.com/google/magika",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "e006c854ea5a",
+    "category": "github",
+    "source": "github_trending",
+    "description": "GitHub stars: 18529",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "2777630ef6f4",
+    "category": "github",
+    "source": "github_trending",
+    "description": "GitHub activity: cursor-byok is a local implementation of Cursor's backend",
+    "strength": 1,
+    "url": "https://github.com/leookun/cursor-byok",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "2777630ef6f4",
+    "category": "github",
+    "source": "github_trending",
+    "description": "GitHub stars: 2860",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "cae003bf9c20",
+    "category": "github",
+    "source": "github_trending",
+    "description": "GitHub activity: Offline, privacy-first grammar checker. Fast, open-source, Rust-powered",
+    "strength": 1,
+    "url": "https://github.com/Automattic/harper",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "cae003bf9c20",
+    "category": "github",
+    "source": "github_trending",
+    "description": "GitHub stars: 15234",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "d6420d7e91b1",
+    "category": "github",
+    "source": "github_trending",
+    "description": "GitHub activity: CLI proxy that reduces LLM token consumption by 60-90% on common dev commands. S",
+    "strength": 1,
+    "url": "https://github.com/rtk-ai/rtk",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "d6420d7e91b1",
+    "category": "github",
+    "source": "github_trending",
+    "description": "GitHub stars: 79743",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "97abebb77a42",
+    "category": "github",
+    "source": "github_trending",
+    "description": "GitHub activity: 缠中说禅技术分析工具；缠论；股票；期货；Quant；量化交易",
+    "strength": 1,
+    "url": "https://github.com/waditu/czsc",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "97abebb77a42",
+    "category": "github",
+    "source": "github_trending",
+    "description": "GitHub stars: 6084",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "b90dde0a0fd8",
+    "category": "github",
+    "source": "github_trending",
+    "description": "GitHub activity: A native, all-in-one workspace for databases, SSH, SFTP, terminals, remote deskt",
+    "strength": 1,
+    "url": "https://github.com/feigeCode/navop",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "b90dde0a0fd8",
+    "category": "github",
+    "source": "github_trending",
+    "description": "GitHub stars: 1251",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "421422823e4e",
+    "category": "github",
+    "source": "github_trending",
+    "description": "GitHub activity: π RuView turns commodity WiFi signals into real-time spatial intelligence, vital",
+    "strength": 1,
+    "url": "https://github.com/ruvnet/RuView",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "421422823e4e",
+    "category": "github",
+    "source": "github_trending",
+    "description": "GitHub stars: 92947",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "144dd09d9b0a",
+    "category": "github",
+    "source": "github_trending",
+    "description": "GitHub activity: The fastest and the most accurate file search SDK for AI agents, Neovim, Rust, C",
+    "strength": 1,
+    "url": "https://github.com/dmtrKovalenko/fff",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "144dd09d9b0a",
+    "category": "github",
+    "source": "github_trending",
+    "description": "GitHub stars: 10665",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "d8add5d95096",
+    "category": "github",
+    "source": "github_trending",
+    "description": "GitHub activity: 🚀 通用 AI IDE 账号管理工具：支持 Antigravity / Codex / GitHub Copilot / Windsurf / Kiro / C",
+    "strength": 1,
+    "url": "https://github.com/jlcodes99/cockpit-tools",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "d8add5d95096",
+    "category": "github",
+    "source": "github_trending",
+    "description": "GitHub stars: 17413",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "2e1126dd80ba",
+    "category": "github",
+    "source": "github_trending",
+    "description": "GitHub activity: A cross-platform desktop All-in-One assistant for Claude Code, Codex, OpenCode, ",
+    "strength": 1,
+    "url": "https://github.com/farion1231/cc-switch",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "2e1126dd80ba",
+    "category": "github",
+    "source": "github_trending",
+    "description": "GitHub stars: 132066",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "8ce0e09d556b",
+    "category": "github",
+    "source": "github_trending",
+    "description": "GitHub activity: AI-assisted PCB design for KiCAD 10. Native KiCAD plugin — a single Rust binary ",
+    "strength": 1,
+    "url": "https://github.com/mixelpixx/Konnect",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "8ce0e09d556b",
+    "category": "github",
+    "source": "github_trending",
+    "description": "GitHub stars: 601",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "30ccff6fbf35",
+    "category": "github",
+    "source": "github_trending",
+    "description": "GitHub activity: 20 MB lightweight cross-platform database client for 90+ databases, including My",
+    "strength": 1,
+    "url": "https://github.com/t8y2/dbx",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "30ccff6fbf35",
+    "category": "github",
+    "source": "github_trending",
+    "description": "GitHub stars: 18780",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "07ce273a7788",
+    "category": "github",
+    "source": "github_trending",
+    "description": "GitHub activity: Browser automation CLI for AI agents",
+    "strength": 1,
+    "url": "https://github.com/vercel-labs/agent-browser",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "07ce273a7788",
+    "category": "github",
+    "source": "github_trending",
+    "description": "GitHub stars: 42326",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "1ea1aa46eee1",
+    "category": "github",
+    "source": "github_trending",
+    "description": "GitHub activity: Kubernetes-Native Resource Operations",
+    "strength": 1,
+    "url": "https://github.com/polarsquad/krops",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "1ea1aa46eee1",
+    "category": "github",
+    "source": "github_trending",
+    "description": "GitHub stars: 141",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "02f5de6b8858",
+    "category": "github",
+    "source": "github_trending",
+    "description": "GitHub activity: Memory layer for AI Agents. Replace complex RAG pipelines with a serverless, sin",
+    "strength": 1,
+    "url": "https://github.com/memvid/memvid",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "02f5de6b8858",
+    "category": "github",
+    "source": "github_trending",
+    "description": "GitHub stars: 16535",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "e7fec7995661",
+    "category": "github",
+    "source": "github_trending",
+    "description": "GitHub activity: Durable, searchable memory of your past agent sessions.",
+    "strength": 1,
+    "url": "https://github.com/huggingface/funes",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "e7fec7995661",
+    "category": "github",
+    "source": "github_trending",
+    "description": "GitHub stars: 353",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "d22d381f98a5",
+    "category": "github",
+    "source": "github_trending",
+    "description": "GitHub activity: Raster to Vector Graphics Converter",
+    "strength": 1,
+    "url": "https://github.com/visioncortex/vtracer",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "d22d381f98a5",
+    "category": "github",
+    "source": "github_trending",
+    "description": "GitHub stars: 6957",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "3656d7900551",
+    "category": "github",
+    "source": "github_trending",
+    "description": "GitHub activity: A smarter cd command. Supports all major shells.",
+    "strength": 1,
+    "url": "https://github.com/ajeetdsouza/zoxide",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "3656d7900551",
+    "category": "github",
+    "source": "github_trending",
+    "description": "GitHub stars: 39340",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "41aa68451e19",
+    "category": "github",
+    "source": "github_trending",
+    "description": "GitHub activity: Solution for long term memory for agent coding CLIs and to facilitate handoff be",
+    "strength": 1,
+    "url": "https://github.com/akitaonrails/ai-memory",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "41aa68451e19",
+    "category": "github",
+    "source": "github_trending",
+    "description": "GitHub stars: 6358",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "714cbe1edc67",
+    "category": "github",
+    "source": "github_trending",
+    "description": "GitHub activity: Open source factory for one-shot engineering",
+    "strength": 1,
+    "url": "https://github.com/superplanehq/superplane",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "714cbe1edc67",
+    "category": "github",
+    "source": "github_trending",
+    "description": "GitHub stars: 6652",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "34ae33d0c7bf",
+    "category": "github",
+    "source": "github_trending",
+    "description": "GitHub activity: Xray, Penetrates Everything. Also the best v2ray-core. Where the magic happens. ",
+    "strength": 1,
+    "url": "https://github.com/XTLS/Xray-core",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "34ae33d0c7bf",
+    "category": "github",
+    "source": "github_trending",
+    "description": "GitHub stars: 41497",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "e4ef6a2768f5",
+    "category": "github",
+    "source": "github_trending",
+    "description": "GitHub activity: The Single Sign-On Multi-Factor portal for web apps. OpenID Certified™ and Post-",
+    "strength": 1,
+    "url": "https://github.com/authelia/authelia",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "e4ef6a2768f5",
+    "category": "github",
+    "source": "github_trending",
+    "description": "GitHub stars: 28876",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "9ff42a2c614b",
+    "category": "github",
+    "source": "github_trending",
+    "description": "GitHub activity: Sub2API 一站式开源中转服务，让 Claude、Openai 、Gemini、Grok订阅统一接入，支持拼车共享，更高效分摊成本，原生工具无缝使用。",
+    "strength": 1,
+    "url": "https://github.com/Wei-Shaw/sub2api",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "9ff42a2c614b",
+    "category": "github",
+    "source": "github_trending",
+    "description": "GitHub stars: 41082",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "34aeff9cd48a",
+    "category": "github",
+    "source": "github_trending",
+    "description": "GitHub activity: Simple HTTP, REST, and SSE client library for Go",
+    "strength": 1,
+    "url": "https://github.com/go-resty/resty",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "34aeff9cd48a",
+    "category": "github",
+    "source": "github_trending",
+    "description": "GitHub stars: 11795",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "c51e2e49d034",
+    "category": "github",
+    "source": "github_trending",
+    "description": "GitHub activity: Fast, efficient, battle-tested at Alibaba's scale. Hybrid architecture code revi",
+    "strength": 1,
+    "url": "https://github.com/alibaba/open-code-review",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "c51e2e49d034",
+    "category": "github",
+    "source": "github_trending",
+    "description": "GitHub stars: 22177",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "6f7a5ae48140",
+    "category": "github",
+    "source": "github_trending",
+    "description": "GitHub activity: The official Lark/飞书 CLI tool, maintained by the larksuite team — built for huma",
+    "strength": 1,
+    "url": "https://github.com/larksuite/cli",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "6f7a5ae48140",
+    "category": "github",
+    "source": "github_trending",
+    "description": "GitHub stars: 17113",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "69cc2de2d829",
+    "category": "github",
+    "source": "github_trending",
+    "description": "GitHub activity: Heterogeneous GPU Sharing on Kubernetes",
+    "strength": 1,
+    "url": "https://github.com/Project-HAMi/HAMi",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "69cc2de2d829",
+    "category": "github",
+    "source": "github_trending",
+    "description": "GitHub stars: 4568",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "3c030106cb24",
+    "category": "github",
+    "source": "github_trending",
+    "description": "GitHub activity: RAGFlow is a leading open-source Retrieval-Augmented Generation (RAG) engine tha",
+    "strength": 1,
+    "url": "https://github.com/infiniflow/ragflow",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "3c030106cb24",
+    "category": "github",
+    "source": "github_trending",
+    "description": "GitHub stars: 90422",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "43ea5aa7eb66",
+    "category": "github",
+    "source": "github_trending",
+    "description": "GitHub activity: MCP Toolbox for Databases is an open source MCP server for databases.",
+    "strength": 1,
+    "url": "https://github.com/googleapis/mcp-toolbox",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "43ea5aa7eb66",
+    "category": "github",
+    "source": "github_trending",
+    "description": "GitHub stars: 16355",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "cb08b1faedc2",
+    "category": "github",
+    "source": "github_trending",
+    "description": "GitHub activity: SafeLine is a self-hosted WAF(Web Application Firewall) / reverse proxy to prote",
+    "strength": 1,
+    "url": "https://github.com/chaitin/SafeLine",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "cb08b1faedc2",
+    "category": "github",
+    "source": "github_trending",
+    "description": "GitHub stars: 22551",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "f58c9e6856c9",
+    "category": "github",
+    "source": "github_trending",
+    "description": "GitHub activity: The Prometheus monitoring system and time series database.",
+    "strength": 1,
+    "url": "https://github.com/prometheus/prometheus",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "f58c9e6856c9",
+    "category": "github",
+    "source": "github_trending",
+    "description": "GitHub stars: 66018",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "c15a6aee5757",
+    "category": "github",
+    "source": "github_trending",
+    "description": "GitHub activity: Bridge local AI coding agents (Claude Code, Cursor, Gemini CLI, Codex) to messag",
+    "strength": 1,
+    "url": "https://github.com/chenhg5/cc-connect",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "c15a6aee5757",
+    "category": "github",
+    "source": "github_trending",
+    "description": "GitHub stars: 15440",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "c0b675449d28",
+    "category": "github",
+    "source": "github_trending",
+    "description": "GitHub activity: A Cloud Native Batch System (Project under CNCF)",
+    "strength": 1,
+    "url": "https://github.com/volcano-sh/volcano",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "c0b675449d28",
+    "category": "github",
+    "source": "github_trending",
+    "description": "GitHub stars: 5934",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "935ff63b713f",
+    "category": "github",
+    "source": "github_trending",
+    "description": "GitHub activity: A high performance and flexible authorization/permission engine built for develo",
+    "strength": 1,
+    "url": "https://github.com/openfga/openfga",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "935ff63b713f",
+    "category": "github",
+    "source": "github_trending",
+    "description": "GitHub stars: 5749",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "30ff1f8f044a",
+    "category": "github",
+    "source": "github_trending",
+    "description": "GitHub activity: Open Source Continuous File Synchronization",
+    "strength": 1,
+    "url": "https://github.com/syncthing/syncthing",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "30ff1f8f044a",
+    "category": "github",
+    "source": "github_trending",
+    "description": "GitHub stars: 88442",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "6188cd100cca",
+    "category": "funding",
+    "source": "news:TechCrunch",
+    "description": "Funding signal: Listen Labs walked away from a signed Series C term sheet from Menlo Ventures, s",
+    "strength": 1,
+    "url": "https://techcrunch.com/2026/09/09/ai-research-startup-listen-labs-scrubbed-a-1-5b-funding-round-for-salesforce-talks/",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "6188cd100cca",
+    "category": "funding",
+    "source": "news:TechCrunch",
+    "description": "Funding category: Listen Labs walked away from a signed Series C term sheet from Menlo Ventures, s",
+    "strength": 1,
+    "url": "https://techcrunch.com/2026/09/09/ai-research-startup-listen-labs-scrubbed-a-1-5b-funding-round-for-salesforce-talks/",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "6188cd100cca",
+    "category": "news",
+    "source": "news:TechCrunch",
+    "description": "Listen Labs walked away from a signed Series C term sheet from Menlo Ventures, sources say. ",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "54ee49298921",
+    "category": "news",
+    "source": "news:TechCrunch",
+    "description": "Mullenweg said in a company Slack message that it was against his will. ",
+    "strength": 1,
+    "url": "https://techcrunch.com/2026/09/09/automattics-board-forces-ceo-matt-mullenweg-into-leave-of-absence/",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "54ee49298921",
+    "category": "news",
+    "source": "news:TechCrunch",
+    "description": "Mullenweg said in a company Slack message that it was against his will. ",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "27d5402424b0",
+    "category": "news",
+    "source": "news:TechCrunch",
+    "description": "Paul Christiano, an influential AI researcher focused on alignment, is joining the OpenAI Foundation",
+    "strength": 1,
+    "url": "https://techcrunch.com/2026/09/09/openai-adds-a-prominent-ai-doomer-to-its-board-of-directors/",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "27d5402424b0",
+    "category": "news",
+    "source": "news:TechCrunch",
+    "description": "Paul Christiano, an influential AI researcher focused on alignment, is joining the OpenAI Foundation",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "7f1016f60c24",
+    "category": "news",
+    "source": "news:TechCrunch",
+    "description": "John Ternus made the case in his first keynote as Apple CEO that the iPhone isn't going anywhere.",
+    "strength": 1,
+    "url": "https://techcrunch.com/2026/09/09/apples-new-ceo-is-reviving-a-steve-jobs-strategy-from-25-years-ago/",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "7f1016f60c24",
+    "category": "news",
+    "source": "news:TechCrunch",
+    "description": "John Ternus made the case in his first keynote as Apple CEO that the iPhone isn't going anywhere.",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "c687e7db43f9",
+    "category": "news",
+    "source": "news:TechCrunch",
+    "description": "The legal AI startup and VC darling has nearly doubled its valuation in nine months. ",
+    "strength": 1,
+    "url": "https://techcrunch.com/2026/09/09/harvey-hits-15-5b-valuation-months-after-reaching-11b/",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "c687e7db43f9",
+    "category": "news",
+    "source": "news:TechCrunch",
+    "description": "The legal AI startup and VC darling has nearly doubled its valuation in nine months. ",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "54ff2387e438",
+    "category": "news",
+    "source": "news:TechCrunch",
+    "description": "Unlike early iterations of foldables, which looked like vertical slabs, Apple adopted a wider form f",
+    "strength": 1,
+    "url": "https://techcrunch.com/2026/09/09/apple-unveils-its-first-foldable-the-iphone-duo/",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "54ff2387e438",
+    "category": "news",
+    "source": "news:TechCrunch",
+    "description": "Unlike early iterations of foldables, which looked like vertical slabs, Apple adopted a wider form f",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "1a2e03a092e6",
+    "category": "news",
+    "source": "news:TechCrunch",
+    "description": "The company also argued that its on-device models offer consumers more privacy. ",
+    "strength": 1,
+    "url": "https://techcrunch.com/2026/09/09/apple-ceo-john-ternus-says-the-best-ai-device-is-still-the-iphone/",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "1a2e03a092e6",
+    "category": "news",
+    "source": "news:TechCrunch",
+    "description": "The company also argued that its on-device models offer consumers more privacy. ",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "f6a2aaeff43b",
+    "category": "product_launch",
+    "source": "news:TechCrunch",
+    "description": "Product event: Apple's new iPhone 18 Pro lineup upgrades the camera and comes in burgundy. ",
+    "strength": 1,
+    "url": "https://techcrunch.com/2026/09/09/apple-launches-iphone-18-pro-with-upgraded-camera/",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "f6a2aaeff43b",
+    "category": "news",
+    "source": "news:TechCrunch",
+    "description": "Apple's new iPhone 18 Pro lineup upgrades the camera and comes in burgundy. ",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "99d678210e79",
+    "category": "funding",
+    "source": "news:Ars Technica",
+    "description": "Funding category: \n                        In all, 3,700 internal agents posted 18,000 messages di",
+    "strength": 1,
+    "url": "https://arstechnica.com/security/2026/09/openai-agents-discussed-ways-to-escape-their-sandbox-on-public-wiki/",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "99d678210e79",
+    "category": "news",
+    "source": "news:Ars Technica",
+    "description": "\n                        In all, 3,700 internal agents posted 18,000 messages discussing cheating on",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "7d73ba08aa94",
+    "category": "news",
+    "source": "news:Ars Technica",
+    "description": "\n                        Pro soccer team's CTO points to \"issues with the Broadcom takeover.\" \n     ",
+    "strength": 1,
+    "url": "https://arstechnica.com/information-technology/2026/09/vmware-migration-reduces-tottenham-hotspurs-licensing-fees-by-85-percent/",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "7d73ba08aa94",
+    "category": "news",
+    "source": "news:Ars Technica",
+    "description": "\n                        Pro soccer team's CTO points to \"issues with the Broadcom takeover.\" \n     ",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "e154aae804b8",
+    "category": "news",
+    "source": "news:The Verge",
+    "description": "\n\t\t\t\t\t\t\t\t\t\t\t\n\n\t\t\t\t\t\t\n<figure>\n\n<img alt=\"A photo of Matt Mullenweg\" data-caption=\"\" data-portal-copy",
+    "strength": 1,
+    "url": "https://www.theverge.com/tech/993022/wordpress-automattic-ceo-matt-mullenweg-leave-of-absence",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "e154aae804b8",
+    "category": "news",
+    "source": "news:The Verge",
+    "description": "\n\t\t\t\t\t\t\t\t\t\t\t\n\n\t\t\t\t\t\t\n<figure>\n\n<img alt=\"A photo of Matt Mullenweg\" data-caption=\"\" data-portal-copy",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "dbe27ce917f3",
+    "category": "news",
+    "source": "news:The Verge",
+    "description": "\n\t\t\t\t\t\t\t\t\t\t\t\n\n\t\t\t\t\t\t\n<figure>\n\n<img alt=\"\" data-caption=\"Open AI CEO Sam Altman speaks during the G2",
+    "strength": 1,
+    "url": "https://www.theverge.com/ai-artificial-intelligence/992953/openai-math-millennium-prize-navier-stokes",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "dbe27ce917f3",
+    "category": "news",
+    "source": "news:The Verge",
+    "description": "\n\t\t\t\t\t\t\t\t\t\t\t\n\n\t\t\t\t\t\t\n<figure>\n\n<img alt=\"\" data-caption=\"Open AI CEO Sam Altman speaks during the G2",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "c4c250799a8f",
+    "category": "news",
+    "source": "news:Hacker News",
+    "description": "<a href=\"https://news.ycombinator.com/item?id=49621018\">Comments</a>",
+    "strength": 1,
+    "url": "https://en.wikipedia.org/wiki/Larger_Pacific_striped_octopus",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "c4c250799a8f",
+    "category": "news",
+    "source": "news:Hacker News",
+    "description": "<a href=\"https://news.ycombinator.com/item?id=49621018\">Comments</a>",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "ca4827468eb6",
+    "category": "funding",
+    "source": "news:Hacker News",
+    "description": "M&A signal: <a href=\"https://news.ycombinator.com/item?id=49626190\">Comments</a>",
+    "strength": 1,
+    "url": "https://tailwindcss.com/blog/tailwind-is-joining-shopify",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "ca4827468eb6",
+    "category": "news",
+    "source": "news:Hacker News",
+    "description": "<a href=\"https://news.ycombinator.com/item?id=49626190\">Comments</a>",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "54ee49298921",
+    "category": "news",
+    "source": "news:Hacker News",
+    "description": "<a href=\"https://news.ycombinator.com/item?id=49636283\">Comments</a>",
+    "strength": 1,
+    "url": "https://techcrunch.com/2026/09/09/automattics-board-forces-ceo-matt-mullenweg-into-leave-of-absence/",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "54ee49298921",
+    "category": "news",
+    "source": "news:Hacker News",
+    "description": "<a href=\"https://news.ycombinator.com/item?id=49636283\">Comments</a>",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "e1676ef74677",
+    "category": "funding",
+    "source": "google_news",
+    "description": "Funding signal: Legal AI startup Harvey reaches $15.5 billion valuation in new funding round - R",
+    "strength": 1,
+    "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNdlB6ckhOUjNOZ3VfSVNXTVBvQWlkLTRiWUwxLU1KZG9fT0t3QVI5U043NS1pdGp6UHpCM0hjTHFzZm5OelhkWVdZbkY3RnBBbEdCVnFTXzhJNl8yTW4tOHo5UzU3SEU5VW0xNFZnQkhCNjJzWVVWTmZEQUhsUVNYalpYNnpIZUo1S0UxNEF0MHFtalVablBwWFF1ZDE5V25OSDIzd2tadlZqdU9xdDFQc1YwR1FxNW91aDJKeHNaeF9iQQ?oc=5",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "e1676ef74677",
+    "category": "funding",
+    "source": "google_news",
+    "description": "Funding category: Legal AI startup Harvey reaches $15.5 billion valuation in new funding round - R",
+    "strength": 1,
+    "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNdlB6ckhOUjNOZ3VfSVNXTVBvQWlkLTRiWUwxLU1KZG9fT0t3QVI5U043NS1pdGp6UHpCM0hjTHFzZm5OelhkWVdZbkY3RnBBbEdCVnFTXzhJNl8yTW4tOHo5UzU3SEU5VW0xNFZnQkhCNjJzWVVWTmZEQUhsUVNYalpYNnpIZUo1S0UxNEF0MHFtalVablBwWFF1ZDE5V25OSDIzd2tadlZqdU9xdDFQc1YwR1FxNW91aDJKeHNaeF9iQQ?oc=5",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "e1676ef74677",
+    "category": "news",
+    "source": "google_news",
+    "description": "Legal AI startup Harvey reaches $15.5 billion valuation in new funding round - Reuters",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "37d6e00d9702",
+    "category": "funding",
+    "source": "google_news",
+    "description": "Funding signal: AI research startup Listen Labs scrubbed a $1.5B funding round for Salesforce ta",
+    "strength": 1,
+    "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPMUQwT1FwQUpRVkhOQ2gzYTRaRW9PZC1nWEloVVZTaXFoUnFhaUFwd2hJWVo3Si1EV2p3Z0c2c2dZTDdMOUFDNGdMeTJaTjV4TXEwSkhRRHU5NWhpTnd5Ui16aG9vQ3gtdFRtVWN5TE9XUFNRWmtpUTBjbHUzdUd2QTNGdHdMLUxYSG52Z1lBci1pQWVHTklsd2hsVS01ZXJYek1WWGxaeXlscVljM3dqYWttZHgwR3BT?oc=5",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "37d6e00d9702",
+    "category": "funding",
+    "source": "google_news",
+    "description": "Funding category: AI research startup Listen Labs scrubbed a $1.5B funding round for Salesforce ta",
+    "strength": 1,
+    "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPMUQwT1FwQUpRVkhOQ2gzYTRaRW9PZC1nWEloVVZTaXFoUnFhaUFwd2hJWVo3Si1EV2p3Z0c2c2dZTDdMOUFDNGdMeTJaTjV4TXEwSkhRRHU5NWhpTnd5Ui16aG9vQ3gtdFRtVWN5TE9XUFNRWmtpUTBjbHUzdUd2QTNGdHdMLUxYSG52Z1lBci1pQWVHTklsd2hsVS01ZXJYek1WWGxaeXlscVljM3dqYWttZHgwR3BT?oc=5",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "37d6e00d9702",
+    "category": "news",
+    "source": "google_news",
+    "description": "AI research startup Listen Labs scrubbed a $1.5B funding round for Salesforce talks - TechCrunch",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "f544a0c69bb9",
+    "category": "funding",
+    "source": "google_news",
+    "description": "Funding signal: Sales automation startup Clay boosts valuation to $7.1B in $115M funding round -",
+    "strength": 1,
+    "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPdWl6Qk1HTFBsX0VlOENfN3hJT1lXTFRDaUJPdmtVejBZMV9BUWc0UkNmc1hreU5nSTVOYUM1d3lyME04UTlPNkZ2MW5Xdk9FN2FTVy10cDZsUUJwaVdCQjFaM1J1VTVJRWJ6eThPT0VScFV6UkFBQjI0X2dXTWlSQThteXRqTFBzV2QtZ25VLURfMk82ZEZqRG1wNVk1VTc1RnhReEh3Z0FfbkhoZlFwVHNsRQ?oc=5",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "f544a0c69bb9",
+    "category": "funding",
+    "source": "google_news",
+    "description": "Funding category: Sales automation startup Clay boosts valuation to $7.1B in $115M funding round -",
+    "strength": 1,
+    "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPdWl6Qk1HTFBsX0VlOENfN3hJT1lXTFRDaUJPdmtVejBZMV9BUWc0UkNmc1hreU5nSTVOYUM1d3lyME04UTlPNkZ2MW5Xdk9FN2FTVy10cDZsUUJwaVdCQjFaM1J1VTVJRWJ6eThPT0VScFV6UkFBQjI0X2dXTWlSQThteXRqTFBzV2QtZ25VLURfMk82ZEZqRG1wNVk1VTc1RnhReEh3Z0FfbkhoZlFwVHNsRQ?oc=5",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "f544a0c69bb9",
+    "category": "news",
+    "source": "google_news",
+    "description": "Sales automation startup Clay boosts valuation to $7.1B in $115M funding round - SiliconANGLE",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "a2fbf2bb572f",
+    "category": "funding",
+    "source": "google_news",
+    "description": "Funding signal: UPDATE: California approves funding for first-of-its-kind childcare district in ",
+    "strength": 1,
+    "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPbF9LRUhoSTg1Rm9aaEZFa0Zib3VjLVNBR0lscUdTWGFuYUs4LVotZGVnOTBQd3lLRHVMelgzTUpJNklTUE1WM2ZiNktCcWt4anJPeUdQOWVhTEJTamxXRWZIcHZEczQ4WTJheXdORUtiRDh3LXFCNnAxbHpaNFliTFRrTW9GaUR3aVVzbWJqTHdxeXNEZ3BpYzRhM21mbnlNVnRucHpKcGhHbFM2aTNv?oc=5",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "a2fbf2bb572f",
+    "category": "funding",
+    "source": "google_news",
+    "description": "Funding category: UPDATE: California approves funding for first-of-its-kind childcare district in ",
+    "strength": 1,
+    "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPbF9LRUhoSTg1Rm9aaEZFa0Zib3VjLVNBR0lscUdTWGFuYUs4LVotZGVnOTBQd3lLRHVMelgzTUpJNklTUE1WM2ZiNktCcWt4anJPeUdQOWVhTEJTamxXRWZIcHZEczQ4WTJheXdORUtiRDh3LXFCNnAxbHpaNFliTFRrTW9GaUR3aVVzbWJqTHdxeXNEZ3BpYzRhM21mbnlNVnRucHpKcGhHbFM2aTNv?oc=5",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "a2fbf2bb572f",
+    "category": "news",
+    "source": "google_news",
+    "description": "UPDATE: California approves funding for first-of-its-kind childcare district in Riverside County - E",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "723b753a8b72",
+    "category": "news",
+    "source": "google_news",
+    "description": "Hyundai backs Bill Gates-funded US fusion startup CFS in power push - KED Global",
+    "strength": 1,
+    "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFB5YnlwWDZQdU9ha3RYVVhkSnRfekZ5QzduS3ZEYU15dE05Z254SkF5Q0ZvSTVpRm1ZYkNnZkJGRnNGV2Q1UzF3U1FsOEUtMmpvNlV2ZmZmdDNLUDFJN3c3dHFnVWtPZ3Jr?oc=5",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "723b753a8b72",
+    "category": "news",
+    "source": "google_news",
+    "description": "Hyundai backs Bill Gates-funded US fusion startup CFS in power push - KED Global",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "9a1bd0eab51e",
+    "category": "funding",
+    "source": "google_news",
+    "description": "Funding signal: The AlleyWatch Startup Daily Funding Report: 9/9/2026 - AlleyWatch",
+    "strength": 1,
+    "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPaFRoelh4aGR1SE1pa2U5cW5oaXo1U2FGZlFzcFNmeXJGbmx3UU5xcWd1cG1uOTdhYkZtRmxidENtQ2VIVVdQN2FwbDNmbloyNGZNdXJFMFJTMXJuRFBBQ0hBRHhUaUxJVXpsLXB0LV96QlNKMExxTTJaQ2ZWdEYzZGZoTFZvMjdULVdOcGpWZk1Jdw?oc=5",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "9a1bd0eab51e",
+    "category": "funding",
+    "source": "google_news",
+    "description": "Funding category: The AlleyWatch Startup Daily Funding Report: 9/9/2026 - AlleyWatch",
+    "strength": 1,
+    "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPaFRoelh4aGR1SE1pa2U5cW5oaXo1U2FGZlFzcFNmeXJGbmx3UU5xcWd1cG1uOTdhYkZtRmxidENtQ2VIVVdQN2FwbDNmbloyNGZNdXJFMFJTMXJuRFBBQ0hBRHhUaUxJVXpsLXB0LV96QlNKMExxTTJaQ2ZWdEYzZGZoTFZvMjdULVdOcGpWZk1Jdw?oc=5",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "9a1bd0eab51e",
+    "category": "news",
+    "source": "google_news",
+    "description": "The AlleyWatch Startup Daily Funding Report: 9/9/2026 - AlleyWatch",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "1ef8e21be86a",
+    "category": "funding",
+    "source": "google_news",
+    "description": "Funding category: Peter Thiel-Backed AI Startup Cognition Raises Funds at $48 Billion Valuation - ",
+    "strength": 1,
+    "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOUkJBZ2o0YmZnOEpWVk9mT1dmRUFDZmkxbFZBNU9FQy1VWk5YeENDb0U3c080STBTdmFTWVh0aGNjRXZuNnhrU1RseEVPaWpBVkRSbGtJWExBenJwSlJYNkxHNzcwdk1oMzh4bUs0WGFsdGt3cGNRa29jdndoZXJVbkRJOEI5blRoVGN4NTFRLTNlU1J1VWVKOFRfLTRlb0hXMnFzVWlrTG45NVlSVkRSbVVEUFh1eklGWEVJWThpZ09ZUQ?oc=5",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "1ef8e21be86a",
+    "category": "news",
+    "source": "google_news",
+    "description": "Peter Thiel-Backed AI Startup Cognition Raises Funds at $48 Billion Valuation - WSJ",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "ff7d747662d9",
+    "category": "funding",
+    "source": "google_news",
+    "description": "Funding signal: Embodied AI startup PHYMI raises nearly US$100 million in seed funding - TechNod",
+    "strength": 1,
+    "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPbzZ5X2d4NC1uOUZrTjlCTHVIcXdhX0Q1NUVVaXAxdHNvenJCNkhCUzVCZ2NUXzRhNmo5enUxXy15QzQ1RGR5OVY1QlRDaHRobTN5QXIzSjNrdXdmc3NTWi02UTljeEdiSWU3WE1OczBhZG9UZ3J4QzJEem5hX2hWS1gyb25vNi15UHBpcV9qVXlVcVBRM1RJYndnUmE0Z3BibUtyag?oc=5",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "ff7d747662d9",
+    "category": "funding",
+    "source": "google_news",
+    "description": "Funding category: Embodied AI startup PHYMI raises nearly US$100 million in seed funding - TechNod",
+    "strength": 1,
+    "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPbzZ5X2d4NC1uOUZrTjlCTHVIcXdhX0Q1NUVVaXAxdHNvenJCNkhCUzVCZ2NUXzRhNmo5enUxXy15QzQ1RGR5OVY1QlRDaHRobTN5QXIzSjNrdXdmc3NTWi02UTljeEdiSWU3WE1OczBhZG9UZ3J4QzJEem5hX2hWS1gyb25vNi15UHBpcV9qVXlVcVBRM1RJYndnUmE0Z3BibUtyag?oc=5",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "ff7d747662d9",
+    "category": "news",
+    "source": "google_news",
+    "description": "Embodied AI startup PHYMI raises nearly US$100 million in seed funding - TechNode",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "6f81bca82394",
+    "category": "funding",
+    "source": "google_news",
+    "description": "Funding signal: Seeds | Third Round This Year, Xiaoyubot Secures Hundreds of Millions in Funding",
+    "strength": 1,
+    "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxOcmJZbTNLZmZyOGN5aF9WNHlYWUFPRmUzakxKUmJGbHRYeWJmakpJbXpsNjRlY0VnT3VMZUl2bXMzWUNuUUEzU0w3Sjg1SjFTRTBNa0V5aHNyLVpoLXBBb3N0ZDdhLXp3YkZueXpwWW1jWXozNC1YZUhlSXp2OUNndnYtVnFZSTBlMExOOUR3YW9FQjh5V0ttZm4zRER4X0VLRWN4NkdQTzhnT3F5eExWQU5qVVVYa3U3b2t3WWYyUFhlYkY1MnlPNXRZbl9Iem5CcEdOTEx3?oc=5",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "6f81bca82394",
+    "category": "funding",
+    "source": "google_news",
+    "description": "Funding category: Seeds | Third Round This Year, Xiaoyubot Secures Hundreds of Millions in Funding",
+    "strength": 1,
+    "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxOcmJZbTNLZmZyOGN5aF9WNHlYWUFPRmUzakxKUmJGbHRYeWJmakpJbXpsNjRlY0VnT3VMZUl2bXMzWUNuUUEzU0w3Sjg1SjFTRTBNa0V5aHNyLVpoLXBBb3N0ZDdhLXp3YkZueXpwWW1jWXozNC1YZUhlSXp2OUNndnYtVnFZSTBlMExOOUR3YW9FQjh5V0ttZm4zRER4X0VLRWN4NkdQTzhnT3F5eExWQU5qVVVYa3U3b2t3WWYyUFhlYkY1MnlPNXRZbl9Iem5CcEdOTEx3?oc=5",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "6f81bca82394",
+    "category": "news",
+    "source": "google_news",
+    "description": "Seeds | Third Round This Year, Xiaoyubot Secures Hundreds of Millions in Funding - Gasgoo",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "a74865db0364",
+    "category": "funding",
+    "source": "google_news",
+    "description": "Funding signal: AI startup founded by two Bangladeshi brothers raises over $30,000 in funding - ",
+    "strength": 1,
+    "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQc3VlRDY4dGN6a3F1SldrWWJmMDhqamdxUTVtc0wtNVcxTkktb0lmLXRCSG1wVlJPYmZkY21wQ1A3TzRPeDlEdTJkT2RGSDVGc01vb0xJd0dQQ1VXTVFIc1FwWFJTNDNndklnVkc0T0hpYTFNMUd6MlZFN2FRdWRKMnkwQ1BjbnRjSWRCblFVLWJvOHRqdEt1U190NTJjc1F4d1otcFUxcmxKckpoelZWeDdSa1Z5LXo4T3pEZzJjajZYZURaTUE?oc=5",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "a74865db0364",
+    "category": "funding",
+    "source": "google_news",
+    "description": "Funding category: AI startup founded by two Bangladeshi brothers raises over $30,000 in funding - ",
+    "strength": 1,
+    "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQc3VlRDY4dGN6a3F1SldrWWJmMDhqamdxUTVtc0wtNVcxTkktb0lmLXRCSG1wVlJPYmZkY21wQ1A3TzRPeDlEdTJkT2RGSDVGc01vb0xJd0dQQ1VXTVFIc1FwWFJTNDNndklnVkc0T0hpYTFNMUd6MlZFN2FRdWRKMnkwQ1BjbnRjSWRCblFVLWJvOHRqdEt1U190NTJjc1F4d1otcFUxcmxKckpoelZWeDdSa1Z5LXo4T3pEZzJjajZYZURaTUE?oc=5",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "a74865db0364",
+    "category": "news",
+    "source": "google_news",
+    "description": "AI startup founded by two Bangladeshi brothers raises over $30,000 in funding - The Daily Star",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "ac5f64cf5cb8",
+    "category": "funding",
+    "source": "google_news",
+    "description": "Funding signal: How Investors Are Reacting To Microchip Technology (MCHP) New Clock Buffer Launc",
+    "strength": 1,
+    "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxQWE5xVEJhLWxhMmN4aHNmX2lNU19RRlpMOVNieGtrVG4tNTFvejlnUWxERHJaNEVSa24tQ1JOU1d1NlZvVHkwY0tIR3pRd3owSjBKV3ItNUpfX2ROUXFES0pON1BqOU5mT0tFZjZjVTVXY0J0WDhLX0EwSU5pWE1uNV9Ed2NfaUlDcE1RaWFRUHpoemEwTWRPNUhtWFVxZUpUTXhXMnE2QTlBVHZyT0tOSW5MOFU5cXgtOE02Z2w4VFBGZVhOTXZQenI3eFdnM181RWM5bFJILUpPekF10gHiAUFVX3lxTE1Tb093eUp4Z3lSQWF2cW83RWFMcm56SlJmT29rdGtINXpxal9SVzNBVEpJVWhkdDlWckFRcnhlR3NjYUswc3k5SHJFMHJKUUZHVklodi1haG9LWnpSLUZHSWFUaXFmR1VfY3pvUzZVbnhJZlVlWVFfNWRaX0JNQ3Q2Y3NxRTZuaHBlQXhHeDJ3OF9pQmlSSXRFVjNKY3hxWE52UXVLQjNTcVJRZWNOS3V0eUlST05ZOFkxcGZLTWpTOEYwN2JjS2RpSndFU1d5dGlEM1lXUndBM3VXTlJjZGFkcFE?oc=5",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "ac5f64cf5cb8",
+    "category": "product_launch",
+    "source": "google_news",
+    "description": "Product event: How Investors Are Reacting To Microchip Technology (MCHP) New Clock Buffer Launc",
+    "strength": 1,
+    "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxQWE5xVEJhLWxhMmN4aHNmX2lNU19RRlpMOVNieGtrVG4tNTFvejlnUWxERHJaNEVSa24tQ1JOU1d1NlZvVHkwY0tIR3pRd3owSjBKV3ItNUpfX2ROUXFES0pON1BqOU5mT0tFZjZjVTVXY0J0WDhLX0EwSU5pWE1uNV9Ed2NfaUlDcE1RaWFRUHpoemEwTWRPNUhtWFVxZUpUTXhXMnE2QTlBVHZyT0tOSW5MOFU5cXgtOE02Z2w4VFBGZVhOTXZQenI3eFdnM181RWM5bFJILUpPekF10gHiAUFVX3lxTE1Tb093eUp4Z3lSQWF2cW83RWFMcm56SlJmT29rdGtINXpxal9SVzNBVEpJVWhkdDlWckFRcnhlR3NjYUswc3k5SHJFMHJKUUZHVklodi1haG9LWnpSLUZHSWFUaXFmR1VfY3pvUzZVbnhJZlVlWVFfNWRaX0JNQ3Q2Y3NxRTZuaHBlQXhHeDJ3OF9pQmlSSXRFVjNKY3hxWE52UXVLQjNTcVJRZWNOS3V0eUlST05ZOFkxcGZLTWpTOEYwN2JjS2RpSndFU1d5dGlEM1lXUndBM3VXTlJjZGFkcFE?oc=5",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "ac5f64cf5cb8",
+    "category": "news",
+    "source": "google_news",
+    "description": "How Investors Are Reacting To Microchip Technology (MCHP) New Clock Buffer Launch - simplywall.st",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "6238e257f689",
+    "category": "product_launch",
+    "source": "google_news",
+    "description": "Product event: Apple unveils first foldable iPhone, iPhone 18 Pro lineup, new watches at annual",
+    "strength": 1,
+    "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQQlJKUlM0VEl2YWEtWTFHc1hNUEcyUTZpU3NrMkhPNzNhZ0NRSjg1NnN2Mm8xTzZBaEJ6OVRlRnNIcHdCOGRIMXc4ZnBkZTZaOTRKNXQza1ZMN2hicENCa2lneWFnSFdlTXVyQXdvWnpVSU8taHF3UVBKS3BaZkZPVVl4NzVqdS1Yd0VMeUF2R1VIU19WbUwwRk1fTDVtclo5R1BtTkx3ajRYQjZYUXl5c3VrVGhNdHVqWHdWeWZvV1pHZm1RX2fSAcsBQVVfeXFMTWR2NTdBaGt3ekxCTHZJWGxXaW9EZ0o3cnN3MmkxLU5BMXlCZmwxZ3FBRDRzSUdjSUZLTkM1Rk14UDVuNDR0V3cyVHdiUzhNOFI4T0J2dFFXQVNPUlNkRDE0YUhFcTY4bl84Z2RWQ19WX1JYdUxjV3kzdG9VVUk0Y19HY0RiTUFUMXJSMmJlT2RERTQyaktoamNtMWxxTFAwd1k1UFpwa25kWkdLUlNWV1VEaHZDLUU4UWQ0R2ltbzVsN09abkhhc1NyUjA?oc=5",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "6238e257f689",
+    "category": "news",
+    "source": "google_news",
+    "description": "Apple unveils first foldable iPhone, iPhone 18 Pro lineup, new watches at annual launch event - foxb",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "151a3cf08136",
+    "category": "product_launch",
+    "source": "google_news",
+    "description": "Product event: Samsung, Duolingo troll Apple’s iPhone Duo launch in viral X exchange - Gulf Bus",
+    "strength": 1,
+    "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOWmxiVTY2eDhrWlJMSEQyOUJST2J3Q3RSXy12b09PenFGNDJDeDRWYkF3TVc0YlFtZVo0N190cWMtemdnQjJQSUY2dTd3aGRrOFN0czFGUGpsV3VwVy1CT3NIMVdZN3FQWmJKcERCSTBzVWpxRl83LXA3a0ZIcldqU0FlUTVlWnNsRUpZeElsemtHeFYybTFSTEkyNnFINk9DMFd2NllHOFE?oc=5",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "151a3cf08136",
+    "category": "news",
+    "source": "google_news",
+    "description": "Samsung, Duolingo troll Apple’s iPhone Duo launch in viral X exchange - Gulf Business",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "57c988491319",
+    "category": "product_launch",
+    "source": "google_news",
+    "description": "Product event: Group of GCs, Wilson Sonsini launch new legal tech venture capital fund - ABA Jo",
+    "strength": 1,
+    "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNbjl2YjFVbDYxeDFKTi00RkhSQVZVY2lRTHdxRmFkdDhra245bHRBdWRrcm1BR1E3djJzYnhuOWIwaGdqVkExM3ItcS1kbEJnN3d4b1B5SXU4Wjh3N3hYT09fZEo5cU44RUtSSkVNdnUyVW9ta1Nkckx4ZzgxVXF1Y3kyYkdscHVyRXBMTk9ZTTdYVUhPZ0tzS1pmWkNlaHZ1bGVMeFJhUzFJVGgtVWs4RVcxZWNncnJtbmNWN1Fn?oc=5",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "57c988491319",
+    "category": "news",
+    "source": "google_news",
+    "description": "Group of GCs, Wilson Sonsini launch new legal tech venture capital fund - ABA Journal",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "936dd1a418ae",
+    "category": "product_launch",
+    "source": "google_news",
+    "description": "Product event: MHRA and Manchester NHS launch sandbox to test AI and health tech - THINK Digita",
+    "strength": 1,
+    "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOaDl1VFNBa1F2WG9kOUpOaVIyaGViSFR6eHFnLUtKQUR4MDRod0hBb25JTDNmQVlIUkRsS0c1YURoaE4zZ0JNR2hkc3l4WXVYbkY1V2l1aUlWam1jLXFNeXNHRHVTZTZ5dWYwaEUyakVYZWpPczdPclRuXzhMZUF2VWlFMExJUzFTNGNKMkxpMjExejFvXzd6QjFSaWsyOXBHTk9qTk11Mk10ZEszLWw5SElDU19tc2lQUUhN?oc=5",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "936dd1a418ae",
+    "category": "partnership",
+    "source": "google_news",
+    "description": "Partnership: MHRA and Manchester NHS launch sandbox to test AI and health tech - THINK Digita",
+    "strength": 1,
+    "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOaDl1VFNBa1F2WG9kOUpOaVIyaGViSFR6eHFnLUtKQUR4MDRod0hBb25JTDNmQVlIUkRsS0c1YURoaE4zZ0JNR2hkc3l4WXVYbkY1V2l1aUlWam1jLXFNeXNHRHVTZTZ5dWYwaEUyakVYZWpPczdPclRuXzhMZUF2VWlFMExJUzFTNGNKMkxpMjExejFvXzd6QjFSaWsyOXBHTk9qTk11Mk10ZEszLWw5SElDU19tc2lQUUhN?oc=5",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "936dd1a418ae",
+    "category": "news",
+    "source": "google_news",
+    "description": "MHRA and Manchester NHS launch sandbox to test AI and health tech - THINK Digital Partners",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "195adffa7093",
+    "category": "product_launch",
+    "source": "google_news",
+    "description": "Product event: Dunwoody College of Technology Launches First-of-Its-Kind Program for High Schoo",
+    "strength": 1,
+    "url": "https://news.google.com/rss/articles/CBMiigJBVV95cUxPU3hTZklBVWJGR2VHbzRNQkxaRHJpZ0lPWng5UWdGZFdIakd2Z2NPRWhaSlZLLVlmNmVxNDlzZEUzSU56RHNmWFJiZERpTUZGZTVuYWQ3eDRzSm90YnJvTE5CMEhWS3R0aU5vV1Ywd3k1dWIwOWdORDJGZkNpNkZzcU1VazhiS1NzOU9vSjlTeWJ3ck5lYlM0WVliUE5JYXJFT0lvX1I0cFZ1LXJPMEtFdU9EZDZkQjMzV05ZQ3N6Z3JLNUtXS3FuM0VOSUZXcTJtTnY2Yzk2eG9ZaG1ab3BYLVRpTS1fanhseUs1VDgtdHJXQ0JPV1VBN2NQcEh4dHBLQ2swWWlsRk1Gdw?oc=5",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "195adffa7093",
+    "category": "news",
+    "source": "google_news",
+    "description": "Dunwoody College of Technology Launches First-of-Its-Kind Program for High School Students to Close ",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "e399dc2f67e1",
+    "category": "product_launch",
+    "source": "google_news",
+    "description": "Product event: Vodafone Business and Cassava Technologies Launch Egypt’s First Sovereign AI Fac",
+    "strength": 1,
+    "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNaC1DMjNUSEVOZW5iWkZ4RzdHeUJlNEFYX2RNRTFQRlFNV211YnVDcUY3MjE5SzROdmdjQ3hqTGhwby1TVVl3LUF5MWZxbTh0bjZEeHZmem4zSW96WjdVeE80TjB0Y3I1Z21CZFdxa29ySnBvTklmVDZtWTB2RW5wTk1JY2M0NFRTWHV4aFBmRDU5NzRfaDh4cTBJT2QyQ2M5LWQtVzk1S2JsOExGR1RxT24zNnRaSncxN3c?oc=5",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "e399dc2f67e1",
+    "category": "news",
+    "source": "google_news",
+    "description": "Vodafone Business and Cassava Technologies Launch Egypt’s First Sovereign AI Factory - TechAfrica Ne",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "3cafb2186b79",
+    "category": "product_launch",
+    "source": "google_news",
+    "description": "Product event: Sterling Trading Tech Launches STRIDER™ - The Manila Times",
+    "strength": 1,
+    "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxObE1kNEdaa002V0RsN3dDazFOdVlpeWVkTFdQNUNQbnd0V2JSV3U2R0JaRl90cGx4N1RXQU5ESFRIMklPRU5vYmVVV01SSHdtaW15OGIyQnE3V3QxSjdZdjdkRWItSmR2aGxzN1c1WnplMVZWVnctMlEtNjNCaTZqUllXZTF5N2hGdWpQNU45Q3hOSDdhNHB3WWhhNE1XdExuVUFsdmhOazF1YlVaTnNlckRn0gG3AUFVX3lxTE9Xa3JNTEJGcUFWcC1tdDI0YjkzWHlkN0lPU0dReUFfMk5rZWtVd2lWQVRBdldpRy1aaEFRdk9pdzRhZGtzaERkOWVOMm5Gcmg0b2Z0cDJtbFYyWkg2TlFYa2NtbW9OZkpXa1paQ3VxbHlPN1MxbUhMX215dmtfMTBRNC1QTlZlNGY1YTJyVUx1ak5SM1hMYnl3X2JSdFY3OEltMW1LN3dSeUJtcExHaTY2aEJWMF9fTQ?oc=5",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "3cafb2186b79",
+    "category": "news",
+    "source": "google_news",
+    "description": "Sterling Trading Tech Launches STRIDER™ - The Manila Times",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "c1b5e828335d",
+    "category": "product_launch",
+    "source": "google_news",
+    "description": "Product event: Apple raises older iPhone prices in India after iPhone 18 Pro, Duo launch - Busi",
+    "strength": 1,
+    "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxNVjljOUJrdktKbzFlNlg4RkRrQVdmZmE2MmcxWXFhRFZwdTAzYm5NdDRHT0l2TUFoMnBYenZNTTNWbWZKTFN1MVFURkU3UXh0MHVBWlpISmRGQVVQci1oN3pPdEtpVnpGV3F0Yi1HV1h3dzBzS1IzdmVfSWk5LW9tSjEzeDU1QjJQdUNmWWQtUDZURWl0RE85Zm1DT2ZKWmtIa2k1M2x1UEUySWd5dTBhZmoxRHBYbTg4bm5nUzdGenZlRlpjbF9nNmRtV3FsQ1VTaExmT0dYdXBhWEhuYlJybFRLbmU1VGvSAecBQVVfeXFMTVY5YzlCa3ZLSm8xZTZYOEZEa0FXZmZhNjJnMVlxYURWcHUwM2JuTXQ0R09Jdk1BaDJwWHp2TU0zVm1mSkxTdTFRVEZFN1F4dDB1QVpaSEpkRkFVUHItaDd6T3RLaVZ6RldxdGItR1dYd3cwc0tSM3ZlX0lpOS1vbUoxM3g1NUIyUHVDZllkLVA2VEVpdERPOWZtQ09mSlprSGtpNTNsdVBFMklneXUwYWZqMURwWG04OG5uZ1M3Rnp2ZUZaY2xfZzZkbVdxbENVU2hMZk9HWHVwYVhIbmJScmxUS25lNVRr?oc=5",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "c1b5e828335d",
+    "category": "funding",
+    "source": "google_news",
+    "description": "Funding category: Apple raises older iPhone prices in India after iPhone 18 Pro, Duo launch - Busi",
+    "strength": 1,
+    "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxNVjljOUJrdktKbzFlNlg4RkRrQVdmZmE2MmcxWXFhRFZwdTAzYm5NdDRHT0l2TUFoMnBYenZNTTNWbWZKTFN1MVFURkU3UXh0MHVBWlpISmRGQVVQci1oN3pPdEtpVnpGV3F0Yi1HV1h3dzBzS1IzdmVfSWk5LW9tSjEzeDU1QjJQdUNmWWQtUDZURWl0RE85Zm1DT2ZKWmtIa2k1M2x1UEUySWd5dTBhZmoxRHBYbTg4bm5nUzdGenZlRlpjbF9nNmRtV3FsQ1VTaExmT0dYdXBhWEhuYlJybFRLbmU1VGvSAecBQVVfeXFMTVY5YzlCa3ZLSm8xZTZYOEZEa0FXZmZhNjJnMVlxYURWcHUwM2JuTXQ0R09Jdk1BaDJwWHp2TU0zVm1mSkxTdTFRVEZFN1F4dDB1QVpaSEpkRkFVUHItaDd6T3RLaVZ6RldxdGItR1dYd3cwc0tSM3ZlX0lpOS1vbUoxM3g1NUIyUHVDZllkLVA2VEVpdERPOWZtQ09mSlprSGtpNTNsdVBFMklneXUwYWZqMURwWG04OG5uZ1M3Rnp2ZUZaY2xfZzZkbVdxbENVU2hMZk9HWHVwYVhIbmJScmxUS25lNVRr?oc=5",
+    "date": "2026-09-10"
+  },
+  {
+    "entity_id": "c1b5e828335d",
+    "category": "news",
+    "source": "google_news",
+    "description": "Apple raises older iPhone prices in India after iPhone 18 Pro, Duo launch - Business Standard",
+    "strength": 1,
+    "url": "",
+    "date": "2026-09-10"
   }
 ]
