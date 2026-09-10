@@ -1,26 +1,29 @@
 from __future__ import annotations
 
 from datetime import date
-from typing import Optional
 
-from src.models import Opportunity
+from src.intelligence.scoring import ScoredEntity
+from src.report.formatter import format_reasons, format_score_change
 
 
 def render_email(
-    top_opportunities: list[Opportunity],
+    top_opportunities: list[ScoredEntity],
+    emerging: list[ScoredEntity],
     breakouts: list[dict],
     watchlist: list[dict],
     warnings: list[str] | None = None,
-    market_signals: dict[str, str] | None = None,
+    macro_signals: list[str] | None = None,
 ) -> str:
     today = date.today().isoformat()
 
-    top_html = _render_top_opportunities(top_opportunities)
+    top_html = _render_scored_section("TOP OPPORTUNITIES", top_opportunities, "fire")
+    emerging_html = _render_scored_section("EMERGING", emerging, "rocket")
     breakout_html = _render_breakouts(breakouts)
     watchlist_html = _render_watchlist(watchlist)
     warnings_html = _render_warnings(warnings or [])
-    signals_html = _render_market_signals(market_signals or {})
-    ai_summary_html = _render_ai_summary(top_opportunities)
+    macro_html = _render_macro(macro_signals or [])
+
+    total_count = len(top_opportunities) + len(emerging) + len(breakouts)
 
     return f"""\
 <!DOCTYPE html>
@@ -35,37 +38,47 @@ body {{ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans
 .header {{ text-align: center; padding: 30px 0 20px; border-bottom: 1px solid #30363d; }}
 .header h1 {{ color: #58a6ff; font-size: 24px; margin: 0; }}
 .header .date {{ color: #8b949e; font-size: 14px; margin-top: 8px; }}
+.header .count {{ color: #f0883e; font-size: 13px; margin-top: 4px; }}
 .section {{ margin: 24px 0; }}
-.section-title {{ color: #58a6ff; font-size: 16px; font-weight: 600; margin-bottom: 12px; padding-bottom: 8px; border-bottom: 1px solid #21262d; }}
-.opp-card {{ background: #161b22; border: 1px solid #30363d; border-radius: 8px; padding: 16px; margin-bottom: 12px; }}
-.opp-header {{ display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 8px; }}
-.opp-name {{ font-size: 16px; font-weight: 600; color: #c9d1d9; }}
-.opp-name a {{ color: #58a6ff; text-decoration: none; }}
-.opp-name a:hover {{ text-decoration: underline; }}
-.opp-score {{ font-size: 20px; font-weight: 700; color: #f0883e; min-width: 50px; text-align: right; }}
-.opp-meta {{ display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 8px; }}
+.section-title {{ font-size: 16px; font-weight: 600; margin-bottom: 12px; padding-bottom: 8px; border-bottom: 1px solid #21262d; }}
+.section-title.fire {{ color: #f0883e; }}
+.section-title.rocket {{ color: #58a6ff; }}
+.section-title.breakout {{ color: #3fb950; }}
+.section-title.watch {{ color: #8b949e; }}
+.section-title.macro {{ color: #bc8cff; }}
+.card {{ background: #161b22; border: 1px solid #30363d; border-radius: 8px; padding: 16px; margin-bottom: 12px; }}
+.card-header {{ display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 8px; }}
+.card-name {{ font-size: 16px; font-weight: 600; color: #c9d1d9; }}
+.card-name a {{ color: #58a6ff; text-decoration: none; }}
+.card-scores {{ display: flex; gap: 12px; align-items: center; flex-shrink: 0; }}
+.score-main {{ font-size: 22px; font-weight: 700; color: #f0883e; }}
+.score-conf {{ font-size: 12px; color: #8b949e; text-align: right; }}
+.meta {{ display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 8px; }}
 .tag {{ display: inline-block; padding: 2px 8px; border-radius: 12px; font-size: 11px; font-weight: 500; }}
 .tag-type {{ background: #1f6feb33; color: #58a6ff; }}
-.tag-confidence-high {{ background: #238636; color: #ffffff; }}
-.tag-confidence-medium {{ background: #9e6a03; color: #ffffff; }}
-.tag-confidence-low {{ background: #da3633; color: #ffffff; }}
-.tag-category {{ background: #30363d; color: #c9d1d9; }}
-.opp-desc {{ color: #8b949e; font-size: 13px; line-height: 1.5; margin-bottom: 8px; }}
-.opp-reasoning {{ color: #8b949e; font-size: 12px; line-height: 1.4; padding: 8px; background: #0d1117; border-radius: 4px; }}
-.opp-metrics {{ display: flex; gap: 16px; flex-wrap: wrap; margin-top: 8px; font-size: 12px; color: #8b949e; }}
+.tag-conf-high {{ background: #238636; color: #fff; }}
+.tag-conf-med {{ background: #9e6a03; color: #fff; }}
+.tag-conf-low {{ background: #da3633; color: #fff; }}
+.tag-cat {{ background: #30363d; color: #c9d1d9; }}
+.desc {{ color: #8b949e; font-size: 13px; line-height: 1.5; margin-bottom: 8px; }}
+.reasons {{ margin: 8px 0; }}
+.reason {{ font-size: 12px; color: #c9d1d9; padding: 2px 0; }}
+.reason::before {{ content: "\\2022 "; color: #58a6ff; }}
+.score-change {{ font-size: 12px; padding: 4px 8px; border-radius: 4px; display: inline-block; margin-top: 4px; }}
+.score-up {{ background: #23863633; color: #3fb950; }}
+.score-down {{ background: #da363333; color: #f85149; }}
+.score-same {{ background: #30363d; color: #8b949e; }}
+.metrics {{ display: flex; gap: 12px; flex-wrap: wrap; margin-top: 8px; font-size: 12px; color: #8b949e; }}
 .metric {{ display: flex; align-items: center; gap: 4px; }}
 .metric-val {{ color: #c9d1d9; font-weight: 600; }}
 .breakout-card {{ background: #161b22; border: 1px solid #238636; border-radius: 8px; padding: 12px 16px; margin-bottom: 8px; }}
-.breakout-name {{ font-weight: 600; color: #3fb950; }}
+.breakout-name {{ font-weight: 600; color: #3fb950; text-decoration: none; }}
 .breakout-change {{ color: #f0883e; font-weight: 600; }}
-.watchlist-item {{ padding: 8px 0; border-bottom: 1px solid #21262d; font-size: 14px; }}
-.watchlist-item:last-child {{ border-bottom: none; }}
-.watchlist-name {{ color: #c9d1d9; font-weight: 500; }}
-.watchlist-score {{ color: #8b949e; font-size: 12px; }}
-.signal {{ padding: 4px 0; font-size: 14px; }}
-.signal-up {{ color: #3fb950; }}
-.signal-down {{ color: #da3633; }}
-.signal-flat {{ color: #8b949e; }}
+.watch-item {{ padding: 8px 0; border-bottom: 1px solid #21262d; font-size: 14px; }}
+.watch-item:last-child {{ border-bottom: none; }}
+.watch-name {{ color: #58a6ff; font-weight: 500; text-decoration: none; }}
+.watch-score {{ color: #8b949e; font-size: 12px; }}
+.macro-item {{ padding: 4px 0; font-size: 13px; color: #bc8cff; }}
 .warning {{ background: #9e6a0333; border: 1px solid #9e6a03; border-radius: 8px; padding: 12px 16px; margin-bottom: 12px; font-size: 13px; color: #e3b341; }}
 .footer {{ text-align: center; padding: 20px 0; border-top: 1px solid #30363d; color: #484f58; font-size: 12px; }}
 </style>
@@ -75,22 +88,15 @@ body {{ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans
   <div class="header">
     <h1>OPPORTUNITY SCANNER</h1>
     <div class="date">{today}</div>
+    <div class="count">{total_count} opportunities detected</div>
   </div>
 
   {warnings_html}
-
-  <div class="section">
-    <div class="section-title">TOP OPPORTUNITIES</div>
-    {top_html}
-  </div>
-
+  {top_html}
+  {emerging_html}
   {breakout_html}
-
   {watchlist_html}
-
-  {signals_html}
-
-  {ai_summary_html}
+  {macro_html}
 
   <div class="footer">
     Generated by Opportunity Scanner | {today}
@@ -100,84 +106,100 @@ body {{ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans
 </html>"""
 
 
-def _render_top_opportunities(opps: list[Opportunity]) -> str:
-    if not opps:
-        return '<div class="opp-card"><div class="opp-desc">No opportunities found today.</div></div>'
+def _render_scored_section(title: str, items: list[ScoredEntity], icon: str) -> str:
+    if not items:
+        return ""
+
+    section_class = {
+        "fire": "section-title fire",
+        "rocket": "section-title rocket",
+    }.get(icon, "section-title")
 
     cards = []
-    for i, opp in enumerate(opps, 1):
-        type_tags = "".join(
-            f'<span class="tag tag-type">{t}</span>' for t in opp.types
-        )
-        conf_class = f"tag-confidence-{opp.confidence.lower()}"
+    for scored in items:
+        cards.append(_render_scored_card(scored))
 
-        metrics_html = _render_metrics(opp)
+    return f"""
+  <div class="section">
+    <div class="{section_class}">{title}</div>
+    {"".join(cards)}
+  </div>"""
 
-        reasoning = ""
-        if opp.analysis and opp.analysis.reasoning:
-            reasoning = f'<div class="opp-reasoning">{_escape(opp.analysis.reasoning)}</div>'
 
-        name_link = f'<a href="{_escape(opp.url)}" target="_blank">{_escape(opp.name)}</a>'
+def _render_scored_card(scored: ScoredEntity) -> str:
+    e = scored.entity
+    s = scored.score
 
-        cards.append(f"""
-    <div class="opp-card">
-      <div class="opp-header">
+    name_link = f'<a href="{_esc(e.url)}" target="_blank">{_esc(e.name)}</a>'
+
+    type_tags = "".join(
+        f'<span class="tag tag-type">{t}</span>' for t in scored.types
+    )
+
+    conf = scored.confidence
+    if conf >= 70:
+        conf_class = "tag-conf-high"
+    elif conf >= 40:
+        conf_class = "tag-conf-med"
+    else:
+        conf_class = "tag-conf-low"
+
+    reasons = format_reasons(scored)
+    reasons_html = "".join(f'<div class="reason">{_esc(r)}</div>' for r in reasons[:6])
+
+    score_change_html = ""
+    if scored.previous_score > 0:
+        change_text = format_score_change(scored.previous_score, scored.score.total)
+        change_class = "score-up" if scored.score_change > 0 else "score-down" if scored.score_change < 0 else "score-same"
+        score_change_html = f'<div class="score-change {change_class}">{_esc(change_text)}</div>'
+
+    metrics_parts = []
+    signals = s.top_signals()
+    for label, val in signals[:4]:
+        metrics_parts.append(f'<div class="metric">{label}: <span class="metric-val">+{val}</span></div>')
+    metrics_html = f'<div class="metrics">{"".join(metrics_parts)}</div>' if metrics_parts else ""
+
+    return f"""
+    <div class="card">
+      <div class="card-header">
         <div>
-          <div class="opp-name">{name_link}</div>
-          <div class="opp-meta">
+          <div class="card-name">{name_link}</div>
+          <div class="meta">
             {type_tags}
-            <span class="tag {conf_class}">{opp.confidence}</span>
-            <span class="tag tag-category">{_escape(opp.category)}</span>
+            <span class="tag {conf_class}">Conf: {conf}</span>
+            <span class="tag tag-cat">{_esc(e.category)}</span>
           </div>
         </div>
-        <div class="opp-score">{opp.total_score}</div>
+        <div class="card-scores">
+          <div class="score-main">{s.total}</div>
+        </div>
       </div>
-      <div class="opp-desc">{_escape(opp.description[:300])}</div>
+      <div class="desc">{_esc(e.description[:300])}</div>
+      <div class="reasons">{reasons_html}</div>
       {metrics_html}
-      {reasoning}
-    </div>""")
-
-    return "\n".join(cards)
-
-
-def _render_metrics(opp: Opportunity) -> str:
-    parts = []
-    m = opp.metrics
-    if m.github_stars is not None:
-        parts.append(f'<div class="metric">Stars: <span class="metric-val">{m.github_stars:,}</span></div>')
-    if m.github_forks is not None:
-        parts.append(f'<div class="metric">Forks: <span class="metric-val">{m.github_forks:,}</span></div>')
-    if m.hackernews_points is not None:
-        parts.append(f'<div class="metric">HN: <span class="metric-val">{m.hackernews_points}pts</span></div>')
-    if m.hackernews_comments is not None:
-        parts.append(f'<div class="metric">Comments: <span class="metric-val">{m.hackernews_comments}</span></div>')
-    if m.producthunt_votes is not None:
-        parts.append(f'<div class="metric">PH Votes: <span class="metric-val">{m.producthunt_votes:,}</span></div>')
-    if parts:
-        return f'<div class="opp-metrics">{"".join(parts)}</div>'
-    return ""
+      {score_change_html}
+    </div>"""
 
 
 def _render_breakouts(breakouts: list[dict]) -> str:
     if not breakouts:
         return ""
     items = []
-    for b in breakouts[:5]:
-        name = _escape(b.get("name", ""))
+    for b in breakouts[:3]:
+        name = _esc(b.get("name", "Unknown"))
         url = b.get("url", "#")
         items.append(f"""
     <div class="breakout-card">
-      <a href="{_escape(url)}" class="breakout-name" style="text-decoration:none">{name}</a>
-      <span class="breakout-change"> +{b.get('score_change_percent', 0)}%</span>
+      <a href="{_esc(url)}" class="breakout-name">{name}</a>
+      <span class="breakout-change"> +{b.get('score_change_pct', 0)}%</span>
       <div style="font-size:12px;color:#8b949e;margin-top:4px">
         Score: {b.get('prev_score', 0)} &rarr; {b.get('curr_score', 0)}
-        {f" | Stars: {b.get('prev_stars', 0):,} &rarr; {b.get('curr_stars', 0):,}" if b.get('curr_stars') else ""}
       </div>
     </div>""")
 
     return f"""
   <div class="section">
-    <div class="section-title">BREAKOUT ALERTS</div>
+    <div class="section-title breakout">BREAKOUT ALERTS</div>
     {"".join(items)}
   </div>"""
 
@@ -187,80 +209,39 @@ def _render_watchlist(watchlist: list[dict]) -> str:
         return ""
     items = []
     for w in watchlist[:5]:
-        name = _escape(w.get("name", ""))
+        name = _esc(w.get("name", ""))
         url = w.get("url", "#")
         score = w.get("score", 0)
         items.append(f"""
-    <div class="watchlist-item">
-      <a href="{_escape(url)}" class="watchlist-name" style="color:#58a6ff;text-decoration:none">{name}</a>
-      <span class="watchlist-score">Score: {score}</span>
+    <div class="watch-item">
+      <a href="{_esc(url)}" class="watch-name">{name}</a>
+      <span class="watch-score">Score: {score}</span>
     </div>""")
 
     return f"""
   <div class="section">
-    <div class="section-title">WATCHLIST</div>
+    <div class="section-title watch">WATCHLIST</div>
     {"".join(items)}
+  </div>"""
+
+
+def _render_macro(signals: list[str]) -> str:
+    if not signals:
+        return ""
+    items = "".join(f'<div class="macro-item">{_esc(s)}</div>' for s in signals[:5])
+    return f"""
+  <div class="section">
+    <div class="section-title macro">MACRO SIGNALS</div>
+    {items}
   </div>"""
 
 
 def _render_warnings(warnings: list[str]) -> str:
-    if not warnings:
-        return ""
-    items = "".join(f'<div class="warning">⚠ {_escape(w)}</div>' for w in warnings)
-    return items
+    return "".join(f'<div class="warning">{_esc(w)}</div>' for w in warnings)
 
 
-def _render_market_signals(signals: dict[str, str]) -> str:
-    if not signals:
-        return ""
-    items = []
-    for sector, direction in signals.items():
-        css = {
-            "up": "signal-up",
-            "down": "signal-down",
-            "flat": "signal-flat",
-        }.get(direction, "signal-flat")
-        arrow = {"up": "↑", "down": "↓", "flat": "→"}.get(direction, "→")
-        items.append(f'<div class="signal {css}">{_escape(sector)} {arrow}</div>')
-
-    return f"""
-  <div class="section">
-    <div class="section-title">MARKET SIGNALS</div>
-    {"".join(items)}
-  </div>"""
-
-
-def _render_ai_summary(opps: list[Opportunity]) -> str:
-    if not opps:
-        return ""
-    best = opps[0]
-    if not best.analysis or not best.analysis.reasoning:
-        return ""
-
-    facts = best.analysis.facts or []
-    inferences = best.analysis.inferences or []
-
-    facts_html = "".join(f"<li>{_escape(f)}</li>" for f in facts[:3])
-    inferences_html = "".join(f"<li>{_escape(i)}</li>" for i in inferences[:3])
-
-    return f"""
-  <div class="section">
-    <div class="section-title">AI SUMMARY</div>
-    <div class="opp-card">
-      <div class="opp-desc"><strong>{_escape(best.name)}</strong></div>
-      <div class="opp-reasoning" style="margin-top:8px">{_escape(best.analysis.reasoning)}</div>
-      {"<div style='margin-top:8px;font-size:12px;color:#3fb950'><strong>FACTS:</strong><ul style='margin:4px 0;padding-left:16px'>" + facts_html + "</ul></div>" if facts_html else ""}
-      {"<div style='margin-top:8px;font-size:12px;color:#e3b341'><strong>INFERENCE:</strong><ul style='margin:4px 0;padding-left:16px'>" + inferences_html + "</ul></div>" if inferences_html else ""}
-    </div>
-  </div>"""
-
-
-def _escape(text: str) -> str:
+def _esc(text: str) -> str:
     if not text:
         return ""
-    return (
-        text.replace("&", "&amp;")
-        .replace("<", "&lt;")
-        .replace(">", "&gt;")
-        .replace('"', "&quot;")
-    )
+    return (text.replace("&", "&amp;").replace("<", "&lt;")
+            .replace(">", "&gt;").replace('"', "&quot;"))

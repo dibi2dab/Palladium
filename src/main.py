@@ -2,14 +2,14 @@ from __future__ import annotations
 
 import json
 import logging
-import os
 import sys
 from datetime import date
 from pathlib import Path
 
 from dotenv import load_dotenv
-
 load_dotenv()
+
+sys.path.insert(0, str(Path(__file__).parent))
 
 logging.basicConfig(
     level=logging.INFO,
@@ -18,156 +18,280 @@ logging.basicConfig(
 )
 logger = logging.getLogger("opportunity-scanner")
 
-sys.path.insert(0, str(Path(__file__).parent))
-
-from src.collectors.github import GitHubTrendingCollector
-from src.collectors.hackernews import HackerNewsCollector
-from src.collectors.producthunt import ProductHuntCollector
-from src.processing.normalizer import normalize_opportunity
-from src.processing.deduplicator import deduplicate
-from src.processing.filter import filter_candidates
-from src.ai.analyzer import AIAnalyzer
-from src.history.tracker import HistoryTracker
+from src.config import (
+    DATA_DIR, REPORTS_DIR, AI_ENABLED, TOP_N, EMERGING_N,
+    BREAKOUT_N, BREAKOUT_THRESHOLD, MAX_CANDIDATES_FOR_AI,
+)
+from src.storage.json_store import JsonStore
+from src.collectors.startups import StartupCollector
+from src.collectors.markets import MarketCollector
+from src.collectors.economy import EconomyCollector
+from src.collectors.products import ProductCollector
+from src.collectors.technology import TechnologyCollector
+from src.collectors.news import NewsCollector
+from src.intelligence.entities import EntityManager
+from src.intelligence.signals import SignalManager
+from src.intelligence.scoring import Scorer, ScoredEntity
+from src.intelligence.breakout import BreakoutDetector
 from src.report.email_template import render_email
 from src.report.email_sender import send_email, build_subject
 
 
-TOP_N = 5
-MAX_CANDIDATES_FOR_AI = 25
+COLLECTOR_MAP = {
+    "startups": StartupCollector,
+    "markets": MarketCollector,
+    "economy": EconomyCollector,
+    "products": ProductCollector,
+    "technology": TechnologyCollector,
+    "news": NewsCollector,
+}
 
 
 def main():
     logger.info("=== Opportunity Scanner Starting ===")
     warnings: list[str] = []
 
-    # 1. Collect from all sources
+    store = JsonStore()
+    entities = EntityManager(store)
+    signals = SignalManager(store)
+    breakout = BreakoutDetector(store)
+
+    # 1. Collect
     logger.info("--- Phase 1: Data Collection ---")
-    collectors = [
-        GitHubTrendingCollector(),
-        HackerNewsCollector(min_points=50, hours_back=24),
-        ProductHuntCollector(),
-    ]
+    all_opportunities = []
+    for name, cls in COLLECTOR_MAP.items():
+        try:
+            collector = cls()
+            items, error = collector.safe_collect()
+            if error:
+                warnings.append(f"{name}: {error}")
+                logger.warning(f"[{name}] Collection failed: {error}")
+            else:
+                logger.info(f"[OK] {name} data collected ({len(items)} items)")
+            all_opportunities.extend(items)
+        except Exception as e:
+            warnings.append(f"{name}: {e}")
+            logger.error(f"[{name}] Unexpected error: {e}")
 
-    all_items = []
-    for collector in collectors:
-        items, error = collector.safe_collect()
-        if error:
-            warnings.append(f"{collector.source_name} collection failed: {error}")
-        all_items.extend(items)
+    logger.info(f"Total raw items: {len(all_opportunities)}")
 
-    logger.info(f"Total raw items collected: {len(all_items)}")
-
-    if not all_items:
-        logger.warning("No items collected. Generating empty report.")
-        _send_empty_report(warnings)
+    if not all_opportunities:
+        logger.warning("No data collected from any source.")
+        _send_report(store, entities, signals, breakout, [], [], warnings)
         return
 
-    # 2. Normalize
-    logger.info("--- Phase 2: Normalization ---")
-    normalized = [normalize_opportunity(opp) for opp in all_items]
-    logger.info(f"Normalized: {len(normalized)} items")
+    # 2. Entity Resolution
+    logger.info("--- Phase 2: Entity Resolution ---")
+    for opp in all_opportunities:
+        entity = entities.find_or_create(
+            opp.name, opp.url, opp.category, opp.description
+        )
+        if opp.url and not entity.url:
+            entity.url = opp.url
+        for tag in opp.tags:
+            if tag not in entity.tags:
+                entity.tags.append(tag)
+        if opp.source not in entity.signal_sources:
+            entity.signal_sources.append(opp.source)
+        for sid in opp.source_ids:
+            if sid not in entity.signal_sources:
+                entity.signal_sources.append(sid)
+    logger.info(f"[OK] Entities normalized ({len(entities.get_all())} entities)")
 
-    # 3. Deduplicate
-    logger.info("--- Phase 3: Deduplication ---")
-    unique = deduplicate(normalized)
-    logger.info(f"Unique items: {len(unique)}")
+    # 3. Generate Signals
+    logger.info("--- Phase 3: Signal Generation ---")
+    _generate_signals(all_opportunities, entities, signals)
+    logger.info(f"[OK] Signals generated ({len(signals.signals)} total)")
 
-    # 4. Filter
-    logger.info("--- Phase 4: Filtering ---")
-    candidates = filter_candidates(unique)
-    logger.info(f"Candidates after filtering: {len(candidates)}")
+    # 4. Score
+    logger.info("--- Phase 4: Scoring ---")
+    macro_events = _extract_macro_events(all_opportunities)
+    scorer = Scorer(entities, signals, macro_events)
+    scored = scorer.score_all()
+    logger.info(f"[OK] Opportunities scored ({len(scored)} entities)")
 
-    # 5. Take top candidates for AI analysis
-    candidates_for_ai = candidates[:MAX_CANDIDATES_FOR_AI]
-    logger.info(f"Sending {len(candidates_for_ai)} candidates to AI analysis")
+    # 5. History & Breakout
+    logger.info("--- Phase 5: History & Breakout Detection ---")
+    for s in scored:
+        prev_entries = breakout.history.get(s.entity.id, {}).get("entries", [])
+        if prev_entries:
+            s.previous_score = prev_entries[-1].get("score", 0)
+            s.score_change = s.score.total - s.previous_score
 
-    # 6. AI Analysis
-    logger.info("--- Phase 5: AI Analysis ---")
-    analyzer = AIAnalyzer()
-    analyzed = analyzer.analyze_batch(candidates_for_ai)
-    logger.info(f"AI analysis complete. {len(analyzed)} items scored.")
+        breakout.update(
+            s.entity.id,
+            s.score.total,
+            s.confidence,
+            s.entity.signal_counts,
+            s.entity.signal_sources,
+        )
+    breakouts_raw = breakout.detect_breakouts(BREAKOUT_THRESHOLD)
+    logger.info(f"[OK] History updated, breakouts: {len(breakouts_raw)}")
 
-    # 7. Sort by total score
-    analyzed.sort(key=lambda o: o.total_score, reverse=True)
+    # Enrich breakout data with entity names
+    breakouts = []
+    for b in breakouts_raw:
+        entity = entities.get(b["entity_id"])
+        if entity:
+            b["name"] = entity.name
+            b["url"] = entity.url
+            breakouts.append(b)
 
-    # 8. History tracking
-    logger.info("--- Phase 6: History Tracking ---")
-    tracker = HistoryTracker()
-    for opp in analyzed:
-        tracker.record_opportunity(opp)
-    tracker.save()
+    # 6. Select top opportunities
+    logger.info("--- Phase 6: Selection ---")
+    scored.sort(key=lambda s: s.score.total, reverse=True)
 
-    # 9. Get breakouts and watchlist
-    breakouts = tracker.get_breakouts(threshold_percent=50.0)
-    watchlist = tracker.get_watchlist()
+    top = scored[:TOP_N]
+    emerging = scored[TOP_N:TOP_N + EMERGING_N]
+    logger.info(f"[OK] Top opportunities: {len(top)}, Emerging: {len(emerging)}")
 
-    # 10. Market signals (basic category aggregation)
-    market_signals = _compute_market_signals(analyzed)
+    # 7. Watchlist
+    watchlist_ids = breakout.get_watchlist_ids()
+    watchlist = []
+    for wid in watchlist_ids:
+        entity = entities.get(wid)
+        if entity:
+            watchlist.append({
+                "name": entity.name,
+                "url": entity.url,
+                "score": next((s.score.total for s in scored if s.entity.id == wid), 0),
+                "first_seen": entity.first_seen,
+            })
 
-    # 11. Generate report
-    logger.info("--- Phase 7: Report Generation ---")
-    top_opps = analyzed[:TOP_N]
-    html = render_email(
-        top_opportunities=top_opps,
-        breakouts=breakouts[:5],
-        watchlist=watchlist[:5],
-        warnings=warnings,
-        market_signals=market_signals,
-    )
+    # 8. Macro signals
+    macro_signals = []
+    for s in scored:
+        if s.score.macro_adjustment != 0:
+            for reason in s.reasons:
+                if "Macro" in reason:
+                    macro_signals.append(reason)
+                    break
+    macro_signals = list(dict.fromkeys(macro_signals))
 
-    # 12. Send email
-    logger.info("--- Phase 8: Email Sending ---")
-    subject = build_subject(len(top_opps))
-    send_email(html, subject)
+    # 9. Save everything
+    logger.info("--- Phase 7: Saving Data ---")
+    entities.save()
+    signals.save()
+    signals.cleanup_old(days=90)
+    breakout.save()
+    _save_raw_data(scored)
+    logger.info("[OK] Data saved")
 
-    # 13. Save raw data
-    _save_raw_data(analyzed)
+    # 10. Send report
+    _send_report(store, entities, signals, breakout, top + emerging, breakouts, warnings, watchlist, macro_signals)
 
     logger.info("=== Opportunity Scanner Complete ===")
 
 
-def _compute_market_signals(opps: list) -> dict[str, str]:
-    category_scores: dict[str, list[int]] = {}
-    for opp in opps:
-        cat = opp.category
-        if cat not in category_scores:
-            category_scores[cat] = []
-        category_scores[cat].append(opp.total_score)
+def _generate_signals(opportunities, entities, signals):
+    from src.intelligence.signals import SIGNAL_CATEGORIES
 
-    signals: dict[str, str] = {}
-    for cat, scores in category_scores.items():
-        avg = sum(scores) / len(scores)
-        if avg >= 70:
-            signals[cat] = "up"
-        elif avg >= 50:
-            signals[cat] = "flat"
-        else:
-            signals[cat] = "down"
+    for opp in opportunities:
+        entity = entities.find_similar(opp.name, opp.url)
+        if not entity:
+            entity = entities.find_or_create(opp.name, opp.url, opp.category, opp.description)
 
-    signals = dict(sorted(signals.items(), key=lambda x: x[1] != "up"))
-    return signals
+        category = _opp_to_signal_category(opp)
+        signals.add_for_entity(
+            entity.id,
+            category,
+            opp.source,
+            opp.description[:200],
+            strength=1,
+            url=opp.url,
+        )
+
+        if opp.metrics.github_stars and opp.metrics.github_stars > 100:
+            signals.add_for_entity(entity.id, "github", opp.source,
+                                   f"GitHub stars: {opp.metrics.github_stars}", 1)
+        if opp.metrics.hackernews_points and opp.metrics.hackernews_points > 100:
+            signals.add_for_entity(entity.id, "community", opp.source,
+                                   f"HN points: {opp.metrics.hackernews_points}", 1)
+        if opp.metrics.producthunt_votes and opp.metrics.producthunt_votes > 50:
+            signals.add_for_entity(entity.id, "community", opp.source,
+                                   f"PH votes: {opp.metrics.producthunt_votes}", 1)
+        if opp.metrics.news_mentions and opp.metrics.news_mentions > 0:
+            signals.add_for_entity(entity.id, "news", opp.source,
+                                   opp.description[:100], 1)
 
 
-def _save_raw_data(opps: list):
-    data_dir = Path(__file__).parent / "data"
-    data_dir.mkdir(parents=True, exist_ok=True)
-    today = date.today().isoformat()
+def _opp_to_signal_category(opp) -> str:
+    tags_lower = [t.lower() for t in opp.tags]
+    cat_lower = opp.category.lower()
+    source_lower = opp.source.lower()
 
-    raw_path = data_dir / f"raw_{today}.json"
-    with open(raw_path, "w", encoding="utf-8") as f:
-        json.dump([opp.to_dict() for opp in opps], f, ensure_ascii=False, indent=2)
-    logger.info(f"Raw data saved: {raw_path}")
+    if any(w in tags_lower for w in ["funding", "seed", "series"]):
+        return "funding"
+    if any(w in cat_lower for w in ["funding", "seed", "series"]):
+        return "funding"
+    if "hiring" in tags_lower or "hiring" in cat_lower:
+        return "hiring"
+    if any(w in tags_lower for w in ["launch", "product"]):
+        return "product_launch"
+    if any(w in source_lower for w in ["github"]):
+        return "github"
+    if any(w in source_lower for w in ["producthunt", "kickstarter"]):
+        return "product_launch"
+    if "economy" in cat_lower or "macro" in tags_lower:
+        return "macro_event"
+    if "market" in cat_lower:
+        return "market_event"
+    if "startup" in cat_lower:
+        return "community"
+    return "news"
 
 
-def _send_empty_report(warnings: list[str]):
+def _extract_macro_events(opportunities) -> list[dict]:
+    events = []
+    for opp in opportunities:
+        if opp.category == "Economy":
+            desc = opp.description.lower()
+            if "rate" in desc and "cut" in desc:
+                events.append({"type": "rate_cut"})
+            elif "rate" in desc and "hike" in desc:
+                events.append({"type": "rate_hike"})
+            if "cpi" in desc:
+                events.append({"type": "cpi_low"})
+            if "gdp" in desc and "growth" in desc:
+                events.append({"type": "gdp_growth"})
+    return events
+
+
+def _send_report(store, entities, signals, breakout, top, breakouts, warnings,
+                  watchlist=None, macro_signals=None):
+    logger.info("--- Phase 8: Email Sending ---")
+    top_scored = [s for s in top if s.score.total > 0][:TOP_N]
+    emerging_scored = [s for s in top[TOP_N:] if s.score.total > 0][:EMERGING_N] if len(top) > TOP_N else []
+
     html = render_email(
-        top_opportunities=[],
-        breakouts=[],
-        watchlist=[],
-        warnings=warnings or ["No data collected from any source today."],
+        top_opportunities=top_scored,
+        emerging=emerging_scored,
+        breakouts=breakouts[:BREAKOUT_N],
+        watchlist=(watchlist or [])[:5],
+        warnings=warnings,
+        macro_signals=macro_signals,
     )
-    subject = f"Opportunity Scanner | {date.today().isoformat()} | No Opportunities"
+
+    subject = build_subject(len(top_scored) + len(emerging_scored))
     send_email(html, subject)
+
+
+def _save_raw_data(scored: list[ScoredEntity]):
+    DATA_DIR.mkdir(parents=True, exist_ok=True)
+    today = date.today().isoformat()
+    path = DATA_DIR / f"raw_{today}.json"
+    data = []
+    for s in scored:
+        data.append({
+            "entity": s.entity.to_dict(),
+            "score": s.score.to_dict(),
+            "confidence": s.confidence,
+            "types": s.types,
+            "reasons": s.reasons,
+        })
+    with open(path, "w", encoding="utf-8") as f:
+        json.dump(data, f, ensure_ascii=False, indent=2)
+    logger.info(f"Raw data saved: {path}")
 
 
 if __name__ == "__main__":

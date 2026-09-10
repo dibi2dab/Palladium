@@ -2,7 +2,7 @@ name: Opportunity Scanner
 
 on:
   schedule:
-    - cron: '0 8 * * *'
+    - cron: '0 15 * * *'
   workflow_dispatch:
 
 permissions:
@@ -27,14 +27,17 @@ jobs:
 
       - name: Run scanner
         env:
-          AI_API_KEY: ${{ secrets.AI_API_KEY }}
-          AI_MODEL: ${{ secrets.AI_MODEL || 'gpt-4o-mini' }}
-          AI_BASE_URL: ${{ secrets.AI_BASE_URL || '' }}
           SMTP_HOST: ${{ secrets.SMTP_HOST }}
           SMTP_PORT: ${{ secrets.SMTP_PORT || '587' }}
           SMTP_USERNAME: ${{ secrets.SMTP_USERNAME }}
           SMTP_PASSWORD: ${{ secrets.SMTP_PASSWORD }}
           EMAIL_TO: ${{ secrets.EMAIL_TO }}
+          AI_ENABLED: ${{ secrets.AI_ENABLED || 'false' }}
+          AI_API_KEY: ${{ secrets.AI_API_KEY || '' }}
+          AI_MODEL: ${{ secrets.AI_MODEL || 'gpt-4o-mini' }}
+          FRED_API_KEY: ${{ secrets.FRED_API_KEY || '' }}
+          HN_MIN_POINTS: '50'
+          HN_HOURS_BACK: '48'
         run: python -m src.main
 
       - name: Commit updated data
