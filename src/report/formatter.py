@@ -1,44 +1,31 @@
 from __future__ import annotations
 
-from src.intelligence.scoring import ScoredEntity
+from src.intelligence.scoring import ScoredEntity, JUDGEMENT_LABELS
+from src.intelligence.classification import ENTITY_TYPE_LABELS, EVENT_TYPE_LABELS
+from src.intelligence.funding import STAGE_LABELS_KO, format_amount_kr
 
 
 def format_reasons(scored: ScoredEntity) -> list[str]:
-    reasons = []
-    breakdown = scored.score
+    """Reasons already carry Korean text produced by the scorer."""
+    return list(scored.reasons)
 
-    if breakdown.funding > 0:
-        reasons.append(f"Funding signal (+{breakdown.funding})")
-    if breakdown.smart_money > 0:
-        reasons.append(f"Smart money participation (+{breakdown.smart_money})")
-    if breakdown.accelerator > 0:
-        reasons.append(f"Accelerator backing (+{breakdown.accelerator})")
-    if breakdown.hiring > 0:
-        reasons.append(f"Hiring activity (+{breakdown.hiring})")
-    if breakdown.product > 0:
-        reasons.append(f"Product event (+{breakdown.product})")
-    if breakdown.momentum > 0:
-        reasons.append(f"Growth momentum (+{breakdown.momentum})")
-    if breakdown.community > 0:
-        reasons.append(f"Community engagement (+{breakdown.community})")
-    if breakdown.news > 0:
-        reasons.append(f"News coverage (+{breakdown.news})")
-    if breakdown.github > 0:
-        reasons.append(f"GitHub activity (+{breakdown.github})")
-    if breakdown.partnership > 0:
-        reasons.append(f"Partnership (+{breakdown.partnership})")
-    if breakdown.customer > 0:
-        reasons.append(f"Customer traction (+{breakdown.customer})")
-    if breakdown.signal_diversity > 0:
-        reasons.append(f"Diverse signals ({breakdown.signal_diversity})")
-    if breakdown.cross_source > 0:
-        reasons.append(f"Cross-source confirmation (+{breakdown.cross_source})")
-    if breakdown.macro_adjustment > 0:
-        reasons.append(f"Macro tailwind (+{breakdown.macro_adjustment})")
-    elif breakdown.macro_adjustment < 0:
-        reasons.append(f"Macro headwind ({breakdown.macro_adjustment})")
 
-    return reasons
+_REASON_LABELS = {
+    "funding": "투자",
+    "smart_money": "주요 투자자",
+    "accelerator": "액셀러레이터",
+    "hiring": "채용",
+    "product": "제품",
+    "momentum": "성장 모멘텀",
+    "community": "커뮤니티",
+    "news": "뉴스",
+    "github": "GitHub",
+    "partnership": "파트너십",
+    "customer": "고객",
+    "signal_diversity": "신호 다양성",
+    "cross_source": "교차 출처",
+    "macro_adjustment": "거시경제",
+}
 
 
 def format_score_change(prev: int, curr: int) -> str:
@@ -48,3 +35,15 @@ def format_score_change(prev: int, curr: int) -> str:
     elif change < 0:
         return f"{prev} → {curr} ({change})"
     return f"{prev} → {curr}"
+
+
+def _stage_label(startup_stage: str) -> str:
+    return STAGE_LABELS_KO.get(startup_stage, "")
+
+
+def _funding_status_label(status: str) -> str:
+    return {
+        "confirmed": "투자 확정",
+        "planned": "투자 계획",
+        "withdrawn": "투자 무산/철회",
+    }.get(status, "")

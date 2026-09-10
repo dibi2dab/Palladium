@@ -7,6 +7,7 @@ from datetime import date
 from urllib.parse import urlparse
 
 from src.intelligence.funding import UNKNOWN
+from src.intelligence import classification
 
 logger = logging.getLogger(__name__)
 
@@ -68,11 +69,19 @@ class Entity:
         self.signal_sources: list[str] = []
         self.tags: list[str] = []
         self.startup_stage: str = UNKNOWN
-        self.opportunity_type: str = ""
+        self.entity_type: str = classification.OTHER
+        self.parent_company: str | None = None
+        self.event_types: list[str] = []
         self.investors: list[str] = []
         self.accelerators: list[str] = []
         self.funding_history: list[dict] = []
         self.total_funding_m: float | None = None
+        self.funding_status: str = ""  # confirmed / planned / withdrawn
+        self.events: list[dict] = []
+        self.search_interest: dict | None = None
+        self.news_momentum: dict | None = None
+        self.community_momentum: dict | None = None
+        self.hiring_growth: dict | None = None
 
     @property
     def signal_diversity(self) -> int:
@@ -94,11 +103,19 @@ class Entity:
             "signal_sources": self.signal_sources,
             "tags": self.tags,
             "startup_stage": self.startup_stage,
-            "opportunity_type": self.opportunity_type,
+            "entity_type": self.entity_type,
+            "parent_company": self.parent_company,
+            "event_types": self.event_types,
             "investors": self.investors,
             "accelerators": self.accelerators,
             "funding_history": self.funding_history,
             "total_funding_m": self.total_funding_m,
+            "funding_status": self.funding_status,
+            "events": self.events,
+            "search_interest": self.search_interest,
+            "news_momentum": self.news_momentum,
+            "community_momentum": self.community_momentum,
+            "hiring_growth": self.hiring_growth,
         }
 
     @classmethod
@@ -119,12 +136,49 @@ class Entity:
         e.signal_sources = d.get("signal_sources", [])
         e.tags = d.get("tags", [])
         e.startup_stage = d.get("startup_stage", UNKNOWN)
-        e.opportunity_type = d.get("opportunity_type", "")
+        e.entity_type = d.get("entity_type", classification.OTHER)
+        e.parent_company = d.get("parent_company")
+        e.event_types = d.get("event_types", [])
         e.investors = d.get("investors", [])
         e.accelerators = d.get("accelerators", [])
         e.funding_history = d.get("funding_history", [])
         e.total_funding_m = d.get("total_funding_m")
+        e.funding_status = d.get("funding_status", "")
+        e.events = d.get("events", [])
+        e.search_interest = d.get("search_interest")
+        e.news_momentum = d.get("news_momentum")
+        e.community_momentum = d.get("community_momentum")
+        e.hiring_growth = d.get("hiring_growth")
+
+        # Migration: upgrade old success-only funding_history entries.
+        for r in e.funding_history:
+            r.setdefault("currency", r.get("currency", "USD"))
+            r.setdefault("status", r.get("status", "confirmed"))
         return e
+
+    def add_event(self, event_type: str, description: str = "",
+                  url: str = "", date_str: str | None = None) -> bool:
+        """Record an event, deduped across sources for (type, date).
+
+        Returns True when a NEW event was recorded, False when it was an
+        already-seen event on the same day (so callers can merge sources).
+        """
+        date_str = date_str or date.today().isoformat()
+        for ev in self.events:
+            if ev.get("type") == event_type and ev.get("date") == date_str:
+                if url and url not in ev.get("sources", []):
+                    ev.setdefault("sources", []).append(url)
+                return False
+        self.events.append({
+            "type": event_type,
+            "date": date_str,
+            "description": description[:300],
+            "url": url,
+            "sources": [url] if url else [],
+        })
+        if event_type not in self.event_types:
+            self.event_types.append(event_type)
+        return True
 
 
 class EntityManager:
@@ -136,7 +190,10 @@ class EntityManager:
     def _load(self):
         raw = self.store.load_entities()
         for eid, edata in raw.items():
-            self.entities[eid] = Entity.from_dict(edata)
+            try:
+                self.entities[eid] = Entity.from_dict(edata)
+            except Exception as e:
+                logger.warning(f"Skipping malformed entity {eid}: {e}")
 
     def find_or_create(self, name: str, url: str = "",
                        category: str = "Other", description: str = "") -> Entity:
