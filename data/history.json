@@ -1,0 +1,4299 @@
+{
+  "54ee49298921": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 21,
+        "confidence": 79,
+        "signal_counts": {},
+        "sources": [
+          "hackernews",
+          "hn:49636283"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "a532c06b5ac9": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 16,
+        "confidence": 71,
+        "signal_counts": {},
+        "sources": [
+          "hackernews",
+          "hn:49633534"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "99c65f327696": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 23,
+        "confidence": 71,
+        "signal_counts": {},
+        "sources": [
+          "hackernews",
+          "hn:49630931"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "645326d605db": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 23,
+        "confidence": 71,
+        "signal_counts": {},
+        "sources": [
+          "hackernews",
+          "hn:49630253"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "1f092d1953ba": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 12,
+        "confidence": 91,
+        "signal_counts": {},
+        "sources": [
+          "sec_edgar",
+          "sec:0001193125-26-384457:d436411dex101.htm",
+          "sec:0001193125-26-384457:d436411dex102.htm",
+          "sec:0001193125-26-384457:d436411dex21.htm"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "6188cd100cca": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 9,
+        "confidence": 69,
+        "signal_counts": {},
+        "sources": [
+          "news:TechCrunch",
+          "news:TechCrunch:AI research startup Listen Labs scrubbed"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "27d5402424b0": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 9,
+        "confidence": 67,
+        "signal_counts": {},
+        "sources": [
+          "news:TechCrunch",
+          "news:TechCrunch:OpenAI adds a prominent AI doomer to its"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "7f1016f60c24": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 9,
+        "confidence": 67,
+        "signal_counts": {},
+        "sources": [
+          "news:TechCrunch",
+          "news:TechCrunch:Apple’s new CEO is reviving a Steve Jobs"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "54ff2387e438": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 9,
+        "confidence": 67,
+        "signal_counts": {},
+        "sources": [
+          "news:TechCrunch",
+          "news:TechCrunch:Apple unveils its first foldable, the iP"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "1a2e03a092e6": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 9,
+        "confidence": 67,
+        "signal_counts": {},
+        "sources": [
+          "news:TechCrunch",
+          "news:TechCrunch:Apple CEO John Ternus says the best AI d"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "7d73ba08aa94": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 9,
+        "confidence": 67,
+        "signal_counts": {},
+        "sources": [
+          "news:Ars Technica",
+          "news:Ars Technica:VMware migration reduces Tottenham Hotsp"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "e154aae804b8": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 9,
+        "confidence": 67,
+        "signal_counts": {},
+        "sources": [
+          "news:The Verge",
+          "news:The Verge:Automattic CEO Matt Mullenweg placed on "
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "dbe27ce917f3": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 9,
+        "confidence": 67,
+        "signal_counts": {},
+        "sources": [
+          "news:The Verge",
+          "news:The Verge:OpenAI’s sly mathematical breakthrough s"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "c4c250799a8f": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 9,
+        "confidence": 67,
+        "signal_counts": {},
+        "sources": [
+          "news:Hacker News",
+          "news:Hacker News:Larger Pacific Striped Octopus"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "e1676ef74677": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 9,
+        "confidence": 69,
+        "signal_counts": {},
+        "sources": [
+          "google_news",
+          "gnews:Legal AI startup Harvey reaches $15.5 bi"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "37d6e00d9702": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 9,
+        "confidence": 69,
+        "signal_counts": {},
+        "sources": [
+          "google_news",
+          "gnews:AI research startup Listen Labs scrubbed"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "f544a0c69bb9": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 9,
+        "confidence": 69,
+        "signal_counts": {},
+        "sources": [
+          "google_news",
+          "gnews:Sales automation startup Clay boosts val"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "a2fbf2bb572f": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 9,
+        "confidence": 69,
+        "signal_counts": {},
+        "sources": [
+          "google_news",
+          "gnews:UPDATE: California approves funding for "
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "520ec9c1d3d1": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 9,
+        "confidence": 69,
+        "signal_counts": {},
+        "sources": [
+          "google_news",
+          "gnews:The AlleyWatch Startup Daily Funding Rep"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "1ef8e21be86a": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 9,
+        "confidence": 67,
+        "signal_counts": {},
+        "sources": [
+          "google_news",
+          "gnews:Peter Thiel-Backed AI Startup Cognition "
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "ff7d747662d9": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 9,
+        "confidence": 69,
+        "signal_counts": {},
+        "sources": [
+          "google_news",
+          "gnews:Embodied AI startup PHYMI raises nearly "
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "6f81bca82394": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 9,
+        "confidence": 69,
+        "signal_counts": {},
+        "sources": [
+          "google_news",
+          "gnews:Seeds | Third Round This Year, Xiaoyubot"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "a74865db0364": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 9,
+        "confidence": 69,
+        "signal_counts": {},
+        "sources": [
+          "google_news",
+          "gnews:AI startup founded by two Bangladeshi br"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "ca4827468eb6": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 19,
+        "confidence": 75,
+        "signal_counts": {},
+        "sources": [
+          "hackernews",
+          "hn:49626190"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "426554bb61bc": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 5,
+        "confidence": 48,
+        "signal_counts": {},
+        "sources": [
+          "market_news",
+          "news:Bessent’s ‘Fever’-Quelling Debt Buybacks Put Wall "
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "0bb04c08ac90": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 5,
+        "confidence": 67,
+        "signal_counts": {},
+        "sources": [
+          "market_news",
+          "news:Here's what to do if your bank account application"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "558e80534951": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 5,
+        "confidence": 67,
+        "signal_counts": {},
+        "sources": [
+          "market_news",
+          "news:Nike shareholders reject climate proposal backed b"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "432c39167c0b": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 5,
+        "confidence": 67,
+        "signal_counts": {},
+        "sources": [
+          "market_news",
+          "news:$604M CH Robinson Verdict Still Isn’t Final Yet"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "3f9f8f697b09": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 5,
+        "confidence": 67,
+        "signal_counts": {},
+        "sources": [
+          "market_news",
+          "news:Ink Business Premier Credit Card review: Generous "
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "98e177c396aa": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 5,
+        "confidence": 48,
+        "signal_counts": {},
+        "sources": [
+          "market_news",
+          "news:Does iShares Pharma ETF Offer Superior Returns to "
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "b47499a888fc": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 5,
+        "confidence": 67,
+        "signal_counts": {},
+        "sources": [
+          "market_news",
+          "news:Google Cloud Boss Makes Bold Claim About AI Chip B"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "ecf14c67eefa": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 5,
+        "confidence": 67,
+        "signal_counts": {},
+        "sources": [
+          "market_news",
+          "news:Dollar Slips on Japanese Yen Strength"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "6f99276a8c3e": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 5,
+        "confidence": 67,
+        "signal_counts": {},
+        "sources": [
+          "market_news",
+          "news:Quantum Stocks Are Climbing Today as CHIPS Act Cas"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "b87973438ca3": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 14,
+        "confidence": 69,
+        "signal_counts": {},
+        "sources": [
+          "market_news",
+          "news:Capital One launches new Venture Business card wit"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "e0ff6dd544ae": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 5,
+        "confidence": 48,
+        "signal_counts": {},
+        "sources": [
+          "market_news",
+          "news:A Smarter Way to Monitor the Market Is Coming to I"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "302469904f0d": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 5,
+        "confidence": 67,
+        "signal_counts": {},
+        "sources": [
+          "market_news",
+          "news:Autonomous Trucking in 28 States: What Changes Nex"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "ff6794224217": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 12,
+        "confidence": 69,
+        "signal_counts": {},
+        "sources": [
+          "market_news",
+          "news:Fuel Surcharge Gaps: What Carriers Miss on Every L"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "bb080883369d": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 5,
+        "confidence": 67,
+        "signal_counts": {},
+        "sources": [
+          "market_news",
+          "news:Is Qualcomm on a Tear? Inside QCOM's 2026 Comeback"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "37a6a282d4a5": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 5,
+        "confidence": 48,
+        "signal_counts": {},
+        "sources": [
+          "market_news",
+          "news:What is a step-up CD, and how does it work?"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "0d585d5b4328": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 5,
+        "confidence": 67,
+        "signal_counts": {},
+        "sources": [
+          "market_news",
+          "news:Gold Rises Back Above $4,400 as Traders Weigh Fed "
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "e9ca6f66869c": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 5,
+        "confidence": 67,
+        "signal_counts": {},
+        "sources": [
+          "market_news",
+          "news:Porsche Lifts Margin Forecast After €1 Billion Bug"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "92975b771cae": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 5,
+        "confidence": 67,
+        "signal_counts": {},
+        "sources": [
+          "market_news",
+          "news:FirstRand Profit Falls as $1.1 Billion Provision C"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "cb013d462427": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 5,
+        "confidence": 67,
+        "signal_counts": {},
+        "sources": [
+          "market_news",
+          "news:Senegal Bondholders Pick White & Case for Debt Rew"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "82f0e847211a": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 5,
+        "confidence": 67,
+        "signal_counts": {},
+        "sources": [
+          "market_news",
+          "news:Asian Ports Snarled as El Niño Fuels Busy Typhoon "
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "261f0c024ddc": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 5,
+        "confidence": 67,
+        "signal_counts": {},
+        "sources": [
+          "market_news",
+          "news:Coinbase CEO Predicts Bitcoin's Downturn Is Over"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "5b23b7493361": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 13,
+        "confidence": 69,
+        "signal_counts": {},
+        "sources": [
+          "market_news",
+          "news:John Lewis Loss Widens as Turnaround Hit by Higher"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "ceedc8880dd0": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 5,
+        "confidence": 67,
+        "signal_counts": {},
+        "sources": [
+          "market_news",
+          "news:UMNO Hopeful Malaysia Ex-PM Najib Will Secure Roya"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "4edfcce54e40": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 5,
+        "confidence": 67,
+        "signal_counts": {},
+        "sources": [
+          "market_news",
+          "news:Why Payment Companies Are Choosing India's GIFT Ci"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "9989b8b76848": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 13,
+        "confidence": 69,
+        "signal_counts": {},
+        "sources": [
+          "market_news",
+          "news:Private Credit Investors Clash Over £36 Billion BH"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "337b0c4c66e0": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 5,
+        "confidence": 67,
+        "signal_counts": {},
+        "sources": [
+          "market_news",
+          "news:UK Faces Soaring Gas Prices as Winter Nears"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "79af63cc55af": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 5,
+        "confidence": 67,
+        "signal_counts": {},
+        "sources": [
+          "market_news",
+          "news:ECB Expected to Raise Interest Rates"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "152ffd4500c5": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 5,
+        "confidence": 67,
+        "signal_counts": {},
+        "sources": [
+          "market_news",
+          "news:Trump Payout Pledge Adds to Bond Market Jitters as"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "2616f611dee1": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 5,
+        "confidence": 48,
+        "signal_counts": {},
+        "sources": [
+          "market_news",
+          "news:Stocks Fall in Asia as Oil Stokes Inflation Fears:"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "b86ea12a3048": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 5,
+        "confidence": 48,
+        "signal_counts": {},
+        "sources": [
+          "market_news",
+          "news:Aster Eyes Latin America, Africa as Mideast Flows "
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "d695dc4a8a14": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 14,
+        "confidence": 87,
+        "signal_counts": {},
+        "sources": [
+          "sec_edgar",
+          "sec:0001104659-26-104858:tm2619716d3_ex10-5.htm",
+          "sec:0001104659-26-104858:tm2619716d3_8k.htm"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "1e5bf82ca143": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 6,
+        "confidence": 87,
+        "signal_counts": {},
+        "sources": [
+          "sec_edgar",
+          "sec:0001193125-26-385826:d162976dex21.htm",
+          "sec:0001193125-26-385826:d162976d8k.htm"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "5beaf76ec61b": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 6,
+        "confidence": 87,
+        "signal_counts": {},
+        "sources": [
+          "sec_edgar",
+          "sec:0001552781-26-000472:e26378_ex10-1.htm",
+          "sec:0001552781-26-000472:e26378_ex2-1.htm"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "f3227ba872b0": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 4,
+        "confidence": 56,
+        "signal_counts": {},
+        "sources": [
+          "news:TechCrunch",
+          "news:TechCrunch:Automattic’s board forces CEO Matt Mulle",
+          "news:Hacker News",
+          "news:Hacker News:Automattic's board forces CEO Matt Mulle"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "1f6e3beb9d54": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 6,
+        "confidence": 48,
+        "signal_counts": {},
+        "sources": [
+          "producthunt",
+          "ph:thousand"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "3a945749ce1e": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 6,
+        "confidence": 48,
+        "signal_counts": {},
+        "sources": [
+          "producthunt",
+          "ph:openobserve"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "ae5e3b5a7c75": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 6,
+        "confidence": 48,
+        "signal_counts": {},
+        "sources": [
+          "producthunt",
+          "ph:athenic-ai"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "c631d362174f": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 6,
+        "confidence": 48,
+        "signal_counts": {},
+        "sources": [
+          "producthunt",
+          "ph:desert-ant-labs"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "e35d828a193d": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 6,
+        "confidence": 48,
+        "signal_counts": {},
+        "sources": [
+          "producthunt",
+          "ph:vibe-eyes"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "773b180c3765": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 6,
+        "confidence": 48,
+        "signal_counts": {},
+        "sources": [
+          "producthunt",
+          "ph:wealthfolio"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "eb7d7cd7b7e9": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 6,
+        "confidence": 48,
+        "signal_counts": {},
+        "sources": [
+          "producthunt",
+          "ph:whip"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "579bf900494f": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 6,
+        "confidence": 48,
+        "signal_counts": {},
+        "sources": [
+          "producthunt",
+          "ph:subanana"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "169551b44bcd": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 6,
+        "confidence": 48,
+        "signal_counts": {},
+        "sources": [
+          "producthunt",
+          "ph:viso-now"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "315f28d9cec7": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 6,
+        "confidence": 48,
+        "signal_counts": {},
+        "sources": [
+          "producthunt",
+          "ph:hob-2"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "1af740fbb888": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 6,
+        "confidence": 48,
+        "signal_counts": {},
+        "sources": [
+          "producthunt",
+          "ph:drive-gforce-telemetry"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "9cd1e85fc264": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 6,
+        "confidence": 48,
+        "signal_counts": {},
+        "sources": [
+          "producthunt",
+          "ph:mockmagic"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "6174ef018dea": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 13,
+        "confidence": 65,
+        "signal_counts": {},
+        "sources": [
+          "producthunt",
+          "ph:typewise"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "9475ce79edaf": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 6,
+        "confidence": 48,
+        "signal_counts": {},
+        "sources": [
+          "producthunt",
+          "ph:freescan-app"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "c2736525bada": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 6,
+        "confidence": 48,
+        "signal_counts": {},
+        "sources": [
+          "producthunt",
+          "ph:gojo"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "d69b7840386c": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 6,
+        "confidence": 48,
+        "signal_counts": {},
+        "sources": [
+          "producthunt",
+          "ph:speechmark"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "8f51485ca233": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 6,
+        "confidence": 48,
+        "signal_counts": {},
+        "sources": [
+          "producthunt",
+          "ph:suno"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "0de1a51e0e14": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 6,
+        "confidence": 48,
+        "signal_counts": {},
+        "sources": [
+          "producthunt",
+          "ph:modeinspect-1-0"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "64b2fa7d9561": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 6,
+        "confidence": 48,
+        "signal_counts": {},
+        "sources": [
+          "producthunt",
+          "ph:type-com"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "8c81488596fa": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 3,
+        "confidence": 46,
+        "signal_counts": {},
+        "sources": [
+          "producthunt",
+          "ph:mastra"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "c75d90e8922c": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 6,
+        "confidence": 48,
+        "signal_counts": {},
+        "sources": [
+          "producthunt",
+          "ph:duckfightclub"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "f391ce7f8d6a": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 3,
+        "confidence": 46,
+        "signal_counts": {},
+        "sources": [
+          "producthunt",
+          "ph:49agents-ide"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "cf7b528131af": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 3,
+        "confidence": 46,
+        "signal_counts": {},
+        "sources": [
+          "producthunt",
+          "ph:noodle-seed"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "bc1d132364ac": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 6,
+        "confidence": 48,
+        "signal_counts": {},
+        "sources": [
+          "producthunt",
+          "ph:workid-ai"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "4cf7063d1248": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 6,
+        "confidence": 48,
+        "signal_counts": {},
+        "sources": [
+          "producthunt",
+          "ph:frigade"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "cd38ae743abf": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 6,
+        "confidence": 48,
+        "signal_counts": {},
+        "sources": [
+          "producthunt",
+          "ph:ass-auction"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "4cae2d505bc2": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 6,
+        "confidence": 48,
+        "signal_counts": {},
+        "sources": [
+          "producthunt",
+          "ph:diiverge-co"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "f7bb7a0bbb98": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 6,
+        "confidence": 48,
+        "signal_counts": {},
+        "sources": [
+          "producthunt",
+          "ph:gomodel"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "30efa45081a9": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 6,
+        "confidence": 79,
+        "signal_counts": {},
+        "sources": [
+          "github_trending",
+          "github:ayghri/i-have-adhd"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "21d4e071f8e9": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 6,
+        "confidence": 79,
+        "signal_counts": {},
+        "sources": [
+          "github_trending",
+          "github:Tencent/teamai-cli"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "4b3e7219c077": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 3,
+        "confidence": 71,
+        "signal_counts": {},
+        "sources": [
+          "github_trending",
+          "github:obra/superpowers"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "3d74c33283ee": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 6,
+        "confidence": 79,
+        "signal_counts": {},
+        "sources": [
+          "github_trending",
+          "github:pascalorg/editor"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "5cf766bef5b9": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 6,
+        "confidence": 79,
+        "signal_counts": {},
+        "sources": [
+          "github_trending",
+          "github:earthtojake/text-to-cad"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "19722d895a60": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 3,
+        "confidence": 71,
+        "signal_counts": {},
+        "sources": [
+          "github_trending",
+          "github:cathrynlavery/diagram-design"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "41c4de3927d3": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 6,
+        "confidence": 79,
+        "signal_counts": {},
+        "sources": [
+          "github_trending",
+          "github:TauricResearch/TradingAgents"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "fd9506547047": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 3,
+        "confidence": 71,
+        "signal_counts": {},
+        "sources": [
+          "github_trending",
+          "github:liquidslr/system-design-notes"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "500b7f8d1aa7": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 6,
+        "confidence": 79,
+        "signal_counts": {},
+        "sources": [
+          "github_trending",
+          "github:openai/plugins"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "7313da588720": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 6,
+        "confidence": 79,
+        "signal_counts": {},
+        "sources": [
+          "github_trending",
+          "github:freestylefly/awesome-gpt-image-2"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "6a7771efc6d1": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 6,
+        "confidence": 79,
+        "signal_counts": {},
+        "sources": [
+          "github_trending",
+          "github:rohitg00/ai-engineering-from-scratch"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "569b76ce41e7": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 6,
+        "confidence": 79,
+        "signal_counts": {},
+        "sources": [
+          "github_trending",
+          "github:vastsa/PI-Desktop"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "965015d717a8": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 6,
+        "confidence": 79,
+        "signal_counts": {},
+        "sources": [
+          "github_trending",
+          "github:affaan-m/ECC"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "00108d616652": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 3,
+        "confidence": 71,
+        "signal_counts": {},
+        "sources": [
+          "github_trending",
+          "github:public-apis/public-apis"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "0a88e44cd94a": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 3,
+        "confidence": 71,
+        "signal_counts": {},
+        "sources": [
+          "github_trending",
+          "github:Alishahryar1/free-claude-code"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "1965d10df321": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 3,
+        "confidence": 71,
+        "signal_counts": {},
+        "sources": [
+          "github_trending",
+          "github:experientiallabs/experiential"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "b8d5e531e276": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 3,
+        "confidence": 71,
+        "signal_counts": {},
+        "sources": [
+          "github_trending",
+          "github:smicallef/spiderfoot"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "6c674081ab39": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 3,
+        "confidence": 71,
+        "signal_counts": {},
+        "sources": [
+          "github_trending",
+          "github:openai/skills"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "1962b571a4d6": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 3,
+        "confidence": 71,
+        "signal_counts": {},
+        "sources": [
+          "github_trending",
+          "github:browser-use/browser-use"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "a653f3181fb8": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 3,
+        "confidence": 71,
+        "signal_counts": {},
+        "sources": [
+          "github_trending",
+          "github:OpenDCAI/GameFactory-3A"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "737ae0e500b9": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 3,
+        "confidence": 71,
+        "signal_counts": {},
+        "sources": [
+          "github_trending",
+          "github:github/spec-kit"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "346ba30d1163": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 3,
+        "confidence": 71,
+        "signal_counts": {},
+        "sources": [
+          "github_trending",
+          "github:PostHog/posthog"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "b48c48c1a548": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 3,
+        "confidence": 71,
+        "signal_counts": {},
+        "sources": [
+          "github_trending",
+          "github:anbeime/skill"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "3fafe8e5eab6": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 3,
+        "confidence": 71,
+        "signal_counts": {},
+        "sources": [
+          "github_trending",
+          "github:The-Swarm-Corporation/AutoHedge"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "560ca7dd51c4": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 3,
+        "confidence": 71,
+        "signal_counts": {},
+        "sources": [
+          "github_trending",
+          "github:Sumanth077/Hands-On-AI-Engineering"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "f76c8d17077f": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 3,
+        "confidence": 71,
+        "signal_counts": {},
+        "sources": [
+          "github_trending",
+          "github:decolua/9router"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "d0c223f09bae": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 3,
+        "confidence": 71,
+        "signal_counts": {},
+        "sources": [
+          "github_trending",
+          "github:asgeirtj/system_prompts_leaks"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "43571f30ad5a": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 3,
+        "confidence": 71,
+        "signal_counts": {},
+        "sources": [
+          "github_trending",
+          "github:jo-inc/camofox-browser"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "3649f52b796b": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 3,
+        "confidence": 71,
+        "signal_counts": {},
+        "sources": [
+          "github_trending",
+          "github:viarotel-org/escrcpy"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "e3b521ec227e": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 3,
+        "confidence": 71,
+        "signal_counts": {},
+        "sources": [
+          "github_trending",
+          "github:coreyhaines31/marketingskills"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "5257f06b2d37": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 3,
+        "confidence": 71,
+        "signal_counts": {},
+        "sources": [
+          "github_trending",
+          "github:is-a-dev/register"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "b5e53fed5171": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 3,
+        "confidence": 71,
+        "signal_counts": {},
+        "sources": [
+          "github_trending",
+          "github:open-gsd/gsd-core"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "48f6cd79412e": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 3,
+        "confidence": 71,
+        "signal_counts": {},
+        "sources": [
+          "github_trending",
+          "github:WhatDreamsCost/WhatDreamsCost-ComfyUI"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "17b3c96f7867": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 3,
+        "confidence": 71,
+        "signal_counts": {},
+        "sources": [
+          "github_trending",
+          "github:byoungd/up"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "7ffc29be6215": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 3,
+        "confidence": 71,
+        "signal_counts": {},
+        "sources": [
+          "github_trending",
+          "github:UseInterstellar/Interstellar"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "d92317ec2e72": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 3,
+        "confidence": 71,
+        "signal_counts": {},
+        "sources": [
+          "github_trending",
+          "github:jamiepine/voicebox"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "9b990886adc2": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 3,
+        "confidence": 71,
+        "signal_counts": {},
+        "sources": [
+          "github_trending",
+          "github:heygen-com/hyperframes"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "3841cd8bb2b1": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 3,
+        "confidence": 71,
+        "signal_counts": {},
+        "sources": [
+          "github_trending",
+          "github:OpenHands/OpenHands"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "e86cfe6d0480": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 11,
+        "confidence": 73,
+        "signal_counts": {},
+        "sources": [
+          "github_trending",
+          "github:ruvnet/ruflo"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "1bc717dd66ca": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 3,
+        "confidence": 71,
+        "signal_counts": {},
+        "sources": [
+          "github_trending",
+          "github:PrimeIntellect-ai/prime-agent"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "5eb110a7a21b": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 3,
+        "confidence": 71,
+        "signal_counts": {},
+        "sources": [
+          "github_trending",
+          "github:solidjs/solid"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "4d78ac6557a4": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 3,
+        "confidence": 71,
+        "signal_counts": {},
+        "sources": [
+          "github_trending",
+          "github:vercel-labs/skills"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "badfc4a3df74": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 3,
+        "confidence": 71,
+        "signal_counts": {},
+        "sources": [
+          "github_trending",
+          "github:supermemoryai/supermemory"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "fd6bdd3515d8": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 3,
+        "confidence": 71,
+        "signal_counts": {},
+        "sources": [
+          "github_trending",
+          "github:getopenscreen/openscreen"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "d227d31197a5": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 3,
+        "confidence": 71,
+        "signal_counts": {},
+        "sources": [
+          "github_trending",
+          "github:actions/checkout"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "5350c3e93c28": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 3,
+        "confidence": 71,
+        "signal_counts": {},
+        "sources": [
+          "github_trending",
+          "github:apache/maka"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "1b9183c18c78": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 3,
+        "confidence": 71,
+        "signal_counts": {},
+        "sources": [
+          "github_trending",
+          "github:mksglu/context-mode"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "ac820427bd40": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 3,
+        "confidence": 71,
+        "signal_counts": {},
+        "sources": [
+          "github_trending",
+          "github:MoonTechLab/LunaTV"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "f7c26965da1a": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 3,
+        "confidence": 71,
+        "signal_counts": {},
+        "sources": [
+          "github_trending",
+          "github:maotoumao/MusicFree"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "95a2b0805a4c": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 3,
+        "confidence": 71,
+        "signal_counts": {},
+        "sources": [
+          "github_trending",
+          "github:HakanSeven12/OpenCADStudio"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "e006c854ea5a": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 3,
+        "confidence": 71,
+        "signal_counts": {},
+        "sources": [
+          "github_trending",
+          "github:google/magika"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "abfb7c2b1594": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 3,
+        "confidence": 71,
+        "signal_counts": {},
+        "sources": [
+          "github_trending",
+          "github:yyjeqhc/webcodex"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "2777630ef6f4": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 3,
+        "confidence": 71,
+        "signal_counts": {},
+        "sources": [
+          "github_trending",
+          "github:leookun/cursor-byok"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "cae003bf9c20": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 3,
+        "confidence": 71,
+        "signal_counts": {},
+        "sources": [
+          "github_trending",
+          "github:Automattic/harper"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "d6420d7e91b1": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 3,
+        "confidence": 71,
+        "signal_counts": {},
+        "sources": [
+          "github_trending",
+          "github:rtk-ai/rtk"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "97abebb77a42": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 3,
+        "confidence": 71,
+        "signal_counts": {},
+        "sources": [
+          "github_trending",
+          "github:waditu/czsc"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "b90dde0a0fd8": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 3,
+        "confidence": 71,
+        "signal_counts": {},
+        "sources": [
+          "github_trending",
+          "github:feigeCode/navop"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "421422823e4e": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 3,
+        "confidence": 71,
+        "signal_counts": {},
+        "sources": [
+          "github_trending",
+          "github:ruvnet/RuView"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "144dd09d9b0a": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 3,
+        "confidence": 71,
+        "signal_counts": {},
+        "sources": [
+          "github_trending",
+          "github:dmtrKovalenko/fff"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "d8add5d95096": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 3,
+        "confidence": 71,
+        "signal_counts": {},
+        "sources": [
+          "github_trending",
+          "github:jlcodes99/cockpit-tools"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "2e1126dd80ba": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 3,
+        "confidence": 71,
+        "signal_counts": {},
+        "sources": [
+          "github_trending",
+          "github:farion1231/cc-switch"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "8ce0e09d556b": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 3,
+        "confidence": 71,
+        "signal_counts": {},
+        "sources": [
+          "github_trending",
+          "github:mixelpixx/Konnect"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "30ccff6fbf35": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 3,
+        "confidence": 71,
+        "signal_counts": {},
+        "sources": [
+          "github_trending",
+          "github:t8y2/dbx"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "07ce273a7788": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 3,
+        "confidence": 71,
+        "signal_counts": {},
+        "sources": [
+          "github_trending",
+          "github:vercel-labs/agent-browser"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "1ea1aa46eee1": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 3,
+        "confidence": 71,
+        "signal_counts": {},
+        "sources": [
+          "github_trending",
+          "github:polarsquad/krops"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "02f5de6b8858": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 3,
+        "confidence": 71,
+        "signal_counts": {},
+        "sources": [
+          "github_trending",
+          "github:memvid/memvid"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "e7fec7995661": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 3,
+        "confidence": 71,
+        "signal_counts": {},
+        "sources": [
+          "github_trending",
+          "github:huggingface/funes"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "d22d381f98a5": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 3,
+        "confidence": 71,
+        "signal_counts": {},
+        "sources": [
+          "github_trending",
+          "github:visioncortex/vtracer"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "3656d7900551": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 3,
+        "confidence": 71,
+        "signal_counts": {},
+        "sources": [
+          "github_trending",
+          "github:ajeetdsouza/zoxide"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "41aa68451e19": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 3,
+        "confidence": 71,
+        "signal_counts": {},
+        "sources": [
+          "github_trending",
+          "github:akitaonrails/ai-memory"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "714cbe1edc67": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 3,
+        "confidence": 71,
+        "signal_counts": {},
+        "sources": [
+          "github_trending",
+          "github:superplanehq/superplane"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "34ae33d0c7bf": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 3,
+        "confidence": 71,
+        "signal_counts": {},
+        "sources": [
+          "github_trending",
+          "github:XTLS/Xray-core"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "e4ef6a2768f5": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 3,
+        "confidence": 71,
+        "signal_counts": {},
+        "sources": [
+          "github_trending",
+          "github:authelia/authelia"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "9ff42a2c614b": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 3,
+        "confidence": 71,
+        "signal_counts": {},
+        "sources": [
+          "github_trending",
+          "github:Wei-Shaw/sub2api"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "34aeff9cd48a": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 3,
+        "confidence": 71,
+        "signal_counts": {},
+        "sources": [
+          "github_trending",
+          "github:go-resty/resty"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "c51e2e49d034": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 3,
+        "confidence": 71,
+        "signal_counts": {},
+        "sources": [
+          "github_trending",
+          "github:alibaba/open-code-review"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "6f7a5ae48140": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 3,
+        "confidence": 71,
+        "signal_counts": {},
+        "sources": [
+          "github_trending",
+          "github:larksuite/cli"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "69cc2de2d829": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 3,
+        "confidence": 71,
+        "signal_counts": {},
+        "sources": [
+          "github_trending",
+          "github:Project-HAMi/HAMi"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "3c030106cb24": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 3,
+        "confidence": 71,
+        "signal_counts": {},
+        "sources": [
+          "github_trending",
+          "github:infiniflow/ragflow"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "43ea5aa7eb66": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 3,
+        "confidence": 71,
+        "signal_counts": {},
+        "sources": [
+          "github_trending",
+          "github:googleapis/mcp-toolbox"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "cb08b1faedc2": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 3,
+        "confidence": 71,
+        "signal_counts": {},
+        "sources": [
+          "github_trending",
+          "github:chaitin/SafeLine"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "f58c9e6856c9": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 3,
+        "confidence": 71,
+        "signal_counts": {},
+        "sources": [
+          "github_trending",
+          "github:prometheus/prometheus"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "c15a6aee5757": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 3,
+        "confidence": 71,
+        "signal_counts": {},
+        "sources": [
+          "github_trending",
+          "github:chenhg5/cc-connect"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "c0b675449d28": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 3,
+        "confidence": 71,
+        "signal_counts": {},
+        "sources": [
+          "github_trending",
+          "github:volcano-sh/volcano"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "935ff63b713f": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 3,
+        "confidence": 71,
+        "signal_counts": {},
+        "sources": [
+          "github_trending",
+          "github:openfga/openfga"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "30ff1f8f044a": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 3,
+        "confidence": 71,
+        "signal_counts": {},
+        "sources": [
+          "github_trending",
+          "github:syncthing/syncthing"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "b635e844d502": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 11,
+        "confidence": 67,
+        "signal_counts": {},
+        "sources": [
+          "hackernews",
+          "hn:49637385"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "645995b49f93": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 8,
+        "confidence": 48,
+        "signal_counts": {},
+        "sources": [
+          "hackernews",
+          "hn:49638280"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "54d3b6c1382d": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 8,
+        "confidence": 48,
+        "signal_counts": {},
+        "sources": [
+          "hackernews",
+          "hn:49639090"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "6f1c4b33a209": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 11,
+        "confidence": 67,
+        "signal_counts": {},
+        "sources": [
+          "hackernews",
+          "hn:49614280"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "4fc5a16fc239": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 11,
+        "confidence": 67,
+        "signal_counts": {},
+        "sources": [
+          "hackernews",
+          "hn:49629886"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "0d4d58362577": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 8,
+        "confidence": 48,
+        "signal_counts": {},
+        "sources": [
+          "hackernews",
+          "hn:49637435"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "b95105e0332f": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 11,
+        "confidence": 67,
+        "signal_counts": {},
+        "sources": [
+          "hackernews",
+          "hn:49628493"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "ced422f1f277": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 11,
+        "confidence": 67,
+        "signal_counts": {},
+        "sources": [
+          "hackernews",
+          "hn:49627370"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "e9c77bce93d3": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 11,
+        "confidence": 67,
+        "signal_counts": {},
+        "sources": [
+          "hackernews",
+          "hn:49630151"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "ef2e751f5166": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 8,
+        "confidence": 48,
+        "signal_counts": {},
+        "sources": [
+          "hackernews",
+          "hn:49623398"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "3e0ed596f1d7": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 11,
+        "confidence": 67,
+        "signal_counts": {},
+        "sources": [
+          "hackernews",
+          "hn:49638353"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "24ed982daea9": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 8,
+        "confidence": 48,
+        "signal_counts": {},
+        "sources": [
+          "hackernews",
+          "hn:49637395"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "ff4d3ad19c35": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 11,
+        "confidence": 67,
+        "signal_counts": {},
+        "sources": [
+          "hackernews",
+          "hn:49630026"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "ebf4650d352e": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 11,
+        "confidence": 67,
+        "signal_counts": {},
+        "sources": [
+          "hackernews",
+          "hn:49624823"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "660c53bc8e3d": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 11,
+        "confidence": 67,
+        "signal_counts": {},
+        "sources": [
+          "hackernews",
+          "hn:49630566"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "922e0b443453": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 8,
+        "confidence": 48,
+        "signal_counts": {},
+        "sources": [
+          "hackernews",
+          "hn:49615245"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "c4016a7e63e6": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 11,
+        "confidence": 67,
+        "signal_counts": {},
+        "sources": [
+          "hackernews",
+          "hn:49624856"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "e661539c8f7b": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 11,
+        "confidence": 67,
+        "signal_counts": {},
+        "sources": [
+          "hackernews",
+          "hn:49628576"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "a8fde38d5d90": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 8,
+        "confidence": 48,
+        "signal_counts": {},
+        "sources": [
+          "hackernews",
+          "hn:49629209"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "f85c1382d364": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 11,
+        "confidence": 67,
+        "signal_counts": {},
+        "sources": [
+          "hackernews",
+          "hn:49628429"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "4c50373897b9": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 11,
+        "confidence": 67,
+        "signal_counts": {},
+        "sources": [
+          "hackernews",
+          "hn:49628614"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "198374045a36": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 11,
+        "confidence": 67,
+        "signal_counts": {},
+        "sources": [
+          "hackernews",
+          "hn:49635384"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "7ec282f391b0": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 11,
+        "confidence": 67,
+        "signal_counts": {},
+        "sources": [
+          "hackernews",
+          "hn:49623937"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "e9cb31ec79ce": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 11,
+        "confidence": 67,
+        "signal_counts": {},
+        "sources": [
+          "hackernews",
+          "hn:49626373"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "13f3f92cc64e": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 8,
+        "confidence": 48,
+        "signal_counts": {},
+        "sources": [
+          "hackernews",
+          "hn:49629865"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "05bd9527c728": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 8,
+        "confidence": 48,
+        "signal_counts": {},
+        "sources": [
+          "hackernews",
+          "hn:49629868"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "c636734cc586": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 11,
+        "confidence": 67,
+        "signal_counts": {},
+        "sources": [
+          "hackernews",
+          "hn:49615537"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "854a0b030770": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 11,
+        "confidence": 67,
+        "signal_counts": {},
+        "sources": [
+          "hackernews",
+          "hn:49622561"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "069863421cac": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 8,
+        "confidence": 48,
+        "signal_counts": {},
+        "sources": [
+          "hackernews",
+          "hn:49628290"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "92d79c7687b4": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 11,
+        "confidence": 67,
+        "signal_counts": {},
+        "sources": [
+          "hackernews",
+          "hn:49605915"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "fa0ad9edc050": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 8,
+        "confidence": 48,
+        "signal_counts": {},
+        "sources": [
+          "hackernews",
+          "hn:49604165"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "05c747e25e62": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 11,
+        "confidence": 67,
+        "signal_counts": {},
+        "sources": [
+          "hackernews",
+          "hn:49623754"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "12f4e29cb708": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 8,
+        "confidence": 48,
+        "signal_counts": {},
+        "sources": [
+          "hackernews",
+          "hn:49626429"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "582d62c4e6a5": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 8,
+        "confidence": 48,
+        "signal_counts": {},
+        "sources": [
+          "hackernews",
+          "hn:49630583"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "a8106e690cb1": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 11,
+        "confidence": 67,
+        "signal_counts": {},
+        "sources": [
+          "hackernews",
+          "hn:49616968"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "062ddffe0ef3": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 8,
+        "confidence": 48,
+        "signal_counts": {},
+        "sources": [
+          "hackernews",
+          "hn:49623938"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "dd6124b84bc8": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 8,
+        "confidence": 48,
+        "signal_counts": {},
+        "sources": [
+          "hackernews",
+          "hn:49621102"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "9fd68d1b7eb6": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 11,
+        "confidence": 67,
+        "signal_counts": {},
+        "sources": [
+          "hackernews",
+          "hn:49622305"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "0c6db266d15b": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 11,
+        "confidence": 67,
+        "signal_counts": {},
+        "sources": [
+          "hackernews",
+          "hn:49611251"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "0a2afdc3930a": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 11,
+        "confidence": 67,
+        "signal_counts": {},
+        "sources": [
+          "hackernews",
+          "hn:49617255"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "69b4cf2d7640": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 13,
+        "confidence": 67,
+        "signal_counts": {},
+        "sources": [
+          "hackernews",
+          "hn:49609174"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "50217462aeba": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 11,
+        "confidence": 67,
+        "signal_counts": {},
+        "sources": [
+          "hackernews",
+          "hn:49608023"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "94216a45122e": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 11,
+        "confidence": 67,
+        "signal_counts": {},
+        "sources": [
+          "hackernews",
+          "hn:49619464"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "cb025caa3f80": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 8,
+        "confidence": 48,
+        "signal_counts": {},
+        "sources": [
+          "hackernews",
+          "hn:49630194"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "30b0c84d0fdc": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 11,
+        "confidence": 67,
+        "signal_counts": {},
+        "sources": [
+          "hackernews",
+          "hn:49618050"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "16bc5ed266ee": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 11,
+        "confidence": 67,
+        "signal_counts": {},
+        "sources": [
+          "hackernews",
+          "hn:49621751"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "8a7419da1a67": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 20,
+        "confidence": 69,
+        "signal_counts": {},
+        "sources": [
+          "hackernews",
+          "hn:49614720"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "309bbbc98474": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 11,
+        "confidence": 67,
+        "signal_counts": {},
+        "sources": [
+          "hackernews",
+          "hn:49610059"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "740b2747a6de": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 8,
+        "confidence": 48,
+        "signal_counts": {},
+        "sources": [
+          "hackernews",
+          "hn:49627306"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "91db98933bcf": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 8,
+        "confidence": 48,
+        "signal_counts": {},
+        "sources": [
+          "hackernews",
+          "hn:49629802"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "7240acc99acb": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 11,
+        "confidence": 67,
+        "signal_counts": {},
+        "sources": [
+          "hackernews",
+          "hn:49610181"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "f3c6918e8620": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 11,
+        "confidence": 67,
+        "signal_counts": {},
+        "sources": [
+          "hackernews",
+          "hn:49613068"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "fe39eb632304": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 8,
+        "confidence": 48,
+        "signal_counts": {},
+        "sources": [
+          "hackernews",
+          "hn:49636906"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "c163cc95c45c": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 11,
+        "confidence": 67,
+        "signal_counts": {},
+        "sources": [
+          "hackernews",
+          "hn:49605767"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "fc2991c173aa": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 11,
+        "confidence": 67,
+        "signal_counts": {},
+        "sources": [
+          "hackernews",
+          "hn:49610631"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "b71685dace50": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 11,
+        "confidence": 67,
+        "signal_counts": {},
+        "sources": [
+          "hackernews",
+          "hn:49607991"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "21beafac26b1": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 11,
+        "confidence": 67,
+        "signal_counts": {},
+        "sources": [
+          "hackernews",
+          "hn:49616354"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "d6815bc162b9": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 8,
+        "confidence": 48,
+        "signal_counts": {},
+        "sources": [
+          "hackernews",
+          "hn:49610641"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "1e5297ddb8b2": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 11,
+        "confidence": 67,
+        "signal_counts": {},
+        "sources": [
+          "hackernews",
+          "hn:49624163"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "05c259f88a66": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 11,
+        "confidence": 67,
+        "signal_counts": {},
+        "sources": [
+          "hackernews",
+          "hn:49616257"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "ef4d49aee949": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 11,
+        "confidence": 67,
+        "signal_counts": {},
+        "sources": [
+          "hackernews",
+          "hn:49611230"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "0204f068fe52": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 8,
+        "confidence": 48,
+        "signal_counts": {},
+        "sources": [
+          "hackernews",
+          "hn:49612191"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "b6def52f4fa3": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 1,
+        "confidence": 67,
+        "signal_counts": {},
+        "sources": [
+          "sec_edgar",
+          "sec:0001213900-26-097770:ea0304732-8k_greenland.htm"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "c8ef60fcde16": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 9,
+        "confidence": 67,
+        "signal_counts": {},
+        "sources": [
+          "sec_edgar",
+          "sec:0001213900-26-096875:ea030057301ex10-1.htm"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "0c7520846f74": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 1,
+        "confidence": 67,
+        "signal_counts": {},
+        "sources": [
+          "sec_edgar",
+          "sec:0001692951-26-000168:cci-20260902.htm"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "e7a91a8ceb42": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 1,
+        "confidence": 67,
+        "signal_counts": {},
+        "sources": [
+          "sec_edgar",
+          "sec:0001193125-26-385383:d948605dex21.htm"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "9c78129f81de": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 1,
+        "confidence": 67,
+        "signal_counts": {},
+        "sources": [
+          "sec_edgar",
+          "sec:0001922446-26-000086:dec-20260902.htm"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "4e8f3b7b5252": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 1,
+        "confidence": 67,
+        "signal_counts": {},
+        "sources": [
+          "sec_edgar",
+          "sec:0001193125-26-381051:d152469dex101.htm"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "a1923cfdd428": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 1,
+        "confidence": 67,
+        "signal_counts": {},
+        "sources": [
+          "sec_edgar",
+          "sec:0001213900-26-097690:ea030451501ex99-1.htm"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "7e4cc360bb2c": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 1,
+        "confidence": 67,
+        "signal_counts": {},
+        "sources": [
+          "sec_edgar",
+          "sec:0001193125-26-385301:d930675d8k.htm"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "99e567710f4e": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 1,
+        "confidence": 67,
+        "signal_counts": {},
+        "sources": [
+          "sec_edgar",
+          "sec:0001193125-26-385257:d441137d8k.htm"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "66d6b871e7ea": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 9,
+        "confidence": 67,
+        "signal_counts": {},
+        "sources": [
+          "sec_edgar",
+          "sec:0001213900-26-097901:ea0304759-8k425_meshflow.htm"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "6d9a17c3d349": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 1,
+        "confidence": 67,
+        "signal_counts": {},
+        "sources": [
+          "sec_edgar",
+          "sec:0001493152-26-041840:form8-k.htm"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "d499901576fe": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 1,
+        "confidence": 67,
+        "signal_counts": {},
+        "sources": [
+          "google_news_economy",
+          "gnews_eco:Trump pushes Fed for lower rates, but co"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "59f134572853": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 1,
+        "confidence": 67,
+        "signal_counts": {},
+        "sources": [
+          "google_news_economy",
+          "gnews_eco:Fed to hold rates steady in rest of 2026"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "7dfab22e1345": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 1,
+        "confidence": 75,
+        "signal_counts": {},
+        "sources": [
+          "google_news_economy",
+          "gnews_eco:A Tiny Shift in the Inflation Rate Could"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "b11db643a2dd": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 1,
+        "confidence": 67,
+        "signal_counts": {},
+        "sources": [
+          "google_news_economy",
+          "gnews_eco:Market Minute: Inflation data set to sup"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "90ea65094dfa": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 1,
+        "confidence": 67,
+        "signal_counts": {},
+        "sources": [
+          "google_news_economy",
+          "gnews_eco:Fed rate hike hinges on two key inflatio"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "e29045fa38e4": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 1,
+        "confidence": 67,
+        "signal_counts": {},
+        "sources": [
+          "google_news_economy",
+          "gnews_eco:August CPI Report: What the Inflation Da"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "41c9c92bfdc3": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 1,
+        "confidence": 67,
+        "signal_counts": {},
+        "sources": [
+          "google_news_economy",
+          "gnews_eco:August CPI Seen Cooling, but Will It Pre"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "31d6cbe971d3": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 1,
+        "confidence": 67,
+        "signal_counts": {},
+        "sources": [
+          "google_news_economy",
+          "gnews_eco:Q&A: What can rent prices reveal about i"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "8e859a369f99": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 1,
+        "confidence": 67,
+        "signal_counts": {},
+        "sources": [
+          "google_news_economy",
+          "gnews_eco:Economic Watch: China's inflation edges "
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "14491a92f988": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 1,
+        "confidence": 67,
+        "signal_counts": {},
+        "sources": [
+          "google_news_economy",
+          "gnews_eco:A new Anthropic model seeks to test how "
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "29ffd521b66c": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 10,
+        "confidence": 69,
+        "signal_counts": {},
+        "sources": [
+          "google_news_economy",
+          "gnews_eco:Anthropic Releases Interactive Model of "
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "06dd8e00f6de": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 1,
+        "confidence": 67,
+        "signal_counts": {},
+        "sources": [
+          "google_news_economy",
+          "gnews_eco:Tighter National Bonus targets would bet"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "8fe91f979be6": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 1,
+        "confidence": 67,
+        "signal_counts": {},
+        "sources": [
+          "google_news_economy",
+          "gnews_eco:AI Could Cause GDP Growth Of 15%, But Se"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "24b53062d5f2": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 1,
+        "confidence": 67,
+        "signal_counts": {},
+        "sources": [
+          "google_news_economy",
+          "gnews_eco:Anthropic builds interactive model letti"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "c687e7db43f9": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 1,
+        "confidence": 67,
+        "signal_counts": {},
+        "sources": [
+          "news:TechCrunch",
+          "news:TechCrunch:Harvey hits $15.5B valuation, months aft"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "f6a2aaeff43b": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 10,
+        "confidence": 67,
+        "signal_counts": {},
+        "sources": [
+          "news:TechCrunch",
+          "news:TechCrunch:Apple launches iPhone 18 Pro with upgrad"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "99d678210e79": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 9,
+        "confidence": 67,
+        "signal_counts": {},
+        "sources": [
+          "news:Ars Technica",
+          "news:Ars Technica:OpenAI agents discussed ways to escape t"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "723b753a8b72": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 1,
+        "confidence": 67,
+        "signal_counts": {},
+        "sources": [
+          "google_news",
+          "gnews:Hyundai backs Bill Gates-funded US fusio"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "ac5f64cf5cb8": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 18,
+        "confidence": 69,
+        "signal_counts": {},
+        "sources": [
+          "google_news",
+          "gnews:How Investors Are Reacting To Microchip "
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "d88e8bbbf2b5": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 10,
+        "confidence": 67,
+        "signal_counts": {},
+        "sources": [
+          "google_news",
+          "gnews:Apple unveils first foldable iPhone, iPh"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "151a3cf08136": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 10,
+        "confidence": 67,
+        "signal_counts": {},
+        "sources": [
+          "google_news",
+          "gnews:Samsung, Duolingo troll Apple’s iPhone D"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "57c988491319": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 10,
+        "confidence": 67,
+        "signal_counts": {},
+        "sources": [
+          "google_news",
+          "gnews:Group of GCs, Wilson Sonsini launch new "
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "195adffa7093": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 10,
+        "confidence": 67,
+        "signal_counts": {},
+        "sources": [
+          "google_news",
+          "gnews:Dunwoody College of Technology Launches "
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "936dd1a418ae": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 18,
+        "confidence": 69,
+        "signal_counts": {},
+        "sources": [
+          "google_news",
+          "gnews:MHRA and Manchester NHS launch sandbox t"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "e399dc2f67e1": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 10,
+        "confidence": 67,
+        "signal_counts": {},
+        "sources": [
+          "google_news",
+          "gnews:Vodafone Business and Cassava Technologi"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "a4f69fc0df16": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 10,
+        "confidence": 67,
+        "signal_counts": {},
+        "sources": [
+          "google_news",
+          "gnews:Apple iPhone 18 launch event: Three new "
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "0f24a3598b1b": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 10,
+        "confidence": 67,
+        "signal_counts": {},
+        "sources": [
+          "google_news",
+          "gnews:Photoplay and Bermuda Tech Lab launch Fr"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "8929fef58872": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 10,
+        "confidence": 67,
+        "signal_counts": {},
+        "sources": [
+          "google_news",
+          "gnews:Researchers Can Now Launch Startups and "
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "1b683a04fc8f": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 0,
+        "confidence": 44,
+        "signal_counts": {},
+        "sources": [
+          "producthunt",
+          "ph:apple"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "fd178aefa0ca": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 0,
+        "confidence": 44,
+        "signal_counts": {},
+        "sources": [
+          "producthunt",
+          "ph:apple"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "4a72a662c37d": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 0,
+        "confidence": 44,
+        "signal_counts": {},
+        "sources": [
+          "news:Hacker News",
+          "news:Hacker News:Shopify acquires Tailwind"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "596762013571": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 0,
+        "confidence": 44,
+        "signal_counts": {},
+        "sources": [
+          "news:Hacker News",
+          "news:Hacker News:Factoring RSA 260"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "c7455360fd79": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 13,
+        "confidence": 65,
+        "signal_counts": {},
+        "sources": [
+          "market_news",
+          "news:Circle stock slips despite new acquisition news"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "e012e99e5580": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 13,
+        "confidence": 65,
+        "signal_counts": {},
+        "sources": [
+          "market_news",
+          "news:Treasuries Dismiss President's Promise: 3-Minutes "
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "e83045a3eda1": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 5,
+        "confidence": 48,
+        "signal_counts": {},
+        "sources": [
+          "market_news",
+          "news:NextEra Just Secured Up to $1.9 Billion to Restart"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "52f97e24912f": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 5,
+        "confidence": 48,
+        "signal_counts": {},
+        "sources": [
+          "market_news",
+          "news:Solana Is Up 36% in a Month, ETH Is Up 29%, XRP Is"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "bfb6eef9ba0e": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 5,
+        "confidence": 48,
+        "signal_counts": {},
+        "sources": [
+          "market_news",
+          "news:Dear Nvidia Stock Fans, Mark Your Calendars for Se"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "78b21de1863b": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 5,
+        "confidence": 48,
+        "signal_counts": {},
+        "sources": [
+          "market_news",
+          "news:Sanlam Profit Falls 22% on Higher Claims, Weakness"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "a712998a3e68": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 3,
+        "confidence": 46,
+        "signal_counts": {},
+        "sources": [
+          "producthunt",
+          "ph:agent-integrity-foundation-aif"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "52dabb77d2a5": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 3,
+        "confidence": 46,
+        "signal_counts": {},
+        "sources": [
+          "producthunt",
+          "ph:muse-22"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  },
+  "5b486899a6a8": {
+    "entries": [
+      {
+        "date": "2026-09-10",
+        "score": 0,
+        "confidence": 44,
+        "signal_counts": {},
+        "sources": [
+          "producthunt",
+          "ph:openai"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-10"
+  }
+}

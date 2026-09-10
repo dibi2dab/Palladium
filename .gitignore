@@ -7,8 +7,8 @@ venv/
 *.egg-info/
 dist/
 build/
+data/raw_*.json
 data/opportunities.json
-data/history.json
 reports/*.html
 .DS_Store
 Thumbs.db
