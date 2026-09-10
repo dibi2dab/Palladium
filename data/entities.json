@@ -6127,5 +6127,1479 @@
       "producthunt",
       "product"
     ]
+  },
+  "387357dd8458": {
+    "id": "387357dd8458",
+    "name": "Greenland Mines Ltd (GRML)",
+    "url": "https://www.sec.gov/Archives/edgar/data/0000001907223/000121390026097770/ea0304732-8k_greenland.htm",
+    "category": "M&A",
+    "description": "Material agreement entered into | Acquisition/asset disposition completed | Unregistered equity sale CURRENT REPORT [8-K] 2026-09-04",
+    "domain": "sec.gov",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "sec_edgar",
+      "sec:0001213900-26-097770:ea0304732-8k_greenland.htm"
+    ],
+    "tags": [
+      "sec",
+      "filing",
+      "8-k",
+      "1-01",
+      "2-01",
+      "3-02"
+    ]
+  },
+  "3ac7231fd45c": {
+    "id": "3ac7231fd45c",
+    "name": "Ribbon Acquisition Corp. (RIBB)",
+    "url": "https://www.sec.gov/Archives/edgar/data/0000002035016/000121390026096875/ea030057301ex10-1.htm",
+    "category": "M&A",
+    "description": "Material agreement entered into | Unregistered equity sale | 8-K item 9.01 STANDBY EQUITY PURCHASE AGREEMENT, DATED AS OF SEPTEMBER 2, 2026, BY AND AMONG RIBBON ACQUISITION CORP., DRC MEDICINE LTD. AND METEORA SELECT TRADING OPPORTUNITIES MASTER, LP, AND JOINED BY DRC MEDICINE INC [8-K] 2026-09-03",
+    "domain": "sec.gov",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "sec_edgar",
+      "sec:0001213900-26-096875:ea030057301ex10-1.htm"
+    ],
+    "tags": [
+      "sec",
+      "filing",
+      "8-k",
+      "1-01",
+      "3-02",
+      "9-01"
+    ]
+  },
+  "e459842366da": {
+    "id": "e459842366da",
+    "name": "Texas Ventures Acquisition III Corp (TVA)",
+    "url": "https://www.sec.gov/Archives/edgar/data/0000002033991/000110465926104858/tm2619716d3_ex10-5.htm",
+    "category": "M&A",
+    "description": "Material agreement entered into | Unregistered equity sale | Regulation FD disclosure EXHIBIT 10.5 [8-K] 2026-09-03",
+    "domain": "sec.gov",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "sec_edgar",
+      "sec:0001104659-26-104858:tm2619716d3_ex10-5.htm"
+    ],
+    "tags": [
+      "sec",
+      "filing",
+      "8-k",
+      "1-01",
+      "3-02",
+      "7-01"
+    ]
+  },
+  "a1159d883c5a": {
+    "id": "a1159d883c5a",
+    "name": "Cottonwood Communities, Inc.",
+    "url": "https://www.sec.gov/Archives/edgar/data/0000001692951/000169295126000168/cci-20260902.htm",
+    "category": "M&A",
+    "description": "Material agreement entered into | Regulation FD disclosure | 8-K item 9.01 8-K [8-K] 2026-09-04",
+    "domain": "sec.gov",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "sec_edgar",
+      "sec:0001692951-26-000168:cci-20260902.htm"
+    ],
+    "tags": [
+      "sec",
+      "filing",
+      "8-k",
+      "1-01",
+      "7-01",
+      "9-01"
+    ]
+  },
+  "df44fb3c13ae": {
+    "id": "df44fb3c13ae",
+    "name": "Blue Laser Fusion, Inc.",
+    "url": "https://www.sec.gov/Archives/edgar/data/0000001938570/000119312526385826/d162976dex21.htm",
+    "category": "M&A",
+    "description": "Material agreement entered into | Acquisition/asset disposition completed | Unregistered equity sale EX-2.1 [8-K] 2026-09-09",
+    "domain": "sec.gov",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "sec_edgar",
+      "sec:0001193125-26-385826:d162976dex21.htm"
+    ],
+    "tags": [
+      "sec",
+      "filing",
+      "8-k",
+      "1-01",
+      "2-01",
+      "3-02"
+    ]
+  },
+  "7638bae03ebf": {
+    "id": "7638bae03ebf",
+    "name": "Chime Financial, Inc. (CHYM)",
+    "url": "https://www.sec.gov/Archives/edgar/data/0000001795586/000119312526385383/d948605dex21.htm",
+    "category": "M&A",
+    "description": "Material agreement entered into | Regulation FD disclosure | 8-K item 9.01 EX-2.1 [8-K] 2026-09-08",
+    "domain": "sec.gov",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "sec_edgar",
+      "sec:0001193125-26-385383:d948605dex21.htm"
+    ],
+    "tags": [
+      "sec",
+      "filing",
+      "8-k",
+      "1-01",
+      "7-01",
+      "9-01"
+    ]
+  },
+  "d8a25bbf22a6": {
+    "id": "d8a25bbf22a6",
+    "name": "Diversified Energy Co (DEC)",
+    "url": "https://www.sec.gov/Archives/edgar/data/0000001922446/000192244626000086/dec-20260902.htm",
+    "category": "M&A",
+    "description": "Material agreement entered into | 8-K item 9.01 8-K [8-K] 2026-09-09",
+    "domain": "sec.gov",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "sec_edgar",
+      "sec:0001922446-26-000086:dec-20260902.htm"
+    ],
+    "tags": [
+      "sec",
+      "filing",
+      "8-k",
+      "1-01",
+      "9-01"
+    ]
+  },
+  "deeba8cc652d": {
+    "id": "deeba8cc652d",
+    "name": "EQUITY BANCSHARES INC (EQBK)",
+    "url": "https://www.sec.gov/Archives/edgar/data/0000001227500/000119312526381051/d152469dex101.htm",
+    "category": "M&A",
+    "description": "Material agreement entered into | Regulation FD disclosure | 8-K item 9.01 EX-10.1 [8-K] 2026-09-03",
+    "domain": "sec.gov",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "sec_edgar",
+      "sec:0001193125-26-381051:d152469dex101.htm"
+    ],
+    "tags": [
+      "sec",
+      "filing",
+      "8-k",
+      "1-01",
+      "7-01",
+      "9-01"
+    ]
+  },
+  "2c23e6bf8711": {
+    "id": "2c23e6bf8711",
+    "name": "Corvex, Inc. (MOVE)",
+    "url": "https://www.sec.gov/Archives/edgar/data/0000001734750/000121390026097690/ea030451501ex99-1.htm",
+    "category": "Public Company",
+    "description": "Operating results/financials released | Other material event | 8-K item 9.01 UNAUDITED PRO FORMA CONDENSED COMBINED FINANCIAL INFORMATION OF CORVEX, INC. AS OF AND FOR THE SIX MONTHS ENDED JUNE 30, 2026 AND FOR THE YEAR ENDED DECEMBER 31, 2025 [8-K] 2026-09-04",
+    "domain": "sec.gov",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "sec_edgar",
+      "sec:0001213900-26-097690:ea030451501ex99-1.htm"
+    ],
+    "tags": [
+      "sec",
+      "filing",
+      "8-k",
+      "2-02",
+      "8-01",
+      "9-01"
+    ]
+  },
+  "9f4f371754f5": {
+    "id": "9f4f371754f5",
+    "name": "AEVEX Corp. (AVEX)",
+    "url": "https://www.sec.gov/Archives/edgar/data/0000002096300/000119312526385301/d930675d8k.htm",
+    "category": "M&A",
+    "description": "Acquisition/asset disposition completed | Regulation FD disclosure | 8-K item 9.01 8-K [8-K] 2026-09-08",
+    "domain": "sec.gov",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "sec_edgar",
+      "sec:0001193125-26-385301:d930675d8k.htm"
+    ],
+    "tags": [
+      "sec",
+      "filing",
+      "8-k",
+      "2-01",
+      "7-01",
+      "9-01"
+    ]
+  },
+  "063df82bccfa": {
+    "id": "063df82bccfa",
+    "name": "Solaris Energy Infrastructure, Inc. (SEI)",
+    "url": "https://www.sec.gov/Archives/edgar/data/0000001697500/000119312526385257/d441137d8k.htm",
+    "category": "M&A",
+    "description": "Material agreement entered into | Acquisition/asset disposition completed | Unregistered equity sale 8-K [8-K] 2026-09-08",
+    "domain": "sec.gov",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "sec_edgar",
+      "sec:0001193125-26-385257:d441137d8k.htm"
+    ],
+    "tags": [
+      "sec",
+      "filing",
+      "8-k",
+      "1-01",
+      "2-01",
+      "3-02"
+    ]
+  },
+  "ba0fc41b31a4": {
+    "id": "ba0fc41b31a4",
+    "name": "Meshflow Acquisition Corp (MESH)",
+    "url": "https://www.sec.gov/Archives/edgar/data/0000002081468/000121390026097901/ea0304759-8k425_meshflow.htm",
+    "category": "M&A",
+    "description": "Material agreement entered into | Regulation FD disclosure | 8-K item 9.01 CURRENT REPORT [8-K] 2026-09-08",
+    "domain": "sec.gov",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "sec_edgar",
+      "sec:0001213900-26-097901:ea0304759-8k425_meshflow.htm"
+    ],
+    "tags": [
+      "sec",
+      "filing",
+      "8-k",
+      "1-01",
+      "7-01",
+      "9-01"
+    ]
+  },
+  "7e4c619dbd17": {
+    "id": "7e4c619dbd17",
+    "name": "SELECTIS HEALTH, INC. (GBCS)",
+    "url": "https://www.sec.gov/Archives/edgar/data/0000000727346/000149315226041840/form8-k.htm",
+    "category": "M&A",
+    "description": "Material agreement entered into | Acquisition/asset disposition completed | 8-K item 3.03 8-K [8-K] 2026-09-09",
+    "domain": "sec.gov",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "sec_edgar",
+      "sec:0001493152-26-041840:form8-k.htm"
+    ],
+    "tags": [
+      "sec",
+      "filing",
+      "8-k",
+      "1-01",
+      "2-01",
+      "3-03"
+    ]
+  },
+  "ed36277441bf": {
+    "id": "ed36277441bf",
+    "name": "EAGLE FINANCIAL SERVICES INC (EFSI)",
+    "url": "https://www.sec.gov/Archives/edgar/data/0000000880641/000119312526384457/d436411dex101.htm",
+    "category": "M&A",
+    "description": "Material agreement entered into | Regulation FD disclosure | 8-K item 9.01 EX-10.1 [8-K] 2026-09-08",
+    "domain": "sec.gov",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "sec_edgar",
+      "sec:0001193125-26-384457:d436411dex101.htm"
+    ],
+    "tags": [
+      "sec",
+      "filing",
+      "8-k",
+      "1-01",
+      "7-01",
+      "9-01"
+    ]
+  },
+  "e78c6ba227a6": {
+    "id": "e78c6ba227a6",
+    "name": "John Marshall Bancorp, Inc. (JMSB)",
+    "url": "https://www.sec.gov/Archives/edgar/data/0000001710482/000155278126000472/e26378_ex10-1.htm",
+    "category": "M&A",
+    "description": "Material agreement entered into | Director/officer change | Regulation FD disclosure 8-K [8-K] 2026-09-08",
+    "domain": "sec.gov",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "sec_edgar",
+      "sec:0001552781-26-000472:e26378_ex10-1.htm"
+    ],
+    "tags": [
+      "sec",
+      "filing",
+      "8-k",
+      "1-01",
+      "5-02",
+      "7-01"
+    ]
+  },
+  "2d78e438ef03": {
+    "id": "2d78e438ef03",
+    "name": "Passage BIO, Inc. (PASG)",
+    "url": "https://www.sec.gov/Archives/edgar/data/0000001787297/000114036126035515/ef20081513_ex2-1.htm",
+    "category": "M&A",
+    "description": "Material agreement entered into | Unregistered equity sale | 8-K item 9.01 EXHIBIT 2.1 [8-K] 2026-09-03",
+    "domain": "sec.gov",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "sec_edgar",
+      "sec:0001140361-26-035515:ef20081513_ex2-1.htm"
+    ],
+    "tags": [
+      "sec",
+      "filing",
+      "8-k",
+      "1-01",
+      "3-02",
+      "9-01"
+    ]
+  },
+  "f6a44f28542b": {
+    "id": "f6a44f28542b",
+    "name": "HORNBECK OFFSHORE SERVICES, INC. (HLX)",
+    "url": "https://www.sec.gov/Archives/edgar/data/0000000866829/000119312526384311/d50831dex991.htm",
+    "category": "Public Company",
+    "description": "8-K item 9.01 EX-99.1 [8-K/A] 2026-09-08",
+    "domain": "sec.gov",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "sec_edgar",
+      "sec:0001193125-26-384311:d50831dex991.htm"
+    ],
+    "tags": [
+      "sec",
+      "filing",
+      "8-k/a",
+      "9-01"
+    ]
+  },
+  "92efe4394b0a": {
+    "id": "92efe4394b0a",
+    "name": "NMP Acquisition Corp. (NMP)",
+    "url": "https://www.sec.gov/Archives/edgar/data/0000002054876/000121390026097868/ea030467201ex99-1.htm",
+    "category": "M&A",
+    "description": "Material agreement entered into | Regulation FD disclosure | 8-K item 9.01 PRESS RELEASE, DATED AS OF SEPTEMBER 8, 2026 [8-K] 2026-09-08",
+    "domain": "sec.gov",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "sec_edgar",
+      "sec:0001213900-26-097868:ea030467201ex99-1.htm"
+    ],
+    "tags": [
+      "sec",
+      "filing",
+      "8-k",
+      "1-01",
+      "7-01",
+      "9-01"
+    ]
+  },
+  "6fc32b287434": {
+    "id": "6fc32b287434",
+    "name": "Longevity Health Holdings, Inc. (XAGE)",
+    "url": "https://www.sec.gov/Archives/edgar/data/0000001842939/000143774926029714/ex_1012639.htm",
+    "category": "M&A",
+    "description": "Material agreement entered into | 8-K item 2.03 | Unregistered equity sale EXHIBIT 10.2 [8-K] 2026-09-04",
+    "domain": "sec.gov",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "sec_edgar",
+      "sec:0001437749-26-029714:ex_1012639.htm"
+    ],
+    "tags": [
+      "sec",
+      "filing",
+      "8-k",
+      "1-01",
+      "2-03",
+      "3-02"
+    ]
+  },
+  "506cc3c49ff3": {
+    "id": "506cc3c49ff3",
+    "name": "WAFD INC (WAFD)",
+    "url": "https://www.sec.gov/Archives/edgar/data/0000000936528/000114036126035826/ef20081702_ex2-1.htm",
+    "category": "M&A",
+    "description": "Material agreement entered into | Unregistered equity sale | Director/officer change EXHIBIT 2.1 [8-K] 2026-09-08",
+    "domain": "sec.gov",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "sec_edgar",
+      "sec:0001140361-26-035826:ef20081702_ex2-1.htm"
+    ],
+    "tags": [
+      "sec",
+      "filing",
+      "8-k",
+      "1-01",
+      "3-02",
+      "5-02"
+    ]
+  },
+  "53d962280247": {
+    "id": "53d962280247",
+    "name": "Cactus, Inc. (WHD)",
+    "url": "https://www.sec.gov/Archives/edgar/data/0000001699136/000162828026060938/september2026investorpre.htm",
+    "category": "Public Company",
+    "description": "Regulation FD disclosure | 8-K item 9.01 EX-99.1 [8-K] 2026-09-08",
+    "domain": "sec.gov",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "sec_edgar",
+      "sec:0001628280-26-060938:september2026investorpre.htm"
+    ],
+    "tags": [
+      "sec",
+      "filing",
+      "8-k",
+      "7-01",
+      "9-01"
+    ]
+  },
+  "4092e5e44e9d": {
+    "id": "4092e5e44e9d",
+    "name": "USA Rare Earth, Inc. (USAR)",
+    "url": "https://www.sec.gov/Archives/edgar/data/0000001970622/000121390026097399/ea0304001-8k_usarare.htm",
+    "category": "M&A",
+    "description": "Material agreement entered into | Acquisition/asset disposition completed | 8-K item 2.03 CURRENT REPORT [8-K] 2026-09-04",
+    "domain": "sec.gov",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "sec_edgar",
+      "sec:0001213900-26-097399:ea0304001-8k_usarare.htm"
+    ],
+    "tags": [
+      "sec",
+      "filing",
+      "8-k",
+      "1-01",
+      "2-01",
+      "2-03"
+    ]
+  },
+  "56bf630131a3": {
+    "id": "56bf630131a3",
+    "name": "Cayson Acquisition Corp (CAPN)",
+    "url": "https://www.sec.gov/Archives/edgar/data/0000002024203/000149315226041659/form8-k.htm",
+    "category": "Public Company",
+    "description": "8-K item 1.02 | 8-K item 9.01 8-K [8-K] 2026-09-08",
+    "domain": "sec.gov",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "sec_edgar",
+      "sec:0001493152-26-041659:form8-k.htm"
+    ],
+    "tags": [
+      "sec",
+      "filing",
+      "8-k",
+      "1-02",
+      "9-01"
+    ]
+  },
+  "80252014b99b": {
+    "id": "80252014b99b",
+    "name": "AtaiBeckley Inc. (ATAI)",
+    "url": "https://www.sec.gov/Archives/edgar/data/0000002081043/000114036126035939/ef20081508_8k.htm",
+    "category": "Public Company",
+    "description": "8-K item 5.07 8-K [8-K] 2026-09-08",
+    "domain": "sec.gov",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "sec_edgar",
+      "sec:0001140361-26-035939:ef20081508_8k.htm"
+    ],
+    "tags": [
+      "sec",
+      "filing",
+      "8-k",
+      "5-07"
+    ]
+  },
+  "67bc5adfefbf": {
+    "id": "67bc5adfefbf",
+    "name": "B&R Technology Merger Corp. (BRTM)",
+    "url": "https://www.sec.gov/Archives/edgar/data/0000002131350/000119312526385209/d102609dex991.htm",
+    "category": "Public Company",
+    "description": "Other material event | 8-K item 9.01 EX-99.1 [8-K] 2026-09-08",
+    "domain": "sec.gov",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "sec_edgar",
+      "sec:0001193125-26-385209:d102609dex991.htm"
+    ],
+    "tags": [
+      "sec",
+      "filing",
+      "8-k",
+      "8-01",
+      "9-01"
+    ]
+  },
+  "77cde07c8e6b": {
+    "id": "77cde07c8e6b",
+    "name": "Inflection Point Acquisition Corp. V (IPEX)",
+    "url": "https://www.sec.gov/Archives/edgar/data/0000002028355/000121390026097265/ea0304463-8k425_inflection5.htm",
+    "category": "Public Company",
+    "description": "8-K item 5.07 CURRENT REPORT [8-K] 2026-09-03",
+    "domain": "sec.gov",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "sec_edgar",
+      "sec:0001213900-26-097265:ea0304463-8k425_inflection5.htm"
+    ],
+    "tags": [
+      "sec",
+      "filing",
+      "8-k",
+      "5-07"
+    ]
+  },
+  "5b492472e81d": {
+    "id": "5b492472e81d",
+    "name": "Three Lions Acquisition Corp. (TLAC)",
+    "url": "https://www.sec.gov/Archives/edgar/data/0000002128462/000119312526383643/d111915dex991.htm",
+    "category": "M&A",
+    "description": "Material agreement entered into | Unregistered equity sale | Director/officer change EX-99.1 [8-K] 2026-09-04",
+    "domain": "sec.gov",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "sec_edgar",
+      "sec:0001193125-26-383643:d111915dex991.htm"
+    ],
+    "tags": [
+      "sec",
+      "filing",
+      "8-k",
+      "1-01",
+      "3-02",
+      "5-02"
+    ]
+  },
+  "84790269c37b": {
+    "id": "84790269c37b",
+    "name": "INDEPENDENT BANK CORP (INDB)",
+    "url": "https://www.sec.gov/Archives/edgar/data/0000000776901/000077690126000140/investorpresentationslid.htm",
+    "category": "Public Company",
+    "description": "Regulation FD disclosure | 8-K item 9.01 EX-99.1 - RAYMOND JAMES INVESTOR PRESENTATION [8-K] 2026-09-08",
+    "domain": "sec.gov",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "sec_edgar",
+      "sec:0000776901-26-000140:investorpresentationslid.htm"
+    ],
+    "tags": [
+      "sec",
+      "filing",
+      "8-k",
+      "7-01",
+      "9-01"
+    ]
+  },
+  "dbe485262a7b": {
+    "id": "dbe485262a7b",
+    "name": "CONX Corp.",
+    "url": "https://www.sec.gov/Archives/edgar/data/0000001823000/000110465926105512/tm2624785d1_8k.htm",
+    "category": "M&A",
+    "description": "Material agreement entered into | 8-K item 1.02 | Acquisition/asset disposition completed FORM 8-K [8-K] 2026-09-04",
+    "domain": "sec.gov",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "sec_edgar",
+      "sec:0001104659-26-105512:tm2624785d1_8k.htm"
+    ],
+    "tags": [
+      "sec",
+      "filing",
+      "8-k",
+      "1-01",
+      "1-02",
+      "2-01"
+    ]
+  },
+  "ac77e30ac951": {
+    "id": "ac77e30ac951",
+    "name": "CENTERSPACE (CSR)",
+    "url": "https://www.sec.gov/Archives/edgar/data/0000000798359/000114036126035986/ef20081761_8k.htm",
+    "category": "M&A",
+    "description": "Material agreement entered into | Regulation FD disclosure | 8-K item 9.01 8-K [8-K] 2026-09-09",
+    "domain": "sec.gov",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "sec_edgar",
+      "sec:0001140361-26-035986:ef20081761_8k.htm"
+    ],
+    "tags": [
+      "sec",
+      "filing",
+      "8-k",
+      "1-01",
+      "7-01",
+      "9-01"
+    ]
+  },
+  "5cccdf2bd4a4": {
+    "id": "5cccdf2bd4a4",
+    "name": "Soulpower Acquisition Corp. (SOUL)",
+    "url": "https://www.sec.gov/Archives/edgar/data/0000002025608/000149315226041389/ex2-1.htm",
+    "category": "M&A",
+    "description": "Material agreement entered into | 8-K item 9.01 EX-2.1 [8-K] 2026-09-03",
+    "domain": "sec.gov",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "sec_edgar",
+      "sec:0001493152-26-041389:ex2-1.htm"
+    ],
+    "tags": [
+      "sec",
+      "filing",
+      "8-k",
+      "1-01",
+      "9-01"
+    ]
+  },
+  "2d9e33b7c54d": {
+    "id": "2d9e33b7c54d",
+    "name": "HAWTHORN BANCSHARES, INC. (HWBK)",
+    "url": "https://www.sec.gov/Archives/edgar/data/0000000893847/000089384726000091/ex991pressrelease_hwbkacqu.htm",
+    "category": "M&A",
+    "description": "Acquisition/asset disposition completed | Regulation FD disclosure | 8-K item 9.01 EX-99.1 [8-K] 2026-09-04",
+    "domain": "sec.gov",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "sec_edgar",
+      "sec:0000893847-26-000091:ex991pressrelease_hwbkacqu.htm"
+    ],
+    "tags": [
+      "sec",
+      "filing",
+      "8-k",
+      "2-01",
+      "7-01",
+      "9-01"
+    ]
+  },
+  "c5ef873c4e03": {
+    "id": "c5ef873c4e03",
+    "name": "CEA Industries Inc. (BNC)",
+    "url": "https://www.sec.gov/Archives/edgar/data/0000001482541/000148254126000045/descriptionofsecurities_ap.htm",
+    "category": "Public Company",
+    "description": "8-K item 5.03 | Other material event | 8-K item 9.01 EX-4.1 [8-K] 2026-09-04",
+    "domain": "sec.gov",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "sec_edgar",
+      "sec:0001482541-26-000045:descriptionofsecurities_ap.htm"
+    ],
+    "tags": [
+      "sec",
+      "filing",
+      "8-k",
+      "5-03",
+      "8-01",
+      "9-01"
+    ]
+  },
+  "0d3ecb559947": {
+    "id": "0d3ecb559947",
+    "name": "Carlyle Credit Solutions, Inc.",
+    "url": "https://www.sec.gov/Archives/edgar/data/0000001702510/000119312526385584/d153258dex21.htm",
+    "category": "M&A",
+    "description": "Material agreement entered into | 8-K item 9.01 EX-2.1 [8-K] 2026-09-09",
+    "domain": "sec.gov",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "sec_edgar",
+      "sec:0001193125-26-385584:d153258dex21.htm"
+    ],
+    "tags": [
+      "sec",
+      "filing",
+      "8-k",
+      "1-01",
+      "9-01"
+    ]
+  },
+  "cf9fced5b4fd": {
+    "id": "cf9fced5b4fd",
+    "name": "Senti Biosciences Holdings, Inc. (SNTI)",
+    "url": "https://www.sec.gov/Archives/edgar/data/0000001854270/000162828026060600/ex102_equitycommitmentlett.htm",
+    "category": "M&A",
+    "description": "Material agreement entered into | 8-K item 2.03 | 8-K item 9.01 EX-10.2 [8-K] 2026-09-04",
+    "domain": "sec.gov",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "sec_edgar",
+      "sec:0001628280-26-060600:ex102_equitycommitmentlett.htm"
+    ],
+    "tags": [
+      "sec",
+      "filing",
+      "8-k",
+      "1-01",
+      "2-03",
+      "9-01"
+    ]
+  },
+  "8719b573bc4c": {
+    "id": "8719b573bc4c",
+    "name": "Crown PropTech Acquisitions (CPTKW)",
+    "url": "https://www.sec.gov/Archives/edgar/data/0000001827899/000121390026096929/ea030443101ex2-1.htm",
+    "category": "M&A",
+    "description": "Material agreement entered into | Regulation FD disclosure | 8-K item 9.01 AMENDED AND RESTATED BUSINESS COMBINATION AGREEMENT, DATED AS OF SEPTEMBER 2, 2026 [8-K] 2026-09-03",
+    "domain": "sec.gov",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "sec_edgar",
+      "sec:0001213900-26-096929:ea030443101ex2-1.htm"
+    ],
+    "tags": [
+      "sec",
+      "filing",
+      "8-k",
+      "1-01",
+      "7-01",
+      "9-01"
+    ]
+  },
+  "3204c4625095": {
+    "id": "3204c4625095",
+    "name": "NorthWestern Energy Group, Inc. (NWE)",
+    "url": "https://www.sec.gov/Archives/edgar/data/0000001993004/000199300426000054/exh991barclaysconfpres26.htm",
+    "category": "Public Company",
+    "description": "Regulation FD disclosure | 8-K item 9.01 EX-99.1 PRESENTATION BARCLAYS 2026 [8-K] 2026-09-09",
+    "domain": "sec.gov",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "sec_edgar",
+      "sec:0001993004-26-000054:exh991barclaysconfpres26.htm"
+    ],
+    "tags": [
+      "sec",
+      "filing",
+      "8-k",
+      "7-01",
+      "9-01"
+    ]
+  },
+  "2572c32b33e6": {
+    "id": "2572c32b33e6",
+    "name": "FIRST COMMUNITY CORP /SC/ (FCCO)",
+    "url": "https://www.sec.gov/Archives/edgar/data/0000000932781/000155278126000475/e26377_ex99-1.htm",
+    "category": "Public Company",
+    "description": "Regulation FD disclosure | 8-K item 9.01 8-K [8-K] 2026-09-08",
+    "domain": "sec.gov",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "sec_edgar",
+      "sec:0001552781-26-000475:e26377_ex99-1.htm"
+    ],
+    "tags": [
+      "sec",
+      "filing",
+      "8-k",
+      "7-01",
+      "9-01"
+    ]
+  },
+  "1d1b2227cc8a": {
+    "id": "1d1b2227cc8a",
+    "name": "GERMAN AMERICAN BANCORP, INC. (GABC)",
+    "url": "https://www.sec.gov/Archives/edgar/data/0000000714395/000071439526000039/investorpresentationrj09.htm",
+    "category": "Public Company",
+    "description": "Regulation FD disclosure | 8-K item 9.01 EX-99.1 [8-K] 2026-09-08",
+    "domain": "sec.gov",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "sec_edgar",
+      "sec:0000714395-26-000039:investorpresentationrj09.htm"
+    ],
+    "tags": [
+      "sec",
+      "filing",
+      "8-k",
+      "7-01",
+      "9-01"
+    ]
+  },
+  "3fe168ea0a80": {
+    "id": "3fe168ea0a80",
+    "name": "INDEPENDENCE REALTY TRUST, INC. (IRT)",
+    "url": "https://www.sec.gov/Archives/edgar/data/0000001466085/000143774926029903/irt20260909c_8k.htm",
+    "category": "M&A",
+    "description": "Material agreement entered into | Director/officer change | Regulation FD disclosure FORM 8-K [8-K] 2026-09-09",
+    "domain": "sec.gov",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "sec_edgar",
+      "sec:0001437749-26-029903:irt20260909c_8k.htm"
+    ],
+    "tags": [
+      "sec",
+      "filing",
+      "8-k",
+      "1-01",
+      "5-02",
+      "7-01"
+    ]
+  },
+  "c2946cafc179": {
+    "id": "c2946cafc179",
+    "name": "Plutonian Acquisition Corp. II (PLUN)",
+    "url": "https://www.sec.gov/Archives/edgar/data/0000002065661/000147793226005397/pltn_ex991.htm",
+    "category": "Public Company",
+    "description": "Regulation FD disclosure | 8-K item 9.01 PRESS RELEASE [8-K] 2026-09-03",
+    "domain": "sec.gov",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "sec_edgar",
+      "sec:0001477932-26-005397:pltn_ex991.htm"
+    ],
+    "tags": [
+      "sec",
+      "filing",
+      "8-k",
+      "7-01",
+      "9-01"
+    ]
+  },
+  "4590db4a4e06": {
+    "id": "4590db4a4e06",
+    "name": "Payoneer Global Inc. (PAYO)",
+    "url": "https://www.sec.gov/Archives/edgar/data/0000001845815/000095010326013665/dp253036_8k.htm",
+    "category": "Public Company",
+    "description": "Other material event FORM 8-K [8-K] 2026-09-08",
+    "domain": "sec.gov",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "sec_edgar",
+      "sec:0000950103-26-013665:dp253036_8k.htm"
+    ],
+    "tags": [
+      "sec",
+      "filing",
+      "8-k",
+      "8-01"
+    ]
+  },
+  "54dbca3ce106": {
+    "id": "54dbca3ce106",
+    "name": "Andretti Acquisition Corp. II (POLE)",
+    "url": "https://www.sec.gov/Archives/edgar/data/0000002025341/000121390026097832/ea030478301ex10-1.htm",
+    "category": "M&A",
+    "description": "Material agreement entered into | 8-K item 9.01 FORM OF NON-REDEMPTION AGREEMENT [8-K] 2026-09-08",
+    "domain": "sec.gov",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "sec_edgar",
+      "sec:0001213900-26-097832:ea030478301ex10-1.htm"
+    ],
+    "tags": [
+      "sec",
+      "filing",
+      "8-k",
+      "1-01",
+      "9-01"
+    ]
+  },
+  "21b9aa461918": {
+    "id": "21b9aa461918",
+    "name": "Reliance Global Group, Inc. (EZRA)",
+    "url": "https://www.sec.gov/Archives/edgar/data/0000001812727/000149315226041371/ex4-1.htm",
+    "category": "M&A",
+    "description": "Material agreement entered into | 8-K item 3.03 | 8-K item 5.03 EX-4.1 [8-K] 2026-09-03",
+    "domain": "sec.gov",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "sec_edgar",
+      "sec:0001493152-26-041371:ex4-1.htm"
+    ],
+    "tags": [
+      "sec",
+      "filing",
+      "8-k",
+      "1-01",
+      "3-03",
+      "5-03"
+    ]
+  },
+  "7b0a2f3eb4c3": {
+    "id": "7b0a2f3eb4c3",
+    "name": "UNITED COMMUNITY BANKS INC (UCB)",
+    "url": "https://www.sec.gov/Archives/edgar/data/0000000857855/000110465926105666/tm2624931d1_ex99-2.htm",
+    "category": "Public Company",
+    "description": "Regulation FD disclosure | 8-K item 9.01 EXHIBIT 99.2 [8-K] 2026-09-08",
+    "domain": "sec.gov",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "sec_edgar",
+      "sec:0001104659-26-105666:tm2624931d1_ex99-2.htm"
+    ],
+    "tags": [
+      "sec",
+      "filing",
+      "8-k",
+      "7-01",
+      "9-01"
+    ]
+  },
+  "954763d90fff": {
+    "id": "954763d90fff",
+    "name": "PATTERSON UTI ENERGY INC (PTEN)",
+    "url": "https://www.sec.gov/Archives/edgar/data/0000000889900/000088990026000065/september2026_ptenxinves.htm",
+    "category": "Public Company",
+    "description": "Regulation FD disclosure | 8-K item 9.01 EX-99.1 [8-K] 2026-09-08",
+    "domain": "sec.gov",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "sec_edgar",
+      "sec:0000889900-26-000065:september2026_ptenxinves.htm"
+    ],
+    "tags": [
+      "sec",
+      "filing",
+      "8-k",
+      "7-01",
+      "9-01"
+    ]
+  },
+  "2d0b3d690bbf": {
+    "id": "2d0b3d690bbf",
+    "name": "LIVEPERSON INC (LPSN)",
+    "url": "https://www.sec.gov/Archives/edgar/data/0000001102993/000119312526383671/d112155d8k.htm",
+    "category": "M&A",
+    "description": "Acquisition/asset disposition completed | 8-K item 3.01 | 8-K item 3.03 8-K [8-K] 2026-09-04",
+    "domain": "sec.gov",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "sec_edgar",
+      "sec:0001193125-26-383671:d112155d8k.htm"
+    ],
+    "tags": [
+      "sec",
+      "filing",
+      "8-k",
+      "2-01",
+      "3-01",
+      "3-03"
+    ]
+  },
+  "a2461d267594": {
+    "id": "a2461d267594",
+    "name": "VIVMARK RESIDENTIAL (VMRK)",
+    "url": "https://www.sec.gov/Archives/edgar/data/0000000906107/000119312526385969/vmrk-ex99_1.htm",
+    "category": "Public Company",
+    "description": "Regulation FD disclosure | 8-K item 9.01 EX-99.1 [8-K] 2026-09-09",
+    "domain": "sec.gov",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "sec_edgar",
+      "sec:0001193125-26-385969:vmrk-ex99_1.htm"
+    ],
+    "tags": [
+      "sec",
+      "filing",
+      "8-k",
+      "7-01",
+      "9-01"
+    ]
+  },
+  "4a72416332ff": {
+    "id": "4a72416332ff",
+    "name": "electroCore, Inc. (ECOR)",
+    "url": "https://www.sec.gov/Archives/edgar/data/0000001560258/000149315226041893/ex10-3.htm",
+    "category": "Public Company",
+    "description": "Director/officer change | 8-K item 5.03 | 8-K item 5.07 EX-10.3 [8-K] 2026-09-09",
+    "domain": "sec.gov",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "sec_edgar",
+      "sec:0001493152-26-041893:ex10-3.htm"
+    ],
+    "tags": [
+      "sec",
+      "filing",
+      "8-k",
+      "5-02",
+      "5-03",
+      "5-07"
+    ]
+  },
+  "bfa9a04e43e1": {
+    "id": "bfa9a04e43e1",
+    "name": "Apogee Therapeutics, Inc. (APGE)",
+    "url": "https://www.sec.gov/Archives/edgar/data/0000001974640/000114036126035537/ef20081397_8k.htm",
+    "category": "M&A",
+    "description": "8-K item 1.02 | Acquisition/asset disposition completed | 8-K item 3.01 8-K [8-K] 2026-09-03",
+    "domain": "sec.gov",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "sec_edgar",
+      "sec:0001140361-26-035537:ef20081397_8k.htm"
+    ],
+    "tags": [
+      "sec",
+      "filing",
+      "8-k",
+      "1-02",
+      "2-01",
+      "3-01"
+    ]
+  },
+  "7cb188cdf4fb": {
+    "id": "7cb188cdf4fb",
+    "name": "AMR Resources Acquisition Corp. (AMAC)",
+    "url": "https://www.sec.gov/Archives/edgar/data/0000002110119/000121390026097666/ea030463801ex99-1.htm",
+    "category": "Public Company",
+    "description": "Other material event | 8-K item 9.01 PRESS RELEASE, DATED SEPTEMBER 4, 2026 [8-K] 2026-09-04",
+    "domain": "sec.gov",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "sec_edgar",
+      "sec:0001213900-26-097666:ea030463801ex99-1.htm"
+    ],
+    "tags": [
+      "sec",
+      "filing",
+      "8-k",
+      "8-01",
+      "9-01"
+    ]
+  },
+  "71b63a02dde2": {
+    "id": "71b63a02dde2",
+    "name": "Barinthus Biotherapeutics plc. (BRNS)",
+    "url": "https://www.sec.gov/Archives/edgar/data/0000001828185/000110465926106183/tm2625093d1_8k.htm",
+    "category": "M&A",
+    "description": "8-K item 1.02 | Acquisition/asset disposition completed | 8-K item 3.01 FORM 8-K [8-K] 2026-09-09",
+    "domain": "sec.gov",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "sec_edgar",
+      "sec:0001104659-26-106183:tm2625093d1_8k.htm"
+    ],
+    "tags": [
+      "sec",
+      "filing",
+      "8-k",
+      "1-02",
+      "2-01",
+      "3-01"
+    ]
+  },
+  "226769c15591": {
+    "id": "226769c15591",
+    "name": "SOUNDHOUND AI, INC. (SOUN)",
+    "url": "https://www.sec.gov/Archives/edgar/data/0000001840856/000121390026097712/ea0304691-8k_sound.htm",
+    "category": "M&A",
+    "description": "Material agreement entered into | Acquisition/asset disposition completed | Unregistered equity sale CURRENT REPORT [8-K] 2026-09-04",
+    "domain": "sec.gov",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "sec_edgar",
+      "sec:0001213900-26-097712:ea0304691-8k_sound.htm"
+    ],
+    "tags": [
+      "sec",
+      "filing",
+      "8-k",
+      "1-01",
+      "2-01",
+      "3-02"
+    ]
+  },
+  "33adba2b2a0d": {
+    "id": "33adba2b2a0d",
+    "name": "ESSENTIAL PROPERTIES REALTY TRUST, INC. (EPRT)",
+    "url": "https://www.sec.gov/Archives/edgar/data/0000001728951/000172895126000057/exhibit-101.htm",
+    "category": "Public Company",
+    "description": "Director/officer change | Regulation FD disclosure | 8-K item 9.01 EX-10.1 [8-K] 2026-09-09",
+    "domain": "sec.gov",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "sec_edgar",
+      "sec:0001728951-26-000057:exhibit-101.htm"
+    ],
+    "tags": [
+      "sec",
+      "filing",
+      "8-k",
+      "5-02",
+      "7-01",
+      "9-01"
+    ]
+  },
+  "4c6449278491": {
+    "id": "4c6449278491",
+    "name": "ILMN Stock Keeps Climbing. Should You Climb On?",
+    "url": "https://finance.yahoo.com/markets/stocks/articles/ilmn-stock-keeps-climbing-climb-193724343.html",
+    "category": "Market Event",
+    "description": "ILMN Stock Keeps Climbing. Should You Climb On?",
+    "domain": "finance.yahoo.com",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "market_news",
+      "news:ILMN Stock Keeps Climbing. Should You Climb On?"
+    ],
+    "tags": [
+      "market",
+      "news"
+    ]
+  },
+  "70bb82c0d79a": {
+    "id": "70bb82c0d79a",
+    "name": "Travere Therapeutics' Outlook Brightens As Turnaround Looms",
+    "url": "https://www.investors.com/research/biotech-travere-therapeutics-tvtx-stock/?src=A00220&yptr=yahoo",
+    "category": "Market Event",
+    "description": "Travere Therapeutics' Outlook Brightens As Turnaround Looms",
+    "domain": "investors.com",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "market_news",
+      "news:Travere Therapeutics' Outlook Brightens As Turnaro"
+    ],
+    "tags": [
+      "market",
+      "news"
+    ]
+  },
+  "485014f5bf14": {
+    "id": "485014f5bf14",
+    "name": "SpaceX Stock Just Scored a New 'Buy' Rating. What to Know.",
+    "url": "https://finance.yahoo.com/markets/stocks/articles/spacex-stock-just-scored-buy-194542155.html",
+    "category": "Market Event",
+    "description": "SpaceX Stock Just Scored a New 'Buy' Rating. What to Know.",
+    "domain": "finance.yahoo.com",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "market_news",
+      "news:SpaceX Stock Just Scored a New 'Buy' Rating. What "
+    ],
+    "tags": [
+      "market",
+      "news"
+    ]
+  },
+  "ab09cf58595f": {
+    "id": "ab09cf58595f",
+    "name": "Europe’s Shrinking Bank Liquidity Fuels Hedge Fund Rates Bet",
+    "url": "https://www.bloomberg.com/news/articles/2026-09-10/europe-s-shrinking-bank-liquidity-fuels-hedge-fund-rates-bet",
+    "category": "Market Event",
+    "description": "Investors are piling into an arbitrage trade in euro money markets that’s gaining traction as the region’s financial conditions tighten.",
+    "domain": "bloomberg.com",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "market_news",
+      "news:Europe’s Shrinking Bank Liquidity Fuels Hedge Fund"
+    ],
+    "tags": [
+      "market",
+      "news"
+    ]
+  },
+  "6e64dade4679": {
+    "id": "6e64dade4679",
+    "name": "Vietnam Grab Drivers Plan Weekend Boycott Over Commission Fees",
+    "url": "https://www.bloomberg.com/news/articles/2026-09-10/vietnam-grab-drivers-plan-weekend-boycott-over-commission-fees",
+    "category": "Market Event",
+    "description": "Vietnam drivers for Grab Holdings Ltd. are calling on fellow independent contractors to engage in a work stoppage this weekend to protest the ride-hailing company’s commission rate, which they say is excessive and threatens their ability to earn a living wage.",
+    "domain": "bloomberg.com",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "market_news",
+      "news:Vietnam Grab Drivers Plan Weekend Boycott Over Com"
+    ],
+    "tags": [
+      "market",
+      "news"
+    ]
+  },
+  "758ddeaa4011": {
+    "id": "758ddeaa4011",
+    "name": "Top 10 Largest Arab Economies by GDP: A 2026 Outlook - وردنا",
+    "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNX3ZscGpYNkJIOGh4eTRvV0FCbGxXai1nN3dPcHVvemU0WHMtRTVLSTFuOGtHczdGcm1Zbk50UmVWSU5UTGFzZVpnNnhKQ2Z4NXAydkhYOV9XNlpfM0tVcHprX3ZSa2VXUlROMlVFdlgtcjhZQk9TS2czQk5vTEpIb0xKU0E5ak9pbFFmMmNjWUhuR1gtekFNTG9UMA?oc=5",
+    "category": "Economy",
+    "description": "Top 10 Largest Arab Economies by GDP: A 2026 Outlook - وردنا",
+    "domain": "news.google.com",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "google_news_economy",
+      "gnews_eco:Top 10 Largest Arab Economies by GDP: A "
+    ],
+    "tags": [
+      "economy",
+      "macro",
+      "news"
+    ]
+  },
+  "027c43c43be8": {
+    "id": "027c43c43be8",
+    "name": "AlphaGenome Atlas",
+    "url": "https://www.producthunt.com/products/alphagenome-atlas",
+    "category": "AI/ML",
+    "description": "Google's AI map of every possible human DNA mutationDiscuss",
+    "domain": "producthunt.com",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "producthunt",
+      "ph:alphagenome-atlas"
+    ],
+    "tags": [
+      "producthunt",
+      "product"
+    ]
   }
 }
