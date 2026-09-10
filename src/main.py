@@ -29,6 +29,7 @@ from src.collectors.economy import EconomyCollector
 from src.collectors.products import ProductCollector
 from src.collectors.technology import TechnologyCollector
 from src.collectors.news import NewsCollector
+from src.collectors.reddit import RedditCollector
 from src.intelligence.entities import EntityManager
 from src.intelligence.signals import SignalManager
 from src.intelligence.scoring import Scorer, ScoredEntity
@@ -44,6 +45,7 @@ COLLECTOR_MAP = {
     "products": ProductCollector,
     "technology": TechnologyCollector,
     "news": NewsCollector,
+    "reddit": RedditCollector,
 }
 
 
