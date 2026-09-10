@@ -19,12 +19,11 @@ KEY_SERIES = {
     "FEDFUNDS": "Federal Funds Rate",
     "CPIAUCSL": "Consumer Price Index",
     "UNRATE": "Unemployment Rate",
-    "GDP": "Gross Domestic Product",
     "DGS10": "10-Year Treasury Rate",
     "DGS2": "2-Year Treasury Rate",
     "DCOILWTICO": "WTI Crude Oil Price",
     "GOLDAMGBD228NLBM": "Gold Price",
-    "DTWEXBGS": "Trade Weighted US Dollar Index",
+    "DTWEXBGS": "US Dollar Index",
     "INDPRO": "Industrial Production",
     "RSAFS": "Retail Sales",
     "UMCSENT": "Consumer Sentiment",
@@ -35,14 +34,11 @@ class EconomyCollector(BaseCollector):
     source_name = "economy"
 
     def collect(self) -> list[Opportunity]:
-        items: list[Opportunity] = []
         if FRED_API_KEY:
-            items.extend(self._collect_fred())
-        else:
-            items.extend(self._collect_fred_rss())
-        return items
+            return self._collect_fred_api()
+        return self._collect_economy_news()
 
-    def _collect_fred(self) -> list[Opportunity]:
+    def _collect_fred_api(self) -> list[Opportunity]:
         results: list[Opportunity] = []
         for series_id, name in KEY_SERIES.items():
             try:
@@ -68,23 +64,17 @@ class EconomyCollector(BaseCollector):
                 prev = observations[1]
                 val = latest.get("value")
                 prev_val = prev.get("value")
-                date_str = latest.get("date", "")
-
                 if val == "." or prev_val == ".":
                     continue
 
-                try:
-                    current = float(val)
-                    previous = float(prev_val)
-                except (ValueError, TypeError):
-                    continue
-
+                current = float(val)
+                previous = float(prev_val)
                 change_pct = ((current - previous) / abs(previous) * 100) if previous != 0 else 0
 
                 opp = Opportunity(
                     name=f"{name}: {current}",
                     url=f"https://fred.stlouisfed.org/series/{series_id}",
-                    description=f"{name} latest value: {current} (previous: {previous}, change: {change_pct:.2f}%)",
+                    description=f"{name}: {current} (prev: {previous}, {change_pct:+.2f}%)",
                     category="Economy",
                     source="fred",
                     official_url=f"https://fred.stlouisfed.org/series/{series_id}",
@@ -93,58 +83,57 @@ class EconomyCollector(BaseCollector):
                     source_ids=[f"fred:{series_id}"],
                 )
                 results.append(opp)
-
             except Exception as e:
-                logger.debug(f"FRED {series_id} failed: {e}")
+                logger.debug(f"FRED API {series_id} failed: {e}")
 
         return results
 
-    def _collect_fred_rss(self) -> list[Opportunity]:
+    def _collect_economy_news(self) -> list[Opportunity]:
         results: list[Opportunity] = []
-        rss_urls = [
-            "https://fred.stlouisfed.org/rss/all.xml",
+        queries = [
+            "federal reserve interest rate",
+            "CPI inflation economy",
+            "GDP unemployment economic indicator",
         ]
 
-        for rss_url in rss_urls:
+        for query in queries:
             try:
-                resp = requests.get(rss_url, timeout=15, headers={
+                url = f"https://news.google.com/rss/search?q={query.replace(' ', '+')}+when:1d&hl=en"
+                resp = requests.get(url, timeout=15, headers={
                     "User-Agent": "Mozilla/5.0 (compatible; OpportunityScanner/1.0)",
                 })
                 if resp.status_code != 200:
                     continue
 
                 root = ElementTree.fromstring(resp.content)
-                ns = {"atom": "http://www.w3.org/2005/Atom"}
+                items = root.findall(".//item")
 
-                entries = root.findall(".//atom:entry", ns)
-                if not entries:
-                    entries = root.findall(".//item")
-
-                for entry in entries[:10]:
-                    title_el = entry.find("atom:title", ns) or entry.find("title")
-                    link_el = entry.find("atom:link", ns) or entry.find("link")
+                for item in items[:5]:
+                    title_el = item.find("title")
+                    link_el = item.find("link")
                     if title_el is None:
                         continue
 
-                    title = title_el.text or ""
-                    link = ""
-                    if link_el is not None:
-                        link = link_el.get("href", "") or link_el.text or ""
+                    title = (title_el.text or "").strip()
+                    link = (link_el.text or "").strip() if link_el is not None else ""
+
+                    if not title:
+                        continue
 
                     opp = Opportunity(
                         name=title,
-                        url=link or rss_url,
-                        description=f"Economic indicator update: {title}",
+                        url=link or f"https://news.google.com/search?q={query}",
+                        description=title,
                         category="Economy",
-                        source="fred_rss",
+                        source="google_news_economy",
                         official_url=link,
-                        metrics=Metrics(),
-                        tags=["economy", "macro"],
-                        source_ids=[f"fredrss:{title[:30]}"],
+                        metrics=Metrics(news_mentions=1),
+                        tags=["economy", "macro", "news"],
+                        source_ids=[f"gnews_eco:{title[:40]}"],
                     )
                     results.append(opp)
 
             except Exception as e:
-                logger.warning(f"FRED RSS collection failed: {e}")
+                logger.debug(f"Economy news {query} failed: {e}")
 
         return results

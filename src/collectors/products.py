@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import logging
 import re
+from xml.etree import ElementTree
 
 import requests
 from bs4 import BeautifulSoup
@@ -12,7 +13,7 @@ from src.models import Opportunity, Metrics
 
 logger = logging.getLogger(__name__)
 
-PH_URL = "https://www.producthunt.com"
+PH_FEED = "https://www.producthunt.com/feed"
 KS_URL = "https://www.kickstarter.com/discover/advanced"
 
 
@@ -28,86 +29,66 @@ class ProductCollector(BaseCollector):
     def _collect_producthunt(self) -> list[Opportunity]:
         results: list[Opportunity] = []
         try:
-            resp = requests.get(
-                PH_URL,
-                timeout=30,
-                headers={
-                    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
-                    "Accept": "text/html,application/xhtml+xml",
-                },
-            )
-            resp.raise_for_status()
-            soup = BeautifulSoup(resp.text, "lxml")
+            resp = requests.get(PH_FEED, timeout=20, headers={
+                "User-Agent": "Mozilla/5.0 (compatible; OpportunityScanner/1.0)",
+            })
+            if resp.status_code != 200:
+                logger.warning(f"PH feed returned {resp.status_code}")
+                return []
 
-            items = soup.select("[data-test='post-item']")
-            if not items:
-                items = soup.select("main a[href*='/posts/']")
-            if not items:
-                items = self._fallback_ph(soup)
+            ns = {"atom": "http://www.w3.org/2005/Atom"}
+            root = ElementTree.fromstring(resp.content)
+            entries = root.findall(".//atom:entry", ns)
 
-            for item in items[:25]:
-                try:
-                    opp = self._parse_ph_item(item)
-                    if opp:
-                        results.append(opp)
-                except Exception:
+            for entry in entries[:30]:
+                title_el = entry.find("atom:title", ns)
+                link_el = entry.find("atom:link", ns)
+                summary_el = entry.find("atom:summary", ns) or entry.find("atom:content", ns)
+
+                if title_el is None:
                     continue
+
+                title = (title_el.text or "").strip()
+                if not title:
+                    continue
+
+                link = ""
+                if link_el is not None:
+                    link = link_el.get("href", "")
+
+                summary = ""
+                if summary_el is not None:
+                    summary = (summary_el.text or "")[:300]
+                    summary = BeautifulSoup(summary, "lxml").get_text(strip=True)
+
+                slug = link.rstrip("/").split("/")[-1] if link else ""
+                category = self._guess_category(title, summary)
+
+                opp = Opportunity(
+                    name=title,
+                    url=link or PH_FEED,
+                    description=summary or title,
+                    category=category,
+                    source="producthunt",
+                    official_url=link,
+                    metrics=Metrics(),
+                    tags=["producthunt", "product"],
+                    source_ids=[f"ph:{slug}"],
+                )
+                results.append(opp)
 
         except Exception as e:
             logger.warning(f"Product Hunt collection failed: {e}")
 
         return results
 
-    def _fallback_ph(self, soup: BeautifulSoup) -> list:
-        items = []
-        for link in soup.find_all("a", href=re.compile(r"/posts/")):
-            parent = link.find_parent(["div", "li", "article"])
-            if parent and parent not in items:
-                items.append(parent)
-        return items
-
-    def _parse_ph_item(self, item) -> Opportunity | None:
-        title_el = item.select_one("a[href*='/posts/']")
-        if not title_el:
-            return None
-
-        title = title_el.get_text(strip=True)
-        href = title_el.get("href", "")
-        post_url = f"{PH_URL}{href}" if href.startswith("/") else href
-
-        tagline_el = item.select_one("[data-test='post-tagline']")
-        if not tagline_el:
-            tagline_el = item.select_one("p")
-        description = tagline_el.get_text(strip=True) if tagline_el else title
-
-        votes_el = item.select_one("[data-test='vote-button']")
-        votes = 0
-        if votes_el:
-            m = re.search(r"(\d+)", votes_el.get_text(strip=True))
-            if m:
-                votes = int(m.group(1))
-
-        category = self._guess_ph_category(title, description)
-
-        return Opportunity(
-            name=title,
-            url=post_url,
-            description=description,
-            category=category,
-            source="producthunt",
-            official_url=post_url,
-            metrics=Metrics(producthunt_votes=votes or None),
-            tags=["producthunt", "product"],
-            source_ids=[f"ph:{href.split('/')[-1]}"],
-        )
-
-    def _guess_ph_category(self, title: str, desc: str) -> str:
+    def _guess_category(self, title: str, desc: str) -> str:
         c = (title + " " + desc).lower()
-        if any(w in c for w in ["ai", "llm", "gpt", "machine learning"]):
+        if any(w in c for w in ["ai", "llm", "gpt", "machine learning", "copilot"]):
             return "AI/ML"
-        if any(w in c for w in ["saas", "b2b", "enterprise"]):
+        if any(w in c for w in ["saas", "b2b", "enterprise", "crm"]):
             return "SaaS"
-        if any(w in c for w in ["developer", "api", "sdk", "code"]):
+        if any(w in c for w in ["developer", "api", "sdk", "code", "devtool"]):
             return "Developer Tools"
         if any(w in c for w in ["design", "figma", "creative"]):
             return "Design"
@@ -120,22 +101,15 @@ class ProductCollector(BaseCollector):
     def _collect_kickstarter(self) -> list[Opportunity]:
         results: list[Opportunity] = []
         try:
-            resp = requests.get(
-                KS_URL,
-                timeout=20,
-                headers={
-                    "User-Agent": "Mozilla/5.0 (compatible; OpportunityScanner/1.0)",
-                    "Accept": "text/html",
-                },
-            )
+            resp = requests.get(KS_URL, timeout=20, headers={
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+                "Accept": "text/html",
+            })
             if resp.status_code != 200:
                 return []
 
             soup = BeautifulSoup(resp.text, "lxml")
             cards = soup.select("[data-project]")
-
-            if not cards:
-                cards = soup.select("li.js-react-proj-card")
             if not cards:
                 cards = soup.select("a[href*='/projects/']")
 
@@ -150,18 +124,15 @@ class ProductCollector(BaseCollector):
 
                     name = link.get_text(strip=True)[:100]
                     if not name:
-                        name_el = card.select_one("h3, h2, [class*='title']")
+                        name_el = card.select_one("h3, h2")
                         name = name_el.get_text(strip=True) if name_el else "Unknown"
 
                     url = f"https://www.kickstarter.com{href}" if href.startswith("/") else href
 
-                    pledged_el = card.select_one("[class*='pledged'], [class*='raised']")
-                    pledged = pledged_el.get_text(strip=True) if pledged_el else ""
-
                     opp = Opportunity(
                         name=name,
                         url=url,
-                        description=f"Kickstarter project: {name} {('Pledged: ' + pledged) if pledged else ''}",
+                        description=f"Kickstarter: {name}",
                         category="Product",
                         source="kickstarter",
                         official_url=url,
@@ -170,7 +141,6 @@ class ProductCollector(BaseCollector):
                         source_ids=[f"ks:{href.split('/')[-1]}"],
                     )
                     results.append(opp)
-
                 except Exception:
                     continue
 

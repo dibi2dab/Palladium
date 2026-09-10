@@ -184,22 +184,14 @@ def main():
 
 
 def _generate_signals(opportunities, entities, signals):
-    from src.intelligence.signals import SIGNAL_CATEGORIES
-
     for opp in opportunities:
         entity = entities.find_similar(opp.name, opp.url)
         if not entity:
             entity = entities.find_or_create(opp.name, opp.url, opp.category, opp.description)
 
-        category = _opp_to_signal_category(opp)
-        signals.add_for_entity(
-            entity.id,
-            category,
-            opp.source,
-            opp.description[:200],
-            strength=1,
-            url=opp.url,
-        )
+        categories = _detect_signal_categories(opp)
+        for cat, desc in categories:
+            signals.add_for_entity(entity.id, cat, opp.source, desc, 1, opp.url)
 
         if opp.metrics.github_stars and opp.metrics.github_stars > 100:
             signals.add_for_entity(entity.id, "github", opp.source,
@@ -215,30 +207,54 @@ def _generate_signals(opportunities, entities, signals):
                                    opp.description[:100], 1)
 
 
-def _opp_to_signal_category(opp) -> str:
-    tags_lower = [t.lower() for t in opp.tags]
+def _detect_signal_categories(opp) -> list[tuple[str, str]]:
+    text = (opp.name + " " + opp.description).lower()
     cat_lower = opp.category.lower()
-    source_lower = opp.source.lower()
+    tags_lower = [t.lower() for t in opp.tags]
+    results = []
 
-    if any(w in tags_lower for w in ["funding", "seed", "series"]):
-        return "funding"
-    if any(w in cat_lower for w in ["funding", "seed", "series"]):
-        return "funding"
-    if "hiring" in tags_lower or "hiring" in cat_lower:
-        return "hiring"
-    if any(w in tags_lower for w in ["launch", "product"]):
-        return "product_launch"
-    if any(w in source_lower for w in ["github"]):
-        return "github"
-    if any(w in source_lower for w in ["producthunt", "kickstarter"]):
-        return "product_launch"
+    if any(w in text for w in ["raised", "funding", "seed round", "series a",
+                                "series b", "series c", "investment", "investors"]):
+        results.append(("funding", f"Funding signal: {opp.description[:80]}"))
+
+    if any(w in text for w in ["hiring", "job opening", "looking for", "recruit",
+                                "headcount", "team grow"]):
+        results.append(("hiring", f"Hiring signal: {opp.description[:80]}"))
+
+    if any(w in text for w in ["launch", "launched", "release", "released",
+                                "announcing", "new product", "just shipped"]):
+        results.append(("product_launch", f"Product event: {opp.description[:80]}"))
+
+    if any(w in text for w in ["partner", "partnership", "collaboration",
+                                "integrat", "alliance"]):
+        results.append(("partnership", f"Partnership: {opp.description[:80]}"))
+
+    if any(w in text for w in ["customer", "user growth", "traction", "milestone",
+                                "arr", "mrr", "revenue"]):
+        results.append(("customer", f"Customer signal: {opp.description[:80]}"))
+
+    if "github" in tags_lower or "github" in cat_lower:
+        results.append(("github", f"GitHub activity: {opp.description[:80]}"))
+
+    if "producthunt" in tags_lower or "kickstarter" in tags_lower:
+        results.append(("product_launch", f"Product launch: {opp.description[:80]}"))
+
     if "economy" in cat_lower or "macro" in tags_lower:
-        return "macro_event"
-    if "market" in cat_lower:
-        return "market_event"
-    if "startup" in cat_lower:
-        return "community"
-    return "news"
+        results.append(("macro_event", f"Macro event: {opp.description[:80]}"))
+
+    if "market" in cat_lower or "market_event" in cat_lower:
+        results.append(("market_event", f"Market event: {opp.description[:80]}"))
+
+    if any(w in text for w in ["acqui", "merger", "m&a", "buyout"]):
+        results.append(("funding", f"M&A signal: {opp.description[:80]}"))
+
+    if any(w in cat_lower for w in ["funding", "ipo"]):
+        results.append(("funding", f"Funding category: {opp.description[:80]}"))
+
+    if not results:
+        results.append(("news", opp.description[:100]))
+
+    return results
 
 
 def _extract_macro_events(opportunities) -> list[dict]:

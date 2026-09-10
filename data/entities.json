@@ -1,0 +1,6131 @@
+{
+  "99c65f327696": {
+    "id": "99c65f327696",
+    "name": "iPhone Duo",
+    "url": "https://news.ycombinator.com/item?id=49630931",
+    "category": "Startup",
+    "description": "iPhone Duo",
+    "domain": "news.ycombinator.com",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "hackernews",
+      "hn:49630931"
+    ],
+    "tags": [
+      "startup",
+      "hackernews"
+    ]
+  },
+  "b635e844d502": {
+    "id": "b635e844d502",
+    "name": "Show HN: What if the speed of light was 5 km/h?",
+    "url": "https://news.ycombinator.com/item?id=49637385",
+    "category": "Startup",
+    "description": "Show HN: What if the speed of light was 5 km/h?",
+    "domain": "news.ycombinator.com",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "hackernews",
+      "hn:49637385"
+    ],
+    "tags": [
+      "startup",
+      "hackernews"
+    ]
+  },
+  "645995b49f93": {
+    "id": "645995b49f93",
+    "name": "All grown-ups were once children… but only few of them remember it",
+    "url": "https://news.ycombinator.com/item?id=49638280",
+    "category": "Startup",
+    "description": "All grown-ups were once children… but only few of them remember it",
+    "domain": "news.ycombinator.com",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "hackernews",
+      "hn:49638280"
+    ],
+    "tags": [
+      "startup",
+      "hackernews"
+    ]
+  },
+  "ca4827468eb6": {
+    "id": "ca4827468eb6",
+    "name": "Shopify acquires Tailwind",
+    "url": "https://news.ycombinator.com/item?id=49626190",
+    "category": "Startup",
+    "description": "Shopify acquires Tailwind",
+    "domain": "news.ycombinator.com",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "hackernews",
+      "hn:49626190"
+    ],
+    "tags": [
+      "startup",
+      "hackernews"
+    ]
+  },
+  "54d3b6c1382d": {
+    "id": "54d3b6c1382d",
+    "name": "DeepSeek v4.1 Flash",
+    "url": "https://news.ycombinator.com/item?id=49639090",
+    "category": "Startup",
+    "description": "DeepSeek v4.1 Flash",
+    "domain": "news.ycombinator.com",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "hackernews",
+      "hn:49639090"
+    ],
+    "tags": [
+      "startup",
+      "hackernews"
+    ]
+  },
+  "6f1c4b33a209": {
+    "id": "6f1c4b33a209",
+    "name": "What do Visa and Mastercard do? An intro to card networks",
+    "url": "https://news.ycombinator.com/item?id=49614280",
+    "category": "Startup",
+    "description": "What do Visa and Mastercard do? An intro to card networks",
+    "domain": "news.ycombinator.com",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "hackernews",
+      "hn:49614280"
+    ],
+    "tags": [
+      "startup",
+      "hackernews"
+    ]
+  },
+  "4fc5a16fc239": {
+    "id": "4fc5a16fc239",
+    "name": "Growing proof that autonomous cars save lives",
+    "url": "https://news.ycombinator.com/item?id=49629886",
+    "category": "Startup",
+    "description": "Growing proof that autonomous cars save lives",
+    "domain": "news.ycombinator.com",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "hackernews",
+      "hn:49629886"
+    ],
+    "tags": [
+      "startup",
+      "hackernews"
+    ]
+  },
+  "0d4d58362577": {
+    "id": "0d4d58362577",
+    "name": "Training a 3.8B LLM to 0.384 CORE for $998 – Hugo Vergnes",
+    "url": "https://news.ycombinator.com/item?id=49637435",
+    "category": "Startup",
+    "description": "Training a 3.8B LLM to 0.384 CORE for $998 – Hugo Vergnes",
+    "domain": "news.ycombinator.com",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "hackernews",
+      "hn:49637435"
+    ],
+    "tags": [
+      "startup",
+      "hackernews"
+    ]
+  },
+  "645326d605db": {
+    "id": "645326d605db",
+    "name": "AirPods 5",
+    "url": "https://news.ycombinator.com/item?id=49630253",
+    "category": "Startup",
+    "description": "AirPods 5",
+    "domain": "news.ycombinator.com",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "hackernews",
+      "hn:49630253"
+    ],
+    "tags": [
+      "startup",
+      "hackernews"
+    ]
+  },
+  "b95105e0332f": {
+    "id": "b95105e0332f",
+    "name": "No Man's Sky Cosmos",
+    "url": "https://news.ycombinator.com/item?id=49628493",
+    "category": "Startup",
+    "description": "No Man's Sky Cosmos",
+    "domain": "news.ycombinator.com",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "hackernews",
+      "hn:49628493"
+    ],
+    "tags": [
+      "startup",
+      "hackernews"
+    ]
+  },
+  "ced422f1f277": {
+    "id": "ced422f1f277",
+    "name": "GPT-6 Astra, looped transformers, and hidden reasoning",
+    "url": "https://news.ycombinator.com/item?id=49627370",
+    "category": "Startup",
+    "description": "GPT-6 Astra, looped transformers, and hidden reasoning",
+    "domain": "news.ycombinator.com",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "hackernews",
+      "hn:49627370"
+    ],
+    "tags": [
+      "startup",
+      "hackernews"
+    ]
+  },
+  "e9c77bce93d3": {
+    "id": "e9c77bce93d3",
+    "name": "iPhone 18 Pro and iPhone 18 Pro Max",
+    "url": "https://news.ycombinator.com/item?id=49630151",
+    "category": "Startup",
+    "description": "iPhone 18 Pro and iPhone 18 Pro Max",
+    "domain": "news.ycombinator.com",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "hackernews",
+      "hn:49630151"
+    ],
+    "tags": [
+      "startup",
+      "hackernews"
+    ]
+  },
+  "ef2e751f5166": {
+    "id": "ef2e751f5166",
+    "name": "Show HN: Compute polynomials twice as fast",
+    "url": "https://news.ycombinator.com/item?id=49623398",
+    "category": "Startup",
+    "description": "Show HN: Compute polynomials twice as fast",
+    "domain": "news.ycombinator.com",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "hackernews",
+      "hn:49623398"
+    ],
+    "tags": [
+      "startup",
+      "hackernews"
+    ]
+  },
+  "54ee49298921": {
+    "id": "54ee49298921",
+    "name": "Automattic's board forces CEO Matt Mullenweg into leave of absence",
+    "url": "https://news.ycombinator.com/item?id=49636283",
+    "category": "Startup",
+    "description": "Automattic's board forces CEO Matt Mullenweg into leave of absence",
+    "domain": "news.ycombinator.com",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "hackernews",
+      "hn:49636283"
+    ],
+    "tags": [
+      "startup",
+      "hackernews"
+    ]
+  },
+  "3e0ed596f1d7": {
+    "id": "3e0ed596f1d7",
+    "name": "OpenAI might have stolen another major proof",
+    "url": "https://news.ycombinator.com/item?id=49638353",
+    "category": "Startup",
+    "description": "OpenAI might have stolen another major proof",
+    "domain": "news.ycombinator.com",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "hackernews",
+      "hn:49638353"
+    ],
+    "tags": [
+      "startup",
+      "hackernews"
+    ]
+  },
+  "24ed982daea9": {
+    "id": "24ed982daea9",
+    "name": "A Stupid Idea for AI Alignment We Came with by Looking at Specification Gaming",
+    "url": "https://news.ycombinator.com/item?id=49637395",
+    "category": "Startup",
+    "description": "A Stupid Idea for AI Alignment We Came with by Looking at Specification Gaming",
+    "domain": "news.ycombinator.com",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "hackernews",
+      "hn:49637395"
+    ],
+    "tags": [
+      "startup",
+      "hackernews"
+    ]
+  },
+  "a532c06b5ac9": {
+    "id": "a532c06b5ac9",
+    "name": "Factoring RSA 260",
+    "url": "https://news.ycombinator.com/item?id=49633534",
+    "category": "Startup",
+    "description": "Factoring RSA 260",
+    "domain": "news.ycombinator.com",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "hackernews",
+      "hn:49633534"
+    ],
+    "tags": [
+      "startup",
+      "hackernews"
+    ]
+  },
+  "ff4d3ad19c35": {
+    "id": "ff4d3ad19c35",
+    "name": "Qwen 3.8 follows GPT-5.5 Pro reasoning prefills",
+    "url": "https://news.ycombinator.com/item?id=49630026",
+    "category": "Startup",
+    "description": "Qwen 3.8 follows GPT-5.5 Pro reasoning prefills",
+    "domain": "news.ycombinator.com",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "hackernews",
+      "hn:49630026"
+    ],
+    "tags": [
+      "startup",
+      "hackernews"
+    ]
+  },
+  "ebf4650d352e": {
+    "id": "ebf4650d352e",
+    "name": "Desert Ant Labs: local, fast models that run on device",
+    "url": "https://news.ycombinator.com/item?id=49624823",
+    "category": "Startup",
+    "description": "Desert Ant Labs: local, fast models that run on device",
+    "domain": "news.ycombinator.com",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "hackernews",
+      "hn:49624823"
+    ],
+    "tags": [
+      "startup",
+      "hackernews"
+    ]
+  },
+  "660c53bc8e3d": {
+    "id": "660c53bc8e3d",
+    "name": "Apple Watch Series 12",
+    "url": "https://news.ycombinator.com/item?id=49630566",
+    "category": "Startup",
+    "description": "Apple Watch Series 12",
+    "domain": "news.ycombinator.com",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "hackernews",
+      "hn:49630566"
+    ],
+    "tags": [
+      "startup",
+      "hackernews"
+    ]
+  },
+  "922e0b443453": {
+    "id": "922e0b443453",
+    "name": "Rivian's gambit for full autonomy",
+    "url": "https://news.ycombinator.com/item?id=49615245",
+    "category": "Startup",
+    "description": "Rivian's gambit for full autonomy",
+    "domain": "news.ycombinator.com",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "hackernews",
+      "hn:49615245"
+    ],
+    "tags": [
+      "startup",
+      "hackernews"
+    ]
+  },
+  "c4016a7e63e6": {
+    "id": "c4016a7e63e6",
+    "name": "How I advertise malicious software on Google Ads",
+    "url": "https://news.ycombinator.com/item?id=49624856",
+    "category": "Startup",
+    "description": "How I advertise malicious software on Google Ads",
+    "domain": "news.ycombinator.com",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "hackernews",
+      "hn:49624856"
+    ],
+    "tags": [
+      "startup",
+      "hackernews"
+    ]
+  },
+  "e661539c8f7b": {
+    "id": "e661539c8f7b",
+    "name": "GNU Radio in the browser",
+    "url": "https://news.ycombinator.com/item?id=49628576",
+    "category": "Startup",
+    "description": "GNU Radio in the browser",
+    "domain": "news.ycombinator.com",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "hackernews",
+      "hn:49628576"
+    ],
+    "tags": [
+      "startup",
+      "hackernews"
+    ]
+  },
+  "a8fde38d5d90": {
+    "id": "a8fde38d5d90",
+    "name": "The UN challenges five centuries of cartography",
+    "url": "https://news.ycombinator.com/item?id=49629209",
+    "category": "Startup",
+    "description": "The UN challenges five centuries of cartography",
+    "domain": "news.ycombinator.com",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "hackernews",
+      "hn:49629209"
+    ],
+    "tags": [
+      "startup",
+      "hackernews"
+    ]
+  },
+  "f85c1382d364": {
+    "id": "f85c1382d364",
+    "name": "Planet Labs' open satellite feed",
+    "url": "https://news.ycombinator.com/item?id=49628429",
+    "category": "Startup",
+    "description": "Planet Labs' open satellite feed",
+    "domain": "news.ycombinator.com",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "hackernews",
+      "hn:49628429"
+    ],
+    "tags": [
+      "startup",
+      "hackernews"
+    ]
+  },
+  "4c50373897b9": {
+    "id": "4c50373897b9",
+    "name": "Understanding the recent DDoS attack against Read the Docs",
+    "url": "https://news.ycombinator.com/item?id=49628614",
+    "category": "Startup",
+    "description": "Understanding the recent DDoS attack against Read the Docs",
+    "domain": "news.ycombinator.com",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "hackernews",
+      "hn:49628614"
+    ],
+    "tags": [
+      "startup",
+      "hackernews"
+    ]
+  },
+  "198374045a36": {
+    "id": "198374045a36",
+    "name": "Blizzard Workers Win Historic Union Contract",
+    "url": "https://news.ycombinator.com/item?id=49635384",
+    "category": "Startup",
+    "description": "Blizzard Workers Win Historic Union Contract",
+    "domain": "news.ycombinator.com",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "hackernews",
+      "hn:49635384"
+    ],
+    "tags": [
+      "startup",
+      "hackernews"
+    ]
+  },
+  "7ec282f391b0": {
+    "id": "7ec282f391b0",
+    "name": "Lotus Notes and the dangers of starting from scratch",
+    "url": "https://news.ycombinator.com/item?id=49623937",
+    "category": "Startup",
+    "description": "Lotus Notes and the dangers of starting from scratch",
+    "domain": "news.ycombinator.com",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "hackernews",
+      "hn:49623937"
+    ],
+    "tags": [
+      "startup",
+      "hackernews"
+    ]
+  },
+  "e9cb31ec79ce": {
+    "id": "e9cb31ec79ce",
+    "name": "What will our economic future look like?",
+    "url": "https://news.ycombinator.com/item?id=49626373",
+    "category": "Startup",
+    "description": "What will our economic future look like?",
+    "domain": "news.ycombinator.com",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "hackernews",
+      "hn:49626373"
+    ],
+    "tags": [
+      "startup",
+      "hackernews"
+    ]
+  },
+  "13f3f92cc64e": {
+    "id": "13f3f92cc64e",
+    "name": "Why Emacs Consult async searches feel slow and how to speed them up",
+    "url": "https://news.ycombinator.com/item?id=49629865",
+    "category": "Startup",
+    "description": "Why Emacs Consult async searches feel slow and how to speed them up",
+    "domain": "news.ycombinator.com",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "hackernews",
+      "hn:49629865"
+    ],
+    "tags": [
+      "startup",
+      "hackernews"
+    ]
+  },
+  "05bd9527c728": {
+    "id": "05bd9527c728",
+    "name": "Procedural Graphs: Self-Evolving Execution Structures for LLM Agents",
+    "url": "https://news.ycombinator.com/item?id=49629868",
+    "category": "Startup",
+    "description": "Procedural Graphs: Self-Evolving Execution Structures for LLM Agents",
+    "domain": "news.ycombinator.com",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "hackernews",
+      "hn:49629868"
+    ],
+    "tags": [
+      "startup",
+      "hackernews"
+    ]
+  },
+  "c636734cc586": {
+    "id": "c636734cc586",
+    "name": "Muse – Meta’s personal AI agent",
+    "url": "https://news.ycombinator.com/item?id=49615537",
+    "category": "Startup",
+    "description": "Muse – Meta’s personal AI agent",
+    "domain": "news.ycombinator.com",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "hackernews",
+      "hn:49615537"
+    ],
+    "tags": [
+      "startup",
+      "hackernews"
+    ]
+  },
+  "854a0b030770": {
+    "id": "854a0b030770",
+    "name": "How GPT‑5.6 Sol helps run quantum computing experiments",
+    "url": "https://news.ycombinator.com/item?id=49622561",
+    "category": "Startup",
+    "description": "How GPT‑5.6 Sol helps run quantum computing experiments",
+    "domain": "news.ycombinator.com",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "hackernews",
+      "hn:49622561"
+    ],
+    "tags": [
+      "startup",
+      "hackernews"
+    ]
+  },
+  "069863421cac": {
+    "id": "069863421cac",
+    "name": "We accidentally built a synthetic cell factory",
+    "url": "https://news.ycombinator.com/item?id=49628290",
+    "category": "Startup",
+    "description": "We accidentally built a synthetic cell factory",
+    "domain": "news.ycombinator.com",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "hackernews",
+      "hn:49628290"
+    ],
+    "tags": [
+      "startup",
+      "hackernews"
+    ]
+  },
+  "92d79c7687b4": {
+    "id": "92d79c7687b4",
+    "name": "Navier-Stokes – Tristan Buckmaster [pdf]",
+    "url": "https://news.ycombinator.com/item?id=49605915",
+    "category": "Startup",
+    "description": "Navier-Stokes – Tristan Buckmaster [pdf]",
+    "domain": "news.ycombinator.com",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "hackernews",
+      "hn:49605915"
+    ],
+    "tags": [
+      "startup",
+      "hackernews"
+    ]
+  },
+  "fa0ad9edc050": {
+    "id": "fa0ad9edc050",
+    "name": "Open-source 3D anatomy explorer: 2,234 selectable BodyParts3D meshes",
+    "url": "https://news.ycombinator.com/item?id=49604165",
+    "category": "Startup",
+    "description": "Open-source 3D anatomy explorer: 2,234 selectable BodyParts3D meshes",
+    "domain": "news.ycombinator.com",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "hackernews",
+      "hn:49604165"
+    ],
+    "tags": [
+      "startup",
+      "hackernews"
+    ]
+  },
+  "05c747e25e62": {
+    "id": "05c747e25e62",
+    "name": "Claude, change the “Add to Cart” button to blue",
+    "url": "https://news.ycombinator.com/item?id=49623754",
+    "category": "Startup",
+    "description": "Claude, change the “Add to Cart” button to blue",
+    "domain": "news.ycombinator.com",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "hackernews",
+      "hn:49623754"
+    ],
+    "tags": [
+      "startup",
+      "hackernews"
+    ]
+  },
+  "12f4e29cb708": {
+    "id": "12f4e29cb708",
+    "name": "Playing whack-a-mole is losing",
+    "url": "https://news.ycombinator.com/item?id=49626429",
+    "category": "Startup",
+    "description": "Playing whack-a-mole is losing",
+    "domain": "news.ycombinator.com",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "hackernews",
+      "hn:49626429"
+    ],
+    "tags": [
+      "startup",
+      "hackernews"
+    ]
+  },
+  "582d62c4e6a5": {
+    "id": "582d62c4e6a5",
+    "name": "Apple Watch Ultra 4",
+    "url": "https://news.ycombinator.com/item?id=49630583",
+    "category": "Startup",
+    "description": "Apple Watch Ultra 4",
+    "domain": "news.ycombinator.com",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "hackernews",
+      "hn:49630583"
+    ],
+    "tags": [
+      "startup",
+      "hackernews"
+    ]
+  },
+  "a8106e690cb1": {
+    "id": "a8106e690cb1",
+    "name": "Tao: Open math problems being non-renewably mined by AI",
+    "url": "https://news.ycombinator.com/item?id=49616968",
+    "category": "Startup",
+    "description": "Tao: Open math problems being non-renewably mined by AI",
+    "domain": "news.ycombinator.com",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "hackernews",
+      "hn:49616968"
+    ],
+    "tags": [
+      "startup",
+      "hackernews"
+    ]
+  },
+  "062ddffe0ef3": {
+    "id": "062ddffe0ef3",
+    "name": "Building a Wall Lamp from Scratch",
+    "url": "https://news.ycombinator.com/item?id=49623938",
+    "category": "Startup",
+    "description": "Building a Wall Lamp from Scratch",
+    "domain": "news.ycombinator.com",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "hackernews",
+      "hn:49623938"
+    ],
+    "tags": [
+      "startup",
+      "hackernews"
+    ]
+  },
+  "dd6124b84bc8": {
+    "id": "dd6124b84bc8",
+    "name": "A Biography of Lee Holloway, the Architect of Cloudflare's Technology (Part 1)",
+    "url": "https://news.ycombinator.com/item?id=49621102",
+    "category": "Startup",
+    "description": "A Biography of Lee Holloway, the Architect of Cloudflare's Technology (Part 1)",
+    "domain": "news.ycombinator.com",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "hackernews",
+      "hn:49621102"
+    ],
+    "tags": [
+      "startup",
+      "hackernews"
+    ]
+  },
+  "9fd68d1b7eb6": {
+    "id": "9fd68d1b7eb6",
+    "name": "On Really Trying (2009)",
+    "url": "https://news.ycombinator.com/item?id=49622305",
+    "category": "Startup",
+    "description": "On Really Trying (2009)",
+    "domain": "news.ycombinator.com",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "hackernews",
+      "hn:49622305"
+    ],
+    "tags": [
+      "startup",
+      "hackernews"
+    ]
+  },
+  "0c6db266d15b": {
+    "id": "0c6db266d15b",
+    "name": "AlphaGenome Atlas: a high-resolution map of human DNA",
+    "url": "https://news.ycombinator.com/item?id=49611251",
+    "category": "Startup",
+    "description": "AlphaGenome Atlas: a high-resolution map of human DNA",
+    "domain": "news.ycombinator.com",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "hackernews",
+      "hn:49611251"
+    ],
+    "tags": [
+      "startup",
+      "hackernews"
+    ]
+  },
+  "0a2afdc3930a": {
+    "id": "0a2afdc3930a",
+    "name": "How to build a printer",
+    "url": "https://news.ycombinator.com/item?id=49617255",
+    "category": "Startup",
+    "description": "How to build a printer",
+    "domain": "news.ycombinator.com",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "hackernews",
+      "hn:49617255"
+    ],
+    "tags": [
+      "startup",
+      "hackernews"
+    ]
+  },
+  "69b4cf2d7640": {
+    "id": "69b4cf2d7640",
+    "name": "FreeBSD 14.5-Release",
+    "url": "https://news.ycombinator.com/item?id=49609174",
+    "category": "Startup",
+    "description": "FreeBSD 14.5-Release",
+    "domain": "news.ycombinator.com",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "hackernews",
+      "hn:49609174"
+    ],
+    "tags": [
+      "startup",
+      "hackernews"
+    ]
+  },
+  "50217462aeba": {
+    "id": "50217462aeba",
+    "name": "Getting your hands dirty is good for you",
+    "url": "https://news.ycombinator.com/item?id=49608023",
+    "category": "Startup",
+    "description": "Getting your hands dirty is good for you",
+    "domain": "news.ycombinator.com",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "hackernews",
+      "hn:49608023"
+    ],
+    "tags": [
+      "startup",
+      "hackernews"
+    ]
+  },
+  "94216a45122e": {
+    "id": "94216a45122e",
+    "name": "27.5KB language-agnostic WebGPU syntax highlighter",
+    "url": "https://news.ycombinator.com/item?id=49619464",
+    "category": "Startup",
+    "description": "27.5KB language-agnostic WebGPU syntax highlighter",
+    "domain": "news.ycombinator.com",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "hackernews",
+      "hn:49619464"
+    ],
+    "tags": [
+      "startup",
+      "hackernews"
+    ]
+  },
+  "cb025caa3f80": {
+    "id": "cb025caa3f80",
+    "name": "Italy proposes no fees for digital euro payments under €10",
+    "url": "https://news.ycombinator.com/item?id=49630194",
+    "category": "Startup",
+    "description": "Italy proposes no fees for digital euro payments under €10",
+    "domain": "news.ycombinator.com",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "hackernews",
+      "hn:49630194"
+    ],
+    "tags": [
+      "startup",
+      "hackernews"
+    ]
+  },
+  "30b0c84d0fdc": {
+    "id": "30b0c84d0fdc",
+    "name": "A Topological Picture Book, Rendered",
+    "url": "https://news.ycombinator.com/item?id=49618050",
+    "category": "Startup",
+    "description": "A Topological Picture Book, Rendered",
+    "domain": "news.ycombinator.com",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "hackernews",
+      "hn:49618050"
+    ],
+    "tags": [
+      "startup",
+      "hackernews"
+    ]
+  },
+  "16bc5ed266ee": {
+    "id": "16bc5ed266ee",
+    "name": "“Tweet” and the bird logo apparently enter the public domain",
+    "url": "https://news.ycombinator.com/item?id=49621751",
+    "category": "Startup",
+    "description": "“Tweet” and the bird logo apparently enter the public domain",
+    "domain": "news.ycombinator.com",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "hackernews",
+      "hn:49621751"
+    ],
+    "tags": [
+      "startup",
+      "hackernews"
+    ]
+  },
+  "8a7419da1a67": {
+    "id": "8a7419da1a67",
+    "name": "ChatGPT Images 2.5",
+    "url": "https://news.ycombinator.com/item?id=49614720",
+    "category": "Startup",
+    "description": "ChatGPT Images 2.5",
+    "domain": "news.ycombinator.com",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "hackernews",
+      "hn:49614720"
+    ],
+    "tags": [
+      "startup",
+      "hackernews"
+    ]
+  },
+  "309bbbc98474": {
+    "id": "309bbbc98474",
+    "name": "Show HN: Copperhead – Cursor for circuit boards",
+    "url": "https://news.ycombinator.com/item?id=49610059",
+    "category": "Startup",
+    "description": "Show HN: Copperhead – Cursor for circuit boards",
+    "domain": "news.ycombinator.com",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "hackernews",
+      "hn:49610059"
+    ],
+    "tags": [
+      "startup",
+      "hackernews"
+    ]
+  },
+  "740b2747a6de": {
+    "id": "740b2747a6de",
+    "name": "Microsoft/TracerAI withdraws copyright takedown against Luanti",
+    "url": "https://news.ycombinator.com/item?id=49627306",
+    "category": "Startup",
+    "description": "Microsoft/TracerAI withdraws copyright takedown against Luanti",
+    "domain": "news.ycombinator.com",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "hackernews",
+      "hn:49627306"
+    ],
+    "tags": [
+      "startup",
+      "hackernews"
+    ]
+  },
+  "91db98933bcf": {
+    "id": "91db98933bcf",
+    "name": "Is OpenAI Taking Everyone for Fools?",
+    "url": "https://news.ycombinator.com/item?id=49629802",
+    "category": "Startup",
+    "description": "Is OpenAI Taking Everyone for Fools?",
+    "domain": "news.ycombinator.com",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "hackernews",
+      "hn:49629802"
+    ],
+    "tags": [
+      "startup",
+      "hackernews"
+    ]
+  },
+  "7240acc99acb": {
+    "id": "7240acc99acb",
+    "name": "DaVinci Resolve 21.1",
+    "url": "https://news.ycombinator.com/item?id=49610181",
+    "category": "Startup",
+    "description": "DaVinci Resolve 21.1",
+    "domain": "news.ycombinator.com",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "hackernews",
+      "hn:49610181"
+    ],
+    "tags": [
+      "startup",
+      "hackernews"
+    ]
+  },
+  "f3c6918e8620": {
+    "id": "f3c6918e8620",
+    "name": "Show HN: LLM Attention Visualization",
+    "url": "https://news.ycombinator.com/item?id=49613068",
+    "category": "Startup",
+    "description": "Show HN: LLM Attention Visualization",
+    "domain": "news.ycombinator.com",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "hackernews",
+      "hn:49613068"
+    ],
+    "tags": [
+      "startup",
+      "hackernews"
+    ]
+  },
+  "fe39eb632304": {
+    "id": "fe39eb632304",
+    "name": "I'm sorry, you're not going to die from an AI-engineered supervirus",
+    "url": "https://news.ycombinator.com/item?id=49636906",
+    "category": "Startup",
+    "description": "I'm sorry, you're not going to die from an AI-engineered supervirus",
+    "domain": "news.ycombinator.com",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "hackernews",
+      "hn:49636906"
+    ],
+    "tags": [
+      "startup",
+      "hackernews"
+    ]
+  },
+  "c163cc95c45c": {
+    "id": "c163cc95c45c",
+    "name": "Mistral raises €3B",
+    "url": "https://news.ycombinator.com/item?id=49605767",
+    "category": "Startup",
+    "description": "Mistral raises €3B",
+    "domain": "news.ycombinator.com",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "hackernews",
+      "hn:49605767"
+    ],
+    "tags": [
+      "startup",
+      "hackernews"
+    ]
+  },
+  "fc2991c173aa": {
+    "id": "fc2991c173aa",
+    "name": "I-have-ADHD: A skill to stop coding agents from burying the answer",
+    "url": "https://news.ycombinator.com/item?id=49610631",
+    "category": "Startup",
+    "description": "I-have-ADHD: A skill to stop coding agents from burying the answer",
+    "domain": "news.ycombinator.com",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "hackernews",
+      "hn:49610631"
+    ],
+    "tags": [
+      "startup",
+      "hackernews"
+    ]
+  },
+  "b71685dace50": {
+    "id": "b71685dace50",
+    "name": "Antiquated HTML Snippets and Artefacts",
+    "url": "https://news.ycombinator.com/item?id=49607991",
+    "category": "Startup",
+    "description": "Antiquated HTML Snippets and Artefacts",
+    "domain": "news.ycombinator.com",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "hackernews",
+      "hn:49607991"
+    ],
+    "tags": [
+      "startup",
+      "hackernews"
+    ]
+  },
+  "21beafac26b1": {
+    "id": "21beafac26b1",
+    "name": "Mercury 2.5",
+    "url": "https://news.ycombinator.com/item?id=49616354",
+    "category": "Startup",
+    "description": "Mercury 2.5",
+    "domain": "news.ycombinator.com",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "hackernews",
+      "hn:49616354"
+    ],
+    "tags": [
+      "startup",
+      "hackernews"
+    ]
+  },
+  "d6815bc162b9": {
+    "id": "d6815bc162b9",
+    "name": "AlphaGenome Atlas predictive map of every DNA letter change in the human genome",
+    "url": "https://news.ycombinator.com/item?id=49610641",
+    "category": "Startup",
+    "description": "AlphaGenome Atlas predictive map of every DNA letter change in the human genome",
+    "domain": "news.ycombinator.com",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "hackernews",
+      "hn:49610641"
+    ],
+    "tags": [
+      "startup",
+      "hackernews"
+    ]
+  },
+  "1e5297ddb8b2": {
+    "id": "1e5297ddb8b2",
+    "name": "How An AI math breakthrough ignited a controversy",
+    "url": "https://news.ycombinator.com/item?id=49624163",
+    "category": "Startup",
+    "description": "How An AI math breakthrough ignited a controversy",
+    "domain": "news.ycombinator.com",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "hackernews",
+      "hn:49624163"
+    ],
+    "tags": [
+      "startup",
+      "hackernews"
+    ]
+  },
+  "05c259f88a66": {
+    "id": "05c259f88a66",
+    "name": "Kimi K3 (2.8T) at 1 token/s on a MacBook Pro, streamed from four SSDs",
+    "url": "https://news.ycombinator.com/item?id=49616257",
+    "category": "Startup",
+    "description": "Kimi K3 (2.8T) at 1 token/s on a MacBook Pro, streamed from four SSDs",
+    "domain": "news.ycombinator.com",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "hackernews",
+      "hn:49616257"
+    ],
+    "tags": [
+      "startup",
+      "hackernews"
+    ]
+  },
+  "ef4d49aee949": {
+    "id": "ef4d49aee949",
+    "name": "ZX Spectrum: Experimenting with 1-Bit Sound",
+    "url": "https://news.ycombinator.com/item?id=49611230",
+    "category": "Startup",
+    "description": "ZX Spectrum: Experimenting with 1-Bit Sound",
+    "domain": "news.ycombinator.com",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "hackernews",
+      "hn:49611230"
+    ],
+    "tags": [
+      "startup",
+      "hackernews"
+    ]
+  },
+  "0204f068fe52": {
+    "id": "0204f068fe52",
+    "name": "C*: Unifying Programming and Verification in C (2025)",
+    "url": "https://news.ycombinator.com/item?id=49612191",
+    "category": "Startup",
+    "description": "C*: Unifying Programming and Verification in C (2025)",
+    "domain": "news.ycombinator.com",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "hackernews",
+      "hn:49612191"
+    ],
+    "tags": [
+      "startup",
+      "hackernews"
+    ]
+  },
+  "b6def52f4fa3": {
+    "id": "b6def52f4fa3",
+    "name": "Greenland Mines Ltd  (GRML, GRMLW)  (CIK 0001907223)",
+    "url": "https://www.sec.gov/Archives/edgar/data//0001213900-26-097770:ea0304732-8k_greenland.htm",
+    "category": "Public Company",
+    "description": "SEC Filing: Unknown - Greenland Mines Ltd  (GRML, GRMLW)  (CIK 0001907223)",
+    "domain": "sec.gov",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "sec_edgar",
+      "sec:0001213900-26-097770:ea0304732-8k_greenland.htm"
+    ],
+    "tags": [
+      "sec",
+      "filing",
+      "unknown"
+    ]
+  },
+  "c8ef60fcde16": {
+    "id": "c8ef60fcde16",
+    "name": "Ribbon Acquisition Corp.  (RIBB, RIBBR, RIBBU)  (CIK 0002035016)",
+    "url": "https://www.sec.gov/Archives/edgar/data//0001213900-26-096875:ea030057301ex10-1.htm",
+    "category": "Public Company",
+    "description": "SEC Filing: Unknown - Ribbon Acquisition Corp.  (RIBB, RIBBR, RIBBU)  (CIK 0002035016)",
+    "domain": "sec.gov",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "sec_edgar",
+      "sec:0001213900-26-096875:ea030057301ex10-1.htm"
+    ],
+    "tags": [
+      "sec",
+      "filing",
+      "unknown"
+    ]
+  },
+  "d695dc4a8a14": {
+    "id": "d695dc4a8a14",
+    "name": "Texas Ventures Acquisition III Corp  (TVA, TVACU, TVACW)  (CIK 0002033991)",
+    "url": "https://www.sec.gov/Archives/edgar/data//0001104659-26-104858:tm2619716d3_ex10-5.htm",
+    "category": "Public Company",
+    "description": "SEC Filing: Unknown - Texas Ventures Acquisition III Corp  (TVA, TVACU, TVACW)  (CIK 0002033991)",
+    "domain": "sec.gov",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "sec_edgar",
+      "sec:0001104659-26-104858:tm2619716d3_ex10-5.htm",
+      "sec:0001104659-26-104858:tm2619716d3_8k.htm"
+    ],
+    "tags": [
+      "sec",
+      "filing",
+      "unknown"
+    ]
+  },
+  "0c7520846f74": {
+    "id": "0c7520846f74",
+    "name": "Cottonwood Communities, Inc.  (CIK 0001692951)",
+    "url": "https://www.sec.gov/Archives/edgar/data//0001692951-26-000168:cci-20260902.htm",
+    "category": "Public Company",
+    "description": "SEC Filing: Unknown - Cottonwood Communities, Inc.  (CIK 0001692951)",
+    "domain": "sec.gov",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "sec_edgar",
+      "sec:0001692951-26-000168:cci-20260902.htm"
+    ],
+    "tags": [
+      "sec",
+      "filing",
+      "unknown"
+    ]
+  },
+  "1e5bf82ca143": {
+    "id": "1e5bf82ca143",
+    "name": "Blue Laser Fusion, Inc.  (CIK 0001938570)",
+    "url": "https://www.sec.gov/Archives/edgar/data//0001193125-26-385826:d162976dex21.htm",
+    "category": "Public Company",
+    "description": "SEC Filing: Unknown - Blue Laser Fusion, Inc.  (CIK 0001938570)",
+    "domain": "sec.gov",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "sec_edgar",
+      "sec:0001193125-26-385826:d162976dex21.htm",
+      "sec:0001193125-26-385826:d162976d8k.htm"
+    ],
+    "tags": [
+      "sec",
+      "filing",
+      "unknown"
+    ]
+  },
+  "e7a91a8ceb42": {
+    "id": "e7a91a8ceb42",
+    "name": "Chime Financial, Inc.  (CHYM)  (CIK 0001795586)",
+    "url": "https://www.sec.gov/Archives/edgar/data//0001193125-26-385383:d948605dex21.htm",
+    "category": "Public Company",
+    "description": "SEC Filing: Unknown - Chime Financial, Inc.  (CHYM)  (CIK 0001795586)",
+    "domain": "sec.gov",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "sec_edgar",
+      "sec:0001193125-26-385383:d948605dex21.htm"
+    ],
+    "tags": [
+      "sec",
+      "filing",
+      "unknown"
+    ]
+  },
+  "9c78129f81de": {
+    "id": "9c78129f81de",
+    "name": "Diversified Energy Co  (DEC)  (CIK 0001922446)",
+    "url": "https://www.sec.gov/Archives/edgar/data//0001922446-26-000086:dec-20260902.htm",
+    "category": "Public Company",
+    "description": "SEC Filing: Unknown - Diversified Energy Co  (DEC)  (CIK 0001922446)",
+    "domain": "sec.gov",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "sec_edgar",
+      "sec:0001922446-26-000086:dec-20260902.htm"
+    ],
+    "tags": [
+      "sec",
+      "filing",
+      "unknown"
+    ]
+  },
+  "4e8f3b7b5252": {
+    "id": "4e8f3b7b5252",
+    "name": "EQUITY BANCSHARES INC  (EQBK)  (CIK 0001227500)",
+    "url": "https://www.sec.gov/Archives/edgar/data//0001193125-26-381051:d152469dex101.htm",
+    "category": "Public Company",
+    "description": "SEC Filing: Unknown - EQUITY BANCSHARES INC  (EQBK)  (CIK 0001227500)",
+    "domain": "sec.gov",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "sec_edgar",
+      "sec:0001193125-26-381051:d152469dex101.htm"
+    ],
+    "tags": [
+      "sec",
+      "filing",
+      "unknown"
+    ]
+  },
+  "a1923cfdd428": {
+    "id": "a1923cfdd428",
+    "name": "Corvex, Inc.  (MOVE)  (CIK 0001734750)",
+    "url": "https://www.sec.gov/Archives/edgar/data//0001213900-26-097690:ea030451501ex99-1.htm",
+    "category": "Public Company",
+    "description": "SEC Filing: Unknown - Corvex, Inc.  (MOVE)  (CIK 0001734750)",
+    "domain": "sec.gov",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "sec_edgar",
+      "sec:0001213900-26-097690:ea030451501ex99-1.htm"
+    ],
+    "tags": [
+      "sec",
+      "filing",
+      "unknown"
+    ]
+  },
+  "7e4cc360bb2c": {
+    "id": "7e4cc360bb2c",
+    "name": "AEVEX Corp.  (AVEX)  (CIK 0002096300)",
+    "url": "https://www.sec.gov/Archives/edgar/data//0001193125-26-385301:d930675d8k.htm",
+    "category": "Public Company",
+    "description": "SEC Filing: Unknown - AEVEX Corp.  (AVEX)  (CIK 0002096300)",
+    "domain": "sec.gov",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "sec_edgar",
+      "sec:0001193125-26-385301:d930675d8k.htm"
+    ],
+    "tags": [
+      "sec",
+      "filing",
+      "unknown"
+    ]
+  },
+  "99e567710f4e": {
+    "id": "99e567710f4e",
+    "name": "Solaris Energy Infrastructure, Inc.  (SEI)  (CIK 0001697500)",
+    "url": "https://www.sec.gov/Archives/edgar/data//0001193125-26-385257:d441137d8k.htm",
+    "category": "Public Company",
+    "description": "SEC Filing: Unknown - Solaris Energy Infrastructure, Inc.  (SEI)  (CIK 0001697500)",
+    "domain": "sec.gov",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "sec_edgar",
+      "sec:0001193125-26-385257:d441137d8k.htm"
+    ],
+    "tags": [
+      "sec",
+      "filing",
+      "unknown"
+    ]
+  },
+  "66d6b871e7ea": {
+    "id": "66d6b871e7ea",
+    "name": "Meshflow Acquisition Corp  (MESH, MESHU, MESHW)  (CIK 0002081468)",
+    "url": "https://www.sec.gov/Archives/edgar/data//0001213900-26-097901:ea0304759-8k425_meshflow.htm",
+    "category": "Public Company",
+    "description": "SEC Filing: Unknown - Meshflow Acquisition Corp  (MESH, MESHU, MESHW)  (CIK 0002081468)",
+    "domain": "sec.gov",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "sec_edgar",
+      "sec:0001213900-26-097901:ea0304759-8k425_meshflow.htm"
+    ],
+    "tags": [
+      "sec",
+      "filing",
+      "unknown"
+    ]
+  },
+  "6d9a17c3d349": {
+    "id": "6d9a17c3d349",
+    "name": "SELECTIS HEALTH, INC.  (GBCS)  (CIK 0000727346)",
+    "url": "https://www.sec.gov/Archives/edgar/data//0001493152-26-041840:form8-k.htm",
+    "category": "Public Company",
+    "description": "SEC Filing: Unknown - SELECTIS HEALTH, INC.  (GBCS)  (CIK 0000727346)",
+    "domain": "sec.gov",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "sec_edgar",
+      "sec:0001493152-26-041840:form8-k.htm"
+    ],
+    "tags": [
+      "sec",
+      "filing",
+      "unknown"
+    ]
+  },
+  "1f092d1953ba": {
+    "id": "1f092d1953ba",
+    "name": "EAGLE FINANCIAL SERVICES INC  (EFSI)  (CIK 0000880641)",
+    "url": "https://www.sec.gov/Archives/edgar/data//0001193125-26-384457:d436411dex101.htm",
+    "category": "Public Company",
+    "description": "SEC Filing: Unknown - EAGLE FINANCIAL SERVICES INC  (EFSI)  (CIK 0000880641)",
+    "domain": "sec.gov",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "sec_edgar",
+      "sec:0001193125-26-384457:d436411dex101.htm",
+      "sec:0001193125-26-384457:d436411dex102.htm",
+      "sec:0001193125-26-384457:d436411dex21.htm"
+    ],
+    "tags": [
+      "sec",
+      "filing",
+      "unknown"
+    ]
+  },
+  "5beaf76ec61b": {
+    "id": "5beaf76ec61b",
+    "name": "John Marshall Bancorp, Inc.  (JMSB)  (CIK 0001710482)",
+    "url": "https://www.sec.gov/Archives/edgar/data//0001552781-26-000472:e26378_ex10-1.htm",
+    "category": "Public Company",
+    "description": "SEC Filing: Unknown - John Marshall Bancorp, Inc.  (JMSB)  (CIK 0001710482)",
+    "domain": "sec.gov",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "sec_edgar",
+      "sec:0001552781-26-000472:e26378_ex10-1.htm",
+      "sec:0001552781-26-000472:e26378_ex2-1.htm"
+    ],
+    "tags": [
+      "sec",
+      "filing",
+      "unknown"
+    ]
+  },
+  "426554bb61bc": {
+    "id": "426554bb61bc",
+    "name": "Bessent’s ‘Fever’-Quelling Debt Buybacks Put Wall Street on Edge",
+    "url": "https://finance.yahoo.com/economy/policy/articles/bessent-fever-quelling-debt-buybacks-191726899.html",
+    "category": "Market Event",
+    "description": "Bessent’s ‘Fever’-Quelling Debt Buybacks Put Wall Street on Edge",
+    "domain": "finance.yahoo.com",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "market_news",
+      "news:Bessent’s ‘Fever’-Quelling Debt Buybacks Put Wall "
+    ],
+    "tags": [
+      "market",
+      "news"
+    ]
+  },
+  "0bb04c08ac90": {
+    "id": "0bb04c08ac90",
+    "name": "Here's what to do if your bank account application was denied",
+    "url": "https://finance.yahoo.com/personal-finance/banking/article/denied-bank-account-204942472.html",
+    "category": "Market Event",
+    "description": "Here's what to do if your bank account application was denied",
+    "domain": "finance.yahoo.com",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "market_news",
+      "news:Here's what to do if your bank account application"
+    ],
+    "tags": [
+      "market",
+      "news"
+    ]
+  },
+  "558e80534951": {
+    "id": "558e80534951",
+    "name": "Nike shareholders reject climate proposal backed by Norway wealth fund",
+    "url": "https://finance.yahoo.com/markets/stocks/articles/nike-shareholders-reject-climate-proposal-192359253.html",
+    "category": "Market Event",
+    "description": "Nike shareholders reject climate proposal backed by Norway wealth fund",
+    "domain": "finance.yahoo.com",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "market_news",
+      "news:Nike shareholders reject climate proposal backed b"
+    ],
+    "tags": [
+      "market",
+      "news"
+    ]
+  },
+  "432c39167c0b": {
+    "id": "432c39167c0b",
+    "name": "$604M CH Robinson Verdict Still Isn’t Final Yet",
+    "url": "https://finance.yahoo.com/small-business/articles/604m-ch-robinson-verdict-still-192955477.html",
+    "category": "Market Event",
+    "description": "$604M CH Robinson Verdict Still Isn’t Final Yet",
+    "domain": "finance.yahoo.com",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "market_news",
+      "news:$604M CH Robinson Verdict Still Isn’t Final Yet"
+    ],
+    "tags": [
+      "market",
+      "news"
+    ]
+  },
+  "3f9f8f697b09": {
+    "id": "3f9f8f697b09",
+    "name": "Ink Business Premier Credit Card review: Generous welcome bonus and free employee cards",
+    "url": "https://finance.yahoo.com/personal-finance/credit-cards/review/ink-business-premier-credit-card-review-223741901.html",
+    "category": "Market Event",
+    "description": "Ink Business Premier Credit Card review: Generous welcome bonus and free employee cards",
+    "domain": "finance.yahoo.com",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "market_news",
+      "news:Ink Business Premier Credit Card review: Generous "
+    ],
+    "tags": [
+      "market",
+      "news"
+    ]
+  },
+  "98e177c396aa": {
+    "id": "98e177c396aa",
+    "name": "Does iShares Pharma ETF Offer Superior Returns to Invesco's Equal Weight Healthcare Fund?",
+    "url": "https://finance.yahoo.com/healthcare/articles/does-ishares-pharma-etf-offer-191901161.html",
+    "category": "Market Event",
+    "description": "Does iShares Pharma ETF Offer Superior Returns to Invesco's Equal Weight Healthcare Fund?",
+    "domain": "finance.yahoo.com",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "market_news",
+      "news:Does iShares Pharma ETF Offer Superior Returns to "
+    ],
+    "tags": [
+      "market",
+      "news"
+    ]
+  },
+  "b47499a888fc": {
+    "id": "b47499a888fc",
+    "name": "Google Cloud Boss Makes Bold Claim About AI Chip Business",
+    "url": "https://www.investors.com/news/technology/google-stock-cloud-kurian-ai-chip-business/?src=A00220&yptr=yahoo",
+    "category": "Market Event",
+    "description": "Google Cloud Boss Makes Bold Claim About AI Chip Business",
+    "domain": "investors.com",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "market_news",
+      "news:Google Cloud Boss Makes Bold Claim About AI Chip B"
+    ],
+    "tags": [
+      "market",
+      "news"
+    ]
+  },
+  "ecf14c67eefa": {
+    "id": "ecf14c67eefa",
+    "name": "Dollar Slips on Japanese Yen Strength",
+    "url": "https://finance.yahoo.com/markets/currencies/articles/dollar-slips-japanese-yen-strength-193230187.html",
+    "category": "Market Event",
+    "description": "Dollar Slips on Japanese Yen Strength",
+    "domain": "finance.yahoo.com",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "market_news",
+      "news:Dollar Slips on Japanese Yen Strength"
+    ],
+    "tags": [
+      "market",
+      "news"
+    ]
+  },
+  "6f99276a8c3e": {
+    "id": "6f99276a8c3e",
+    "name": "Quantum Stocks Are Climbing Today as CHIPS Act Cash Pours In. Here’s One Way to Invest.",
+    "url": "https://finance.yahoo.com/markets/stocks/articles/quantum-stocks-climbing-today-chips-193345641.html",
+    "category": "Market Event",
+    "description": "Quantum Stocks Are Climbing Today as CHIPS Act Cash Pours In. Here’s One Way to Invest.",
+    "domain": "finance.yahoo.com",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "market_news",
+      "news:Quantum Stocks Are Climbing Today as CHIPS Act Cas"
+    ],
+    "tags": [
+      "market",
+      "news"
+    ]
+  },
+  "b87973438ca3": {
+    "id": "b87973438ca3",
+    "name": "Capital One launches new Venture Business card with limited-time 150,000-mile welcome bonus (expired)",
+    "url": "https://finance.yahoo.com/personal-finance/credit-cards/article/capital-one-venture-business-card-193020902.html",
+    "category": "Market Event",
+    "description": "Capital One launches new Venture Business card with limited-time 150,000-mile welcome bonus (expired)",
+    "domain": "finance.yahoo.com",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "market_news",
+      "news:Capital One launches new Venture Business card wit"
+    ],
+    "tags": [
+      "market",
+      "news"
+    ]
+  },
+  "e0ff6dd544ae": {
+    "id": "e0ff6dd544ae",
+    "name": "A Smarter Way to Monitor the Market Is Coming to InvestorsHub",
+    "url": "https://finance.yahoo.com/markets/articles/smarter-way-monitor-market-coming-191945535.html",
+    "category": "Market Event",
+    "description": "A Smarter Way to Monitor the Market Is Coming to InvestorsHub",
+    "domain": "finance.yahoo.com",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "market_news",
+      "news:A Smarter Way to Monitor the Market Is Coming to I"
+    ],
+    "tags": [
+      "market",
+      "news"
+    ]
+  },
+  "302469904f0d": {
+    "id": "302469904f0d",
+    "name": "Autonomous Trucking in 28 States: What Changes Next?",
+    "url": "https://finance.yahoo.com/small-business/articles/autonomous-trucking-28-states-changes-193434771.html",
+    "category": "Market Event",
+    "description": "Autonomous Trucking in 28 States: What Changes Next?",
+    "domain": "finance.yahoo.com",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "market_news",
+      "news:Autonomous Trucking in 28 States: What Changes Nex"
+    ],
+    "tags": [
+      "market",
+      "news"
+    ]
+  },
+  "ff6794224217": {
+    "id": "ff6794224217",
+    "name": "Fuel Surcharge Gaps: What Carriers Miss on Every Load",
+    "url": "https://finance.yahoo.com/small-business/articles/fuel-surcharge-gaps-carriers-miss-193522796.html",
+    "category": "Market Event",
+    "description": "Fuel Surcharge Gaps: What Carriers Miss on Every Load",
+    "domain": "finance.yahoo.com",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "market_news",
+      "news:Fuel Surcharge Gaps: What Carriers Miss on Every L"
+    ],
+    "tags": [
+      "market",
+      "news"
+    ]
+  },
+  "bb080883369d": {
+    "id": "bb080883369d",
+    "name": "Is Qualcomm on a Tear? Inside QCOM's 2026 Comeback — and the ETFs That Hold the Most",
+    "url": "https://finance.yahoo.com/markets/stocks/articles/qualcomm-tear-inside-qcoms-2026-193608652.html",
+    "category": "Market Event",
+    "description": "Is Qualcomm on a Tear? Inside QCOM's 2026 Comeback — and the ETFs That Hold the Most",
+    "domain": "finance.yahoo.com",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "market_news",
+      "news:Is Qualcomm on a Tear? Inside QCOM's 2026 Comeback"
+    ],
+    "tags": [
+      "market",
+      "news"
+    ]
+  },
+  "37a6a282d4a5": {
+    "id": "37a6a282d4a5",
+    "name": "What is a step-up CD, and how does it work?",
+    "url": "https://finance.yahoo.com/personal-finance/banking/article/step-up-cd-181655102.html",
+    "category": "Market Event",
+    "description": "What is a step-up CD, and how does it work?",
+    "domain": "finance.yahoo.com",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "market_news",
+      "news:What is a step-up CD, and how does it work?"
+    ],
+    "tags": [
+      "market",
+      "news"
+    ]
+  },
+  "0d585d5b4328": {
+    "id": "0d585d5b4328",
+    "name": "Gold Rises Back Above $4,400 as Traders Weigh Fed Rate-Hike Path",
+    "url": "https://www.bloomberg.com/news/articles/2026-09-09/gold-steadies-near-4-400-as-traders-weigh-fed-rate-hike-path",
+    "category": "Market Event",
+    "description": "Gold pushed back above $4,400 an ounce, as traders awaited US inflation data due later this week for clues on whether the Federal Reserve will hike interest rates.",
+    "domain": "bloomberg.com",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "market_news",
+      "news:Gold Rises Back Above $4,400 as Traders Weigh Fed "
+    ],
+    "tags": [
+      "market",
+      "news"
+    ]
+  },
+  "e9ca6f66869c": {
+    "id": "e9ca6f66869c",
+    "name": "Porsche Lifts Margin Forecast After €1 Billion Bugatti Sale",
+    "url": "https://www.bloomberg.com/news/articles/2026-09-09/porsche-raises-1-billion-with-completion-of-bugatti-stake-sale",
+    "category": "Market Event",
+    "description": "Porsche AG said it will generate about €1 billion ($1.16 billion) selling its stake in the venture that owns the Bugatti supercar brand as the German manufacturer tries to become leaner.",
+    "domain": "bloomberg.com",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "market_news",
+      "news:Porsche Lifts Margin Forecast After €1 Billion Bug"
+    ],
+    "tags": [
+      "market",
+      "news"
+    ]
+  },
+  "92975b771cae": {
+    "id": "92975b771cae",
+    "name": "FirstRand Profit Falls as $1.1 Billion Provision Curbs Gains",
+    "url": "https://www.bloomberg.com/news/articles/2026-09-10/firstrand-profit-falls-5-as-1-1-billion-provision-curbs-gains",
+    "category": "Market Event",
+    "description": "FirstRand Ltd. profit fell for the first time in six years after a £807 million ($1.1 billion) provision for UK clients’ claims over missold car loans at its British motor-finance unit countered growth from loans and fee income.",
+    "domain": "bloomberg.com",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "market_news",
+      "news:FirstRand Profit Falls as $1.1 Billion Provision C"
+    ],
+    "tags": [
+      "market",
+      "news"
+    ]
+  },
+  "cb013d462427": {
+    "id": "cb013d462427",
+    "name": "Senegal Bondholders Pick White & Case for Debt Rework Advice",
+    "url": "https://www.bloomberg.com/news/articles/2026-09-09/senegal-bondholders-pick-white-case-for-legal-advice",
+    "category": "Market Event",
+    "description": "Some holders of Senegal’s eurobonds are starting to form a creditor group and picked White &amp; Case LLP as their legal adviser in preparation for debt-restructuring talks with the country, people familiar with the matter said.",
+    "domain": "bloomberg.com",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "market_news",
+      "news:Senegal Bondholders Pick White & Case for Debt Rew"
+    ],
+    "tags": [
+      "market",
+      "news"
+    ]
+  },
+  "82f0e847211a": {
+    "id": "82f0e847211a",
+    "name": "Asian Ports Snarled as El Niño Fuels Busy Typhoon Season",
+    "url": "https://www.bloomberg.com/news/articles/2026-09-10/asian-ports-snarled-as-el-nino-fuels-busy-typhoon-season",
+    "category": "Market Event",
+    "description": "An unusually active typhoon season is disrupting shipping operations across Asia, with Shanghai particularly hard hit by snarled traffic and vessel delays.",
+    "domain": "bloomberg.com",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "market_news",
+      "news:Asian Ports Snarled as El Niño Fuels Busy Typhoon "
+    ],
+    "tags": [
+      "market",
+      "news"
+    ]
+  },
+  "261f0c024ddc": {
+    "id": "261f0c024ddc",
+    "name": "Coinbase CEO Predicts Bitcoin's Downturn Is Over",
+    "url": "https://www.bloomberg.com/news/videos/2026-09-10/insight-with-haslinda-amin-9-10-2026-video",
+    "category": "Market Event",
+    "description": "Insight with Haslinda Amin, a daily news program featuring in-depth, high-profile interviews and analysis to give viewers the complete picture on the stories that matter. The show features prominent leaders spanning the worlds of business, finance, politics and culture. (Source: Bloomberg)",
+    "domain": "bloomberg.com",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "market_news",
+      "news:Coinbase CEO Predicts Bitcoin's Downturn Is Over"
+    ],
+    "tags": [
+      "market",
+      "news"
+    ]
+  },
+  "5b23b7493361": {
+    "id": "5b23b7493361",
+    "name": "John Lewis Loss Widens as Turnaround Hit by Higher Costs",
+    "url": "https://www.bloomberg.com/news/articles/2026-09-10/john-lewis-losses-widen-as-uk-retailer-grapples-with-turnaround",
+    "category": "Market Event",
+    "description": "John Lewis Partnership Plc’s loss widened in the first half due to higher costs and shoppers reining in spending, undermining the British department store chain’s turnaround bid.",
+    "domain": "bloomberg.com",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "market_news",
+      "news:John Lewis Loss Widens as Turnaround Hit by Higher"
+    ],
+    "tags": [
+      "market",
+      "news"
+    ]
+  },
+  "ceedc8880dd0": {
+    "id": "ceedc8880dd0",
+    "name": "UMNO Hopeful Malaysia Ex-PM Najib Will Secure Royal Pardon",
+    "url": "https://www.bloomberg.com/news/articles/2026-09-10/umno-chief-hopeful-malaysia-ex-pm-najib-will-secure-royal-pardon",
+    "category": "Market Event",
+    "description": "Malaysia’s former ruling party United Malays National Organisation is hopeful of a positive outcome from former Prime Minister Najib Razak’s latest bid for a royal pardon, party president Ahmad Zahid Hamidi said.",
+    "domain": "bloomberg.com",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "market_news",
+      "news:UMNO Hopeful Malaysia Ex-PM Najib Will Secure Roya"
+    ],
+    "tags": [
+      "market",
+      "news"
+    ]
+  },
+  "4edfcce54e40": {
+    "id": "4edfcce54e40",
+    "name": "Why Payment Companies Are Choosing India's GIFT City",
+    "url": "https://www.bloomberg.com/news/videos/2026-09-10/why-payment-companies-are-choosing-india-s-gift-city-video",
+    "category": "Market Event",
+    "description": "IFSCA Executive Director Dipesh Shah says GIFT City offers payment companies flexible regulations, streamlined approvals, and greater freedom in cross-border transactions, helping position it as a competitive global financial hub. (Source: Bloomberg)",
+    "domain": "bloomberg.com",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "market_news",
+      "news:Why Payment Companies Are Choosing India's GIFT Ci"
+    ],
+    "tags": [
+      "market",
+      "news"
+    ]
+  },
+  "9989b8b76848": {
+    "id": "9989b8b76848",
+    "name": "Private Credit Investors Clash Over £36 Billion BHP Dam Collapse Litigation",
+    "url": "https://www.bloomberg.com/news/articles/2026-09-10/private-credit-investors-clash-over-36-billion-bhp-dam-collapse-litigation",
+    "category": "Market Event",
+    "description": "Two litigation funders are backing rival law firms in a fight for control of a £36 billion ($48.8 billion) suit over one of Brazil’s worst environmental disasters.",
+    "domain": "bloomberg.com",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "market_news",
+      "news:Private Credit Investors Clash Over £36 Billion BH"
+    ],
+    "tags": [
+      "market",
+      "news"
+    ]
+  },
+  "337b0c4c66e0": {
+    "id": "337b0c4c66e0",
+    "name": "UK Faces Soaring Gas Prices as Winter Nears",
+    "url": "https://www.bloomberg.com/news/videos/2026-09-10/uk-faces-soaring-gas-prices-as-winter-nears-video",
+    "category": "Market Event",
+    "description": "UK gas prices have climbed to their highest since 2022 and more than doubled since the start of the year, just as UK households face the highest winter energy costs in three years. Britain is particularly exposed because it relies heavily on gas while storing little of its own, leaving it dependent on seaborne liquefied natural gas when demand surges or renewable generation falters. Bloomberg's Priscila Azevedo Rocha reports. (Source: Bloomberg)",
+    "domain": "bloomberg.com",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "market_news",
+      "news:UK Faces Soaring Gas Prices as Winter Nears"
+    ],
+    "tags": [
+      "market",
+      "news"
+    ]
+  },
+  "79af63cc55af": {
+    "id": "79af63cc55af",
+    "name": "ECB Expected to Raise Interest Rates",
+    "url": "https://www.bloomberg.com/news/videos/2026-09-10/ecb-expected-to-raise-interest-rates-video",
+    "category": "Market Event",
+    "description": "The European Central Bank is set to raise borrowing costs for the second time since the start of the Iran war. The deposit rate will be lifted by a quarter-point to 2.5% on Thursday, according to all but one analyst in a Bloomberg poll. Bloomberg's Oliver Crook reports from Berlin. (Source: Bloomberg)",
+    "domain": "bloomberg.com",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "market_news",
+      "news:ECB Expected to Raise Interest Rates"
+    ],
+    "tags": [
+      "market",
+      "news"
+    ]
+  },
+  "152ffd4500c5": {
+    "id": "152ffd4500c5",
+    "name": "Trump Payout Pledge Adds to Bond Market Jitters as Auction Looms",
+    "url": "https://www.bloomberg.com/news/articles/2026-09-10/trump-payout-pledge-adds-to-bond-market-jitters-as-auction-looms",
+    "category": "Market Event",
+    "description": "The US President’s promise of a national cash payout for a Republican Party mid-term election victory is injecting fresh uncertainties into the Treasury market ahead of a 30-year bond auction, renewing concerns about Washington’s fiscal discipline and erratic policymaking.",
+    "domain": "bloomberg.com",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "market_news",
+      "news:Trump Payout Pledge Adds to Bond Market Jitters as"
+    ],
+    "tags": [
+      "market",
+      "news"
+    ]
+  },
+  "2616f611dee1": {
+    "id": "2616f611dee1",
+    "name": "Stocks Fall in Asia as Oil Stokes Inflation Fears: Markets Wrap",
+    "url": "https://www.bloomberg.com/news/articles/2026-09-09/stock-market-today-dow-s-p-live-updates",
+    "category": "Market Event",
+    "description": "Asian stocks fell, following losses in their US peers, as higher oil prices added to concern that inflation will accelerate. Brent crude pulled back from its earlier highs after rising to almost $102 a barrel.",
+    "domain": "bloomberg.com",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "market_news",
+      "news:Stocks Fall in Asia as Oil Stokes Inflation Fears:"
+    ],
+    "tags": [
+      "market",
+      "news"
+    ]
+  },
+  "b86ea12a3048": {
+    "id": "b86ea12a3048",
+    "name": "Aster Eyes Latin America, Africa as Mideast Flows Fall",
+    "url": "https://www.bloomberg.com/news/articles/2026-09-09/aster-turns-to-latin-america-africa-as-mideast-oil-flows-falter",
+    "category": "Market Event",
+    "description": "Singapore refiner Aster Chemicals and Energy Pte is buying crude from as far afield as Latin America and West Africa to replace Middle Eastern supplies squeezed by the Iran war.",
+    "domain": "bloomberg.com",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "market_news",
+      "news:Aster Eyes Latin America, Africa as Mideast Flows "
+    ],
+    "tags": [
+      "market",
+      "news"
+    ]
+  },
+  "d499901576fe": {
+    "id": "d499901576fe",
+    "name": "Trump pushes Fed for lower rates, but consumers may be better off with a hike, experts say - CNBC",
+    "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOU1FFbFpVa3M2WXNaN21VSmp0aEgteF9aaUNJVVFULVVpMndyQ1Nzd3R6c1pJdDBrQS1xWE9XQXFHVmd4dGRSQkRwRndScHVGZ2doR04yM0NTaE9tNmxiUVdEMVBRN0ZDRHhaN1FSTDF0WmtJM2d5Y2lmUTRCUUpla1Q4WXViNlBSeGJWNU9jNU5OT2RXSUHSAZsBQVVfeXFMTktsSGdLX3N3R1F6MVRpQWJpdXFQQi1KMTBwcTJfcGRTQkNGZFZ2aVFJZVhjYlpEWjJoVXczcmhvS25QZFc2NEdqWmFlYkk3RzRUQ0lwS1VjQnJKT0JtbFZwQnV3dlNnQ2piWDlreFVSN1hvZFV0TTYzS3JVM3ZJUWl5ak1EUDFDYk56dzViS3pjU0ZwVXREbS1hcFk?oc=5",
+    "category": "Economy",
+    "description": "Trump pushes Fed for lower rates, but consumers may be better off with a hike, experts say - CNBC",
+    "domain": "news.google.com",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "google_news_economy",
+      "gnews_eco:Trump pushes Fed for lower rates, but co"
+    ],
+    "tags": [
+      "economy",
+      "macro",
+      "news"
+    ]
+  },
+  "59f134572853": {
+    "id": "59f134572853",
+    "name": "Fed to hold rates steady in rest of 2026; rising number of analysts see at least one hike: Reuters poll - Reuters",
+    "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOZ0NreUFoTnFxX3ZzQnd3YU9FNFVkQmhfZlBrSVBUUm12Q0lCckxRTHdWcUVHbmJpcDZKbVhNZG5RektYQlpqaUZGMjl2TnJ0amhPMGJBWnB6OG9FVTB5dVJPTlc1ZjJaa2djUl9HR3VhYzIxODJjVEx1NUswdkVkblYxNVNSY1dYWlpUdzlEQU9UNTNzaUtVWXVtdXljVEUzSnVOQTV2bTJHSXN6Q2E3U0pzcVk5U19qUmc?oc=5",
+    "category": "Economy",
+    "description": "Fed to hold rates steady in rest of 2026; rising number of analysts see at least one hike: Reuters poll - Reuters",
+    "domain": "news.google.com",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "google_news_economy",
+      "gnews_eco:Fed to hold rates steady in rest of 2026"
+    ],
+    "tags": [
+      "economy",
+      "macro",
+      "news"
+    ]
+  },
+  "7dfab22e1345": {
+    "id": "7dfab22e1345",
+    "name": "A Tiny Shift in the Inflation Rate Could Decide the Fed’s Next Move - WSJ",
+    "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQU2VrRkdPcXF6U3ZvMTdqQ1pLT2Jua0N1MHlyQXM4c2hNN1M0SEY4bHZMakxwZm9jRjRKUHpsdnFuemtxSjFLZUhSVFJSTE41NzJQajl5M09PSlZNbkczMlZHTGN4U2wyalN2SnJiZG1JT3Roem00c0hmRXlRX3gtZzRNM2RBaS05VkRabUVSenVyUUV1ODQwUUNyTlE?oc=5",
+    "category": "Economy",
+    "description": "A Tiny Shift in the Inflation Rate Could Decide the Fed’s Next Move - WSJ",
+    "domain": "news.google.com",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "google_news_economy",
+      "gnews_eco:A Tiny Shift in the Inflation Rate Could"
+    ],
+    "tags": [
+      "economy",
+      "macro",
+      "news"
+    ]
+  },
+  "b11db643a2dd": {
+    "id": "b11db643a2dd",
+    "name": "Market Minute: Inflation data set to support Fed rate hike - The Real Economy Blog",
+    "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQazQzWm14UG1LcG9zTzhUb2ZxcmFzSnJMVmlaa3RjSnNlcjZQdERsc3RwNEs5VXFHcGY0LTZqUkRMUFBwYng5TWRaS2d1blFNalNhVlZRQ1Z6RGVJamdLMWR2Z3RrbHpJYWJqdWJOajFyVmxIVDRFMVM4LWdIcVJZYXpxZXlDLXBMQkVGLTgtX0ZRdw?oc=5",
+    "category": "Economy",
+    "description": "Market Minute: Inflation data set to support Fed rate hike - The Real Economy Blog",
+    "domain": "news.google.com",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "google_news_economy",
+      "gnews_eco:Market Minute: Inflation data set to sup"
+    ],
+    "tags": [
+      "economy",
+      "macro",
+      "news"
+    ]
+  },
+  "90ea65094dfa": {
+    "id": "90ea65094dfa",
+    "name": "Fed rate hike hinges on two key inflation reports in the next two days - MarketWatch",
+    "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNVl95cFQxNzRvRG94em9IUUdpcXVwUmc1YXpURlY1amtsVF8tZkNmVGpEaDlNUmtJejllRVZtZmoxSEk4cllHRDc4ZVJad3RCbWpnMUw5ay15MkRmbkJhVnVFZk5iVi0wWWU2RDc4bkhYTVJFUnplaHZRVzdWdE45ekNqZlZ5THlWN1ZRczh6V1FBYmpNRVZpUzFmakxFSWU3NDYwRFdQdTE1ZnZSclpxVmFLQQ?oc=5",
+    "category": "Economy",
+    "description": "Fed rate hike hinges on two key inflation reports in the next two days - MarketWatch",
+    "domain": "news.google.com",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "google_news_economy",
+      "gnews_eco:Fed rate hike hinges on two key inflatio"
+    ],
+    "tags": [
+      "economy",
+      "macro",
+      "news"
+    ]
+  },
+  "e29045fa38e4": {
+    "id": "e29045fa38e4",
+    "name": "August CPI Report: What the Inflation Data Is Expected to Show - Kiplinger",
+    "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPVi05d0VzY0dJVGVwZXJ4WHA5V05ZLXZiVVhEZy1oSENmeGxTVUdRcEZNVmpZb1g1aVk3ZW1MU05KRW1ZamRKZHZtTEJ1QXA3Ym9TQjY3RGViam9UV2o0b0lETk9hN2hSWUN4UWlxRGdVZU9GSzZLN1dzVjFua3AwdlVLZ0RNcjNx?oc=5",
+    "category": "Economy",
+    "description": "August CPI Report: What the Inflation Data Is Expected to Show - Kiplinger",
+    "domain": "news.google.com",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "google_news_economy",
+      "gnews_eco:August CPI Report: What the Inflation Da"
+    ],
+    "tags": [
+      "economy",
+      "macro",
+      "news"
+    ]
+  },
+  "41c9c92bfdc3": {
+    "id": "41c9c92bfdc3",
+    "name": "August CPI Seen Cooling, but Will It Prevent a Fed Rate Hike? - Morningstar",
+    "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQTjZmcGNFb2ZSUi1zVXJrenkxVXlhVENBcUxCZi1mSDRvczhqSDdGdGtVenpPWDlGSjlYWkVWNWNZZDVlU1lWS1U5S3VxM180Y0RNOEtiX0RoQy1ETHU5Sm9fblcxc1h1cC1uNFBHakF4MS1adjZfM3VxSjFsOHQ4cWowYWJ4d3d5cHZvZnhzMExCVVE?oc=5",
+    "category": "Economy",
+    "description": "August CPI Seen Cooling, but Will It Prevent a Fed Rate Hike? - Morningstar",
+    "domain": "news.google.com",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "google_news_economy",
+      "gnews_eco:August CPI Seen Cooling, but Will It Pre"
+    ],
+    "tags": [
+      "economy",
+      "macro",
+      "news"
+    ]
+  },
+  "31d6cbe971d3": {
+    "id": "31d6cbe971d3",
+    "name": "Q&A: What can rent prices reveal about inflation and the economy? - Phys.org",
+    "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE02d2xCYkl1OXMzd1VKRUhOcWlybXVTcHNRX2VFSnRreTBITk45S0Y1SklkTjhVRS1DMnU4Mi1taWdZMUVoRmlVWE1tZFh0U3V6UmFPVU5kY1FWNVpaOVRlcFRiRnhrY2NiZ0JZM2l1RjNVM3FB?oc=5",
+    "category": "Economy",
+    "description": "Q&A: What can rent prices reveal about inflation and the economy? - Phys.org",
+    "domain": "news.google.com",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "google_news_economy",
+      "gnews_eco:Q&A: What can rent prices reveal about i"
+    ],
+    "tags": [
+      "economy",
+      "macro",
+      "news"
+    ]
+  },
+  "8e859a369f99": {
+    "id": "8e859a369f99",
+    "name": "Economic Watch: China's inflation edges up, signaling sustained recovery in domestic demand - Anhui News",
+    "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOT2NxNE1oMThDcUw2cnZGb1dYTW1rMWhIaWRIZ2hJRS00dEdudWRxUTNiSTRPSmlxMUlBcnFNOURiV0VDUGdXUGhXYzFEZHZCUzVFM0VKS25oWVRCNE9pMWxLOURfTl9PMUJoQnNZLWdrUUhKQlk4ZzFjUHlLdEkyVndpdEk?oc=5",
+    "category": "Economy",
+    "description": "Economic Watch: China's inflation edges up, signaling sustained recovery in domestic demand - Anhui News",
+    "domain": "news.google.com",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "google_news_economy",
+      "gnews_eco:Economic Watch: China's inflation edges "
+    ],
+    "tags": [
+      "economy",
+      "macro",
+      "news"
+    ]
+  },
+  "14491a92f988": {
+    "id": "14491a92f988",
+    "name": "A new Anthropic model seeks to test how AI could impact the U.S. economy - NPR",
+    "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5zbl9Ya1QyeGVtRDVaTTNqVktBeFFUdXVza1VOdVh1UDZEX0FzR0hsVTdEaDg4ZG9OYWVoZlhTM0s3SHZZT3M3cG5LWFpPdThrUzJPRWdwWjEzRFU4WnZuRTYtREFXam5pV2Qwby1ta1c5bjQ?oc=5",
+    "category": "Economy",
+    "description": "A new Anthropic model seeks to test how AI could impact the U.S. economy - NPR",
+    "domain": "news.google.com",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "google_news_economy",
+      "gnews_eco:A new Anthropic model seeks to test how "
+    ],
+    "tags": [
+      "economy",
+      "macro",
+      "news"
+    ]
+  },
+  "29ffd521b66c": {
+    "id": "29ffd521b66c",
+    "name": "Anthropic Releases Interactive Model of AI’s Possible Economic Futures - Unite.AI",
+    "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQc2kwWnc5c2N1S1JEOWRxaVE3eThSTnl5cVZNdk1uR2cySC02SjR0bjdFbE93WlA5UkY4WXdWTjI0djQyQmhHRFVXUFFtYXJkSlNDOVppVWEwS2prOUpzbmFCa0xiWThWSXVxWUp2S1lhMVV6Zm9UeVM5dUhrOFE5UVRSNk90Tl9adm93aGpPZDY3WEY0dGc?oc=5",
+    "category": "Economy",
+    "description": "Anthropic Releases Interactive Model of AI’s Possible Economic Futures - Unite.AI",
+    "domain": "news.google.com",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "google_news_economy",
+      "gnews_eco:Anthropic Releases Interactive Model of "
+    ],
+    "tags": [
+      "economy",
+      "macro",
+      "news"
+    ]
+  },
+  "06dd8e00f6de": {
+    "id": "06dd8e00f6de",
+    "name": "Tighter National Bonus targets would better capture what matters to S’poreans: Analysts - straitstimes.com",
+    "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxQODVDalVjVHRORXJ4RllKTjFWR21zNnFfQnlBZ2Nyc29wY0VWS2x4dVRfS1ZYUjR4MUgwaWlHdTl3UVo4N2Q5UlFSdWVtMDFIa2pVOG43ZWVvTDJrTXB6T2V3QWREdnJSdTgwNGRjUmxvallCU2RKZW96Y3hpazhMU2Rya3R5dUhqMG9qZm0yOXE2SkV2TWNsWXduOWVncjA5VGZVSWxGWDRUT3dsYlZSWEwtYW11REZyeWg2NGxZdl82MVU5a1gzWWttYmp0Qkt3RENha214NkNfU0dRTTh0UG9kc0t3akFPb2c?oc=5",
+    "category": "Economy",
+    "description": "Tighter National Bonus targets would better capture what matters to S’poreans: Analysts - straitstimes.com",
+    "domain": "news.google.com",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "google_news_economy",
+      "gnews_eco:Tighter National Bonus targets would bet"
+    ],
+    "tags": [
+      "economy",
+      "macro",
+      "news"
+    ]
+  },
+  "8fe91f979be6": {
+    "id": "8fe91f979be6",
+    "name": "AI Could Cause GDP Growth Of 15%, But See Wages Fall By 11.5% & Unemployment Rise To 17.9% In \"Extreme\" Economic Scenario: Anthropic - OfficeChai",
+    "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxNaXZrZUNMeUNhMkxzNG5Yc2tMM1VxdDRabm01bVZYZWFBTXJfWFh3c2NDVzNud3pEYW1IeHJvbmwwS0ItTzBXQXl1aV9WeGd1Slk5QnBmMjhaTEY2a3NMZXNKRHMtZ2NqMW1SRGlXVWtWbHJ6dVZQV0tFbnJCYktIbXgyeWhtQ0x0YVJYaGszSU1IdTZubFE1dmRwME5Td1N0cDh5S2tnME5uZjlBWDBTd1R3N0xEX2NMakU1N2pNYXZISXd0RklYRkVwNjl0d1Z6RWY0U2szOFpweXcwUTlheDJuSFE?oc=5",
+    "category": "Economy",
+    "description": "AI Could Cause GDP Growth Of 15%, But See Wages Fall By 11.5% & Unemployment Rise To 17.9% In \"Extreme\" Economic Scenario: Anthropic - OfficeChai",
+    "domain": "news.google.com",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "google_news_economy",
+      "gnews_eco:AI Could Cause GDP Growth Of 15%, But Se"
+    ],
+    "tags": [
+      "economy",
+      "macro",
+      "news"
+    ]
+  },
+  "24b53062d5f2": {
+    "id": "24b53062d5f2",
+    "name": "Anthropic builds interactive model letting anyone stress-test AI’s economic impact - Crypto Briefing",
+    "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE4xRnV1QTdyaloxYjY2aUxtNjdqcEVld095aGhDdVVWVXJoUTJSamhHQ1FjajRraGlQS2NpWktMeENKNEVMX0NDSnJCS2xYQThqdlRrM2g3aW0wYzEtVnhfM2tIcHFkQjRuZEJhTno0MDU2bG1lNWJBMGtqemJjMHM?oc=5",
+    "category": "Economy",
+    "description": "Anthropic builds interactive model letting anyone stress-test AI’s economic impact - Crypto Briefing",
+    "domain": "news.google.com",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "google_news_economy",
+      "gnews_eco:Anthropic builds interactive model letti"
+    ],
+    "tags": [
+      "economy",
+      "macro",
+      "news"
+    ]
+  },
+  "1f6e3beb9d54": {
+    "id": "1f6e3beb9d54",
+    "name": "Thousand",
+    "url": "https://www.producthunt.com/products/thousand",
+    "category": "Product",
+    "description": "Git-backed docs for humans and agentsDiscussion|",
+    "domain": "producthunt.com",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "producthunt",
+      "ph:thousand"
+    ],
+    "tags": [
+      "producthunt",
+      "product"
+    ]
+  },
+  "3a945749ce1e": {
+    "id": "3a945749ce1e",
+    "name": "AI Observability by OpenObserve",
+    "url": "https://www.producthunt.com/products/openobserve",
+    "category": "AI/ML",
+    "description": "OpenTelemetry-native observability for agents and LLMsDiscussion",
+    "domain": "producthunt.com",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "producthunt",
+      "ph:openobserve"
+    ],
+    "tags": [
+      "producthunt",
+      "product"
+    ]
+  },
+  "ae5e3b5a7c75": {
+    "id": "ae5e3b5a7c75",
+    "name": "Athenic AI",
+    "url": "https://www.producthunt.com/products/athenic-ai",
+    "category": "AI/ML",
+    "description": "Beat the market with 90+ datasets and AI made for analysisDiscussi",
+    "domain": "producthunt.com",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "producthunt",
+      "ph:athenic-ai"
+    ],
+    "tags": [
+      "producthunt",
+      "product"
+    ]
+  },
+  "c631d362174f": {
+    "id": "c631d362174f",
+    "name": "Desert Ant Labs",
+    "url": "https://www.producthunt.com/products/desert-ant-labs",
+    "category": "AI/ML",
+    "description": "Small specialized AI models for speech, text, visionDiscussio",
+    "domain": "producthunt.com",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "producthunt",
+      "ph:desert-ant-labs"
+    ],
+    "tags": [
+      "producthunt",
+      "product"
+    ]
+  },
+  "e35d828a193d": {
+    "id": "e35d828a193d",
+    "name": "Vibe Eyes",
+    "url": "https://www.producthunt.com/products/vibe-eyes",
+    "category": "Product",
+    "description": "Put your pets in your macOS menu barDiscussion|",
+    "domain": "producthunt.com",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "producthunt",
+      "ph:vibe-eyes"
+    ],
+    "tags": [
+      "producthunt",
+      "product"
+    ]
+  },
+  "773b180c3765": {
+    "id": "773b180c3765",
+    "name": "Wealthfolio",
+    "url": "https://www.producthunt.com/products/wealthfolio",
+    "category": "Product",
+    "description": "Local-first personal finance with optional broker syncDiscussion",
+    "domain": "producthunt.com",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "producthunt",
+      "ph:wealthfolio"
+    ],
+    "tags": [
+      "producthunt",
+      "product"
+    ]
+  },
+  "1b683a04fc8f": {
+    "id": "1b683a04fc8f",
+    "name": "iPhone Duo",
+    "url": "https://www.producthunt.com/products/apple",
+    "category": "Design",
+    "description": "The largest iPhone display ever. In a thin, foldable design.Discussion",
+    "domain": "producthunt.com",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "producthunt",
+      "ph:apple"
+    ],
+    "tags": [
+      "producthunt",
+      "product"
+    ]
+  },
+  "eb7d7cd7b7e9": {
+    "id": "eb7d7cd7b7e9",
+    "name": "Whip",
+    "url": "https://www.producthunt.com/products/whip",
+    "category": "Product",
+    "description": "Youtube for interactive web experiencesDiscussion|",
+    "domain": "producthunt.com",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "producthunt",
+      "ph:whip"
+    ],
+    "tags": [
+      "producthunt",
+      "product"
+    ]
+  },
+  "579bf900494f": {
+    "id": "579bf900494f",
+    "name": "Live Captions by Subanana",
+    "url": "https://www.producthunt.com/products/subanana",
+    "category": "Product",
+    "description": "Your whole audience follows, in their own languageDiscussion",
+    "domain": "producthunt.com",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "producthunt",
+      "ph:subanana"
+    ],
+    "tags": [
+      "producthunt",
+      "product"
+    ]
+  },
+  "169551b44bcd": {
+    "id": "169551b44bcd",
+    "name": "Viso Now",
+    "url": "https://www.producthunt.com/products/viso-now",
+    "category": "AI/ML",
+    "description": "Build computer vision applications with AIDiscussion",
+    "domain": "producthunt.com",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "producthunt",
+      "ph:viso-now"
+    ],
+    "tags": [
+      "producthunt",
+      "product"
+    ]
+  },
+  "315f28d9cec7": {
+    "id": "315f28d9cec7",
+    "name": "hob",
+    "url": "https://www.producthunt.com/products/hob-2",
+    "category": "Product",
+    "description": "The professional workspace for your whole agent stackDiscussion",
+    "domain": "producthunt.com",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "producthunt",
+      "ph:hob-2"
+    ],
+    "tags": [
+      "producthunt",
+      "product"
+    ]
+  },
+  "1af740fbb888": {
+    "id": "1af740fbb888",
+    "name": "Drive",
+    "url": "https://www.producthunt.com/products/drive-gforce-telemetry",
+    "category": "Product",
+    "description": "Vehicle telemetry for your next weekend drive with LPR alert",
+    "domain": "producthunt.com",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "producthunt",
+      "ph:drive-gforce-telemetry"
+    ],
+    "tags": [
+      "producthunt",
+      "product"
+    ]
+  },
+  "9cd1e85fc264": {
+    "id": "9cd1e85fc264",
+    "name": "Mock Magic Presets",
+    "url": "https://www.producthunt.com/products/mockmagic",
+    "category": "Product",
+    "description": "Use saved presets to quickly get a branded device videoDiscussion",
+    "domain": "producthunt.com",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "producthunt",
+      "ph:mockmagic"
+    ],
+    "tags": [
+      "producthunt",
+      "product"
+    ]
+  },
+  "6174ef018dea": {
+    "id": "6174ef018dea",
+    "name": "Typewise Nova",
+    "url": "https://www.producthunt.com/products/typewise",
+    "category": "AI/ML",
+    "description": "AI customer experience that builds and improves itselfDiscussion",
+    "domain": "producthunt.com",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "producthunt",
+      "ph:typewise"
+    ],
+    "tags": [
+      "producthunt",
+      "product"
+    ]
+  },
+  "9475ce79edaf": {
+    "id": "9475ce79edaf",
+    "name": "FreeScan.app",
+    "url": "https://www.producthunt.com/products/freescan-app",
+    "category": "Product",
+    "description": "Fix what’s hurting your visibility, trust, and conversionsDiscus",
+    "domain": "producthunt.com",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "producthunt",
+      "ph:freescan-app"
+    ],
+    "tags": [
+      "producthunt",
+      "product"
+    ]
+  },
+  "fd178aefa0ca": {
+    "id": "fd178aefa0ca",
+    "name": "AirPods 5",
+    "url": "https://www.producthunt.com/products/apple",
+    "category": "AI/ML",
+    "description": "1.5x Active Noise Cancellation, AI Siri, Live TranslationDiscussion",
+    "domain": "producthunt.com",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "producthunt",
+      "ph:apple"
+    ],
+    "tags": [
+      "producthunt",
+      "product"
+    ]
+  },
+  "c2736525bada": {
+    "id": "c2736525bada",
+    "name": "Gojo",
+    "url": "https://www.producthunt.com/products/gojo",
+    "category": "Product",
+    "description": "Local dictation and everyday Mac tools in your notchDiscussion",
+    "domain": "producthunt.com",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "producthunt",
+      "ph:gojo"
+    ],
+    "tags": [
+      "producthunt",
+      "product"
+    ]
+  },
+  "d69b7840386c": {
+    "id": "d69b7840386c",
+    "name": "Speechmark",
+    "url": "https://www.producthunt.com/products/speechmark",
+    "category": "Productivity",
+    "description": "Private, on-device meeting notes for MacDiscussion",
+    "domain": "producthunt.com",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "producthunt",
+      "ph:speechmark"
+    ],
+    "tags": [
+      "producthunt",
+      "product"
+    ]
+  },
+  "8f51485ca233": {
+    "id": "8f51485ca233",
+    "name": "Suno v6",
+    "url": "https://www.producthunt.com/products/suno",
+    "category": "Product",
+    "description": "The first Suno model built with the music industryDiscussion",
+    "domain": "producthunt.com",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "producthunt",
+      "ph:suno"
+    ],
+    "tags": [
+      "producthunt",
+      "product"
+    ]
+  },
+  "0de1a51e0e14": {
+    "id": "0de1a51e0e14",
+    "name": "Modeinspect",
+    "url": "https://www.producthunt.com/products/modeinspect-1-0",
+    "category": "Developer Tools",
+    "description": "Design production UI in your codebaseDiscussion",
+    "domain": "producthunt.com",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "producthunt",
+      "ph:modeinspect-1-0"
+    ],
+    "tags": [
+      "producthunt",
+      "product"
+    ]
+  },
+  "64b2fa7d9561": {
+    "id": "64b2fa7d9561",
+    "name": "Type.com",
+    "url": "https://www.producthunt.com/products/type-com",
+    "category": "Developer Tools",
+    "description": "A shared workspace for Claude, Codex, and your teamDiscussion",
+    "domain": "producthunt.com",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "producthunt",
+      "ph:type-com"
+    ],
+    "tags": [
+      "producthunt",
+      "product"
+    ]
+  },
+  "8c81488596fa": {
+    "id": "8c81488596fa",
+    "name": "Mastra Factory",
+    "url": "https://www.producthunt.com/products/mastra",
+    "category": "Product",
+    "description": "From issue to production, run by agents.Discussion|",
+    "domain": "producthunt.com",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "producthunt",
+      "ph:mastra"
+    ],
+    "tags": [
+      "producthunt",
+      "product"
+    ]
+  },
+  "c75d90e8922c": {
+    "id": "c75d90e8922c",
+    "name": "DuckFightClub",
+    "url": "https://www.producthunt.com/products/duckfightclub",
+    "category": "AI/ML",
+    "description": "Train your MicroDuck and win the Golden Beak BeltDiscussion",
+    "domain": "producthunt.com",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "producthunt",
+      "ph:duckfightclub"
+    ],
+    "tags": [
+      "producthunt",
+      "product"
+    ]
+  },
+  "f391ce7f8d6a": {
+    "id": "f391ce7f8d6a",
+    "name": "49agents IDE",
+    "url": "https://www.producthunt.com/products/49agents-ide",
+    "category": "Product",
+    "description": "2D IDE for running agents across projects without fatigueDiscuss",
+    "domain": "producthunt.com",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "producthunt",
+      "ph:49agents-ide"
+    ],
+    "tags": [
+      "producthunt",
+      "product"
+    ]
+  },
+  "cf7b528131af": {
+    "id": "cf7b528131af",
+    "name": "Noodle Seed",
+    "url": "https://www.producthunt.com/products/noodle-seed",
+    "category": "AI/ML",
+    "description": "Your product in AI and AI in your productDiscussion",
+    "domain": "producthunt.com",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "producthunt",
+      "ph:noodle-seed"
+    ],
+    "tags": [
+      "producthunt",
+      "product"
+    ]
+  },
+  "bc1d132364ac": {
+    "id": "bc1d132364ac",
+    "name": "WorkID.ai",
+    "url": "https://www.producthunt.com/products/workid-ai",
+    "category": "AI/ML",
+    "description": "Where verified talent meets opportunity. Hire with trust!Discussion",
+    "domain": "producthunt.com",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "producthunt",
+      "ph:workid-ai"
+    ],
+    "tags": [
+      "producthunt",
+      "product"
+    ]
+  },
+  "4cf7063d1248": {
+    "id": "4cf7063d1248",
+    "name": "Frigade Assist API",
+    "url": "https://www.producthunt.com/products/frigade",
+    "category": "AI/ML",
+    "description": "Give your AI agent guides that show users where to clickDiscussion",
+    "domain": "producthunt.com",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "producthunt",
+      "ph:frigade"
+    ],
+    "tags": [
+      "producthunt",
+      "product"
+    ]
+  },
+  "cd38ae743abf": {
+    "id": "cd38ae743abf",
+    "name": "Ass Auction",
+    "url": "https://www.producthunt.com/products/ass-auction",
+    "category": "Product",
+    "description": "Brands outbid each other to put their logo on my assDiscussion",
+    "domain": "producthunt.com",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "producthunt",
+      "ph:ass-auction"
+    ],
+    "tags": [
+      "producthunt",
+      "product"
+    ]
+  },
+  "4cae2d505bc2": {
+    "id": "4cae2d505bc2",
+    "name": "Diiverge",
+    "url": "https://www.producthunt.com/products/diiverge-co",
+    "category": "AI/ML",
+    "description": "Turn any picture into a playable AI adventureDiscussion",
+    "domain": "producthunt.com",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "producthunt",
+      "ph:diiverge-co"
+    ],
+    "tags": [
+      "producthunt",
+      "product"
+    ]
+  },
+  "f7bb7a0bbb98": {
+    "id": "f7bb7a0bbb98",
+    "name": "GoModel",
+    "url": "https://www.producthunt.com/products/gomodel",
+    "category": "Product",
+    "description": "Open-source OpenRouterDiscussion|",
+    "domain": "producthunt.com",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "producthunt",
+      "ph:gomodel"
+    ],
+    "tags": [
+      "producthunt",
+      "product"
+    ]
+  },
+  "30efa45081a9": {
+    "id": "30efa45081a9",
+    "name": "ayghri/i-have-adhd",
+    "url": "https://github.com/ayghri/i-have-adhd",
+    "category": "Software",
+    "description": "A skill to stop your coding agent from burying the answer. ADHD-friendly output.",
+    "domain": "github.com",
+    "github": "ayghri/i-have-adhd",
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "github_trending",
+      "github:ayghri/i-have-adhd"
+    ],
+    "tags": [
+      "Python",
+      "trending",
+      "github"
+    ]
+  },
+  "21d4e071f8e9": {
+    "id": "21d4e071f8e9",
+    "name": "Tencent/teamai-cli",
+    "url": "https://github.com/Tencent/teamai-cli",
+    "category": "AI/ML",
+    "description": "Make Every Team AI Native",
+    "domain": "github.com",
+    "github": "tencent/teamai-cli",
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "github_trending",
+      "github:Tencent/teamai-cli"
+    ],
+    "tags": [
+      "TypeScript",
+      "trending",
+      "github"
+    ]
+  },
+  "4b3e7219c077": {
+    "id": "4b3e7219c077",
+    "name": "obra/superpowers",
+    "url": "https://github.com/obra/superpowers",
+    "category": "Software",
+    "description": "An agentic skills framework & software development methodology that works.",
+    "domain": "github.com",
+    "github": "obra/superpowers",
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "github_trending",
+      "github:obra/superpowers"
+    ],
+    "tags": [
+      "Shell",
+      "trending",
+      "github"
+    ]
+  },
+  "3d74c33283ee": {
+    "id": "3d74c33283ee",
+    "name": "pascalorg/editor",
+    "url": "https://github.com/pascalorg/editor",
+    "category": "AI/ML",
+    "description": "Open-source 3D architectural editor with a local CLI, MCP tools, and practical workflows for humans and AI agents.",
+    "domain": "github.com",
+    "github": "pascalorg/editor",
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "github_trending",
+      "github:pascalorg/editor"
+    ],
+    "tags": [
+      "TypeScript",
+      "trending",
+      "github"
+    ]
+  },
+  "5cf766bef5b9": {
+    "id": "5cf766bef5b9",
+    "name": "earthtojake/text-to-cad",
+    "url": "https://github.com/earthtojake/text-to-cad",
+    "category": "Software",
+    "description": "A library of agent skills for CAD, CAE and CAM",
+    "domain": "github.com",
+    "github": "earthtojake/text-to-cad",
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "github_trending",
+      "github:earthtojake/text-to-cad"
+    ],
+    "tags": [
+      "Python",
+      "trending",
+      "github"
+    ]
+  },
+  "19722d895a60": {
+    "id": "19722d895a60",
+    "name": "cathrynlavery/diagram-design",
+    "url": "https://github.com/cathrynlavery/diagram-design",
+    "category": "AI/ML",
+    "description": "38 editorial diagram types for Claude Code, Codex, and Pi. Self-contained HTML + SVG. No shadows. No Mermaid slop.",
+    "domain": "github.com",
+    "github": "cathrynlavery/diagram-design",
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "github_trending",
+      "github:cathrynlavery/diagram-design"
+    ],
+    "tags": [
+      "HTML",
+      "trending",
+      "github"
+    ]
+  },
+  "41c4de3927d3": {
+    "id": "41c4de3927d3",
+    "name": "TauricResearch/TradingAgents",
+    "url": "https://github.com/TauricResearch/TradingAgents",
+    "category": "AI/ML",
+    "description": "TradingAgents: Multi-Agents LLM Financial Trading Framework",
+    "domain": "github.com",
+    "github": "tauricresearch/tradingagents",
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "github_trending",
+      "github:TauricResearch/TradingAgents"
+    ],
+    "tags": [
+      "Python",
+      "trending",
+      "github"
+    ]
+  },
+  "fd9506547047": {
+    "id": "fd9506547047",
+    "name": "liquidslr/system-design-notes",
+    "url": "https://github.com/liquidslr/system-design-notes",
+    "category": "Frontend",
+    "description": "Notes of the book System Desgin Interview - An Insider's Guide",
+    "domain": "github.com",
+    "github": "liquidslr/system-design-notes",
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "github_trending",
+      "github:liquidslr/system-design-notes"
+    ],
+    "tags": [
+      "all",
+      "trending",
+      "github"
+    ]
+  },
+  "500b7f8d1aa7": {
+    "id": "500b7f8d1aa7",
+    "name": "openai/plugins",
+    "url": "https://github.com/openai/plugins",
+    "category": "AI/ML",
+    "description": "OpenAI Plugins",
+    "domain": "github.com",
+    "github": "openai/plugins",
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "github_trending",
+      "github:openai/plugins"
+    ],
+    "tags": [
+      "JavaScript",
+      "trending",
+      "github"
+    ]
+  },
+  "7313da588720": {
+    "id": "7313da588720",
+    "name": "freestylefly/awesome-gpt-image-2",
+    "url": "https://github.com/freestylefly/awesome-gpt-image-2",
+    "category": "AI/ML",
+    "description": "Prompt as Code | GPT Image 2 / 2.5 提示词与案例库，530+ 个案例、20+ 套工业级模板与可复用 Skills，新增 2.5 同提示词对比专区，附完整提示词与生成记录，持续更新。",
+    "domain": "github.com",
+    "github": "freestylefly/awesome-gpt-image-2",
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "github_trending",
+      "github:freestylefly/awesome-gpt-image-2"
+    ],
+    "tags": [
+      "JavaScript",
+      "trending",
+      "github"
+    ]
+  },
+  "6a7771efc6d1": {
+    "id": "6a7771efc6d1",
+    "name": "rohitg00/ai-engineering-from-scratch",
+    "url": "https://github.com/rohitg00/ai-engineering-from-scratch",
+    "category": "Frontend",
+    "description": "Learn it. Build it. Ship it for others.",
+    "domain": "github.com",
+    "github": "rohitg00/ai-engineering-from-scratch",
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "github_trending",
+      "github:rohitg00/ai-engineering-from-scratch"
+    ],
+    "tags": [
+      "Python",
+      "trending",
+      "github"
+    ]
+  },
+  "569b76ce41e7": {
+    "id": "569b76ce41e7",
+    "name": "vastsa/PI-Desktop",
+    "url": "https://github.com/vastsa/PI-Desktop",
+    "category": "AI/ML",
+    "description": "Local-first AI coding agent desktop: Electron + Rust host core + pi Agent Harness + user-installable plugins",
+    "domain": "github.com",
+    "github": "vastsa/pi-desktop",
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "github_trending",
+      "github:vastsa/PI-Desktop"
+    ],
+    "tags": [
+      "TypeScript",
+      "trending",
+      "github"
+    ]
+  },
+  "965015d717a8": {
+    "id": "965015d717a8",
+    "name": "affaan-m/ECC",
+    "url": "https://github.com/affaan-m/ECC",
+    "category": "Security",
+    "description": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
+    "domain": "github.com",
+    "github": "affaan-m/ecc",
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "github_trending",
+      "github:affaan-m/ECC"
+    ],
+    "tags": [
+      "JavaScript",
+      "trending",
+      "github"
+    ]
+  },
+  "00108d616652": {
+    "id": "00108d616652",
+    "name": "public-apis/public-apis",
+    "url": "https://github.com/public-apis/public-apis",
+    "category": "Backend",
+    "description": "A collective list of free APIs",
+    "domain": "github.com",
+    "github": "public-apis/public-apis",
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "github_trending",
+      "github:public-apis/public-apis"
+    ],
+    "tags": [
+      "Python",
+      "trending",
+      "github"
+    ]
+  },
+  "0a88e44cd94a": {
+    "id": "0a88e44cd94a",
+    "name": "Alishahryar1/free-claude-code",
+    "url": "https://github.com/Alishahryar1/free-claude-code",
+    "category": "Developer Tools",
+    "description": "Use Claude Code, Codex, Pi, and OpenCode and more for free (1.3B+ free tokens) from your terminal, app, IDE, or phone like OpenClaw (voice supported + ToS friendly)",
+    "domain": "github.com",
+    "github": "alishahryar1/free-claude-code",
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "github_trending",
+      "github:Alishahryar1/free-claude-code"
+    ],
+    "tags": [
+      "Python",
+      "trending",
+      "github"
+    ]
+  },
+  "1965d10df321": {
+    "id": "1965d10df321",
+    "name": "experientiallabs/experiential",
+    "url": "https://github.com/experientiallabs/experiential",
+    "category": "AI/ML",
+    "description": "Experiential is the open source, zero markup gateway for BYOK, self-hosted and 1000+ marketplace models. It learns from your traffic to cut costs, recommend better models, and train a specialized model you own.",
+    "domain": "github.com",
+    "github": "experientiallabs/experiential",
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "github_trending",
+      "github:experientiallabs/experiential"
+    ],
+    "tags": [
+      "Python",
+      "trending",
+      "github"
+    ]
+  },
+  "b8d5e531e276": {
+    "id": "b8d5e531e276",
+    "name": "smicallef/spiderfoot",
+    "url": "https://github.com/smicallef/spiderfoot",
+    "category": "Software",
+    "description": "SpiderFoot automates OSINT for threat intelligence and mapping your attack surface.",
+    "domain": "github.com",
+    "github": "smicallef/spiderfoot",
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "github_trending",
+      "github:smicallef/spiderfoot"
+    ],
+    "tags": [
+      "Python",
+      "trending",
+      "github"
+    ]
+  },
+  "6c674081ab39": {
+    "id": "6c674081ab39",
+    "name": "openai/skills",
+    "url": "https://github.com/openai/skills",
+    "category": "Software",
+    "description": "Skills Catalog for Codex",
+    "domain": "github.com",
+    "github": "openai/skills",
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "github_trending",
+      "github:openai/skills"
+    ],
+    "tags": [
+      "Python",
+      "trending",
+      "github"
+    ]
+  },
+  "1962b571a4d6": {
+    "id": "1962b571a4d6",
+    "name": "browser-use/browser-use",
+    "url": "https://github.com/browser-use/browser-use",
+    "category": "Software",
+    "description": "Agents that use the browser.",
+    "domain": "github.com",
+    "github": "browser-use/browser-use",
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "github_trending",
+      "github:browser-use/browser-use"
+    ],
+    "tags": [
+      "Python",
+      "trending",
+      "github"
+    ]
+  },
+  "a653f3181fb8": {
+    "id": "a653f3181fb8",
+    "name": "OpenDCAI/GameFactory-3A",
+    "url": "https://github.com/OpenDCAI/GameFactory-3A",
+    "category": "Software",
+    "description": "A comprehensive open-source 3A game-generation skill and asset framework.",
+    "domain": "github.com",
+    "github": "opendcai/gamefactory-3a",
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "github_trending",
+      "github:OpenDCAI/GameFactory-3A"
+    ],
+    "tags": [
+      "Python",
+      "trending",
+      "github"
+    ]
+  },
+  "737ae0e500b9": {
+    "id": "737ae0e500b9",
+    "name": "github/spec-kit",
+    "url": "https://github.com/github/spec-kit",
+    "category": "Software",
+    "description": "💫 Toolkit to help you get started with Spec-Driven Development",
+    "domain": "github.com",
+    "github": "github/spec-kit",
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "github_trending",
+      "github:github/spec-kit"
+    ],
+    "tags": [
+      "Python",
+      "trending",
+      "github"
+    ]
+  },
+  "346ba30d1163": {
+    "id": "346ba30d1163",
+    "name": "PostHog/posthog",
+    "url": "https://github.com/PostHog/posthog",
+    "category": "AI/ML",
+    "description": "🦔 PostHog is the leading platform for building self-driving products. Our developer tools – AI observability, analytics, session replay, flags, experiments, error tracking, logs, and more – capture all the context agents need to diagnose problems, uncover opportunities, and ship fixes. Steer it all from Slack, web, desktop, or the MCP.",
+    "domain": "github.com",
+    "github": "posthog/posthog",
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "github_trending",
+      "github:PostHog/posthog"
+    ],
+    "tags": [
+      "Python",
+      "trending",
+      "github"
+    ]
+  },
+  "b48c48c1a548": {
+    "id": "b48c48c1a548",
+    "name": "anbeime/skill",
+    "url": "https://github.com/anbeime/skill",
+    "category": "AI/ML",
+    "description": "收录最全、更新最快的技能Skills商店：精选原创技能包（涵盖文档处理、内容创作、编程开发、机器学习、自动化工作流），全部打包好可直接安装使用！同时自动抓取GitHub上万个Skills项目，按分类、更新时间、Star数量整理。The most comprehensive and frequently updated AI Agent skill library, featuring curated skill packs across document processing, content creation, programming, machine learning, automated workflows, and many more domains.",
+    "domain": "github.com",
+    "github": "anbeime/skill",
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "github_trending",
+      "github:anbeime/skill"
+    ],
+    "tags": [
+      "Python",
+      "trending",
+      "github"
+    ]
+  },
+  "3fafe8e5eab6": {
+    "id": "3fafe8e5eab6",
+    "name": "The-Swarm-Corporation/AutoHedge",
+    "url": "https://github.com/The-Swarm-Corporation/AutoHedge",
+    "category": "AI/ML",
+    "description": "Build your autonomous hedge fund in minutes. AutoHedge harnesses the power of swarm intelligence and AI agents to automate market analysis, risk management, and trade execution.",
+    "domain": "github.com",
+    "github": "the-swarm-corporation/autohedge",
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "github_trending",
+      "github:The-Swarm-Corporation/AutoHedge"
+    ],
+    "tags": [
+      "Python",
+      "trending",
+      "github"
+    ]
+  },
+  "560ca7dd51c4": {
+    "id": "560ca7dd51c4",
+    "name": "Sumanth077/Hands-On-AI-Engineering",
+    "url": "https://github.com/Sumanth077/Hands-On-AI-Engineering",
+    "category": "AI/ML",
+    "description": "A curated collection of practical AI projects implementing OCR systems, RAG, AI agents, and other AI use cases.",
+    "domain": "github.com",
+    "github": "sumanth077/hands-on-ai-engineering",
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "github_trending",
+      "github:Sumanth077/Hands-On-AI-Engineering"
+    ],
+    "tags": [
+      "Python",
+      "trending",
+      "github"
+    ]
+  },
+  "f76c8d17077f": {
+    "id": "f76c8d17077f",
+    "name": "decolua/9router",
+    "url": "https://github.com/decolua/9router",
+    "category": "AI/ML",
+    "description": "Unlimited FREE AI coding. Connect Claude Code, Codex, Cursor, Cline, Copilot, Antigravity to FREE Claude/GPT/Gemini via 40+ providers. Auto-fallback, RTK -40% tokens, never hit limits.",
+    "domain": "github.com",
+    "github": "decolua/9router",
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "github_trending",
+      "github:decolua/9router"
+    ],
+    "tags": [
+      "JavaScript",
+      "trending",
+      "github"
+    ]
+  },
+  "d0c223f09bae": {
+    "id": "d0c223f09bae",
+    "name": "asgeirtj/system_prompts_leaks",
+    "url": "https://github.com/asgeirtj/system_prompts_leaks",
+    "category": "AI/ML",
+    "description": "Extracted system prompts from Anthropic - Claude Fable 5.1, Opus 5, Claude Design, Claude Code. OpenAI - ChatGPT GPT-6-Astra, Codex. Google - Gemini 3.8 Flash, 3.1 Pro, Antigravity. xAI - Grok, Grok Bot, Cursor, Kimi and more! Updated regularly.",
+    "domain": "github.com",
+    "github": "asgeirtj/system_prompts_leaks",
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "github_trending",
+      "github:asgeirtj/system_prompts_leaks"
+    ],
+    "tags": [
+      "JavaScript",
+      "trending",
+      "github"
+    ]
+  },
+  "43571f30ad5a": {
+    "id": "43571f30ad5a",
+    "name": "jo-inc/camofox-browser",
+    "url": "https://github.com/jo-inc/camofox-browser",
+    "category": "AI/ML",
+    "description": "Stealth headless browser for AI agents — bypass Cloudflare, bot detection, and anti-scraping. Drop-in Puppeteer/Playwright replacement.",
+    "domain": "github.com",
+    "github": "jo-inc/camofox-browser",
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "github_trending",
+      "github:jo-inc/camofox-browser"
+    ],
+    "tags": [
+      "JavaScript",
+      "trending",
+      "github"
+    ]
+  },
+  "3649f52b796b": {
+    "id": "3649f52b796b",
+    "name": "viarotel-org/escrcpy",
+    "url": "https://github.com/viarotel-org/escrcpy",
+    "category": "Software",
+    "description": "📱 Display and control your Android device graphically with scrcpy.",
+    "domain": "github.com",
+    "github": "viarotel-org/escrcpy",
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "github_trending",
+      "github:viarotel-org/escrcpy"
+    ],
+    "tags": [
+      "JavaScript",
+      "trending",
+      "github"
+    ]
+  },
+  "e3b521ec227e": {
+    "id": "e3b521ec227e",
+    "name": "coreyhaines31/marketingskills",
+    "url": "https://github.com/coreyhaines31/marketingskills",
+    "category": "AI/ML",
+    "description": "Marketing skills for Claude Code and AI agents. CRO, copywriting, SEO, analytics, and growth engineering.",
+    "domain": "github.com",
+    "github": "coreyhaines31/marketingskills",
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "github_trending",
+      "github:coreyhaines31/marketingskills"
+    ],
+    "tags": [
+      "JavaScript",
+      "trending",
+      "github"
+    ]
+  },
+  "5257f06b2d37": {
+    "id": "5257f06b2d37",
+    "name": "is-a-dev/register",
+    "url": "https://github.com/is-a-dev/register",
+    "category": "AI/ML",
+    "description": "Grab your own sweet-looking '.is-a.dev' subdomain.",
+    "domain": "github.com",
+    "github": "is-a-dev/register",
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "github_trending",
+      "github:is-a-dev/register"
+    ],
+    "tags": [
+      "JavaScript",
+      "trending",
+      "github"
+    ]
+  },
+  "b5e53fed5171": {
+    "id": "b5e53fed5171",
+    "name": "open-gsd/gsd-core",
+    "url": "https://github.com/open-gsd/gsd-core",
+    "category": "Software",
+    "description": "Git. Ship. Done - Core",
+    "domain": "github.com",
+    "github": "open-gsd/gsd-core",
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "github_trending",
+      "github:open-gsd/gsd-core"
+    ],
+    "tags": [
+      "JavaScript",
+      "trending",
+      "github"
+    ]
+  },
+  "48f6cd79412e": {
+    "id": "48f6cd79412e",
+    "name": "WhatDreamsCost/WhatDreamsCost-ComfyUI",
+    "url": "https://github.com/WhatDreamsCost/WhatDreamsCost-ComfyUI",
+    "category": "Frontend",
+    "description": "LTX Director and a variety of other custom ComfyUI nodes and workflows",
+    "domain": "github.com",
+    "github": "whatdreamscost/whatdreamscost-comfyui",
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "github_trending",
+      "github:WhatDreamsCost/WhatDreamsCost-ComfyUI"
+    ],
+    "tags": [
+      "JavaScript",
+      "trending",
+      "github"
+    ]
+  },
+  "17b3c96f7867": {
+    "id": "17b3c96f7867",
+    "name": "byoungd/up",
+    "url": "https://github.com/byoungd/up",
+    "category": "AI/ML",
+    "description": "An advanced guide which might benefit you a lot 🎉 . 韩先凯的人生进阶指南 人生进阶指南 离谱的人生 人生进阶 AI学习 AI指南 韩先凯的AI学习指南 英语学习指南/英语学习教程/英语学习/学英语",
+    "domain": "github.com",
+    "github": "byoungd/up",
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "github_trending",
+      "github:byoungd/up"
+    ],
+    "tags": [
+      "JavaScript",
+      "trending",
+      "github"
+    ]
+  },
+  "7ffc29be6215": {
+    "id": "7ffc29be6215",
+    "name": "UseInterstellar/Interstellar",
+    "url": "https://github.com/UseInterstellar/Interstellar",
+    "category": "Software",
+    "description": "One of the most popular modern web proxies with blazing fast speeds and a variety of games.",
+    "domain": "github.com",
+    "github": "useinterstellar/interstellar",
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "github_trending",
+      "github:UseInterstellar/Interstellar"
+    ],
+    "tags": [
+      "JavaScript",
+      "trending",
+      "github"
+    ]
+  },
+  "d92317ec2e72": {
+    "id": "d92317ec2e72",
+    "name": "jamiepine/voicebox",
+    "url": "https://github.com/jamiepine/voicebox",
+    "category": "AI/ML",
+    "description": "The open-source AI voice studio. Clone, dictate, create.",
+    "domain": "github.com",
+    "github": "jamiepine/voicebox",
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "github_trending",
+      "github:jamiepine/voicebox"
+    ],
+    "tags": [
+      "TypeScript",
+      "trending",
+      "github"
+    ]
+  },
+  "9b990886adc2": {
+    "id": "9b990886adc2",
+    "name": "heygen-com/hyperframes",
+    "url": "https://github.com/heygen-com/hyperframes",
+    "category": "AI/ML",
+    "description": "Write HTML. Render video. Built for agents.",
+    "domain": "github.com",
+    "github": "heygen-com/hyperframes",
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "github_trending",
+      "github:heygen-com/hyperframes"
+    ],
+    "tags": [
+      "TypeScript",
+      "trending",
+      "github"
+    ]
+  },
+  "3841cd8bb2b1": {
+    "id": "3841cd8bb2b1",
+    "name": "OpenHands/OpenHands",
+    "url": "https://github.com/OpenHands/OpenHands",
+    "category": "AI/ML",
+    "description": "🙌 OpenHands: AI-Driven Development",
+    "domain": "github.com",
+    "github": "openhands/openhands",
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "github_trending",
+      "github:OpenHands/OpenHands"
+    ],
+    "tags": [
+      "TypeScript",
+      "trending",
+      "github"
+    ]
+  },
+  "e86cfe6d0480": {
+    "id": "e86cfe6d0480",
+    "name": "ruvnet/ruflo",
+    "url": "https://github.com/ruvnet/ruflo",
+    "category": "AI/ML",
+    "description": "🌊 The original agent meta-harness. Deploy intelligent multi-player swarms, coordinate autonomous workflows, and build conversational AI systems. Features adaptive memory, self-learning intelligence, RAG integration, and native Claude Code / Codex / Hermes and many more Integrated",
+    "domain": "github.com",
+    "github": "ruvnet/ruflo",
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "github_trending",
+      "github:ruvnet/ruflo"
+    ],
+    "tags": [
+      "TypeScript",
+      "trending",
+      "github"
+    ]
+  },
+  "1bc717dd66ca": {
+    "id": "1bc717dd66ca",
+    "name": "PrimeIntellect-ai/prime-agent",
+    "url": "https://github.com/PrimeIntellect-ai/prime-agent",
+    "category": "Automation",
+    "description": "A self-improving RLM agent for coding workflows and long-running autonomous tasks.",
+    "domain": "github.com",
+    "github": "primeintellect-ai/prime-agent",
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "github_trending",
+      "github:PrimeIntellect-ai/prime-agent"
+    ],
+    "tags": [
+      "TypeScript",
+      "trending",
+      "github"
+    ]
+  },
+  "5eb110a7a21b": {
+    "id": "5eb110a7a21b",
+    "name": "solidjs/solid",
+    "url": "https://github.com/solidjs/solid",
+    "category": "Frontend",
+    "description": "A declarative, efficient, and flexible JavaScript library for building user interfaces.",
+    "domain": "github.com",
+    "github": "solidjs/solid",
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "github_trending",
+      "github:solidjs/solid"
+    ],
+    "tags": [
+      "TypeScript",
+      "trending",
+      "github"
+    ]
+  },
+  "4d78ac6557a4": {
+    "id": "4d78ac6557a4",
+    "name": "vercel-labs/skills",
+    "url": "https://github.com/vercel-labs/skills",
+    "category": "Software",
+    "description": "The open agent skills tool - npx skills",
+    "domain": "github.com",
+    "github": "vercel-labs/skills",
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "github_trending",
+      "github:vercel-labs/skills"
+    ],
+    "tags": [
+      "TypeScript",
+      "trending",
+      "github"
+    ]
+  },
+  "badfc4a3df74": {
+    "id": "badfc4a3df74",
+    "name": "supermemoryai/supermemory",
+    "url": "https://github.com/supermemoryai/supermemory",
+    "category": "AI/ML",
+    "description": "Memory and context engine + app that is extremely fast, scalable, and can be run fully locally. The Memory API for the AI era.",
+    "domain": "github.com",
+    "github": "supermemoryai/supermemory",
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "github_trending",
+      "github:supermemoryai/supermemory"
+    ],
+    "tags": [
+      "TypeScript",
+      "trending",
+      "github"
+    ]
+  },
+  "fd6bdd3515d8": {
+    "id": "fd6bdd3515d8",
+    "name": "getopenscreen/openscreen",
+    "url": "https://github.com/getopenscreen/openscreen",
+    "category": "AI/ML",
+    "description": "Record your screen, ship a demo. Free and open-source, GPU-accelerated, no watermarks, no subscriptions. Windows, macOS, Linux. Actively maintained.",
+    "domain": "github.com",
+    "github": "getopenscreen/openscreen",
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "github_trending",
+      "github:getopenscreen/openscreen"
+    ],
+    "tags": [
+      "TypeScript",
+      "trending",
+      "github"
+    ]
+  },
+  "d227d31197a5": {
+    "id": "d227d31197a5",
+    "name": "actions/checkout",
+    "url": "https://github.com/actions/checkout",
+    "category": "Software",
+    "description": "Action for checking out a repo",
+    "domain": "github.com",
+    "github": "actions/checkout",
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "github_trending",
+      "github:actions/checkout"
+    ],
+    "tags": [
+      "TypeScript",
+      "trending",
+      "github"
+    ]
+  },
+  "5350c3e93c28": {
+    "id": "5350c3e93c28",
+    "name": "apache/maka",
+    "url": "https://github.com/apache/maka",
+    "category": "Software",
+    "description": "Apache Maka (Incubating) is a high-performance agent workspace that keeps a complete record of everything it did.",
+    "domain": "github.com",
+    "github": "apache/maka",
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "github_trending",
+      "github:apache/maka"
+    ],
+    "tags": [
+      "TypeScript",
+      "trending",
+      "github"
+    ]
+  },
+  "1b9183c18c78": {
+    "id": "1b9183c18c78",
+    "name": "mksglu/context-mode",
+    "url": "https://github.com/mksglu/context-mode",
+    "category": "AI/ML",
+    "description": "Context window optimization for AI coding agents. Sandboxes tool output (98% reduction), persists session memory, and enforces routing across 17 platforms via MCP + hooks.",
+    "domain": "github.com",
+    "github": "mksglu/context-mode",
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "github_trending",
+      "github:mksglu/context-mode"
+    ],
+    "tags": [
+      "TypeScript",
+      "trending",
+      "github"
+    ]
+  },
+  "ac820427bd40": {
+    "id": "ac820427bd40",
+    "name": "MoonTechLab/LunaTV",
+    "url": "https://github.com/MoonTechLab/LunaTV",
+    "category": "Software",
+    "description": "本项目采用 CC BY-NC-SA 协议，禁止任何商业化行为，任何衍生项目必须保留本项目地址并以相同协议开源",
+    "domain": "github.com",
+    "github": "moontechlab/lunatv",
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "github_trending",
+      "github:MoonTechLab/LunaTV"
+    ],
+    "tags": [
+      "TypeScript",
+      "trending",
+      "github"
+    ]
+  },
+  "f7c26965da1a": {
+    "id": "f7c26965da1a",
+    "name": "maotoumao/MusicFree",
+    "url": "https://github.com/maotoumao/MusicFree",
+    "category": "Software",
+    "description": "插件化、定制化、无广告的免费音乐播放器",
+    "domain": "github.com",
+    "github": "maotoumao/musicfree",
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "github_trending",
+      "github:maotoumao/MusicFree"
+    ],
+    "tags": [
+      "TypeScript",
+      "trending",
+      "github"
+    ]
+  },
+  "95a2b0805a4c": {
+    "id": "95a2b0805a4c",
+    "name": "HakanSeven12/OpenCADStudio",
+    "url": "https://github.com/HakanSeven12/OpenCADStudio",
+    "category": "Frontend",
+    "description": "A CAD application built with Rust — 2D/3D drawing, DWG/DXF support, and GPU-accelerated rendering",
+    "domain": "github.com",
+    "github": "hakanseven12/opencadstudio",
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "github_trending",
+      "github:HakanSeven12/OpenCADStudio"
+    ],
+    "tags": [
+      "Rust",
+      "trending",
+      "github"
+    ]
+  },
+  "e006c854ea5a": {
+    "id": "e006c854ea5a",
+    "name": "google/magika",
+    "url": "https://github.com/google/magika",
+    "category": "AI/ML",
+    "description": "Fast and accurate AI powered file content types detection",
+    "domain": "github.com",
+    "github": "google/magika",
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "github_trending",
+      "github:google/magika"
+    ],
+    "tags": [
+      "Rust",
+      "trending",
+      "github"
+    ]
+  },
+  "abfb7c2b1594": {
+    "id": "abfb7c2b1594",
+    "name": "yyjeqhc/webcodex",
+    "url": "https://github.com/yyjeqhc/webcodex",
+    "category": "AI/ML",
+    "description": "Give cloud AI agents a real development environment on your own machines.",
+    "domain": "github.com",
+    "github": "yyjeqhc/webcodex",
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "github_trending",
+      "github:yyjeqhc/webcodex"
+    ],
+    "tags": [
+      "Rust",
+      "trending",
+      "github"
+    ]
+  },
+  "2777630ef6f4": {
+    "id": "2777630ef6f4",
+    "name": "leookun/cursor-byok",
+    "url": "https://github.com/leookun/cursor-byok",
+    "category": "Backend",
+    "description": "cursor-byok is a local implementation of Cursor's backend",
+    "domain": "github.com",
+    "github": "leookun/cursor-byok",
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "github_trending",
+      "github:leookun/cursor-byok"
+    ],
+    "tags": [
+      "Rust",
+      "trending",
+      "github"
+    ]
+  },
+  "cae003bf9c20": {
+    "id": "cae003bf9c20",
+    "name": "Automattic/harper",
+    "url": "https://github.com/Automattic/harper",
+    "category": "Software",
+    "description": "Offline, privacy-first grammar checker. Fast, open-source, Rust-powered",
+    "domain": "github.com",
+    "github": "automattic/harper",
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "github_trending",
+      "github:Automattic/harper"
+    ],
+    "tags": [
+      "Rust",
+      "trending",
+      "github"
+    ]
+  },
+  "d6420d7e91b1": {
+    "id": "d6420d7e91b1",
+    "name": "rtk-ai/rtk",
+    "url": "https://github.com/rtk-ai/rtk",
+    "category": "AI/ML",
+    "description": "CLI proxy that reduces LLM token consumption by 60-90% on common dev commands. Single Rust binary, zero dependencies",
+    "domain": "github.com",
+    "github": "rtk-ai/rtk",
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "github_trending",
+      "github:rtk-ai/rtk"
+    ],
+    "tags": [
+      "Rust",
+      "trending",
+      "github"
+    ]
+  },
+  "97abebb77a42": {
+    "id": "97abebb77a42",
+    "name": "waditu/czsc",
+    "url": "https://github.com/waditu/czsc",
+    "category": "Software",
+    "description": "缠中说禅技术分析工具；缠论；股票；期货；Quant；量化交易",
+    "domain": "github.com",
+    "github": "waditu/czsc",
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "github_trending",
+      "github:waditu/czsc"
+    ],
+    "tags": [
+      "Rust",
+      "trending",
+      "github"
+    ]
+  },
+  "b90dde0a0fd8": {
+    "id": "b90dde0a0fd8",
+    "name": "feigeCode/navop",
+    "url": "https://github.com/feigeCode/navop",
+    "category": "AI/ML",
+    "description": "A native, all-in-one workspace for databases, SSH, SFTP, terminals, remote desktop, monitoring, and AI.",
+    "domain": "github.com",
+    "github": "feigecode/navop",
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "github_trending",
+      "github:feigeCode/navop"
+    ],
+    "tags": [
+      "Rust",
+      "trending",
+      "github"
+    ]
+  },
+  "421422823e4e": {
+    "id": "421422823e4e",
+    "name": "ruvnet/RuView",
+    "url": "https://github.com/ruvnet/RuView",
+    "category": "Software",
+    "description": "π RuView turns commodity WiFi signals into real-time spatial intelligence, vital sign monitoring, and presence detection — all without a single pixel of video.",
+    "domain": "github.com",
+    "github": "ruvnet/ruview",
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "github_trending",
+      "github:ruvnet/RuView"
+    ],
+    "tags": [
+      "Rust",
+      "trending",
+      "github"
+    ]
+  },
+  "144dd09d9b0a": {
+    "id": "144dd09d9b0a",
+    "name": "dmtrKovalenko/fff",
+    "url": "https://github.com/dmtrKovalenko/fff",
+    "category": "AI/ML",
+    "description": "The fastest and the most accurate file search SDK for AI agents, Neovim, Rust, C, Python, Bun and NodeJS",
+    "domain": "github.com",
+    "github": "dmtrkovalenko/fff",
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "github_trending",
+      "github:dmtrKovalenko/fff"
+    ],
+    "tags": [
+      "Rust",
+      "trending",
+      "github"
+    ]
+  },
+  "d8add5d95096": {
+    "id": "d8add5d95096",
+    "name": "jlcodes99/cockpit-tools",
+    "url": "https://github.com/jlcodes99/cockpit-tools",
+    "category": "AI/ML",
+    "description": "🚀 通用 AI IDE 账号管理工具：支持 Antigravity / Codex / GitHub Copilot / Windsurf / Kiro / Cursor / Gemini-cli / CodeBuddy，多账号切换、配额监控、自动唤醒与多开实例管理。 🚀 Universal AI IDE account manager for Antigravity / Codex / GitHub Copilot / Windsurf / Kiro / Cursor / Gemini-cli / CodeBuddy, with multi-account switching, quota monitoring, wake-up automation, and multi-insta",
+    "domain": "github.com",
+    "github": "jlcodes99/cockpit-tools",
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "github_trending",
+      "github:jlcodes99/cockpit-tools"
+    ],
+    "tags": [
+      "Rust",
+      "trending",
+      "github"
+    ]
+  },
+  "2e1126dd80ba": {
+    "id": "2e1126dd80ba",
+    "name": "farion1231/cc-switch",
+    "url": "https://github.com/farion1231/cc-switch",
+    "category": "Frontend",
+    "description": "A cross-platform desktop All-in-One assistant for Claude Code, Codex, OpenCode, OpenClaw, Grok Build & Hermes Agent. Only official website: ccswitch.io",
+    "domain": "github.com",
+    "github": "farion1231/cc-switch",
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "github_trending",
+      "github:farion1231/cc-switch"
+    ],
+    "tags": [
+      "Rust",
+      "trending",
+      "github"
+    ]
+  },
+  "8ce0e09d556b": {
+    "id": "8ce0e09d556b",
+    "name": "mixelpixx/Konnect",
+    "url": "https://github.com/mixelpixx/Konnect",
+    "category": "AI/ML",
+    "description": "AI-assisted PCB design for KiCAD 10. Native KiCAD plugin — a single Rust binary exposing 217 schematic, layout, routing, placement, design-review, and manufacturing tools to Claude, or the LLM of your choosing",
+    "domain": "github.com",
+    "github": "mixelpixx/konnect",
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "github_trending",
+      "github:mixelpixx/Konnect"
+    ],
+    "tags": [
+      "Rust",
+      "trending",
+      "github"
+    ]
+  },
+  "30ccff6fbf35": {
+    "id": "30ccff6fbf35",
+    "name": "t8y2/dbx",
+    "url": "https://github.com/t8y2/dbx",
+    "category": "AI/ML",
+    "description": "20 MB lightweight cross-platform database client for 90+ databases, including MySQL, PostgreSQL, SQLite, Redis, MongoDB, DuckDB, SQL Server, and Dameng. Built-in AI, MCP Server, CLI, desktop and Docker. | 轻量级跨平台数据库管理工具，支持 MySQL、PostgreSQL、SQLite、Redis、MongoDB、达梦等 90+ 数据库，提供桌面端、Docker、CLI、内置 AI 助手和 MCP Server。",
+    "domain": "github.com",
+    "github": "t8y2/dbx",
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "github_trending",
+      "github:t8y2/dbx"
+    ],
+    "tags": [
+      "Rust",
+      "trending",
+      "github"
+    ]
+  },
+  "07ce273a7788": {
+    "id": "07ce273a7788",
+    "name": "vercel-labs/agent-browser",
+    "url": "https://github.com/vercel-labs/agent-browser",
+    "category": "AI/ML",
+    "description": "Browser automation CLI for AI agents",
+    "domain": "github.com",
+    "github": "vercel-labs/agent-browser",
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "github_trending",
+      "github:vercel-labs/agent-browser"
+    ],
+    "tags": [
+      "Rust",
+      "trending",
+      "github"
+    ]
+  },
+  "1ea1aa46eee1": {
+    "id": "1ea1aa46eee1",
+    "name": "polarsquad/krops",
+    "url": "https://github.com/polarsquad/krops",
+    "category": "Software",
+    "description": "Kubernetes-Native Resource Operations",
+    "domain": "github.com",
+    "github": "polarsquad/krops",
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "github_trending",
+      "github:polarsquad/krops"
+    ],
+    "tags": [
+      "Rust",
+      "trending",
+      "github"
+    ]
+  },
+  "02f5de6b8858": {
+    "id": "02f5de6b8858",
+    "name": "memvid/memvid",
+    "url": "https://github.com/memvid/memvid",
+    "category": "AI/ML",
+    "description": "Memory layer for AI Agents. Replace complex RAG pipelines with a serverless, single-file memory layer. Give your agents instant retrieval and long-term memory.",
+    "domain": "github.com",
+    "github": "memvid/memvid",
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "github_trending",
+      "github:memvid/memvid"
+    ],
+    "tags": [
+      "Rust",
+      "trending",
+      "github"
+    ]
+  },
+  "e7fec7995661": {
+    "id": "e7fec7995661",
+    "name": "huggingface/funes",
+    "url": "https://github.com/huggingface/funes",
+    "category": "Software",
+    "description": "Durable, searchable memory of your past agent sessions.",
+    "domain": "github.com",
+    "github": "huggingface/funes",
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "github_trending",
+      "github:huggingface/funes"
+    ],
+    "tags": [
+      "Rust",
+      "trending",
+      "github"
+    ]
+  },
+  "d22d381f98a5": {
+    "id": "d22d381f98a5",
+    "name": "visioncortex/vtracer",
+    "url": "https://github.com/visioncortex/vtracer",
+    "category": "Software",
+    "description": "Raster to Vector Graphics Converter",
+    "domain": "github.com",
+    "github": "visioncortex/vtracer",
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "github_trending",
+      "github:visioncortex/vtracer"
+    ],
+    "tags": [
+      "Rust",
+      "trending",
+      "github"
+    ]
+  },
+  "3656d7900551": {
+    "id": "3656d7900551",
+    "name": "ajeetdsouza/zoxide",
+    "url": "https://github.com/ajeetdsouza/zoxide",
+    "category": "Developer Tools",
+    "description": "A smarter cd command. Supports all major shells.",
+    "domain": "github.com",
+    "github": "ajeetdsouza/zoxide",
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "github_trending",
+      "github:ajeetdsouza/zoxide"
+    ],
+    "tags": [
+      "Rust",
+      "trending",
+      "github"
+    ]
+  },
+  "41aa68451e19": {
+    "id": "41aa68451e19",
+    "name": "akitaonrails/ai-memory",
+    "url": "https://github.com/akitaonrails/ai-memory",
+    "category": "Developer Tools",
+    "description": "Solution for long term memory for agent coding CLIs and to facilitate handoff between different agent vendors",
+    "domain": "github.com",
+    "github": "akitaonrails/ai-memory",
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "github_trending",
+      "github:akitaonrails/ai-memory"
+    ],
+    "tags": [
+      "Rust",
+      "trending",
+      "github"
+    ]
+  },
+  "714cbe1edc67": {
+    "id": "714cbe1edc67",
+    "name": "superplanehq/superplane",
+    "url": "https://github.com/superplanehq/superplane",
+    "category": "Software",
+    "description": "Open source factory for one-shot engineering",
+    "domain": "github.com",
+    "github": "superplanehq/superplane",
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "github_trending",
+      "github:superplanehq/superplane"
+    ],
+    "tags": [
+      "Go",
+      "trending",
+      "github"
+    ]
+  },
+  "34ae33d0c7bf": {
+    "id": "34ae33d0c7bf",
+    "name": "XTLS/Xray-core",
+    "url": "https://github.com/XTLS/Xray-core",
+    "category": "Software",
+    "description": "Xray, Penetrates Everything. Also the best v2ray-core. Where the magic happens. An open platform for various uses.",
+    "domain": "github.com",
+    "github": "xtls/xray-core",
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "github_trending",
+      "github:XTLS/Xray-core"
+    ],
+    "tags": [
+      "Go",
+      "trending",
+      "github"
+    ]
+  },
+  "e4ef6a2768f5": {
+    "id": "e4ef6a2768f5",
+    "name": "authelia/authelia",
+    "url": "https://github.com/authelia/authelia",
+    "category": "Security",
+    "description": "The Single Sign-On Multi-Factor portal for web apps. OpenID Certified™ and Post-Quantum Cryptography Ready.",
+    "domain": "github.com",
+    "github": "authelia/authelia",
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "github_trending",
+      "github:authelia/authelia"
+    ],
+    "tags": [
+      "Go",
+      "trending",
+      "github"
+    ]
+  },
+  "9ff42a2c614b": {
+    "id": "9ff42a2c614b",
+    "name": "Wei-Shaw/sub2api",
+    "url": "https://github.com/Wei-Shaw/sub2api",
+    "category": "AI/ML",
+    "description": "Sub2API 一站式开源中转服务，让 Claude、Openai 、Gemini、Grok订阅统一接入，支持拼车共享，更高效分摊成本，原生工具无缝使用。",
+    "domain": "github.com",
+    "github": "wei-shaw/sub2api",
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "github_trending",
+      "github:Wei-Shaw/sub2api"
+    ],
+    "tags": [
+      "Go",
+      "trending",
+      "github"
+    ]
+  },
+  "34aeff9cd48a": {
+    "id": "34aeff9cd48a",
+    "name": "go-resty/resty",
+    "url": "https://github.com/go-resty/resty",
+    "category": "Developer Tools",
+    "description": "Simple HTTP, REST, and SSE client library for Go",
+    "domain": "github.com",
+    "github": "go-resty/resty",
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "github_trending",
+      "github:go-resty/resty"
+    ],
+    "tags": [
+      "Go",
+      "trending",
+      "github"
+    ]
+  },
+  "c51e2e49d034": {
+    "id": "c51e2e49d034",
+    "name": "alibaba/open-code-review",
+    "url": "https://github.com/alibaba/open-code-review",
+    "category": "AI/ML",
+    "description": "Fast, efficient, battle-tested at Alibaba's scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, precise line-level comments, built-in multi-language ruleset (NPE, thread-safety, XSS, SQL injection), OpenAI & Anthropic compatible.",
+    "domain": "github.com",
+    "github": "alibaba/open-code-review",
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "github_trending",
+      "github:alibaba/open-code-review"
+    ],
+    "tags": [
+      "Go",
+      "trending",
+      "github"
+    ]
+  },
+  "6f7a5ae48140": {
+    "id": "6f7a5ae48140",
+    "name": "larksuite/cli",
+    "url": "https://github.com/larksuite/cli",
+    "category": "AI/ML",
+    "description": "The official Lark/飞书 CLI tool, maintained by the larksuite team — built for humans and AI Agents. Covers core business domains including Messenger, Docs, Base, Sheets, Calendar, Mail, Tasks, Meetings, and more, with 200+ commands and 20+ AI Agent Skills.",
+    "domain": "github.com",
+    "github": "larksuite/cli",
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "github_trending",
+      "github:larksuite/cli"
+    ],
+    "tags": [
+      "Go",
+      "trending",
+      "github"
+    ]
+  },
+  "69cc2de2d829": {
+    "id": "69cc2de2d829",
+    "name": "Project-HAMi/HAMi",
+    "url": "https://github.com/Project-HAMi/HAMi",
+    "category": "Software",
+    "description": "Heterogeneous GPU Sharing on Kubernetes",
+    "domain": "github.com",
+    "github": "project-hami/hami",
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "github_trending",
+      "github:Project-HAMi/HAMi"
+    ],
+    "tags": [
+      "Go",
+      "trending",
+      "github"
+    ]
+  },
+  "3c030106cb24": {
+    "id": "3c030106cb24",
+    "name": "infiniflow/ragflow",
+    "url": "https://github.com/infiniflow/ragflow",
+    "category": "AI/ML",
+    "description": "RAGFlow is a leading open-source Retrieval-Augmented Generation (RAG) engine that fuses cutting-edge RAG with Agent capabilities to create a superior context layer for LLMs",
+    "domain": "github.com",
+    "github": "infiniflow/ragflow",
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "github_trending",
+      "github:infiniflow/ragflow"
+    ],
+    "tags": [
+      "Go",
+      "trending",
+      "github"
+    ]
+  },
+  "43ea5aa7eb66": {
+    "id": "43ea5aa7eb66",
+    "name": "googleapis/mcp-toolbox",
+    "url": "https://github.com/googleapis/mcp-toolbox",
+    "category": "Backend",
+    "description": "MCP Toolbox for Databases is an open source MCP server for databases.",
+    "domain": "github.com",
+    "github": "googleapis/mcp-toolbox",
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "github_trending",
+      "github:googleapis/mcp-toolbox"
+    ],
+    "tags": [
+      "Go",
+      "trending",
+      "github"
+    ]
+  },
+  "cb08b1faedc2": {
+    "id": "cb08b1faedc2",
+    "name": "chaitin/SafeLine",
+    "url": "https://github.com/chaitin/SafeLine",
+    "category": "Software",
+    "description": "SafeLine is a self-hosted WAF(Web Application Firewall) / reverse proxy to protect your web apps from attacks and exploits.",
+    "domain": "github.com",
+    "github": "chaitin/safeline",
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "github_trending",
+      "github:chaitin/SafeLine"
+    ],
+    "tags": [
+      "Go",
+      "trending",
+      "github"
+    ]
+  },
+  "f58c9e6856c9": {
+    "id": "f58c9e6856c9",
+    "name": "prometheus/prometheus",
+    "url": "https://github.com/prometheus/prometheus",
+    "category": "Database",
+    "description": "The Prometheus monitoring system and time series database.",
+    "domain": "github.com",
+    "github": "prometheus/prometheus",
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "github_trending",
+      "github:prometheus/prometheus"
+    ],
+    "tags": [
+      "Go",
+      "trending",
+      "github"
+    ]
+  },
+  "c15a6aee5757": {
+    "id": "c15a6aee5757",
+    "name": "chenhg5/cc-connect",
+    "url": "https://github.com/chenhg5/cc-connect",
+    "category": "AI/ML",
+    "description": "Bridge local AI coding agents (Claude Code, Cursor, Gemini CLI, Codex) to messaging platforms (Feishu/Lark, DingTalk, Slack, Telegram, Discord, LINE, WeChat Work). Chat with your AI dev assistant from anywhere — no public IP required for most platforms.",
+    "domain": "github.com",
+    "github": "chenhg5/cc-connect",
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "github_trending",
+      "github:chenhg5/cc-connect"
+    ],
+    "tags": [
+      "Go",
+      "trending",
+      "github"
+    ]
+  },
+  "c0b675449d28": {
+    "id": "c0b675449d28",
+    "name": "volcano-sh/volcano",
+    "url": "https://github.com/volcano-sh/volcano",
+    "category": "Software",
+    "description": "A Cloud Native Batch System (Project under CNCF)",
+    "domain": "github.com",
+    "github": "volcano-sh/volcano",
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "github_trending",
+      "github:volcano-sh/volcano"
+    ],
+    "tags": [
+      "Go",
+      "trending",
+      "github"
+    ]
+  },
+  "935ff63b713f": {
+    "id": "935ff63b713f",
+    "name": "openfga/openfga",
+    "url": "https://github.com/openfga/openfga",
+    "category": "Frontend",
+    "description": "A high performance and flexible authorization/permission engine built for developers and inspired by Google Zanzibar",
+    "domain": "github.com",
+    "github": "openfga/openfga",
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "github_trending",
+      "github:openfga/openfga"
+    ],
+    "tags": [
+      "Go",
+      "trending",
+      "github"
+    ]
+  },
+  "30ff1f8f044a": {
+    "id": "30ff1f8f044a",
+    "name": "syncthing/syncthing",
+    "url": "https://github.com/syncthing/syncthing",
+    "category": "Software",
+    "description": "Open Source Continuous File Synchronization",
+    "domain": "github.com",
+    "github": "syncthing/syncthing",
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "github_trending",
+      "github:syncthing/syncthing"
+    ],
+    "tags": [
+      "Go",
+      "trending",
+      "github"
+    ]
+  },
+  "6188cd100cca": {
+    "id": "6188cd100cca",
+    "name": "AI research startup Listen Labs scrubbed a $1.5B funding round for Salesforce talks",
+    "url": "https://techcrunch.com/2026/09/09/ai-research-startup-listen-labs-scrubbed-a-1-5b-funding-round-for-salesforce-talks/",
+    "category": "Funding",
+    "description": "Listen Labs walked away from a signed Series C term sheet from Menlo Ventures, sources say. ",
+    "domain": "techcrunch.com",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "news:TechCrunch",
+      "news:TechCrunch:AI research startup Listen Labs scrubbed"
+    ],
+    "tags": [
+      "news",
+      "techcrunch"
+    ]
+  },
+  "f3227ba872b0": {
+    "id": "f3227ba872b0",
+    "name": "Automattic’s board forces CEO Matt Mullenweg into leave of absence",
+    "url": "https://techcrunch.com/2026/09/09/automattics-board-forces-ceo-matt-mullenweg-into-leave-of-absence/",
+    "category": "Hiring",
+    "description": "Mullenweg said in a company Slack message that it was against his will. ",
+    "domain": "techcrunch.com",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "news:TechCrunch",
+      "news:TechCrunch:Automattic’s board forces CEO Matt Mulle",
+      "news:Hacker News",
+      "news:Hacker News:Automattic's board forces CEO Matt Mulle"
+    ],
+    "tags": [
+      "news",
+      "techcrunch",
+      "hacker_news"
+    ]
+  },
+  "27d5402424b0": {
+    "id": "27d5402424b0",
+    "name": "OpenAI adds a prominent AI doomer to its board of directors",
+    "url": "https://techcrunch.com/2026/09/09/openai-adds-a-prominent-ai-doomer-to-its-board-of-directors/",
+    "category": "Hiring",
+    "description": "Paul Christiano, an influential AI researcher focused on alignment, is joining the OpenAI Foundation as a member of its board.",
+    "domain": "techcrunch.com",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "news:TechCrunch",
+      "news:TechCrunch:OpenAI adds a prominent AI doomer to its"
+    ],
+    "tags": [
+      "news",
+      "techcrunch"
+    ]
+  },
+  "7f1016f60c24": {
+    "id": "7f1016f60c24",
+    "name": "Apple’s new CEO is reviving a Steve Jobs strategy from 25 years ago",
+    "url": "https://techcrunch.com/2026/09/09/apples-new-ceo-is-reviving-a-steve-jobs-strategy-from-25-years-ago/",
+    "category": "Hiring",
+    "description": "John Ternus made the case in his first keynote as Apple CEO that the iPhone isn't going anywhere.",
+    "domain": "techcrunch.com",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "news:TechCrunch",
+      "news:TechCrunch:Apple’s new CEO is reviving a Steve Jobs"
+    ],
+    "tags": [
+      "news",
+      "techcrunch"
+    ]
+  },
+  "c687e7db43f9": {
+    "id": "c687e7db43f9",
+    "name": "Harvey hits $15.5B valuation, months after reaching $11B",
+    "url": "https://techcrunch.com/2026/09/09/harvey-hits-15-5b-valuation-months-after-reaching-11b/",
+    "category": "AI/ML",
+    "description": "The legal AI startup and VC darling has nearly doubled its valuation in nine months. ",
+    "domain": "techcrunch.com",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "news:TechCrunch",
+      "news:TechCrunch:Harvey hits $15.5B valuation, months aft"
+    ],
+    "tags": [
+      "news",
+      "techcrunch"
+    ]
+  },
+  "54ff2387e438": {
+    "id": "54ff2387e438",
+    "name": "Apple unveils its first foldable, the iPhone Duo",
+    "url": "https://techcrunch.com/2026/09/09/apple-unveils-its-first-foldable-the-iphone-duo/",
+    "category": "Hiring",
+    "description": "Unlike early iterations of foldables, which looked like vertical slabs, Apple adopted a wider form factor that could aid in a better aspect ratio while watching videos when the device is unfolded.",
+    "domain": "techcrunch.com",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "news:TechCrunch",
+      "news:TechCrunch:Apple unveils its first foldable, the iP"
+    ],
+    "tags": [
+      "news",
+      "techcrunch"
+    ]
+  },
+  "1a2e03a092e6": {
+    "id": "1a2e03a092e6",
+    "name": "Apple CEO John Ternus says the best AI device is still the iPhone",
+    "url": "https://techcrunch.com/2026/09/09/apple-ceo-john-ternus-says-the-best-ai-device-is-still-the-iphone/",
+    "category": "Hiring",
+    "description": "The company also argued that its on-device models offer consumers more privacy. ",
+    "domain": "techcrunch.com",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "news:TechCrunch",
+      "news:TechCrunch:Apple CEO John Ternus says the best AI d"
+    ],
+    "tags": [
+      "news",
+      "techcrunch"
+    ]
+  },
+  "f6a2aaeff43b": {
+    "id": "f6a2aaeff43b",
+    "name": "Apple launches iPhone 18 Pro with upgraded camera",
+    "url": "https://techcrunch.com/2026/09/09/apple-launches-iphone-18-pro-with-upgraded-camera/",
+    "category": "Product",
+    "description": "Apple's new iPhone 18 Pro lineup upgrades the camera and comes in burgundy. ",
+    "domain": "techcrunch.com",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "news:TechCrunch",
+      "news:TechCrunch:Apple launches iPhone 18 Pro with upgrad"
+    ],
+    "tags": [
+      "news",
+      "techcrunch"
+    ]
+  },
+  "99d678210e79": {
+    "id": "99d678210e79",
+    "name": "OpenAI agents discussed ways to escape their sandbox on public wiki",
+    "url": "https://arstechnica.com/security/2026/09/openai-agents-discussed-ways-to-escape-their-sandbox-on-public-wiki/",
+    "category": "IPO",
+    "description": "\n                        In all, 3,700 internal agents posted 18,000 messages discussing cheating on a test. \n                    ",
+    "domain": "arstechnica.com",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "news:Ars Technica",
+      "news:Ars Technica:OpenAI agents discussed ways to escape t"
+    ],
+    "tags": [
+      "news",
+      "ars_technica"
+    ]
+  },
+  "7d73ba08aa94": {
+    "id": "7d73ba08aa94",
+    "name": "VMware migration reduces Tottenham Hotspur's licensing fees by 85 percent",
+    "url": "https://arstechnica.com/information-technology/2026/09/vmware-migration-reduces-tottenham-hotspurs-licensing-fees-by-85-percent/",
+    "category": "Hiring",
+    "description": "\n                        Pro soccer team's CTO points to \"issues with the Broadcom takeover.\" \n                    ",
+    "domain": "arstechnica.com",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "news:Ars Technica",
+      "news:Ars Technica:VMware migration reduces Tottenham Hotsp"
+    ],
+    "tags": [
+      "news",
+      "ars_technica"
+    ]
+  },
+  "e154aae804b8": {
+    "id": "e154aae804b8",
+    "name": "Automattic CEO Matt Mullenweg placed on leave",
+    "url": "https://www.theverge.com/tech/993022/wordpress-automattic-ceo-matt-mullenweg-leave-of-absence",
+    "category": "Hiring",
+    "description": "\n\t\t\t\t\t\t\t\t\t\t\t\n\n\t\t\t\t\t\t\n<figure>\n\n<img alt=\"A photo of Matt Mullenweg\" data-caption=\"\" data-portal-copyright=\"Image: David Paul Morris/Bloomberg via Getty Images\" data-has-syndication-rights=\"1\" src=\"https://platform.theverge.com/wp-content/uploads/sites/2/2026/09/gettyimages-2181259946.jpg?quality=90&#038;strip=all&#038;crop=0,0,100,100\" />\n\t<figcaption>\n\t\t</figcaption>\n</figure>\n<p class=\"wp-block-paragraph\">Matt Mullenweg, the CEO of WordPress.com owner Automattic, has been placed on a paid leav",
+    "domain": "theverge.com",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "news:The Verge",
+      "news:The Verge:Automattic CEO Matt Mullenweg placed on "
+    ],
+    "tags": [
+      "news",
+      "the_verge"
+    ]
+  },
+  "dbe27ce917f3": {
+    "id": "dbe27ce917f3",
+    "name": "OpenAI’s sly mathematical breakthrough sends a chill through academia",
+    "url": "https://www.theverge.com/ai-artificial-intelligence/992953/openai-math-millennium-prize-navier-stokes",
+    "category": "Hiring",
+    "description": "\n\t\t\t\t\t\t\t\t\t\t\t\n\n\t\t\t\t\t\t\n<figure>\n\n<img alt=\"\" data-caption=\"Open AI CEO Sam Altman speaks during the G20 Innovation Ministerial. | (Photo by Matt RAMEY / AFP via Getty Images)\" data-portal-copyright=\"(Photo by Matt RAMEY / AFP via Getty Images)\" data-has-syndication-rights=\"1\" src=\"https://platform.theverge.com/wp-content/uploads/sites/2/2026/09/gettyimages-2292626872.jpg?quality=90&#038;strip=all&#038;crop=0,0,100,100\" />\n\t<figcaption>\n\tOpen AI CEO Sam Altman speaks during the G20 Innovation Minis",
+    "domain": "theverge.com",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "news:The Verge",
+      "news:The Verge:OpenAI’s sly mathematical breakthrough s"
+    ],
+    "tags": [
+      "news",
+      "the_verge"
+    ]
+  },
+  "c4c250799a8f": {
+    "id": "c4c250799a8f",
+    "name": "Larger Pacific Striped Octopus",
+    "url": "https://en.wikipedia.org/wiki/Larger_Pacific_striped_octopus",
+    "category": "Hiring",
+    "description": "<a href=\"https://news.ycombinator.com/item?id=49621018\">Comments</a>",
+    "domain": "en.wikipedia.org",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "news:Hacker News",
+      "news:Hacker News:Larger Pacific Striped Octopus"
+    ],
+    "tags": [
+      "news",
+      "hacker_news"
+    ]
+  },
+  "4a72a662c37d": {
+    "id": "4a72a662c37d",
+    "name": "Shopify acquires Tailwind",
+    "url": "https://tailwindcss.com/blog/tailwind-is-joining-shopify",
+    "category": "M&A",
+    "description": "<a href=\"https://news.ycombinator.com/item?id=49626190\">Comments</a>",
+    "domain": "tailwindcss.com",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "news:Hacker News",
+      "news:Hacker News:Shopify acquires Tailwind"
+    ],
+    "tags": [
+      "news",
+      "hacker_news"
+    ]
+  },
+  "596762013571": {
+    "id": "596762013571",
+    "name": "Factoring RSA 260",
+    "url": "https://cognition.com/blog/factoring-rsa-260",
+    "category": "Hiring",
+    "description": "<a href=\"https://news.ycombinator.com/item?id=49633534\">Comments</a>",
+    "domain": "cognition.com",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "news:Hacker News",
+      "news:Hacker News:Factoring RSA 260"
+    ],
+    "tags": [
+      "news",
+      "hacker_news"
+    ]
+  },
+  "e1676ef74677": {
+    "id": "e1676ef74677",
+    "name": "Legal AI startup Harvey reaches $15.5 billion valuation in new funding round - Reuters",
+    "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNdlB6ckhOUjNOZ3VfSVNXTVBvQWlkLTRiWUwxLU1KZG9fT0t3QVI5U043NS1pdGp6UHpCM0hjTHFzZm5OelhkWVdZbkY3RnBBbEdCVnFTXzhJNl8yTW4tOHo5UzU3SEU5VW0xNFZnQkhCNjJzWVVWTmZEQUhsUVNYalpYNnpIZUo1S0UxNEF0MHFtalVablBwWFF1ZDE5V25OSDIzd2tadlZqdU9xdDFQc1YwR1FxNW91aDJKeHNaeF9iQQ?oc=5",
+    "category": "Funding",
+    "description": "Legal AI startup Harvey reaches $15.5 billion valuation in new funding round - Reuters",
+    "domain": "news.google.com",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "google_news",
+      "gnews:Legal AI startup Harvey reaches $15.5 bi"
+    ],
+    "tags": [
+      "news",
+      "google_news"
+    ]
+  },
+  "37d6e00d9702": {
+    "id": "37d6e00d9702",
+    "name": "AI research startup Listen Labs scrubbed a $1.5B funding round for Salesforce talks - TechCrunch",
+    "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPMUQwT1FwQUpRVkhOQ2gzYTRaRW9PZC1nWEloVVZTaXFoUnFhaUFwd2hJWVo3Si1EV2p3Z0c2c2dZTDdMOUFDNGdMeTJaTjV4TXEwSkhRRHU5NWhpTnd5Ui16aG9vQ3gtdFRtVWN5TE9XUFNRWmtpUTBjbHUzdUd2QTNGdHdMLUxYSG52Z1lBci1pQWVHTklsd2hsVS01ZXJYek1WWGxaeXlscVljM3dqYWttZHgwR3BT?oc=5",
+    "category": "Funding",
+    "description": "AI research startup Listen Labs scrubbed a $1.5B funding round for Salesforce talks - TechCrunch",
+    "domain": "news.google.com",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "google_news",
+      "gnews:AI research startup Listen Labs scrubbed"
+    ],
+    "tags": [
+      "news",
+      "google_news"
+    ]
+  },
+  "f544a0c69bb9": {
+    "id": "f544a0c69bb9",
+    "name": "Sales automation startup Clay boosts valuation to $7.1B in $115M funding round - SiliconANGLE",
+    "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPdWl6Qk1HTFBsX0VlOENfN3hJT1lXTFRDaUJPdmtVejBZMV9BUWc0UkNmc1hreU5nSTVOYUM1d3lyME04UTlPNkZ2MW5Xdk9FN2FTVy10cDZsUUJwaVdCQjFaM1J1VTVJRWJ6eThPT0VScFV6UkFBQjI0X2dXTWlSQThteXRqTFBzV2QtZ25VLURfMk82ZEZqRG1wNVk1VTc1RnhReEh3Z0FfbkhoZlFwVHNsRQ?oc=5",
+    "category": "Funding",
+    "description": "Sales automation startup Clay boosts valuation to $7.1B in $115M funding round - SiliconANGLE",
+    "domain": "news.google.com",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "google_news",
+      "gnews:Sales automation startup Clay boosts val"
+    ],
+    "tags": [
+      "news",
+      "google_news"
+    ]
+  },
+  "a2fbf2bb572f": {
+    "id": "a2fbf2bb572f",
+    "name": "UPDATE: California approves funding for first-of-its-kind childcare district in Riverside County - EdSource",
+    "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPbF9LRUhoSTg1Rm9aaEZFa0Zib3VjLVNBR0lscUdTWGFuYUs4LVotZGVnOTBQd3lLRHVMelgzTUpJNklTUE1WM2ZiNktCcWt4anJPeUdQOWVhTEJTamxXRWZIcHZEczQ4WTJheXdORUtiRDh3LXFCNnAxbHpaNFliTFRrTW9GaUR3aVVzbWJqTHdxeXNEZ3BpYzRhM21mbnlNVnRucHpKcGhHbFM2aTNv?oc=5",
+    "category": "Funding",
+    "description": "UPDATE: California approves funding for first-of-its-kind childcare district in Riverside County - EdSource",
+    "domain": "news.google.com",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "google_news",
+      "gnews:UPDATE: California approves funding for "
+    ],
+    "tags": [
+      "news",
+      "google_news"
+    ]
+  },
+  "723b753a8b72": {
+    "id": "723b753a8b72",
+    "name": "Hyundai backs Bill Gates-funded US fusion startup CFS in power push - KED Global",
+    "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFB5YnlwWDZQdU9ha3RYVVhkSnRfekZ5QzduS3ZEYU15dE05Z254SkF5Q0ZvSTVpRm1ZYkNnZkJGRnNGV2Q1UzF3U1FsOEUtMmpvNlV2ZmZmdDNLUDFJN3c3dHFnVWtPZ3Jr?oc=5",
+    "category": "AI/ML",
+    "description": "Hyundai backs Bill Gates-funded US fusion startup CFS in power push - KED Global",
+    "domain": "news.google.com",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "google_news",
+      "gnews:Hyundai backs Bill Gates-funded US fusio"
+    ],
+    "tags": [
+      "news",
+      "google_news"
+    ]
+  },
+  "520ec9c1d3d1": {
+    "id": "520ec9c1d3d1",
+    "name": "The AlleyWatch Startup Daily Funding Report: 9/9/2026 - alleywatch.com",
+    "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPaFRoelh4aGR1SE1pa2U5cW5oaXo1U2FGZlFzcFNmeXJGbmx3UU5xcWd1cG1uOTdhYkZtRmxidENtQ2VIVVdQN2FwbDNmbloyNGZNdXJFMFJTMXJuRFBBQ0hBRHhUaUxJVXpsLXB0LV96QlNKMExxTTJaQ2ZWdEYzZGZoTFZvMjdULVdOcGpWZk1Jdw?oc=5",
+    "category": "Funding",
+    "description": "The AlleyWatch Startup Daily Funding Report: 9/9/2026 - alleywatch.com",
+    "domain": "news.google.com",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "google_news",
+      "gnews:The AlleyWatch Startup Daily Funding Rep"
+    ],
+    "tags": [
+      "news",
+      "google_news"
+    ]
+  },
+  "1ef8e21be86a": {
+    "id": "1ef8e21be86a",
+    "name": "Peter Thiel-Backed AI Startup Cognition Raises Funds at $48 Billion Valuation - WSJ",
+    "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOUkJBZ2o0YmZnOEpWVk9mT1dmRUFDZmkxbFZBNU9FQy1VWk5YeENDb0U3c080STBTdmFTWVh0aGNjRXZuNnhrU1RseEVPaWpBVkRSbGtJWExBenJwSlJYNkxHNzcwdk1oMzh4bUs0WGFsdGt3cGNRa29jdndoZXJVbkRJOEI5blRoVGN4NTFRLTNlU1J1VWVKOFRfLTRlb0hXMnFzVWlrTG45NVlSVkRSbVVEUFh1eklGWEVJWThpZ09ZUQ?oc=5",
+    "category": "Funding",
+    "description": "Peter Thiel-Backed AI Startup Cognition Raises Funds at $48 Billion Valuation - WSJ",
+    "domain": "news.google.com",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "google_news",
+      "gnews:Peter Thiel-Backed AI Startup Cognition "
+    ],
+    "tags": [
+      "news",
+      "google_news"
+    ]
+  },
+  "ff7d747662d9": {
+    "id": "ff7d747662d9",
+    "name": "Embodied AI startup PHYMI raises nearly US$100 million in seed funding - TechNode",
+    "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPbzZ5X2d4NC1uOUZrTjlCTHVIcXdhX0Q1NUVVaXAxdHNvenJCNkhCUzVCZ2NUXzRhNmo5enUxXy15QzQ1RGR5OVY1QlRDaHRobTN5QXIzSjNrdXdmc3NTWi02UTljeEdiSWU3WE1OczBhZG9UZ3J4QzJEem5hX2hWS1gyb25vNi15UHBpcV9qVXlVcVBRM1RJYndnUmE0Z3BibUtyag?oc=5",
+    "category": "Funding",
+    "description": "Embodied AI startup PHYMI raises nearly US$100 million in seed funding - TechNode",
+    "domain": "news.google.com",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "google_news",
+      "gnews:Embodied AI startup PHYMI raises nearly "
+    ],
+    "tags": [
+      "news",
+      "google_news"
+    ]
+  },
+  "6f81bca82394": {
+    "id": "6f81bca82394",
+    "name": "Seeds | Third Round This Year, Xiaoyubot Secures Hundreds of Millions in Funding - Gasgoo",
+    "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxOcmJZbTNLZmZyOGN5aF9WNHlYWUFPRmUzakxKUmJGbHRYeWJmakpJbXpsNjRlY0VnT3VMZUl2bXMzWUNuUUEzU0w3Sjg1SjFTRTBNa0V5aHNyLVpoLXBBb3N0ZDdhLXp3YkZueXpwWW1jWXozNC1YZUhlSXp2OUNndnYtVnFZSTBlMExOOUR3YW9FQjh5V0ttZm4zRER4X0VLRWN4NkdQTzhnT3F5eExWQU5qVVVYa3U3b2t3WWYyUFhlYkY1MnlPNXRZbl9Iem5CcEdOTEx3?oc=5",
+    "category": "Funding",
+    "description": "Seeds | Third Round This Year, Xiaoyubot Secures Hundreds of Millions in Funding - Gasgoo",
+    "domain": "news.google.com",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "google_news",
+      "gnews:Seeds | Third Round This Year, Xiaoyubot"
+    ],
+    "tags": [
+      "news",
+      "google_news"
+    ]
+  },
+  "a74865db0364": {
+    "id": "a74865db0364",
+    "name": "AI startup founded by two Bangladeshi brothers raises over $30,000 in funding - The Daily Star",
+    "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQc3VlRDY4dGN6a3F1SldrWWJmMDhqamdxUTVtc0wtNVcxTkktb0lmLXRCSG1wVlJPYmZkY21wQ1A3TzRPeDlEdTJkT2RGSDVGc01vb0xJd0dQQ1VXTVFIc1FwWFJTNDNndklnVkc0T0hpYTFNMUd6MlZFN2FRdWRKMnkwQ1BjbnRjSWRCblFVLWJvOHRqdEt1U190NTJjc1F4d1otcFUxcmxKckpoelZWeDdSa1Z5LXo4T3pEZzJjajZYZURaTUE?oc=5",
+    "category": "Funding",
+    "description": "AI startup founded by two Bangladeshi brothers raises over $30,000 in funding - The Daily Star",
+    "domain": "news.google.com",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "google_news",
+      "gnews:AI startup founded by two Bangladeshi br"
+    ],
+    "tags": [
+      "news",
+      "google_news"
+    ]
+  },
+  "ac5f64cf5cb8": {
+    "id": "ac5f64cf5cb8",
+    "name": "How Investors Are Reacting To Microchip Technology (MCHP) New Clock Buffer Launch - simplywall.st",
+    "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxQWE5xVEJhLWxhMmN4aHNmX2lNU19RRlpMOVNieGtrVG4tNTFvejlnUWxERHJaNEVSa24tQ1JOU1d1NlZvVHkwY0tIR3pRd3owSjBKV3ItNUpfX2ROUXFES0pON1BqOU5mT0tFZjZjVTVXY0J0WDhLX0EwSU5pWE1uNV9Ed2NfaUlDcE1RaWFRUHpoemEwTWRPNUhtWFVxZUpUTXhXMnE2QTlBVHZyT0tOSW5MOFU5cXgtOE02Z2w4VFBGZVhOTXZQenI3eFdnM181RWM5bFJILUpPekF10gHiAUFVX3lxTE1Tb093eUp4Z3lSQWF2cW83RWFMcm56SlJmT29rdGtINXpxal9SVzNBVEpJVWhkdDlWckFRcnhlR3NjYUswc3k5SHJFMHJKUUZHVklodi1haG9LWnpSLUZHSWFUaXFmR1VfY3pvUzZVbnhJZlVlWVFfNWRaX0JNQ3Q2Y3NxRTZuaHBlQXhHeDJ3OF9pQmlSSXRFVjNKY3hxWE52UXVLQjNTcVJRZWNOS3V0eUlST05ZOFkxcGZLTWpTOEYwN2JjS2RpSndFU1d5dGlEM1lXUndBM3VXTlJjZGFkcFE?oc=5",
+    "category": "Product",
+    "description": "How Investors Are Reacting To Microchip Technology (MCHP) New Clock Buffer Launch - simplywall.st",
+    "domain": "news.google.com",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "google_news",
+      "gnews:How Investors Are Reacting To Microchip "
+    ],
+    "tags": [
+      "news",
+      "google_news"
+    ]
+  },
+  "d88e8bbbf2b5": {
+    "id": "d88e8bbbf2b5",
+    "name": "Apple unveils first foldable iPhone, iPhone 18 Pro lineup, new watches at annual launch event - Fox Business",
+    "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQQlJKUlM0VEl2YWEtWTFHc1hNUEcyUTZpU3NrMkhPNzNhZ0NRSjg1NnN2Mm8xTzZBaEJ6OVRlRnNIcHdCOGRIMXc4ZnBkZTZaOTRKNXQza1ZMN2hicENCa2lneWFnSFdlTXVyQXdvWnpVSU8taHF3UVBKS3BaZkZPVVl4NzVqdS1Yd0VMeUF2R1VIU19WbUwwRk1fTDVtclo5R1BtTkx3ajRYQjZYUXl5c3VrVGhNdHVqWHdWeWZvV1pHZm1RX2fSAcsBQVVfeXFMTWR2NTdBaGt3ekxCTHZJWGxXaW9EZ0o3cnN3MmkxLU5BMXlCZmwxZ3FBRDRzSUdjSUZLTkM1Rk14UDVuNDR0V3cyVHdiUzhNOFI4T0J2dFFXQVNPUlNkRDE0YUhFcTY4bl84Z2RWQ19WX1JYdUxjV3kzdG9VVUk0Y19HY0RiTUFUMXJSMmJlT2RERTQyaktoamNtMWxxTFAwd1k1UFpwa25kWkdLUlNWV1VEaHZDLUU4UWQ0R2ltbzVsN09abkhhc1NyUjA?oc=5",
+    "category": "Product",
+    "description": "Apple unveils first foldable iPhone, iPhone 18 Pro lineup, new watches at annual launch event - Fox Business",
+    "domain": "news.google.com",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "google_news",
+      "gnews:Apple unveils first foldable iPhone, iPh"
+    ],
+    "tags": [
+      "news",
+      "google_news"
+    ]
+  },
+  "151a3cf08136": {
+    "id": "151a3cf08136",
+    "name": "Samsung, Duolingo troll Apple’s iPhone Duo launch in viral X exchange - Gulf Business",
+    "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOWmxiVTY2eDhrWlJMSEQyOUJST2J3Q3RSXy12b09PenFGNDJDeDRWYkF3TVc0YlFtZVo0N190cWMtemdnQjJQSUY2dTd3aGRrOFN0czFGUGpsV3VwVy1CT3NIMVdZN3FQWmJKcERCSTBzVWpxRl83LXA3a0ZIcldqU0FlUTVlWnNsRUpZeElsemtHeFYybTFSTEkyNnFINk9DMFd2NllHOFE?oc=5",
+    "category": "Product",
+    "description": "Samsung, Duolingo troll Apple’s iPhone Duo launch in viral X exchange - Gulf Business",
+    "domain": "news.google.com",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "google_news",
+      "gnews:Samsung, Duolingo troll Apple’s iPhone D"
+    ],
+    "tags": [
+      "news",
+      "google_news"
+    ]
+  },
+  "57c988491319": {
+    "id": "57c988491319",
+    "name": "Group of GCs, Wilson Sonsini launch new legal tech venture capital fund - ABA Journal",
+    "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNbjl2YjFVbDYxeDFKTi00RkhSQVZVY2lRTHdxRmFkdDhra245bHRBdWRrcm1BR1E3djJzYnhuOWIwaGdqVkExM3ItcS1kbEJnN3d4b1B5SXU4Wjh3N3hYT09fZEo5cU44RUtSSkVNdnUyVW9ta1Nkckx4ZzgxVXF1Y3kyYkdscHVyRXBMTk9ZTTdYVUhPZ0tzS1pmWkNlaHZ1bGVMeFJhUzFJVGgtVWs4RVcxZWNncnJtbmNWN1Fn?oc=5",
+    "category": "Product",
+    "description": "Group of GCs, Wilson Sonsini launch new legal tech venture capital fund - ABA Journal",
+    "domain": "news.google.com",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "google_news",
+      "gnews:Group of GCs, Wilson Sonsini launch new "
+    ],
+    "tags": [
+      "news",
+      "google_news"
+    ]
+  },
+  "195adffa7093": {
+    "id": "195adffa7093",
+    "name": "Dunwoody College of Technology Launches First-of-Its-Kind Program for High School Students to Close the Skilled Trades Gap - PR Newswire",
+    "url": "https://news.google.com/rss/articles/CBMiigJBVV95cUxPU3hTZklBVWJGR2VHbzRNQkxaRHJpZ0lPWng5UWdGZFdIakd2Z2NPRWhaSlZLLVlmNmVxNDlzZEUzSU56RHNmWFJiZERpTUZGZTVuYWQ3eDRzSm90YnJvTE5CMEhWS3R0aU5vV1Ywd3k1dWIwOWdORDJGZkNpNkZzcU1VazhiS1NzOU9vSjlTeWJ3ck5lYlM0WVliUE5JYXJFT0lvX1I0cFZ1LXJPMEtFdU9EZDZkQjMzV05ZQ3N6Z3JLNUtXS3FuM0VOSUZXcTJtTnY2Yzk2eG9ZaG1ab3BYLVRpTS1fanhseUs1VDgtdHJXQ0JPV1VBN2NQcEh4dHBLQ2swWWlsRk1Gdw?oc=5",
+    "category": "Product",
+    "description": "Dunwoody College of Technology Launches First-of-Its-Kind Program for High School Students to Close the Skilled Trades Gap - PR Newswire",
+    "domain": "news.google.com",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "google_news",
+      "gnews:Dunwoody College of Technology Launches "
+    ],
+    "tags": [
+      "news",
+      "google_news"
+    ]
+  },
+  "936dd1a418ae": {
+    "id": "936dd1a418ae",
+    "name": "MHRA and Manchester NHS launch sandbox to test AI and health tech - THINK Digital Partners",
+    "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOaDl1VFNBa1F2WG9kOUpOaVIyaGViSFR6eHFnLUtKQUR4MDRod0hBb25JTDNmQVlIUkRsS0c1YURoaE4zZ0JNR2hkc3l4WXVYbkY1V2l1aUlWam1jLXFNeXNHRHVTZTZ5dWYwaEUyakVYZWpPczdPclRuXzhMZUF2VWlFMExJUzFTNGNKMkxpMjExejFvXzd6QjFSaWsyOXBHTk9qTk11Mk10ZEszLWw5SElDU19tc2lQUUhN?oc=5",
+    "category": "Product",
+    "description": "MHRA and Manchester NHS launch sandbox to test AI and health tech - THINK Digital Partners",
+    "domain": "news.google.com",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "google_news",
+      "gnews:MHRA and Manchester NHS launch sandbox t"
+    ],
+    "tags": [
+      "news",
+      "google_news"
+    ]
+  },
+  "e399dc2f67e1": {
+    "id": "e399dc2f67e1",
+    "name": "Vodafone Business and Cassava Technologies Launch Egypt’s First Sovereign AI Factory - TechAfrica News",
+    "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNaC1DMjNUSEVOZW5iWkZ4RzdHeUJlNEFYX2RNRTFQRlFNV211YnVDcUY3MjE5SzROdmdjQ3hqTGhwby1TVVl3LUF5MWZxbTh0bjZEeHZmem4zSW96WjdVeE80TjB0Y3I1Z21CZFdxa29ySnBvTklmVDZtWTB2RW5wTk1JY2M0NFRTWHV4aFBmRDU5NzRfaDh4cTBJT2QyQ2M5LWQtVzk1S2JsOExGR1RxT24zNnRaSncxN3c?oc=5",
+    "category": "Product",
+    "description": "Vodafone Business and Cassava Technologies Launch Egypt’s First Sovereign AI Factory - TechAfrica News",
+    "domain": "news.google.com",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "google_news",
+      "gnews:Vodafone Business and Cassava Technologi"
+    ],
+    "tags": [
+      "news",
+      "google_news"
+    ]
+  },
+  "a4f69fc0df16": {
+    "id": "a4f69fc0df16",
+    "name": "Apple iPhone 18 launch event: Three new features that impressed me the most - The Indian Express",
+    "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPQjBwQlBOMUFFZ3VhRVlLN2diQlRRcE9DWHY1ckg4X0RtRXVFZVhRWmRQWkNoSmhLMThURzZOdG5GdEhhWWJmV2VQNmhjUDR4NUxZM0xZS3pQM1pPenJPMTFzeXFBSGprQkpENEdGQ2Y0dU1DTHBCLU5PYkpTUnVyXzdjdzdoY2s0T2NHZ0dYSHlSZS0xWVhDUlhJZlZxMXdfYnJoWXhkUVBhdmE1NEtzREJnOWZOZmxPX01KUk5n0gHEAUFVX3lxTFBvNDdpcHBBTjdXT21KQVFBa3p4ME0xaW1HY1F6M3ozODlYUG5NU0F6OVhKcnpiQ1pVYTJxWVJ4bFZ2dHdxQTVWakxLZVFkdTBHNUlHSm5NMF9NV2x1c2hWTm1fUHowbk1YZGo4eG5MemZuY0pZLVU1elhDSTlYUTlhR2tyVmJoa09ueUhJdkVHdTRwU1Q3dzd0eTM1QTYzaTJuNTA3cXIwWDRLMUxYYzU2VnpTTUFIQUZvSGp3R3JqVDN6Zy0?oc=5",
+    "category": "Product",
+    "description": "Apple iPhone 18 launch event: Three new features that impressed me the most - The Indian Express",
+    "domain": "news.google.com",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "google_news",
+      "gnews:Apple iPhone 18 launch event: Three new "
+    ],
+    "tags": [
+      "news",
+      "google_news"
+    ]
+  },
+  "0f24a3598b1b": {
+    "id": "0f24a3598b1b",
+    "name": "Photoplay and Bermuda Tech Lab launch Frameless Production - shots.net",
+    "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPMkt5c28zbTk1VnNNNEdhcElXbmVMLS02NkFIYWxwWkx5NVdUNURiVV9jUFZjTDBVaDcwcExJMVpDNk5hendBM1daaUl6ejJaeGpCRW9GbXhfMTQ1cU1fNU5YY0FTeEp2S2dSWGUwaUhWdFR1RUVmZ3lRUU9xNXZuY1BKcXN3RDBxN0ZRam4zVQ?oc=5",
+    "category": "Product",
+    "description": "Photoplay and Bermuda Tech Lab launch Frameless Production - shots.net",
+    "domain": "news.google.com",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "google_news",
+      "gnews:Photoplay and Bermuda Tech Lab launch Fr"
+    ],
+    "tags": [
+      "news",
+      "google_news"
+    ]
+  },
+  "8929fef58872": {
+    "id": "8929fef58872",
+    "name": "Researchers Can Now Launch Startups and Hold Shares in Their Own Technologies... Deep-Tech Regulations Eased - 아시아경제",
+    "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1KUVpwUW5lUFFwWVFJOElOQ3JzTmpGdEFoNFQ5T19DdXBjZ2NMNGNDYkZra0p3UGNNSkliNUp4SS10amtxTXdCYzFaTVJPYzk2Sm5XXzQ3LW1scldhWFpSRWxHUVNWdFlX?oc=5",
+    "category": "Product",
+    "description": "Researchers Can Now Launch Startups and Hold Shares in Their Own Technologies... Deep-Tech Regulations Eased - 아시아경제",
+    "domain": "news.google.com",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "google_news",
+      "gnews:Researchers Can Now Launch Startups and "
+    ],
+    "tags": [
+      "news",
+      "google_news"
+    ]
+  },
+  "c7455360fd79": {
+    "id": "c7455360fd79",
+    "name": "Circle stock slips despite new acquisition news",
+    "url": "https://finance.yahoo.com/markets/crypto/articles/circle-stock-slips-despite-acquisition-192212005.html",
+    "category": "Market Event",
+    "description": "Circle stock slips despite new acquisition news",
+    "domain": "finance.yahoo.com",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "market_news",
+      "news:Circle stock slips despite new acquisition news"
+    ],
+    "tags": [
+      "market",
+      "news"
+    ]
+  },
+  "e83045a3eda1": {
+    "id": "e83045a3eda1",
+    "name": "NextEra Just Secured Up to $1.9 Billion to Restart Iowa's Only Nuclear Plant. Here's The Real Reason Why.",
+    "url": "https://finance.yahoo.com/energy/articles/nextera-just-secured-1-9-192501684.html",
+    "category": "Market Event",
+    "description": "NextEra Just Secured Up to $1.9 Billion to Restart Iowa's Only Nuclear Plant. Here's The Real Reason Why.",
+    "domain": "finance.yahoo.com",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "market_news",
+      "news:NextEra Just Secured Up to $1.9 Billion to Restart"
+    ],
+    "tags": [
+      "market",
+      "news"
+    ]
+  },
+  "52f97e24912f": {
+    "id": "52f97e24912f",
+    "name": "Solana Is Up 36% in a Month, ETH Is Up 29%, XRP Is Up 35% and Bitcoin Is Up Only 20%. Which Gain Actually Holds?",
+    "url": "https://finance.yahoo.com/markets/crypto/articles/solana-36-month-eth-29-193015811.html",
+    "category": "Market Event",
+    "description": "Solana Is Up 36% in a Month, ETH Is Up 29%, XRP Is Up 35% and Bitcoin Is Up Only 20%. Which Gain Actually Holds?",
+    "domain": "finance.yahoo.com",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "market_news",
+      "news:Solana Is Up 36% in a Month, ETH Is Up 29%, XRP Is"
+    ],
+    "tags": [
+      "market",
+      "news"
+    ]
+  },
+  "bfb6eef9ba0e": {
+    "id": "bfb6eef9ba0e",
+    "name": "Dear Nvidia Stock Fans, Mark Your Calendars for September 10",
+    "url": "https://finance.yahoo.com/markets/stocks/articles/dear-nvidia-stock-fans-mark-194239279.html",
+    "category": "Market Event",
+    "description": "Dear Nvidia Stock Fans, Mark Your Calendars for September 10",
+    "domain": "finance.yahoo.com",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "market_news",
+      "news:Dear Nvidia Stock Fans, Mark Your Calendars for Se"
+    ],
+    "tags": [
+      "market",
+      "news"
+    ]
+  },
+  "e012e99e5580": {
+    "id": "e012e99e5580",
+    "name": "Treasuries Dismiss President's Promise: 3-Minutes MLIV",
+    "url": "https://www.bloomberg.com/news/videos/2026-09-10/treasuries-dismiss-president-s-promise-3-minutes-mliv-video",
+    "category": "Market Event",
+    "description": "Anna Edwards, Guy Johnson, Tom Mackenzie and Mark Cudmore break down today's key themes for analysts and investors on \"Bloomberg: The Opening Trade.\"  (Source: Bloomberg)",
+    "domain": "bloomberg.com",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "market_news",
+      "news:Treasuries Dismiss President's Promise: 3-Minutes "
+    ],
+    "tags": [
+      "market",
+      "news"
+    ]
+  },
+  "78b21de1863b": {
+    "id": "78b21de1863b",
+    "name": "Sanlam Profit Falls 22% on Higher Claims, Weakness in India",
+    "url": "https://www.bloomberg.com/news/articles/2026-09-10/sanlam-interim-profit-falls-22-on-weakness-in-india-morocco",
+    "category": "Market Event",
+    "description": "Sanlam Ltd. profit dropped as weather-related claims in South Africa grew and strength in the rand trimmed the translated value of earnings from its businesses outside of its home market.",
+    "domain": "bloomberg.com",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "market_news",
+      "news:Sanlam Profit Falls 22% on Higher Claims, Weakness"
+    ],
+    "tags": [
+      "market",
+      "news"
+    ]
+  },
+  "a712998a3e68": {
+    "id": "a712998a3e68",
+    "name": "Harden",
+    "url": "https://www.producthunt.com/products/agent-integrity-foundation-aif",
+    "category": "AI/ML",
+    "description": "A security layer for AI coding agentsDiscussio",
+    "domain": "producthunt.com",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "producthunt",
+      "ph:agent-integrity-foundation-aif"
+    ],
+    "tags": [
+      "producthunt",
+      "product"
+    ]
+  },
+  "5b486899a6a8": {
+    "id": "5b486899a6a8",
+    "name": "ChatGPT Images 2.5",
+    "url": "https://www.producthunt.com/products/openai",
+    "category": "AI/ML",
+    "description": "Sharper visuals, faster flow, better creative controlDiscussion",
+    "domain": "producthunt.com",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "producthunt",
+      "ph:openai"
+    ],
+    "tags": [
+      "producthunt",
+      "product"
+    ]
+  },
+  "52dabb77d2a5": {
+    "id": "52dabb77d2a5",
+    "name": "Muse by Meta",
+    "url": "https://www.producthunt.com/products/muse-22",
+    "category": "AI/ML",
+    "description": "Your personal AI agent that gets things doneDiscussion",
+    "domain": "producthunt.com",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "producthunt",
+      "ph:muse-22"
+    ],
+    "tags": [
+      "producthunt",
+      "product"
+    ]
+  }
+}
