@@ -19,8 +19,8 @@ logging.basicConfig(
 logger = logging.getLogger("opportunity-scanner")
 
 from src.config import (
-    DATA_DIR, REPORTS_DIR, AI_ENABLED, TOP_N, EMERGING_N,
-    BREAKOUT_N, BREAKOUT_THRESHOLD, MAX_CANDIDATES_FOR_AI,
+    DATA_DIR, REPORTS_DIR, AI_ENABLED, TOP_N, BREAKOUT_N, BREAKOUT_THRESHOLD,
+    MAX_CANDIDATES_FOR_AI,
 )
 from src.storage.json_store import JsonStore
 from src.collectors.startups import StartupCollector
@@ -30,16 +30,23 @@ from src.collectors.products import ProductCollector
 from src.collectors.technology import TechnologyCollector
 from src.collectors.news import NewsCollector
 from src.collectors.reddit import RedditCollector
+from src.collectors.funding import FundingCollector
 from src.intelligence.entities import EntityManager
 from src.intelligence.signals import SignalManager
 from src.intelligence.scoring import Scorer, ScoredEntity
 from src.intelligence.breakout import BreakoutDetector
+from src.intelligence.selection import build_sections, total_count
+from src.intelligence.funding import (
+    UNKNOWN, STAGE_LABELS, parse_funding_event, detect_round,
+    funding_momentum,
+)
 from src.report.email_template import render_email
 from src.report.email_sender import send_email, build_subject
 
 
 COLLECTOR_MAP = {
     "startups": StartupCollector,
+    "funding": FundingCollector,
     "markets": MarketCollector,
     "economy": EconomyCollector,
     "products": ProductCollector,
@@ -108,17 +115,18 @@ def main():
     # 4. Score
     logger.info("--- Phase 4: Scoring ---")
     macro_events = _extract_macro_events(all_opportunities)
-    scorer = Scorer(entities, signals, macro_events)
+    scorer = Scorer(entities, signals, macro_events, history=breakout.history)
     scored = scorer.score_all()
     logger.info(f"[OK] Opportunities scored ({len(scored)} entities)")
 
     # 5. History & Breakout
     logger.info("--- Phase 5: History & Breakout Detection ---")
     for s in scored:
-        prev_entries = breakout.history.get(s.entity.id, {}).get("entries", [])
-        if prev_entries:
-            s.previous_score = prev_entries[-1].get("score", 0)
-            s.score_change = s.score.total - s.previous_score
+        s.previous_score = 0
+        entries = breakout.history.get(s.entity.id, {}).get("entries", [])
+        if entries:
+            s.previous_score = entries[-1].get("score", 0)
+        s.score_change = s.score.total - s.previous_score
 
         breakout.update(
             s.entity.id,
@@ -139,13 +147,10 @@ def main():
             b["url"] = entity.url
             breakouts.append(b)
 
-    # 6. Select top opportunities
+    # 6. Selection (section-based, max 30)
     logger.info("--- Phase 6: Selection ---")
-    scored.sort(key=lambda s: s.score.total, reverse=True)
-
-    top = scored[:TOP_N]
-    emerging = scored[TOP_N:TOP_N + EMERGING_N]
-    logger.info(f"[OK] Top opportunities: {len(top)}, Emerging: {len(emerging)}")
+    sections = build_sections(scored)
+    logger.info(f"[OK] Sections built, total items: {total_count(sections)}")
 
     # 7. Watchlist
     watchlist_ids = breakout.get_watchlist_ids()
@@ -180,7 +185,7 @@ def main():
     logger.info("[OK] Data saved")
 
     # 10. Send report
-    _send_report(store, entities, signals, breakout, top + emerging, breakouts, warnings, watchlist, macro_signals)
+    _send_report(store, entities, signals, breakout, sections, breakouts, warnings, watchlist, macro_signals, scored)
 
     logger.info("=== Opportunity Scanner Complete ===")
 
@@ -195,6 +200,8 @@ def _generate_signals(opportunities, entities, signals):
         for cat, desc in categories:
             signals.add_for_entity(entity.id, cat, opp.source, desc, 1, opp.url)
 
+        _enrich_funding_metadata(opp, entity, signals)
+
         if opp.metrics.github_stars and opp.metrics.github_stars > 100:
             signals.add_for_entity(entity.id, "github", opp.source,
                                    f"GitHub stars: {opp.metrics.github_stars}", 1)
@@ -207,6 +214,85 @@ def _generate_signals(opportunities, entities, signals):
         if opp.metrics.news_mentions and opp.metrics.news_mentions > 0:
             signals.add_for_entity(entity.id, "news", opp.source,
                                    opp.description[:100], 1)
+
+
+def _enrich_funding_metadata(opp, entity, signals):
+    """Parse funding info from an opportunity and enrich the entity.
+
+    Adds: startup_stage, funding_history, investors, accelerators,
+    total_funding_m, plus funding_round / smart_money / accelerator signals.
+    Never fabricates numbers — only records what text contains.
+    """
+    text = f"{opp.name} {opp.description}"
+    parsed = parse_funding_event(text)
+    accelerator = None
+    if parsed:
+        accelerator = parsed.get("accelerator")
+
+    # YC / accelerator-tagged items count as accelerator-backed
+    tags = [t.lower() for t in (opp.tags or [])]
+    if opp.source == "ycombinator" or "yc" in tags:
+        accelerator = "y combinator"
+
+    if parsed and parsed.get("round") and parsed["round"] != UNKNOWN:
+        round_stage = parsed["round"]
+        stage_order = [UNKNOWN, "PRE_SEED", "SEED", "SERIES_A", "SERIES_B", "SERIES_C", "GROWTH", "PUBLIC"]
+        if entity.startup_stage in stage_order and round_stage in stage_order:
+            if stage_order.index(round_stage) > stage_order.index(entity.startup_stage):
+                entity.startup_stage = round_stage
+
+        amount = parsed.get("amount_m")
+        investors = parsed.get("investors", [])
+        round_entry = {
+            "date": date.today().isoformat(),
+            "round": round_stage,
+            "amount_m": amount,
+            "investors": investors,
+        }
+        if not _round_exists(entity.funding_history, round_entry):
+            entity.funding_history.append(round_entry)
+
+        signals.add_for_entity(
+            entity.id, "funding_round", opp.source,
+            f"Funding round: {STAGE_LABELS.get(round_stage, round_stage)}"
+            + (f" {amount:.1f}M" if amount is not None else "")
+            + (f" - {', '.join(investors[:3])}" if investors else ""),
+            1, opp.url,
+        )
+
+        for inv in investors:
+            if inv not in entity.investors:
+                entity.investors.append(inv)
+        if investors:
+            signals.add_for_entity(
+                entity.id, "smart_money", opp.source,
+                f"Notable investors: {', '.join(investors[:4])}", 1, opp.url,
+            )
+
+    if accelerator:
+        if accelerator not in entity.accelerators:
+            entity.accelerators.append(accelerator)
+        signals.add_for_entity(
+            entity.id, "accelerator", opp.source,
+            f"Accelerator: {accelerator}", 1, opp.url,
+        )
+
+    _recompute_funding_totals(entity)
+
+
+def _round_exists(history: list[dict], candidate: dict) -> bool:
+    for h in history:
+        if (h.get("round") == candidate["round"]
+                and h.get("amount_m") == candidate["amount_m"]
+                and h.get("date") == candidate["date"]):
+            return True
+    return False
+
+
+def _recompute_funding_totals(entity):
+    amounts = [r.get("amount_m") for r in entity.funding_history if r.get("amount_m") is not None]
+    if amounts:
+        entity.total_funding_m = round(sum(amounts), 2)
 
 
 def _detect_signal_categories(opp) -> list[tuple[str, str]]:
@@ -248,7 +334,7 @@ def _detect_signal_categories(opp) -> list[tuple[str, str]]:
         results.append(("market_event", f"Market event: {opp.description[:80]}"))
 
     if any(w in text for w in ["acqui", "merger", "m&a", "buyout"]):
-        results.append(("funding", f"M&A signal: {opp.description[:80]}"))
+        results.append(("ma_signal", f"M&A signal: {opp.description[:80]}"))
 
     if any(w in cat_lower for w in ["funding", "ipo"]):
         results.append(("funding", f"Funding category: {opp.description[:80]}"))
@@ -275,22 +361,30 @@ def _extract_macro_events(opportunities) -> list[dict]:
     return events
 
 
-def _send_report(store, entities, signals, breakout, top, breakouts, warnings,
-                  watchlist=None, macro_signals=None):
+def _send_report(store, entities, signals, breakout, sections, breakouts,
+                 warnings, watchlist=None, macro_signals=None, scored=None):
     logger.info("--- Phase 8: Email Sending ---")
-    top_scored = [s for s in top if s.score.total > 0][:TOP_N]
-    emerging_scored = [s for s in top[TOP_N:] if s.score.total > 0][:EMERGING_N] if len(top) > TOP_N else []
+    scored = scored or []
+
+    # Score trends (last up-to-5 history entries per shown entity)
+    trends = {}
+    for sec in sections:
+        for s in sec["items"]:
+            history_entries = breakout.history.get(s.entity.id, {}).get("entries", [])
+            vals = [e.get("score", 0) for e in history_entries[-5:]]
+            if vals:
+                trends[s.entity.id] = vals
 
     html = render_email(
-        top_opportunities=top_scored,
-        emerging=emerging_scored,
+        sections=sections,
         breakouts=breakouts[:BREAKOUT_N],
         watchlist=(watchlist or [])[:5],
         warnings=warnings,
         macro_signals=macro_signals,
+        trends=trends,
     )
 
-    subject = build_subject(len(top_scored) + len(emerging_scored))
+    subject = build_subject(total_count(sections))
     send_email(html, subject)
 
 

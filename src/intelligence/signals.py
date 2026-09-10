@@ -8,6 +8,9 @@ logger = logging.getLogger(__name__)
 
 SIGNAL_CATEGORIES = {
     "funding": "Funding",
+    "funding_round": "Funding Round",
+    "smart_money": "Smart Money",
+    "accelerator": "Accelerator",
     "hiring": "Hiring",
     "product_launch": "Product Launch",
     "partnership": "Partnership",
@@ -17,6 +20,8 @@ SIGNAL_CATEGORIES = {
     "github": "GitHub",
     "market_event": "Market Event",
     "macro_event": "Macro Event",
+    "ma_signal": "M&A",
+    "momentum": "Growth Momentum",
 }
 
 

@@ -9,10 +9,16 @@ def format_reasons(scored: ScoredEntity) -> list[str]:
 
     if breakdown.funding > 0:
         reasons.append(f"Funding signal (+{breakdown.funding})")
+    if breakdown.smart_money > 0:
+        reasons.append(f"Smart money participation (+{breakdown.smart_money})")
+    if breakdown.accelerator > 0:
+        reasons.append(f"Accelerator backing (+{breakdown.accelerator})")
     if breakdown.hiring > 0:
         reasons.append(f"Hiring activity (+{breakdown.hiring})")
     if breakdown.product > 0:
         reasons.append(f"Product event (+{breakdown.product})")
+    if breakdown.momentum > 0:
+        reasons.append(f"Growth momentum (+{breakdown.momentum})")
     if breakdown.community > 0:
         reasons.append(f"Community engagement (+{breakdown.community})")
     if breakdown.news > 0:

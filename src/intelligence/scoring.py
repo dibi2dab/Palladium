@@ -5,22 +5,13 @@ from dataclasses import dataclass, field
 
 from src.intelligence.entities import Entity, EntityManager
 from src.intelligence.signals import SignalManager
+from src.intelligence.funding import (
+    PRE_SEED, SEED, SERIES_A, SERIES_B, SERIES_C, GROWTH,
+    UNKNOWN, BIG_TECH, funding_momentum, stage_advanced,
+)
 
 logger = logging.getLogger(__name__)
 
-
-FUNDING_SIGNALS = [
-    ("seed", "Series Seed", 12),
-    ("pre-seed", "Pre-Seed", 8),
-    ("series_a", "Series A", 15),
-    ("series_b", "Series B", 15),
-    ("series_c", "Series C", 15),
-    ("series_d", "Series D+", 12),
-    ("ipo", "IPO", 10),
-    ("spac", "SPAC", 8),
-    ("acquisition", "Acquisition", 10),
-    ("grant", "Grant", 5),
-]
 
 MACRO_BOOSTS = {
     "rate_cut": 5,
@@ -37,6 +28,8 @@ MACRO_BOOSTS = {
 @dataclass
 class ScoreBreakdown:
     funding: int = 0
+    smart_money: int = 0
+    accelerator: int = 0
     hiring: int = 0
     product: int = 0
     community: int = 0
@@ -44,6 +37,7 @@ class ScoreBreakdown:
     github: int = 0
     partnership: int = 0
     customer: int = 0
+    momentum: int = 0
     signal_diversity: int = 0
     cross_source: int = 0
     macro_adjustment: int = 0
@@ -51,8 +45,9 @@ class ScoreBreakdown:
     @property
     def total(self) -> int:
         raw = sum([
-            self.funding, self.hiring, self.product, self.community,
-            self.news, self.github, self.partnership, self.customer,
+            self.funding, self.smart_money, self.accelerator, self.hiring,
+            self.product, self.community, self.news, self.github,
+            self.partnership, self.customer, self.momentum,
             self.signal_diversity, self.cross_source, self.macro_adjustment,
         ])
         return max(0, min(100, raw))
@@ -60,6 +55,8 @@ class ScoreBreakdown:
     def to_dict(self) -> dict:
         return {
             "funding": self.funding,
+            "smart_money": self.smart_money,
+            "accelerator": self.accelerator,
             "hiring": self.hiring,
             "product": self.product,
             "community": self.community,
@@ -67,6 +64,7 @@ class ScoreBreakdown:
             "github": self.github,
             "partnership": self.partnership,
             "customer": self.customer,
+            "momentum": self.momentum,
             "signal_diversity": self.signal_diversity,
             "cross_source": self.cross_source,
             "macro_adjustment": self.macro_adjustment,
@@ -76,8 +74,11 @@ class ScoreBreakdown:
     def top_signals(self) -> list[tuple[str, int]]:
         items = [
             ("Funding", self.funding),
+            ("Smart Money", self.smart_money),
+            ("Accelerator", self.accelerator),
             ("Hiring", self.hiring),
             ("Product", self.product),
+            ("Momentum", self.momentum),
             ("Community", self.community),
             ("News", self.news),
             ("GitHub", self.github),
@@ -100,10 +101,12 @@ class ScoredEntity:
 
 class Scorer:
     def __init__(self, entity_manager: EntityManager, signal_manager: SignalManager,
-                 macro_events: list[dict] | None = None):
+                 macro_events: list[dict] | None = None,
+                 history: dict | None = None):
         self.entities = entity_manager
         self.signals = signal_manager
         self.macro_events = macro_events or []
+        self.history = history or {}
 
     def score_all(self) -> list[ScoredEntity]:
         results: list[ScoredEntity] = []
@@ -118,22 +121,24 @@ class Scorer:
         reasons: list[str] = []
 
         counts = self.signals.count_by_category(entity.id, days=30)
-        all_counts = self.signals.count_by_category(entity.id, days=365)
 
-        breakdown.funding = self._score_funding(counts, reasons)
+        breakdown.funding = self._score_funding(counts, entity, reasons)
+        breakdown.smart_money = self._score_smart_money(entity, counts, reasons)
+        breakdown.accelerator = self._score_accelerator(entity, counts, reasons)
         breakdown.hiring = self._score_hiring(counts, reasons)
-        breakdown.product = self._score_product(counts, reasons)
+        breakdown.product = self._score_product(counts, entity, reasons)
         breakdown.community = self._score_community(counts, reasons)
         breakdown.news = self._score_news(counts, reasons)
         breakdown.github = self._score_github(counts, entity, reasons)
         breakdown.partnership = self._score_partnership(counts, reasons)
         breakdown.customer = self._score_customer(counts, reasons)
+        breakdown.momentum = self._score_momentum(entity, reasons)
         breakdown.signal_diversity = self._score_diversity(counts, reasons)
         breakdown.cross_source = self._score_cross_source(entity, reasons)
         breakdown.macro_adjustment = self._score_macro(reasons)
 
         confidence = self._compute_confidence(entity, counts, reasons)
-        types = self._determine_types(breakdown, counts, reasons)
+        types = self._determine_types(breakdown, entity, counts, reasons)
 
         return ScoredEntity(
             entity=entity,
@@ -143,39 +148,73 @@ class Scorer:
             reasons=reasons,
         )
 
-    def _score_funding(self, counts: dict, reasons: list) -> int:
-        funding = counts.get("funding", 0)
-        if funding == 0:
+    # --- funding ---
+
+    def _score_funding(self, counts: dict, entity: Entity, reasons: list) -> int:
+        funding = counts.get("funding", 0) + counts.get("funding_round", 0)
+        if funding == 0 and not entity.funding_history:
             return 0
+        if funding == 0 and entity.funding_history:
+            funding = 1
         if funding >= 15:
             reasons.append("Major funding round detected")
-            return 15
+            return 18
         if funding >= 10:
             reasons.append("Funding event detected")
-            return 12
+            return 15
         if funding >= 5:
             reasons.append("Funding activity detected")
+            return 11
+        reasons.append("Funding signal present")
+        return 7
+
+    def _score_smart_money(self, entity: Entity, counts: dict, reasons: list) -> int:
+        smart = counts.get("smart_money", 0)
+        if smart > 0:
+            names = [i.capitalize() for i in entity.investors[:3]]
+            label = ", ".join(names) if names else "Notable investors"
+            reasons.append(f"Smart money participation ({label})")
             return 8
-        reasons.append("Minor funding signal")
-        return 4
+        if entity.investors:
+            reasons.append("Investor participation detected")
+            return 5
+        return 0
+
+    def _score_accelerator(self, entity: Entity, counts: dict, reasons: list) -> int:
+        accel = counts.get("accelerator", 0)
+        if accel > 0 or entity.accelerators:
+            names = [a.capitalize() for a in entity.accelerators[:2]]
+            label = ", ".join(names) if names else "Accelerator"
+            reasons.append(f"Accelerator-backed ({label})")
+            return 6
+        return 0
+
+    # --- growth signals ---
 
     def _score_hiring(self, counts: dict, reasons: list) -> int:
         hiring = counts.get("hiring", 0)
         if hiring == 0:
             return 0
-        if hiring >= 10:
+        if hiring >= 8:
             reasons.append("Significant hiring activity")
-            return 12
-        if hiring >= 5:
+            return 10
+        if hiring >= 4:
             reasons.append("Active hiring detected")
-            return 8
-        reasons.append("Some hiring signals")
+            return 7
+        reasons.append("Hiring signals present")
         return 4
 
-    def _score_product(self, counts: dict, reasons: list) -> int:
+    def _score_product(self, counts: dict, entity: Entity, reasons: list) -> int:
         product = counts.get("product_launch", 0)
         if product == 0:
             return 0
+        is_big_tech = entity.name.lower().strip() in BIG_TECH or any(
+            bt in entity.name.lower() for bt in BIG_TECH
+        )
+        has_funding = entity.funding_history or counts.get("funding", 0) or counts.get("funding_round", 0)
+        if is_big_tech and not has_funding:
+            reasons.append("Product event (major company, lower priority)")
+            return 2
         if product >= 5:
             reasons.append("Multiple product launches/events")
             return 10
@@ -184,6 +223,29 @@ class Scorer:
             return 8
         reasons.append("Product activity detected")
         return 5
+
+    def _score_momentum(self, entity: Entity, reasons: list) -> int:
+        progression = [r.get("round") for r in entity.funding_history]
+        if len(entity.funding_history) >= 2 and stage_advanced(progression):
+            reasons.append("Funding stage progression detected")
+            return 7
+        if entity.funding_history and (
+            entity.total_funding_m or _funding_growth(entity) >= 100
+        ):
+            reasons.append("Funding momentum (growing rounds)")
+            return 5
+
+        entries = self.history.get(entity.id, {}).get("entries", [])
+        if len(entries) >= 2:
+            prev = entries[-2].get("score", 0) or 0
+            curr = entries[-1].get("score", 0) or 0
+            if curr > prev >= 0 and (curr - prev) >= 8:
+                reasons.append("Score momentum over past days")
+                return 6
+            if curr > prev:
+                reasons.append("Sustained upward trend")
+                return 3
+        return 0
 
     def _score_community(self, counts: dict, reasons: list) -> int:
         community = counts.get("community", 0)
@@ -247,7 +309,7 @@ class Scorer:
         return 0
 
     def _score_diversity(self, counts: dict, reasons: list) -> int:
-        active = sum(1 for k, v in counts.items() if v > 0 and k != "macro_event")
+        active = sum(1 for k, v in counts.items() if v > 0 and k not in ("macro_event",))
         if active >= 5:
             reasons.append(f"High signal diversity ({active} categories)")
             return 12
@@ -288,6 +350,8 @@ class Scorer:
                     reasons.append(f"Macro headwind: {etype}")
         return max(-10, min(10, adjustment))
 
+    # --- confidence & types ---
+
     def _compute_confidence(self, entity: Entity, counts: dict, reasons: list) -> int:
         confidence = 30
         unique_sources = len(set(entity.signal_sources))
@@ -300,6 +364,10 @@ class Scorer:
             confidence += 5
         if entity.github:
             confidence += 4
+        if entity.funding_history:
+            confidence += 5
+        if entity.investors:
+            confidence += 5
 
         if total_signals < 3:
             confidence -= 15
@@ -307,23 +375,49 @@ class Scorer:
 
         return max(0, min(100, confidence))
 
-    def _determine_types(self, breakdown: ScoreBreakdown,
+    def _determine_types(self, breakdown: ScoreBreakdown, entity: Entity,
                          counts: dict, reasons: list) -> list[str]:
         types = []
         total = breakdown.total
 
-        has_funding = counts.get("funding", 0) > 0
-        has_growth = (counts.get("hiring", 0) + counts.get("community", 0) +
-                      counts.get("customer", 0)) >= 3
+        has_funding = bool(entity.funding_history) or counts.get("funding", 0) > 0
+        growth_signals = (counts.get("hiring", 0) + counts.get("community", 0) +
+                          counts.get("customer", 0) + counts.get("momentum", 0))
+
+        stage = entity.startup_stage
+        if stage in (PRE_SEED, SEED):
+            types.append("EARLY_STAGE")
+        elif stage in (SERIES_A, SERIES_B, SERIES_C, GROWTH):
+            types.append("GROWTH")
+
+        if has_funding or smart_money_present(entity):
+            types.append("VC_BACKED")
+
+        if not has_funding and growth_signals >= 3:
+            types.append("PRE_FUNDING")
+            types.append("WATCH")
+
+        if entity.ticker or entity.category.lower() in ("public company", "market event", "activist"):
+            types.append("PUBLIC_MARKET")
+
+        if counts.get("ma_signal", 0) > 0 or entity.category.lower() in ("m&a", "acquisition", "merger"):
+            types.append("M&A_TARGET")
 
         if total >= 70 and has_funding:
             types.append("INVEST")
-        if total >= 60 and has_growth:
+        if total >= 60 and growth_signals >= 3:
             types.append("BUILD")
         if total >= 65 and counts.get("community", 0) >= 3:
             types.append("ACQUIRE")
-
         if not types:
             types.append("WATCH")
 
-        return types
+        return list(dict.fromkeys(types))
+
+
+def smart_money_present(entity: Entity) -> bool:
+    return bool(entity.investors or entity.accelerators)
+
+
+def _funding_growth(entity: Entity) -> float:
+    return funding_momentum(entity.funding_history)["growth"]

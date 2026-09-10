@@ -6,6 +6,8 @@ import re
 from datetime import date
 from urllib.parse import urlparse
 
+from src.intelligence.funding import UNKNOWN
+
 logger = logging.getLogger(__name__)
 
 
@@ -65,6 +67,12 @@ class Entity:
         self.signal_counts: dict[str, int] = {}
         self.signal_sources: list[str] = []
         self.tags: list[str] = []
+        self.startup_stage: str = UNKNOWN
+        self.opportunity_type: str = ""
+        self.investors: list[str] = []
+        self.accelerators: list[str] = []
+        self.funding_history: list[dict] = []
+        self.total_funding_m: float | None = None
 
     @property
     def signal_diversity(self) -> int:
@@ -85,6 +93,12 @@ class Entity:
             "signal_counts": self.signal_counts,
             "signal_sources": self.signal_sources,
             "tags": self.tags,
+            "startup_stage": self.startup_stage,
+            "opportunity_type": self.opportunity_type,
+            "investors": self.investors,
+            "accelerators": self.accelerators,
+            "funding_history": self.funding_history,
+            "total_funding_m": self.total_funding_m,
         }
 
     @classmethod
@@ -104,6 +118,12 @@ class Entity:
         e.signal_counts = d.get("signal_counts", {})
         e.signal_sources = d.get("signal_sources", [])
         e.tags = d.get("tags", [])
+        e.startup_stage = d.get("startup_stage", UNKNOWN)
+        e.opportunity_type = d.get("opportunity_type", "")
+        e.investors = d.get("investors", [])
+        e.accelerators = d.get("accelerators", [])
+        e.funding_history = d.get("funding_history", [])
+        e.total_funding_m = d.get("total_funding_m")
         return e
 
 
