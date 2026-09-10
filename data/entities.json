@@ -12085,5 +12085,265 @@
     "accelerators": [],
     "funding_history": [],
     "total_funding_m": null
+  },
+  "085fd28759f1": {
+    "id": "085fd28759f1",
+    "name": "SoHo-based startup raises $150M Series C with AI prescription tool - Crain's New York",
+    "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOanVhbWhTa0RqTGRBNWszTDVpVHdZNTZ5QlktMEFLQTJva2VEVHN3a1VpbG5kNnQ5aVdLOVNRUkpyZU9jRzFoY1Y0Ukp0QVl6dm5ReWJJbC0tMUtpZm50LUd1cjlrbF9iVWNOaExJdTVhZ1k4c2YzeU5DWjFDWmRBaVdUOGxrQXRERTY0MmU5c3pLMll6NUhRVi1HcnM?oc=5",
+    "category": "Funding",
+    "description": "SoHo-based startup raises $150M Series C with AI prescription tool - Crain's New York",
+    "domain": "news.google.com",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "funding:google_news",
+      "funding:gnews:SoHo-based startup raises $150M Series C"
+    ],
+    "tags": [
+      "funding",
+      "startup",
+      "google_news"
+    ],
+    "startup_stage": "SERIES_C",
+    "opportunity_type": "",
+    "investors": [],
+    "accelerators": [],
+    "funding_history": [
+      {
+        "date": "2026-09-10",
+        "round": "SERIES_C",
+        "amount_m": 150.0,
+        "investors": []
+      }
+    ],
+    "total_funding_m": 150.0
+  },
+  "159aa5873090": {
+    "id": "159aa5873090",
+    "name": "AI Health Company Forus Raises $150 Million at a $3 Billion Value - Bloomberg.com",
+    "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPZGdvOTlYbHhyM0RZOHBWQ1FjN1BxWm90bGt6SFdmbkJKNWpfZkF5Tm40RkVPZ0FmRlNfS0JNYmowb05uZlVVRXYtQWNIdlhBSjBoYXRUMHFtLWtST2VrRmZBQnVrVUduRExxUTlRWUdSMk9TYXdFaXR5WVZxWHZLT0UteU1VYWdPX2pXNmJ3R2Q0MWM3WGQ1WXpROVB2VGVIdTBKRjdvVVQ0VTZ5bzFON0ZiTS0?oc=5",
+    "category": "Startup",
+    "description": "AI Health Company Forus Raises $150 Million at a $3 Billion Value - Bloomberg.com",
+    "domain": "news.google.com",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "funding:google_news",
+      "funding:gnews:AI Health Company Forus Raises $150 Mill"
+    ],
+    "tags": [
+      "funding",
+      "startup",
+      "google_news"
+    ],
+    "startup_stage": "UNKNOWN",
+    "opportunity_type": "",
+    "investors": [],
+    "accelerators": [],
+    "funding_history": [],
+    "total_funding_m": null
+  },
+  "273353ecc167": {
+    "id": "273353ecc167",
+    "name": "Forus secures $150M series C to grow AI-powered medication access platform - Fierce Healthcare",
+    "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPNE5sSDQzWV8tcUJ0Ym44cENnVF9fbWxiWEg5Ni1Xb0dlOFBvSE83TTd4YnFiRWlMUEFLekZtSl9mRE1rcU9jU3puaWF3cmRrSXF5QVB5VTVBb2J0Z3hzSHlQaWwyM2h5WC11ZlJGb2ZaZnktSVBILXBzaVM1VVUwZm9UdjJTZF9ocnh6X0tn?oc=5",
+    "category": "Funding",
+    "description": "Forus secures $150M series C to grow AI-powered medication access platform - Fierce Healthcare",
+    "domain": "news.google.com",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "funding:google_news",
+      "funding:gnews:Forus secures $150M series C to grow AI-"
+    ],
+    "tags": [
+      "funding",
+      "startup",
+      "google_news"
+    ],
+    "startup_stage": "SERIES_C",
+    "opportunity_type": "",
+    "investors": [],
+    "accelerators": [],
+    "funding_history": [
+      {
+        "date": "2026-09-10",
+        "round": "SERIES_C",
+        "amount_m": 150.0,
+        "investors": []
+      }
+    ],
+    "total_funding_m": 150.0
+  },
+  "bce7e77bc21e": {
+    "id": "bce7e77bc21e",
+    "name": "Stocks to Watch Recap: Intel, Amgen, Qualcomm, Rigetti",
+    "url": "https://www.wsj.com/livecoverage/stock-market-today-dow-sp-500-nasdaq-09-08-2026/card/stocks-to-watch-amgen-nike-bloom-energy-cg2CI9iPuPrPrQKnUDxu?siteid=yhoof2&yptr=yahoo",
+    "category": "Market Event",
+    "description": "Stocks to Watch Recap: Intel, Amgen, Qualcomm, Rigetti",
+    "domain": "wsj.com",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "market_news",
+      "news:Stocks to Watch Recap: Intel, Amgen, Qualcomm, Rig"
+    ],
+    "tags": [
+      "market",
+      "news"
+    ],
+    "startup_stage": "UNKNOWN",
+    "opportunity_type": "",
+    "investors": [],
+    "accelerators": [],
+    "funding_history": [],
+    "total_funding_m": null
+  },
+  "049d97bfe207": {
+    "id": "049d97bfe207",
+    "name": "Why CoreWeave Stock Soared 12% Today",
+    "url": "https://finance.yahoo.com/markets/stocks/articles/why-coreweave-stock-soared-12-205153112.html",
+    "category": "Market Event",
+    "description": "Why CoreWeave Stock Soared 12% Today",
+    "domain": "finance.yahoo.com",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "market_news",
+      "news:Why CoreWeave Stock Soared 12% Today"
+    ],
+    "tags": [
+      "market",
+      "news"
+    ],
+    "startup_stage": "UNKNOWN",
+    "opportunity_type": "",
+    "investors": [],
+    "accelerators": [],
+    "funding_history": [],
+    "total_funding_m": null
+  },
+  "7c860cc2bbd8": {
+    "id": "7c860cc2bbd8",
+    "name": "SAP CEO: Our AI breakthrough moment is coming",
+    "url": "https://finance.yahoo.com/markets/stocks/article/sap-ceo-our-ai-breakthrough-moment-is-coming-221642192.html",
+    "category": "Market Event",
+    "description": "SAP CEO: Our AI breakthrough moment is coming",
+    "domain": "finance.yahoo.com",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "market_news",
+      "news:SAP CEO: Our AI breakthrough moment is coming"
+    ],
+    "tags": [
+      "market",
+      "news"
+    ],
+    "startup_stage": "UNKNOWN",
+    "opportunity_type": "",
+    "investors": [],
+    "accelerators": [],
+    "funding_history": [],
+    "total_funding_m": null
+  },
+  "6e179b82e6c1": {
+    "id": "6e179b82e6c1",
+    "name": "Why Qualcomm Stock Is Up Today",
+    "url": "https://finance.yahoo.com/markets/stocks/articles/why-qualcomm-stock-today-204756919.html",
+    "category": "Market Event",
+    "description": "Why Qualcomm Stock Is Up Today",
+    "domain": "finance.yahoo.com",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "market_news",
+      "news:Why Qualcomm Stock Is Up Today"
+    ],
+    "tags": [
+      "market",
+      "news"
+    ],
+    "startup_stage": "UNKNOWN",
+    "opportunity_type": "",
+    "investors": [],
+    "accelerators": [],
+    "funding_history": [],
+    "total_funding_m": null
+  },
+  "bc7f7444ea13": {
+    "id": "bc7f7444ea13",
+    "name": "Palantir Stock Continues to Grow on the Back of Enterprise Partnerships",
+    "url": "https://finance.yahoo.com/markets/stocks/articles/palantir-stock-continues-grow-back-223139549.html",
+    "category": "Market Event",
+    "description": "Palantir Stock Continues to Grow on the Back of Enterprise Partnerships",
+    "domain": "finance.yahoo.com",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "market_news",
+      "news:Palantir Stock Continues to Grow on the Back of En"
+    ],
+    "tags": [
+      "market",
+      "news"
+    ],
+    "startup_stage": "UNKNOWN",
+    "opportunity_type": "",
+    "investors": [],
+    "accelerators": [],
+    "funding_history": [],
+    "total_funding_m": null
+  },
+  "cd70d789df4d": {
+    "id": "cd70d789df4d",
+    "name": "Samsung, Duolingo troll Apple’s iPhone Duo launch in viral X exchange - gulfbusiness.com",
+    "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOWmxiVTY2eDhrWlJMSEQyOUJST2J3Q3RSXy12b09PenFGNDJDeDRWYkF3TVc0YlFtZVo0N190cWMtemdnQjJQSUY2dTd3aGRrOFN0czFGUGpsV3VwVy1CT3NIMVdZN3FQWmJKcERCSTBzVWpxRl83LXA3a0ZIcldqU0FlUTVlWnNsRUpZeElsemtHeFYybTFSTEkyNnFINk9DMFd2NllHOFE?oc=5",
+    "category": "Product",
+    "description": "Samsung, Duolingo troll Apple’s iPhone Duo launch in viral X exchange - gulfbusiness.com",
+    "domain": "news.google.com",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "signal_counts": {},
+    "signal_sources": [
+      "google_news",
+      "gnews:Samsung, Duolingo troll Apple’s iPhone D"
+    ],
+    "tags": [
+      "news",
+      "google_news"
+    ],
+    "startup_stage": "UNKNOWN",
+    "opportunity_type": "",
+    "investors": [],
+    "accelerators": [],
+    "funding_history": [],
+    "total_funding_m": null
   }
 }
