@@ -843,6 +843,81 @@ def test_palladium_markdown_reports():
     print("PASS: test_palladium_markdown_reports")
 
 
+def test_monthly_archive_pack_and_ordering():
+    import zipfile
+    from src.monthly import archive_month, pack_month
+
+    base = Path(tempfile.mkdtemp())
+    data_dir = base / "data"
+    reports_dir = base / "reports"
+    archive_dir = base / "archives"
+    data_dir.mkdir()
+    reports_dir.mkdir()
+    try:
+        (reports_dir / "2026-08").mkdir(parents=True)
+        (reports_dir / "2026-08" / "daily-summary.md").write_text("# t", encoding="utf-8")
+        (data_dir / "raw_2026-08-31.json").write_text("{}", encoding="utf-8")
+        (data_dir / "entities.json").write_text("{}", encoding="utf-8")
+
+        zip_path = pack_month("2026-08", data_dir, reports_dir, archive_dir)
+        with zipfile.ZipFile(zip_path) as z:
+            names = z.namelist()
+        assert any(n == "reports/2026-08/daily-summary.md" for n in names)
+        assert any(n == "data/raw_2026-08-31.json" for n in names)
+        assert any(n == "state/entities.json" for n in names)
+        assert "metadata/archive.json" in names
+
+        # publish=False → packed but NOT verified, nothing deleted.
+        res1 = archive_month("2026-08", publish=False, delete=True,
+                             data_dir=data_dir, reports_dir=reports_dir,
+                             archive_dir=archive_dir)
+        assert res1["verified"] is False
+        assert res1["deleted"] == 0
+        assert (reports_dir / "2026-08" / "daily-summary.md").exists()
+
+        # publisher raises → upload unverified → nothing deleted.
+        def boom(month, asset):
+            raise RuntimeError("upload failed")
+
+        res2 = archive_month("2026-08", publish=True, delete=True,
+                             publisher=boom, data_dir=data_dir,
+                             reports_dir=reports_dir, archive_dir=archive_dir)
+        assert res2["verified"] is False
+        assert res2["deleted"] == 0
+
+        # publisher returns URL → verified → deletion proceeds.
+        def ok(month, asset):
+            return f"https://example.com/releases/tag/{month}"
+
+        res3 = archive_month("2026-08", publish=True, delete=True, publisher=ok,
+                             data_dir=data_dir, reports_dir=reports_dir,
+                             archive_dir=archive_dir)
+        assert res3["verified"] is True
+        assert res3["deleted"] >= 2
+        assert not (reports_dir / "2026-08").exists()
+        assert not list(data_dir.glob("raw_2026-08*.json"))
+
+        # No data at all → skip gracefully, nothing deleted.
+        empty_base = Path(tempfile.mkdtemp())
+        res4 = archive_month("2026-01", data_dir=empty_base / "data",
+                             reports_dir=empty_base / "reports",
+                             archive_dir=archive_dir)
+        assert res4["archive"] is None
+        assert res4["verified"] is False
+    finally:
+        for p in (base, empty_base) if "empty_base" in dir() else (base,):
+            if p is not None and p.exists():
+                shutil.rmtree(p)
+    print("PASS: test_monthly_archive_pack_and_ordering")
+
+
+def test_previous_month_kst():
+    from datetime import datetime
+    from src.monthly import previous_month_kst
+    assert previous_month_kst(datetime(2026, 1, 5)) == "2025-12"
+    assert previous_month_kst(datetime(2026, 9, 1)) == "2026-08"
+
+
 if __name__ == "__main__":
     test_normalize_name()
     test_extract_domain()
@@ -880,4 +955,6 @@ if __name__ == "__main__":
     test_palladium_convergence()
     test_palladium_second_order()
     test_palladium_markdown_reports()
+    test_monthly_archive_pack_and_ordering()
+    test_previous_month_kst()
     print("\nAll tests passed!")

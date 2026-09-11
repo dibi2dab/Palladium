@@ -1,0 +1,56 @@
+name: Palladium Monthly Archive
+
+on:
+  schedule:
+    # 매월 1일 00:30 KST(전달 15:30 UTC)에 지난 달 작업 데이터를 아카이브.
+    # §47–52: Pack -> Publish -> Verify -> Delete 순서를 스크립트가 보장.
+    - cron: '30 15 1 * *'
+  workflow_dispatch:
+    inputs:
+      month:
+        description: '아카이브할 월 (YYYY-MM, 기본: 지난 달)'
+        required: false
+        default: ''
+
+permissions:
+  contents: write
+
+jobs:
+  archive:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run monthly archive (packs, publishes Release, verifies, deletes)
+        env:
+          TZ: 'Asia/Seoul'
+          SMTP_HOST: ${{ secrets.SMTP_HOST }}
+          SMTP_PORT: ${{ secrets.SMTP_PORT || '587' }}
+          SMTP_USERNAME: ${{ secrets.SMTP_USERNAME }}
+          SMTP_PASSWORD: ${{ secrets.SMTP_PASSWORD }}
+          EMAIL_TO: ${{ secrets.EMAIL_TO }}
+          REPO_URL: 'https://github.com/dibi2dab/palladium'
+          REPO_BRANCH: 'main'
+        run: |
+          if [ -n "${{ inputs.month }}" ]; then
+            python scripts/archive_monthly.py "${{ inputs.month }}"
+          else
+            python scripts/archive_monthly.py
+          fi
+
+      - name: Commit working-data deletions (only after verified upload)
+        run: |
+          git config --local user.name "github-actions[bot]"
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git diff --staged --quiet || git commit -m "Palladium: archive monthly working data $(TZ=Asia/Seoul date +%Y-%m)"
+          git push || true

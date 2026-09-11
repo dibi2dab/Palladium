@@ -9,6 +9,7 @@ dist/
 build/
 data/raw_*.json
 data/opportunities.json
+archives/
 reports/*.html
 .DS_Store
 Thumbs.db
