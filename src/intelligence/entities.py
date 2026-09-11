@@ -14,7 +14,8 @@ logger = logging.getLogger(__name__)
 
 def normalize_name(name: str) -> str:
     name = name.strip().lower()
-    name = re.sub(r"[^a-z0-9\s\-.]", "", name)
+    # keep hangul (가-힣) so Korean company names survive normalization/dedup
+    name = re.sub(r"[^a-z0-9가-힣\s\-.]", "", name)
     name = re.sub(r"\s+", " ", name)
     return name.strip()
 
@@ -82,6 +83,7 @@ class Entity:
         self.news_momentum: dict | None = None
         self.community_momentum: dict | None = None
         self.hiring_growth: dict | None = None
+        self.is_korean: bool = False
 
     @property
     def signal_diversity(self) -> int:
@@ -116,6 +118,7 @@ class Entity:
             "news_momentum": self.news_momentum,
             "community_momentum": self.community_momentum,
             "hiring_growth": self.hiring_growth,
+            "is_korean": self.is_korean,
         }
 
     @classmethod
@@ -149,6 +152,7 @@ class Entity:
         e.news_momentum = d.get("news_momentum")
         e.community_momentum = d.get("community_momentum")
         e.hiring_growth = d.get("hiring_growth")
+        e.is_korean = bool(d.get("is_korean", False))
 
         # Migration: upgrade old success-only funding_history entries.
         for r in e.funding_history:

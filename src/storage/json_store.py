@@ -67,3 +67,9 @@ class JsonStore:
 
     def save_events(self, events: list):
         self.save("events.json", events)
+
+    def load_meta(self) -> dict:
+        return self.load("meta.json", {})
+
+    def save_meta(self, meta: dict):
+        self.save("meta.json", meta)

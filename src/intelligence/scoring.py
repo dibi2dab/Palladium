@@ -11,6 +11,7 @@ from src.intelligence.funding import (
 )
 from src.intelligence import classification
 from src.report.narrative import build_narrative
+from src import analyzers
 
 logger = logging.getLogger(__name__)
 
@@ -126,6 +127,11 @@ class ScoredEntity:
     narrative: dict = field(default_factory=dict)
     previous_score: int = 0
     score_change: int = 0
+    opportunity_type: str = "WATCH"
+    evidence_quality: str = "MEDIUM"
+    trajectory: str = "STABLE"
+    lifecycle: str = "WATCH"
+    convergence: list[str] = field(default_factory=list)
 
     @classmethod
     def new_from(cls, scored: "ScoredEntity") -> "ScoredEntity":
@@ -143,6 +149,11 @@ class ScoredEntity:
             narrative=dict(scored.narrative),
             previous_score=scored.previous_score,
             score_change=scored.score_change,
+            opportunity_type=scored.opportunity_type,
+            evidence_quality=scored.evidence_quality,
+            trajectory=scored.trajectory,
+            lifecycle=scored.lifecycle,
+            convergence=list(scored.convergence),
         )
 
 
@@ -201,7 +212,7 @@ class Scorer:
             entity, breakdown, entity.event_types, entity.startup_stage, judgement,
         )
 
-        return ScoredEntity(
+        scored = ScoredEntity(
             entity=entity,
             score=breakdown,
             confidence=confidence,
@@ -213,6 +224,16 @@ class Scorer:
             conf_evidence=evidence,
             narrative=narrative,
         )
+
+        # Palladium enrichment: opportunity type / evidence quality /
+        # trajectory / lifecycle / cross-signal convergence (rules only).
+        entries = self.history.get(entity.id, {}).get("entries", [])
+        scored.opportunity_type = analyzers.opportunity_type(scored)
+        scored.evidence_quality = analyzers.evidence_quality(entity)
+        scored.trajectory = analyzers.trajectory(entries)
+        scored.lifecycle = analyzers.lifecycle(scored, entries)
+        scored.convergence = analyzers.convergence_categories(entity, counts)
+        return scored
 
     # --- funding (confirmed events only) ---
 
@@ -541,7 +562,7 @@ class Scorer:
         amount_in_title = False
         for s in self.signals.get_recent_signals(entity.id, days=30):
             if s.category in ("funding_round", "funding", "smart_money") and s.description:
-                if any(k in s.description for k in ("M", "B", "billion", "million", "$")):
+                if any(k in s.description for k in ("M", "B", "billion", "million", "$", "원")):
                     amount_in_title = True
         if entity.funding_history or amount_in_title:
             confidence += 8

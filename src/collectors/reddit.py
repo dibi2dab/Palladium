@@ -45,7 +45,7 @@ class RedditCollector(BaseCollector):
         results: list[Opportunity] = []
         url = f"https://www.reddit.com/r/{sub}/top/.rss?t=day"
         resp = requests.get(url, timeout=15, headers={
-            "User-Agent": "Mozilla/5.0 (compatible; OpportunityScanner/1.0; +https://github.com/dibi2dab/opportunity-scanner)",
+            "User-Agent": "Mozilla/5.0 (compatible; Palladium/1.0; +https://github.com/dibi2dab/opportunity-scanner)",
         })
         if resp.status_code != 200:
             if resp.status_code == 429:

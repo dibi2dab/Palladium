@@ -1,11 +1,10 @@
 from __future__ import annotations
 
-from datetime import date
-
 from src.intelligence.scoring import ScoredEntity, JUDGEMENT_LABELS
 from src.intelligence.classification import ENTITY_TYPE_LABELS, EVENT_TYPE_LABELS
 from src.intelligence.funding import format_amount_kr, STAGE_LABELS_KO
 from src.report.formatter import format_reasons, format_score_change
+from src import timeutil
 
 
 def render_email(
@@ -15,17 +14,29 @@ def render_email(
     warnings: list[str] | None = None,
     macro_signals: list[str] | None = None,
     trends: dict[str, list[int]] | None = None,
+    generated_at: str = "",
+    collection_window: str = "",
+    source_status: dict | None = None,
+    report_links: list[tuple[str, str]] | None = None,
 ) -> str:
-    today = date.today().isoformat()
+    generated_at = generated_at or timeutil.korean_datetime_str()
+    collection_window = collection_window or ""
     trends = trends or {}
+    source_status = source_status or {}
+    report_links = report_links or []
 
     sections_html = "".join(_render_section(s, trends) for s in sections)
     breakout_html = _render_breakouts(breakouts or [])
     watchlist_html = _render_watchlist(watchlist or [])
     warnings_html = _render_warnings(warnings or [])
     macro_html = _render_macro(macro_signals or [])
+    status_html = _render_source_status(source_status)
+    links_html = _render_report_links(report_links)
 
     total_count = sum(len(s["items"]) for s in sections)
+
+    window_html = (f'<div class="date">수집 기준: {_esc(collection_window)}</div>'
+                   if collection_window else "")
 
     return f"""\
 <!DOCTYPE html>
@@ -33,7 +44,7 @@ def render_email(
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>기회 스캐너 | {today}</title>
+<title>Palladium Daily Intelligence | {generated_at}</title>
 <style>
 body {{ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif; background: #0d1117; color: #c9d1d9; margin: 0; padding: 0; }}
 .container {{ max-width: 680px; margin: 0 auto; padding: 20px; }}
@@ -64,6 +75,8 @@ body {{ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'App
 .tag-invest {{ background: #f0883e33; color: #f0883e; }}
 .tag-bad {{ background: #da363333; color: #f85149; }}
 .tag-cat {{ background: #30363d; color: #c9d1d9; }}
+.tag-new {{ background: #2dd4bf22; color: #2dd4bf; }}
+.tag-repeat {{ background: #bc8cff22; color: #bc8cff; }}
 .desc {{ color: #8b949e; font-size: 13px; line-height: 1.5; margin-bottom: 8px; }}
 .why {{ background: #1f6feb14; border-left: 3px solid #58a6ff; padding: 8px 10px; margin: 8px 0; font-size: 13px; line-height: 1.6; color: #dbe9ff; border-radius: 0 6px 6px 0; white-space: pre-line; }}
 .narrative-block {{ margin: 8px 0; }}
@@ -90,6 +103,10 @@ body {{ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'App
 .watch-name {{ color: #58a6ff; font-weight: 500; text-decoration: none; }}
 .watch-score {{ color: #8b949e; font-size: 12px; }}
 .macro-item {{ padding: 4px 0; font-size: 13px; color: #bc8cff; }}
+.status-table {{ width: 100%; border-collapse: collapse; font-size: 13px; margin-top: 4px; }}
+.status-table th, .status-table td {{ border: 1px solid #30363d; padding: 6px 8px; text-align: left; }}
+.status-table th {{ color: #8b949e; font-weight: 500; background: #161b22; }}
+.report-link {{ display: inline-block; margin: 4px 6px 4px 0; padding: 4px 10px; border-radius: 12px; background: #161b22; border: 1px solid #30363d; color: #58a6ff; text-decoration: none; font-size: 12px; }}
 .warning {{ background: #9e6a0333; border: 1px solid #9e6a03; border-radius: 8px; padding: 12px 16px; margin-bottom: 12px; font-size: 13px; color: #e3b341; }}
 .footer {{ text-align: center; padding: 20px 0; border-top: 1px solid #30363d; color: #484f58; font-size: 12px; }}
 </style>
@@ -97,9 +114,10 @@ body {{ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'App
 <body>
 <div class="container">
   <div class="header">
-    <h1>기회 스캐너</h1>
-    <div class="date">{today}</div>
-    <div class="count">오늘 감지된 기회: {total_count}개</div>
+    <h1>⚡ Palladium Daily Intelligence</h1>
+    <div class="date">{generated_at} · 기준시각(한국)</div>
+    {window_html}
+    <div class="count">오늘 감지된 기회: {total_count}개 (최대 50개)</div>
   </div>
 
   {warnings_html}
@@ -107,9 +125,11 @@ body {{ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'App
   {breakout_html}
   {watchlist_html}
   {macro_html}
+  {status_html}
+  {links_html}
 
   <div class="footer">
-    기회 스캐너 자동 생성 | {today}
+    ⚡ Palladium Daily Intelligence 자동 생성 | {generated_at}
   </div>
 </div>
 </body>
@@ -137,6 +157,11 @@ def _render_section(section: dict, trends: dict[str, list[int]]) -> str:
 def _meta_tags(scored: ScoredEntity, stage_label: str) -> str:
     e = scored.entity
     tags = []
+
+    if scored.previous_score > 0:
+        tags.append('<span class="tag tag-repeat">기존 이벤트 재확인</span>')
+    else:
+        tags.append('<span class="tag tag-new">신규 이벤트</span>')
 
     type_label = ENTITY_TYPE_LABELS.get(scored.entity_type)
     if type_label:
@@ -360,3 +385,34 @@ def _esc(text: str) -> str:
         return ""
     return (text.replace("&", "&amp;").replace("<", "&lt;")
             .replace(">", "&gt;").replace('"', "&quot;"))
+
+
+def _render_source_status(source_status: dict) -> str:
+    if not source_status:
+        return ""
+    rows = []
+    for name, info in source_status.items():
+        status = _esc(info.get("status", "?"))
+        n = info.get("items", 0)
+        rows.append(f'<tr><td>{_esc(name)}</td><td>{status}</td><td>{n}</td></tr>')
+    return f"""
+  <div class="section">
+    <div class="section-title macro">데이터 수집 상태</div>
+    <table class="status-table">
+      <tr><th>소스</th><th>상태</th><th>항목 수</th></tr>
+      {"".join(rows)}
+    </table>
+  </div>"""
+
+
+def _render_report_links(report_links: list[tuple[str, str]]) -> str:
+    if not report_links:
+        return ""
+    items = []
+    for label, url in report_links:
+        items.append(f'<a href="{_esc(url)}" class="report-link" target="_blank">{_esc(label)}</a>')
+    return f"""
+  <div class="section">
+    <div class="section-title product">보고서 (GitHub Markdown)</div>
+    {"".join(items)}
+  </div>"""

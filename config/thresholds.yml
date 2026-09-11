@@ -1,0 +1,37 @@
+# Palladium score bands & report caps (rule-based, no AI).
+# Single source of truth for thresholds. Code falls back to built-in defaults
+# when a key is missing so the pipeline always runs.
+
+score_bands:
+  priority: 80        # 80-100  → PRIORITY (최우선)
+  emerging: 70        # 70-79   → EMERGING (급부상 / ATTENTION)
+  watch: 50           # 50-69   → WATCH (관찰)
+  top_min_score: 70   # TOP 섹션 진입 점수
+  include_min_score: 50  # 리포트 포함 최소 점수 (<50 제외)
+
+section_caps:
+  top_n: 5
+  startup_venture_n: 12
+  public_market_n: 5
+  technology_n: 4
+  product_n: 3
+  ma_n: 2
+  macro_n: 3
+  korea_startup_n: 10
+  korea_public_n: 7
+  korea_tech_n: 5
+  max_report_items: 50
+
+breakout:
+  threshold: 20.0     # 전일 대비 상승률(%)
+
+convergence:
+  min_distinct_signals: 3   # 서로 다른 활성 신호 종류 수
+  min_strong_signals: 2     # 강한 성장 신호 카테고리 수
+  strong_categories: [funding, funding_round, hiring, github, product_launch, community, customer]
+
+trajectory:
+  min_entries: 3
+  window: 5
+  accel_delta: 10           # 최근 구간 합계가 이 값 이상일 때 '가속'
+  decay_delta: -10

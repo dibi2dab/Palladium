@@ -1,0 +1,20 @@
+# Palladium category focus & Markdown report → section mapping.
+# Domain reports are generated only when the domain actually has items.
+
+korea_focus:
+  startup_keywords: [투자 유치, 시리즈, 시드, 상장, 코스피, 코스닥]
+  public_keywords: [실적, 배당, 자사주, 수주, 공급계약, 거래량]
+  tech_keywords: [AI, 인공지능, 반도체, 배터리, 로봇, 플랫폼, 기술]
+
+report_domains:
+  daily_summary: 일일 요약
+  opportunities: 전체 기회 상세
+  startup_radar: 글로벌 스타트업 & 벤처
+  market_anomaly: 글로벌 공개시장 + 거시경제
+  tech_trend: 글로벌 기술
+  product_opportunity: 글로벌 제품 & 비즈니스
+  deal_mna: 글로벌 M&A
+  korea_company: 한국 투자·공개·기술 & 산업
+  dart_events: DART 공시 이벤트
+  second_order: 2차 기회 (파생)
+  market_entry: 국내 진입 후보

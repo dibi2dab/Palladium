@@ -40,11 +40,21 @@ STAGE_LABELS_KO = {
 ROUND_PATTERNS = [
     ("pre-seed", PRE_SEED),
     ("pre seed", PRE_SEED),
+    ("프리 시드", PRE_SEED),
+    ("프리시드", PRE_SEED),
+    ("pre-시드", PRE_SEED),
     ("seed round", SEED),
     ("seed", SEED),
+    ("시드", SEED),
     ("series a", SERIES_A),
+    ("시리즈 a", SERIES_A),
+    ("시리즈a", SERIES_A),
     ("series b", SERIES_B),
+    ("시리즈 b", SERIES_B),
+    ("시리즈b", SERIES_B),
     ("series c", SERIES_C),
+    ("시리즈 c", SERIES_C),
+    ("시리즈c", SERIES_C),
     ("series d", GROWTH),
     ("series e", GROWTH),
     ("growth round", GROWTH),
@@ -100,6 +110,10 @@ AMOUNT_EUR_RE = re.compile(
     r"€\s?([0-9][0-9,\.]*)\s?(m|mn|million|k|kilo|b|bn|billion)\b",
     re.IGNORECASE,
 )
+# 한화 금액: "120억 원", "1조 원", "500만원"
+AMOUNT_KRW_RE = re.compile(
+    r"([0-9][0-9,\.]*)\s*(조|억|만)\s*원",
+)
 
 # Phrases that CONFIRM a real funding event (not stock moves, treasury
 # articles, product launches, or general investor opinions).
@@ -114,6 +128,12 @@ FUNDING_CONFIRM_RE = [
     re.compile(r"\bsecures?\b.{0,80}?(?:financing|funding|round|investment)", re.IGNORECASE),
     re.compile(r"\b(?:lands?|scores?|banks?|nabs?|pockets?)\b.{0,60}?\$", re.IGNORECASE),
     re.compile(r"\bcloses?\b.{0,60}?(?:funding|round|financing|investment)", re.IGNORECASE),
+    # 한국어 투자 확인 패턴
+    re.compile(r"투자\s?유치|투자유치"),
+    re.compile(r"시리즈\s?[a-c]|시리즈\s?(?:라운드|펀딩)"),
+    re.compile(r"(?:프리\s?)?시드\s?(?:라운드|펀딩|투자)?|시드"),
+    re.compile(r"(?:자금|투자)\s?조달|조달\s?(?:완료|성공|확정)"),
+    re.compile(r"투자 라운드|라운드"),
 ]
 
 EXCLUDE_FUNDING_NAVIGATION = [
@@ -126,6 +146,8 @@ WITHDRAWAL_KEYWORDS = [
     "withdraws", "abandoned", "walked away", "dropped", "failed to close",
     "terminated", "pulled", "rescinded", "scrapped", "called off",
     "fell through", "walk away", "has been cancelled",
+    # 한국어 철회/무산 신호
+    "철회", "무산", "취소", "좌절", "중단", "되돌림",
 ]
 
 
@@ -151,8 +173,26 @@ def parse_amount(text: str) -> float | None:
     return round(val, 2)
 
 
+def parse_amount_krw(text: str) -> tuple[float | None, str]:
+    """Return (amount_m, "KRW") for Korean text like '120억 원'.
+
+    amount_m is stored in millions of KRW (120억 원 == 12000.0).
+    """
+    t = _normalize_text(text)
+    m = AMOUNT_KRW_RE.search(t)
+    if not m:
+        return None, "KRW"
+    try:
+        val = float(m.group(1).replace(",", ""))
+    except ValueError:
+        return None, "KRW"
+    unit = m.group(2)
+    factor = {"조": 1e12, "억": 1e8, "만": 1e4}.get(unit, 1.0)
+    return round(val * factor / 1e6, 2), "KRW"
+
+
 def parse_amount_currency(text: str) -> tuple[float | None, str]:
-    """Return (amount_m, currency_label) for a USD or EUR amount."""
+    """Return (amount_m, currency_label) for USD, EUR, or KRW amounts."""
     usd = parse_amount(text)
     if usd is not None:
         return usd, "USD"
@@ -169,6 +209,9 @@ def parse_amount_currency(text: str) -> tuple[float | None, str]:
         elif unit in ("k", "kilo", "thousand"):
             val /= 1000.0
         return round(val, 2), "EUR"
+    krw, cur = parse_amount_krw(text)
+    if krw is not None:
+        return krw, "KRW"
     return None, ""
 
 
@@ -322,11 +365,16 @@ def parse_funding_event(title: str, description: str | None = None) -> dict | No
 def _looks_planned(title: str, body: str) -> bool:
     """Detect 'plans to raise X' phrasing where the money may not be secured."""
     t = f"{title} {body}".lower()
-    return bool(re.search(
+    if re.search(
         r"\b(plans? (?:to )?raise|expected (?:to )?raise|targets? (?:to )?raise|"
         r"aims? (?:to )?raise|could raise|may raise|negotiating a|in talks for a)\b",
         t,
-    ))
+    ):
+        return True
+    # 한국어: "투자 유치 추진/예정/계획/목표" 는 아직 확정 전
+    if re.search(r"(추진 중|추진중|예정|계획 중|계획중|목표\s?조달|검토 중|검토중)", t):
+        return True
+    return False
 
 
 def classify_stage(round_stage: str) -> str:
@@ -399,7 +447,7 @@ def format_amount(amount_m: float | None) -> str:
 
 
 def currency_label(currency: str) -> str:
-    return {"USD": "달러", "EUR": "유로"}.get(currency, "달러")
+    return {"USD": "달러", "EUR": "유로", "KRW": "원"}.get(currency, "달러")
 
 
 def format_amount_kr(amount_m: float | None, currency: str = "USD") -> str:

@@ -1,0 +1,45 @@
+# Secondary (derived) opportunity chains — rule-based, always framed as
+# possible follow-ons of OBSERVED signals. Never fabricated numbers.
+
+second_order_chains:
+  ai:
+    - GPU·가속기 수요 (데이터센터)
+    - AI 애플리케이션·에이전트 부가가치
+  gpu:
+    - 데이터센터·전력 인프라
+    - 냉각·전력 솔루션
+    - 커스텀 반도체·패키징
+  semiconductor:
+    - 반도체 장비·소재
+    - 패키징·테스트
+    - 파워 반도체·전력 관리
+  battery:
+    - 전기차·이차전지 체인
+    - ESS·그리드 저장
+    - 배터리 원자재·리사이클링
+  ev:
+    - 충전 인프라
+    - 배터리·전장 부품
+    - 배터리 원자재
+  robotics:
+    - 센서·추론 부품
+    - 자율주행·물류 자동화
+    - 로봇 소프트웨어
+  data:
+    - 클라우드 인프라
+    - 보안·규제 대응
+    - 데이터 파이프라인
+  cloud:
+    - 멀티클라우드 관리·비용
+    - 보안·망 분리
+    - 데이터 파이프라인
+
+macro_second_order:
+  rate_cut: [금리 민감 업종(부동산·성장주) 자금 조달 환경 개선]
+  rate_hike: [채권 수익률 상승·예금 금리 경쟁]
+  cpi_high: [소비재 가격 민감도·원자재 수급]
+  cpi_low: [소비재 마진 개선]
+  gdp_growth: [경기 민감 산업 수요 증가]
+  gdp_decline: [방어주·현금 흐름 중심 전략]
+  oil_price_up: [항공·운송 비용 압력 → 에너지 대체재]
+  oil_price_down: [에너지 업스트림 마진 압박]

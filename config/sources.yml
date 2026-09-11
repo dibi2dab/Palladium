@@ -1,0 +1,41 @@
+# Evidence-quality tiers per data source.
+# VERY_HIGH(공식 공시/API) > HIGH(주요 언론/공식 채널) > MEDIUM(보도·커뮤니티) > LOW(1차 출처)
+
+reliability:
+  VERY_HIGH:
+    - dart
+    - fss
+    - sec_edgar
+    - fred
+    - gov
+  HIGH:
+    - reuters
+    - bloomberg
+    - wsj
+    - financial times
+    - ft
+    - ycombinator
+    - github
+    - official
+  MEDIUM:
+    - techcrunch
+    - google_news
+    - news
+    - producthunt
+    - medium
+    - hackernoon
+    - venturebeat
+    - arstechnica
+  LOW:
+    - reddit
+    - twitter
+    - unverified
+    - x
+
+official_domain_suffixes:
+  - .go.kr
+  - .or.kr
+  - .ac.kr
+  - .kr
+  - .gov
+  - .org

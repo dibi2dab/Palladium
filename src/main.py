@@ -3,7 +3,7 @@ from __future__ import annotations
 import json
 import logging
 import sys
-from datetime import date
+from datetime import date, datetime, timedelta
 from pathlib import Path
 
 from dotenv import load_dotenv
@@ -11,16 +11,20 @@ load_dotenv()
 
 sys.path.insert(0, str(Path(__file__).parent))
 
+if hasattr(sys.stdout, "reconfigure"):
+    sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+    sys.stderr.reconfigure(encoding="utf-8", errors="replace")
+
 logging.basicConfig(
     level=logging.INFO,
     format="%(asctime)s [%(levelname)s] %(name)s: %(message)s",
     handlers=[logging.StreamHandler(sys.stdout)],
 )
-logger = logging.getLogger("opportunity-scanner")
+logger = logging.getLogger("palladium")
 
 from src.config import (
     DATA_DIR, REPORTS_DIR, AI_ENABLED, TOP_N, BREAKOUT_N, BREAKOUT_THRESHOLD,
-    MAX_CANDIDATES_FOR_AI,
+    MAX_CANDIDATES_FOR_AI, REPO_URL, REPO_BRANCH,
 )
 from src.storage.json_store import JsonStore
 from src.collectors.startups import StartupCollector
@@ -31,6 +35,7 @@ from src.collectors.technology import TechnologyCollector
 from src.collectors.news import NewsCollector
 from src.collectors.reddit import RedditCollector
 from src.collectors.funding import FundingCollector
+from src.collectors.korea import KoreaNewsCollector, DartCollector
 from src.intelligence.entities import EntityManager
 from src.intelligence.signals import SignalManager
 from src.intelligence.scoring import Scorer, ScoredEntity
@@ -40,8 +45,11 @@ from src.intelligence.funding import (
     UNKNOWN, parse_funding_event, format_amount_kr, STAGE_LABELS_KO,
 )
 from src.intelligence import classification
+from src.analyzers import second_order as second_order_mod
 from src.report.email_template import render_email
 from src.report.email_sender import send_email, build_subject
+from src.reports.markdown_report import render_markdown_reports, report_links
+from src import timeutil
 
 
 COLLECTOR_MAP = {
@@ -53,11 +61,13 @@ COLLECTOR_MAP = {
     "technology": TechnologyCollector,
     "news": NewsCollector,
     "reddit": RedditCollector,
+    "korea_news": KoreaNewsCollector,
+    "dart": DartCollector,
 }
 
 
 def main():
-    logger.info("=== Opportunity Scanner Starting ===")
+    logger.info("=== Palladium Starting ===")
     warnings: list[str] = []
 
     store = JsonStore()
@@ -65,9 +75,14 @@ def main():
     signals = SignalManager(store)
     breakout = BreakoutDetector(store)
 
+    meta = store.load_meta()
+    prev_collected_at = meta.get("last_collected_at", "")
+    generated_at = timeutil.now_kst()
+
     # 1. Collect
     logger.info("--- Phase 1: Data Collection ---")
     all_opportunities = []
+    source_status: dict[str, dict] = {}
     for name, cls in COLLECTOR_MAP.items():
         try:
             collector = cls()
@@ -75,12 +90,18 @@ def main():
             if error:
                 warnings.append(f"{name}: {error}")
                 logger.warning(f"[{name}] Collection failed: {error}")
+                source_status[name] = {"status": "FAILED", "items": 0}
             else:
                 logger.info(f"[OK] {name} data collected ({len(items)} items)")
+                if name == "dart" and not items:
+                    source_status[name] = {"status": "SKIPPED", "items": 0}
+                else:
+                    source_status[name] = {"status": "OK", "items": len(items)}
             all_opportunities.extend(items)
         except Exception as e:
             warnings.append(f"{name}: {e}")
             logger.error(f"[{name}] Unexpected error: {e}")
+            source_status[name] = {"status": "FAILED", "items": 0}
 
     logger.info(f"Total raw items: {len(all_opportunities)}")
 
@@ -145,10 +166,16 @@ def main():
             b["url"] = entity.url
             breakouts.append(b)
 
-    # 6. Selection (section-based, max 30)
+    # 6. Selection (section-based, max 50; global + separate Korea sections)
     logger.info("--- Phase 6: Selection ---")
     sections = build_sections(scored)
     logger.info(f"[OK] Sections built, total items: {total_count(sections)}")
+    logger.info(f"[OK] Sections: " + ", ".join(
+        f"{s['title']}={len(s['items'])}" for s in sections))
+
+    # Second-order (derived) opportunities — rule-based chains.
+    second_order = second_order_mod.detect_second_order(scored, macro_events)
+    logger.info(f"[OK] Second-order chains: {len(second_order)}")
 
     # 7. Watchlist
     watchlist_ids = breakout.get_watchlist_ids()
@@ -180,12 +207,18 @@ def main():
     signals.cleanup_old(days=90)
     breakout.save()
     _save_raw_data(scored)
+    store.save_meta({"last_collected_at": generated_at.isoformat()})
     logger.info("[OK] Data saved")
 
     # 10. Send report
-    _send_report(store, entities, signals, breakout, sections, breakouts, warnings, watchlist, macro_signals, scored)
+    window = _collection_window(prev_collected_at, generated_at)
+    _send_report(store, entities, signals, breakout, sections, breakouts, warnings,
+                 watchlist, macro_signals, scored,
+                 generated_at=generated_at, collection_window=window,
+                 source_status=source_status, second_order=second_order,
+                 macro_events=macro_events)
 
-    logger.info("=== Opportunity Scanner Complete ===")
+    logger.info("=== Palladium Complete ===")
 
 
 def _resolve_entity(entities, opp):
@@ -198,6 +231,13 @@ def _resolve_entity(entities, opp):
 def _generate_signals(opportunities, entities, signals):
     for opp in opportunities:
         entity = _resolve_entity(entities, opp)
+
+        if not entity.is_korean and classification.is_korean_entity(
+            opp.name, opp.url, opp.tags, opp.category,
+        ):
+            entity.is_korean = True
+            if "korea" not in entity.tags:
+                entity.tags.append("korea")
 
         parsed = parse_funding_event(opp.name, opp.description or "")
         events = classification.classify_events(
@@ -428,9 +468,14 @@ def _extract_macro_events(opportunities) -> list[dict]:
 
 
 def _send_report(store, entities, signals, breakout, sections, breakouts,
-                 warnings, watchlist=None, macro_signals=None, scored=None):
-    logger.info("--- Phase 8: Email Sending ---")
+                 warnings, watchlist=None, macro_signals=None, scored=None,
+                 generated_at=None, collection_window="",
+                 source_status=None, second_order=None, macro_events=None):
+    logger.info("--- Phase 8: Markdown Reports & Email Sending ---")
     scored = scored or []
+    generated_at = generated_at or timeutil.now_kst()
+    source_status = source_status or {}
+    second_order = second_order or []
 
     # Score trends (last up-to-5 history entries per shown entity)
     trends = {}
@@ -441,6 +486,29 @@ def _send_report(store, entities, signals, breakout, sections, breakouts,
             if vals:
                 trends[s.entity.id] = vals
 
+    # Markdown reports (reports/<date>/*.md).
+    md_files = render_markdown_reports(
+        sections=sections,
+        scored=scored,
+        macro_events=macro_events or [],
+        macro_signals=macro_signals or [],
+        breakouts=breakouts or [],
+        source_status=source_status,
+        generated_at=generated_at,
+        collection_window=collection_window,
+        second_order=second_order,
+        watchlist=watchlist or [],
+    )
+    _save_markdown_reports(md_files, generated_at)
+
+    date_iso = generated_at.strftime("%Y-%m-%d")
+    all_links = report_links(date_iso, REPO_URL, REPO_BRANCH)
+    report_link_list: list[tuple[str, str]] = []
+    for name, url in all_links.items():
+        if name in md_files:
+            label = name.replace("-", " ").replace(".md", "")
+            report_link_list.append((label, url))
+
     html = render_email(
         sections=sections,
         breakouts=breakouts[:BREAKOUT_N],
@@ -448,10 +516,33 @@ def _send_report(store, entities, signals, breakout, sections, breakouts,
         warnings=warnings,
         macro_signals=macro_signals,
         trends=trends,
+        generated_at=timeutil.korean_datetime_str(generated_at),
+        collection_window=collection_window,
+        source_status=source_status,
+        report_links=report_link_list,
     )
 
     subject = build_subject(total_count(sections))
     send_email(html, subject)
+
+
+def _save_markdown_reports(md_files: dict[str, str], generated_at):
+    date_iso = generated_at.strftime("%Y-%m-%d")
+    out_dir = REPORTS_DIR / date_iso
+    out_dir.mkdir(parents=True, exist_ok=True)
+    for name, content in md_files.items():
+        path = out_dir / name
+        with open(path, "w", encoding="utf-8") as f:
+            f.write(content)
+        logger.info(f"Markdown report saved: {path}")
+    # GitHub Actions commit step watches this file so reports are stored.
+    marker = out_dir / "README.md"
+    if not marker.exists():
+        marker.write_text(
+            f"# Palladium Daily Intelligence — {date_iso}\n\n"
+            "자동 생성된 Markdown 일일 보고서입니다. (규칙 기반, AI 없음)\n",
+            encoding="utf-8",
+        )
 
 
 def _save_raw_data(scored: list[ScoredEntity]):
@@ -470,10 +561,27 @@ def _save_raw_data(scored: list[ScoredEntity]):
             "judgement": s.judgement,
             "reasons": s.reasons,
             "conf_evidence": s.conf_evidence,
+            "opportunity_type": s.opportunity_type,
+            "evidence_quality": s.evidence_quality,
+            "trajectory": s.trajectory,
+            "lifecycle": s.lifecycle,
+            "convergence": s.convergence,
         })
     with open(path, "w", encoding="utf-8") as f:
         json.dump(data, f, ensure_ascii=False, indent=2)
     logger.info(f"Raw data saved: {path}")
+
+
+def _collection_window(prev_iso: str, generated_at) -> str:
+    """'2026-09-10 10:10 ~ 2026-09-11 10:10 KST' — never exposes UTC."""
+    try:
+        start = datetime.fromisoformat(prev_iso) if prev_iso else None
+    except ValueError:
+        start = None
+    if start is None:
+        start = (generated_at - timedelta(days=1))
+    return (f"{timeutil.kst_compact(start)} ~ "
+            f"{timeutil.kst_compact(generated_at)} KST")
 
 
 if __name__ == "__main__":

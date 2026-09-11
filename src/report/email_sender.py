@@ -5,7 +5,8 @@ import smtplib
 import logging
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
-from datetime import date
+
+from src import timeutil
 
 
 logger = logging.getLogger(__name__)
@@ -52,12 +53,12 @@ def _save_local_report(html_content: str):
         "reports",
     )
     os.makedirs(reports_dir, exist_ok=True)
-    filepath = os.path.join(reports_dir, f"report_{date.today().isoformat()}.html")
+    filepath = os.path.join(reports_dir, f"report_{timeutil.date_kst()}.html")
     with open(filepath, "w", encoding="utf-8") as f:
         f.write(html_content)
     logger.info(f"Report saved locally: {filepath}")
 
 
 def build_subject(top_count: int) -> str:
-    today = date.today().isoformat()
-    return f"Opportunity Scanner | {today} | {top_count} Opportunities"
+    kst = timeutil.date_kst()
+    return f"Palladium Daily Intelligence | {kst} | 기회 {top_count}개"

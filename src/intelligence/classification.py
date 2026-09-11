@@ -77,9 +77,74 @@ EVENT_TYPE_LABELS = {
 # Allowed event-type set for validation
 EVENT_TYPES = set(EVENT_TYPE_LABELS.keys())
 
-PUBLIC_COMPANY_CATEGORIES = {"public company", "market event", "activist", "ipo", "etf", "index"}
+PUBLIC_COMPANY_CATEGORIES = {"public company", "market event", "activist", "ipo", "etf", "index", "corporate"}
 PRODUCT_CATEGORIES = {"product", "saas", "developer tools", "design", "productivity", "fintech"}
 MARKET_CATEGORIES = {"market event", "economy", "macro event"}
+
+# ---------------------------------------------------------------------------
+# Korea (한국) entity recognition
+#
+# IMPORTANT: classification is about WHAT the subject IS — a Korean company,
+# market or product — never about which media covered it. An article being
+# published by a Korean outlet is NOT sufficient grounds for the korea flag.
+# ---------------------------------------------------------------------------
+HANGUL_RE = re.compile(r"[가-힣]")
+_KOREAN_DOMAIN_SUFFIXES = (".co.kr", ".go.kr", ".or.kr", ".ac.kr", ".kr")
+_KR_MARKET_NAMES = ("kospi", "kosdaq", "krx", "코스피", "코스닥")
+
+KOREA_CORPS = [
+    "samsung", "hyundai", "kia", "lg energy", "lg electronics", "lg",
+    "sk hynix", "sk", "kakao", "naver", "coupang", "posco", "hanwha",
+    "doosan", "kt corp", "kt&g", "kb", "shinhan", "hana", "woori",
+    "ncsoft", "netmarble", "krafton", "hybe", "celltrion", "cafe24",
+    "toss", "naver webtoon", "kakao bank", "kakao pay", "bithumb",
+    "upbit", "두나무", "lf", "대한항공",
+]
+
+def is_korean_entity(
+    name: str = "",
+    url: str = "",
+    tags: list[str] | None = None,
+    category: str = "",
+    ticker: str | None = None,
+) -> bool:
+    """True when the *subject itself* is Korean (company/market/product).
+
+    Uses only subject-level evidence: 한글 표기, .kr domain, KOSPI/KOSDAQ/KRX
+    naming, known Korean group names, or an explicit korea/kr tag set by a
+    Korea-focused collector on the SUBJECT (not on the media outlet).
+    """
+    name = name or ""
+    url = url or ""
+    tags = [t.lower() for t in (tags or [])]
+    category = (category or "").lower()
+
+    if HANGUL_RE.search(name):
+        return True
+    if name and _KR_MARKET_NAMES and any(k in name.lower() for k in _KR_MARKET_NAMES):
+        return True
+
+    try:
+        from urllib.parse import urlparse
+        netloc = (urlparse(url).netloc or "").lower().replace("www.", "")
+    except Exception:
+        netloc = ""
+    if netloc.endswith(_KOREAN_DOMAIN_SUFFIXES):
+        return True
+
+    if any(t in ("korea", "korean", "kr", "한국", "국내") for t in tags):
+        return True
+    if "korean" in category or "한국" in category:
+        return True
+
+    if ticker and ticker.isdigit() and len(ticker) == 6:
+        return True  # KRX 6-digit stock code
+
+    name_l = name.lower()
+    for corp in KOREA_CORPS:
+        if corp in name_l:
+            return True
+    return False
 
 _UNVEIL_RE = re.compile(
     r"^(.{3,60}?)\s+(unveils|launches|introduces|debuts|releases)\s+(.{3,})$",
@@ -186,6 +251,7 @@ def _has_funding_text(name: str, description: str) -> bool:
     return any(k in text for k in (
         "raises", "raised", "raising", "funding round", "seed round", "pre-seed",
         "series a", "series b", "series c", "venture round", "backed by",
+        "투자 유치", "투자유치", "시리즈", "시드", "투자자", "조달",
     ))
 
 
@@ -209,39 +275,50 @@ def classify_events(
     if funding_parse and funding_parse.get("found"):
         events.append(FUNDING)
 
-    if re.search(r"\b(acquir\w*|acqu(?:isition|isitions)|merger\w*|takeover\w*|buyout\w*|takes over)\b", text):
+    if re.search(r"\b(acquir\w*|acqu(?:isition|isitions)|merger\w*|takeover\w*|buyout\w*|takes over)\b"
+                 r"|(인수|합병|인수합병|피인수|흡수)", text):
         events.append(ACQUISITION)
 
-    if re.search(r"\b(ipo|initial public offering|spac|to go public|to list publicly)\b", text):
+    if re.search(r"\b(ipo|initial public offering|spac|to go public|to list publicly)\b"
+                 r"|(상장|코스피|코스닥)", text):
         events.append(IPO)
 
-    if re.search(r"\b(unveils?|launches?|launched|introduces?|debuts?|releases?|shipped|roll(?:s|ed)? out)\b", text):
+    if re.search(r"\b(unveils?|launches?|launched|introduces?|debuts?|releases?|shipped|roll(?:s|ed)? out)\b"
+                 r"|(출시|신제품|런칭|발매)", text):
         events.append(PRODUCT_LAUNCH)
 
-    if re.search(r"\b(partner|partnership|collaborat|integrat|alliance)\b", text):
+    if re.search(r"\b(partner|partnership|collaborat|integrat|alliance)\b"
+                 r"|(협력|제휴|운영 협약|파트너십)", text):
         events.append(PARTNERSHIP)
 
-    if re.search(r"\b(hir(?:ing|es|ed)?|job open(?:ing|ings)|headcount|recruit|team grow)\b", text):
+    if re.search(r"\b(hir(?:ing|es|ed)?|job open(?:ing|ings)|headcount|recruit|team grow)\b"
+                 r"|(채용)", text):
         events.append(HIRING)
 
-    if re.search(r"\b(earnings|quarterly results|quarterly report|revenue report|annual results)\b", text):
+    if re.search(r"\b(earnings|quarterly results|quarterly report|revenue report|annual results)\b"
+                 r"|(실적|매출|영업이익)", text):
         events.append(EARNINGS)
 
     if re.search(r"\b(d^(-)?signed|awarded|won a deal|contract(?:s)? won|large (?:order|contract))\b", text):
         pass  # conservative: only CONTRACT below with explicit words
-    if re.search(r"\b(signs? (?:a )?(?:major |multi-year |large )?contract|\bwon\b.?(?:a )?(?:contract|deal)|awarded (?:a )?contract)\b", text):
+    if re.search(r"\b(signs? (?:a )?(?:major |multi-year |large )?contract|\bwon\b.?(?:a )?(?:contract|deal)|awarded (?:a )?contract)\b"
+                 r"|(수주|공급계약|공급 계약|수주 계약)", text):
         events.append(CONTRACT)
 
-    if re.search(r"\b(regulatory|approval|approved|fda|antitrust|lawsuit|sued|attorney general)\b", text):
+    if re.search(r"\b(regulatory|approval|approved|fda|antitrust|lawsuit|sued|attorney general)\b"
+                 r"|(규제|법안|승인|허가)", text):
         events.append(REGULATORY)
 
-    if re.search(r"\b(research|paper|preprint|benchmark|whitepaper|study)\b", text):
+    if re.search(r"\b(research|paper|preprint|benchmark|whitepaper|study)\b"
+                 r"|(연구|보고서)", text):
         events.append(RESEARCH)
 
-    if re.search(r"\b(subscribers?|user growth|community grow|milestone users)\b", text):
+    if re.search(r"\b(subscribers?|user growth|community grow|milestone users)\b"
+                 r"|(사용자|이용자|가입자)", text):
         events.append(COMMUNITY_GROWTH)
 
-    if re.search(r"\b(treasury|yields?|bond market|stock market|stock index|fed|federal reserve|inflation|cpi|oil price|utilities)\b", text):
+    if re.search(r"\b(treasury|yields?|bond market|stock market|stock index|fed|federal reserve|inflation|cpi|oil price|utilities)\b"
+                 r"|(증시|주가|자사주|배당|거래량)", text):
         events.append(MARKET_EVENT)
 
     if not events:

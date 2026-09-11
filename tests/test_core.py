@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import tempfile
 import shutil
+from datetime import datetime
 from pathlib import Path
 
 from src.intelligence.entities import EntityManager, Entity, compute_entity_id, normalize_name, extract_domain
@@ -27,6 +28,7 @@ def test_normalize_name():
     assert normalize_name("  Hello World  ") == "hello world"
     assert normalize_name("OpenAI") == "openai"
     assert normalize_name("Test@#$ Corp") == "test corp"
+    assert normalize_name("삼성전자 주식회사") == "삼성전자 주식회사"
     print("PASS: test_normalize_name")
 
 
@@ -129,12 +131,18 @@ def test_email_rendering():
                           reasons=["주요 투자자 참여 (Sequoia)", "성장 신호 4종"])
 
     sections = [{"title": "🚀 스타트업 & 벤처", "items": [scored], "icon": "venture", "kind": "venture"}]
-    html = render_email(sections, [], [], [])
-    assert "기회 스캐너" in html
+    html = render_email(sections, [], [], [],
+                        source_status={"startups": {"status": "OK", "items": 3}},
+                        report_links=[("임시 링크", "https://example.com")])
+    assert "Palladium Daily Intelligence" in html
     assert "TestCo" in html
     assert "72" in html
     assert "스타트업" in html
     assert "주요 투자자 참여" in html
+    assert "신규 이벤트" in html
+    assert "최대 50개" in html
+    assert "데이터 수집 상태" in html
+    assert "임시 링크" in html
     print("PASS: test_email_rendering")
 
 
@@ -229,7 +237,7 @@ def test_selection_buckets():
     assert "제품" in titles, titles
     ids = [s.entity.id for sec in sections for s in sec["items"]]
     assert len(ids) == len(set(ids)), "duplicate entities in report"
-    assert total_count(sections) <= 30
+    assert total_count(sections) <= 50
     print("PASS: test_selection_buckets")
 
 
@@ -480,6 +488,267 @@ def test_10_no_search_data_no_fabrication():
         shutil.rmtree(tmp)
 
 
+# ---------------------------------------------------------------------------
+# Korea: 한국 분류 / 원화 파싱 / 섹션 분리 / 최대 50개
+# ---------------------------------------------------------------------------
+
+def test_korean_entity_detection():
+    from src.intelligence.classification import is_korean_entity
+    assert is_korean_entity("삼성전자") is True
+    assert is_korean_entity("카카오뱅크", url="https://www.kakaobank.com") is True
+    assert is_korean_entity("Naver Labs", tags=["korea"]) is True
+    assert is_korean_entity("Hyundai Motor") is True
+    assert is_korean_entity("KOSPI", tags=[]) is True
+    assert is_korean_entity("Acme Inc", url="https://acme.example") is False
+    assert is_korean_entity("Apple", url="https://apple.com") is False
+    print("PASS: test_korean_entity_detection")
+
+
+def test_full_korea_sections(test_kr="all"):
+    from src.intelligence.selection import (
+        build_sections, bucket_for, total_count,
+        KOREA_STARTUP_BUCKET, KOREA_PUBLIC_BUCKET, KOREA_TECH_BUCKET,
+    )
+    kr_startup = mk_entity("kr1", "한빛 AI", "Funding", is_korean=True,
+                           startup_stage="SERIES_A",
+                           funding_history=[{"date": "2026-09-01", "round": "SERIES_A",
+                                             "amount_m": 12000.0, "currency": "KRW",
+                                             "investors": [], "status": "confirmed"}])
+    kr_public = mk_entity("kr2", "한국전력", "Market Event", is_korean=True,
+                          ticker="015760", entity_type="PUBLIC_COMPANY",
+                          signal_counts={"market_event": 1})
+    kr_tech = mk_entity("kr3", "국산 반도체 기술", "Technology", is_korean=True,
+                        signal_counts={"github": 1})
+
+    global_one = mk_entity("g1", "GlobalCo", "Startup", is_korean=False,
+                           startup_stage="SEED")
+
+    def b55():
+        return ScoreBreakdown(funding=30, news=10, hiring=10, product=5)
+
+    scored = [
+        ScoredEntity(kr_startup, b55(), confidence=70, entity_type="STARTUP"),
+        ScoredEntity(kr_public, b55(), confidence=70, entity_type="PUBLIC_COMPANY"),
+        ScoredEntity(kr_tech, b55(), confidence=70, entity_type="OTHER"),
+        ScoredEntity(global_one, b55(), confidence=70, entity_type="STARTUP"),
+    ]
+    assert bucket_for(scored[0]) == KOREA_STARTUP_BUCKET
+    assert bucket_for(scored[1]) == KOREA_PUBLIC_BUCKET
+    assert bucket_for(scored[2]) == KOREA_TECH_BUCKET
+
+    sections = build_sections(scored)
+    korea_items = [s.entity.name for sec in sections
+                   if "한국" in sec["title"] for s in sec["items"]]
+    global_items = [s.entity.name for sec in sections
+                    if "한국" not in sec["title"] for s in sec["items"]]
+    assert "한빛 AI" in korea_items
+    assert "한국전력" in korea_items
+    assert "국산 반도체 기술" in korea_items
+    assert "GlobalCo" in global_items
+    assert "한빛 AI" not in global_items
+    assert total_count(sections) == 4
+    print("PASS: test_korean_sections_separate")
+
+
+def test_max_50_cap_no_padding():
+    from src.intelligence.selection import build_sections, total_count
+    items = []
+    for i in range(50):
+        en = mk_entity(f"m{i}", f"QualityCo{i}", "Startup", is_korean=(i % 2 == 0),
+                       startup_stage="SEED")
+        items.append(ScoredEntity(en, ScoreBreakdown(funding=40, news=10, hiring=5,
+                                                     signal_diversity=4, cross_source=3),
+                                  confidence=55))
+    sections = build_sections(items)
+    assert total_count(sections) <= 50, total_count(sections)
+
+    # 낮은 점수(39)는 50개를 채우기 위해 포함하지 않는다.
+    low = ScoredEntity(mk_entity("pad", "PadCo", "Startup"),
+                       ScoreBreakdown(funding=7, news=2, product=30))
+    sections2 = build_sections(items + [low])
+    ids = [s.entity.id for sec in sections2 for s in sec["items"]]
+    assert "pad" not in ids
+    print("PASS: test_max_50_cap_no_padding")
+
+
+def test_korean_funding_parse_and_krw():
+    ev = parse_funding_event("한빛 AI, 시리즈 A 120억 원 투자 유치")
+    assert ev is not None and ev["found"] is True
+    assert ev["status"] == "confirmed"
+    assert ev["round"] == "SERIES_A"
+    assert ev["currency"] == "KRW"
+    assert ev["amount_m"] == 12000.0
+
+    ev2 = parse_funding_event("○○테크, 시드 5억 원 투자 유치")
+    assert ev2["round"] == "SEED"
+
+    ev3 = parse_funding_event("모기업, 1조 원 대규모 투자 유치")
+    assert ev3["currency"] == "KRW"
+    assert ev3["amount_m"] == 1_000_000.0
+
+    assert "120억 원" == format_amount_kr(12000.0, "KRW")
+    assert "5억 원" == format_amount_kr(500.0, "KRW")
+    assert "1조 원" == format_amount_kr(1_000_000.0, "KRW")
+    assert "500만 원" in format_amount_kr(5.0, "KRW")
+    assert "5,000만 달러" == format_amount_kr(50.0, "USD")
+    print("PASS: test_korean_funding_parse_and_krw")
+
+
+def test_korean_withdrawal():
+    ev = parse_funding_event("위즈봇, 시리즈 B 300억 원 투자 유치 철회")
+    assert ev is not None
+    assert ev["status"] == "withdrawn"
+    print("PASS: test_korean_withdrawal")
+
+
+# ---------------------------------------------------------------------------
+# Palladium: Opportunity Type / Evidence Quality / Trajectory / Convergence
+# ---------------------------------------------------------------------------
+
+def test_palladium_opportunity_type():
+    from src.analyzers.opptype import opportunity_type
+
+    product = ScoredEntity(mk_entity("o1", "CoolApp", "Product", entity_type="PRODUCT"),
+                           ScoreBreakdown(product=30, news=10, hiring=10))
+    assert opportunity_type(product) == "BUILD"
+
+    funded_product = ScoredEntity(
+        mk_entity("o2", "CoolApp", "Product", entity_type="PRODUCT",
+                  funding_history=[{"round": "SEED", "amount_m": 3.0, "status": "confirmed"}]),
+        ScoreBreakdown(funding=40, product=10))
+    assert opportunity_type(funded_product) == "INVEST"
+
+    startup = ScoredEntity(mk_entity("o3", "StartupCo", "Startup", entity_type="STARTUP"),
+                           ScoreBreakdown(funding=30, news=10, hiring=10))
+    assert opportunity_type(startup) == "INVEST"
+
+    acq = ScoredEntity(mk_entity("o4", "TargetCo", "M&A", entity_type="PRIVATE_COMPANY",
+                                 event_types=["ACQUISITION"]),
+                       ScoreBreakdown(news=30, funding=20))
+    assert opportunity_type(acq) == "ACQUIRE"
+
+    pub = ScoredEntity(mk_entity("o5", "PubCo", "Market Event", entity_type="PUBLIC_COMPANY",
+                                 ticker="AAPL"),
+                       ScoreBreakdown(news=40, funding=10))
+    assert opportunity_type(pub) == "WATCH"
+
+    low = ScoredEntity(mk_entity("o6", "LowCo", "Startup", entity_type="STARTUP"),
+                       ScoreBreakdown(news=1))
+    assert opportunity_type(low) == "IGNORE"
+    print("PASS: test_palladium_opportunity_type")
+
+
+def test_palladium_evidence_quality():
+    from src.analyzers.evidence import evidence_quality
+
+    official = mk_entity("q1", "국민은행", "Market Event",
+                         entity_type="PUBLIC_COMPANY", domain="kb.co.kr",
+                         signal_sources=["korea_news:google_news", "dart:fss"])
+    assert evidence_quality(official) == "VERY_HIGH"
+
+    mainstream = mk_entity("q2", "GlobalCo", "Startup", domain="x.example",
+                           signal_sources=["techcrunch", "reuters"])
+    assert evidence_quality(mainstream) == "HIGH"
+
+    low = mk_entity("q3", "Shady", "Startup", domain="x.example",
+                    signal_sources=["reddit"])
+    assert evidence_quality(low) == "LOW"
+    print("PASS: test_palladium_evidence_quality")
+
+
+def test_palladium_trajectory_lifecycle():
+    from src.analyzers.trajectory import trajectory, lifecycle
+
+    rising = [{"date": "2026-09-08", "score": 40},
+              {"date": "2026-09-09", "score": 52},
+              {"date": "2026-09-10", "score": 66},
+              {"date": "2026-09-11", "score": 85}]
+    assert trajectory(rising) == "ACCELERATING"
+
+    declining = [{"date": "2026-09-08", "score": 80},
+                 {"date": "2026-09-09", "score": 70},
+                 {"date": "2026-09-10", "score": 60},
+                 {"date": "2026-09-11", "score": 52}]
+    assert trajectory(declining) == "MOMENTUM_DECAY"
+    assert trajectory([{"date": "2026-09-11", "score": 60}]) == "STABLE"
+
+    def mk_scored(total, eid="lc1"):
+        e = mk_entity(eid, "LifecycleCo", "Startup", entity_type="STARTUP")
+        return ScoredEntity(e, ScoreBreakdown(funding=total, news=0))
+
+    assert lifecycle(mk_scored(60), [{"date": "2026-09-09", "score": 52},
+                                     {"date": "2026-09-10", "score": 55}]) == "WATCH"
+    assert lifecycle(mk_scored(75), [{"date": "2026-09-09", "score": 70},
+                                     {"date": "2026-09-10", "score": 72}]) == "BREAKOUT"
+    assert lifecycle(mk_scored(85), [{"date": "2026-09-08", "score": 71},
+                                     {"date": "2026-09-09", "score": 79},
+                                     {"date": "2026-09-10", "score": 81}]) == "HIGH_PRIORITY"
+    assert lifecycle(mk_scored(40), [{"date": "2026-09-10", "score": 55}]) == "DECAY"
+    print("PASS: test_palladium_trajectory_lifecycle")
+
+
+def test_palladium_convergence():
+    from src.analyzers.convergence import convergence_categories
+
+    e = mk_entity("c1", "GrowthCo", "Startup",
+                  signal_counts={"funding": 2, "hiring": 1, "github": 3, "community": 1})
+    cats = convergence_categories(e, e.signal_counts)
+    assert "funding" in cats
+    assert "hiring" in cats
+    assert "github" in cats
+
+    e2 = mk_entity("c2", "QuietCo", "Startup", signal_counts={"news": 1})
+    assert convergence_categories(e2, e2.signal_counts) == []
+    print("PASS: test_palladium_convergence")
+
+
+def test_palladium_second_order():
+    from src.analyzers.second_order import detect_second_order
+
+    ai = ScoredEntity(mk_entity("s1", "AI 스타트업", "AI/ML",
+                                entity_type="STARTUP", description="LLM 기반 AI 모델 서비스"),
+                      ScoreBreakdown(funding=40, news=15, hiring=15, community=5))
+    out = detect_second_order([ai], [])
+    assert any(o["status"] == "Derived" for o in out)
+    assert len(out) == 1
+
+    macro = detect_second_order([], [{"type": "rate_cut", "broad": False}])
+    assert any(o["status"] == "Macro" for o in macro)
+    print("PASS: test_palladium_second_order")
+
+
+def test_palladium_markdown_reports():
+    from src.reports.markdown_report import render_markdown_reports
+    from src.intelligence.selection import build_sections
+
+    def b55():
+        return ScoreBreakdown(funding=40, news=10, hiring=10, product=5)
+
+    e1 = mk_entity("m1", "SeedKorea", "Startup", is_korean=True,
+                   entity_type="STARTUP", startup_stage="SEED")
+    e2 = mk_entity("m2", "GlobalStart", "Startup",
+                   entity_type="STARTUP", startup_stage="SEED")
+    items = [
+        ScoredEntity(e1, b55(), confidence=70, entity_type="STARTUP"),
+        ScoredEntity(e2, b55(), confidence=70, entity_type="STARTUP"),
+    ]
+    sections = build_sections(items)
+    files = render_markdown_reports(
+        sections, items, [], [], [], {"startups": {"status": "OK", "items": 5}},
+        datetime(2026, 9, 11, 10, 10),
+        "2026-09-10 10:10 ~ 2026-09-11 10:10 KST", [], [],
+    )
+    assert "daily-summary.md" in files
+    assert "opportunities.md" in files
+    assert "startup-radar.md" in files
+    assert "korea-company.md" in files
+    assert "market-anomaly.md" not in files
+    assert "# ⚡ Palladium Daily Summary" in files["daily-summary.md"]
+    assert "SeedKorea" in files["korea-company.md"]
+    assert "GlobalStart" in files["startup-radar.md"]
+    print("PASS: test_palladium_markdown_reports")
+
+
 if __name__ == "__main__":
     test_normalize_name()
     test_extract_domain()
@@ -503,4 +772,15 @@ if __name__ == "__main__":
     test_8_funding_plus_news_diversity()
     test_9_irrelevant_macro_penalty_zero()
     test_10_no_search_data_no_fabrication()
+    test_korean_entity_detection()
+    test_full_korea_sections()
+    test_max_50_cap_no_padding()
+    test_korean_funding_parse_and_krw()
+    test_korean_withdrawal()
+    test_palladium_opportunity_type()
+    test_palladium_evidence_quality()
+    test_palladium_trajectory_lifecycle()
+    test_palladium_convergence()
+    test_palladium_second_order()
+    test_palladium_markdown_reports()
     print("\nAll tests passed!")
