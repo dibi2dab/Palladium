@@ -817,9 +817,19 @@ def test_palladium_markdown_reports():
         ScoredEntity(e1, b55(), confidence=70, entity_type="STARTUP"),
         ScoredEntity(e2, b55(), confidence=70, entity_type="STARTUP"),
     ]
+    # Real GitHub-metric entity surfaced by the dedicated tech-trend rule. It
+    # is passed via `scored` (not in sections) to prove the rule reads real
+    # metrics independently of the quality-gated section buckets.
+    ghi = mk_entity("m3", "OpenSourceTrend", "AI/ML", is_korean=False,
+                    entity_type="OPEN_SOURCE_PROJECT",
+                    signal_sources=["github_trending", "github:owner/repo"],
+                    github_metrics={"stars": 45000, "stars_today": 3200,
+                                    "forks": 1200, "language": "Python"})
+    scored = items + [ScoredEntity(ghi, b55(), confidence=60,
+                                   entity_type="OPEN_SOURCE_PROJECT")]
     sections = build_sections(items)
     files = render_markdown_reports(
-        sections, items, [], [], [], {"startups": {"status": "OK", "items": 5}},
+        sections, scored, [], [], [], {"startups": {"status": "OK", "items": 5}},
         datetime(2026, 9, 11, 10, 10),
         "2026-09-10 10:10 ~ 2026-09-11 10:10 KST", [], [],
     )
@@ -840,7 +850,39 @@ def test_palladium_markdown_reports():
     assert "# ⚡ Palladium Daily Summary" in files["daily-summary.md"]
     assert "SeedKorea" in files["korea-company.md"]
     assert "GlobalStart" in files["startup-radar.md"]
+    assert "OpenSourceTrend" in files["tech-trend.md"]
+    assert "3,200" in files["tech-trend.md"]
+    assert "45,000" in files["tech-trend.md"]
     print("PASS: test_palladium_markdown_reports")
+
+
+def test_tech_trend_no_fabrication():
+    from src.reports.markdown_report import render_markdown_reports
+
+    def b55():
+        return ScoreBreakdown(funding=40, news=10, hiring=10, product=5)
+
+    # Real-looking metrics but NO technology-collector signal this cycle →
+    # must NOT surface (unverified numbers are never presented).
+    ghost = mk_entity("tt1", "GhostMetrics", "AI/ML",
+                      entity_type="OPEN_SOURCE_PROJECT",
+                      signal_sources=["official"],
+                      github_metrics={"stars": 99999, "stars_today": 5000,
+                                      "forks": 99, "language": "Rust"})
+    # Collector signal present but no real metrics → not listed.
+    nom = mk_entity("tt2", "NoMetrics", "AI/ML",
+                    entity_type="OPEN_SOURCE_PROJECT",
+                    signal_sources=["github_trending"],
+                    github_metrics=None)
+    items = [ScoredEntity(ghost, b55()), ScoredEntity(nom, b55())]
+    files = render_markdown_reports(
+        [], items, [], [], [], {}, datetime(2026, 9, 11, 10, 10),
+        "2026-09-10 10:10 ~ 2026-09-11 10:10 KST", [], [],
+    )
+    assert "GhostMetrics" not in files["tech-trend.md"]
+    assert "NoMetrics" not in files["tech-trend.md"]
+    assert "기술 트렌드 신호가 없습니다" in files["tech-trend.md"]
+    print("PASS: test_tech_trend_no_fabrication")
 
 
 def test_monthly_archive_pack_and_ordering():
@@ -955,6 +997,7 @@ if __name__ == "__main__":
     test_palladium_convergence()
     test_palladium_second_order()
     test_palladium_markdown_reports()
+    test_tech_trend_no_fabrication()
     test_monthly_archive_pack_and_ordering()
     test_previous_month_kst()
     print("\nAll tests passed!")

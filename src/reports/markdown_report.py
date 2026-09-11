@@ -23,9 +23,6 @@ REPORT_FILES: dict[str, tuple[list[str], str, str]] = {
     "market-anomaly.md": (
         ["글로벌 공개시장"], "글로벌 공개시장 이상 (Market Anomaly)",
         "감지된 공개시장 이상 징후(급등·급락·거래량/거래대금 급증)가 없습니다."),
-    "tech-trend.md": (
-        ["글로벌 기술"], "기술 트렌드 (Tech Trend)",
-        "이번 수집 주기에 감지된 기술 트렌드 신호가 없습니다."),
     "product-opportunity.md": (
         ["글로벌 제품"], "제품 기회 (Product Opportunity)",
         "감지된 제품/수요 신호가 없습니다."),
@@ -35,6 +32,8 @@ REPORT_FILES: dict[str, tuple[list[str], str, str]] = {
 }
 
 KOREA_SECTION_KEYS = ["한국 투자", "한국 공개시장", "한국 기술"]
+
+TECH_TREND_N = 12
 
 
 def _md(v: str) -> str:
@@ -323,6 +322,31 @@ def _domain_file(filename: str, title: str, items: list[ScoredEntity],
     return f"# ⚡ {title}\n\n" + _render_section(title, items)
 
 
+def _tech_trend_candidates(scored: list[ScoredEntity]) -> list[ScoredEntity]:
+    """Tech-trend candidates ranked by REAL observed GitHub metrics.
+
+    Only entities signalled by the technology collector this cycle qualify;
+    star/forks numbers are actual values, never fabricated or inferred.
+    """
+    candidates: list[ScoredEntity] = []
+    for s in scored:
+        e = s.entity
+        if e.is_korean:
+            continue
+        if "github_trending" not in {x.lower() for x in e.signal_sources}:
+            continue
+        gm = e.github_metrics or {}
+        if not (gm.get("stars_today") or gm.get("stars")):
+            continue
+        candidates.append(s)
+    candidates.sort(
+        key=lambda s: ((s.entity.github_metrics or {}).get("stars_today") or 0,
+                       (s.entity.github_metrics or {}).get("stars") or 0),
+        reverse=True,
+    )
+    return candidates[:TECH_TREND_N]
+
+
 def render_markdown_reports(
     sections: list[dict],
     scored: list[ScoredEntity],
@@ -359,6 +383,52 @@ def render_markdown_reports(
         if items and matched:
             title = " / ".join(sec.get("title", "") for sec in matched)
         files[filename] = _domain_file(filename, title, items, empty_note)
+
+    # Tech trend: dedicated rule from REAL GitHub metrics (stars today/total),
+    # surfaced only from technology-collector signals in this cycle. Falls back
+    # to the quality-gated tech section, then to an explicit empty state.
+    tech = _tech_trend_candidates(scored)
+    if tech:
+        blocks = ["# ⚡ 기술 트렌드 (Tech Trend)", ""]
+        blocks.append("> GitHub 트렌딩에서 실측된 인기 프로젝트. "
+                      "수치는 실제 수집값이며 AI로 생성하지 않습니다.")
+        blocks.append("")
+        for i, s in enumerate(tech[:TECH_TREND_N], 1):
+            e = s.entity
+            gm = e.github_metrics or {}
+            stars_t = gm.get("stars_today") or 0
+            stars = gm.get("stars") or 0
+            forks = gm.get("forks") or 0
+            lang = _md(gm.get("language") or "")
+            url = e.url or ""
+            name = _md(e.name)
+            link = f"[{name}]({url})" if url else name
+            head = f"### {i}. {link} — 오늘 +{stars_t:,} stars · 총 {stars:,} stars"
+            if forks:
+                head += f" · {forks:,} forks"
+            if lang:
+                head += f" · {lang}"
+            blocks.append(head)
+            blocks.append("")
+            if e.description:
+                desc = " ".join(e.description.replace("\r", " ").split())[:180]
+                blocks.append(f"> {desc}")
+            if e.category and e.category.lower() != "other":
+                blocks.append(f"- 분야: {_md(e.category)}")
+            blocks.append("")
+        files["tech-trend.md"] = "\n".join(blocks)
+    else:
+        tech_matched = [sec for sec in sections
+                        if any(k in (sec.get("title") or "") for k in ("글로벌 기술",))]
+        tech_items = [s for sec in tech_matched for s in sec["items"]]
+        if tech_items:
+            files["tech-trend.md"] = _domain_file(
+                "tech-trend.md", "글로벌 기술", tech_items[:TECH_TREND_N],
+                "이번 수집 주기에 감지된 기술 트렌드 신호가 없습니다.")
+        else:
+            files["tech-trend.md"] = _domain_file(
+                "tech-trend.md", "기술 트렌드 (Tech Trend)", [],
+                "이번 수집 주기에 감지된 기술 트렌드 신호가 없습니다.")
 
     # Company growth: non-Korean entities with an accelerating/growing score
     # trajectory across days — surfaced only when history supports it.
@@ -475,5 +545,6 @@ def report_links(date_iso: str, repo_url: str, branch: str = "main") -> dict[str
         for name in REPORT_FILES.keys() | {"daily-summary.md", "opportunities.md",
                                            "korea-company.md", "dart-events.md",
                                            "second-order.md", "market-entry.md",
-                                           "company-growth.md", "real-estate.md"}
+                                           "company-growth.md", "real-estate.md",
+                                           "tech-trend.md"}
     }

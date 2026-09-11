@@ -9,6 +9,7 @@ from typing import Optional
 @dataclass
 class Metrics:
     github_stars: Optional[int] = None
+    github_stars_today: Optional[int] = None
     github_forks: Optional[int] = None
     github_contributors: Optional[int] = None
     github_recent_commits: Optional[int] = None

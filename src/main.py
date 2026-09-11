@@ -124,6 +124,7 @@ def main():
         for sid in opp.source_ids:
             if sid not in entity.signal_sources:
                 entity.signal_sources.append(sid)
+        _sync_github_metrics(entity, opp)
     logger.info(f"[OK] Entities normalized ({len(entities.get_all())} entities)")
 
     # 3. Generate Signals
@@ -226,6 +227,24 @@ def _resolve_entity(entities, opp):
     if ent:
         return ent
     return entities.find_or_create(opp.name, opp.url, opp.category, opp.description)
+
+
+def _sync_github_metrics(entity, opp):
+    """Store ONLY real observed GitHub metrics (no fabricated numbers)."""
+    if (opp.source != "github_trending"
+            or not (opp.metrics.github_stars or opp.metrics.github_forks
+                    or opp.metrics.github_stars_today)):
+        return
+    gm = dict(entity.github_metrics or {})
+    gm["stars"] = max(gm.get("stars", 0) or 0, opp.metrics.github_stars or 0)
+    gm["forks"] = max(gm.get("forks", 0) or 0, opp.metrics.github_forks or 0)
+    gm["stars_today"] = max(gm.get("stars_today", 0) or 0,
+                            opp.metrics.github_stars_today or 0)
+    lang = next((t for t in (opp.tags or [])
+                 if t.lower() not in ("trending", "github")), None)
+    if lang:
+        gm["language"] = lang
+    entity.github_metrics = gm or None
 
 
 def _generate_signals(opportunities, entities, signals):

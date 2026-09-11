@@ -104,6 +104,7 @@ class TechnologyCollector(BaseCollector):
             official_url=repo_url,
             metrics=Metrics(
                 github_stars=stars or None,
+                github_stars_today=stars_today or None,
                 github_forks=forks or None,
             ),
             tags=[lang_text, "trending", "github"] if lang_text else ["trending", "github"],

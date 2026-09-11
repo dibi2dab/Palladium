@@ -79,6 +79,7 @@ class Entity:
         self.total_funding_m: float | None = None
         self.funding_status: str = ""  # confirmed / planned / withdrawn
         self.events: list[dict] = []
+        self.github_metrics: dict | None = None  # real observed values: stars/forks/stars_today/language
         self.search_interest: dict | None = None
         self.news_momentum: dict | None = None
         self.community_momentum: dict | None = None
@@ -114,6 +115,7 @@ class Entity:
             "total_funding_m": self.total_funding_m,
             "funding_status": self.funding_status,
             "events": self.events,
+            "github_metrics": self.github_metrics,
             "search_interest": self.search_interest,
             "news_momentum": self.news_momentum,
             "community_momentum": self.community_momentum,
@@ -148,6 +150,7 @@ class Entity:
         e.total_funding_m = d.get("total_funding_m")
         e.funding_status = d.get("funding_status", "")
         e.events = d.get("events", [])
+        e.github_metrics = d.get("github_metrics")
         e.search_interest = d.get("search_interest")
         e.news_momentum = d.get("news_momentum")
         e.community_momentum = d.get("community_momentum")
