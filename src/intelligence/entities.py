@@ -237,12 +237,11 @@ class EntityManager:
         for e in self.entities.values():
             if normalize_name(e.name) == norm:
                 return e
-        if url:
-            domain = extract_domain(url)
-            github = extract_github(url)
+        # GitHub owner/repo is a unique subject identifier: two entries
+        # pointing at the same repository are the same project.
+        github = extract_github(url)
+        if github:
             for e in self.entities.values():
-                if domain and e.domain == domain:
-                    return e
-                if github and e.github == github:
+                if e.github == github:
                     return e
         return None

@@ -142,7 +142,9 @@ def is_korean_entity(
 
     name_l = name.lower()
     for corp in KOREA_CORPS:
-        if corp in name_l:
+        # Word-boundary match: short codes like "sk"/"lg"/"kb" must not match
+        # inside English words ("Mu-sk", "ba-ck-bone").
+        if re.search(r"\b" + re.escape(corp) + r"\b", name_l):
             return True
     return False
 

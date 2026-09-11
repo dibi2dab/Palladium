@@ -56,6 +56,35 @@ def test_entity_manager():
         shutil.rmtree(tmp)
 
 
+def test_aggregator_domain_no_merge():
+    """Distinct articles on the same portal domain must NOT collapse.
+
+    Two different Google News items share news.google.com; merging by domain
+    polluted one entity with unrelated signals (the 100-point 'Trump pushes
+    Fed' false positive). Only exact-name and GitHub-repo matching may merge.
+    """
+    store, tmp = _make_store()
+    try:
+        em = EntityManager(store)
+        e1 = em.find_or_create("OpenAI raises $1B",
+                               "https://news.google.com/rss/articles/aaa", "Funding", "x")
+        e2 = em.find_or_create("Samsung unveils chip",
+                               "https://news.google.com/rss/articles/bbb", "Product", "y")
+        assert len(em.get_all()) == 2, f"expected 2 entities, got {len(em.get_all())}"
+        assert e1.id != e2.id
+        assert em.find_similar("OpenAI raises $1B",
+                               "https://techcrunch.com/2026/09/09/openai") is e1
+        g1 = em.find_or_create("Repo Alpha", "https://github.com/acme/alpha",
+                               "Open Source", "x")
+        assert em.find_similar("Repo Beta", "https://github.com/acme/alpha") is g1
+        g2 = em.find_or_create("Repo Gamma", "https://github.com/acme/gamma",
+                               "Open Source", "y")
+        assert g1.id != g2.id
+        print("PASS: test_aggregator_domain_no_merge")
+    finally:
+        shutil.rmtree(tmp)
+
+
 def test_signal_manager():
     store, tmp = _make_store()
     try:
@@ -501,6 +530,11 @@ def test_korean_entity_detection():
     assert is_korean_entity("KOSPI", tags=[]) is True
     assert is_korean_entity("Acme Inc", url="https://acme.example") is False
     assert is_korean_entity("Apple", url="https://apple.com") is False
+    assert is_korean_entity("SK Hynix") is True
+    assert is_korean_entity("LG Electronics") is True
+    assert is_korean_entity("Elon Musk's Boring Company") is False
+    assert is_korean_entity("Big Energy Report") is False
+    assert is_korean_entity("Body Shop") is False
     print("PASS: test_korean_entity_detection")
 
 
@@ -592,6 +626,57 @@ def test_korean_funding_parse_and_krw():
     assert "500만 원" in format_amount_kr(5.0, "KRW")
     assert "5,000만 달러" == format_amount_kr(50.0, "USD")
     print("PASS: test_korean_funding_parse_and_krw")
+
+
+def test_korean_amount_not_mistaken_for_usd():
+    from src.intelligence.scoring import Scorer
+
+    store, tmp = _make_store()
+    try:
+        em = EntityManager(store)
+        sm = SignalManager(store)
+
+        e = em.find_or_create("크레도스파트너스", "https://example.com", "Startup", "투자 회사")
+        e.entity_type = "STARTUP"
+        e.funding_history = [
+            {"date": "2026-09-11", "round": "SERIES_A", "amount_m": 1500.0,
+             "currency": "KRW", "investors": [], "status": "confirmed"},
+        ]
+        e.signal_sources = ["startuptoday"]
+        sm.add_for_entity(e.id, "funding_round", "startuptoday", "투자 유치: 시리즈 A 15억 원", 1)
+
+        e2 = em.find_or_create("대우산업", "https://example.com", "Startup", "기업")
+        e2.entity_type = "STARTUP"
+        e2.funding_history = [
+            {"date": "2026-09-11", "round": "SERIES_A", "amount_m": 1_000_000.0,
+             "currency": "KRW", "investors": [], "status": "confirmed"},
+        ]
+        e2.signal_sources = ["hankyung"]
+        sm.add_for_entity(e2.id, "funding_round", "hankyung", "투자 유치: 시리즈 A 1조 원", 1)
+
+        scorer = Scorer(em, sm)
+        by_name = {s.entity.name: s for s in scorer.score_all()}
+        kr_15ok = " ".join(format_reasons(by_name["크레도스파트너스"]))
+        kr_1jo = " ".join(format_reasons(by_name["대우산업"]))
+
+        assert "5억 달러 이상" not in kr_15ok
+        assert "15억 달러" not in kr_15ok
+        assert "투자 유치 신호" in kr_15ok
+        assert "1조 원 이상" in kr_1jo
+    finally:
+        shutil.rmtree(tmp)
+    print("PASS: test_korean_amount_not_mistaken_for_usd")
+
+
+def test_record_round_stores_currency():
+    from src.main import _record_round
+
+    e = Entity("r1", "RoundCo", "https://round.co", "Startup", "x")
+    _record_round(e, "SERIES_A", 12000.0, [], "confirmed", "KRW")
+    assert e.funding_history[0]["currency"] == "KRW"
+    _record_round(e, "SERIES_A", 20.0, [], "confirmed", "USD")
+    assert e.funding_history[1]["currency"] == "USD"
+    print("PASS: test_record_round_stores_currency")
 
 
 def test_korean_withdrawal():
@@ -753,6 +838,7 @@ if __name__ == "__main__":
     test_normalize_name()
     test_extract_domain()
     test_entity_manager()
+    test_aggregator_domain_no_merge()
     test_signal_manager()
     test_scorer()
     test_breakout_detector()
@@ -776,6 +862,8 @@ if __name__ == "__main__":
     test_full_korea_sections()
     test_max_50_cap_no_padding()
     test_korean_funding_parse_and_krw()
+    test_korean_amount_not_mistaken_for_usd()
+    test_record_round_stores_currency()
     test_korean_withdrawal()
     test_palladium_opportunity_type()
     test_palladium_evidence_quality()

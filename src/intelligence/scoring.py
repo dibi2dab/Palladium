@@ -262,18 +262,34 @@ class Scorer:
             points += 5
             reasons.append("복수의 투자 유치 신호")
 
-        amounts = [r.get("amount_m") for r in confirmed_history if r.get("amount_m")]
+        amounts = [r for r in confirmed_history if r.get("amount_m")]
         if amounts:
-            latest = max(amounts)
-            if latest >= 500:
+            latest = max(amounts, key=lambda r: r["amount_m"])
+            latest_m = latest["amount_m"]
+            currency = latest.get("currency", "USD")
+            if currency == "KRW":
+                big, large, mid = 1_000_000, 100_000, 10_000
+                big_label, large_label, mid_label = (
+                    "초대형 투자 유치 (1조 원 이상)",
+                    "대규모 투자 유치 (1,000억 원 이상)",
+                    "상당 규모 투자 유치 (100억 원 이상)",
+                )
+            else:
+                big, large, mid = 500, 100, 25
+                big_label, large_label, mid_label = (
+                    "초대형 투자 유치 (5억 달러 이상 추정)",
+                    "대규모 투자 유치 (1억 달러 이상 추정)",
+                    "상당 규모 투자 유치 (2,500만 달러 이상)",
+                )
+            if latest_m >= big:
                 points += 14
-                reasons.append("초대형 투자 유치 (5억 달러 이상 추정)")
-            elif latest >= 100:
+                reasons.append(big_label)
+            elif latest_m >= large:
                 points += 10
-                reasons.append("대규모 투자 유치 (1억 달러 이상 추정)")
-            elif latest >= 25:
+                reasons.append(large_label)
+            elif latest_m >= mid:
                 points += 6
-                reasons.append("상당 규모 투자 유치 (2,500만 달러 이상)")
+                reasons.append(mid_label)
 
         distinct_rounds = {r.get("round") for r in confirmed_history if r.get("round") and r.get("round") != UNKNOWN}
         if len(distinct_rounds) >= 2:

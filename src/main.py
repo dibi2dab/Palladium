@@ -310,12 +310,14 @@ def _handle_funding(opp, entity, parsed, signals):
                              f"withdrawn:{round_stage}")
         return
 
+    currency = parsed.get("currency")
+
     if status == "planned":
-        _record_round(entity, round_stage, amount, investors, "planned")
+        _record_round(entity, round_stage, amount, investors, "planned", currency)
         logger.debug(f"Planned funding for {opp.name}")
         return
 
-    _record_round(entity, round_stage, amount, investors, "confirmed")
+    _record_round(entity, round_stage, amount, investors, "confirmed", currency)
 
     if round_stage != UNKNOWN:
         stage_order = [UNKNOWN, "PRE_SEED", "SEED", "SERIES_A", "SERIES_B",
@@ -351,7 +353,7 @@ def _set_funding_status(entity, status):
         entity.funding_status = status
 
 
-def _record_round(entity, round_stage, amount, investors, status):
+def _record_round(entity, round_stage, amount, investors, status, currency=None):
     entry = {
         "date": date.today().isoformat(),
         "round": round_stage,
@@ -359,6 +361,8 @@ def _record_round(entity, round_stage, amount, investors, status):
         "investors": investors,
         "status": status,
     }
+    if currency:
+        entry["currency"] = currency
     if not _round_exists(entity.funding_history, entry):
         entity.funding_history.append(entry)
 
@@ -383,7 +387,8 @@ def _record_accelerator(entity, accelerator, source, url, signals):
 def _recompute_funding_totals(entity):
     amounts = [r.get("amount_m") for r in entity.funding_history
                if r.get("amount_m") is not None
-               and r.get("status", "confirmed") == "confirmed"]
+               and r.get("status", "confirmed") == "confirmed"
+               and r.get("currency", "USD") != "KRW"]
     if amounts:
         entity.total_funding_m = round(sum(amounts), 2)
 
@@ -530,6 +535,11 @@ def _save_markdown_reports(md_files: dict[str, str], generated_at):
     date_iso = generated_at.strftime("%Y-%m-%d")
     out_dir = REPORTS_DIR / date_iso
     out_dir.mkdir(parents=True, exist_ok=True)
+    # Remove stale domain files: a domain with no items today must not keep
+    # yesterday's content on disk.
+    for old in out_dir.glob("*.md"):
+        if old.name != "README.md" and old.name not in md_files:
+            old.unlink()
     for name, content in md_files.items():
         path = out_dir / name
         with open(path, "w", encoding="utf-8") as f:
