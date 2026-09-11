@@ -80,6 +80,7 @@ class Entity:
         self.funding_status: str = ""  # confirmed / planned / withdrawn
         self.events: list[dict] = []
         self.github_metrics: dict | None = None  # real observed values: stars/forks/stars_today/language
+        self.real_estate: dict | None = None     # real reported trades: {"region", "trades": [...]}
         self.search_interest: dict | None = None
         self.news_momentum: dict | None = None
         self.community_momentum: dict | None = None
@@ -116,6 +117,7 @@ class Entity:
             "funding_status": self.funding_status,
             "events": self.events,
             "github_metrics": self.github_metrics,
+            "real_estate": self.real_estate,
             "search_interest": self.search_interest,
             "news_momentum": self.news_momentum,
             "community_momentum": self.community_momentum,
@@ -151,6 +153,7 @@ class Entity:
         e.funding_status = d.get("funding_status", "")
         e.events = d.get("events", [])
         e.github_metrics = d.get("github_metrics")
+        e.real_estate = d.get("real_estate")
         e.search_interest = d.get("search_interest")
         e.news_momentum = d.get("news_momentum")
         e.community_momentum = d.get("community_momentum")

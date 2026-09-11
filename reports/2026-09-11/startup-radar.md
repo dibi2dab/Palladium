@@ -198,7 +198,7 @@
 > SoHo-based startup raises $150M Series C with AI prescription tool - Crain's New York
 
 - **투자/성장**: 2026-09-11 · 시리즈 C · 약 1.5억 달러 · 확정
-- **점수 변화**: 57 → 58 (+1)
+- **점수 변화**: 58 → 58
 
 **근거**
 
@@ -451,6 +451,96 @@
 
 - `투자 유치` 2026-09-11 — Mach Industries Raises $600M Series C Extension, Valuation Hits $3.7B - Wowtale ([출처](https://news.google.com/rss/articles/CBMiU0FVX3lxTE9QeTBTR3Rmb2Y4SWlsRDJXVGgtLUkwT1R4WTFCWWpYaFQ1TDlSV2d4dGx5bmhZd2V3cUpEa0RVZFZrcE1DT2RqOGNuaHRMY2FHekF3?oc=5)) [//news.google.com/rss/articles/CBMiU0FVX3lxTE9QeTBTR3Rmb2Y4SWlsRDJXVGgtLUkwT1R4WTFCWWpYaFQ1TDlSV2d4dGx5bmhZd2V3cUpEa0RVZFZrcE1DT2RqOGNuaHRMY2FHekF3?oc=5]
 - 출처: google_news, Mach Industries Raises $600M Series C Ex
+
+---
+
+### Nuclear startup Bluecore Energy raises $50M seed round, just two months after launch — 50점 · WATCH · INVEST · 신뢰도 54%
+
+- 종류: 스타트업
+- 이벤트: 투자 유치
+- 단계: 시드(Seed)
+- 판정: WATCH
+- 기회 유형: INVEST (투자)
+- 근거 품질: MEDIUM(보도·커뮤니티 수준)
+- 궤적: STABLE(안정) · 생애주기: WATCH(관찰)
+- 신규/재확인: 재확인
+
+> Bluecore Energy announced Tuesday an oversubscribed $50 million seed round — just months after raising a $10 million pre-seed and coming out of stealth.
+
+- **투자/성장**: 2026-09-11 · 시드(Seed) · 5,000만 달러 · 확정
+- **점수 변화**: 48 → 50 (+2)
+
+**근거**
+
+- 다수의 투자 유치 신호/출처
+- 상당 규모 투자 유치 (2,500만 달러 이상)
+- 투자 유치 신호
+- 언론 보도 증가
+- 투자 규모 증가 추세
+- 확인된 성장 신호: 2종
+- 관련 거시경제 역풍 (해당 산업 관련)
+
+**왜 주목?**
+
+시드 단계에서 5,000만 달러 규모의 투자 유치가 확인됐습니다. 성장 모멘텀이 감지됐습니다.
+
+**투자 관점**
+
+투자 유치가 확인된 기업으로, 초기 단계라면 높은 성장 가능성이 있지만 실제 매출과 사업 지속 가능성은 추가 확인이 필요합니다.
+
+**주의할 점**
+
+투자금 출처(주요 VC)가 확인되지 않았습니다.
+
+**Evidence Chain**
+
+- `투자 유치` 2026-09-11 — Bluecore Energy announced Tuesday an oversubscribed $50 million seed round — just months after raising a $10 million pre ([출처](https://techcrunch.com/2026/09/08/nuclear-startup-bluecore-energy-raises-50m-seed-round-just-two-months-after-launch/)) [//techcrunch.com/2026/09/08/nuclear-startup-bluecore-energy-raises-50m-seed-round-just-two-months-after-launch/]
+- 출처: tc_startups, Nuclear startup Bluecore Energy raises $
+
+---
+
+### Bluecore Energy Raises $50M Seed Round To 'Create And Deliver Zero-Emission Energy' - AfroTech — 50점 · WATCH · INVEST · 신뢰도 54%
+
+- 종류: 스타트업
+- 이벤트: 투자 유치
+- 단계: 시드(Seed)
+- 판정: WATCH
+- 기회 유형: INVEST (투자)
+- 근거 품질: MEDIUM(보도·커뮤니티 수준)
+- 궤적: STABLE(안정) · 생애주기: WATCH(관찰)
+- 신규/재확인: 재확인
+
+> Bluecore Energy Raises $50M Seed Round To 'Create And Deliver Zero-Emission Energy' - AfroTech
+
+- **투자/성장**: 2026-09-11 · 시드(Seed) · 5,000만 달러 · 확정
+- **점수 변화**: 48 → 50 (+2)
+
+**근거**
+
+- 다수의 투자 유치 신호/출처
+- 상당 규모 투자 유치 (2,500만 달러 이상)
+- 투자 유치 신호
+- 언론 보도 증가
+- 투자 규모 증가 추세
+- 확인된 성장 신호: 2종
+- 관련 거시경제 역풍 (해당 산업 관련)
+
+**왜 주목?**
+
+시드 단계에서 5,000만 달러 규모의 투자 유치가 확인됐습니다. 성장 모멘텀이 감지됐습니다.
+
+**투자 관점**
+
+투자 유치가 확인된 기업으로, 초기 단계라면 높은 성장 가능성이 있지만 실제 매출과 사업 지속 가능성은 추가 확인이 필요합니다.
+
+**주의할 점**
+
+투자금 출처(주요 VC)가 확인되지 않았습니다.
+
+**Evidence Chain**
+
+- `투자 유치` 2026-09-11 — Bluecore Energy Raises $50M Seed Round To 'Create And Deliver Zero-Emission Energy' - AfroTech ([출처](https://news.google.com/rss/articles/CBMiakFVX3lxTE1SZUJGWS1nQ1BCQm9fdkVXQ1R0dFFZM3pIX2gwaFZ2Rm14cFlJU2c0MTREWFRub05aN3ExeEFTWERQS3NHdVcybHlSMlNBR2xOT3JfdVBPaEE2dzVCRzNVSF8xRXB0RzQ2cmc?oc=5)) [//news.google.com/rss/articles/CBMiakFVX3lxTE1SZUJGWS1nQ1BCQm9fdkVXQ1R0dFFZM3pIX2gwaFZ2Rm14cFlJU2c0MTREWFRub05aN3ExeEFTWERQS3NHdVcybHlSMlNBR2xOT3JfdVBPaEE2dzVCRzNVSF8xRXB0RzQ2cmc?oc=5]
+- 출처: google_news, Bluecore Energy Raises $50M Seed Round T
 
 ---
 

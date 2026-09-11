@@ -16,7 +16,7 @@
 > South Korea's AI Chip Startup HyperExcel Raises ₩200 Billion (approximately $148.2 Million) in Series B, Led by Krafton's ₩50 Billion Investment; Valuation Reaches ₩800 Billion - finance.biggo.com
 
 - **투자/성장**: 2026-09-11 · 시리즈 B · 약 1.48억 달러 · 확정
-- **점수 변화**: 49 → 53 (+4)
+- **점수 변화**: 53 → 53
 
 **근거**
 

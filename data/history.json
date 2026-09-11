@@ -232,7 +232,7 @@
     "entries": [
       {
         "date": "2026-09-11",
-        "score": 48,
+        "score": 50,
         "confidence": 54,
         "signal_counts": {},
         "sources": [
@@ -262,7 +262,7 @@
     "entries": [
       {
         "date": "2026-09-11",
-        "score": 48,
+        "score": 50,
         "confidence": 54,
         "signal_counts": {},
         "sources": [
@@ -383,7 +383,7 @@
     "entries": [
       {
         "date": "2026-09-11",
-        "score": 36,
+        "score": 37,
         "confidence": 54,
         "signal_counts": {},
         "sources": [
@@ -413,7 +413,7 @@
     "entries": [
       {
         "date": "2026-09-11",
-        "score": 37,
+        "score": 39,
         "confidence": 54,
         "signal_counts": {},
         "sources": [
@@ -617,7 +617,7 @@
     "entries": [
       {
         "date": "2026-09-11",
-        "score": 10,
+        "score": 12,
         "confidence": 26,
         "signal_counts": {},
         "sources": [
@@ -2059,11 +2059,12 @@
       {
         "date": "2026-09-11",
         "score": 18,
-        "confidence": 46,
+        "confidence": 54,
         "signal_counts": {},
         "sources": [
           "korea_news:google_news",
-          "korea_news:코아스, 사무용 가구 상품공급계약 체결…계약금액 35억6692만원 - 디"
+          "korea_news:코아스, 사무용 가구 상품공급계약 체결…계약금액 35억6692만원 - 디",
+          "korea_news:코아스, 39억 규모 사무가구 수주 - news.nate.com"
         ]
       }
     ],
@@ -2800,7 +2801,7 @@
     "entries": [
       {
         "date": "2026-09-11",
-        "score": 7,
+        "score": 9,
         "confidence": 46,
         "signal_counts": {},
         "sources": [
@@ -2815,7 +2816,7 @@
     "entries": [
       {
         "date": "2026-09-11",
-        "score": 6,
+        "score": 8,
         "confidence": 46,
         "signal_counts": {},
         "sources": [
@@ -3343,7 +3344,7 @@
     "entries": [
       {
         "date": "2026-09-11",
-        "score": 9,
+        "score": 10,
         "confidence": 46,
         "signal_counts": {},
         "sources": [
@@ -3450,7 +3451,7 @@
     "entries": [
       {
         "date": "2026-09-11",
-        "score": 4,
+        "score": 6,
         "confidence": 56,
         "signal_counts": {},
         "sources": [
@@ -3465,7 +3466,7 @@
     "entries": [
       {
         "date": "2026-09-11",
-        "score": 1,
+        "score": 3,
         "confidence": 46,
         "signal_counts": {},
         "sources": [
@@ -3495,7 +3496,7 @@
     "entries": [
       {
         "date": "2026-09-11",
-        "score": 5,
+        "score": 6,
         "confidence": 46,
         "signal_counts": {},
         "sources": [
@@ -4851,7 +4852,7 @@
     "entries": [
       {
         "date": "2026-09-11",
-        "score": 4,
+        "score": 5,
         "confidence": 46,
         "signal_counts": {},
         "sources": [
@@ -5181,7 +5182,7 @@
     "entries": [
       {
         "date": "2026-09-11",
-        "score": 5,
+        "score": 6,
         "confidence": 46,
         "signal_counts": {},
         "sources": [
@@ -5574,11 +5575,12 @@
       {
         "date": "2026-09-11",
         "score": 6,
-        "confidence": 46,
+        "confidence": 54,
         "signal_counts": {},
         "sources": [
           "korea_news:google_news",
-          "korea_news:한국환경공단, 물·에너지·AI 융합기술로 물기업 해외진출 ‘물꼬’ - 에"
+          "korea_news:한국환경공단, 물·에너지·AI 융합기술로 물기업 해외진출 ‘물꼬’ - 에",
+          "korea_news:한국환경공단, 물·에너지·AI 융합기술로 물기업 해외진출 ‘물꼬’ - e"
         ]
       }
     ],
@@ -5724,7 +5726,7 @@
     "entries": [
       {
         "date": "2026-09-11",
-        "score": 0,
+        "score": 2,
         "confidence": 56,
         "signal_counts": {},
         "sources": [
@@ -5739,7 +5741,7 @@
     "entries": [
       {
         "date": "2026-09-11",
-        "score": 0,
+        "score": 2,
         "confidence": 56,
         "signal_counts": {},
         "sources": [
@@ -5754,7 +5756,7 @@
     "entries": [
       {
         "date": "2026-09-11",
-        "score": 0,
+        "score": 2,
         "confidence": 56,
         "signal_counts": {},
         "sources": [
@@ -5769,7 +5771,7 @@
     "entries": [
       {
         "date": "2026-09-11",
-        "score": 0,
+        "score": 2,
         "confidence": 46,
         "signal_counts": {},
         "sources": [
@@ -5964,7 +5966,7 @@
     "entries": [
       {
         "date": "2026-09-11",
-        "score": 6,
+        "score": 8,
         "confidence": 46,
         "signal_counts": {},
         "sources": [
@@ -5994,7 +5996,7 @@
     "entries": [
       {
         "date": "2026-09-11",
-        "score": 3,
+        "score": 5,
         "confidence": 46,
         "signal_counts": {},
         "sources": [
@@ -6159,7 +6161,7 @@
     "entries": [
       {
         "date": "2026-09-11",
-        "score": 47,
+        "score": 48,
         "confidence": 54,
         "signal_counts": {},
         "sources": [
@@ -6174,7 +6176,7 @@
     "entries": [
       {
         "date": "2026-09-11",
-        "score": 29,
+        "score": 30,
         "confidence": 54,
         "signal_counts": {},
         "sources": [
@@ -6219,7 +6221,7 @@
     "entries": [
       {
         "date": "2026-09-11",
-        "score": 15,
+        "score": 18,
         "confidence": 46,
         "signal_counts": {},
         "sources": [
@@ -6250,7 +6252,7 @@
       {
         "date": "2026-09-11",
         "score": 9,
-        "confidence": 26,
+        "confidence": 46,
         "signal_counts": {},
         "sources": [
           "korea_news:google_news",
@@ -6264,7 +6266,7 @@
     "entries": [
       {
         "date": "2026-09-11",
-        "score": 9,
+        "score": 10,
         "confidence": 46,
         "signal_counts": {},
         "sources": [
@@ -6279,7 +6281,7 @@
     "entries": [
       {
         "date": "2026-09-11",
-        "score": 6,
+        "score": 8,
         "confidence": 46,
         "signal_counts": {},
         "sources": [
@@ -6294,7 +6296,7 @@
     "entries": [
       {
         "date": "2026-09-11",
-        "score": 6,
+        "score": 8,
         "confidence": 46,
         "signal_counts": {},
         "sources": [
@@ -6474,7 +6476,7 @@
     "entries": [
       {
         "date": "2026-09-11",
-        "score": 4,
+        "score": 5,
         "confidence": 46,
         "signal_counts": {},
         "sources": [
@@ -6504,7 +6506,7 @@
     "entries": [
       {
         "date": "2026-09-11",
-        "score": 4,
+        "score": 5,
         "confidence": 46,
         "signal_counts": {},
         "sources": [
@@ -6519,7 +6521,7 @@
     "entries": [
       {
         "date": "2026-09-11",
-        "score": 5,
+        "score": 6,
         "confidence": 46,
         "signal_counts": {},
         "sources": [
@@ -6549,7 +6551,7 @@
     "entries": [
       {
         "date": "2026-09-11",
-        "score": 5,
+        "score": 6,
         "confidence": 46,
         "signal_counts": {},
         "sources": [
@@ -6579,7 +6581,7 @@
     "entries": [
       {
         "date": "2026-09-11",
-        "score": 3,
+        "score": 5,
         "confidence": 46,
         "signal_counts": {},
         "sources": [
@@ -6594,7 +6596,7 @@
     "entries": [
       {
         "date": "2026-09-11",
-        "score": 2,
+        "score": 5,
         "confidence": 46,
         "signal_counts": {},
         "sources": [
@@ -6669,7 +6671,7 @@
     "entries": [
       {
         "date": "2026-09-11",
-        "score": 6,
+        "score": 8,
         "confidence": 46,
         "signal_counts": {},
         "sources": [
@@ -6685,7 +6687,7 @@
       {
         "date": "2026-09-11",
         "score": 4,
-        "confidence": 26,
+        "confidence": 46,
         "signal_counts": {},
         "sources": [
           "funding:google_news",
@@ -6880,7 +6882,7 @@
       {
         "date": "2026-09-11",
         "score": 9,
-        "confidence": 26,
+        "confidence": 46,
         "signal_counts": {},
         "sources": [
           "korea_news:google_news",
@@ -6894,7 +6896,7 @@
     "entries": [
       {
         "date": "2026-09-11",
-        "score": 6,
+        "score": 8,
         "confidence": 46,
         "signal_counts": {},
         "sources": [
@@ -6909,7 +6911,7 @@
     "entries": [
       {
         "date": "2026-09-11",
-        "score": 4,
+        "score": 5,
         "confidence": 46,
         "signal_counts": {},
         "sources": [
@@ -6939,7 +6941,7 @@
     "entries": [
       {
         "date": "2026-09-11",
-        "score": 4,
+        "score": 5,
         "confidence": 46,
         "signal_counts": {},
         "sources": [
@@ -6954,7 +6956,7 @@
     "entries": [
       {
         "date": "2026-09-11",
-        "score": 4,
+        "score": 5,
         "confidence": 46,
         "signal_counts": {},
         "sources": [
@@ -6984,7 +6986,7 @@
     "entries": [
       {
         "date": "2026-09-11",
-        "score": 4,
+        "score": 5,
         "confidence": 46,
         "signal_counts": {},
         "sources": [
@@ -6999,7 +7001,7 @@
     "entries": [
       {
         "date": "2026-09-11",
-        "score": 4,
+        "score": 5,
         "confidence": 46,
         "signal_counts": {},
         "sources": [
@@ -7045,11 +7047,401 @@
       {
         "date": "2026-09-11",
         "score": 4,
-        "confidence": 26,
+        "confidence": 46,
         "signal_counts": {},
         "sources": [
           "korea_news:market_entry",
           "korea_news:market_entry:Naver"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-11"
+  },
+  "be379eac8f08": {
+    "entries": [
+      {
+        "date": "2026-09-11",
+        "score": 47,
+        "confidence": 34,
+        "signal_counts": {},
+        "sources": [
+          "market_news",
+          "news:SBI-Led Group Is Said to Lend $3.5 Billion to Voda"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-11"
+  },
+  "a71a622bb1ed": {
+    "entries": [
+      {
+        "date": "2026-09-11",
+        "score": 44,
+        "confidence": 54,
+        "signal_counts": {},
+        "sources": [
+          "funding:google_news",
+          "funding:gnews:Cloverleaf Bio Raises $33 Million Seed F"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-11"
+  },
+  "5aad97452a86": {
+    "entries": [
+      {
+        "date": "2026-09-11",
+        "score": 33,
+        "confidence": 54,
+        "signal_counts": {},
+        "sources": [
+          "funding:google_news",
+          "funding:gnews:Feisty raises first outside capital in s"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-11"
+  },
+  "e1bc7a66112f": {
+    "entries": [
+      {
+        "date": "2026-09-11",
+        "score": 13,
+        "confidence": 26,
+        "signal_counts": {},
+        "sources": [
+          "korea_news:google_news",
+          "korea_news:신세계까사 까사미아, 식탁·의자 가구 시리즈 '포멜로' 신제품 출시 - "
+        ]
+      }
+    ],
+    "first_seen": "2026-09-11"
+  },
+  "4040f4a38958": {
+    "entries": [
+      {
+        "date": "2026-09-11",
+        "score": 12,
+        "confidence": 46,
+        "signal_counts": {},
+        "sources": [
+          "korea_news:google_news",
+          "korea_news:에코프로에이치엔 수주공시 - 온실가스 저감 설비 공급 계약 197.7억원"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-11"
+  },
+  "44b5d6658a95": {
+    "entries": [
+      {
+        "date": "2026-09-11",
+        "score": 12,
+        "confidence": 26,
+        "signal_counts": {},
+        "sources": [
+          "korea_news:google_news",
+          "korea_news:[투자노트] 데이터센터 수주 쌓여가는 광통신주…“2027년부터 본격화” "
+        ]
+      }
+    ],
+    "first_seen": "2026-09-11"
+  },
+  "cf14f123983f": {
+    "entries": [
+      {
+        "date": "2026-09-11",
+        "score": 12,
+        "confidence": 26,
+        "signal_counts": {},
+        "sources": [
+          "korea_news:google_news",
+          "korea_news:한국디벨로퍼협회·해외건설협회, 디벨로퍼 해외개발사업 진출 협력 - 국토일"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-11"
+  },
+  "91939a1df8e3": {
+    "entries": [
+      {
+        "date": "2026-09-11",
+        "score": 11,
+        "confidence": 26,
+        "signal_counts": {},
+        "sources": [
+          "market_news",
+          "news:Stocks, Bonds Fall in Asia on Oil, Inflation Woes:"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-11"
+  },
+  "a6d30041ebae": {
+    "entries": [
+      {
+        "date": "2026-09-11",
+        "score": 9,
+        "confidence": 46,
+        "signal_counts": {},
+        "sources": [
+          "google_news_economy",
+          "gnews_eco:The likelihood of a Fed interest rate hi"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-11"
+  },
+  "2d2ceb32d48d": {
+    "entries": [
+      {
+        "date": "2026-09-11",
+        "score": 9,
+        "confidence": 46,
+        "signal_counts": {},
+        "sources": [
+          "google_news_economy",
+          "gnews_eco:Analysis: What a Fed rate hike would mea"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-11"
+  },
+  "de98de602f11": {
+    "entries": [
+      {
+        "date": "2026-09-11",
+        "score": 8,
+        "confidence": 26,
+        "signal_counts": {},
+        "sources": [
+          "market_news",
+          "news:Australia Bond Yields Jump to Highest Since 2011 o"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-11"
+  },
+  "1f1c11b1d20e": {
+    "entries": [
+      {
+        "date": "2026-09-11",
+        "score": 6,
+        "confidence": 46,
+        "signal_counts": {},
+        "sources": [
+          "google_news_economy",
+          "gnews_eco:Friday's CPI inflation report is even mo"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-11"
+  },
+  "a3048f19ba77": {
+    "entries": [
+      {
+        "date": "2026-09-11",
+        "score": 4,
+        "confidence": 26,
+        "signal_counts": {},
+        "sources": [
+          "hackernews",
+          "hn:49653328"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-11"
+  },
+  "bd4035cb9d24": {
+    "entries": [
+      {
+        "date": "2026-09-11",
+        "score": 4,
+        "confidence": 26,
+        "signal_counts": {},
+        "sources": [
+          "funding:google_news",
+          "funding:gnews:How Reg CF Equity Crowdfunding Actually "
+        ]
+      }
+    ],
+    "first_seen": "2026-09-11"
+  },
+  "ff4fe48ea14b": {
+    "entries": [
+      {
+        "date": "2026-09-11",
+        "score": 4,
+        "confidence": 26,
+        "signal_counts": {},
+        "sources": [
+          "market_news",
+          "news:Bill Ackman Bets Big on Uber Stock. Should You Fol"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-11"
+  },
+  "f214366776ea": {
+    "entries": [
+      {
+        "date": "2026-09-11",
+        "score": 4,
+        "confidence": 26,
+        "signal_counts": {},
+        "sources": [
+          "market_news",
+          "news:Inditex Breaks Records and Still Gets Marked Down"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-11"
+  },
+  "843e0829d1da": {
+    "entries": [
+      {
+        "date": "2026-09-11",
+        "score": 4,
+        "confidence": 26,
+        "signal_counts": {},
+        "sources": [
+          "market_news",
+          "news:Hyperliquid Price Prediction: HYPE Eyes $100 as Ri"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-11"
+  },
+  "1c82f11766ff": {
+    "entries": [
+      {
+        "date": "2026-09-11",
+        "score": 4,
+        "confidence": 26,
+        "signal_counts": {},
+        "sources": [
+          "market_news",
+          "news:Why ServiceTitan Stock Is Diving 30% After Earning"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-11"
+  },
+  "cbe31847e04e": {
+    "entries": [
+      {
+        "date": "2026-09-11",
+        "score": 4,
+        "confidence": 26,
+        "signal_counts": {},
+        "sources": [
+          "market_news",
+          "news:This Stock Just Hit Its 29th New 52-Week High. Her"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-11"
+  },
+  "662e4b9be2b3": {
+    "entries": [
+      {
+        "date": "2026-09-11",
+        "score": 4,
+        "confidence": 26,
+        "signal_counts": {},
+        "sources": [
+          "market_news",
+          "news:AI Boom Could Worsen Stock Sell-Off, Analysts Warn"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-11"
+  },
+  "44bfaada4f7f": {
+    "entries": [
+      {
+        "date": "2026-09-11",
+        "score": 4,
+        "confidence": 26,
+        "signal_counts": {},
+        "sources": [
+          "market_news",
+          "news:Amphenol Tests Key Level, Nears Pivot Amid Strong "
+        ]
+      }
+    ],
+    "first_seen": "2026-09-11"
+  },
+  "0eacf308678b": {
+    "entries": [
+      {
+        "date": "2026-09-11",
+        "score": 4,
+        "confidence": 26,
+        "signal_counts": {},
+        "sources": [
+          "korea_news:google_news",
+          "korea_news:[판교허브 밸류업] 韓 벤처펀드 8,000개 중 ‘지금 답할 투자자’만 "
+        ]
+      }
+    ],
+    "first_seen": "2026-09-11"
+  },
+  "e8c050067aa3": {
+    "entries": [
+      {
+        "date": "2026-09-11",
+        "score": 4,
+        "confidence": 26,
+        "signal_counts": {},
+        "sources": [
+          "korea_news:google_news",
+          "korea_news:수자원공사, 물·기상 융합 기술로 해외 진출 기반 넓힌다 - 위클리서울"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-11"
+  },
+  "3fd77f4e92d8": {
+    "entries": [
+      {
+        "date": "2026-09-11",
+        "score": 3,
+        "confidence": 26,
+        "signal_counts": {},
+        "sources": [
+          "market_news",
+          "news:Oil Trades Near $107 as Houthi-Saudi Fighting Esca"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-11"
+  },
+  "2b8f0719b51b": {
+    "entries": [
+      {
+        "date": "2026-09-11",
+        "score": 0,
+        "confidence": 26,
+        "signal_counts": {},
+        "sources": [
+          "market_news",
+          "news:SoFi Dips 3% Despite Reported Kraken Crypto Settle"
+        ]
+      }
+    ],
+    "first_seen": "2026-09-11"
+  },
+  "9039ca2670b8": {
+    "entries": [
+      {
+        "date": "2026-09-11",
+        "score": 0,
+        "confidence": 26,
+        "signal_counts": {},
+        "sources": [
+          "market_news",
+          "news:UK Big Business Urges Chancellor to Cut Levies on "
         ]
       }
     ],

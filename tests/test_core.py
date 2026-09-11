@@ -926,6 +926,107 @@ def test_tech_trend_no_fabrication():
     print("PASS: test_tech_trend_no_fabrication")
 
 
+def test_real_estate_parse_and_format():
+    from src.collectors.real_estate import format_amount_manwon, _parse_trades
+
+    xml = """<?xml version="1.0" encoding="UTF-8"?>
+<response>
+  <body>
+    <items>
+      <item>
+        <거래금액>215,000</거래금액>
+        <건축년도>2010</건축년도>
+        <년>2026</년>
+        <법정동>반포동</법정동>
+        <아파트>래미안퍼스티지</아파트>
+        <월>8</월>
+        <일>15</일>
+        <전용면적>84.9900</전용면적>
+        <층>7</층>
+      </item>
+      <item>
+        <거래금액>1,500</거래금액>
+        <년>2026</년>
+        <월>8</월>
+        <일>2</일>
+        <전용면적>59.9400</전용면적>
+        <층>3</층>
+      </item>
+      <item>
+        <거래금액></거래금액>
+        <년>2026</년>
+        <월>8</월>
+        <일>1</일>
+      </item>
+    </items>
+  </body>
+</response>"""
+    trades = _parse_trades(xml)
+    assert len(trades) == 2
+    t = trades[0]
+    assert t["apt"] == "래미안퍼스티지"
+    assert t["amount_manwon"] == 215000
+    assert t["deal_date"] == "2026-08-15"
+    assert t["area"] == 84.99
+    assert t["floor"] == 7
+    assert t["build_year"] == 2010
+    assert format_amount_manwon(215000) == "21억5,000만 원"
+    assert format_amount_manwon(10000) == "1억 원"
+    assert format_amount_manwon(1500) == "1,500만 원"
+    print("PASS: test_real_estate_parse_and_format")
+
+
+def test_real_estate_report_rule():
+    from src.reports.markdown_report import render_markdown_reports
+    from src import timeutil
+
+    re_dict = {
+        "region": "강남구",
+        "trades": [
+            {"apt": "래미안퍼스티지", "area": 84.99, "floor": 7,
+             "build_year": 2010, "amount_manwon": 215000,
+             "deal_date": "2026-08-15"},
+            {"apt": "반포자이", "amount_manwon": 120000,
+             "deal_date": "2026-08-10"},
+        ],
+    }
+    today = timeutil.date_kst()
+    listed = mk_entity("re1", "래미안퍼스티지 (강남구)", "Real Estate",
+                       is_korean=True, real_estate=re_dict, last_seen=today,
+                       signal_sources=["real_estate"])
+    stale = mk_entity("re2", "구라미 (강남구)", "Real Estate", is_korean=True,
+                      real_estate=re_dict, last_seen="2026-08-01",
+                      signal_sources=["real_estate"])
+    items = [
+        ScoredEntity(listed, ScoreBreakdown(news=2), confidence=40),
+        ScoredEntity(stale, ScoreBreakdown(news=2), confidence=40),
+    ]
+    files = render_markdown_reports(
+        [], items, [], [], [], {}, datetime(2026, 9, 11, 10, 10),
+        "2026-09-10 10:10 ~ 2026-09-11 10:10 KST", [], [],
+    )
+    md = files["real-estate.md"]
+    assert "래미안퍼스티지" in md and "구라미" not in md
+    assert "21억5,000만 원" in md
+    assert "## 강남구" in md
+
+    # No real_estate rows at all → explicit empty-state.
+    empty = render_markdown_reports(
+        [], [], [], [], [], {}, datetime(2026, 9, 11, 10, 10),
+        "2026-09-10 10:10 ~ 2026-09-11 10:10 KST", [], [],
+    )
+    assert "감지된 실거래 기록이 없습니다" in empty["real-estate.md"]
+
+    # API key missing → SKIPPED note about the key.
+    skipped = render_markdown_reports(
+        [], [], [], [], [], {"real_estate": {"status": "SKIPPED", "items": 0}},
+        datetime(2026, 9, 11, 10, 10),
+        "2026-09-10 10:10 ~ 2026-09-11 10:10 KST", [], [],
+    )
+    assert "REAL_ESTATE_API_KEY" in skipped["real-estate.md"]
+    print("PASS: test_real_estate_report_rule")
+
+
 def test_monthly_archive_pack_and_ordering():
     import zipfile
     from src.monthly import archive_month, pack_month
@@ -1041,6 +1142,8 @@ if __name__ == "__main__":
     test_tech_trend_no_fabrication()
     test_market_entry_brand_extraction()
     test_market_entry_report_rule()
+    test_real_estate_parse_and_format()
+    test_real_estate_report_rule()
     test_monthly_archive_pack_and_ordering()
     test_previous_month_kst()
     print("\nAll tests passed!")

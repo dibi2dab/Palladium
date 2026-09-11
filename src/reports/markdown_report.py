@@ -9,6 +9,7 @@ from __future__ import annotations
 from src.intelligence.scoring import ScoredEntity
 from src.intelligence.classification import ENTITY_TYPE_LABELS, EVENT_TYPE_LABELS
 from src.intelligence.funding import format_amount_kr, STAGE_LABELS_KO
+from src.collectors.real_estate import format_amount_manwon
 from src.report.formatter import format_reasons, format_score_change
 from src.analyzers.trajectory import ACCELERATING, GROWING
 from src import analyzers
@@ -322,6 +323,62 @@ def _domain_file(filename: str, title: str, items: list[ScoredEntity],
     return f"# ⚡ {title}\n\n" + _render_section(title, items)
 
 
+def _render_real_estate(scored: list[ScoredEntity],
+                        source_status: dict) -> str:
+    """Real-estate report: REAL reported trades from the 국토부 실거래 API.
+
+    Only entities that received a real_estate collection THIS cycle are shown
+    (last_seen == today). Trades within a region are sorted by price descending
+    (top deals view). No synthetic numbers — every row is an actual deal.
+    """
+    today = timeutil.date_kst()
+    regions: dict[str, dict] = {}
+    for s in scored:
+        re_dict = s.entity.real_estate or {}
+        trades = re_dict.get("trades") or []
+        if not trades or s.entity.last_seen != today:
+            continue
+        region = re_dict.get("region") or "기타"
+        rows = []
+        for t in sorted(trades, key=lambda t: t.get("amount_manwon", 0),
+                        reverse=True)[:8]:
+            apt = _md(t.get("apt", ""))
+            parts = [p for p in (
+                format_amount_manwon(t.get("amount_manwon", 0)),
+                f"{t['area']:g}㎡" if t.get("area") else "",
+                f"{t['floor']}층" if t.get("floor") else "",
+                t.get("deal_date", ""),
+            ) if p]
+            rows.append(f"- **{apt}** — " + " · ".join(parts))
+        if rows:
+            bucket = regions.setdefault(region, {"rows": [], "max": 0})
+            bucket["rows"].extend(rows)
+            bucket["max"] = max(bucket["max"], max(t.get("amount_manwon", 0)
+                                                   for t in trades))
+
+    if not regions:
+        skipped = source_status.get("real_estate", {}).get("status") == "SKIPPED"
+        note = (
+            "> 국토교통부 아파트매매 실거래 API 키(REAL_ESTATE_API_KEY)가 "
+            "설정되지 않아 수집이 SKIPPED 처리되었습니다. data.go.kr에서 "
+            "서비스키를 발급받아 등록하면 실거래가가 자동으로 채워집니다.\n"
+            if skipped else
+            "> 이번 수집 주기에 감지된 실거래 기록이 없습니다.\n")
+        return f"# 🏠 부동산/경매 기회 (Real Estate)\n\n{note}"
+
+    blocks = ["# 🏠 부동산/경매 기회 (Real Estate)", ""]
+    blocks.append("> 한국 주요 지역 아파트 실거래가 — 실제 체결가 (국토교통부 "
+                  "아파트매매 실거래 API 기준). AI 생성 수치 없음.")
+    blocks.append("")
+    for region, bucket in sorted(regions.items(),
+                                 key=lambda kv: kv[1]["max"], reverse=True):
+        blocks.append(f"## {region}")
+        blocks.append("")
+        blocks.extend(bucket["rows"])
+        blocks.append("")
+    return "\n".join(blocks).rstrip() + "\n"
+
+
 def _tech_trend_candidates(scored: list[ScoredEntity]) -> list[ScoredEntity]:
     """Tech-trend candidates ranked by REAL observed GitHub metrics.
 
@@ -533,11 +590,10 @@ def render_markdown_reports(
             "> 이번 수집 주기에 한국 시장 진입 후보로 분류된 글로벌 "
             "제품/기업이 없습니다.\n")
 
-    # Real estate — module not yet wired to a data source.
-    files["real-estate.md"] = (
-        "# 🏠 부동산/경매 기회 (Real Estate)\n\n"
-        "> 부동산 데이터 수집 모듈이 아직 구성되지 않아 이번 주기에는 "
-        "분석 데이터가 없습니다. 데이터 파이프라인 연결 후 활성화됩니다.\n")
+    # Real estate — REAL reported apartment deals from the 국토부 실거래 API.
+    # Scanned over the FULL scored list (like market-entry): a real trade
+    # surfaces regardless of the quality-gated section threshold.
+    files["real-estate.md"] = _render_real_estate(scored, source_status)
 
     generated = set(files.keys())
     files = {"daily-summary.md": _summary_md(

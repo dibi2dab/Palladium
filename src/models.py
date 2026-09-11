@@ -38,6 +38,8 @@ class Opportunity:
     metrics: Metrics = field(default_factory=Metrics)
     tags: list[str] = field(default_factory=list)
     source_ids: list[str] = field(default_factory=list)
+    # Real transaction payload (real_estate collector). See real_estate.py.
+    real_estate: Optional[dict] = None
 
     @property
     def id(self) -> str:
@@ -58,4 +60,5 @@ class Opportunity:
             "metrics": self.metrics.to_dict(),
             "tags": self.tags,
             "source_ids": self.source_ids,
+            "real_estate": self.real_estate,
         }

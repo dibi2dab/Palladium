@@ -37,6 +37,7 @@ from src.collectors.reddit import RedditCollector
 from src.collectors.funding import FundingCollector
 from src.collectors.korea import KoreaNewsCollector, DartCollector
 from src.collectors.market_entry import MarketEntryCollector
+from src.collectors.real_estate import RealEstateCollector, format_amount_manwon
 from src.intelligence.entities import EntityManager
 from src.intelligence.signals import SignalManager
 from src.intelligence.scoring import Scorer, ScoredEntity
@@ -65,6 +66,7 @@ COLLECTOR_MAP = {
     "korea_news": KoreaNewsCollector,
     "dart": DartCollector,
     "market_entry": MarketEntryCollector,
+    "real_estate": RealEstateCollector,
 }
 
 
@@ -95,7 +97,7 @@ def main():
                 source_status[name] = {"status": "FAILED", "items": 0}
             else:
                 logger.info(f"[OK] {name} data collected ({len(items)} items)")
-                if name == "dart" and not items:
+                if not items and getattr(collector, "skipped", False):
                     source_status[name] = {"status": "SKIPPED", "items": 0}
                 else:
                     source_status[name] = {"status": "OK", "items": len(items)}
@@ -127,6 +129,7 @@ def main():
             if sid not in entity.signal_sources:
                 entity.signal_sources.append(sid)
         _sync_github_metrics(entity, opp)
+        _sync_real_estate(entity, opp)
     logger.info(f"[OK] Entities normalized ({len(entities.get_all())} entities)")
 
     # 3. Generate Signals
@@ -249,6 +252,27 @@ def _sync_github_metrics(entity, opp):
     entity.github_metrics = gm or None
 
 
+def _sync_real_estate(entity, opp):
+    """Store ONLY real reported apartment transactions (no fabrication).
+
+    Merges this cycle's deals into the entity's accumulated trade list,
+    deduped by (apt, deal_date, price) so re-collecting the same month does
+    not duplicate rows across days.
+    """
+    data = getattr(opp, "real_estate", None)
+    if opp.source != "real_estate" or not data:
+        return
+    re_dict = dict(entity.real_estate or {})
+    re_dict.setdefault("region", data.get("region", ""))
+    trades = list(re_dict.get("trades", []))
+    key = (data.get("apt"), data.get("deal_date"), data.get("amount_manwon"))
+    if not any((t.get("apt"), t.get("deal_date"), t.get("amount_manwon")) == key
+               for t in trades):
+        trades.append(data)
+    re_dict["trades"] = trades[-80:]
+    entity.real_estate = re_dict or None
+
+
 def _generate_signals(opportunities, entities, signals):
     for opp in opportunities:
         entity = _resolve_entity(entities, opp)
@@ -286,6 +310,18 @@ def _generate_signals(opportunities, entities, signals):
         for cat, desc, key in categories:
             desc = (desc or opp.description[:100]).strip()
             signals.add_or_merge(entity.id, cat, opp.source, desc, 1, opp.url, key)
+
+        if opp.source == "real_estate" and opp.real_estate:
+            re_data = opp.real_estate
+            signals.add_or_merge(
+                entity.id, "real_estate", opp.source,
+                f"{re_data.get('region', '')} {re_data.get('apt', '')}: "
+                f"실거래 {format_amount_manwon(re_data.get('amount_manwon', 0))} "
+                f"({re_data.get('deal_date', '')})",
+                1, opp.url,
+                f"re:{re_data.get('region_code', '')}:"
+                f"{re_data.get('apt', '')}:{re_data.get('deal_date', '')}",
+            )
 
         if opp.metrics.github_stars and opp.metrics.github_stars > 100:
             signals.add_or_merge(entity.id, "github", opp.source,
@@ -453,7 +489,7 @@ def _detect_signal_categories(opp, parsed, events) -> list[tuple[str, str, str |
     if opp.category.lower() == "economy" or "macro" in [t.lower() for t in opp.tags]:
         deduped.append(("macro_event", f"거시경제: {opp.description[:80]}", "macro"))
 
-    if not deduped:
+    if not deduped and opp.source != "real_estate":
         deduped.append(("news", opp.description[:100], None))
     return deduped
 
