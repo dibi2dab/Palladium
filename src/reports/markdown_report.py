@@ -508,15 +508,24 @@ def render_markdown_reports(
 
     # Market entry candidates: global (non-Korean) products with Korean
     # news coverage — evidence that the product is reaching Korean users.
-    entry = [s for s in all_items if not s.entity.is_korean
-             and any("korea_news" in (src or "").lower() for src in s.entity.signal_sources)]
+    # Scanned over the FULL scored list (coverage alone surfaces a candidate,
+    # regardless of the quality-gated section threshold).
+    entry = sorted(
+        (s for s in scored
+         if not s.entity.is_korean
+         and any("korea_news" in (src or "").lower() for src in s.entity.signal_sources)),
+        key=lambda s: s.score.total, reverse=True,
+    )[:10]
     if entry:
         blocks = ["# 🚪 국내 진입 후보 (Market Entry)", ""]
         blocks.append("> 한국 뉴스에서 다뤄진 글로벌 제품/기업. 진입 시점 판단은 후보 수준입니다.")
         blocks.append("")
-        for s in entry[:10]:
-            blocks.append(f"- **{_md(s.entity.name)}** (점수 {s.score.total}, "
-                          f"{s.opportunity_type}) — {_md(s.entity.description[:120])}")
+        for s in entry:
+            url = s.entity.url or ""
+            name = _md(s.entity.name)
+            link = f"[{name}]({url})" if url else name
+            blocks.append(f"- **{link}** (점수 {s.score.total}, 신뢰도 {s.confidence}%) "
+                          f"— {_md(s.entity.description[:160])}")
         files["market-entry.md"] = "\n".join(blocks) + "\n"
     else:
         files["market-entry.md"] = (

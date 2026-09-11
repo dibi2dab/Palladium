@@ -856,6 +856,47 @@ def test_palladium_markdown_reports():
     print("PASS: test_palladium_markdown_reports")
 
 
+def test_market_entry_brand_extraction():
+    from src.collectors.market_entry import extract_global_brand
+
+    assert extract_global_brand("ChatGPT, 한국 시장 본격 진출") == "ChatGPT"
+    assert extract_global_brand("Perplexity, 국내 출시 임박") == "Perplexity"
+    assert extract_global_brand("OpenAI, 한국에 사무소 설립") == "OpenAI"
+    # Korean-only transcription (no usable Latin token) → None, never guessed.
+    assert extract_global_brand("챗GPT 한국 출시 예정") is None
+    assert extract_global_brand("AI 반도체 한국 시장 확대") is None
+    # Media/broadcast codes and English fillers are never brands.
+    assert extract_global_brand("YTN 뉴스, KBS 보도") is None
+    assert extract_global_brand("The Korea Times 영어 기사") is None
+    print("PASS: test_market_entry_brand_extraction")
+
+
+def test_market_entry_report_rule():
+    from src.reports.markdown_report import render_markdown_reports
+
+    def b55():
+        return ScoreBreakdown(funding=40, news=10, hiring=10, product=5)
+
+    # Non-Korean global product with Korean-media coverage → candidate even at
+    # low score (below the section gate).
+    nk = mk_entity("me1", "Perplexity", "AI/ML", is_korean=False,
+                   entity_type="PRODUCT",
+                   signal_sources=["korea_news:market_entry"])
+    # Korean subject with the same coverage → must NOT be a market-entry target.
+    kr = mk_entity("me2", "네이버", "Product", is_korean=True, entity_type="PRODUCT",
+                   signal_sources=["korea_news"])
+    items = [
+        ScoredEntity(nk, ScoreBreakdown(news=2), confidence=40),
+        ScoredEntity(kr, b55(), confidence=70),
+    ]
+    files = render_markdown_reports([], items, [], [], [], {},
+                                    datetime(2026, 9, 11, 10, 10),
+                                    "2026-09-10 10:10 ~ 2026-09-11 10:10 KST", [], [])
+    assert "Perplexity" in files["market-entry.md"]
+    assert "네이버" not in files["market-entry.md"]
+    print("PASS: test_market_entry_report_rule")
+
+
 def test_tech_trend_no_fabrication():
     from src.reports.markdown_report import render_markdown_reports
 
@@ -998,6 +1039,8 @@ if __name__ == "__main__":
     test_palladium_second_order()
     test_palladium_markdown_reports()
     test_tech_trend_no_fabrication()
+    test_market_entry_brand_extraction()
+    test_market_entry_report_rule()
     test_monthly_archive_pack_and_ordering()
     test_previous_month_kst()
     print("\nAll tests passed!")

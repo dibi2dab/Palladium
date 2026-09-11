@@ -10,10 +10,14 @@
 
 - 소비재 마진 개선
 
-### 거시경제: oil_price_down — Macro
+### 거시경제: oil_price_up — Macro
 
-- 에너지 업스트림 마진 압박
+- 항공·운송 비용 압력 → 에너지 대체재
 
 ### 거시경제: cpi_high — Macro
 
 - 소비재 가격 민감도·원자재 수급
+
+### 거시경제: gdp_growth — Macro
+
+- 경기 민감 산업 수요 증가

@@ -36,6 +36,7 @@ from src.collectors.news import NewsCollector
 from src.collectors.reddit import RedditCollector
 from src.collectors.funding import FundingCollector
 from src.collectors.korea import KoreaNewsCollector, DartCollector
+from src.collectors.market_entry import MarketEntryCollector
 from src.intelligence.entities import EntityManager
 from src.intelligence.signals import SignalManager
 from src.intelligence.scoring import Scorer, ScoredEntity
@@ -63,6 +64,7 @@ COLLECTOR_MAP = {
     "reddit": RedditCollector,
     "korea_news": KoreaNewsCollector,
     "dart": DartCollector,
+    "market_entry": MarketEntryCollector,
 }
 
 
