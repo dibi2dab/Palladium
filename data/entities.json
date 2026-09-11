@@ -2940,7 +2940,8 @@
         "round": "UNKNOWN",
         "amount_m": null,
         "investors": [],
-        "status": "confirmed"
+        "status": "confirmed",
+        "currency": "USD"
       }
     ],
     "total_funding_m": null,
@@ -3583,7 +3584,8 @@
         "round": "UNKNOWN",
         "amount_m": null,
         "investors": [],
-        "status": "confirmed"
+        "status": "confirmed",
+        "currency": "USD"
       }
     ],
     "total_funding_m": null,
@@ -3814,7 +3816,8 @@
         "round": "UNKNOWN",
         "amount_m": null,
         "investors": [],
-        "status": "confirmed"
+        "status": "confirmed",
+        "currency": "USD"
       }
     ],
     "total_funding_m": null,
@@ -4729,7 +4732,8 @@
         "investors": [
           "accel"
         ],
-        "status": "confirmed"
+        "status": "confirmed",
+        "currency": "USD"
       }
     ],
     "total_funding_m": null,
@@ -4844,7 +4848,8 @@
         "round": "SEED",
         "amount_m": null,
         "investors": [],
-        "status": "confirmed"
+        "status": "confirmed",
+        "currency": "USD"
       }
     ],
     "total_funding_m": null,
@@ -4954,7 +4959,8 @@
         "investors": [
           "gv"
         ],
-        "status": "confirmed"
+        "status": "confirmed",
+        "currency": "USD"
       }
     ],
     "total_funding_m": null,
@@ -8838,7 +8844,8 @@
         "round": "UNKNOWN",
         "amount_m": null,
         "investors": [],
-        "status": "confirmed"
+        "status": "confirmed",
+        "currency": "USD"
       }
     ],
     "total_funding_m": null,
@@ -16560,7 +16567,8 @@
         "round": "UNKNOWN",
         "amount_m": null,
         "investors": [],
-        "status": "confirmed"
+        "status": "confirmed",
+        "currency": "USD"
       }
     ],
     "total_funding_m": null,
@@ -16628,7 +16636,8 @@
         "round": "UNKNOWN",
         "amount_m": null,
         "investors": [],
-        "status": "confirmed"
+        "status": "confirmed",
+        "currency": "USD"
       }
     ],
     "total_funding_m": null,
@@ -16714,7 +16723,8 @@
     "signal_counts": {},
     "signal_sources": [
       "korea_news:google_news",
-      "korea_news:창업 후 첫 투자유치, 정부가 돕는다…연내 300회 IR - snakor"
+      "korea_news:창업 후 첫 투자유치, 정부가 돕는다…연내 300회 IR - snakor",
+      "korea_news:창업 후 첫 투자유치, 정부가 돕는다…연내 300회 IR - 서울뉴스통신"
     ],
     "tags": [
       "korea",
@@ -16736,7 +16746,8 @@
         "round": "UNKNOWN",
         "amount_m": null,
         "investors": [],
-        "status": "confirmed"
+        "status": "confirmed",
+        "currency": "USD"
       }
     ],
     "total_funding_m": null,
@@ -17925,7 +17936,8 @@
     "signal_sources": [
       "korea_news:google_news",
       "korea_news:휴메딕스, 50억원 규모 자사주 전량 소각…주주환원 강화 - 데일리팜",
-      "korea_news:휴메딕스, 50억원 규모 자사주 소각 결정 - 브릿지경제"
+      "korea_news:휴메딕스, 50억원 규모 자사주 소각 결정 - 브릿지경제",
+      "korea_news:휴메딕스, 자사주 18만4000주 전량 소각…분기배당 이어 주주환원 확대"
     ],
     "tags": [
       "korea",
@@ -17952,7 +17964,8 @@
         "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE90QlpyLVUza2FRbW0zX3daaXo4SEhxQnBkbHZCVlYySWo1aF9mZnhkWTFITXJGWGFzLVZlZTdHMVRKMWNhOWlNUDBMVUs3ZjVz?oc=5",
         "sources": [
           "https://news.google.com/rss/articles/CBMiUEFVX3lxTE90QlpyLVUza2FRbW0zX3daaXo4SEhxQnBkbHZCVlYySWo1aF9mZnhkWTFITXJGWGFzLVZlZTdHMVRKMWNhOWlNUDBMVUs3ZjVz?oc=5",
-          "https://news.google.com/rss/articles/CBMiWkFVX3lxTFB4Qk92NExZNXNsajVIdldqaTVrS2laVGtaTmd3RjJkcjRvWlB5ZjVHRkk5QkRDZmFNcEpLZGVlVnp2V0JGMjdUU0JMM2ZKc3pnLU5hSGJhMklWQQ?oc=5"
+          "https://news.google.com/rss/articles/CBMiWkFVX3lxTFB4Qk92NExZNXNsajVIdldqaTVrS2laVGtaTmd3RjJkcjRvWlB5ZjVHRkk5QkRDZmFNcEpLZGVlVnp2V0JGMjdUU0JMM2ZKc3pnLU5hSGJhMklWQQ?oc=5",
+          "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9NeExVLXVRLXVzaENmUno5VTFjU01FNjZTRjdFQXZxZl8wT0ZWWDB2b2ttc3l0TE1ZUzl4VHBRWDNDcWNSakxlQ1NCc1J3Q2V2VHdTZ3E1MkJ4VnRONXc3NmNJTXI?oc=5"
         ]
       }
     ],
@@ -19189,7 +19202,8 @@
         "description": "지역 제조기업 AI 전환 돕는다…M.AX 컨설팅·매칭 지원 - 머니투데이 - 머니투데이",
         "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTFA3aElndS1tYzUxMUlaYm9GUVVjQTI2dTg3NmUxeGo2YndLWDllRV9BQUVwTjhYNHZ3YkN6OXlHX24zRmxyUWQtWTFGdVFvdV9UQmhSUXBBclBOel9meTMwYW5LcTRjaFB6OHgwVUJ6QTdNUlFPdTV1NNIBfkFVX3lxTE5MLUVpVEpLOU9QMVFSeS02cHBfMXczNi1EU2R2UEYtXzlURGFQZF9tUzFaYmdYQncwOHFMN0dBc3hIckZyblJHY1NKUU02eTA5Ums1REszbU9EcURYcUdQdFhtRWM3VTNsMW8ySllRc1MwWHphUS0wVlN5d2FYdw?oc=5",
         "sources": [
-          "https://news.google.com/rss/articles/CBMieEFVX3lxTFA3aElndS1tYzUxMUlaYm9GUVVjQTI2dTg3NmUxeGo2YndLWDllRV9BQUVwTjhYNHZ3YkN6OXlHX24zRmxyUWQtWTFGdVFvdV9UQmhSUXBBclBOel9meTMwYW5LcTRjaFB6OHgwVUJ6QTdNUlFPdTV1NNIBfkFVX3lxTE5MLUVpVEpLOU9QMVFSeS02cHBfMXczNi1EU2R2UEYtXzlURGFQZF9tUzFaYmdYQncwOHFMN0dBc3hIckZyblJHY1NKUU02eTA5Ums1REszbU9EcURYcUdQdFhtRWM3VTNsMW8ySllRc1MwWHphUS0wVlN5d2FYdw?oc=5"
+          "https://news.google.com/rss/articles/CBMieEFVX3lxTFA3aElndS1tYzUxMUlaYm9GUVVjQTI2dTg3NmUxeGo2YndLWDllRV9BQUVwTjhYNHZ3YkN6OXlHX24zRmxyUWQtWTFGdVFvdV9UQmhSUXBBclBOel9meTMwYW5LcTRjaFB6OHgwVUJ6QTdNUlFPdTV1NNIBfkFVX3lxTE5MLUVpVEpLOU9QMVFSeS02cHBfMXczNi1EU2R2UEYtXzlURGFQZF9tUzFaYmdYQncwOHFMN0dBc3hIckZyblJHY1NKUU02eTA5Ums1REszbU9EcURYcUdQdFhtRWM3VTNsMW8ySllRc1MwWHphUS0wVlN5d2FYdw?oc=5",
+          "https://news.google.com/rss/articles/CBMia0FVX3lxTE4wWEZWMGhwZ1VKZzVvc1FiYjUtSlFJQldjWVMxMGpkVXROYUh6cS1qZngta0VYUjU0UC15MTNDelB5ZVdhZUdKeGNydkJ2dmFHWkF2Um80RVJMa3hsa2VGUTFpUVlkTGZ5RmJj0gFwQVVfeXFMTmg3NEpVbGV2QTZ2SjU4OEhoZGxQWXhWZ1BqNlBDeE4xTVpzUmN4aGJnQ2FpUjQxbmc4Y2ZMem9Rc0NwWnFmZ2hBeGtyWlpuUS1xcFJabjRndDVmc2FXMkRLWXB4RkI5TUE3Ymxac3RKZw?oc=5"
         ]
       }
     ],
@@ -19239,7 +19253,8 @@
         "description": "산업부, M.AX 지역 컨퍼런스 개최…제조기업 AX 지원 - newsis.com",
         "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBYQ0dybUZvV3l2dnlBd1BKYjZhWENpV1Z0cnpOTWdqQTlCbmtJMk9sb2FYdzVraWVtRWRRT0c4bldDYlZ2OGdibElHSVBEYnRraHdpSFp4RnBGMlFlV3MtV9IBeEFVX3lxTE53OFVCVnpGZGlzMFB3c1lfTGl5eUZkb1Jvd0I1VEJfRllSSWp6TzItaTNnVHZvUGFsM0p2MnNqWjhHc0FUSU1vN3dHTjZZbk8tRjJlRFpDMzlNTWU3SWNxdkVucE5ETmozWXV5cTVUWkxzVGJjUEdFaQ?oc=5",
         "sources": [
-          "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBYQ0dybUZvV3l2dnlBd1BKYjZhWENpV1Z0cnpOTWdqQTlCbmtJMk9sb2FYdzVraWVtRWRRT0c4bldDYlZ2OGdibElHSVBEYnRraHdpSFp4RnBGMlFlV3MtV9IBeEFVX3lxTE53OFVCVnpGZGlzMFB3c1lfTGl5eUZkb1Jvd0I1VEJfRllSSWp6TzItaTNnVHZvUGFsM0p2MnNqWjhHc0FUSU1vN3dHTjZZbk8tRjJlRFpDMzlNTWU3SWNxdkVucE5ETmozWXV5cTVUWkxzVGJjUEdFaQ?oc=5"
+          "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBYQ0dybUZvV3l2dnlBd1BKYjZhWENpV1Z0cnpOTWdqQTlCbmtJMk9sb2FYdzVraWVtRWRRT0c4bldDYlZ2OGdibElHSVBEYnRraHdpSFp4RnBGMlFlV3MtV9IBeEFVX3lxTE53OFVCVnpGZGlzMFB3c1lfTGl5eUZkb1Jvd0I1VEJfRllSSWp6TzItaTNnVHZvUGFsM0p2MnNqWjhHc0FUSU1vN3dHTjZZbk8tRjJlRFpDMzlNTWU3SWNxdkVucE5ETmozWXV5cTVUWkxzVGJjUEdFaQ?oc=5",
+          "https://news.google.com/rss/articles/CBMieEFVX3lxTE53OFVCVnpGZGlzMFB3c1lfTGl5eUZkb1Jvd0I1VEJfRllSSWp6TzItaTNnVHZvUGFsM0p2MnNqWjhHc0FUSU1vN3dHTjZZbk8tRjJlRFpDMzlNTWU3SWNxdkVucE5ETmozWXV5cTVUWkxzVGJjUEdFadIBeEFVX3lxTE53OFVCVnpGZGlzMFB3c1lfTGl5eUZkb1Jvd0I1VEJfRllSSWp6TzItaTNnVHZvUGFsM0p2MnNqWjhHc0FUSU1vN3dHTjZZbk8tRjJlRFpDMzlNTWU3SWNxdkVucE5ETmozWXV5cTVUWkxzVGJjUEdFaQ?oc=5"
         ]
       }
     ],
@@ -19702,6 +19717,863 @@
         "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE9GZmhXVklGZHpONkZZVE9fUzBYUm53TnNNSWg3a083WmltQXQ1TnYtd3JoSDBvUnNqYjVPRFRvdmtFQ1JIYjcwUi0xRExYMkVGVmNZRDhoU1JzdnpHa1RWOC1zalZnSUpOZ29xR1hRcjFIY0xGNmRXMNIBeEFVX3lxTE9GZmhXVklGZHpONkZZVE9fUzBYUm53TnNNSWg3a083WmltQXQ1TnYtd3JoSDBvUnNqYjVPRFRvdmtFQ1JIYjcwUi0xRExYMkVGVmNZRDhoU1JzdnpHa1RWOC1zalZnSUpOZ29xR1hRcjFIY0xGNmRXMA?oc=5",
         "sources": [
           "https://news.google.com/rss/articles/CBMieEFVX3lxTE9GZmhXVklGZHpONkZZVE9fUzBYUm53TnNNSWg3a083WmltQXQ1TnYtd3JoSDBvUnNqYjVPRFRvdmtFQ1JIYjcwUi0xRExYMkVGVmNZRDhoU1JzdnpHa1RWOC1zalZnSUpOZ29xR1hRcjFIY0xGNmRXMNIBeEFVX3lxTE9GZmhXVklGZHpONkZZVE9fUzBYUm53TnNNSWg3a083WmltQXQ1TnYtd3JoSDBvUnNqYjVPRFRvdmtFQ1JIYjcwUi0xRExYMkVGVmNZRDhoU1JzdnpHa1RWOC1zalZnSUpOZ29xR1hRcjFIY0xGNmRXMA?oc=5"
+        ]
+      }
+    ],
+    "search_interest": null,
+    "news_momentum": null,
+    "community_momentum": null,
+    "hiring_growth": null,
+    "is_korean": true
+  },
+  "854a0b030770": {
+    "id": "854a0b030770",
+    "name": "How GPT‑5.6 Sol helps run quantum computing experiments",
+    "url": "https://news.ycombinator.com/item?id=49622561",
+    "category": "Startup",
+    "description": "How GPT‑5.6 Sol helps run quantum computing experiments",
+    "domain": "news.ycombinator.com",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-11",
+    "last_seen": "2026-09-11",
+    "signal_counts": {},
+    "signal_sources": [
+      "hackernews",
+      "hn:49622561"
+    ],
+    "tags": [
+      "startup",
+      "hackernews"
+    ],
+    "startup_stage": "UNKNOWN",
+    "entity_type": "STARTUP",
+    "parent_company": null,
+    "event_types": [
+      "OTHER_EVENT"
+    ],
+    "investors": [],
+    "accelerators": [],
+    "funding_history": [],
+    "total_funding_m": null,
+    "funding_status": "",
+    "events": [
+      {
+        "type": "OTHER_EVENT",
+        "date": "2026-09-11",
+        "description": "How GPT‑5.6 Sol helps run quantum computing experiments",
+        "url": "https://news.ycombinator.com/item?id=49622561",
+        "sources": [
+          "https://news.ycombinator.com/item?id=49622561"
+        ]
+      }
+    ],
+    "search_interest": null,
+    "news_momentum": null,
+    "community_momentum": null,
+    "hiring_growth": null,
+    "is_korean": false
+  },
+  "861ebb740c67": {
+    "id": "861ebb740c67",
+    "name": "Peter Thiel-Backed AI Startup Cognition Raises Funds at $48 Billion Valuation - wsj.com",
+    "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOUkJBZ2o0YmZnOEpWVk9mT1dmRUFDZmkxbFZBNU9FQy1VWk5YeENDb0U3c080STBTdmFTWVh0aGNjRXZuNnhrU1RseEVPaWpBVkRSbGtJWExBenJwSlJYNkxHNzcwdk1oMzh4bUs0WGFsdGt3cGNRa29jdndoZXJVbkRJOEI5blRoVGN4NTFRLTNlU1J1VWVKOFRfLTRlb0hXMnFzVWlrTG45NVlSVkRSbVVEUFh1eklGWEVJWThpZ09ZUQ?oc=5",
+    "category": "Funding",
+    "description": "Peter Thiel-Backed AI Startup Cognition Raises Funds at $48 Billion Valuation - wsj.com",
+    "domain": "news.google.com",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-11",
+    "last_seen": "2026-09-11",
+    "signal_counts": {},
+    "signal_sources": [
+      "funding:google_news",
+      "funding:gnews:Peter Thiel-Backed AI Startup Cognition "
+    ],
+    "tags": [
+      "funding",
+      "startup",
+      "google_news"
+    ],
+    "startup_stage": "UNKNOWN",
+    "entity_type": "STARTUP",
+    "parent_company": null,
+    "event_types": [
+      "FUNDING"
+    ],
+    "investors": [],
+    "accelerators": [],
+    "funding_history": [
+      {
+        "date": "2026-09-11",
+        "round": "UNKNOWN",
+        "amount_m": 48000.0,
+        "investors": [],
+        "status": "confirmed",
+        "currency": "USD"
+      }
+    ],
+    "total_funding_m": 48000.0,
+    "funding_status": "confirmed",
+    "events": [
+      {
+        "type": "FUNDING",
+        "date": "2026-09-11",
+        "description": "Peter Thiel-Backed AI Startup Cognition Raises Funds at $48 Billion Valuation - wsj.com",
+        "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOUkJBZ2o0YmZnOEpWVk9mT1dmRUFDZmkxbFZBNU9FQy1VWk5YeENDb0U3c080STBTdmFTWVh0aGNjRXZuNnhrU1RseEVPaWpBVkRSbGtJWExBenJwSlJYNkxHNzcwdk1oMzh4bUs0WGFsdGt3cGNRa29jdndoZXJVbkRJOEI5blRoVGN4NTFRLTNlU1J1VWVKOFRfLTRlb0hXMnFzVWlrTG45NVlSVkRSbVVEUFh1eklGWEVJWThpZ09ZUQ?oc=5",
+        "sources": [
+          "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOUkJBZ2o0YmZnOEpWVk9mT1dmRUFDZmkxbFZBNU9FQy1VWk5YeENDb0U3c080STBTdmFTWVh0aGNjRXZuNnhrU1RseEVPaWpBVkRSbGtJWExBenJwSlJYNkxHNzcwdk1oMzh4bUs0WGFsdGt3cGNRa29jdndoZXJVbkRJOEI5blRoVGN4NTFRLTNlU1J1VWVKOFRfLTRlb0hXMnFzVWlrTG45NVlSVkRSbVVEUFh1eklGWEVJWThpZ09ZUQ?oc=5"
+        ]
+      }
+    ],
+    "search_interest": null,
+    "news_momentum": null,
+    "community_momentum": null,
+    "hiring_growth": null,
+    "is_korean": false
+  },
+  "b03533fbcbed": {
+    "id": "b03533fbcbed",
+    "name": "SoHo-based startup raises $150M Series C with AI prescription tool - Crain's New York Business",
+    "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOanVhbWhTa0RqTGRBNWszTDVpVHdZNTZ5QlktMEFLQTJva2VEVHN3a1VpbG5kNnQ5aVdLOVNRUkpyZU9jRzFoY1Y0Ukp0QVl6dm5ReWJJbC0tMUtpZm50LUd1cjlrbF9iVWNOaExJdTVhZ1k4c2YzeU5DWjFDWmRBaVdUOGxrQXRERTY0MmU5c3pLMll6NUhRVi1HcnM?oc=5",
+    "category": "Funding",
+    "description": "SoHo-based startup raises $150M Series C with AI prescription tool - Crain's New York Business",
+    "domain": "news.google.com",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-11",
+    "last_seen": "2026-09-11",
+    "signal_counts": {},
+    "signal_sources": [
+      "funding:google_news",
+      "funding:gnews:SoHo-based startup raises $150M Series C"
+    ],
+    "tags": [
+      "funding",
+      "startup",
+      "google_news"
+    ],
+    "startup_stage": "SERIES_C",
+    "entity_type": "STARTUP",
+    "parent_company": null,
+    "event_types": [
+      "FUNDING"
+    ],
+    "investors": [],
+    "accelerators": [],
+    "funding_history": [
+      {
+        "date": "2026-09-11",
+        "round": "SERIES_C",
+        "amount_m": 150.0,
+        "investors": [],
+        "status": "confirmed",
+        "currency": "USD"
+      }
+    ],
+    "total_funding_m": 150.0,
+    "funding_status": "confirmed",
+    "events": [
+      {
+        "type": "FUNDING",
+        "date": "2026-09-11",
+        "description": "SoHo-based startup raises $150M Series C with AI prescription tool - Crain's New York Business",
+        "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOanVhbWhTa0RqTGRBNWszTDVpVHdZNTZ5QlktMEFLQTJva2VEVHN3a1VpbG5kNnQ5aVdLOVNRUkpyZU9jRzFoY1Y0Ukp0QVl6dm5ReWJJbC0tMUtpZm50LUd1cjlrbF9iVWNOaExJdTVhZ1k4c2YzeU5DWjFDWmRBaVdUOGxrQXRERTY0MmU5c3pLMll6NUhRVi1HcnM?oc=5",
+        "sources": [
+          "https://news.google.com/rss/articles/CBMinAFBVV95cUxOanVhbWhTa0RqTGRBNWszTDVpVHdZNTZ5QlktMEFLQTJva2VEVHN3a1VpbG5kNnQ5aVdLOVNRUkpyZU9jRzFoY1Y0Ukp0QVl6dm5ReWJJbC0tMUtpZm50LUd1cjlrbF9iVWNOaExJdTVhZ1k4c2YzeU5DWjFDWmRBaVdUOGxrQXRERTY0MmU5c3pLMll6NUhRVi1HcnM?oc=5"
+        ]
+      }
+    ],
+    "search_interest": null,
+    "news_momentum": null,
+    "community_momentum": null,
+    "hiring_growth": null,
+    "is_korean": false
+  },
+  "c4af2bb72de3": {
+    "id": "c4af2bb72de3",
+    "name": "Onix Expands Its Trusted AI Platform With $5M Pre-Seed Round - theaiinsider.tech",
+    "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQcFpaMmpDT2JNcFBBRFpnVlA4ZlJXdlI2RjdZRURKVHVFT2pIYkhxaWt0aFFJVVBEengzLTNRZDVYT0U4dGxrTXFPd25PVFJzTzNYWVBwTTRUS2hFSFhyOVpFRWVqMUdxVVJFaFRWTGNPQTNFSzNyMEZHOEI4c00yQnBDZmM3akxpY05YREw5RlFremc5UTR1M3J4ZlFwdw?oc=5",
+    "category": "Funding",
+    "description": "Onix Expands Its Trusted AI Platform With $5M Pre-Seed Round - theaiinsider.tech",
+    "domain": "news.google.com",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-11",
+    "last_seen": "2026-09-11",
+    "signal_counts": {},
+    "signal_sources": [
+      "funding:google_news",
+      "funding:gnews:Onix Expands Its Trusted AI Platform Wit"
+    ],
+    "tags": [
+      "funding",
+      "startup",
+      "google_news"
+    ],
+    "startup_stage": "PRE_SEED",
+    "entity_type": "STARTUP",
+    "parent_company": null,
+    "event_types": [
+      "FUNDING"
+    ],
+    "investors": [],
+    "accelerators": [],
+    "funding_history": [
+      {
+        "date": "2026-09-11",
+        "round": "PRE_SEED",
+        "amount_m": 5.0,
+        "investors": [],
+        "status": "confirmed",
+        "currency": "USD"
+      }
+    ],
+    "total_funding_m": 5.0,
+    "funding_status": "confirmed",
+    "events": [
+      {
+        "type": "FUNDING",
+        "date": "2026-09-11",
+        "description": "Onix Expands Its Trusted AI Platform With $5M Pre-Seed Round - theaiinsider.tech",
+        "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQcFpaMmpDT2JNcFBBRFpnVlA4ZlJXdlI2RjdZRURKVHVFT2pIYkhxaWt0aFFJVVBEengzLTNRZDVYT0U4dGxrTXFPd25PVFJzTzNYWVBwTTRUS2hFSFhyOVpFRWVqMUdxVVJFaFRWTGNPQTNFSzNyMEZHOEI4c00yQnBDZmM3akxpY05YREw5RlFremc5UTR1M3J4ZlFwdw?oc=5",
+        "sources": [
+          "https://news.google.com/rss/articles/CBMingFBVV95cUxQcFpaMmpDT2JNcFBBRFpnVlA4ZlJXdlI2RjdZRURKVHVFT2pIYkhxaWt0aFFJVVBEengzLTNRZDVYT0U4dGxrTXFPd25PVFJzTzNYWVBwTTRUS2hFSFhyOVpFRWVqMUdxVVJFaFRWTGNPQTNFSzNyMEZHOEI4c00yQnBDZmM3akxpY05YREw5RlFremc5UTR1M3J4ZlFwdw?oc=5"
+        ]
+      }
+    ],
+    "search_interest": null,
+    "news_momentum": null,
+    "community_momentum": null,
+    "hiring_growth": null,
+    "is_korean": false
+  },
+  "48f9693a5b28": {
+    "id": "48f9693a5b28",
+    "name": "Consensys Software Splits Into MetaMask and a New Consensys",
+    "url": "https://finance.yahoo.com/markets/crypto/articles/consensys-software-splits-metamask-consensys-162644306.html",
+    "category": "Market Event",
+    "description": "Consensys Software Splits Into MetaMask and a New Consensys",
+    "domain": "finance.yahoo.com",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-11",
+    "last_seen": "2026-09-11",
+    "signal_counts": {},
+    "signal_sources": [
+      "market_news",
+      "news:Consensys Software Splits Into MetaMask and a New "
+    ],
+    "tags": [
+      "market",
+      "news"
+    ],
+    "startup_stage": "UNKNOWN",
+    "entity_type": "OTHER",
+    "parent_company": null,
+    "event_types": [
+      "OTHER_EVENT"
+    ],
+    "investors": [],
+    "accelerators": [],
+    "funding_history": [],
+    "total_funding_m": null,
+    "funding_status": "",
+    "events": [
+      {
+        "type": "OTHER_EVENT",
+        "date": "2026-09-11",
+        "description": "Consensys Software Splits Into MetaMask and a New Consensys",
+        "url": "https://finance.yahoo.com/markets/crypto/articles/consensys-software-splits-metamask-consensys-162644306.html",
+        "sources": [
+          "https://finance.yahoo.com/markets/crypto/articles/consensys-software-splits-metamask-consensys-162644306.html"
+        ]
+      }
+    ],
+    "search_interest": null,
+    "news_momentum": null,
+    "community_momentum": null,
+    "hiring_growth": null,
+    "is_korean": false
+  },
+  "ef2ab5fda643": {
+    "id": "ef2ab5fda643",
+    "name": "Women's retailer closed 450 stores, heads to final liquidation",
+    "url": "https://finance.yahoo.com/small-business/articles/womens-retailer-closed-450-stores-163346993.html",
+    "category": "Market Event",
+    "description": "Women's retailer closed 450 stores, heads to final liquidation",
+    "domain": "finance.yahoo.com",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-11",
+    "last_seen": "2026-09-11",
+    "signal_counts": {},
+    "signal_sources": [
+      "market_news",
+      "news:Women's retailer closed 450 stores, heads to final"
+    ],
+    "tags": [
+      "market",
+      "news"
+    ],
+    "startup_stage": "UNKNOWN",
+    "entity_type": "OTHER",
+    "parent_company": null,
+    "event_types": [
+      "OTHER_EVENT"
+    ],
+    "investors": [],
+    "accelerators": [],
+    "funding_history": [],
+    "total_funding_m": null,
+    "funding_status": "",
+    "events": [
+      {
+        "type": "OTHER_EVENT",
+        "date": "2026-09-11",
+        "description": "Women's retailer closed 450 stores, heads to final liquidation",
+        "url": "https://finance.yahoo.com/small-business/articles/womens-retailer-closed-450-stores-163346993.html",
+        "sources": [
+          "https://finance.yahoo.com/small-business/articles/womens-retailer-closed-450-stores-163346993.html"
+        ]
+      }
+    ],
+    "search_interest": null,
+    "news_momentum": null,
+    "community_momentum": null,
+    "hiring_growth": null,
+    "is_korean": false
+  },
+  "06de56008f8b": {
+    "id": "06de56008f8b",
+    "name": "Defiance Politely Asks the SEC to Let It Sell An ETF 8-Ball",
+    "url": "https://finance.yahoo.com/markets/options/articles/defiance-politely-asks-sec-let-170504737.html",
+    "category": "Market Event",
+    "description": "Defiance Politely Asks the SEC to Let It Sell An ETF 8-Ball",
+    "domain": "finance.yahoo.com",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-11",
+    "last_seen": "2026-09-11",
+    "signal_counts": {},
+    "signal_sources": [
+      "market_news",
+      "news:Defiance Politely Asks the SEC to Let It Sell An E"
+    ],
+    "tags": [
+      "market",
+      "news"
+    ],
+    "startup_stage": "UNKNOWN",
+    "entity_type": "OTHER",
+    "parent_company": null,
+    "event_types": [
+      "OTHER_EVENT"
+    ],
+    "investors": [],
+    "accelerators": [],
+    "funding_history": [],
+    "total_funding_m": null,
+    "funding_status": "",
+    "events": [
+      {
+        "type": "OTHER_EVENT",
+        "date": "2026-09-11",
+        "description": "Defiance Politely Asks the SEC to Let It Sell An ETF 8-Ball",
+        "url": "https://finance.yahoo.com/markets/options/articles/defiance-politely-asks-sec-let-170504737.html",
+        "sources": [
+          "https://finance.yahoo.com/markets/options/articles/defiance-politely-asks-sec-let-170504737.html"
+        ]
+      }
+    ],
+    "search_interest": null,
+    "news_momentum": null,
+    "community_momentum": null,
+    "hiring_growth": null,
+    "is_korean": false
+  },
+  "7ccdbb00738a": {
+    "id": "7ccdbb00738a",
+    "name": "Google Makes Its Single Largest AI Investment in Europe — Bets $15 Billion on Finland AI Infrastructure",
+    "url": "https://finance.yahoo.com/technology/ai/articles/google-makes-single-largest-ai-162751824.html",
+    "category": "Market Event",
+    "description": "Google Makes Its Single Largest AI Investment in Europe — Bets $15 Billion on Finland AI Infrastructure",
+    "domain": "finance.yahoo.com",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-11",
+    "last_seen": "2026-09-11",
+    "signal_counts": {},
+    "signal_sources": [
+      "market_news",
+      "news:Google Makes Its Single Largest AI Investment in E"
+    ],
+    "tags": [
+      "market",
+      "news"
+    ],
+    "startup_stage": "UNKNOWN",
+    "entity_type": "OTHER",
+    "parent_company": null,
+    "event_types": [
+      "OTHER_EVENT"
+    ],
+    "investors": [],
+    "accelerators": [],
+    "funding_history": [],
+    "total_funding_m": null,
+    "funding_status": "",
+    "events": [
+      {
+        "type": "OTHER_EVENT",
+        "date": "2026-09-11",
+        "description": "Google Makes Its Single Largest AI Investment in Europe — Bets $15 Billion on Finland AI Infrastructure",
+        "url": "https://finance.yahoo.com/technology/ai/articles/google-makes-single-largest-ai-162751824.html",
+        "sources": [
+          "https://finance.yahoo.com/technology/ai/articles/google-makes-single-largest-ai-162751824.html"
+        ]
+      }
+    ],
+    "search_interest": null,
+    "news_momentum": null,
+    "community_momentum": null,
+    "hiring_growth": null,
+    "is_korean": false
+  },
+  "57abd579d373": {
+    "id": "57abd579d373",
+    "name": "Copper Heads for Weekly Loss as Doubts on US Tariffs Intensify",
+    "url": "https://www.bloomberg.com/news/articles/2026-09-11/copper-heads-for-weekly-loss-as-doubts-on-us-tariffs-intensify",
+    "category": "Market Event",
+    "description": "Copper headed for its first weekly loss since June on concern the US is pushing back a decision on whether to impose import tariffs.",
+    "domain": "bloomberg.com",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-11",
+    "last_seen": "2026-09-11",
+    "signal_counts": {},
+    "signal_sources": [
+      "market_news",
+      "news:Copper Heads for Weekly Loss as Doubts on US Tarif"
+    ],
+    "tags": [
+      "market",
+      "news"
+    ],
+    "startup_stage": "UNKNOWN",
+    "entity_type": "OTHER",
+    "parent_company": null,
+    "event_types": [
+      "OTHER_EVENT"
+    ],
+    "investors": [],
+    "accelerators": [],
+    "funding_history": [],
+    "total_funding_m": null,
+    "funding_status": "",
+    "events": [
+      {
+        "type": "OTHER_EVENT",
+        "date": "2026-09-11",
+        "description": "Copper headed for its first weekly loss since June on concern the US is pushing back a decision on whether to impose import tariffs.",
+        "url": "https://www.bloomberg.com/news/articles/2026-09-11/copper-heads-for-weekly-loss-as-doubts-on-us-tariffs-intensify",
+        "sources": [
+          "https://www.bloomberg.com/news/articles/2026-09-11/copper-heads-for-weekly-loss-as-doubts-on-us-tariffs-intensify"
+        ]
+      }
+    ],
+    "search_interest": null,
+    "news_momentum": null,
+    "community_momentum": null,
+    "hiring_growth": null,
+    "is_korean": false
+  },
+  "a70605f90798": {
+    "id": "a70605f90798",
+    "name": "Latest Oil Market News and Analysis for Sept. 11",
+    "url": "https://www.bloomberg.com/news/articles/2026-09-10/latest-oil-market-news-and-analysis-for-sept-11",
+    "category": "Market Event",
+    "description": "Brent oil traded near $108 barrel after fighting between Yemen-based Houthi militants and Saudi-backed forces intensified, stoking fears of deeper supply disruptions as hostilities escalated across the Middle East.",
+    "domain": "bloomberg.com",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-11",
+    "last_seen": "2026-09-11",
+    "signal_counts": {},
+    "signal_sources": [
+      "market_news",
+      "news:Latest Oil Market News and Analysis for Sept. 11"
+    ],
+    "tags": [
+      "market",
+      "news"
+    ],
+    "startup_stage": "UNKNOWN",
+    "entity_type": "OTHER",
+    "parent_company": null,
+    "event_types": [
+      "OTHER_EVENT"
+    ],
+    "investors": [],
+    "accelerators": [],
+    "funding_history": [],
+    "total_funding_m": null,
+    "funding_status": "",
+    "events": [
+      {
+        "type": "OTHER_EVENT",
+        "date": "2026-09-11",
+        "description": "Brent oil traded near $108 barrel after fighting between Yemen-based Houthi militants and Saudi-backed forces intensified, stoking fears of deeper supply disruptions as hostilities escalated across the Middle East.",
+        "url": "https://www.bloomberg.com/news/articles/2026-09-10/latest-oil-market-news-and-analysis-for-sept-11",
+        "sources": [
+          "https://www.bloomberg.com/news/articles/2026-09-10/latest-oil-market-news-and-analysis-for-sept-11"
+        ]
+      }
+    ],
+    "search_interest": null,
+    "news_momentum": null,
+    "community_momentum": null,
+    "hiring_growth": null,
+    "is_korean": false
+  },
+  "2b43bc8aecf6": {
+    "id": "2b43bc8aecf6",
+    "name": "Inflation report lands amid spiking oil prices, rising interest rates and Fed on fence - WRAL",
+    "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQNFNRZWtHZkxCb3NzVEloQmxFQWNKcnFTY3AxSDlvSm9ZUjJlbXprWk9vZDBCb0pIVi1iX1JGZUtFTEtfdVdLYlBMQkdzQVNhT3FoeVZIYU5qVHJqeVNqUkVYbkQ4NGd0ZW8tc1dyY01MM3RYTEcydDJJMVZrQzFJem9uR1NXbUp0N3dhSGFXOEpfSVdFd2p2UXFfNVo4dERmV2x1UjZYRmZ2ZXNrWDBzQ0o1SUNPM2dsWDgya0hn?oc=5",
+    "category": "Economy",
+    "description": "Inflation report lands amid spiking oil prices, rising interest rates and Fed on fence - WRAL",
+    "domain": "news.google.com",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-11",
+    "last_seen": "2026-09-11",
+    "signal_counts": {},
+    "signal_sources": [
+      "google_news_economy",
+      "gnews_eco:Inflation report lands amid spiking oil "
+    ],
+    "tags": [
+      "economy",
+      "macro",
+      "news"
+    ],
+    "startup_stage": "UNKNOWN",
+    "entity_type": "OTHER",
+    "parent_company": null,
+    "event_types": [
+      "MARKET_EVENT"
+    ],
+    "investors": [],
+    "accelerators": [],
+    "funding_history": [],
+    "total_funding_m": null,
+    "funding_status": "",
+    "events": [
+      {
+        "type": "MARKET_EVENT",
+        "date": "2026-09-11",
+        "description": "Inflation report lands amid spiking oil prices, rising interest rates and Fed on fence - WRAL",
+        "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQNFNRZWtHZkxCb3NzVEloQmxFQWNKcnFTY3AxSDlvSm9ZUjJlbXprWk9vZDBCb0pIVi1iX1JGZUtFTEtfdVdLYlBMQkdzQVNhT3FoeVZIYU5qVHJqeVNqUkVYbkQ4NGd0ZW8tc1dyY01MM3RYTEcydDJJMVZrQzFJem9uR1NXbUp0N3dhSGFXOEpfSVdFd2p2UXFfNVo4dERmV2x1UjZYRmZ2ZXNrWDBzQ0o1SUNPM2dsWDgya0hn?oc=5",
+        "sources": [
+          "https://news.google.com/rss/articles/CBMivgFBVV95cUxQNFNRZWtHZkxCb3NzVEloQmxFQWNKcnFTY3AxSDlvSm9ZUjJlbXprWk9vZDBCb0pIVi1iX1JGZUtFTEtfdVdLYlBMQkdzQVNhT3FoeVZIYU5qVHJqeVNqUkVYbkQ4NGd0ZW8tc1dyY01MM3RYTEcydDJJMVZrQzFJem9uR1NXbUp0N3dhSGFXOEpfSVdFd2p2UXFfNVo4dERmV2x1UjZYRmZ2ZXNrWDBzQ0o1SUNPM2dsWDgya0hn?oc=5"
+        ]
+      }
+    ],
+    "search_interest": null,
+    "news_momentum": null,
+    "community_momentum": null,
+    "hiring_growth": null,
+    "is_korean": false
+  },
+  "50a895f7cb59": {
+    "id": "50a895f7cb59",
+    "name": "Tomorrow’s CPI Report Could Send Rate-Hike Odds Even Higher - 247wallst.com",
+    "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNM0hPYjI0MDAxVVlUN3dvSlZqcVZNSXZpNzJoVlVmTlBUaEFCTVd1UU95cGxsUlY4UDZvNXZTZFJKdXM4VjZiN1BRalFRQkpubjN2Zk1pNTNZbTNLaVNfUVAxdThBdjVmekhPRFQyMkVQRDYyS18xQkxITFY3QjRlRmNVV3NKM2xEMmNGbmY1OEVJVWVzQXM4d0hnczZHY01OTG5rSg?oc=5",
+    "category": "Economy",
+    "description": "Tomorrow’s CPI Report Could Send Rate-Hike Odds Even Higher - 247wallst.com",
+    "domain": "news.google.com",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-11",
+    "last_seen": "2026-09-11",
+    "signal_counts": {},
+    "signal_sources": [
+      "google_news_economy",
+      "gnews_eco:Tomorrow’s CPI Report Could Send Rate-Hi"
+    ],
+    "tags": [
+      "economy",
+      "macro",
+      "news"
+    ],
+    "startup_stage": "UNKNOWN",
+    "entity_type": "OTHER",
+    "parent_company": null,
+    "event_types": [
+      "MARKET_EVENT"
+    ],
+    "investors": [],
+    "accelerators": [],
+    "funding_history": [],
+    "total_funding_m": null,
+    "funding_status": "",
+    "events": [
+      {
+        "type": "MARKET_EVENT",
+        "date": "2026-09-11",
+        "description": "Tomorrow’s CPI Report Could Send Rate-Hike Odds Even Higher - 247wallst.com",
+        "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNM0hPYjI0MDAxVVlUN3dvSlZqcVZNSXZpNzJoVlVmTlBUaEFCTVd1UU95cGxsUlY4UDZvNXZTZFJKdXM4VjZiN1BRalFRQkpubjN2Zk1pNTNZbTNLaVNfUVAxdThBdjVmekhPRFQyMkVQRDYyS18xQkxITFY3QjRlRmNVV3NKM2xEMmNGbmY1OEVJVWVzQXM4d0hnczZHY01OTG5rSg?oc=5",
+        "sources": [
+          "https://news.google.com/rss/articles/CBMipAFBVV95cUxNM0hPYjI0MDAxVVlUN3dvSlZqcVZNSXZpNzJoVlVmTlBUaEFCTVd1UU95cGxsUlY4UDZvNXZTZFJKdXM4VjZiN1BRalFRQkpubjN2Zk1pNTNZbTNLaVNfUVAxdThBdjVmekhPRFQyMkVQRDYyS18xQkxITFY3QjRlRmNVV3NKM2xEMmNGbmY1OEVJVWVzQXM4d0hnczZHY01OTG5rSg?oc=5"
+        ]
+      }
+    ],
+    "search_interest": null,
+    "news_momentum": null,
+    "community_momentum": null,
+    "hiring_growth": null,
+    "is_korean": false
+  },
+  "cd70d789df4d": {
+    "id": "cd70d789df4d",
+    "name": "Samsung, Duolingo troll Apple’s iPhone Duo launch in viral X exchange - gulfbusiness.com",
+    "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOWmxiVTY2eDhrWlJMSEQyOUJST2J3Q3RSXy12b09PenFGNDJDeDRWYkF3TVc0YlFtZVo0N190cWMtemdnQjJQSUY2dTd3aGRrOFN0czFGUGpsV3VwVy1CT3NIMVdZN3FQWmJKcERCSTBzVWpxRl83LXA3a0ZIcldqU0FlUTVlWnNsRUpZeElsemtHeFYybTFSTEkyNnFINk9DMFd2NllHOFE?oc=5",
+    "category": "Product",
+    "description": "Samsung, Duolingo troll Apple’s iPhone Duo launch in viral X exchange - gulfbusiness.com",
+    "domain": "news.google.com",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-11",
+    "last_seen": "2026-09-11",
+    "signal_counts": {},
+    "signal_sources": [
+      "google_news",
+      "gnews:Samsung, Duolingo troll Apple’s iPhone D"
+    ],
+    "tags": [
+      "news",
+      "google_news",
+      "korea"
+    ],
+    "startup_stage": "UNKNOWN",
+    "entity_type": "PRODUCT",
+    "parent_company": null,
+    "event_types": [
+      "OTHER_EVENT"
+    ],
+    "investors": [],
+    "accelerators": [],
+    "funding_history": [],
+    "total_funding_m": null,
+    "funding_status": "",
+    "events": [
+      {
+        "type": "OTHER_EVENT",
+        "date": "2026-09-11",
+        "description": "Samsung, Duolingo troll Apple’s iPhone Duo launch in viral X exchange - gulfbusiness.com",
+        "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOWmxiVTY2eDhrWlJMSEQyOUJST2J3Q3RSXy12b09PenFGNDJDeDRWYkF3TVc0YlFtZVo0N190cWMtemdnQjJQSUY2dTd3aGRrOFN0czFGUGpsV3VwVy1CT3NIMVdZN3FQWmJKcERCSTBzVWpxRl83LXA3a0ZIcldqU0FlUTVlWnNsRUpZeElsemtHeFYybTFSTEkyNnFINk9DMFd2NllHOFE?oc=5",
+        "sources": [
+          "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOWmxiVTY2eDhrWlJMSEQyOUJST2J3Q3RSXy12b09PenFGNDJDeDRWYkF3TVc0YlFtZVo0N190cWMtemdnQjJQSUY2dTd3aGRrOFN0czFGUGpsV3VwVy1CT3NIMVdZN3FQWmJKcERCSTBzVWpxRl83LXA3a0ZIcldqU0FlUTVlWnNsRUpZeElsemtHeFYybTFSTEkyNnFINk9DMFd2NllHOFE?oc=5"
+        ]
+      }
+    ],
+    "search_interest": null,
+    "news_momentum": null,
+    "community_momentum": null,
+    "hiring_growth": null,
+    "is_korean": true
+  },
+  "e9e5fdb585dd": {
+    "id": "e9e5fdb585dd",
+    "name": "[오늘 이 종목] \"ESS부터 AI 전력망까지\" … 성장력 갖춘 핵심 종목은? - 머니투데이 - 머니투데이",
+    "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBpZF94SzNTRjJycGdtSDJaSjc1WWxhOUhleUJtWFBIZDIyTEZEQmhOMlVKMy0tQkNGWFNSa3U4Q2ZpenNabzhXNFhsWC1abUFxVTEyaXpEcFRTaUpZQV95VGE0bjBZOWljX3lON2ln0gFuQVVfeXFMUGlkX3hLM1NGMnJwZ21IMlpKNzVZbGE5SGV5Qm1YUEhkMjJMRkRCaE4yVUozLS1CQ0ZYU1JrdThDZml6c1pvOFc0WGxYLVptQXFVMTJpekRwVFNpSllBX3lUYTRuMFk5aWNfeU43aWc?oc=5",
+    "category": "Technology",
+    "description": "[오늘 이 종목] \"ESS부터 AI 전력망까지\" … 성장력 갖춘 핵심 종목은? - 머니투데이 - 머니투데이",
+    "domain": "news.google.com",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-11",
+    "last_seen": "2026-09-11",
+    "signal_counts": {},
+    "signal_sources": [
+      "korea_news:google_news",
+      "korea_news:[오늘 이 종목] \"ESS부터 AI 전력망까지\" … 성장력 갖춘 핵심 종"
+    ],
+    "tags": [
+      "korea",
+      "korean",
+      "google_news",
+      "technology"
+    ],
+    "startup_stage": "UNKNOWN",
+    "entity_type": "PRIVATE_COMPANY",
+    "parent_company": null,
+    "event_types": [
+      "OTHER_EVENT"
+    ],
+    "investors": [],
+    "accelerators": [],
+    "funding_history": [],
+    "total_funding_m": null,
+    "funding_status": "",
+    "events": [
+      {
+        "type": "OTHER_EVENT",
+        "date": "2026-09-11",
+        "description": "[오늘 이 종목] \"ESS부터 AI 전력망까지\" … 성장력 갖춘 핵심 종목은? - 머니투데이 - 머니투데이",
+        "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBpZF94SzNTRjJycGdtSDJaSjc1WWxhOUhleUJtWFBIZDIyTEZEQmhOMlVKMy0tQkNGWFNSa3U4Q2ZpenNabzhXNFhsWC1abUFxVTEyaXpEcFRTaUpZQV95VGE0bjBZOWljX3lON2ln0gFuQVVfeXFMUGlkX3hLM1NGMnJwZ21IMlpKNzVZbGE5SGV5Qm1YUEhkMjJMRkRCaE4yVUozLS1CQ0ZYU1JrdThDZml6c1pvOFc0WGxYLVptQXFVMTJpekRwVFNpSllBX3lUYTRuMFk5aWNfeU43aWc?oc=5",
+        "sources": [
+          "https://news.google.com/rss/articles/CBMibkFVX3lxTFBpZF94SzNTRjJycGdtSDJaSjc1WWxhOUhleUJtWFBIZDIyTEZEQmhOMlVKMy0tQkNGWFNSa3U4Q2ZpenNabzhXNFhsWC1abUFxVTEyaXpEcFRTaUpZQV95VGE0bjBZOWljX3lON2ln0gFuQVVfeXFMUGlkX3hLM1NGMnJwZ21IMlpKNzVZbGE5SGV5Qm1YUEhkMjJMRkRCaE4yVUozLS1CQ0ZYU1JrdThDZml6c1pvOFc0WGxYLVptQXFVMTJpekRwVFNpSllBX3lUYTRuMFk5aWNfeU43aWc?oc=5"
+        ]
+      }
+    ],
+    "search_interest": null,
+    "news_momentum": null,
+    "community_momentum": null,
+    "hiring_growth": null,
+    "is_korean": true
+  },
+  "fb6f16a9b3d3": {
+    "id": "fb6f16a9b3d3",
+    "name": "유한양행 API 수주 잇따라···해외사업 힘 싣는다 - 현대경제신문",
+    "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE8xZzEwa2pCMVN2dWpLREFQRnZOaGhFYjREVlBuSUJmcGRmOUZUSVQxcGdtUFdIWmZrYUhXM0ZndlhXbWExTkFBV19jRjdDS0VHaXNlNmZ5WXg3WVhHd2pqc18zUXY4VmhhamVv0gFrQVVfeXFMTzFnMTBrakIxU3Z1aktEQVBGdk5oaEViNERWUG5JQmZwZGY5RlRJVDFwZ21QV0haZmthSFczRmd2WFdtYTFOQUFXX2NGN0NLRUdpc2U2ZnlZeDdZWEd3ampzXzNRdjhWaGFqZW8?oc=5",
+    "category": "Corporate",
+    "description": "유한양행 API 수주 잇따라···해외사업 힘 싣는다 - 현대경제신문",
+    "domain": "news.google.com",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-11",
+    "last_seen": "2026-09-11",
+    "signal_counts": {},
+    "signal_sources": [
+      "korea_news:google_news",
+      "korea_news:유한양행 API 수주 잇따라···해외사업 힘 싣는다 - 현대경제신문"
+    ],
+    "tags": [
+      "korea",
+      "korean",
+      "google_news",
+      "corporate"
+    ],
+    "startup_stage": "UNKNOWN",
+    "entity_type": "PUBLIC_COMPANY",
+    "parent_company": null,
+    "event_types": [
+      "CONTRACT"
+    ],
+    "investors": [],
+    "accelerators": [],
+    "funding_history": [],
+    "total_funding_m": null,
+    "funding_status": "",
+    "events": [
+      {
+        "type": "CONTRACT",
+        "date": "2026-09-11",
+        "description": "유한양행 API 수주 잇따라···해외사업 힘 싣는다 - 현대경제신문",
+        "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE8xZzEwa2pCMVN2dWpLREFQRnZOaGhFYjREVlBuSUJmcGRmOUZUSVQxcGdtUFdIWmZrYUhXM0ZndlhXbWExTkFBV19jRjdDS0VHaXNlNmZ5WXg3WVhHd2pqc18zUXY4VmhhamVv0gFrQVVfeXFMTzFnMTBrakIxU3Z1aktEQVBGdk5oaEViNERWUG5JQmZwZGY5RlRJVDFwZ21QV0haZmthSFczRmd2WFdtYTFOQUFXX2NGN0NLRUdpc2U2ZnlZeDdZWEd3ampzXzNRdjhWaGFqZW8?oc=5",
+        "sources": [
+          "https://news.google.com/rss/articles/CBMia0FVX3lxTE8xZzEwa2pCMVN2dWpLREFQRnZOaGhFYjREVlBuSUJmcGRmOUZUSVQxcGdtUFdIWmZrYUhXM0ZndlhXbWExTkFBV19jRjdDS0VHaXNlNmZ5WXg3WVhHd2pqc18zUXY4VmhhamVv0gFrQVVfeXFMTzFnMTBrakIxU3Z1aktEQVBGdk5oaEViNERWUG5JQmZwZGY5RlRJVDFwZ21QV0haZmthSFczRmd2WFdtYTFOQUFXX2NGN0NLRUdpc2U2ZnlZeDdZWEd3ampzXzNRdjhWaGFqZW8?oc=5"
+        ]
+      }
+    ],
+    "search_interest": null,
+    "news_momentum": null,
+    "community_momentum": null,
+    "hiring_growth": null,
+    "is_korean": true
+  },
+  "9306fe768509": {
+    "id": "9306fe768509",
+    "name": "지역 기업 AI 전환 궁금하다면?…'M.AX 지역 확산 콘퍼런스' 개최 - 뉴스1",
+    "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5TQ1ZGVEY0ZjlEQ1pBMkVBOGV6LTdOajREeThINVhrNzFWYnJEcHprTklBeHZuSUEwZmZDYnB0VGFKeXFETXg2VjlxTW1kb3JSQW9Za2V4c3hMd9IBWkFVX3lxTE5TQ1ZGVEY0ZjlEQ1pBMkVBOGV6LTdOajREeThINVhrNzFWYnJEcHprTklBeHZuSUEwZmZDYnB0VGFKeXFETXg2VjlxTW1kb3JSQW9Za2V4c3hMdw?oc=5",
+    "category": "Technology",
+    "description": "지역 기업 AI 전환 궁금하다면?…'M.AX 지역 확산 콘퍼런스' 개최 - 뉴스1",
+    "domain": "news.google.com",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-11",
+    "last_seen": "2026-09-11",
+    "signal_counts": {},
+    "signal_sources": [
+      "korea_news:google_news",
+      "korea_news:지역 기업 AI 전환 궁금하다면?…'M.AX 지역 확산 콘퍼런스' 개최 "
+    ],
+    "tags": [
+      "korea",
+      "korean",
+      "google_news",
+      "technology"
+    ],
+    "startup_stage": "UNKNOWN",
+    "entity_type": "PRIVATE_COMPANY",
+    "parent_company": null,
+    "event_types": [
+      "OTHER_EVENT"
+    ],
+    "investors": [],
+    "accelerators": [],
+    "funding_history": [],
+    "total_funding_m": null,
+    "funding_status": "",
+    "events": [
+      {
+        "type": "OTHER_EVENT",
+        "date": "2026-09-11",
+        "description": "지역 기업 AI 전환 궁금하다면?…'M.AX 지역 확산 콘퍼런스' 개최 - 뉴스1",
+        "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5TQ1ZGVEY0ZjlEQ1pBMkVBOGV6LTdOajREeThINVhrNzFWYnJEcHprTklBeHZuSUEwZmZDYnB0VGFKeXFETXg2VjlxTW1kb3JSQW9Za2V4c3hMd9IBWkFVX3lxTE5TQ1ZGVEY0ZjlEQ1pBMkVBOGV6LTdOajREeThINVhrNzFWYnJEcHprTklBeHZuSUEwZmZDYnB0VGFKeXFETXg2VjlxTW1kb3JSQW9Za2V4c3hMdw?oc=5",
+        "sources": [
+          "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5TQ1ZGVEY0ZjlEQ1pBMkVBOGV6LTdOajREeThINVhrNzFWYnJEcHprTklBeHZuSUEwZmZDYnB0VGFKeXFETXg2VjlxTW1kb3JSQW9Za2V4c3hMd9IBWkFVX3lxTE5TQ1ZGVEY0ZjlEQ1pBMkVBOGV6LTdOajREeThINVhrNzFWYnJEcHprTklBeHZuSUEwZmZDYnB0VGFKeXFETXg2VjlxTW1kb3JSQW9Za2V4c3hMdw?oc=5"
+        ]
+      }
+    ],
+    "search_interest": null,
+    "news_momentum": null,
+    "community_momentum": null,
+    "hiring_growth": null,
+    "is_korean": true
+  },
+  "1db10b1e8001": {
+    "id": "1db10b1e8001",
+    "name": "한샘",
+    "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBWZExpU1FGRHZTQ05SSlBjRjdyQnI1Ym5rVHRDbEUzME9yWDZNRDdzT19XVGMycVBxVmY5Ry1GZFdOQmhydmstYUxBbzJmT3J3MlBLeFdIQjFwTnJHZWhYYU9ZZVFKZWJQTkFF0gFuQVVfeXFMTUNHTXN4SDM3UHJTbXc4elRGalVSU3BDTnJCWkxDb2M4QWxRaEVQQ2ZWN1lXNVdhc1RkNEFQLXRyVnJ3TjM3WW5GNEkwXzBHNkhZc3RiRGZjeGpieWxBUmpUaVg1VjI1QnluTlYwbWc?oc=5",
+    "category": "Product",
+    "description": "한샘, 팔걸이·등받이 조절 강화한 '스위브 엣지 스윙소파' 출시 - 뉴스드림",
+    "domain": "news.google.com",
+    "github": null,
+    "ticker": null,
+    "first_seen": "2026-09-11",
+    "last_seen": "2026-09-11",
+    "signal_counts": {},
+    "signal_sources": [
+      "korea_news:google_news",
+      "korea_news:한샘, 팔걸이·등받이 조절 강화한 '스위브 엣지 스윙소파' 출시 - 뉴스"
+    ],
+    "tags": [
+      "korea",
+      "korean",
+      "google_news",
+      "product"
+    ],
+    "startup_stage": "UNKNOWN",
+    "entity_type": "PRODUCT",
+    "parent_company": null,
+    "event_types": [
+      "PRODUCT_LAUNCH"
+    ],
+    "investors": [],
+    "accelerators": [],
+    "funding_history": [],
+    "total_funding_m": null,
+    "funding_status": "",
+    "events": [
+      {
+        "type": "PRODUCT_LAUNCH",
+        "date": "2026-09-11",
+        "description": "한샘, 팔걸이·등받이 조절 강화한 '스위브 엣지 스윙소파' 출시 - 뉴스드림",
+        "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBWZExpU1FGRHZTQ05SSlBjRjdyQnI1Ym5rVHRDbEUzME9yWDZNRDdzT19XVGMycVBxVmY5Ry1GZFdOQmhydmstYUxBbzJmT3J3MlBLeFdIQjFwTnJHZWhYYU9ZZVFKZWJQTkFF0gFuQVVfeXFMTUNHTXN4SDM3UHJTbXc4elRGalVSU3BDTnJCWkxDb2M4QWxRaEVQQ2ZWN1lXNVdhc1RkNEFQLXRyVnJ3TjM3WW5GNEkwXzBHNkhZc3RiRGZjeGpieWxBUmpUaVg1VjI1QnluTlYwbWc?oc=5",
+        "sources": [
+          "https://news.google.com/rss/articles/CBMia0FVX3lxTFBWZExpU1FGRHZTQ05SSlBjRjdyQnI1Ym5rVHRDbEUzME9yWDZNRDdzT19XVGMycVBxVmY5Ry1GZFdOQmhydmstYUxBbzJmT3J3MlBLeFdIQjFwTnJHZWhYYU9ZZVFKZWJQTkFF0gFuQVVfeXFMTUNHTXN4SDM3UHJTbXc4elRGalVSU3BDTnJCWkxDb2M4QWxRaEVQQ2ZWN1lXNVdhc1RkNEFQLXRyVnJ3TjM3WW5GNEkwXzBHNkhZc3RiRGZjeGpieWxBUmpUaVg1VjI1QnluTlYwbWc?oc=5"
         ]
       }
     ],

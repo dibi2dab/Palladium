@@ -1,9 +1,8 @@
 """Palladium Markdown reports.
 
 Rule-based, markdown-only daily reports written under reports/<date>/.
-Section domains (startup-radar, market-anomaly, ...) are emitted ONLY when
-the domain actually has meaningful items. Numbers and funding shown come
-from observed data — no fabricated figures.
+Every domain report file is generated EVERY run; a domain without findings
+contains an explicit empty-state note instead of fabricated items.
 """
 from __future__ import annotations
 
@@ -15,13 +14,24 @@ from src.analyzers.trajectory import ACCELERATING, GROWING
 from src import analyzers
 from src import timeutil
 
-# (filename, [section title substrings that map to this domain report])
-REPORT_FILES: dict[str, list[str]] = {
-    "startup-radar.md": ["글로벌 스타트업"],
-    "market-anomaly.md": ["글로벌 공개시장"],
-    "tech-trend.md": ["글로벌 기술"],
-    "product-opportunity.md": ["글로벌 제품"],
-    "deal-mna.md": ["글로벌 M&A"],
+# filename -> (section-title substrings that map to this domain,
+#              display title, empty-state note)
+REPORT_FILES: dict[str, tuple[list[str], str, str]] = {
+    "startup-radar.md": (
+        ["글로벌 스타트업"], "글로벌 스타트업 & 벤처",
+        "이번 수집 주기에 감지된 Pre-Funding 성장 후보가 없습니다."),
+    "market-anomaly.md": (
+        ["글로벌 공개시장"], "글로벌 공개시장 이상 (Market Anomaly)",
+        "감지된 공개시장 이상 징후(급등·급락·거래량/거래대금 급증)가 없습니다."),
+    "tech-trend.md": (
+        ["글로벌 기술"], "기술 트렌드 (Tech Trend)",
+        "이번 수집 주기에 감지된 기술 트렌드 신호가 없습니다."),
+    "product-opportunity.md": (
+        ["글로벌 제품"], "제품 기회 (Product Opportunity)",
+        "감지된 제품/수요 신호가 없습니다."),
+    "deal-mna.md": (
+        ["글로벌 M&A"], "딜 & M&A (Deal & M&A)",
+        "이번 수집 주기에 감지된 M&A/딜 이벤트가 없습니다."),
 }
 
 KOREA_SECTION_KEYS = ["한국 투자", "한국 공개시장", "한국 기술"]
@@ -213,7 +223,6 @@ def _summary_md(
     second_order: list[dict],
     watchlist: list[dict],
     all_items: list[ScoredEntity],
-    generated: set[str],
 ) -> str:
     total = sum(len(s["items"]) for s in sections)
     top = sections[0]["items"] if sections else []
@@ -298,18 +307,19 @@ def _summary_md(
     out.append("")
     order = ["daily-summary.md", "opportunities.md", "startup-radar.md", "market-anomaly.md",
              "tech-trend.md", "product-opportunity.md", "deal-mna.md", "korea-company.md",
-             "dart-events.md", "company-growth.md", "second-order.md", "market-entry.md"]
+             "dart-events.md", "company-growth.md", "second-order.md", "market-entry.md",
+             "real-estate.md"]
     for name in order:
-        if name in generated:
-            label = name.replace("-", " ").replace(".md", "")
-            out.append(f"[{label}]({name})")
+        label = name.replace("-", " ").replace(".md", "")
+        out.append(f"[{label}]({name})")
     out.append("")
     return "\n".join(out) + "\n"
 
 
-def _domain_file(filename: str, title: str, items: list[ScoredEntity]) -> str | None:
+def _domain_file(filename: str, title: str, items: list[ScoredEntity],
+                 empty_note: str) -> str:
     if not items:
-        return None
+        return f"# ⚡ {title}\n\n> {empty_note}\n"
     return f"# ⚡ {title}\n\n" + _render_section(title, items)
 
 
@@ -334,23 +344,21 @@ def render_markdown_reports(
 
     # opportunities.md: every section as a heading with full entity blocks.
     opp: list[str] = ["# ⚡ 전일 기회 상세 (Opportunities)", ""]
+    if not all_items:
+        opp.append("> 이번 수집 주기에 감지된 기회가 없습니다.")
     for sec in sections:
         opp.append(_render_section(sec.get("title", ""), sec["items"]))
-    if opp[1:]:
-        files["opportunities.md"] = "\n".join(opp)
+    files["opportunities.md"] = "\n".join(opp)
 
-    # Domain reports (only when the domain has items).
-    for filename, keys in REPORT_FILES.items():
-        matched: list[dict] = []
-        for sec in sections:
-            if any(k in (sec.get("title") or "") for k in keys):
-                matched.append(sec)
+    # Domain reports — one file per domain, always emitted. A domain without
+    # findings keeps an explicit empty-state note (no fabricated content).
+    for filename, (keys, title, empty_note) in REPORT_FILES.items():
+        matched = [sec for sec in sections
+                   if any(k in (sec.get("title") or "") for k in keys)]
         items = [s for sec in matched for s in sec["items"]]
         if items and matched:
-            domain_title = " / ".join(sec.get("title", "") for sec in matched)
-            md_body = _domain_file(filename, domain_title, items)
-            if md_body:
-                files[filename] = md_body
+            title = " / ".join(sec.get("title", "") for sec in matched)
+        files[filename] = _domain_file(filename, title, items, empty_note)
 
     # Company growth: non-Korean entities with an accelerating/growing score
     # trajectory across days — surfaced only when history supports it.
@@ -372,6 +380,12 @@ def render_markdown_reports(
                           f"궤적 {analyzers.traj_label(s.trajectory)} · "
                           f"생애주기 {analyzers.lifecycle_label(s.lifecycle)}")
         files["company-growth.md"] = "\n".join(blocks) + "\n"
+    else:
+        files["company-growth.md"] = (
+            "# 📈 성장 가속 후보 (Company Growth)\n\n"
+            "> 스코어 이력이 3일 이상 누적되는 시점부터 성장 가속 "
+            "(ACCELERATING/GROWING) 후보를 산출합니다. "
+            "이번 주기에는 아직 후보가 없습니다.\n")
 
     # Korea combined report.
     korea_items: list[tuple[str, list[ScoredEntity]]] = []
@@ -383,14 +397,25 @@ def render_markdown_reports(
         for title, items in korea_items:
             blocks.append(_render_section(title, items))
         files["korea-company.md"] = "\n".join(blocks)
+    else:
+        files["korea-company.md"] = (
+            "# 🇰🇷 한국 기업 검토 (Korea Company)\n\n"
+            "> 이번 수집 주기에 한국 섹션 기준을 충족하는 기업 이벤트가 "
+            "감지되지 않았습니다. (감지된 한국 항목이 있다면 공개 방법·임계값 "
+            "재검토가 필요합니다)\n")
 
-    # DART events (only when DART-sourced Korea items exist).
+    # DART events — always emitted; empty state when DART produced nothing.
     dart_items = [s for s in all_items if s.entity.is_korean
                   and any("dart" in (src or "").lower() for src in s.entity.signal_sources)]
     if dart_items:
         files["dart-events.md"] = _render_section("DART 공시 이벤트", dart_items)
+    else:
+        files["dart-events.md"] = (
+            "# 📄 DART 공시 이벤트 (DART Events)\n\n"
+            "> 이번 수집 주기에 감지된 DART 공시 이벤트가 없습니다. "
+            "(OpenDART 접근 제한 등으로 수집이 SKIPPED 처리될 수 있습니다)\n")
 
-    # Second-order.
+    # Second-order — always emitted.
     if second_order:
         blocks = ["# 🔗 2차 기회 (Second-Order)", ""]
         blocks.append("> 아래 항목은 관측된 신호에서 파생된 **가능성**입니다. "
@@ -406,6 +431,10 @@ def render_markdown_reports(
                 blocks.append(f"- {_md(c)}")
             blocks.append("")
         files["second-order.md"] = "\n".join(blocks)
+    else:
+        files["second-order.md"] = (
+            "# 🔗 2차 기회 (Second-Order)\n\n"
+            "> 이번 수집 주기의 관측 신호에서 파생된 2차 기회를 산출하지 못했습니다.\n")
 
     # Market entry candidates: global (non-Korean) products with Korean
     # news coverage — evidence that the product is reaching Korean users.
@@ -419,11 +448,22 @@ def render_markdown_reports(
             blocks.append(f"- **{_md(s.entity.name)}** (점수 {s.score.total}, "
                           f"{s.opportunity_type}) — {_md(s.entity.description[:120])}")
         files["market-entry.md"] = "\n".join(blocks) + "\n"
+    else:
+        files["market-entry.md"] = (
+            "# 🚪 국내 진입 후보 (Market Entry)\n\n"
+            "> 이번 수집 주기에 한국 시장 진입 후보로 분류된 글로벌 "
+            "제품/기업이 없습니다.\n")
+
+    # Real estate — module not yet wired to a data source.
+    files["real-estate.md"] = (
+        "# 🏠 부동산/경매 기회 (Real Estate)\n\n"
+        "> 부동산 데이터 수집 모듈이 아직 구성되지 않아 이번 주기에는 "
+        "분석 데이터가 없습니다. 데이터 파이프라인 연결 후 활성화됩니다.\n")
 
     generated = set(files.keys())
     files = {"daily-summary.md": _summary_md(
         base, collection_window, sections, scored, macro_events, macro_signals,
-        breakouts, source_status, second_order, watchlist, all_items, generated,
+        breakouts, source_status, second_order, watchlist, all_items,
     )} | files
     return files
 
@@ -435,5 +475,5 @@ def report_links(date_iso: str, repo_url: str, branch: str = "main") -> dict[str
         for name in REPORT_FILES.keys() | {"daily-summary.md", "opportunities.md",
                                            "korea-company.md", "dart-events.md",
                                            "second-order.md", "market-entry.md",
-                                           "company-growth.md"}
+                                           "company-growth.md", "real-estate.md"}
     }
