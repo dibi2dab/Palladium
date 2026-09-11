@@ -51,5 +51,5 @@ MAX_CANDIDATES_FOR_AI = int(os.environ.get("MAX_CANDIDATES_FOR_AI", "30"))
 BREAKOUT_THRESHOLD = float(os.environ.get("BREAKOUT_THRESHOLD", "20.0"))
 
 # Public repo base URL used to build Markdown report links in the email.
-REPO_URL = os.environ.get("REPO_URL", "https://github.com/dibi2dab/opportunity-scanner")
+REPO_URL = os.environ.get("REPO_URL", "https://github.com/dibi2dab/palladium")
 REPO_BRANCH = os.environ.get("REPO_BRANCH", "main")
