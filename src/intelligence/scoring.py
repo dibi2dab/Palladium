@@ -65,6 +65,7 @@ class ScoreBreakdown:
     momentum: int = 0
     signal_diversity: int = 0
     cross_source: int = 0
+    market: int = 0
     macro_adjustment: int = 0
 
     @property
@@ -73,7 +74,8 @@ class ScoreBreakdown:
             self.funding, self.smart_money, self.accelerator, self.hiring,
             self.product, self.community, self.news, self.github,
             self.partnership, self.customer, self.momentum,
-            self.signal_diversity, self.cross_source, self.macro_adjustment,
+            self.signal_diversity, self.cross_source, self.market,
+            self.macro_adjustment,
         ])
         return max(0, min(100, raw))
 
@@ -92,6 +94,7 @@ class ScoreBreakdown:
             "momentum": self.momentum,
             "signal_diversity": self.signal_diversity,
             "cross_source": self.cross_source,
+            "market": self.market,
             "macro_adjustment": self.macro_adjustment,
             "total": self.total,
         }
@@ -202,6 +205,7 @@ class Scorer:
         breakdown.momentum = self._score_momentum(entity, reasons)
         breakdown.signal_diversity = self._score_diversity(counts, entity, reasons)
         breakdown.cross_source = self._score_cross_source(entity, reasons)
+        breakdown.market = self._score_market_watch(counts, reasons)
         breakdown.macro_adjustment = self._score_macro(entity, breakdown, reasons)
 
         confidence, evidence = self._compute_confidence(entity, counts)
@@ -435,6 +439,22 @@ class Scorer:
             reasons.append("고객 신호")
             return 3
         return 0
+
+    # --- market watch: REAL price/volume anomalies (급등·급락·거래량 급증) ---
+
+    def _score_market_watch(self, counts: dict, reasons: list) -> int:
+        price = counts.get("price_anomaly", 0)
+        volume = counts.get("volume_spike", 0)
+        if price == 0 and volume == 0:
+            return 0
+        parts = []
+        if price:
+            parts.append(f"가격 이상 {price}건")
+        if volume:
+            parts.append(f"거래량 급증 {volume}건")
+        reasons.append("실측 가격/거래량 이상 감지 (" + ", ".join(parts) + ")")
+        pts = 3 + min(price, 3) * 2 + min(volume, 2) * 2
+        return min(12, pts)
 
     # --- diversity: distinct SIGNAL TYPES, not article count ---
 

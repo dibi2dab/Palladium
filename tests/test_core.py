@@ -1081,6 +1081,248 @@ def test_real_estate_report_rule():
     print("PASS: test_real_estate_report_rule")
 
 
+def test_market_watch_detect_anomalies():
+    """Real price/volume series -> PRICE_ANOMALY / ACCELERATION / VOLUME_SPIKE."""
+    from src.collectors.market_watch.signals import (
+        detect_anomalies, PRICE_ANOMALY_UP, PRICE_ANOMALY_DOWN,
+        PRICE_ACCELERATION_DOWN, TRADING_VOLUME_SPIKE,
+    )
+
+    # Rising then falling series: latest leg -3.88% (+prev move 1.98% >= 1.5)
+    # -> PRICE_ACCELERATION_DOWN. Volume must NOT spike (0.66x).
+    records = [
+        {"date": "2026-09-01", "value": 1000, "volume": 5000},
+        {"date": "2026-09-02", "value": 1010, "volume": 6000},
+        {"date": "2026-09-03", "value": 1030, "volume": 21000},
+        {"date": "2026-09-04", "value": 990, "volume": 7000},
+    ]
+    sigs = detect_anomalies(records, "PA=F", "팔라듐", threshold=1.5,
+                            volume_ratio=2.5, observed_at="2026-09-04")
+    assert len(sigs) == 1
+    assert sigs[0]["type"] == PRICE_ACCELERATION_DOWN
+    assert sigs[0]["label"] == "급락 가속"
+    assert round(sigs[0]["change_pct"], 2) == -3.88
+    assert "팔라듐" in sigs[0]["evidence"]
+
+    # Small move (< threshold), big volume -> only a VOLUME_SPIKE.
+    # Requires a stable baseline: >= 8 non-zero prior sessions and
+    # median >= 5% of peak.
+    records2 = [
+        {"date": "2026-09-01", "value": 1000, "volume": 5000},
+        {"date": "2026-09-02", "value": 1005, "volume": 6000},
+        {"date": "2026-09-03", "value": 1010, "volume": 6000},
+        {"date": "2026-09-04", "value": 1015, "volume": 6000},
+        {"date": "2026-09-05", "value": 1020, "volume": 6000},
+        {"date": "2026-09-06", "value": 1025, "volume": 6000},
+        {"date": "2026-09-07", "value": 1030, "volume": 6000},
+        {"date": "2026-09-08", "value": 1035, "volume": 6000},
+        {"date": "2026-09-09", "value": 1040, "volume": 9000},
+        {"date": "2026-09-10", "value": 1045, "volume": 24000},
+    ]
+    sigs2 = detect_anomalies(records2, "PA=F", "팔라듐", threshold=1.5,
+                             volume_ratio=2.5, observed_at="2026-09-10")
+    assert len(sigs2) == 1
+    assert sigs2[0]["type"] == TRADING_VOLUME_SPIKE
+    assert sigs2[0]["volume_ratio"] == 4.0
+    assert sigs2[0].get("label") != "급등"  # volume alone is never a price surge
+    print("PASS: test_market_watch_detect_anomalies")
+
+
+def test_market_watch_no_fabrication():
+    """No comparable real data -> no signal, ever."""
+    from src.collectors.market_watch.signals import detect_anomalies
+
+    one = [{"date": "2026-09-03", "value": 990, "volume": 7000}]
+    assert detect_anomalies(one, "PA=F", "팔라듐") == []
+
+    zero_prev = [
+        {"date": "2026-09-02", "value": 0.0, "volume": 6000},
+        {"date": "2026-09-03", "value": 990, "volume": 7000},
+    ]
+    assert detect_anomalies(zero_prev, "PA=F", "팔라듐") == []
+
+    # Volume history too short -> no fabricated volume spike.
+    short = [
+        {"date": "2026-09-02", "value": 1000, "volume": 5000},
+        {"date": "2026-09-03", "value": 1010, "volume": 30000},
+    ]
+    assert detect_anomalies(short, "PA=F", "팔라듐", volume_ratio=2.5) == []
+
+    # Erratic volume feed (near-zero rows + occasional huge jumps): the median
+    # is < 5% of peak, so the baseline is untrustworthy -> no spike claimed.
+    erratic = [
+        {"date": "2026-09-01", "value": 1000, "volume": 3},
+        {"date": "2026-09-02", "value": 1001, "volume": 2},
+        {"date": "2026-09-03", "value": 1002, "volume": 4},
+        {"date": "2026-09-04", "value": 1003, "volume": 1},
+        {"date": "2026-09-05", "value": 1004, "volume": 5},
+        {"date": "2026-09-06", "value": 1005, "volume": 2},
+        {"date": "2026-09-07", "value": 1006, "volume": 3},
+        {"date": "2026-09-08", "value": 1007, "volume": 4},
+        {"date": "2026-09-09", "value": 1008, "volume": 90000},
+        {"date": "2026-09-10", "value": 1009, "volume": 200000},
+    ]
+    assert detect_anomalies(erratic, "GC=F", "금", volume_ratio=2.5) == []
+    print("PASS: test_market_watch_no_fabrication")
+
+
+def test_market_watch_collector_graceful():
+    """Per-source failure is graceful; payload carries real values + signals."""
+    from unittest import mock
+    from src.collectors.market_watch import collector as mw_module
+    from src.collectors.market_watch.collector import MarketWatchCollector
+
+    records = [
+        {"date": "2026-09-02", "value": 1000, "volume": 5000},
+        {"date": "2026-09-03", "value": 1030, "volume": 22000},
+    ]
+
+    # A) One dead source alone -> empty list, FAILED detail, NO exception.
+    c1 = MarketWatchCollector()
+
+    def raise_bad(src):
+        raise RuntimeError("no data")
+
+    with mock.patch.object(mw_module, "configured_sources",
+                           return_value=[{"key": "bad", "name": "Bad",
+                                          "backend": "yahoo", "symbol": "BAD=F"}]), \
+         mock.patch.object(mw_module, "fetch_source", side_effect=raise_bad):
+        items = c1.collect()
+    assert items == []
+    assert c1.skipped is False
+    assert c1.source_status["bad"]["status"] == "FAILED"
+
+    # B) Dead + healthy source mixed -> healthy series still collected.
+    c2 = MarketWatchCollector()
+    sources = [
+        {"key": "bad", "name": "Bad", "backend": "yahoo", "symbol": "BAD=F"},
+        {"key": "pa", "name": "팔라듐", "backend": "yahoo", "symbol": "PA=F",
+         "url": "https://finance.yahoo.com/quote/PA=F",
+         "threshold": 1.5, "volume_ratio": 2.5},
+    ]
+
+    def fake_fetch(src):
+        if src["symbol"] == "BAD=F":
+            raise RuntimeError("no data")
+        return records
+
+    with mock.patch.object(mw_module, "configured_sources", return_value=sources), \
+         mock.patch.object(mw_module, "fetch_source", side_effect=fake_fetch):
+        items = c2.collect()
+    assert len(items) == 1
+    opp = items[0]
+    assert opp.source == "market_watch"
+    assert opp.name == "팔라듐 (PA=F)"
+    assert opp.category == "Market Event"
+    mw = opp.market_watch
+    assert mw["value"] == 1030
+    assert mw["series"][-1] == {"date": "2026-09-03", "value": 1030, "volume": 22000}
+    assert mw["signals"][0]["type"] == "PRICE_ANOMALY_UP"
+    assert c2.source_status["pa"]["status"] == "OK"
+    assert c2.source_status["bad"]["status"] == "FAILED"
+
+    # C) No sources configured -> SKIPPED, not a failure.
+    c3 = MarketWatchCollector()
+    with mock.patch.object(mw_module, "configured_sources", return_value=[]):
+        assert c3.collect() == []
+    assert c3.skipped is True
+    print("PASS: test_market_watch_collector_graceful")
+
+
+def test_market_watch_entity_sync():
+    """_sync_market_watch accumulates observations + dedupes signals."""
+    from src.main import _sync_market_watch
+    from src.intelligence.entities import Entity
+    from src.models import Opportunity
+
+    e = Entity("mw1", "팔라듐 (PA=F)", "https://finance.yahoo.com/quote/PA=F",
+               "Market Event", "")
+    opp = Opportunity(
+        name="팔라듐 (PA=F)", url="https://finance.yahoo.com/quote/PA=F",
+        description="팔라듐: 1030 (2026-09-03)", category="Market Event",
+        source="market_watch",
+        market_watch={
+            "symbol": "PA=F", "name": "팔라듐", "period": "2026-09-03",
+            "value": 1030, "prev": 1000, "unit": "USD", "backend": "yahoo",
+            "source_key": "pa", "source_name": "팔라듐",
+            "source_url": "https://finance.yahoo.com/quote/PA=F",
+            "series": [{"date": "2026-09-02", "value": 1000, "volume": 5000},
+                       {"date": "2026-09-03", "value": 1030, "volume": 22000}],
+            "signals": [{"type": "PRICE_ANOMALY_UP", "symbol": "PA=F",
+                         "name": "팔라듐", "period": "2026-09-03",
+                         "current": 1030, "prev": 1000, "change_pct": 3.0,
+                         "evidence": "팔라듐 가격 1030 (2026-09-03) vs 이전 1000 (2026-09-02) — +3.00%",
+                         "observed_at": "2026-09-03"}],
+        },
+    )
+    _sync_market_watch(e, opp)
+    assert "yahoo::PA=F" in e.market_watch["observations"]
+    assert e.market_watch["observations"]["yahoo::PA=F"]["value"] == 1030
+    assert len(e.market_watch["signals"]) == 1
+    # Same day re-reported must NOT duplicate the signal.
+    _sync_market_watch(e, opp)
+    assert len(e.market_watch["signals"]) == 1
+    print("PASS: test_market_watch_entity_sync")
+
+
+def test_market_watch_report_rule():
+    """market-anomaly.md shows real price/volume anomalies + SEC disclosures."""
+    from src.reports.markdown_report import render_markdown_reports
+
+    obs = {
+        "yahoo::PA=F": {
+            "symbol": "PA=F", "name": "팔라듐", "period": "2026-09-03",
+            "value": 1030, "prev": 1000, "unit": "USD", "backend": "yahoo",
+            "source_key": "pa", "source_name": "팔라듐",
+            "source_url": "https://finance.yahoo.com/quote/PA=F",
+            "series": [{"date": "2026-09-02", "value": 1000, "volume": 5000},
+                       {"date": "2026-09-03", "value": 1030, "volume": 22000}],
+            "updated_at": "2026-09-03",
+        },
+    }
+    sig = {
+        "type": "PRICE_ANOMALY_UP", "symbol": "PA=F", "name": "팔라듐",
+        "period": "2026-09-03", "current": 1030, "prev": 1000,
+        "change_pct": 3.0, "label": "급등",
+        "evidence": "팔라듐 가격 1030 (2026-09-03) vs 이전 1000 (2026-09-02) — +3.00%",
+        "observed_at": "2026-09-03",
+    }
+    ent = mk_entity("mw1", "팔라듐 (PA=F)", "Market Event",
+                    market_watch={"observations": obs, "signals": [sig]})
+    sec = mk_entity("sec1", "ACME Corp", "Market Event",
+                    signal_sources=["sec_edgar", "sec:abc"],
+                    description="8-K material agreement entered into")
+    items = [ScoredEntity(ent, ScoreBreakdown(market=8, news=2), confidence=60),
+             ScoredEntity(sec, ScoreBreakdown(news=4), confidence=60)]
+    files = render_markdown_reports(
+        [], items, [], [], [], {}, datetime(2026, 9, 11, 10, 10),
+        "2026-09-10 10:10 ~ 2026-09-11 10:10 KST", [], [],
+    )
+    md = files["market-anomaly.md"]
+    assert "팔라듐 (PA=F)" in md
+    assert "1030" in md and "2026-09-03" in md
+    assert "PRICE_ANOMALY_UP" in md
+    assert "급등" in md
+    assert "실측 가격" in md
+    assert "ACME Corp" in md and "SEC Disclosure" in md
+
+    # No observations at all -> explicit empty-state (no fabricated rows).
+    empty = render_markdown_reports(
+        [], [], [], [], [], {}, datetime(2026, 9, 11, 10, 10),
+        "2026-09-10 10:10 ~ 2026-09-11 10:10 KST", [], [],
+    )
+    assert "감지된 공개시장 이상 징후" in empty["market-anomaly.md"]
+
+    # Sources not configured -> SKIPPED note, captures the env var name.
+    skipped = render_markdown_reports(
+        [], [], [], [], [], {"market_watch": {"status": "SKIPPED", "items": 0}},
+        datetime(2026, 9, 11, 10, 10),
+        "2026-09-10 10:10 ~ 2026-09-11 10:10 KST", [], [],
+    )
+    assert "PRICE_WATCH_SOURCES" in skipped["market-anomaly.md"]
+    print("PASS: test_market_watch_report_rule")
+
+
 def test_monthly_archive_pack_and_ordering():
     import zipfile
     from src.monthly import archive_month, pack_month
@@ -1200,6 +1442,11 @@ if __name__ == "__main__":
     test_real_estate_no_signal_without_comparison()
     test_real_estate_collector_graceful()
     test_real_estate_report_rule()
+    test_market_watch_detect_anomalies()
+    test_market_watch_no_fabrication()
+    test_market_watch_collector_graceful()
+    test_market_watch_entity_sync()
+    test_market_watch_report_rule()
     test_monthly_archive_pack_and_ordering()
     test_previous_month_kst()
     print("\nAll tests passed!")

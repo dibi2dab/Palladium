@@ -24,6 +24,8 @@ SIGNAL_CATEGORIES = {
     "momentum": "성장 모멘텀",
     "funding_withdrawn": "투자 무산/철회",
     "search_interest": "검색 관심도",
+    "price_anomaly": "가격 이상(급등/급락)",
+    "volume_spike": "거래량 급증",
 }
 
 

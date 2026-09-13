@@ -441,6 +441,152 @@ def _re_per_source_table(per_sources: dict) -> str:
     return "\n".join(rows)
 
 
+ANOMALY_LABELS = {
+    "PRICE_ANOMALY_UP": "급등",
+    "PRICE_ANOMALY_DOWN": "급락",
+    "PRICE_ACCELERATION_UP": "급등 가속",
+    "PRICE_ACCELERATION_DOWN": "급락 가속",
+    "TRADING_VOLUME_SPIKE": "거래량 급증",
+}
+
+
+def _render_market_watch(scored: list[ScoredEntity],
+                         source_status: dict) -> str:
+    """Market-anomaly report: 실측 가격/거래량 기반 공개시장 이상 감지.
+
+    '급등/급락'은 실제 가격 데이터가 확인한 움직임에만 붙는 라벨입니다.
+    거래량 급증은 거래량 데이터가 제공될 때만 별도로 보고합니다.
+    """
+    blocks = ["# 글로벌 공개시장 이상 (Market Anomaly)", ""]
+
+    status = source_status.get("market_watch", {})
+    mw_items = [(s, s.entity.market_watch or {})
+                for s in scored if (s.entity.market_watch or {}).get("observations")]
+    sec_items = [s for s in scored
+                 if any("sec_edgar" in (src or "").lower()
+                        for src in s.entity.signal_sources)]
+
+    if status.get("status") == "SKIPPED" and not mw_items and not sec_items:
+        blocks.append(
+            "> 가격 워치리스트가 설정되지 않아 수집이 SKIPPED 처리되었습니다. "
+            "PRICE_WATCH_SOURCES에 감시할 자산을 등록하면 자동으로 채워집니다.\n")
+        return "\n".join(blocks) + "\n"
+
+    if not mw_items and not sec_items:
+        blocks.append(
+            "> 감지된 공개시장 이상 징후(급등·급락·거래량/거래대금 급증)가 없습니다.\n")
+        if status.get("sources"):
+            blocks.append("")
+            blocks.append(_re_per_source_table(status.get("sources")))
+        return "\n".join(blocks) + "\n"
+
+    blocks.append(
+        "> 실측 가격/거래량 데이터 기반 감지. 이상은 실제 수집 수치로만 "
+        "판정하며 AI 생성 수치를 사용하지 않습니다.")
+    blocks.append("")
+
+    if mw_items:
+        blocks.append("## 가격/거래량 이상 감지")
+        blocks.append("")
+        blocks.append("> '급등/급락' 라벨은 전 거래일 대비 실제 가격 움직임이 "
+                      "임계값을 넘은 경우에만 표시됩니다.")
+        blocks.append("")
+
+        for s, mw in sorted(
+            mw_items,
+            key=lambda pair: sorted(
+                (obs.get("period", "") for obs in
+                 (pair[1].get("observations") or {}).values()),
+                reverse=True,
+            )[0] if (pair[1].get("observations") or {}) else "",
+            reverse=True,
+        ):
+            observations = mw.get("observations") or {}
+            signals_list = mw.get("signals") or []
+            name = s.entity.name
+            symbol = _md(next(iter(observations.values()), {}).get("symbol", ""))
+
+            blocks.append(f"## {_md(name)}")
+            blocks.append("")
+
+            obs_rows = []
+            for key in sorted(observations):
+                obs = observations[key]
+                val = obs.get("value")
+                prev = obs.get("prev")
+                period = obs.get("period", "")
+                val_txt = f"{val:g}" if isinstance(val, (int, float)) else (val or "-")
+                if isinstance(prev, (int, float)):
+                    try:
+                        change = (val - prev) / abs(prev) * 100.0
+                        obs_rows.append(
+                            f"- {symbol or _md(name)}: **{val_txt}** ({period})"
+                            f" · 전일 {prev:g} ({change:+.2f}%)")
+                    except ZeroDivisionError:
+                        obs_rows.append(
+                            f"- {symbol or _md(name)}: **{val_txt}** ({period})")
+                else:
+                    obs_rows.append(
+                        f"- {symbol or _md(name)}: **{val_txt}** ({period})")
+
+            signal_rows = []
+            for sig in signals_list[-12:]:
+                typ = _md(sig.get("type", ""))
+                label = ANOMALY_LABELS.get(sig.get("type", ""), "")
+                change = sig.get("change_pct")
+                change_txt = (f"{change:+.2f}%" if isinstance(change, (int, float))
+                              else "")
+                vol = sig.get("volume")
+                vol_txt = (f", 거래량 {vol:,}" if isinstance(vol, (int, float))
+                           else "")
+                ratio = sig.get("volume_ratio")
+                ratio_txt = (f" ({ratio:.1f}배)"
+                             if isinstance(ratio, (int, float)) else "")
+                ev = _md(sig.get("evidence", ""))
+                signal_rows.append(
+                    f"- **{label or typ}** `{typ}`"
+                    f"{(' ' + change_txt) if change_txt else ''}"
+                    f"{vol_txt}{ratio_txt} — {ev}")
+
+            if obs_rows:
+                blocks.extend(obs_rows)
+            else:
+                blocks.append("- 관측 데이터 없음")
+
+            if signal_rows:
+                blocks.append("")
+                blocks.append("**감지된 이상**")
+                blocks.append("")
+                blocks.extend(signal_rows)
+            else:
+                blocks.append("")
+                blocks.append("_이번 관측에는 임계값을 넘는 이상이 없습니다._")
+            blocks.append("")
+
+    if sec_items:
+        blocks.append("## 공시 이벤트 (SEC Disclosure)")
+        blocks.append("")
+        blocks.append("> SEC EDGAR 공시(SEC) 기반 실측 이벤트 — 신문 헤드라인이 아닌 "
+                      "공식 공시에 근거합니다.")
+        blocks.append("")
+        for s in sorted(sec_items, key=lambda x: x.score.total, reverse=True)[:10]:
+            url = s.entity.url or ""
+            nm = _md(s.entity.name)
+            link = f"[{nm}]({url})" if url else nm
+            desc = _md(s.entity.description)[:140]
+            blocks.append(f"- **{link}** — {desc}")
+        blocks.append("")
+
+    per_sources = status.get("sources")
+    if per_sources:
+        blocks.append("## 소스 상태")
+        blocks.append("")
+        blocks.append(_re_per_source_table(per_sources))
+        blocks.append("")
+
+    return "\n".join(blocks).rstrip() + "\n"
+
+
 def _tech_trend_candidates(scored: list[ScoredEntity]) -> list[ScoredEntity]:
     """Tech-trend candidates ranked by REAL observed GitHub metrics.
 
@@ -656,6 +802,11 @@ def render_markdown_reports(
     # scored list (like market-entry): an observed indicator surfaces regardless
     # of the quality-gated section threshold.
     files["real-estate.md"] = _render_real_estate(scored, source_status)
+
+    # Market anomaly — 실측 가격/거래량 이상 감지 + SEC 공시. Scanned over the
+    # FULL scored list; replaces the section-based fallback above so '급등' is
+    # only ever claimed with real price data behind it.
+    files["market-anomaly.md"] = _render_market_watch(scored, source_status)
 
     generated = set(files.keys())
     files = {"daily-summary.md": _summary_md(

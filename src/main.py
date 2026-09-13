@@ -38,6 +38,7 @@ from src.collectors.funding import FundingCollector
 from src.collectors.korea import KoreaNewsCollector, DartCollector
 from src.collectors.market_entry import MarketEntryCollector
 from src.collectors.real_estate import RealEstateCollector
+from src.collectors.market_watch import MarketWatchCollector
 from src.intelligence.entities import EntityManager
 from src.intelligence.signals import SignalManager
 from src.intelligence.scoring import Scorer, ScoredEntity
@@ -67,6 +68,7 @@ COLLECTOR_MAP = {
     "dart": DartCollector,
     "market_entry": MarketEntryCollector,
     "real_estate": RealEstateCollector,
+    "market_watch": MarketWatchCollector,
 }
 
 
@@ -135,6 +137,7 @@ def main():
                 entity.signal_sources.append(sid)
         _sync_github_metrics(entity, opp)
         _sync_real_estate(entity, opp)
+        _sync_market_watch(entity, opp)
     logger.info(f"[OK] Entities normalized ({len(entities.get_all())} entities)")
 
     # 3. Generate Signals
@@ -299,13 +302,60 @@ def _sync_real_estate(entity, opp):
     entity.real_estate = re_dict or None
 
 
+def _sync_market_watch(entity, opp):
+    """Store ONLY real observed price/volume statistics (no fabrication).
+
+    Mirrors _sync_real_estate: the latest observation per (symbol, backend) is
+    kept with a capped series, and detected anomalies are deduped by type/date
+    so the same move never boosts twice.
+    """
+    data = getattr(opp, "market_watch", None)
+    if opp.source != "market_watch" or not data:
+        return
+    mw_dict = dict(entity.market_watch or {})
+    observations = dict(mw_dict.get("observations") or {})
+
+    symbol = str(data.get("symbol") or data.get("source_key") or "")
+    key = f"{data.get('backend')}::{symbol}"
+    observations[key] = {
+        "symbol": symbol,
+        "name": data.get("name", ""),
+        "period": data.get("period", ""),
+        "value": data.get("value"),
+        "prev": data.get("prev"),
+        "unit": data.get("unit", "USD"),
+        "backend": data.get("backend", ""),
+        "source_key": data.get("source_key", ""),
+        "source_name": data.get("source_name", ""),
+        "source_url": data.get("source_url", ""),
+        "series": (data.get("series") or [])[-12:],
+        "updated_at": timeutil.date_kst(),
+    }
+
+    signals_list = []
+    seen: set[str] = set()
+    existing = list(mw_dict.get("signals") or [])
+    for s in existing + (data.get("signals") or []):
+        dedupe = (f"{s.get('type')}|{s.get('symbol')}|{s.get('period')}")
+        if dedupe in seen:
+            continue
+        seen.add(dedupe)
+        signals_list.append(s)
+    mw_dict["observations"] = observations
+    mw_dict["signals"] = signals_list[-60:]
+    entity.market_watch = mw_dict or None
+
+
 def _generate_signals(opportunities, entities, signals):
     for opp in opportunities:
         entity = _resolve_entity(entities, opp)
 
-        if not entity.is_korean and classification.is_korean_entity(
-            opp.name, opp.url, opp.tags, opp.category,
-        ):
+        # Global market instruments are never Korean entities, regardless of
+        # how the (often Hangul) commodity label reads.
+        if (opp.source != "market_watch" and not entity.is_korean
+                and classification.is_korean_entity(
+                    opp.name, opp.url, opp.tags, opp.category,
+                )):
             entity.is_korean = True
             if "korea" not in entity.tags:
                 entity.tags.append("korea")
@@ -348,6 +398,21 @@ def _generate_signals(opportunities, entities, signals):
                     1, opp.url,
                     f"re:{sig.get('type')}:{sig.get('region')}:"
                     f"{sig.get('period')}:{sig.get('item')}",
+                )
+
+        if opp.source == "market_watch" and opp.market_watch:
+            # PRICE_ANOMALY(급등/급락) and TRADING_VOLUME_SPIKE — emitted only
+            # when REAL price/volume data confirmed the move (dedupe per day).
+            for sig in (opp.market_watch.get("signals") or []):
+                sig_type = sig.get("type", "")
+                category = ("volume_spike"
+                            if sig_type == "TRADING_VOLUME_SPIKE"
+                            else "price_anomaly")
+                signals.add_or_merge(
+                    entity.id, category, opp.source,
+                    sig.get("evidence") or sig.get("description", ""),
+                    1, opp.url,
+                    f"mw:{sig_type}:{sig.get('symbol')}:{sig.get('period')}",
                 )
 
         if opp.metrics.github_stars and opp.metrics.github_stars > 100:

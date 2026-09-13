@@ -27,6 +27,9 @@ DART_API_KEY = os.environ.get("DART_API_KEY", "")
 # 부동산은 키가 필요 없는 공개 통계 파일 기반 (REAL_ESTATE_SOURCES, JSON 목록).
 # 자세한 형식은 src/collectors/real_estate/sources.py 참고.
 REAL_ESTATE_SOURCES = os.environ.get("REAL_ESTATE_SOURCES", "")
+# 가격/거래량 이상 감지 워치리스트 (PRICE_WATCH_SOURCES, JSON 목록).
+# 비워두면 src/collectors/market_watch/sources.py의 기본 워치리스트 사용.
+PRICE_WATCH_SOURCES = os.environ.get("PRICE_WATCH_SOURCES", "")
 
 # Daily execution time (Korea time, Asia/Seoul). GitHub Actions cron is managed
 # separately in .github/workflows/palladium.yml (cron '10 1 * * *' == 10:10 KST).

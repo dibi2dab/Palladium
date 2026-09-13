@@ -40,6 +40,9 @@ class Opportunity:
     source_ids: list[str] = field(default_factory=list)
     # Market-watch payload (real_estate collector). See real_estate/ package.
     real_estate: Optional[dict] = None
+    # Price/volume market-watch payload (market_watch collector). See
+    # market_watch/ package.
+    market_watch: Optional[dict] = None
 
     @property
     def id(self) -> str:
@@ -61,4 +64,5 @@ class Opportunity:
             "tags": self.tags,
             "source_ids": self.source_ids,
             "real_estate": self.real_estate,
+            "market_watch": self.market_watch,
         }

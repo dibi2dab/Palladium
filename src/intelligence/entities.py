@@ -81,6 +81,7 @@ class Entity:
         self.events: list[dict] = []
         self.github_metrics: dict | None = None  # real observed values: stars/forks/stars_today/language
         self.real_estate: dict | None = None     # 시장 감시 관측/신호: {"observations": {...}, "signals": [...]}
+        self.market_watch: dict | None = None    # 가격/거래량 워치: {"observations": {...}, "signals": [...]}
         self.search_interest: dict | None = None
         self.news_momentum: dict | None = None
         self.community_momentum: dict | None = None
@@ -118,6 +119,7 @@ class Entity:
             "events": self.events,
             "github_metrics": self.github_metrics,
             "real_estate": self.real_estate,
+            "market_watch": self.market_watch,
             "search_interest": self.search_interest,
             "news_momentum": self.news_momentum,
             "community_momentum": self.community_momentum,
@@ -154,6 +156,7 @@ class Entity:
         e.events = d.get("events", [])
         e.github_metrics = d.get("github_metrics")
         e.real_estate = d.get("real_estate")
+        e.market_watch = d.get("market_watch")
         e.search_interest = d.get("search_interest")
         e.news_momentum = d.get("news_momentum")
         e.community_momentum = d.get("community_momentum")
