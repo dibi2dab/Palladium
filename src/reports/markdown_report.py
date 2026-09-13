@@ -6,8 +6,13 @@ contains an explicit empty-state note instead of fabricated items.
 """
 from __future__ import annotations
 
+import re
+
 from src.intelligence.scoring import ScoredEntity
-from src.intelligence.classification import ENTITY_TYPE_LABELS, EVENT_TYPE_LABELS
+from src.intelligence.classification import (
+    ENTITY_TYPE_LABELS, EVENT_TYPE_LABELS, extract_entity_name,
+)
+from src.intelligence.entities import extract_domain
 from src.intelligence.funding import format_amount_kr, STAGE_LABELS_KO
 from src.report.formatter import format_reasons, format_score_change
 from src.analyzers.trajectory import ACCELERATING, GROWING
@@ -117,13 +122,21 @@ def _entity_block(scored: ScoredEntity) -> str:
             lines.append("")
             lines.append(_md(n[key]))
 
-    chain = _evidence_chain(scored)
-    if chain:
+    rows = _sources_section(scored)
+    if rows:
         lines.append("")
-        lines.append("**Evidence Chain**")
+        lines.append("**기사 / 출처**")
         lines.append("")
-        for item in chain:
-            lines.append(f"- {item}")
+        for item in rows:
+            lines.append(item)
+    else:
+        chain = _evidence_chain(scored)
+        if chain:
+            lines.append("")
+            lines.append("**Evidence Chain**")
+            lines.append("")
+            for item in chain:
+                lines.append(f"- {item}")
 
     lines.append("")
     lines.append("---")
@@ -148,7 +161,140 @@ def _funding_lines(scored: ScoredEntity) -> list[str]:
     return lines
 
 
+_OUTLET_LABELS = {
+    "eu-startups.com": "EU Startups",
+    "techcrunch.com": "TechCrunch",
+    "news.google.com": "Google News",
+    "google.com": "Google News",
+    "sec.gov": "SEC EDGAR",
+    "arstechnica.com": "Ars Technica",
+    "theverge.com": "The Verge",
+    "news.ycombinator.com": "Hacker News",
+    "crunchbase.com": "Crunchbase",
+}
+
+_MNA_VERB_RE = re.compile(
+    r"\b(to acquire|agrees to acquire|agrees to buy|to take over|acquires|buys)\b",
+    re.IGNORECASE,
+)
+_CAP_CLUSTER_RE = re.compile(
+    r"[A-Z0-9][A-Za-z0-9&.'\-\u00c0-\u017f\u4e00-\u9fff\u3040-\u30ff]*(?:"
+    r"[ ][A-Z0-9][A-Za-z0-9&.'\-\u00c0-\u017f\u4e00-\u9fff\u3040-\u30ff]*)*")
+_TARGET_TAIL_RE = re.compile(
+    r"\s+(?:for|in a|at a|as part of|to build|to create|to make|as|pending|"
+    r"after|amid|with|to|for)\b",
+    re.IGNORECASE,
+)
+
+
+def _outlet_label(url: str) -> str:
+    d = extract_domain(url)
+    if not d:
+        return "출처"
+    if d in _OUTLET_LABELS:
+        return _OUTLET_LABELS[d]
+    return d
+
+
+def _last_cap_cluster(text: str) -> str | None:
+    """Last capitalized token-run — a likely company/product name in the text."""
+    if not text:
+        return None
+    runs = _CAP_CLUSTER_RE.findall(text)
+    return runs[-1].strip() if runs else None
+
+
+def _name_ok(label: str) -> bool:
+    """Reject numeric/punctuation-led fragments like '5.2' so labels are never
+    fabricated — uncertain cases fall back to the existing canonical name."""
+    return bool(label) and len(label) <= 40 and label[0].isalpha()
+
+
+def _mna_label(name: str) -> str | None:
+    """'A사 → B사' from an acquisition headline, both sides grounded in the text."""
+    if not name:
+        return None
+    m = _MNA_VERB_RE.search(name)
+    if not m:
+        return None
+    acq = _last_cap_cluster(name[: m.start()].strip())
+    if not _name_ok(acq or ""):
+        return None
+    rest = name[m.end():].strip()
+    target_raw = _TARGET_TAIL_RE.split(rest, maxsplit=1)[0]
+    target_raw = target_raw.strip().rstrip(",").strip().rstrip(".").strip()
+    target = _last_cap_cluster(target_raw) or target_raw
+    if not _name_ok(target or ""):
+        return None
+    return f"{acq} → {target}"
+
+
+def _subject_label(e, ev: dict) -> str:
+    """Display name for an article block: entity name first, never guessed.
+
+    Names come from the existing extract_entity_name fallback chain, the
+    entity's own canonical name, or — for acquisitions — both parties read
+    straight out of the headline. If nothing clean can be extracted we keep
+    the existing article-title display.
+    """
+    if ev.get("type") == "ACQUISITION":
+        mna = _mna_label(e.name)
+        if mna:
+            return mna
+    raw = e.name.strip()
+    extracted = extract_entity_name(raw)
+    if extracted and extracted != raw[:60].strip():
+        clean = _last_cap_cluster(extracted) or extracted
+        if _name_ok(clean):
+            return clean
+    return raw
+
+
+def _article_title(e, ev: dict) -> str:
+    title = (ev.get("description") or "").strip()
+    if not title:
+        title = e.name
+    return _md(title)[:200]
+
+
+def _event_sources(ev: dict) -> list[str]:
+    urls = [u for u in (ev.get("sources") or []) if u]
+    primary = ev.get("url") or (urls[0] if urls else "")
+    extra = [u for u in urls if u != primary]
+    return primary, extra
+
+
+def _sources_section(scored: ScoredEntity) -> list[str]:
+    """기사/출처 row block: entity-first, deduped per canonical event.
+
+    Each entity event (already deduped on type+date across sources) is shown
+    ONCE — entity name, article title, outlet · date, '원문 기사 보기' — with
+    any additional source URLs listed separately under it.
+    """
+    e = scored.entity
+    events = [ev for ev in (e.events or []) if ev.get("url") or ev.get("sources")]
+
+    rows: list[str] = []
+    for ev in events[-6:]:
+        primary, extra = _event_sources(ev)
+        if not primary:
+            continue
+        label = EVENT_TYPE_LABELS.get(ev.get("type"), ev.get("type", ""))
+        date = str(ev.get("date") or "")
+        disp = _subject_label(e, ev)
+        rows.append(f"- **{_md(disp)}** — {label} ({date})")
+        rows.append(f"  - {_article_title(e, ev)}")
+        rows.append(
+            f"  - {_outlet_label(primary)} · {date or '(날짜 미상)'} · "
+            f"[원문 기사 보기 →]({primary})")
+        if extra:
+            links = " · ".join(f"[{_outlet_label(u)}]({u})" for u in extra[:3])
+            rows.append(f"  - 추가 소스: {links}")
+    return rows
+
+
 def _evidence_chain(scored: ScoredEntity) -> list[str]:
+    """Legacy fallback: entities without any article URLs still list sources."""
     e = scored.entity
     chain: list[str] = []
     for ev in (e.events or [])[-5:]:
@@ -162,7 +308,7 @@ def _evidence_chain(scored: ScoredEntity) -> list[str]:
             chain.append(f"`{label}` {d} — {desc} ([출처]({url})) [{src_txt}]")
         else:
             chain.append(f"`{label}` {d} — {desc} [{src_txt}]")
-    if e.signal_sources:
+    if not chain and e.signal_sources:
         srcs = [s.split(":")[-1] for s in e.signal_sources if s]
         chain.append(f"출처: {', '.join(dict.fromkeys(srcs))}")
     return chain
@@ -230,7 +376,7 @@ def _summary_md(
     conv_list = [s for s in all_items if s.convergence]
 
     out: list[str] = []
-    out.append("# ⚡ Palladium Daily Summary")
+    out.append("# Palladium Daily Summary")
     out.append("")
     out.append(f"> 생성시각(한국): **{timeutil.korean_datetime_str(generated_at)}**")
     if collection_window:
@@ -318,8 +464,8 @@ def _summary_md(
 def _domain_file(filename: str, title: str, items: list[ScoredEntity],
                  empty_note: str) -> str:
     if not items:
-        return f"# ⚡ {title}\n\n> {empty_note}\n"
-    return f"# ⚡ {title}\n\n" + _render_section(title, items)
+        return f"# {title}\n\n> {empty_note}\n"
+    return f"# {title}\n\n" + _render_section(title, items)
 
 
 def _render_real_estate(scored: list[ScoredEntity],
@@ -330,7 +476,7 @@ def _render_real_estate(scored: list[ScoredEntity],
     period-over-period change signals. Empty-state and unavailable notes are
     explicit — nothing is ever fabricated.
     """
-    blocks = ["# 🏠 부동산 시장 감시 (Real Estate)", ""]
+    blocks = ["# 부동산 시장 감시 (Real Estate)", ""]
 
     status = source_status.get("real_estate", {})
     if status.get("status") == "SKIPPED" and not scored:
@@ -632,7 +778,7 @@ def render_markdown_reports(
     base = generated_at or timeutil.now_kst()
 
     # opportunities.md: every section as a heading with full entity blocks.
-    opp: list[str] = ["# ⚡ 전일 기회 상세 (Opportunities)", ""]
+    opp: list[str] = ["# 전일 기회 상세 (Opportunities)", ""]
     if not all_items:
         opp.append("> 이번 수집 주기에 감지된 기회가 없습니다.")
     for sec in sections:
@@ -654,7 +800,7 @@ def render_markdown_reports(
     # to the quality-gated tech section, then to an explicit empty state.
     tech = _tech_trend_candidates(scored)
     if tech:
-        blocks = ["# ⚡ 기술 트렌드 (Tech Trend)", ""]
+        blocks = ["# 기술 트렌드 (Tech Trend)", ""]
         blocks.append("> GitHub 트렌딩에서 실측된 인기 프로젝트. "
                       "수치는 실제 수집값이며 AI로 생성하지 않습니다.")
         blocks.append("")
@@ -704,7 +850,7 @@ def render_markdown_reports(
         key=lambda s: s.score.total, reverse=True,
     )[:15]
     if growth:
-        blocks = ["# 📈 성장 가속 후보 (Company Growth)", ""]
+        blocks = ["# 성장 가속 후보 (Company Growth)", ""]
         blocks.append("> 스코어 궤적이 상승(ACCELERATING/GROWING)으로 전환된 글로벌 기업 후보입니다.")
         blocks.append("")
         for s in growth:
@@ -717,7 +863,7 @@ def render_markdown_reports(
         files["company-growth.md"] = "\n".join(blocks) + "\n"
     else:
         files["company-growth.md"] = (
-            "# 📈 성장 가속 후보 (Company Growth)\n\n"
+            "# 성장 가속 후보 (Company Growth)\n\n"
             "> 스코어 이력이 3일 이상 누적되는 시점부터 성장 가속 "
             "(ACCELERATING/GROWING) 후보를 산출합니다. "
             "이번 주기에는 아직 후보가 없습니다.\n")
@@ -726,15 +872,15 @@ def render_markdown_reports(
     korea_items: list[tuple[str, list[ScoredEntity]]] = []
     for sec in sections:
         if any(k in (sec.get("title") or "") for k in KOREA_SECTION_KEYS) and sec["items"]:
-            korea_items.append((sec.get("title", "🇰🇷 한국"), sec["items"]))
+            korea_items.append((sec.get("title", "한국"), sec["items"]))
     if korea_items:
-        blocks = ["# 🇰🇷 한국 기업 검토 (Korea Company)", ""]
+        blocks = ["# 한국 기업 검토 (Korea Company)", ""]
         for title, items in korea_items:
             blocks.append(_render_section(title, items))
         files["korea-company.md"] = "\n".join(blocks)
     else:
         files["korea-company.md"] = (
-            "# 🇰🇷 한국 기업 검토 (Korea Company)\n\n"
+            "# 한국 기업 검토 (Korea Company)\n\n"
             "> 이번 수집 주기에 한국 섹션 기준을 충족하는 기업 이벤트가 "
             "감지되지 않았습니다. (감지된 한국 항목이 있다면 공개 방법·임계값 "
             "재검토가 필요합니다)\n")
@@ -746,13 +892,13 @@ def render_markdown_reports(
         files["dart-events.md"] = _render_section("DART 공시 이벤트", dart_items)
     else:
         files["dart-events.md"] = (
-            "# 📄 DART 공시 이벤트 (DART Events)\n\n"
+            "# DART 공시 이벤트 (DART Events)\n\n"
             "> 이번 수집 주기에 감지된 DART 공시 이벤트가 없습니다. "
             "(OpenDART 접근 제한 등으로 수집이 SKIPPED 처리될 수 있습니다)\n")
 
     # Second-order — always emitted.
     if second_order:
-        blocks = ["# 🔗 2차 기회 (Second-Order)", ""]
+        blocks = ["# 2차 기회 (Second-Order)", ""]
         blocks.append("> 아래 항목은 관측된 신호에서 파생된 **가능성**입니다. "
                       "확인된 숫자가 아니며 추가 검증이 필요합니다.")
         blocks.append("")
@@ -768,7 +914,7 @@ def render_markdown_reports(
         files["second-order.md"] = "\n".join(blocks)
     else:
         files["second-order.md"] = (
-            "# 🔗 2차 기회 (Second-Order)\n\n"
+            "# 2차 기회 (Second-Order)\n\n"
             "> 이번 수집 주기의 관측 신호에서 파생된 2차 기회를 산출하지 못했습니다.\n")
 
     # Market entry candidates: global (non-Korean) products with Korean
@@ -782,7 +928,7 @@ def render_markdown_reports(
         key=lambda s: s.score.total, reverse=True,
     )[:10]
     if entry:
-        blocks = ["# 🚪 국내 진입 후보 (Market Entry)", ""]
+        blocks = ["# 국내 진입 후보 (Market Entry)", ""]
         blocks.append("> 한국 뉴스에서 다뤄진 글로벌 제품/기업. 진입 시점 판단은 후보 수준입니다.")
         blocks.append("")
         for s in entry:
@@ -794,7 +940,7 @@ def render_markdown_reports(
         files["market-entry.md"] = "\n".join(blocks) + "\n"
     else:
         files["market-entry.md"] = (
-            "# 🚪 국내 진입 후보 (Market Entry)\n\n"
+            "# 국내 진입 후보 (Market Entry)\n\n"
             "> 이번 수집 주기에 한국 시장 진입 후보로 분류된 글로벌 "
             "제품/기업이 없습니다.\n")
 

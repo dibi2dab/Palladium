@@ -37,9 +37,9 @@ WATCH = "WATCH"
 EXCLUDED = "EXCLUDED"
 
 JUDGEMENT_LABELS = {
-    PRIORITY: "🔥 최우선 기회",
-    ATTENTION: "🚀 주목",
-    WATCH: "👀 관찰",
+    PRIORITY: "최우선 기회",
+    ATTENTION: "주목",
+    WATCH: "관찰",
     EXCLUDED: "제외",
 }
 

@@ -112,15 +112,15 @@ def _korean_bucket(e, cat: str, events: set[str]) -> str:
 
 # Global sections first, then Korea, then macro last (quality-gated).
 SECTION_SPECS = [
-    ("🚀 글로벌 스타트업 & 벤처", STARTUP_BUCKET, STARTUP_VENTURE_N, "venture", "venture"),
-    ("📈 글로벌 공개시장", PUBLIC_BUCKET, PUBLIC_MARKET_N, "public", "public"),
-    ("🧠 글로벌 기술", TECH_BUCKET, TECHNOLOGY_N, "tech", "tech"),
-    ("🏭 글로벌 제품 & 비즈니스", PRODUCT_BUCKET, PRODUCT_N, "product", "product"),
-    ("🤝 글로벌 M&A", MA_BUCKET, MA_N, "ma", "ma"),
-    ("🇰🇷 한국 투자 & 스타트업", KOREA_STARTUP_BUCKET, KOREA_STARTUP_N, "venture", "venture"),
-    ("🇰🇷 한국 공개시장 & 기업", KOREA_PUBLIC_BUCKET, KOREA_PUBLIC_N, "public", "public"),
-    ("🇰🇷 한국 기술 & 산업", KOREA_TECH_BUCKET, KOREA_TECH_N, "tech", "tech"),
-    ("🌎 거시경제", MACRO_BUCKET, MACRO_N, "macro", "macro"),
+    ("글로벌 스타트업 & 벤처", STARTUP_BUCKET, STARTUP_VENTURE_N, "venture", "venture"),
+    ("글로벌 공개시장", PUBLIC_BUCKET, PUBLIC_MARKET_N, "public", "public"),
+    ("글로벌 기술", TECH_BUCKET, TECHNOLOGY_N, "tech", "tech"),
+    ("글로벌 제품 & 비즈니스", PRODUCT_BUCKET, PRODUCT_N, "product", "product"),
+    ("글로벌 M&A", MA_BUCKET, MA_N, "ma", "ma"),
+    ("한국 투자 & 스타트업", KOREA_STARTUP_BUCKET, KOREA_STARTUP_N, "venture", "venture"),
+    ("한국 공개시장 & 기업", KOREA_PUBLIC_BUCKET, KOREA_PUBLIC_N, "public", "public"),
+    ("한국 기술 & 산업", KOREA_TECH_BUCKET, KOREA_TECH_N, "tech", "tech"),
+    ("거시경제", MACRO_BUCKET, MACRO_N, "macro", "macro"),
 ]
 
 
@@ -163,7 +163,7 @@ def build_sections(scored: list[ScoredEntity]) -> list[dict]:
         rest.setdefault(b, []).append(s)
 
     sections = [{
-        "title": "🔥 최우선 투자 기회",
+        "title": "최우선 투자 기회",
         "items": top,
         "icon": "fire",
         "kind": "top",

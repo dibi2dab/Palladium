@@ -114,7 +114,7 @@ body {{ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'App
 <body>
 <div class="container">
   <div class="header">
-    <h1>⚡ Palladium Daily Intelligence</h1>
+    <h1>Palladium Daily Intelligence</h1>
     <div class="date">{generated_at} · 기준시각(한국)</div>
     {window_html}
     <div class="count">오늘 감지된 기회: {total_count}개 (최대 50개)</div>
@@ -129,7 +129,7 @@ body {{ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'App
   {links_html}
 
   <div class="footer">
-    ⚡ Palladium Daily Intelligence 자동 생성 | {generated_at}
+    Palladium Daily Intelligence 자동 생성 | {generated_at}
   </div>
 </div>
 </body>

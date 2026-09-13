@@ -847,7 +847,7 @@ def test_palladium_markdown_reports():
     assert "market-entry.md" in files
     assert "real-estate.md" in files
     assert "감지된 공개시장 이상 징후" in files["market-anomaly.md"]
-    assert "# ⚡ Palladium Daily Summary" in files["daily-summary.md"]
+    assert "# Palladium Daily Summary" in files["daily-summary.md"]
     assert "SeedKorea" in files["korea-company.md"]
     assert "GlobalStart" in files["startup-radar.md"]
     assert "OpenSourceTrend" in files["tech-trend.md"]
