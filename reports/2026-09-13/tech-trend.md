@@ -1,13 +1,13 @@
-# ⚡ 기술 트렌드 (Tech Trend)
+# 기술 트렌드 (Tech Trend)
 
 > GitHub 트렌딩에서 실측된 인기 프로젝트. 수치는 실제 수집값이며 AI로 생성하지 않습니다.
 
-### 1. [ayghri/i-have-adhd](https://github.com/ayghri/i-have-adhd) — 오늘 +3,882 stars · 총 43,517 stars · 2,481 forks · Python
+### 1. [ayghri/i-have-adhd](https://github.com/ayghri/i-have-adhd) — 오늘 +3,882 stars · 총 43,595 stars · 2,487 forks · Python
 
 > A skill to stop your coding agent from burying the answer. ADHD-friendly output.
 - 분야: Software
 
-### 2. [bilawalsidhu/gods-eye-view](https://github.com/bilawalsidhu/gods-eye-view) — 오늘 +2,265 stars · 총 30,122 stars · 6,056 forks · JavaScript
+### 2. [bilawalsidhu/gods-eye-view](https://github.com/bilawalsidhu/gods-eye-view) — 오늘 +2,265 stars · 총 30,391 stars · 6,108 forks · JavaScript
 
 > A spy satellite simulator in your browser, except the data is real. Live open source spatial intelligence on a photorealistic 3D globe.
 - 분야: Software
@@ -17,7 +17,7 @@
 > 38 editorial diagram types for Claude Code, Codex, and Pi. Self-contained HTML + SVG. No shadows. No Mermaid slop.
 - 분야: AI/ML
 
-### 4. [freestylefly/awesome-gpt-image-2](https://github.com/freestylefly/awesome-gpt-image-2) — 오늘 +962 stars · 총 31,520 stars · 3,049 forks · JavaScript
+### 4. [freestylefly/awesome-gpt-image-2](https://github.com/freestylefly/awesome-gpt-image-2) — 오늘 +962 stars · 총 31,549 stars · 3,050 forks · JavaScript
 
 > Prompt as Code | GPT Image 2 / 2.5 提示词与案例库，530+ 个案例、20+ 套工业级模板与可复用 Skills，新增 2.5 同提示词对比专区，附完整提示词与生成记录，持续更新。
 - 분야: AI/ML
@@ -32,7 +32,7 @@
 > Make Every Team AI Native
 - 분야: AI/ML
 
-### 7. [tonhowtf/omniget](https://github.com/tonhowtf/omniget) — 오늘 +839 stars · 총 10,956 stars · 972 forks · Rust
+### 7. [tonhowtf/omniget](https://github.com/tonhowtf/omniget) — 오늘 +839 stars · 총 11,002 stars · 976 forks · Rust
 
 > Download Udemy and Hotmart courses, YouTube videos, music and books — 1,800+ sites, no terminal. Free open-source desktop app for Windows, macOS and Linux, with a built-in course p
 - 분야: Developer Tools
@@ -52,7 +52,7 @@
 > An agentic skills framework & software development methodology that works.
 - 분야: Software
 
-### 11. [jordan-gibbs/hyperresearch](https://github.com/jordan-gibbs/hyperresearch) — 오늘 +642 stars · 총 3,056 stars · 290 forks · Python
+### 11. [jordan-gibbs/hyperresearch](https://github.com/jordan-gibbs/hyperresearch) — 오늘 +642 stars · 총 3,083 stars · 293 forks · Python
 
 > Agent-driven research knowledge base. Agents collect, search, and synthesize web research into a persistent, searchable wiki.
 - 분야: Software
