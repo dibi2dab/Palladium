@@ -80,7 +80,7 @@ class Entity:
         self.funding_status: str = ""  # confirmed / planned / withdrawn
         self.events: list[dict] = []
         self.github_metrics: dict | None = None  # real observed values: stars/forks/stars_today/language
-        self.real_estate: dict | None = None     # real reported trades: {"region", "trades": [...]}
+        self.real_estate: dict | None = None     # 시장 감시 관측/신호: {"observations": {...}, "signals": [...]}
         self.search_interest: dict | None = None
         self.news_momentum: dict | None = None
         self.community_momentum: dict | None = None

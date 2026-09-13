@@ -9,7 +9,6 @@ from __future__ import annotations
 from src.intelligence.scoring import ScoredEntity
 from src.intelligence.classification import ENTITY_TYPE_LABELS, EVENT_TYPE_LABELS
 from src.intelligence.funding import format_amount_kr, STAGE_LABELS_KO
-from src.collectors.real_estate import format_amount_manwon
 from src.report.formatter import format_reasons, format_score_change
 from src.analyzers.trajectory import ACCELERATING, GROWING
 from src import analyzers
@@ -325,58 +324,121 @@ def _domain_file(filename: str, title: str, items: list[ScoredEntity],
 
 def _render_real_estate(scored: list[ScoredEntity],
                         source_status: dict) -> str:
-    """Real-estate report: REAL reported trades from the 국토부 실거래 API.
+    """Real-estate report: 공식 공개 통계 기반 시장 변화 감시.
 
-    Only entities that received a real_estate collection THIS cycle are shown
-    (last_seen == today). Trades within a region are sorted by price descending
-    (top deals view). No synthetic numbers — every row is an actual deal.
+    One row per observed (indicator, region) with the latest value and any
+    period-over-period change signals. Empty-state and unavailable notes are
+    explicit — nothing is ever fabricated.
     """
-    today = timeutil.date_kst()
-    regions: dict[str, dict] = {}
-    for s in scored:
-        re_dict = s.entity.real_estate or {}
-        trades = re_dict.get("trades") or []
-        if not trades or s.entity.last_seen != today:
-            continue
-        region = re_dict.get("region") or "기타"
-        rows = []
-        for t in sorted(trades, key=lambda t: t.get("amount_manwon", 0),
-                        reverse=True)[:8]:
-            apt = _md(t.get("apt", ""))
-            parts = [p for p in (
-                format_amount_manwon(t.get("amount_manwon", 0)),
-                f"{t['area']:g}㎡" if t.get("area") else "",
-                f"{t['floor']}층" if t.get("floor") else "",
-                t.get("deal_date", ""),
-            ) if p]
-            rows.append(f"- **{apt}** — " + " · ".join(parts))
-        if rows:
-            bucket = regions.setdefault(region, {"rows": [], "max": 0})
-            bucket["rows"].extend(rows)
-            bucket["max"] = max(bucket["max"], max(t.get("amount_manwon", 0)
-                                                   for t in trades))
+    blocks = ["# 🏠 부동산 시장 감시 (Real Estate)", ""]
 
-    if not regions:
-        skipped = source_status.get("real_estate", {}).get("status") == "SKIPPED"
-        note = (
-            "> 국토교통부 아파트매매 실거래 API 키(REAL_ESTATE_API_KEY)가 "
-            "설정되지 않아 수집이 SKIPPED 처리되었습니다. data.go.kr에서 "
-            "서비스키를 발급받아 등록하면 실거래가가 자동으로 채워집니다.\n"
-            if skipped else
-            "> 이번 수집 주기에 감지된 실거래 기록이 없습니다.\n")
-        return f"# 🏠 부동산/경매 기회 (Real Estate)\n\n{note}"
+    status = source_status.get("real_estate", {})
+    if status.get("status") == "SKIPPED" and not scored:
+        blocks.append(
+            "> 공개 부동산 통계 파일 소스가 설정되지 않아 수집이 SKIPPED "
+            "처리되었습니다. 봇접근이 허용된 공식 공개 파일/시트 URL을 "
+            "REAL_ESTATE_SOURCES에 등록하면 자동으로 채워집니다.\n")
+        per_sources = status.get("sources")
+        if per_sources:
+            blocks.append("")
+            blocks.append(_re_per_source_table(per_sources))
+        return "\n".join(blocks) + "\n"
 
-    blocks = ["# 🏠 부동산/경매 기회 (Real Estate)", ""]
-    blocks.append("> 한국 주요 지역 아파트 실거래가 — 실제 체결가 (국토교통부 "
-                  "아파트매매 실거래 API 기준). AI 생성 수치 없음.")
+    re_dicts = [
+        (s, s.entity.real_estate or {})
+        for s in scored if (s.entity.real_estate or {}).get("observations")
+    ]
+
+    if not re_dicts:
+        per_sources = status.get("sources")
+        fail_msg = ""
+        if per_sources:
+            failed = [v for v in per_sources.values() if v.get("status") == "FAILED"]
+            if failed:
+                fail_msg = (" 수집 실패 소스: "
+                            + ", ".join(str(v.get("name", "?")) for v in failed) + ".")
+        blocks.append(
+            "> 감시 중인 지표의 관측 데이터가 아직 없습니다. "
+            f"(수집 상태: {status.get('status', '?')}{fail_msg})\n")
+        if per_sources:
+            blocks.append("")
+            blocks.append(_re_per_source_table(per_sources))
+        return "\n".join(blocks) + "\n"
+
+    blocks.append("> 한국 주요 부동산 지표 — 공식 공개 통계의 실측값. "
+                  "신호는 이전 기간과 비교 가능한 데이터가 있을 때만 생성."
+                  " AI 생성 수치 없음.")
     blocks.append("")
-    for region, bucket in sorted(regions.items(),
-                                 key=lambda kv: kv[1]["max"], reverse=True):
-        blocks.append(f"## {region}")
+
+    for s, re_dict in sorted(
+        re_dicts,
+        key=lambda pair: sorted(
+            (obs.get("period", "") for obs in
+             (pair[1].get("observations") or {}).values()),
+            reverse=True,
+        )[0] if (pair[1].get("observations") or {}) else "",
+        reverse=True,
+    ):
+        observations = re_dict.get("observations") or {}
+        signals_list = re_dict.get("signals") or []
+        name = s.entity.name
+
+        indicator_rows = []
+        for key in sorted(observations):
+            obs = observations[key]
+            ind = _md(obs.get("indicator", ""))
+            region = _md(obs.get("region", ""))
+            val = obs.get("value")
+            period = obs.get("period", "")
+            val_txt = f"{val:g}" if isinstance(val, (int, float)) else (val or "-")
+            src = _md(obs.get("source_name") or obs.get("source_key") or "")
+            indicator_rows.append(
+                f"- **{ind} ({region})** — {val_txt} ({period}"
+                + (f", 출처: {src})" if src else ")"))
+
+        signal_rows = []
+        for sig in signals_list:
+            typ = _md(sig.get("type", ""))
+            period = _md(sig.get("period", ""))
+            change = sig.get("change_pct")
+            change_txt = (f"{change:+.2f}%" if isinstance(change, (int, float))
+                          else "-")
+            conf = sig.get("confidence")
+            conf_txt = f"신뢰도 {conf:g}%" if isinstance(conf, (int, float)) else ""
+            ev = _md(sig.get("evidence", ""))
+            signal_rows.append(
+                f"- **{typ}** ({period}, {change_txt})"
+                + (f", {conf_txt}" if conf_txt else "") + f" — {ev}")
+
+        blocks.append(f"## {_md(name)}")
         blocks.append("")
-        blocks.extend(bucket["rows"])
+        if indicator_rows:
+            blocks.extend(indicator_rows)
+        else:
+            blocks.append("- 관측 데이터 없음")
+        if signal_rows:
+            blocks.append("")
+            blocks.append("**감지된 변화 신호**")
+            blocks.append("")
+            blocks.extend(signal_rows[:12])
         blocks.append("")
+
+    per_sources = status.get("sources")
+    if per_sources:
+        blocks.append("## 소스 상태")
+        blocks.append("")
+        blocks.append(_re_per_source_table(per_sources))
+        blocks.append("")
+
     return "\n".join(blocks).rstrip() + "\n"
+
+
+def _re_per_source_table(per_sources: dict) -> str:
+    rows = ["| 소스 | 상태 | 항목 수 |", "|------|------|---------|"]
+    for key, info in sorted(per_sources.items()):
+        name = _md(str(info.get("name") or key))
+        rows.append(f"| {name} | {info.get('status', '?')} | {info.get('items', 0)} |")
+    return "\n".join(rows)
 
 
 def _tech_trend_candidates(scored: list[ScoredEntity]) -> list[ScoredEntity]:
@@ -590,9 +652,9 @@ def render_markdown_reports(
             "> 이번 수집 주기에 한국 시장 진입 후보로 분류된 글로벌 "
             "제품/기업이 없습니다.\n")
 
-    # Real estate — REAL reported apartment deals from the 국토부 실거래 API.
-    # Scanned over the FULL scored list (like market-entry): a real trade
-    # surfaces regardless of the quality-gated section threshold.
+    # Real estate — 공식 공개 통계 기반 시장 변화 감시. Scanned over the FULL
+    # scored list (like market-entry): an observed indicator surfaces regardless
+    # of the quality-gated section threshold.
     files["real-estate.md"] = _render_real_estate(scored, source_status)
 
     generated = set(files.keys())

@@ -24,8 +24,9 @@ EMAIL_TO = os.environ.get("EMAIL_TO", "")
 
 FRED_API_KEY = os.environ.get("FRED_API_KEY", "")
 DART_API_KEY = os.environ.get("DART_API_KEY", "")
-# data.go.kr 국토교통부_아파트매매 실거래 API 서비스키 (선택). 없으면 SKIPPED.
-REAL_ESTATE_API_KEY = os.environ.get("REAL_ESTATE_API_KEY", "")
+# 부동산은 키가 필요 없는 공개 통계 파일 기반 (REAL_ESTATE_SOURCES, JSON 목록).
+# 자세한 형식은 src/collectors/real_estate/sources.py 참고.
+REAL_ESTATE_SOURCES = os.environ.get("REAL_ESTATE_SOURCES", "")
 
 # Daily execution time (Korea time, Asia/Seoul). GitHub Actions cron is managed
 # separately in .github/workflows/palladium.yml (cron '10 1 * * *' == 10:10 KST).

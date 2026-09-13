@@ -38,7 +38,7 @@ class Opportunity:
     metrics: Metrics = field(default_factory=Metrics)
     tags: list[str] = field(default_factory=list)
     source_ids: list[str] = field(default_factory=list)
-    # Real transaction payload (real_estate collector). See real_estate.py.
+    # Market-watch payload (real_estate collector). See real_estate/ package.
     real_estate: Optional[dict] = None
 
     @property

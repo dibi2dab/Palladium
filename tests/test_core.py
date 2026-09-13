@@ -926,104 +926,158 @@ def test_tech_trend_no_fabrication():
     print("PASS: test_tech_trend_no_fabrication")
 
 
-def test_real_estate_parse_and_format():
-    from src.collectors.real_estate import format_amount_manwon, _parse_trades
+def test_real_estate_csv_parse_and_signals():
+    """Keyless statistics pipeline: CSV → normalized records → change signals."""
+    from src.collectors.real_estate.parser import parse_source
+    from src.collectors.real_estate.signals import detect_changes
 
-    xml = """<?xml version="1.0" encoding="UTF-8"?>
-<response>
-  <body>
-    <items>
-      <item>
-        <거래금액>215,000</거래금액>
-        <건축년도>2010</건축년도>
-        <년>2026</년>
-        <법정동>반포동</법정동>
-        <아파트>래미안퍼스티지</아파트>
-        <월>8</월>
-        <일>15</일>
-        <전용면적>84.9900</전용면적>
-        <층>7</층>
-      </item>
-      <item>
-        <거래금액>1,500</거래금액>
-        <년>2026</년>
-        <월>8</월>
-        <일>2</일>
-        <전용면적>59.9400</전용면적>
-        <층>3</층>
-      </item>
-      <item>
-        <거래금액></거래금액>
-        <년>2026</년>
-        <월>8</월>
-        <일>1</일>
-      </item>
-    </items>
-  </body>
-</response>"""
-    trades = _parse_trades(xml)
-    assert len(trades) == 2
-    t = trades[0]
-    assert t["apt"] == "래미안퍼스티지"
-    assert t["amount_manwon"] == 215000
-    assert t["deal_date"] == "2026-08-15"
-    assert t["area"] == 84.99
-    assert t["floor"] == 7
-    assert t["build_year"] == 2010
-    assert format_amount_manwon(215000) == "21억5,000만 원"
-    assert format_amount_manwon(10000) == "1억 원"
-    assert format_amount_manwon(1500) == "1,500만 원"
-    print("PASS: test_real_estate_parse_and_format")
+    csv_text = (
+        "기간,지역명,항목,수치\n"
+        "202606,전국,아파트 매매가격지수,107.5\n"
+        "202607,전국,아파트 매매가격지수,108.2\n"
+        "202608,전국,아파트 매매가격지수,108.9\n"
+        "202606,서울,아파트 매매가격지수,110.0\n"
+        "202607,서울,아파트 매매가격지수,110.0\n"
+        "202608,서울,아파트 매매가격지수,109.0\n"
+    ).encode("utf-8")
+    records = parse_source("csv", csv_text)
+    assert len(records) == 6
+    assert records[2] == {"period": "202608", "region": "전국",
+                          "item": "아파트 매매가격지수", "value": 108.9}
+
+    signals = detect_changes(records, observed_at="2026-09-11")
+    assert len(signals) == 2
+    by_region = {s["region"]: s for s in signals}
+    # 전국: +0.65% (>=0.5 threshold) → PRICE change, no acceleration.
+    assert by_region["전국"]["type"] == "REAL_ESTATE_PRICE_CHANGE"
+    assert by_region["전국"]["current"] == 108.9
+    assert round(by_region["전국"]["change_pct"], 2) == 0.65
+    assert "acceleration_pct" not in by_region["전국"]
+    # 서울: -0.9% AND an accelerating move (0 → -0.9%) → ACCELERATION type.
+    assert by_region["서울"]["type"] == "REAL_ESTATE_PRICE_ACCELERATION"
+    assert by_region["서울"]["period"] == "202608"
+    print("PASS: test_real_estate_csv_parse_and_signals")
+
+
+def test_real_estate_no_signal_without_comparison():
+    """Insufficient data must NOT produce a fabricated signal."""
+    from src.collectors.real_estate.signals import detect_changes
+
+    one_row = [{"period": "202608", "region": "전국",
+                "item": "아파트 매매가격지수", "value": 108.9}]
+    assert detect_changes(one_row) == []
+    # Zero values and missing period gaps are never extrapolated.
+    zero_prev = [{"period": "202607", "region": "전국",
+                  "item": "아파트 매매가격지수", "value": 0.0},
+                 {"period": "202608", "region": "전국",
+                  "item": "아파트 매매가격지수", "value": 5.0}]
+    assert detect_changes(zero_prev) == []
+    print("PASS: test_real_estate_no_signal_without_comparison")
+
+
+def test_real_estate_collector_graceful():
+    """Per-source failure is graceful and never blocks good sources."""
+    from unittest import mock
+    from src.collectors.real_estate import collector as re_module
+    from src.collectors.real_estate.collector import RealEstateCollector
+
+    csv_bytes = (
+        "기간,지역명,항목,수치\n"
+        "202607,전국,아파트 매매가격지수,108.2\n"
+        "202608,전국,아파트 매매가격지수,108.9\n"
+    ).encode("utf-8")
+
+    # A) One dead source alone → empty list, FAILED detail, NO exception.
+    c1 = RealEstateCollector()
+    with mock.patch.object(re_module, "configured_sources",
+                           return_value=[{"key": "bad", "name": "Bad", "kind": "csv",
+                                          "url": "", "encoding": "utf-8"}]):
+        items = c1.collect()
+    assert items == []
+    assert c1.skipped is False
+    assert c1.source_status["bad"]["status"] == "FAILED"
+
+    # B) Dead + healthy source mixed → healthy rows are still collected.
+    c2 = RealEstateCollector()
+    sources = [
+        {"key": "bad", "name": "Bad", "kind": "csv", "url": "",
+         "encoding": "utf-8"},
+        {"key": "good", "name": "K", "kind": "csv", "url": "https://x/k.csv",
+         "encoding": "utf-8"},
+    ]
+    def fake_fetch(src):
+        if not src.get("url"):
+            raise RuntimeError("source url is empty")
+        return csv_bytes
+
+    with mock.patch.object(re_module, "configured_sources", return_value=sources), \
+         mock.patch.object(re_module, "fetch_source", side_effect=fake_fetch):
+        items = c2.collect()
+    assert len(items) == 1
+    assert items[0].name == "아파트 매매가격지수 (전국)"
+    assert c2.source_status["good"]["status"] == "OK"
+    assert c2.source_status["bad"]["status"] == "FAILED"
+    assert items[0].real_estate["signals"][0]["type"] == "REAL_ESTATE_PRICE_CHANGE"
+
+    # C) No sources configured → SKIPPED, not a failure.
+    c3 = RealEstateCollector()
+    with mock.patch.object(re_module, "configured_sources", return_value=[]):
+        assert c3.collect() == []
+    assert c3.skipped is True
+    print("PASS: test_real_estate_collector_graceful")
 
 
 def test_real_estate_report_rule():
     from src.reports.markdown_report import render_markdown_reports
-    from src import timeutil
 
-    re_dict = {
-        "region": "강남구",
-        "trades": [
-            {"apt": "래미안퍼스티지", "area": 84.99, "floor": 7,
-             "build_year": 2010, "amount_manwon": 215000,
-             "deal_date": "2026-08-15"},
-            {"apt": "반포자이", "amount_manwon": 120000,
-             "deal_date": "2026-08-10"},
-        ],
+    obs = {
+        "아파트 매매가격지수::전국": {
+            "indicator": "아파트 매매가격지수", "region": "전국",
+            "period": "202608", "value": 108.9, "unit": "측정값",
+            "source_name": "K", "source_url": "https://x",
+            "series": [{"period": "202607", "value": 108.2},
+                       {"period": "202608", "value": 108.9}],
+            "updated_at": "2026-09-11",
+        },
     }
-    today = timeutil.date_kst()
-    listed = mk_entity("re1", "래미안퍼스티지 (강남구)", "Real Estate",
-                       is_korean=True, real_estate=re_dict, last_seen=today,
-                       signal_sources=["real_estate"])
-    stale = mk_entity("re2", "구라미 (강남구)", "Real Estate", is_korean=True,
-                      real_estate=re_dict, last_seen="2026-08-01",
-                      signal_sources=["real_estate"])
-    items = [
-        ScoredEntity(listed, ScoreBreakdown(news=2), confidence=40),
-        ScoredEntity(stale, ScoreBreakdown(news=2), confidence=40),
-    ]
+    sig = {
+        "type": "REAL_ESTATE_PRICE_CHANGE", "item": "아파트 매매가격지수",
+        "region": "전국", "period": "202608", "current": 108.9, "prev": 108.2,
+        "change_pct": 0.647, "unit": "측정값 (기간 대비 %)", "kind": "PRICE",
+        "confidence": 55.2,
+        "evidence": "전국 아파트 매매가격지수: 현재 108.9 (기간 202608) vs "
+                    "이전 108.2 (기간 202607) — +0.65%",
+        "observed_at": "2026-09-11",
+    }
+    ent = mk_entity("re1", "아파트 매매가격지수 (전국)", "Real Estate",
+                    real_estate={"observations": obs, "signals": [sig]})
+    items = [ScoredEntity(ent, ScoreBreakdown(news=2), confidence=40)]
     files = render_markdown_reports(
         [], items, [], [], [], {}, datetime(2026, 9, 11, 10, 10),
         "2026-09-10 10:10 ~ 2026-09-11 10:10 KST", [], [],
     )
     md = files["real-estate.md"]
-    assert "래미안퍼스티지" in md and "구라미" not in md
-    assert "21억5,000만 원" in md
-    assert "## 강남구" in md
+    assert "아파트 매매가격지수 (전국)" in md
+    assert "108.9" in md and "202608" in md
+    assert "REAL_ESTATE_PRICE_CHANGE" in md
+    assert "전국 아파트 매매가격지수" in md
 
-    # No real_estate rows at all → explicit empty-state.
+    # No observations at all → explicit empty-state (no fabricated rows).
     empty = render_markdown_reports(
         [], [], [], [], [], {}, datetime(2026, 9, 11, 10, 10),
         "2026-09-10 10:10 ~ 2026-09-11 10:10 KST", [], [],
     )
-    assert "감지된 실거래 기록이 없습니다" in empty["real-estate.md"]
+    assert "없습니다" in empty["real-estate.md"]
 
-    # API key missing → SKIPPED note about the key.
+    # Sources not configured → SKIPPED note about keyless config, NOT about any
+    # API key.
     skipped = render_markdown_reports(
         [], [], [], [], [], {"real_estate": {"status": "SKIPPED", "items": 0}},
         datetime(2026, 9, 11, 10, 10),
         "2026-09-10 10:10 ~ 2026-09-11 10:10 KST", [], [],
     )
-    assert "REAL_ESTATE_API_KEY" in skipped["real-estate.md"]
+    assert "REAL_ESTATE_SOURCES" in skipped["real-estate.md"]
+    assert "REAL_ESTATE_API_KEY" not in skipped["real-estate.md"]
     print("PASS: test_real_estate_report_rule")
 
 
@@ -1142,7 +1196,9 @@ if __name__ == "__main__":
     test_tech_trend_no_fabrication()
     test_market_entry_brand_extraction()
     test_market_entry_report_rule()
-    test_real_estate_parse_and_format()
+    test_real_estate_csv_parse_and_signals()
+    test_real_estate_no_signal_without_comparison()
+    test_real_estate_collector_graceful()
     test_real_estate_report_rule()
     test_monthly_archive_pack_and_ordering()
     test_previous_month_kst()

@@ -37,7 +37,7 @@ from src.collectors.reddit import RedditCollector
 from src.collectors.funding import FundingCollector
 from src.collectors.korea import KoreaNewsCollector, DartCollector
 from src.collectors.market_entry import MarketEntryCollector
-from src.collectors.real_estate import RealEstateCollector, format_amount_manwon
+from src.collectors.real_estate import RealEstateCollector
 from src.intelligence.entities import EntityManager
 from src.intelligence.signals import SignalManager
 from src.intelligence.scoring import Scorer, ScoredEntity
@@ -101,6 +101,11 @@ def main():
                     source_status[name] = {"status": "SKIPPED", "items": 0}
                 else:
                     source_status[name] = {"status": "OK", "items": len(items)}
+            # Collector-level per-source detail (e.g. real_estate) is nested so
+            # reports can show which individual endpoints failed.
+            per_source = getattr(collector, "source_status", None)
+            if per_source:
+                source_status[name]["sources"] = per_source
             all_opportunities.extend(items)
         except Exception as e:
             warnings.append(f"{name}: {e}")
@@ -253,23 +258,44 @@ def _sync_github_metrics(entity, opp):
 
 
 def _sync_real_estate(entity, opp):
-    """Store ONLY real reported apartment transactions (no fabrication).
+    """Store ONLY real observed statistics (no fabrication).
 
-    Merges this cycle's deals into the entity's accumulated trade list,
-    deduped by (apt, deal_date, price) so re-collecting the same month does
-    not duplicate rows across days.
+    Accumulates the latest observation per (indicator, region) key and a
+    deduped, capped signal list. Series are already capped at collection time,
+    so storage does not grow unbounded with repeated runs.
     """
     data = getattr(opp, "real_estate", None)
     if opp.source != "real_estate" or not data:
         return
     re_dict = dict(entity.real_estate or {})
-    re_dict.setdefault("region", data.get("region", ""))
-    trades = list(re_dict.get("trades", []))
-    key = (data.get("apt"), data.get("deal_date"), data.get("amount_manwon"))
-    if not any((t.get("apt"), t.get("deal_date"), t.get("amount_manwon")) == key
-               for t in trades):
-        trades.append(data)
-    re_dict["trades"] = trades[-80:]
+    observations = dict(re_dict.get("observations") or {})
+
+    key = f"{data.get('indicator', '')}::{data.get('region', '')}"
+    observations[key] = {
+        "indicator": data.get("indicator", ""),
+        "region": data.get("region", ""),
+        "period": data.get("period", ""),
+        "value": data.get("value"),
+        "unit": data.get("unit", ""),
+        "source_key": data.get("source_key", ""),
+        "source_name": data.get("source_name", ""),
+        "source_url": data.get("source_url", ""),
+        "series": (data.get("series") or [])[-12:],
+        "updated_at": timeutil.date_kst(),
+    }
+
+    signals_list = []
+    seen: set[str] = set()
+    existing = list(re_dict.get("signals") or [])
+    for s in existing + (data.get("signals") or []):
+        dedupe = (f"{s.get('type')}|{s.get('period')}|{s.get('item')}|"
+                  f"{s.get('region')}")
+        if dedupe in seen:
+            continue
+        seen.add(dedupe)
+        signals_list.append(s)
+    re_dict["observations"] = observations
+    re_dict["signals"] = signals_list[-50:]
     entity.real_estate = re_dict or None
 
 
@@ -312,16 +338,17 @@ def _generate_signals(opportunities, entities, signals):
             signals.add_or_merge(entity.id, cat, opp.source, desc, 1, opp.url, key)
 
         if opp.source == "real_estate" and opp.real_estate:
-            re_data = opp.real_estate
-            signals.add_or_merge(
-                entity.id, "real_estate", opp.source,
-                f"{re_data.get('region', '')} {re_data.get('apt', '')}: "
-                f"실거래 {format_amount_manwon(re_data.get('amount_manwon', 0))} "
-                f"({re_data.get('deal_date', '')})",
-                1, opp.url,
-                f"re:{re_data.get('region_code', '')}:"
-                f"{re_data.get('apt', '')}:{re_data.get('deal_date', '')}",
-            )
+            # Emit one signal per REAL change detected by the collector.
+            # The dedupe key is period-scoped so the same month never boosts
+            # twice, while a genuinely new month adds a new signal.
+            for sig in (opp.real_estate.get("signals") or []):
+                signals.add_or_merge(
+                    entity.id, "real_estate", opp.source,
+                    sig.get("evidence") or sig.get("description", ""),
+                    1, opp.url,
+                    f"re:{sig.get('type')}:{sig.get('region')}:"
+                    f"{sig.get('period')}:{sig.get('item')}",
+                )
 
         if opp.metrics.github_stars and opp.metrics.github_stars > 100:
             signals.add_or_merge(entity.id, "github", opp.source,

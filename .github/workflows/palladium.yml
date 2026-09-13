@@ -39,7 +39,6 @@ jobs:
           AI_ENABLED: 'false'
           FRED_API_KEY: ${{ secrets.FRED_API_KEY || '' }}
           DART_API_KEY: ${{ secrets.DART_API_KEY || '' }}
-          REAL_ESTATE_API_KEY: ${{ secrets.REAL_ESTATE_API_KEY || '' }}
           HN_MIN_POINTS: '50'
           HN_HOURS_BACK: '48'
           REPO_URL: 'https://github.com/dibi2dab/palladium'
