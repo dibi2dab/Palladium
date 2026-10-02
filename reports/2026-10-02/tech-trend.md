@@ -1,0 +1,63 @@
+# 기술 트렌드 (Tech Trend)
+
+> GitHub 트렌딩에서 실측된 인기 프로젝트. 수치는 실제 수집값이며 AI로 생성하지 않습니다.
+
+### 1. [debpalash/VoiceStudio](https://github.com/debpalash/VoiceStudio) — 오늘 +4,758 stars · 총 51,526 stars · 5,745 forks · Python
+
+> VoiceStudio is the open-source, fully-local ElevenLabs alternative — voice cloning, voice design, video dubbing, dictation, transcription & audiobook creation in 646 languages.
+- 분야: Software
+
+### 2. [vectorize-io/hindsight](https://github.com/vectorize-io/hindsight) — 오늘 +4,561 stars · 총 43,181 stars · 5,808 forks · Python
+
+> Hindsight: Agent Memory That Learns
+- 분야: Software
+
+### 3. [ayghri/i-have-adhd](https://github.com/ayghri/i-have-adhd) — 오늘 +3,882 stars · 총 43,595 stars · 2,487 forks · Python
+
+> A skill to stop your coding agent from burying the answer. ADHD-friendly output.
+- 분야: Software
+
+### 4. [cloudflare/security-audit-skill](https://github.com/cloudflare/security-audit-skill) — 오늘 +3,607 stars · 총 18,293 stars · 1,024 forks · JavaScript
+
+> A coding-agent skill for multi-phase security audits with independently verified, machine-readable findings
+- 분야: Security
+
+### 5. [alibaba/open-code-review](https://github.com/alibaba/open-code-review) — 오늘 +3,286 stars · 총 37,831 stars · 2,695 forks · Go
+
+> Fast, efficient, battle-tested at Alibaba's scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, precise line-level comments, built-in multi-language r
+- 분야: AI/ML
+
+### 6. [paperclipai/paperclip](https://github.com/paperclipai/paperclip) — 오늘 +3,197 stars · 총 94,746 stars · 16,086 forks · TypeScript
+
+> The open-source app everyone uses to manage agents at work
+- 분야: Software
+
+### 7. [hydra-db/hydradb](https://github.com/hydra-db/hydradb) — 오늘 +2,809 stars · 총 12,899 stars · 5,594 forks · Rust
+
+> HydraDB - fast graph database on object storage
+- 분야: Database
+
+### 8. [bilawalsidhu/gods-eye-view](https://github.com/bilawalsidhu/gods-eye-view) — 오늘 +2,680 stars · 총 46,295 stars · 9,474 forks · JavaScript
+
+> A spy satellite simulator in your browser, except the data is real. Live open source spatial intelligence on a photorealistic 3D globe.
+- 분야: Software
+
+### 9. [NVIDIA/OpenShell](https://github.com/NVIDIA/OpenShell) — 오늘 +2,456 stars · 총 14,137 stars · 1,635 forks · Rust
+
+> OpenShell is the safe, private runtime for autonomous AI agents.
+- 분야: AI/ML
+
+### 10. [google/ax](https://github.com/google/ax) — 오늘 +2,305 stars · 총 11,626 stars · 558 forks · Go
+
+> Google's open agentic orchestration runtime
+- 분야: Software
+
+### 11. [JustVugg/colibri](https://github.com/JustVugg/colibri) — 오늘 +2,173 stars · 총 35,859 stars · 3,772 forks · C
+
+> Run frontier MoE models on hardware you already own — pure C, zero deps, experts streamed from disk. Tiny engine, immense model. 🐦
+- 분야: AI/ML
+
+### 12. [ifixai-ai/iFixAi](https://github.com/ifixai-ai/iFixAi) — 오늘 +1,492 stars · 총 18,722 stars · 1,368 forks · Python
+
+> Independent Auditing of AI Agents. Run by human or the agent itself, to answer the most crucial question in the AI Agent Economy. Is the agent doing what is supposed to do? With iF
+- 분야: AI/ML
