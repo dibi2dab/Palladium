@@ -1,7 +1,9 @@
 from __future__ import annotations
 
+import gzip
 import json
 import logging
+import os
 from pathlib import Path
 
 from src.config import DATA_DIR
@@ -44,11 +46,38 @@ class JsonStore:
     def save_signals(self, signals: list):
         self.save("signals.json", signals)
 
+    # History is the largest state file (tens of MB and growing). Keep it
+    # gzip-compressed so a single daily commit stays well below GitHub's
+    # 100 MB per-file push limit. The compression is transparent to callers.
+    HISTORY_FILE = "history.json.gz"
+    LEGACY_HISTORY_FILE = "history.json"
+
     def load_history(self) -> dict:
-        return self.load("history.json", {})
+        path = self.data_dir / self.HISTORY_FILE
+        if path.exists():
+            try:
+                with gzip.open(path, "rt", encoding="utf-8") as f:
+                    return json.load(f)
+            except (OSError, EOFError, json.JSONDecodeError) as e:
+                logger.warning(f"Failed to load {path}: {e}")
+                return {}
+
+        # Fallback for repositories that still have the pre-gzip file.
+        legacy = self.data_dir / self.LEGACY_HISTORY_FILE
+        if legacy.exists():
+            return self.load(self.LEGACY_HISTORY_FILE, {})
+        return {}
 
     def save_history(self, history: dict):
-        self.save("history.json", history)
+        path = self.data_dir / self.HISTORY_FILE
+        tmp = path.with_name(path.name + ".tmp")
+        with gzip.open(tmp, "wt", encoding="utf-8") as f:
+            json.dump(history, f, ensure_ascii=False, separators=(",", ":"))
+        os.replace(tmp, path)
+
+        # Drop the pre-gzip file so it can never be committed again.
+        (self.data_dir / self.LEGACY_HISTORY_FILE).unlink(missing_ok=True)
+        logger.debug(f"Saved {path}")
 
     def load_watchlist(self) -> list:
         return self.load("watchlist.json", [])

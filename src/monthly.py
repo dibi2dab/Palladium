@@ -32,7 +32,7 @@ METADATA_NAME = "metadata/archive.json"
 
 # Current analysis state files bundled into every monthly archive so the
 # opportunity/signal history survives the in-repo cleanup (§53).
-STATE_FILES = ["entities.json", "signals.json", "history.json", "meta.json"]
+STATE_FILES = ["entities.json", "signals.json", "history.json.gz", "meta.json"]
 
 
 def previous_month_kst(now=None) -> str:
@@ -53,11 +53,15 @@ def _gh_repo_from_url(url: str) -> str:
 def pack_month(month: str, data_dir: Path = DATA_DIR,
                reports_dir: Path = REPORTS_DIR,
                archive_dir: Path | None = None) -> Path:
-    """Bundle reports/<month>/ + data/raw_<month>-*.json and a state snapshot
-    into archives/palladium-<month>.zip. Returns the zip path."""
-    report_dir = reports_dir / month
+    """Bundle reports/<month>-*/ + data/raw_<month>-*.json and a state snapshot
+    into archives/palladium-<month>.zip. Returns the zip path.
+
+    Daily reports live in per-day folders (reports/YYYY-MM-DD), so a month is
+    matched by the ``<month>-*`` prefix rather than a single ``<month>`` dir.
+    """
+    report_dirs = sorted(p for p in reports_dir.glob(f"{month}-*") if p.is_dir())
     raw_files = sorted(data_dir.glob(f"raw_{month}*.json"))
-    if not report_dir.is_dir() and not raw_files:
+    if not report_dirs and not raw_files:
         raise FileNotFoundError(f"No working data found for archive month {month}")
 
     out = (archive_dir or ARCHIVES_DIR) / f"{ARCHIVE_PREFIX}{month}.zip"
@@ -72,7 +76,7 @@ def pack_month(month: str, data_dir: Path = DATA_DIR,
         manifest.append(str(rel).replace("\\", "/"))
 
     with zipfile.ZipFile(out, "w", zipfile.ZIP_DEFLATED) as z:
-        if report_dir.is_dir():
+        for report_dir in report_dirs:
             for p in sorted(r for r in report_dir.rglob("*") if r.is_file()):
                 _add(p, p.relative_to(reports_dir.parent))
         for raw in raw_files:
@@ -139,10 +143,10 @@ def delete_month_working_data(month: str, data_dir: Path = DATA_DIR,
                               reports_dir: Path = REPORTS_DIR) -> int:
     """Remove the month's working data from the repo. Returns removed count."""
     removed = 0
-    report_dir = reports_dir / month
-    if report_dir.is_dir():
-        shutil.rmtree(report_dir)
-        removed += 1
+    for report_dir in sorted(reports_dir.glob(f"{month}-*")):
+        if report_dir.is_dir():
+            shutil.rmtree(report_dir)
+            removed += 1
     for raw in data_dir.glob(f"raw_{month}*.json"):
         raw.unlink(missing_ok=True)
         removed += 1

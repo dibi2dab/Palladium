@@ -9,6 +9,8 @@ dist/
 build/
 data/raw_*.json
 data/opportunities.json
+# Uncompressed history is generated locally; the tracked file is history.json.gz
+data/history.json
 archives/
 reports/*.html
 .DS_Store
