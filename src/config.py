@@ -21,6 +21,9 @@ SMTP_PORT = int(os.environ.get("SMTP_PORT", "587"))
 SMTP_USERNAME = os.environ.get("SMTP_USERNAME", "")
 SMTP_PASSWORD = os.environ.get("SMTP_PASSWORD", "")
 EMAIL_TO = os.environ.get("EMAIL_TO", "")
+# Contact address used in outbound HTTP User-Agent headers (e.g. SEC EDGAR).
+# Kept out of the source tree so the public repo never exposes a personal email.
+CONTACT_EMAIL = os.environ.get("CONTACT_EMAIL", "")
 
 FRED_API_KEY = os.environ.get("FRED_API_KEY", "")
 DART_API_KEY = os.environ.get("DART_API_KEY", "")

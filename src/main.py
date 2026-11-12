@@ -81,8 +81,6 @@ def main():
     signals = SignalManager(store)
     breakout = BreakoutDetector(store)
 
-    meta = store.load_meta()
-    prev_collected_at = meta.get("last_collected_at", "")
     generated_at = timeutil.now_kst()
 
     # 1. Collect
@@ -225,7 +223,7 @@ def main():
     logger.info("[OK] Data saved")
 
     # 10. Send report
-    window = _collection_window(prev_collected_at, generated_at)
+    window = _collection_window(generated_at)
     _send_report(store, entities, signals, breakout, sections, breakouts, warnings,
                  watchlist, macro_signals, scored,
                  generated_at=generated_at, collection_window=window,
@@ -731,14 +729,13 @@ def _save_raw_data(scored: list[ScoredEntity]):
     logger.info(f"Raw data saved: {path}")
 
 
-def _collection_window(prev_iso: str, generated_at) -> str:
-    """'2026-09-10 10:10 ~ 2026-09-11 10:10 KST' — never exposes UTC."""
-    try:
-        start = datetime.fromisoformat(prev_iso) if prev_iso else None
-    except ValueError:
-        start = None
-    if start is None:
-        start = (generated_at - timedelta(days=1))
+def _collection_window(generated_at) -> str:
+    """'2026-11-11 10:10 ~ 2026-11-13 10:10 KST' — always the last 2 days.
+
+    The window is fixed at 48 hours instead of relying on the previous run's
+    timestamp, so a missed/failed run can never inflate it to several days.
+    """
+    start = generated_at - timedelta(days=2)
     return (f"{timeutil.kst_compact(start)} ~ "
             f"{timeutil.kst_compact(generated_at)} KST")
 

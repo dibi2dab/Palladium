@@ -8,6 +8,7 @@ import requests
 from bs4 import BeautifulSoup
 
 from src.collectors.base import BaseCollector
+from src.config import CONTACT_EMAIL, REPO_URL
 from src.models import Opportunity, Metrics
 
 
@@ -34,7 +35,7 @@ class MarketCollector(BaseCollector):
             end = datetime.now().strftime("%Y-%m-%d")
             url = f"{SEC_EDGAR_API}/search-index?q={q}&dateRange=custom&startdt={start}&enddt={end}&forms=8-K,10-K,SC+13D&limit=40"
             resp = requests.get(url, timeout=20, headers={
-                "User-Agent": "OpportunityScanner/1.0 (jjuwoo1117@gmail.com)",
+                "User-Agent": f"OpportunityScanner/1.0 ({CONTACT_EMAIL or REPO_URL})",
                 "Accept": "application/json",
             })
             if resp.status_code == 200:

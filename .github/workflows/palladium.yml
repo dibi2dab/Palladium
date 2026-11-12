@@ -36,6 +36,7 @@ jobs:
           SMTP_USERNAME: ${{ secrets.SMTP_USERNAME }}
           SMTP_PASSWORD: ${{ secrets.SMTP_PASSWORD }}
           EMAIL_TO: ${{ secrets.EMAIL_TO }}
+          CONTACT_EMAIL: ${{ secrets.CONTACT_EMAIL }}
           AI_ENABLED: 'false'
           FRED_API_KEY: ${{ secrets.FRED_API_KEY || '' }}
           DART_API_KEY: ${{ secrets.DART_API_KEY || '' }}

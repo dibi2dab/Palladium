@@ -38,6 +38,7 @@ jobs:
           SMTP_USERNAME: ${{ secrets.SMTP_USERNAME }}
           SMTP_PASSWORD: ${{ secrets.SMTP_PASSWORD }}
           EMAIL_TO: ${{ secrets.EMAIL_TO }}
+          CONTACT_EMAIL: ${{ secrets.CONTACT_EMAIL }}
           REPO_URL: 'https://github.com/dibi2dab/palladium'
           REPO_BRANCH: 'main'
         run: |
