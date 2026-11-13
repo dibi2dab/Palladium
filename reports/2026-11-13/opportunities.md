@@ -2,7 +2,7 @@
 
 ## 최우선 투자 기회
 
-### London’s Easol secures €26.78 million Series A extension as it launches AI agents for experience businesses — 87점 · PRIORITY · INVEST · 신뢰도 63%
+### London’s Easol secures €26.78 million Series A extension as it launches AI agents for experience businesses — 88점 · PRIORITY · INVEST · 신뢰도 63%
 
 - 종류: 스타트업
 - 이벤트: 투자 유치, 제품 출시
@@ -18,7 +18,7 @@
 - **투자/성장**: 2026-10-31 · 시리즈 A · 2,678만 유로 · 확정 · 2026-11-01 · 시리즈 A · 2,678만 유로 · 확정 · 2026-11-02 · 시리즈 A · 2,678만 유로 · 확정
 - **주요 투자자**: y combinator
 - **액셀러레이터**: y combinator
-- **점수 변화**: 87 → 87
+- **점수 변화**: 87 → 88 (+1)
 - **교차 신호**: 투자 유치, 제품 출시 (CONVERGENCE)
 
 **근거**
@@ -67,7 +67,7 @@
 
 ---
 
-### Blacksmith hits unicorn valuation after Sequoia leads Series C — 78점 · ATTENTION · INVEST · 신뢰도 75%
+### Blacksmith hits unicorn valuation after Sequoia leads Series C — 79점 · ATTENTION · INVEST · 신뢰도 75%
 
 - 종류: 스타트업
 - 이벤트: 투자 유치
@@ -82,7 +82,7 @@
 
 - **투자/성장**: 2026-10-25 · 시리즈 C · 6,600만 달러 · 확정 · 2026-10-26 · 시리즈 C · 6,600만 달러 · 확정 · 2026-10-27 · 시리즈 C · 6,600만 달러 · 확정
 - **주요 투자자**: sequoia
-- **점수 변화**: 78 → 78
+- **점수 변화**: 78 → 79 (+1)
 
 **근거**
 
@@ -130,7 +130,7 @@
 
 ---
 
-### OpenAI valued at $1.25 trillion, as rival Anthropic nears its IPO — 75점 · ATTENTION · INVEST · 신뢰도 67%
+### OpenAI valued at $1.25 trillion, as rival Anthropic nears its IPO — 76점 · ATTENTION · INVEST · 신뢰도 67%
 
 - 종류: 스타트업
 - 이벤트: 투자 유치, 상장(IPO)
@@ -138,14 +138,14 @@
 - 판정: ATTENTION
 - 기회 유형: INVEST (투자)
 - 근거 품질: MEDIUM(보도·커뮤니티 수준)
-- 궤적: STABLE(안정) · 생애주기: BREAKOUT(돌파)
+- 궤적: GROWING(상승) · 생애주기: BREAKOUT(돌파)
 - 신규/재확인: 재확인
 
 > <figure>  <img alt="" data-caption="" data-portal-copyright="Image: The Verge" data-has-syndication-rights="1" src="https://platform.theverge.com/wp-content/uploads/sites/2/2026/0
 
 - **투자/성장**: 2026-11-07 · 상장 · 110억 달러 · 확정 · 2026-11-08 · 상장 · 110억 달러 · 확정
 - **주요 투자자**: nea
-- **점수 변화**: 75 → 75
+- **점수 변화**: 75 → 76 (+1)
 
 **근거**
 
@@ -187,7 +187,7 @@
 
 ---
 
-### From Rohlik to enterprise AI: Tomáš Čupr's Duvo raises $32M Series A — 72점 · ATTENTION · INVEST · 신뢰도 67%
+### From Rohlik to enterprise AI: Tomáš Čupr's Duvo raises $32M Series A — 73점 · ATTENTION · INVEST · 신뢰도 67%
 
 - 종류: 스타트업
 - 이벤트: 투자 유치
@@ -202,7 +202,7 @@
 
 - **투자/성장**: 2026-10-17 · 시리즈 A · 3,200만 달러 · 확정 · 2026-10-18 · 시리즈 A · 3,200만 달러 · 확정 · 2026-10-19 · 시리즈 A · 3,200만 달러 · 확정
 - **주요 투자자**: index ventures
-- **점수 변화**: 72 → 72
+- **점수 변화**: 72 → 73 (+1)
 
 **근거**
 
@@ -247,7 +247,7 @@
 
 ---
 
-### AI chip startup Tenstorrent raised $1.5 billion in Series E funding - Quartz — 71점 · ATTENTION · INVEST · 신뢰도 62%
+### AI chip startup Tenstorrent raised $1.5 billion in Series E funding - Quartz — 72점 · ATTENTION · INVEST · 신뢰도 62%
 
 - 종류: 스타트업
 - 이벤트: 투자 유치
@@ -261,7 +261,7 @@
 > AI chip startup Tenstorrent raised $1.5 billion in Series E funding - Quartz
 
 - **투자/성장**: 2026-10-20 · 성장 후기 · 15억 달러 · 확정 · 2026-10-21 · 성장 후기 · 15억 달러 · 확정
-- **점수 변화**: 71 → 71
+- **점수 변화**: 71 → 72 (+1)
 
 **근거**
 
@@ -300,7 +300,7 @@
 
 ## 글로벌 스타트업 & 벤처
 
-### Year-old AI startup Flapping Airplanes raises $1 billion in Series A funding - The Daily Star — 71점 · ATTENTION · INVEST · 신뢰도 62%
+### Year-old AI startup Flapping Airplanes raises $1 billion in Series A funding - The Daily Star — 72점 · ATTENTION · INVEST · 신뢰도 62%
 
 - 종류: 스타트업
 - 이벤트: 투자 유치
@@ -314,7 +314,7 @@
 > Year-old AI startup Flapping Airplanes raises $1 billion in Series A funding - The Daily Star
 
 - **투자/성장**: 2026-10-23 · 시리즈 A · 10억 달러 · 확정 · 2026-10-25 · 시리즈 A · 10억 달러 · 확정 · 2026-10-26 · 시리즈 A · 10억 달러 · 확정
-- **점수 변화**: 71 → 71
+- **점수 변화**: 71 → 72 (+1)
 
 **근거**
 
@@ -353,7 +353,7 @@
 
 ---
 
-### Optivolt Raises $32M Series A to Build the Brain for Solar Panels - Techstars — 70점 · ATTENTION · INVEST · 신뢰도 63%
+### Optivolt Raises $32M Series A to Build the Brain for Solar Panels - Techstars — 71점 · ATTENTION · INVEST · 신뢰도 63%
 
 - 종류: 스타트업
 - 이벤트: 투자 유치
@@ -369,7 +369,7 @@
 - **투자/성장**: 2026-10-23 · 시리즈 A · 3,200만 달러 · 확정
 - **주요 투자자**: techstars
 - **액셀러레이터**: techstars
-- **점수 변화**: 70 → 70
+- **점수 변화**: 70 → 71 (+1)
 
 **근거**
 
@@ -402,7 +402,7 @@
 
 ---
 
-### Sequoia once rejected Whop. Now it’s leading a $205 million funding round - The American Bazaar — 70점 · ATTENTION · INVEST · 신뢰도 67%
+### Sequoia once rejected Whop. Now it’s leading a $205 million funding round - The American Bazaar — 71점 · ATTENTION · INVEST · 신뢰도 67%
 
 - 종류: 스타트업
 - 이벤트: 투자 유치
@@ -417,7 +417,7 @@
 
 - **투자/성장**: 2026-10-24 · 확인 필요 · 약 2.05억 달러 · 확정 · 2026-10-25 · 확인 필요 · 약 2.05억 달러 · 확정
 - **주요 투자자**: sequoia
-- **점수 변화**: 70 → 70
+- **점수 변화**: 70 → 71 (+1)
 
 **근거**
 
@@ -453,7 +453,7 @@
 
 ---
 
-### Northwood Space raises $375M Series C at a $2B valuation from a16z and DFJ Growth - TechCrunch — 68점 · WATCH · INVEST · 신뢰도 59%
+### Northwood Space raises $375M Series C at a $2B valuation from a16z and DFJ Growth - TechCrunch — 69점 · WATCH · INVEST · 신뢰도 59%
 
 - 종류: 스타트업
 - 이벤트: 투자 유치
@@ -468,7 +468,7 @@
 
 - **투자/성장**: 2026-11-03 · 시리즈 C · 약 3.75억 달러 · 확정
 - **주요 투자자**: a16z
-- **점수 변화**: 68 → 68
+- **점수 변화**: 68 → 69 (+1)
 
 **근거**
 
@@ -501,7 +501,7 @@
 
 ---
 
-### Northwood hits $2B valuation: Ex-Disney star’s ground station startup raises $375M from a16z and DFJ Growth - Tech Funding News — 68점 · WATCH · INVEST · 신뢰도 59%
+### Northwood hits $2B valuation: Ex-Disney star’s ground station startup raises $375M from a16z and DFJ Growth - Tech Funding News — 69점 · WATCH · INVEST · 신뢰도 59%
 
 - 종류: 스타트업
 - 이벤트: 투자 유치
@@ -516,7 +516,7 @@
 
 - **투자/성장**: 2026-11-04 · 확인 필요 · 20억 달러 · 확정 · 2026-11-05 · 확인 필요 · 20억 달러 · 확정
 - **주요 투자자**: a16z
-- **점수 변화**: 68 → 68
+- **점수 변화**: 68 → 69 (+1)
 
 **근거**
 
@@ -551,36 +551,36 @@
 
 ---
 
-### German startup 1Komma5Grad secures $1.35 billion valuation in new financing round - TradingView — 67점 · WATCH · INVEST · 신뢰도 59%
+### UK chip startup Fractile valued at $7bn following $720m Series C funding round - Data Center Dynamics — 68점 · WATCH · INVEST · 신뢰도 62%
 
 - 종류: 스타트업
 - 이벤트: 투자 유치
-- 단계: 확인 필요
+- 단계: 시리즈 C
 - 판정: WATCH
 - 기회 유형: INVEST (투자)
 - 근거 품질: MEDIUM(보도·커뮤니티 수준)
-- 궤적: GROWING(상승) · 생애주기: WATCH(관찰)
+- 궤적: STABLE(안정) · 생애주기: WATCH(관찰)
 - 신규/재확인: 재확인
 
-> German startup 1Komma5Grad secures $1.35 billion valuation in new financing round - TradingView
+> UK chip startup Fractile valued at $7bn following $720m Series C funding round - Data Center Dynamics
 
-- **투자/성장**: 2026-10-12 · 확인 필요 · 약 13.5억 달러 · 확정 · 2026-10-13 · 확인 필요 · 약 13.5억 달러 · 확정
-- **주요 투자자**: gv
-- **점수 변화**: 67 → 67
+- **투자/성장**: 2026-11-13 · 시리즈 C · 70억 달러 · 확정
+- **점수 변화**: 63 → 68 (+5)
 
 **근거**
 
+- 다수의 투자 유치 신호/출처
 - 초대형 투자 유치 (5억 달러 이상 추정)
-- 다수의 확정 투자 기록
-- 주요 투자자 참여 (Gv)
-- 언론 언급
+- 투자 유치 신호
+- 언론 보도 확인
 - 투자 규모 증가 추세
 - 확인된 성장 신호: 2종
+- 교차 출처 확인: 2곳
 - 관련 거시경제 순풍 확인
 
 **왜 주목?**
 
-단계에서 약 13.5억 달러 규모의 투자 유치가 확인됐습니다. 주요 투자자가 참여했습니다. 성장 모멘텀이 감지됐습니다.
+시리즈 C 단계에서 70억 달러 규모의 투자 유치가 확인됐습니다. 성장 모멘텀이 감지됐습니다.
 
 **투자 관점**
 
@@ -588,71 +588,17 @@
 
 **주의할 점**
 
-투자 단계가 명확하지 않아 규모의 해석에 주의가 필요합니다.
+투자금 출처(주요 VC)가 확인되지 않았습니다.
 
 **기사 / 출처**
 
-- **German startup 1Komma5Grad secures $1.35 billion valuation in new financing round - TradingView** — 투자 유치 (2026-10-12)
-  - German startup 1Komma5Grad secures $1.35 billion valuation in new financing round - TradingView
-  - Google News · 2026-10-12 · [원문 기사 보기 →](https://news.google.com/rss/articles/CBMi5AFBVV95cUxQdDFHNWs5bldoRGZXcDlVWGozV0JURlRHVjdqekZHd2JLQmtLYUFMNXo3Ry1kT3RuckZTUUR0TW9Kcm5mMWpGbTlhMHJsOHlMNWtNYktDVHR1T3hRdk9VYm5QeUdtSWJjRkllekxDRGw3UDJQN2JwSE0wYUhjbThfZTFsV3JIMTNJdThLY0RlTklIQUctY21CUlRTSFVsa0RFQm9MbWE5MGsxODdhRHNXTmlYc3hpM3B5Yzl5NklRNG55YjVGak1kMjN6Slg1TUFnNFZkUDRGZk9ISzJaZkFfTEtsRU0?oc=5)
-- **German startup 1Komma5Grad secures $1.35 billion valuation in new financing round - TradingView** — 투자 유치 (2026-10-13)
-  - German startup 1Komma5Grad secures $1.35 billion valuation in new financing round - TradingView
-  - Google News · 2026-10-13 · [원문 기사 보기 →](https://news.google.com/rss/articles/CBMi5AFBVV95cUxQdDFHNWs5bldoRGZXcDlVWGozV0JURlRHVjdqekZHd2JLQmtLYUFMNXo3Ry1kT3RuckZTUUR0TW9Kcm5mMWpGbTlhMHJsOHlMNWtNYktDVHR1T3hRdk9VYm5QeUdtSWJjRkllekxDRGw3UDJQN2JwSE0wYUhjbThfZTFsV3JIMTNJdThLY0RlTklIQUctY21CUlRTSFVsa0RFQm9MbWE5MGsxODdhRHNXTmlYc3hpM3B5Yzl5NklRNG55YjVGak1kMjN6Slg1TUFnNFZkUDRGZk9ISzJaZkFfTEtsRU0?oc=5)
+- **UK chip startup Fractile valued at $7bn following $720m Series C funding round - Data Center Dynamics** — 투자 유치 (2026-11-13)
+  - UK chip startup Fractile valued at $7bn following $720m Series C funding round - Data Center Dynamics
+  - Google News · 2026-11-13 · [원문 기사 보기 →](https://news.google.com/rss/articles/CBMivAFBVV95cUxPbGNXT1ZXNUlYbGNRTnhvWUpzWUNLb2h6eEFxbl8yUmxmbWt1ZTNITTctSmhBYnV2TnBRMnpGaThKWHdaa0J4OVlOZjI2YjN6LTNHd3o0SUJWOUgtNy1oM3ZGblNkRmlLLUFxOTV6RTNkOWplU3NWNS1MaGp0U0tGRWk4dkkwbEdsZ0kwOXEzc1llQkVsdG5GdG5kWVczYmdEQUltbzRacGhNbEN3SUlTaHVjTHRQV2tiZVVpeQ?oc=5)
 
 ---
 
-### Scarlet raises $50M Series B to accelerate AI medical device certification — 67점 · WATCH · INVEST · 신뢰도 67%
-
-- 종류: 스타트업
-- 이벤트: 투자 유치
-- 단계: 시리즈 B
-- 판정: WATCH
-- 기회 유형: INVEST (투자)
-- 근거 품질: MEDIUM(보도·커뮤니티 수준)
-- 궤적: GROWING(상승) · 생애주기: WATCH(관찰)
-- 신규/재확인: 재확인
-
-> Scarlet, the certification body for AI and software medical devices, today announced a $50 million Series B led by Headline, with participation from new investor Notion Capital and existing investors
-
-- **투자/성장**: 2026-10-13 · 시리즈 B · 5,000만 달러 · 확정 · 2026-10-14 · 시리즈 B · 5,000만 달러 · 확정
-- **주요 투자자**: accel
-- **점수 변화**: 67 → 67
-
-**근거**
-
-- 복수의 투자 유치 신호
-- 상당 규모 투자 유치 (2,500만 달러 이상)
-- 다수의 확정 투자 기록
-- 주요 투자자 참여 (Accel)
-- 언론 언급
-- 투자 규모 증가 추세
-- 확인된 성장 신호: 3종
-- 관련 거시경제 순풍 확인
-
-**왜 주목?**
-
-시리즈 B 단계에서 5,000만 달러 규모의 투자 유치가 확인됐습니다. 주요 투자자가 참여했습니다. 성장 모멘텀이 감지됐습니다.
-
-**투자 관점**
-
-투자 유치가 확인된 기업으로, 초기 단계라면 높은 성장 가능성이 있지만 실제 매출과 사업 지속 가능성은 추가 확인이 필요합니다.
-
-**주의할 점**
-
-현재 공개된 실적 정보가 제한적입니다. 추가 확인이 필요합니다.
-
-**기사 / 출처**
-
-- **Scarlet** — 투자 유치 (2026-10-13)
-  - Scarlet, the certification body for AI and software medical devices, today announced a $50 million Series B led by Headline, with participation from new investor Notion Capital and existing investors 
-  - tech.eu · 2026-10-13 · [원문 기사 보기 →](https://tech.eu/2026/10/12/scarlet-raises-50m-series-b-to-accelerate-ai-medical-device-certification/)
-- **Scarlet** — 투자 유치 (2026-10-14)
-  - Scarlet, the certification body for AI and software medical devices, today announced a $50 million Series B led by Headline, with participation from new investor Notion Capital and existing investors 
-  - tech.eu · 2026-10-14 · [원문 기사 보기 →](https://tech.eu/2026/10/12/scarlet-raises-50m-series-b-to-accelerate-ai-medical-device-certification/)
-
----
-
-### Tool that identifies AI-generated material helps Pixel Systems raise €2.7 million — 65점 · WATCH · INVEST · 신뢰도 59%
+### Tool that identifies AI-generated material helps Pixel Systems raise €2.7 million — 66점 · WATCH · INVEST · 신뢰도 59%
 
 - 종류: 스타트업
 - 이벤트: 투자 유치
@@ -667,7 +613,7 @@
 
 - **투자/성장**: 2026-10-30 · 시드(Seed) · 270만 유로 · 확정 · 2026-10-31 · 시드(Seed) · 270만 유로 · 확정 · 2026-11-01 · 시드(Seed) · 270만 유로 · 확정
 - **주요 투자자**: accel
-- **점수 변화**: 65 → 65
+- **점수 변화**: 65 → 66 (+1)
 
 **근거**
 
@@ -705,7 +651,7 @@
 
 ---
 
-### Fintech startup Ramp hits $60 billion valuation after $1.85 billion funding round - TradingView — 64점 · WATCH · INVEST · 신뢰도 59%
+### Fintech startup Ramp hits $60 billion valuation after $1.85 billion funding round - TradingView — 65점 · WATCH · INVEST · 신뢰도 59%
 
 - 종류: 스타트업
 - 이벤트: 투자 유치
@@ -713,14 +659,14 @@
 - 판정: WATCH
 - 기회 유형: INVEST (투자)
 - 근거 품질: MEDIUM(보도·커뮤니티 수준)
-- 궤적: STABLE(안정) · 생애주기: WATCH(관찰)
+- 궤적: GROWING(상승) · 생애주기: WATCH(관찰)
 - 신규/재확인: 재확인
 
 > Fintech startup Ramp hits $60 billion valuation after $1.85 billion funding round - TradingView
 
 - **투자/성장**: 2026-10-16 · 확인 필요 · 600억 달러 · 확정 · 2026-10-17 · 확인 필요 · 600억 달러 · 확정
 - **주요 투자자**: gv
-- **점수 변화**: 64 → 64
+- **점수 변화**: 64 → 65 (+1)
 
 **근거**
 
@@ -755,7 +701,7 @@
 
 ---
 
-### AI chip startup Tenstorrent more than doubles its valuation to $6.2 billion in funding round - TradingView — 64점 · WATCH · INVEST · 신뢰도 59%
+### AI chip startup Tenstorrent more than doubles its valuation to $6.2 billion in funding round - TradingView — 65점 · WATCH · INVEST · 신뢰도 59%
 
 - 종류: 스타트업
 - 이벤트: 투자 유치
@@ -770,7 +716,7 @@
 
 - **투자/성장**: 2026-10-20 · 확인 필요 · 62억 달러 · 확정
 - **주요 투자자**: gv
-- **점수 변화**: 64 → 64
+- **점수 변화**: 64 → 65 (+1)
 
 **근거**
 
@@ -802,7 +748,7 @@
 
 ---
 
-### AI startup ASI valued at $3 billion in latest funding round - TradingView — 64점 · WATCH · INVEST · 신뢰도 59%
+### AI startup ASI valued at $3 billion in latest funding round - TradingView — 65점 · WATCH · INVEST · 신뢰도 59%
 
 - 종류: 스타트업
 - 이벤트: 투자 유치
@@ -817,7 +763,7 @@
 
 - **투자/성장**: 2026-10-21 · 확인 필요 · 30억 달러 · 확정
 - **주요 투자자**: gv
-- **점수 변화**: 64 → 64
+- **점수 변화**: 64 → 65 (+1)
 
 **근거**
 
@@ -849,7 +795,7 @@
 
 ---
 
-### Re:Build, which spun out Slate Auto, raises $2.1B — 64점 · WATCH · INVEST · 신뢰도 67%
+### Re:Build, which spun out Slate Auto, raises $2.1B — 65점 · WATCH · INVEST · 신뢰도 67%
 
 - 종류: 스타트업
 - 이벤트: 투자 유치
@@ -864,7 +810,7 @@
 
 - **투자/성장**: 2026-10-28 · 확인 필요 · 21억 달러 · 확정
 - **주요 투자자**: accel
-- **점수 변화**: 64 → 64
+- **점수 변화**: 64 → 65 (+1)
 
 **근거**
 
@@ -896,10 +842,57 @@
 
 ---
 
+### AI Inference Startup Fal Raises Capital At $16 Billion Valuation- Bloomberg News - TradingView — 65점 · WATCH · INVEST · 신뢰도 59%
+
+- 종류: 스타트업
+- 이벤트: 투자 유치
+- 단계: 확인 필요
+- 판정: WATCH
+- 기회 유형: INVEST (투자)
+- 근거 품질: MEDIUM(보도·커뮤니티 수준)
+- 궤적: GROWING(상승) · 생애주기: WATCH(관찰)
+- 신규/재확인: 재확인
+
+> AI Inference Startup Fal Raises Capital At $16 Billion Valuation- Bloomberg News - TradingView
+
+- **투자/성장**: 2026-11-04 · 확인 필요 · 160억 달러 · 확정
+- **주요 투자자**: gv
+- **점수 변화**: 64 → 65 (+1)
+
+**근거**
+
+- 초대형 투자 유치 (5억 달러 이상 추정)
+- 투자 유치 신호
+- 주요 투자자 참여 (Gv)
+- 언론 언급
+- 투자 규모 증가 추세
+- 확인된 성장 신호: 2종
+- 관련 거시경제 순풍 확인
+
+**왜 주목?**
+
+단계에서 160억 달러 규모의 투자 유치가 확인됐습니다. 주요 투자자가 참여했습니다. 성장 모멘텀이 감지됐습니다.
+
+**투자 관점**
+
+투자 유치가 확인된 기업으로, 초기 단계라면 높은 성장 가능성이 있지만 실제 매출과 사업 지속 가능성은 추가 확인이 필요합니다.
+
+**주의할 점**
+
+투자 단계가 명확하지 않아 규모의 해석에 주의가 필요합니다.
+
+**기사 / 출처**
+
+- **Fal** — 투자 유치 (2026-11-04)
+  - AI Inference Startup Fal Raises Capital At $16 Billion Valuation- Bloomberg News - TradingView
+  - Google News · 2026-11-04 · [원문 기사 보기 →](https://news.google.com/rss/articles/CBMi4gFBVV95cUxONS1fbjJFTndrTDdzTGV5ajdJeUZXdG80eEtQbkwyV05tRGRGZWgxZHNkc3ExN3hvdURMR1BkWFB5ckZoMkJoQXQyd25vTTRHUzFDWUdDMnBhZ2VvdkJIOGFGUzZ2U3pHOEp2QlhUZzdyZzBYQkZnazlVdXkwaExmQWhDakVBZ0diZGF6LUV4eXVQY3BCQXlZbTlwMDN6d2VCSWxCRExzX1JabWh5RHZhaVgxUTlnTFR2WUxxVmt1c1lVZmxBZnNmZF84M1FRS0pTOV9EVk5Kd3FQQjFna0lCMVRB?oc=5)
+
+---
+
 
 ## 글로벌 공개시장
 
-### AI computing startup Lambda to raise $4B ahead of planned IPO — 56점 · WATCH · WATCH · 신뢰도 47%
+### AI computing startup Lambda to raise $4B ahead of planned IPO — 57점 · WATCH · WATCH · 신뢰도 47%
 
 - 종류: 상장 기업
 - 이벤트: 투자 유치, 상장(IPO)
@@ -914,7 +907,7 @@
 
 - **투자/성장**: 2026-10-07 · 상장 · 40억 달러 · 확정
 - **주요 투자자**: coatue
-- **점수 변화**: 56 → 56
+- **점수 변화**: 56 → 57 (+1)
 
 **근거**
 
@@ -950,7 +943,7 @@
 
 ## 글로벌 M&A
 
-### Tenstorrent hits $6.2B valuation to scale open-weight AI chips — 52점 · WATCH · ACQUIRE · 신뢰도 42%
+### Tenstorrent hits $6.2B valuation to scale open-weight AI chips — 53점 · WATCH · ACQUIRE · 신뢰도 42%
 
 - 종류: 스타트업
 - 이벤트: 투자 유치, 인수합병
@@ -964,7 +957,7 @@
 > After drawing acquisition interest earlier this year, the Nvidia challenger raised $1.5 billion to remain independent.
 
 - **투자/성장**: 2026-10-20 · 확인 필요 · 62억 달러 · 확정
-- **점수 변화**: 52 → 52
+- **점수 변화**: 52 → 53 (+1)
 
 **근거**
 
@@ -998,34 +991,33 @@
 
 ---
 
-### Upwind raises $400M after walking away from Datadog acquisition offer — 51점 · WATCH · ACQUIRE · 신뢰도 62%
+### Hugging Face CEO vows to keep fighting for open source AI after Jensen Huang’s exit — 53점 · WATCH · ACQUIRE · 신뢰도 42%
 
 - 종류: 스타트업
 - 이벤트: 투자 유치, 인수합병
-- 단계: 시리즈 C
+- 단계: 확인 필요
 - 판정: WATCH
 - 기회 유형: ACQUIRE (인수)
-- 근거 품질: HIGH(주요 언론·공식 채널)
-- 궤적: GROWING(상승) · 생애주기: WATCH(관찰)
-- 신규/재확인: 재확인
+- 근거 품질: MEDIUM(보도·커뮤니티 수준)
+- 궤적: STABLE(안정) · 생애주기: WATCH(관찰)
+- 신규/재확인: 신규
 
-> The cloud security startup raised a Series C at a $3.8B valuation, instead of selling itself for the same price.
+> Hugging Face's CEO pledged to keep fighting for open source AI after Huang's exit, raising questions about Nvidia's $12.9 billion acquisition.
 
-- **투자/성장**: 2026-10-29 · 시리즈 C · 4억 달러 · 확정
-- **점수 변화**: 51 → 51
+- **투자/성장**: 2026-11-13 · 확인 필요 · 129억 달러 · 확정
 
 **근거**
 
-- 대규모 투자 유치 (1억 달러 이상 추정)
+- 초대형 투자 유치 (5억 달러 이상 추정)
 - 투자 유치 신호
 - 언론 언급
 - 투자 규모 증가 추세
-- 확인된 성장 신호: 3종
+- 확인된 성장 신호: 2종
 - 관련 거시경제 순풍 확인
 
 **왜 주목?**
 
-시리즈 C 단계에서 4억 달러 규모의 투자 유치가 확인됐습니다. 성장 모멘텀이 감지됐습니다.
+단계에서 129억 달러 규모의 투자 유치가 확인됐습니다. 성장 모멘텀이 감지됐습니다.
 
 **투자 관점**
 
@@ -1033,23 +1025,23 @@
 
 **주의할 점**
 
-투자금 출처(주요 VC)가 확인되지 않았습니다.
+투자 단계가 명확하지 않아 규모의 해석에 주의가 필요합니다. 투자금 출처(주요 VC)가 확인되지 않았습니다.
 
 **기사 / 출처**
 
-- **Upwind** — 투자 유치 (2026-10-29)
-  - The cloud security startup raised a Series C at a $3.8B valuation, instead of selling itself for the same price.
-  - TechCrunch · 2026-10-29 · [원문 기사 보기 →](https://techcrunch.com/2026/10/28/upwind-raises-400m-after-walking-away-from-datadog-acquisition-offer/)
-- **Upwind** — 인수합병 (2026-10-29)
-  - The cloud security startup raised a Series C at a $3.8B valuation, instead of selling itself for the same price.
-  - TechCrunch · 2026-10-29 · [원문 기사 보기 →](https://techcrunch.com/2026/10/28/upwind-raises-400m-after-walking-away-from-datadog-acquisition-offer/)
+- **Hugging Face CEO vows to keep fighting for open source AI after Jensen Huang’s exit** — 투자 유치 (2026-11-13)
+  - Hugging Face's CEO pledged to keep fighting for open source AI after Huang's exit, raising questions about Nvidia's $12.9 billion acquisition.
+  - TechCrunch · 2026-11-13 · [원문 기사 보기 →](https://techcrunch.com/2026/11/12/hugging-face-ceo-vows-to-keep-fighting-for-open-source-ai-after-jensen-huangs-exit/)
+- **Hugging Face CEO vows to keep fighting for open source AI after Jensen Huang’s exit** — 인수합병 (2026-11-13)
+  - Hugging Face's CEO pledged to keep fighting for open source AI after Huang's exit, raising questions about Nvidia's $12.9 billion acquisition.
+  - TechCrunch · 2026-11-13 · [원문 기사 보기 →](https://techcrunch.com/2026/11/12/hugging-face-ceo-vows-to-keep-fighting-for-open-source-ai-after-jensen-huangs-exit/)
 
 ---
 
 
 ## 한국 투자 & 스타트업
 
-### TypeSafe AI, $870M 시리즈 A 라운드에서 $7.5B 기업가치 달성, 더 많은 AI 모델 제공 — 60점 · WATCH · INVEST · 신뢰도 54%
+### TypeSafe AI, $870M 시리즈 A 라운드에서 $7.5B 기업가치 달성, 더 많은 AI 모델 제공 — 56점 · WATCH · INVEST · 신뢰도 54%
 
 - 종류: 스타트업
 - 이벤트: 투자 유치
@@ -1063,11 +1055,10 @@
 > TypeSafe AI, $870M 시리즈 A 라운드에서 $7.5B 기업가치 달성, 더 많은 AI 모델 제공 - Unite.AI
 
 - **투자/성장**: 2026-10-13 · 시리즈 A · 약 8.7억 달러 · 확정 · 2026-10-14 · 시리즈 A · 약 8.7억 달러 · 확정
-- **점수 변화**: 60 → 60
+- **점수 변화**: 60 → 56 (-4)
 
 **근거**
 
-- 복수의 투자 유치 신호
 - 초대형 투자 유치 (5억 달러 이상 추정)
 - 다수의 확정 투자 기록
 - 언론 언급
@@ -1098,7 +1089,7 @@
 
 ---
 
-### Hyperaccel raises $150M Series B with Krafton backing - Dealroom — 52점 · WATCH · INVEST · 신뢰도 39%
+### Hyperaccel raises $150M Series B with Krafton backing - Dealroom — 53점 · WATCH · INVEST · 신뢰도 39%
 
 - 종류: 스타트업
 - 이벤트: 투자 유치
@@ -1113,7 +1104,7 @@
 
 - **투자/성장**: 2026-09-13 · 시리즈 B · 약 1.5억 달러 · 확정
 - **주요 투자자**: accel
-- **점수 변화**: 52 → 52
+- **점수 변화**: 52 → 53 (+1)
 
 **근거**
 
@@ -1143,168 +1134,10 @@
 
 ---
 
-### 드림랩스 — 51점 · WATCH · INVEST · 신뢰도 54%
-
-- 종류: 스타트업
-- 이벤트: 투자 유치
-- 단계: 시드(Seed)
-- 판정: WATCH
-- 기회 유형: INVEST (투자)
-- 근거 품질: MEDIUM(보도·커뮤니티 수준)
-- 궤적: GROWING(상승) · 생애주기: WATCH(관찰)
-- 신규/재확인: 재확인
-
-> 드림랩스, 1,200억원 규모 시드 투자 유치 - 벤처타임즈
-
-- **투자/성장**: 2026-10-20 · 시드(Seed) · 1,200억 원 · 확정
-- **점수 변화**: 51 → 51
-
-**근거**
-
-- 복수의 투자 유치 신호
-- 대규모 투자 유치 (1,000억 원 이상)
-- 투자 유치 신호
-- 언론 언급
-- 점수 상승 추세
-- 확인된 성장 신호: 2종
-- 관련 거시경제 순풍 확인
-
-**왜 주목?**
-
-시드 단계에서 1,200억 원 규모의 투자 유치가 확인됐습니다. 성장 모멘텀이 감지됐습니다.
-
-**투자 관점**
-
-투자 유치가 확인된 기업으로, 초기 단계라면 높은 성장 가능성이 있지만 실제 매출과 사업 지속 가능성은 추가 확인이 필요합니다.
-
-**주의할 점**
-
-투자금 출처(주요 VC)가 확인되지 않았습니다. 공개된 투자 규모 데이터가 제한적입니다.
-
-**기사 / 출처**
-
-- **드림랩스** — 투자 유치 (2026-10-20)
-  - 드림랩스, 1,200억원 규모 시드 투자 유치 - 벤처타임즈
-  - Google News · 2026-10-20 · [원문 기사 보기 →](https://news.google.com/rss/articles/CBMiZkFVX3lxTE9xX2kwa2hpNHZMdVhjdjVPMDNucmwtbXVFdWdzMmlOWkZYZzFmNEtTNU4zS2NoSXc4NUFERlRZYk5LWVA1ODFDamQ5YWdDQkhlRjJqMHh4QkU4NkttbW1HcUNaSTQtUQ?oc=5)
-
----
-
-### 퓨리오사AI — 50점 · WATCH · INVEST · 신뢰도 62%
-
-- 종류: 스타트업
-- 이벤트: 투자 유치
-- 단계: 확인 필요
-- 판정: WATCH
-- 기회 유형: INVEST (투자)
-- 근거 품질: MEDIUM(보도·커뮤니티 수준)
-- 궤적: GROWING(상승) · 생애주기: WATCH(관찰)
-- 신규/재확인: 재확인
-
-> 퓨리오사AI, 8200억 규모 투자 유치...기업가치 3.8조원 돌파 - AI타임스
-
-- **투자/성장**: 2026-10-29 · 확인 필요 · 약 3.8조 원 · 확정 · 2026-10-29 · 확인 필요 · 확정 · 2026-10-29 · 확인 필요 · 8,200억 원 · 확정
-- **점수 변화**: 50 → 50
-
-**근거**
-
-- 초대형 투자 유치 (1조 원 이상)
-- 다수의 확정 투자 기록
-- 언론 보도 증가
-- 점수 상승 추세
-- 관련 거시경제 순풍 확인
-
-**왜 주목?**
-
-단계에서 8,200억 원 규모의 투자 유치가 확인됐습니다. 성장 모멘텀이 감지됐습니다.
-
-**투자 관점**
-
-투자 유치가 확인된 기업으로, 초기 단계라면 높은 성장 가능성이 있지만 실제 매출과 사업 지속 가능성은 추가 확인이 필요합니다.
-
-**주의할 점**
-
-투자 단계가 명확하지 않아 규모의 해석에 주의가 필요합니다. 투자금 출처(주요 VC)가 확인되지 않았습니다. 공개된 투자 규모 데이터가 제한적입니다.
-
-**기사 / 출처**
-
-- **퓨리오사AI** — 투자 유치 (2026-10-29)
-  - 퓨리오사AI, 8200억 규모 투자 유치...기업가치 3.8조원 돌파 - AI타임스
-  - Google News · 2026-10-29 · [원문 기사 보기 →](https://news.google.com/rss/articles/CBMiakFVX3lxTE5UM3BUa3RrVnAxc1BjVkV4UWZ4SF91REVmWFRCeDMzRkdZVzZTbHZibHZHUko4azJMd0RBUV81UlVxQUJSdXJNaEpkVjNIR1RpQkx5V1IwTFFxTHBGcTY5WXZpelRmTW5LV3c?oc=5)
-  - 추가 소스: [Google News](https://news.google.com/rss/articles/CBMiVkFVX3lxTE53WUZUemNEYWVrUlpNNmdBYnU4c1k0WkdaQl92c1RncDZaRXprc1NjT2IyZUtQVzdraVp1RmMyaTNEbE1ZNTN3cVM5LTU5V2RLSHBFQ1Zn?oc=5) · [Google News](https://news.google.com/rss/articles/CBMiYkFVX3lxTE56eVI0M1ZEc2RKUUw0RDdNZTNiblM5bWpvT0tVTDRIdHkyOXRVZlZuXzYwZVUxZEdXME8yUlBiZW9hTWdxQXBUQUlPOTNwd3F2SDkxSi02dW9aTGlYaUloRkR3?oc=5)
-
----
-
-
-## 한국 공개시장 & 기업
-
-### 넥사다이내믹스 — 51점 · WATCH · WATCH · 신뢰도 62%
-
-- 종류: 상장 기업
-- 이벤트: 대형 계약, 투자 유치, 실적 발표
-- 단계: 확인 필요
-- 판정: WATCH
-- 기회 유형: WATCH (관찰)
-- 근거 품질: MEDIUM(보도·커뮤니티 수준)
-- 궤적: GROWING(상승) · 생애주기: WATCH(관찰)
-- 신규/재확인: 재확인
-
-> 넥사다이내믹스, 경영진 개편 후 첫 해외 수주…일본 기업과 AI 서버 공급계약 - v.daum.net
-
-- **투자/성장**: 2026-10-15 · 확인 필요 · 확정 · 2026-10-15 · 확인 필요 · 311억 원 · 확정 · 2026-10-17 · 확인 필요 · 확정
-- **점수 변화**: 51 → 51
-
-**근거**
-
-- 상당 규모 투자 유치 (100억 원 이상)
-- 다수의 확정 투자 기록
-- 언론 보도 확인
-- 고객/매출 신호
-- 점수 상승 추세
-- 확인된 성장 신호: 2종
-- 관련 거시경제 순풍 확인
-
-**왜 주목?**
-
-투자 유치 신호가 확인된 기업입니다. 성장 모멘텀이 감지됐습니다. 고객 확보/매출 신호가 확인됩니다.
-
-**투자 관점**
-
-투자 유치가 확인된 기업으로, 초기 단계라면 높은 성장 가능성이 있지만 실제 매출과 사업 지속 가능성은 추가 확인이 필요합니다. 상장 기업이므로 공시·실적 데이터를 통해 검증이 가능합니다.
-
-**주의할 점**
-
-투자 단계가 명확하지 않아 규모의 해석에 주의가 필요합니다. 투자금 출처(주요 VC)가 확인되지 않았습니다. 공개된 투자 규모 데이터가 제한적입니다.
-
-**기사 / 출처**
-
-- **넥사다이내믹스** — 대형 계약 (2026-09-22)
-  - 넥사다이내믹스, 경영진 개편 후 첫 해외 수주…일본 기업과 AI 서버 공급계약 - v.daum.net
-  - Google News · 2026-09-22 · [원문 기사 보기 →](https://news.google.com/rss/articles/CBMiS0FVX3lxTE9MS1FoeTBHZnlDZnYtVmRJQVozX25SY3lwQWFkUE9BZnpKUXEtMG5hbHY2UE1CeWcxZ0J5ZV9xeGwwdzNsMFFmSFV1NA?oc=5)
-- **넥사다이내믹스** — 투자 유치 (2026-10-15)
-  - 넥사다이내믹스, 311억 AI 서버 공급계약… 실적 턴어라운드 '신호탄' - 머니투데이 - 머니투데이
-  - Google News · 2026-10-15 · [원문 기사 보기 →](https://news.google.com/rss/articles/CBMibkFVX3lxTFBfWEJ2dXJUVHhtV3EtV0E4SUFSbi1pcWZrV2N4ZVViOUVIcEFwQzZtUGJMem1kc1RfYVVvOEY3S0YwZW9MOWhRUWtQd1ZuREhiVVFvaHRUdWtObm11LUF4QnpNYkd6aGNqSXNvdU5n0gFuQVVfeXFMUF9YQnZ1clRUeG1XcS1XQThJQVJuLWlxZmtXY3hlVWI5RUhwQXBDNm1QYkx6bWRzVF9hVW84RjdLRjBlb0w5aFFRa1B3Vm5ESGJVUW9odFR1a05ubXUtQXhCek1iR3poY2pJc291Tmc?oc=5)
-  - 추가 소스: [Google News](https://news.google.com/rss/articles/CBMickFVX3lxTFBjNVlXV2QzOHVXc3Q4N0dXSGt6ODNudWEyX3VjOEZ5aWxHUEdDLS1qaUR6UHVOLV9FV080QjRjODdNRlRhTFJldjVCTHZCOEgxQ0NlSlhGeG5jZlN5S1l6LTVNM2NWZDlNWGlYVkdXTU9ZUQ?oc=5)
-- **넥사다이내믹스** — 실적 발표 (2026-10-15)
-  - 넥사다이내믹스, 311억 AI 서버 공급계약… 실적 턴어라운드 '신호탄' - 머니투데이 - 머니투데이
-  - Google News · 2026-10-15 · [원문 기사 보기 →](https://news.google.com/rss/articles/CBMibkFVX3lxTFBfWEJ2dXJUVHhtV3EtV0E4SUFSbi1pcWZrV2N4ZVViOUVIcEFwQzZtUGJMem1kc1RfYVVvOEY3S0YwZW9MOWhRUWtQd1ZuREhiVVFvaHRUdWtObm11LUF4QnpNYkd6aGNqSXNvdU5n0gFuQVVfeXFMUF9YQnZ1clRUeG1XcS1XQThJQVJuLWlxZmtXY3hlVWI5RUhwQXBDNm1QYkx6bWRzVF9hVW84RjdLRjBlb0w5aFFRa1B3Vm5ESGJVUW9odFR1a05ubXUtQXhCek1iR3poY2pJc291Tmc?oc=5)
-  - 추가 소스: [Google News](https://news.google.com/rss/articles/CBMickFVX3lxTFBjNVlXV2QzOHVXc3Q4N0dXSGt6ODNudWEyX3VjOEZ5aWxHUEdDLS1qaUR6UHVOLV9FV080QjRjODdNRlRhTFJldjVCTHZCOEgxQ0NlSlhGeG5jZlN5S1l6LTVNM2NWZDlNWGlYVkdXTU9ZUQ?oc=5)
-- **넥사다이내믹스** — 대형 계약 (2026-10-15)
-  - 넥사다이내믹스, 311억 AI 서버 공급계약… 실적 턴어라운드 '신호탄' - 머니투데이 - 머니투데이
-  - Google News · 2026-10-15 · [원문 기사 보기 →](https://news.google.com/rss/articles/CBMibkFVX3lxTFBfWEJ2dXJUVHhtV3EtV0E4SUFSbi1pcWZrV2N4ZVViOUVIcEFwQzZtUGJMem1kc1RfYVVvOEY3S0YwZW9MOWhRUWtQd1ZuREhiVVFvaHRUdWtObm11LUF4QnpNYkd6aGNqSXNvdU5n0gFuQVVfeXFMUF9YQnZ1clRUeG1XcS1XQThJQVJuLWlxZmtXY3hlVWI5RUhwQXBDNm1QYkx6bWRzVF9hVW84RjdLRjBlb0w5aFFRa1B3Vm5ESGJVUW9odFR1a05ubXUtQXhCek1iR3poY2pJc291Tmc?oc=5)
-  - 추가 소스: [Google News](https://news.google.com/rss/articles/CBMickFVX3lxTFBjNVlXV2QzOHVXc3Q4N0dXSGt6ODNudWEyX3VjOEZ5aWxHUEdDLS1qaUR6UHVOLV9FV080QjRjODdNRlRhTFJldjVCTHZCOEgxQ0NlSlhGeG5jZlN5S1l6LTVNM2NWZDlNWGlYVkdXTU9ZUQ?oc=5)
-- **넥사다이내믹스** — 투자 유치 (2026-10-17)
-  - 넥사다이내믹스, 311억 규모 AI 서버 공급계약…턴어라운드 '신호탄' : 네이버 블로그 - Naver Blog
-  - Google News · 2026-10-17 · [원문 기사 보기 →](https://news.google.com/rss/articles/CBMijwFBVV95cUxORG84d1BBWXY1MkNJaFBaYnBmNEtiMkNxQU80MHpVTUxndm5udzFyQU8xSk5DY1k2NmMxc1pRUklPbDRjNkQ4OHhrY1dNVHpmRWI5SXFScExITHZGYlFwZ3VzR2VEQnRIeTVDWlFUVlFBWlZxdlkwV3RBUWtmNEVRUVpIVENWRjFOOGpjd2xLcw?oc=5)
-- **넥사다이내믹스** — 대형 계약 (2026-10-17)
-  - 넥사다이내믹스, 311억 규모 AI 서버 공급계약…턴어라운드 '신호탄' : 네이버 블로그 - Naver Blog
-  - Google News · 2026-10-17 · [원문 기사 보기 →](https://news.google.com/rss/articles/CBMijwFBVV95cUxORG84d1BBWXY1MkNJaFBaYnBmNEtiMkNxQU80MHpVTUxndm5udzFyQU8xSk5DY1k2NmMxc1pRUklPbDRjNkQ4OHhrY1dNVHpmRWI5SXFScExITHZGYlFwZ3VzR2VEQnRIeTVDWlFUVlFBWlZxdlkwV3RBUWtmNEVRUVpIVENWRjFOOGpjd2xLcw?oc=5)
-
----
-
 
 ## 거시경제
 
-### Jio Shares Indicated 22% Higher in India Gray-Market Trading — 56점 · WATCH · WATCH · 신뢰도 34%
+### Jio Shares Indicated 22% Higher in India Gray-Market Trading — 57점 · WATCH · WATCH · 신뢰도 34%
 
 - 종류: 기타
 - 이벤트: 투자 유치, 상장(IPO), 제품 출시
@@ -1318,7 +1151,7 @@
 > For investors lucky enough to land shares in Jio Platforms Ltd.’s $3.1 billion India-record initial public offering, trading on the unofficial market is fueling hopes of a big debut pop.
 
 - **투자/성장**: 2026-10-27 · 확인 필요 · 31억 달러 · 확정
-- **점수 변화**: 56 → 56
+- **점수 변화**: 56 → 57 (+1)
 
 **근거**
 
@@ -1353,55 +1186,6 @@
 - **Jio Shares Indicated 22% Higher in India Gray-Market Trading** — 제품 출시 (2026-10-27)
   - For investors lucky enough to land shares in Jio Platforms Ltd.’s $3.1 billion India-record initial public offering, trading on the unofficial market is fueling hopes of a big debut pop.
   - bloomberg.com · 2026-10-27 · [원문 기사 보기 →](https://www.bloomberg.com/news/articles/2026-10-27/jio-shares-mukesh-ambani-india-gray-market-trading)
-
----
-
-### Philippine October Inflation Accelerates 7.8%, Close to Four-Year High — 51점 · WATCH · WATCH · 신뢰도 59%
-
-- 종류: 기타
-- 이벤트: 투자 유치, 시장 이벤트
-- 단계: 확인 필요
-- 판정: WATCH
-- 기회 유형: WATCH (관찰)
-- 근거 품질: MEDIUM(보도·커뮤니티 수준)
-- 궤적: GROWING(상승) · 생애주기: WATCH(관찰)
-- 신규/재확인: 재확인
-
-> Philippine inflation accelerated to the fastest pace in almost four years in October as the prolonged Middle East conflict drove up energy costs, raising the odds of another large interest rate increa
-
-- **투자/성장**: 2026-11-05 · 확인 필요 · 확정
-- **주요 투자자**: accel
-- **점수 변화**: 51 → 51
-
-**근거**
-
-- 투자 유치 신호
-- 주요 투자자 참여 (Accel)
-- 언론 언급
-- 점수 상승 추세
-- 확인된 성장 신호: 3종
-- 관련 거시경제 순풍 확인
-
-**왜 주목?**
-
-투자 유치 신호가 확인된 기업입니다. 주요 투자자가 참여했습니다. 성장 모멘텀이 감지됐습니다.
-
-**투자 관점**
-
-투자 유치가 확인된 기업으로, 초기 단계라면 높은 성장 가능성이 있지만 실제 매출과 사업 지속 가능성은 추가 확인이 필요합니다.
-
-**주의할 점**
-
-투자 단계가 명확하지 않아 규모의 해석에 주의가 필요합니다. 공개된 투자 규모 데이터가 제한적입니다.
-
-**기사 / 출처**
-
-- **Philippine October Inflation Accelerates 7.8%, Close to Four-Year High** — 투자 유치 (2026-11-05)
-  - Philippine inflation accelerated to the fastest pace in almost four years in October as the prolonged Middle East conflict drove up energy costs, raising the odds of another large interest rate increa
-  - bloomberg.com · 2026-11-05 · [원문 기사 보기 →](https://www.bloomberg.com/news/articles/2026-11-05/philippine-october-inflation-accelerates-7-8-close-to-four-year-high)
-- **Philippine October Inflation Accelerates 7.8%, Close to Four-Year High** — 시장 이벤트 (2026-11-05)
-  - Philippine inflation accelerated to the fastest pace in almost four years in October as the prolonged Middle East conflict drove up energy costs, raising the odds of another large interest rate increa
-  - bloomberg.com · 2026-11-05 · [원문 기사 보기 →](https://www.bloomberg.com/news/articles/2026-11-05/philippine-october-inflation-accelerates-7-8-close-to-four-year-high)
 
 ---
 

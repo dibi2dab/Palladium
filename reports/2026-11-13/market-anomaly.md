@@ -8,11 +8,10 @@
 
 ## 팔라듐 (Palladium) (PA=F)
 
-- PA=F: **986** (2026-11-12) · 전일 1043.7 (-5.53%)
+- PA=F: **1007** (2026-11-13) · 전일 989.7 (+1.75%)
 
 **감지된 이상**
 
-- **급등 가속** `PRICE_ACCELERATION_UP` +1.74% — 팔라듐 (Palladium) 가격 1135.5 (2026-10-08) vs 이전 1116.1 (2026-10-07) — +1.74%
 - **급등** `PRICE_ANOMALY_UP` +4.31% — 팔라듐 (Palladium) 가격 1163 (2026-10-09) vs 이전 1114.9 (2026-10-08) — +4.31%
 - **급등 가속** `PRICE_ACCELERATION_UP` +1.80% — 팔라듐 (Palladium) 가격 1161 (2026-10-12) vs 이전 1140.5 (2026-10-09) — +1.80%
 - **급등 가속** `PRICE_ACCELERATION_UP` +2.43% — 팔라듐 (Palladium) 가격 1113.5 (2026-10-15) vs 이전 1087.1 (2026-10-14) — +2.43%
@@ -24,10 +23,11 @@
 - **급등 가속** `PRICE_ACCELERATION_UP` +2.47% — 팔라듐 (Palladium) 가격 1024.5 (2026-11-05) vs 이전 999.8 (2026-11-04) — +2.47%
 - **급락 가속** `PRICE_ACCELERATION_DOWN` -1.92% — 팔라듐 (Palladium) 가격 1021 (2026-11-06) vs 이전 1041 (2026-11-05) — -1.92%
 - **급락 가속** `PRICE_ACCELERATION_DOWN` -5.53% — 팔라듐 (Palladium) 가격 986 (2026-11-12) vs 이전 1043.7 (2026-11-11) — -5.53%
+- **급등 가속** `PRICE_ACCELERATION_UP` +1.75% — 팔라듐 (Palladium) 가격 1007 (2026-11-13) vs 이전 989.7 (2026-11-12) — +1.75%
 
 ## 백금 (Platinum) (PL=F)
 
-- PL=F: **1516.3** (2026-11-12) · 전일 1539 (-1.47%)
+- PL=F: **1518.4** (2026-11-13) · 전일 1518.1 (+0.02%)
 
 **감지된 이상**
 
@@ -46,7 +46,7 @@
 
 ## 금 (Gold) (GC=F)
 
-- GC=F: **3864.4** (2026-11-12) · 전일 4000.5 (-3.40%)
+- GC=F: **3902.6** (2026-11-13) · 전일 3885.3 (+0.45%)
 
 **감지된 이상**
 
@@ -58,7 +58,7 @@
 
 ## 은 (Silver) (SI=F)
 
-- SI=F: **49.81** (2026-11-12) · 전일 51.88 (-3.99%)
+- SI=F: **50.03** (2026-11-13) · 전일 49.97 (+0.12%)
 
 **감지된 이상**
 
@@ -77,7 +77,7 @@
 
 ## 서부텍사스산 원유 (WTI) (CL=F)
 
-- CL=F: **87** (2026-11-12) · 전일 86.53 (+0.54%)
+- CL=F: **88.61** (2026-11-13) · 전일 88.74 (-0.15%)
 
 **감지된 이상**
 
@@ -96,7 +96,7 @@
 
 ## 구리 (Copper) (HG=F)
 
-- HG=F: **6.15** (2026-11-12) · 전일 6.27 (-1.91%)
+- HG=F: **6.14** (2026-11-13) · 전일 6.18 (-0.65%)
 
 **감지된 이상**
 
@@ -108,8 +108,8 @@
 
 > SEC EDGAR 공시(SEC) 기반 실측 이벤트 — 신문 헤드라인이 아닌 공식 공시에 근거합니다.
 
-- **[Melar Acquisition Corp. I/Cayman (MACI)](https://www.sec.gov/Archives/edgar/data/0000002016221/000121390026101166/ea0305899-8k425_melar1.htm)** — Regulation FD disclosure \| 8-K item 9.01 CURRENT REPORT [8-K] 2026-09-18
 - **[Rising Dragon Acquisition Corp. (RDAC)](https://www.sec.gov/Archives/edgar/data/0000002018145/000121390026108648/ea0308236-8k_rising.htm)** — Material agreement entered into \| 8-K item 2.03 \| 8-K item 9.01 CURRENT REPORT [8-K] 2026-10-13
+- **[Melar Acquisition Corp. I/Cayman (MACI)](https://www.sec.gov/Archives/edgar/data/0000002016221/000121390026101166/ea0305899-8k425_melar1.htm)** — Regulation FD disclosure \| 8-K item 9.01 CURRENT REPORT [8-K] 2026-09-18
 - **[VARONIS SYSTEMS INC (VRNS)](https://www.sec.gov/Archives/edgar/data/0000001361113/000121390026109901/ea030861001ex2-1.htm)** — Material agreement entered into \| Director/officer change \| Regulation FD disclosure AGREEMENT AND PLAN OF MERGER, DATED AS OF OCTOBER 15,
 - **[Piedmont Realty Trust, Inc. (PDM)](https://www.sec.gov/Archives/edgar/data/0000001042776/000104277626000072/pdm93026ex991q32026ersuppl.htm)** — Operating results/financials released \| 8-K item 9.01 Q3 2026 EARNINGS RELEASE AND SUPPLEMENTAL PACKAGE [8-K] 2026-10-26
 - **[Mechanics Bancorp (MCHB)](https://www.sec.gov/Archives/edgar/data/0000001518715/000151871526000070/a3q2026earningsrelease.htm)** — Operating results/financials released \| Regulation FD disclosure \| 8-K item 9.01 EX-99.1 Q3 2026 EARNINGS RELEASE [8-K] 2026-10-28
